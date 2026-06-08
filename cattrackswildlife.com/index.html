@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Tracks Wildlife Design | Montana Taxidermist | Broadus, MT</title>
+  <meta name="description" content="Cat Tracks Wildlife Design. Paul Klar has preserved trophies for hunters worldwide for 25 years from his studio on the Powder River in Broadus, Montana.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ct-amber':     '#C27D2D',
+            'ct-amber-dk':  '#A06420',
+            'ct-forest':    '#2A4430',
+            'ct-forest-lt': '#3A5C41',
+            'ct-black':     '#161614',
+            'ct-off':       '#F7F5F1',
+            'ct-stone':     '#6B6858',
+            'ct-bone':      '#E8E3D8',
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body:    ['DM Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { border-radius: 2px; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: #F7F5F1; color: #161614; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .reveal-delay { transition-delay: 0.15s; }
+    .reveal-delay-2 { transition-delay: 0.3s; }
+
+    .gallery-img { overflow: hidden; }
+    .gallery-img img { transition: transform 0.55s ease; }
+    .gallery-img:hover img { transform: scale(1.04); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-ct-off/95 backdrop-blur-sm border-b border-ct-bone">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="font-display font-700 text-base uppercase tracking-wide text-ct-black">
+        Cat Tracks Wildlife Design
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#work"    class="text-sm text-ct-stone hover:text-ct-black transition-colors">Our Work</a>
+        <a href="#about"   class="text-sm text-ct-stone hover:text-ct-black transition-colors">About Paul</a>
+        <a href="#contact" class="text-sm text-ct-stone hover:text-ct-black transition-colors">Contact</a>
+        <a href="mailto:paulklar@yahoo.com"
+           class="bg-ct-amber text-white text-sm font-display font-700 uppercase tracking-wide px-5 py-2 hover:bg-ct-amber-dk transition-colors">
+          Get a Quote
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-end pt-16">
+    <img
+      src="https://cattrackswildlife.com/wp-content/uploads/2016/02/Stevenson-Lion-016.jpg"
+      alt="Finished African lion full mount by Cat Tracks Wildlife Design, Broadus Montana"
+      class="absolute inset-0 w-full h-full object-cover object-center"
+      loading="eager"
+    >
+    <!-- directional gradient: left heavy, fades right -->
+    <div class="absolute inset-0 bg-gradient-to-r from-ct-black/88 via-ct-black/45 to-ct-black/10"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ct-black/60 via-transparent to-transparent"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 pb-20 w-full">
+      <p class="font-display font-700 text-ct-amber text-xs uppercase tracking-[0.2em] mb-5">
+        Broadus, Montana
+      </p>
+      <h1 class="font-display font-700 text-white leading-[0.92] mb-6"
+          style="font-size: clamp(3rem, 8vw, 6rem);">
+        25 Years<br>Bringing Your<br>Trophy to Life
+      </h1>
+      <p class="text-white/75 text-lg max-w-sm mb-10 font-body">
+        Paul Klar mounts Montana big game and African trophies from his studio on the Powder River.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#work"
+           class="bg-ct-amber text-white font-display font-700 uppercase tracking-wide text-sm px-8 py-3 hover:bg-ct-amber-dk transition-colors">
+          View My Work
+        </a>
+        <a href="tel:4064362145"
+           class="border-2 border-white/70 text-white font-display font-700 uppercase tracking-wide text-sm px-8 py-3 hover:border-white hover:bg-white/10 transition-colors">
+          (406) 436-2145
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRIMARY SECTION: image left, numbered features right -->
+  <section class="py-24 bg-ct-off">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <div class="reveal">
+        <img
+          src="https://cattrackswildlife.com/wp-content/uploads/2016/02/robinson-mule-deer.jpg"
+          alt="Robinson mule deer shoulder mount, Cat Tracks Wildlife Design"
+          class="w-full aspect-[4/5] object-cover"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="reveal reveal-delay">
+        <h2 class="font-display font-700 leading-tight mb-10"
+            style="font-size: clamp(2rem, 4vw, 3rem);">
+          Work built for hunters<br>who know the difference
+        </h2>
+
+        <div class="space-y-9">
+          <div class="flex gap-6 items-start">
+            <span class="font-display font-700 text-ct-amber text-4xl leading-none flex-shrink-0">01</span>
+            <div>
+              <h3 class="font-display font-700 text-lg mb-1">Montana Big Game</h3>
+              <p class="text-ct-stone text-sm leading-relaxed">
+                Mule deer, whitetail, elk, antelope, bear. Shoulder mounts to life-size pedestal, built one at a time from Paul's studio on the Powder River.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-6 items-start">
+            <span class="font-display font-700 text-ct-amber text-4xl leading-none flex-shrink-0">02</span>
+            <div>
+              <h3 class="font-display font-700 text-lg mb-1">African and Exotic Game</h3>
+              <p class="text-ct-stone text-sm leading-relaxed">
+                Lions, cape buffalo, African antelope. Paul has mounted African trophies for clients from around the world. Each piece handled with the same care as the deer from your back forty.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-6 items-start">
+            <span class="font-display font-700 text-ct-amber text-4xl leading-none flex-shrink-0">03</span>
+            <div>
+              <h3 class="font-display font-700 text-lg mb-1">Birds, Fish, and Predators</h3>
+              <p class="text-ct-stone text-sm leading-relaxed">
+                Waterfowl, upland birds, walleye, trout, coyote, bobcat. Full-service studio. If it has fins, fur, or feathers, Paul has mounted it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECONDARY SECTION: text left, image right (2nd split, layout break follows) -->
+  <section id="about" class="py-24 bg-ct-bone">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <div class="reveal order-2 md:order-1">
+        <h2 class="font-display font-700 leading-tight mb-6"
+            style="font-size: clamp(1.9rem, 3.5vw, 2.8rem);">
+          Paul Klar has been doing<br>this since before<br>it was a business
+        </h2>
+        <p class="text-ct-stone leading-relaxed mb-5">
+          "For over 25 years, I've built relationships with hunters from around the world. Whether your trophy was taken in Montana or Africa, Cat Tracks Wildlife Design will capture the most lifelike representation."
+        </p>
+        <p class="text-ct-stone leading-relaxed mb-8">
+          The studio is in Broadus, at the edge of the Powder River country that serious big-game hunters travel thousands of miles to reach. Paul lives there. He guides in the fall, mounts through the winter, and puts the same attention into every piece that leaves the shop.
+        </p>
+        <div class="flex gap-12">
+          <div>
+            <span class="font-display font-700 text-4xl text-ct-amber">25+</span>
+            <p class="text-ct-stone text-sm mt-1">Years in business</p>
+          </div>
+          <div>
+            <span class="font-display font-700 text-4xl text-ct-amber">MT</span>
+            <p class="text-ct-stone text-sm mt-1">Powder River, SE Montana</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay order-1 md:order-2">
+        <img
+          src="https://cattrackswildlife.com/wp-content/uploads/2016/02/Ostendorf-Lion-ND-WT-014.jpg"
+          alt="Ostendorf African lion mount alongside a whitetail deer arrangement, Cat Tracks Wildlife Design"
+          class="w-full aspect-[4/5] object-cover"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- GALLERY: layout break from zigzag -->
+  <section id="work" class="py-24 bg-ct-off">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="mb-12 reveal">
+        <h2 class="font-display font-700 leading-tight"
+            style="font-size: clamp(2rem, 4vw, 3rem);">
+          Recent Work
+        </h2>
+        <p class="text-ct-stone mt-3 max-w-xl">
+          Montana mule deer and whitetail, African lions, elk, predators. Every mount from Paul's studio in Broadus.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div class="gallery-img reveal aspect-[3/4]">
+          <img src="https://cattrackswildlife.com/wp-content/uploads/2016/02/IMG_5814-2.jpg"
+               alt="Montana mule deer shoulder mount by Paul Klar"
+               class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="gallery-img reveal reveal-delay aspect-[3/4]">
+          <img src="https://cattrackswildlife.com/wp-content/uploads/2016/02/IMG_5801-2.jpg"
+               alt="Mule deer trophy mount, Powder River country"
+               class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="gallery-img reveal reveal-delay-2 aspect-[3/4]">
+          <img src="https://cattrackswildlife.com/wp-content/uploads/2016/02/2014-05-01-ogorman-lion.jpg"
+               alt="O'Gorman African lion mount by Cat Tracks Wildlife Design"
+               class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="gallery-img reveal aspect-[3/4]">
+          <img src="https://cattrackswildlife.com/wp-content/uploads/2016/02/IMG_5687.jpg"
+               alt="Montana mule deer shoulder mount"
+               class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="gallery-img reveal reveal-delay aspect-[3/4]">
+          <img src="https://cattrackswildlife.com/wp-content/uploads/2016/02/Tippmann-coyote-McLean-elk-027.jpg"
+               alt="Tippmann coyote and McLean elk arrangement by Cat Tracks"
+               class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="gallery-img reveal reveal-delay-2 aspect-[3/4]">
+          <img src="https://cattrackswildlife.com/wp-content/uploads/2016/02/IMG_5829-2.jpg"
+               alt="Predator mount by Paul Klar, Cat Tracks Wildlife Design"
+               class="w-full h-full object-cover" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIALS + CREDIBILITY -->
+  <section class="py-24 bg-ct-forest text-white">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <p class="font-display font-700 text-ct-amber text-xs uppercase tracking-[0.2em] mb-10 reveal">
+        What Clients Say
+      </p>
+
+      <blockquote class="font-display font-600 leading-snug mb-8 reveal"
+                  style="font-size: clamp(1.5rem, 3vw, 2.2rem);">
+        "Paul's work combines an unprecedented level of realism along with a higher degree of quality than I have been able to find anywhere else. The end product is truly a work of art."
+      </blockquote>
+
+      <p class="text-white/60 text-sm mb-16 reveal">
+        Mike LeClair, President and CEO, Babcock Power
+      </p>
+
+      <div class="border-t border-white/20 pt-14 grid md:grid-cols-3 gap-10 reveal">
+        <div>
+          <span class="font-display font-700 text-4xl text-ct-amber">25+</span>
+          <p class="text-white/60 text-sm mt-2 leading-relaxed">Years preserving trophies from Montana to Africa</p>
+        </div>
+        <div>
+          <span class="font-display font-700 text-4xl text-ct-amber">Broadus</span>
+          <p class="text-white/60 text-sm mt-2 leading-relaxed">Powder River, SE Montana. The country Paul hunts himself.</p>
+        </div>
+        <div>
+          <span class="font-display font-700 text-4xl text-ct-amber">Every<br>species</span>
+          <p class="text-white/60 text-sm mt-2 leading-relaxed">Montana big game, African lions, birds, fish, predators.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA STRIP -->
+  <section id="contact" class="py-20 bg-ct-amber">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 reveal">
+      <div>
+        <h2 class="font-display font-700 text-white leading-tight"
+            style="font-size: clamp(1.8rem, 3.5vw, 2.6rem);">
+          Ready to preserve your trophy?
+        </h2>
+        <p class="text-white/80 mt-2 text-sm">
+          Call Paul directly or send an email. No middleman.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-4 flex-shrink-0">
+        <a href="tel:4064362145"
+           class="bg-white text-ct-amber font-display font-700 uppercase tracking-wide text-sm px-8 py-3 hover:bg-ct-off transition-colors">
+          (406) 436-2145
+        </a>
+        <a href="mailto:paulklar@yahoo.com"
+           class="border-2 border-white text-white font-display font-700 uppercase tracking-wide text-sm px-8 py-3 hover:bg-white hover:text-ct-amber transition-colors">
+          paulklar@yahoo.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-ct-black text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 mb-10">
+
+      <div>
+        <h3 class="font-display font-700 text-base uppercase tracking-wide mb-4">
+          Cat Tracks Wildlife Design
+        </h3>
+        <p class="text-ct-stone text-sm leading-relaxed">
+          Paul Klar, taxidermist. Broadus, Montana.<br>
+          Powder River country. 25 years of work.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-display font-700 text-xs uppercase tracking-wide text-ct-stone mb-4">
+          Gallery
+        </h3>
+        <ul class="space-y-2 text-sm text-ct-stone">
+          <li><a href="https://cattrackswildlife.com/dt_gallery/mule-deer/"
+                 class="hover:text-white transition-colors">Mule Deer</a></li>
+          <li><a href="https://cattrackswildlife.com/dt_gallery/whitetail-deer/"
+                 class="hover:text-white transition-colors">Whitetail Deer</a></li>
+          <li><a href="https://cattrackswildlife.com/dt_gallery/elk/"
+                 class="hover:text-white transition-colors">Elk</a></li>
+          <li><a href="https://cattrackswildlife.com/dt_gallery/photo-gallery-predators/"
+                 class="hover:text-white transition-colors">Predators</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display font-700 text-xs uppercase tracking-wide text-ct-stone mb-4">
+          Contact
+        </h3>
+        <ul class="space-y-2 text-sm text-ct-stone">
+          <li>
+            <a href="tel:4064362145" class="hover:text-white transition-colors">
+              (406) 436-2145
+            </a>
+          </li>
+          <li>
+            <a href="mailto:paulklar@yahoo.com" class="hover:text-white transition-colors">
+              paulklar@yahoo.com
+            </a>
+          </li>
+          <li class="leading-relaxed pt-1">
+            506 North Lincoln Ave., Box 255<br>
+            Broadus, MT 59317
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10">
+      <p class="text-ct-stone text-xs">
+        Cat Tracks Wildlife Design, Broadus, Montana
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    const obs = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+
+</body>
+</html>
