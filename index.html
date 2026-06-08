@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Redesigns for Outdoor Businesses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: #0d0c0b; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: #e2d9d0;
+      background: #0d0c0b;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 64px 48px 48px;
+      max-width: 1100px;
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    header p.label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #c47c3a;
+      margin: 0 0 12px;
+    }
+
+    header h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      line-height: 1.05;
+      color: #e2d9d0;
+      margin: 0 0 16px;
+    }
+
+    header p.desc {
+      font-size: 0.95rem;
+      color: #8a7d73;
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0;
+    }
+
+    main {
+      padding: 48px 48px 80px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 3px;
+    }
+
+    .card {
+      background: #141210;
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 32px;
+      text-decoration: none;
+      display: block;
+      transition: border-color 0.2s, background 0.2s;
+      position: relative;
+      border-radius: 2px;
+    }
+
+    .card:hover {
+      border-color: rgba(196,124,58,0.35);
+      background: #1a1714;
+    }
+
+    .card-niche {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #c47c3a;
+      margin: 0 0 10px;
+    }
+
+    .card-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      color: #e2d9d0;
+      margin: 0 0 6px;
+      line-height: 1.1;
+    }
+
+    .card-location {
+      font-size: 0.85rem;
+      color: #5c524c;
+      margin: 0 0 20px;
+    }
+
+    .card-problem {
+      font-size: 0.875rem;
+      color: #8a7d73;
+      line-height: 1.6;
+      margin: 0 0 24px;
+    }
+
+    .card-cta {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c47c3a;
+    }
+
+    .card:hover .card-cta { color: #d4923f; }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 32px 48px;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer p {
+      font-size: 0.82rem;
+      color: #5c524c;
+      margin: 0;
+    }
+
+    footer a {
+      color: #c47c3a;
+      text-decoration: none;
+    }
+
+    footer a:hover { color: #d4923f; }
+
+    @media (max-width: 600px) {
+      header, main, footer { padding-left: 24px; padding-right: 24px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="label">Bigger Fish Intelligent Automation</p>
+  <h1>Homepage Redesigns for Outdoor Businesses</h1>
+  <p class="desc">Free prototype redesigns built with each business's own photography. If you want yours installed and the rest of your pages done the same way, get in touch.</p>
+</header>
+
+<main>
+  <div class="grid">
+
+    <a href="./scottmeekwoodworks.com/" class="card">
+      <p class="card-niche">Handmade Woodworking Tools</p>
+      <p class="card-name">Scott Meek Woodworks</p>
+      <p class="card-location">Leicester, NC</p>
+      <p class="card-problem">Custom wood-body planes made entirely by hand from exotic hardwoods. Site unchanged since 2015, contact page FAQ still showing Bootstrap demo text.</p>
+      <span class="card-cta">View redesign &rarr;</span>
+    </a>
+
+    <a href="./highlinercustomrods.com/" class="card">
+      <p class="card-niche">Custom Fly &amp; Spey Rods</p>
+      <p class="card-name">Highliner Custom Rods</p>
+      <p class="card-location">Bend, OR</p>
+      <p class="card-problem">40+ years building custom salmon, steelhead, and spey rods. RevSlider plugin broken site-wide — every gallery shows empty boxes instead of rod photography.</p>
+      <span class="card-cta">View redesign &rarr;</span>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  <p>Jared Fischer &mdash; Web design for outdoor businesses</p>
+  <p><a href="mailto:jared.the.automator@gmail.com">jared.the.automator@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
