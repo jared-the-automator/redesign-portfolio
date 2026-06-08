@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Kentucky Longrifles | Marvin Kemper | Liberty Longrifles LLC | Wadesville, IN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest:    '#12201A',
+            grove:     '#1B2E1F',
+            canopy:    '#243D28',
+            brass:     '#C4923A',
+            'brass-lt':'#D4A84E',
+            bone:      '#EDE8DC',
+            parchment: '#C8C0A8',
+            muted:     '#7A7362',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body:    ['Lora', 'Georgia', 'serif'],
+          },
+          borderRadius: {
+            DEFAULT: '2px',
+            sm: '2px',
+            md: '2px',
+            lg: '2px',
+            xl: '2px',
+            full: '9999px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { -webkit-font-smoothing: antialiased; }
+
+    .reveal        { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal-l      { opacity: 0; transform: translateX(-36px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal-r      { opacity: 0; transform: translateX(36px);  transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.in, .reveal-l.in, .reveal-r.in {
+      opacity: 1; transform: translate(0, 0);
+    }
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+
+    .img-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  </style>
+</head>
+<body class="bg-forest text-bone font-body">
+
+  <!-- ========== NAV ========== -->
+  <nav class="sticky top-0 z-50 bg-forest/96 backdrop-blur border-b border-brass/15">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-8">
+      <a href="http://libertylongrifles.com/" class="flex-shrink-0">
+        <span class="font-display font-bold text-bone text-lg leading-tight block">Liberty Longrifles</span>
+        <span class="text-brass text-[10px] tracking-widest uppercase leading-none block">Marvin Kemper, Gunmaker</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-parchment">
+        <a href="http://libertylongrifles.com/galleries-of-guns/" class="hover:text-brass transition-colors duration-200">Gallery</a>
+        <a href="http://libertylongrifles.com/how-to-order/" class="hover:text-brass transition-colors duration-200">How to Order</a>
+        <a href="http://libertylongrifles.com/biography/" class="hover:text-brass transition-colors duration-200">About Marvin</a>
+        <a href="http://libertylongrifles.com/favorite-links/" class="hover:text-brass transition-colors duration-200">Links</a>
+      </div>
+      <a href="mailto:libertylongrifles@gmail.com"
+         class="flex-shrink-0 bg-brass text-forest text-sm font-semibold px-5 py-2.5 rounded hover:bg-brass-lt transition-colors duration-200">
+        Commission a Piece
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative min-h-[100dvh] flex items-end">
+    <div class="absolute inset-0 overflow-hidden">
+      <img
+        src="http://libertylongrifles.com/wp-content/gallery/lehigh-valley-rifle-2/mg_3258_rl.jpg"
+        alt="Lehigh Valley longrifle patterned after Herman Rupp, photographed by Ric Lambert Studio"
+        class="w-full h-full object-cover object-center"
+        loading="eager"
+      >
+      <!-- left-to-right gradient: heavy left, fades right -->
+      <div class="absolute inset-0" style="background: linear-gradient(100deg, #12201A 28%, rgba(18,32,26,0.72) 55%, rgba(18,32,26,0.18) 100%);"></div>
+      <!-- bottom lift -->
+      <div class="absolute inset-0" style="background: linear-gradient(to top, #12201A 0%, rgba(18,32,26,0.4) 30%, transparent 60%);"></div>
+    </div>
+
+    <div class="relative w-full max-w-7xl mx-auto px-6 pb-20 pt-32">
+      <div class="max-w-lg">
+        <span class="text-brass text-[11px] tracking-widest uppercase font-body block mb-6">
+          Wadesville, Indiana
+        </span>
+        <h1 class="font-display font-bold text-5xl md:text-6xl lg:text-[68px] text-bone leading-[1.08] mb-6">
+          Built to the<br>standard of 1780.
+        </h1>
+        <p class="text-parchment text-lg leading-relaxed mb-10 max-w-sm">
+          Historically accurate Kentucky longrifles, fowlers, and pistols. Each piece hand-built to your specifications from curly maple and American components.
+        </p>
+        <div class="flex items-center gap-4 flex-wrap">
+          <a href="mailto:libertylongrifles@gmail.com"
+             class="bg-brass text-forest font-semibold px-7 py-3 rounded hover:bg-brass-lt transition-colors duration-200">
+            Commission a Rifle
+          </a>
+          <a href="http://libertylongrifles.com/galleries-of-guns/"
+             class="border border-bone/35 text-bone px-7 py-3 rounded hover:border-brass hover:text-brass transition-colors duration-200">
+            View the Gallery
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRIMARY PRODUCT SECTION ========== -->
+  <!-- Asymmetric split: features left, Fleeger collage right -->
+  <section class="py-28 bg-forest">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+        <!-- Text / numbered features -->
+        <div class="reveal-l">
+          <h2 class="font-display text-4xl md:text-5xl text-bone leading-tight mb-14">
+            Every operation<br>done by hand.
+          </h2>
+          <div class="space-y-10">
+            <div class="flex gap-6 items-start">
+              <span class="font-display text-brass text-2xl font-bold w-8 flex-shrink-0 leading-tight">01</span>
+              <div>
+                <h3 class="font-display text-lg text-bone mb-2">Curly maple, selected for figure</h3>
+                <p class="text-parchment text-sm leading-relaxed">Each blank is chosen for the highest natural curl. Stocks are finished with up to ten coats of oil-varnish, hand-rubbed between each coat and finished with optional aging for warmth.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 items-start">
+              <span class="font-display text-brass text-2xl font-bold w-8 flex-shrink-0 leading-tight">02</span>
+              <div>
+                <h3 class="font-display text-lg text-bone mb-2">American-made hardware throughout</h3>
+                <p class="text-parchment text-sm leading-relaxed">Rice barrels. Jim Chambers locks. Butt plates and trigger guards sand- or wax-cast in-shop. All engraving done with the traditional chasing hammer and chisel, consistent with arms from the 17th and 18th centuries.</p>
+              </div>
+            </div>
+            <div class="flex gap-6 items-start">
+              <span class="font-display text-brass text-2xl font-bold w-8 flex-shrink-0 leading-tight">03</span>
+              <div>
+                <h3 class="font-display text-lg text-bone mb-2">Faithful to the historical school</h3>
+                <p class="text-parchment text-sm leading-relaxed">Whether you want a Fleeger-pattern Allegheny County rifle or a Herman Rupp Lehigh Valley piece, each reproduction follows the documented characteristics of that school without shortcut or compromise.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image: Fleeger Allegheny County collage -->
+        <div class="reveal-r flex flex-col gap-3">
+          <div class="img-frame rounded overflow-hidden shadow-2xl" style="aspect-ratio: 4/5;">
+            <img
+              src="http://libertylongrifles.com/wp-content/gallery/allegheny-county-rifle/fleeger-collageb.png"
+              alt="Allegheny County rifle patterned after John Fleeger: Manongahela Valley patchbox, C-scroll carving, silver and brass elements"
+            >
+          </div>
+          <p class="text-muted text-xs font-body italic leading-snug">
+            Allegheny County rifle after John Fleeger. Pierced Manongahela Valley patchbox, C-scroll carving, slash-and-scoop buttstock moulding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECONDARY SECTION ========== -->
+  <!-- Reversed split: 175-year rifle image left, family story right -->
+  <section class="py-28 bg-grove">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+        <!-- Image: 175yr commemorative rifle -->
+        <div class="reveal order-2 lg:order-1 flex flex-col gap-3">
+          <div class="img-frame rounded overflow-hidden shadow-2xl" style="aspect-ratio: 3/4;">
+            <img
+              src="http://libertylongrifles.com/wp-content/gallery/175-years-commemorative-rifle/full-length-view-right-side.jpg"
+              alt="175th Anniversary Commemorative Rifle commissioned by Ferdinand, Indiana, full-length right side view"
+            >
+          </div>
+          <p class="text-muted text-xs font-body italic leading-snug">
+            175th Anniversary Commemorative Rifle, commissioned by Ferdinand, Indiana, 2015. Berks County Roman Nose stock architecture after Cornell Kemper.
+          </p>
+        </div>
+
+        <!-- Story: second-generation craft -->
+        <div class="reveal order-1 lg:order-2">
+          <h2 class="font-display text-4xl md:text-5xl text-bone leading-tight mb-6">
+            A second generation<br>in the tradition.
+          </h2>
+          <p class="text-parchment leading-relaxed mb-5">
+            Marvin Kemper learned the craft from his father, Cornell Kemper, who built Kentucky longrifles in Ferdinand, Indiana for nearly fifty years. When Ferdinand celebrated its 175th anniversary in 2015, the community commissioned Marvin for the commemorative rifle.
+          </p>
+          <p class="text-parchment leading-relaxed mb-5">
+            In 2016, the Grouseland Foundation authorized Marvin to build the official reproduction of the Indiana State Rifle for the state's bicentennial. That piece is now the recorded standard for the "Grouseland Rifle."
+          </p>
+          <p class="text-parchment leading-relaxed mb-10">
+            Every piece from Liberty Longrifles is built to the customer's exact specifications. In some cases that means copying an original arm in every documented detail. In others it means custom elements designed with Marvin's input.
+          </p>
+          <a href="http://libertylongrifles.com/biography/"
+             class="text-brass text-sm border-b border-brass/40 hover:border-brass pb-0.5 transition-colors duration-200">
+            About Marvin Kemper
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY — layout break from zigzag ========== -->
+  <section class="py-28 bg-forest">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal mb-12 flex items-end justify-between gap-6 flex-wrap">
+        <div>
+          <h2 class="font-display text-4xl text-bone mb-2">From the gallery</h2>
+          <p class="text-muted text-sm">Recreations of classic originals and custom interpretive pieces.</p>
+        </div>
+        <a href="http://libertylongrifles.com/galleries-of-guns/"
+           class="text-brass text-sm border border-brass/40 px-5 py-2 rounded hover:bg-brass/10 transition-colors duration-200 flex-shrink-0">
+          View full gallery
+        </a>
+      </div>
+
+      <!-- 4-column grid, first column spans 2 rows -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <!-- Large featured: Lancaster Custom -->
+        <div class="reveal col-span-1 lg:col-span-2 row-span-2 img-frame rounded overflow-hidden shadow-xl" style="aspect-ratio: 3/4; min-height: 300px;">
+          <img
+            src="http://libertylongrifles.com/wp-content/gallery/lancaster-custom/1702_lc144_rl.jpg"
+            alt="Lancaster Custom Rifle with pierced patchbox finial and sterling silver cheekpiece star, photography by Rick Lambert Studio"
+            style="height: 100%; object-fit: cover;"
+          >
+        </div>
+        <!-- Kentucky Pistol -->
+        <div class="reveal delay-1 img-frame rounded overflow-hidden shadow-lg aspect-square">
+          <img
+            src="http://libertylongrifles.com/wp-content/gallery/kemper-kentucky-pistol/kemper-kentucky-pistol-3.jpg"
+            alt="Marvin Kemper Kentucky Flintlock Pistol with sterling silver and fine wire inlay, after Henry Albright"
+          >
+        </div>
+        <!-- Early Virginia rifle -->
+        <div class="reveal delay-2 img-frame rounded overflow-hidden shadow-lg aspect-square">
+          <img
+            src="http://libertylongrifles.com/wp-content/gallery/kemper-virginia-1/kemper-virginia-1.jpg"
+            alt="Early Virginia rifle with edelweiss flower finial patchbox and wire inlay"
+          >
+        </div>
+        <!-- Lehigh Valley Herman Rupp detail -->
+        <div class="reveal delay-3 img-frame rounded overflow-hidden shadow-lg aspect-square">
+          <img
+            src="http://libertylongrifles.com/wp-content/gallery/lehigh-valley-rifle-2/mg_3265_rl-copy.jpg"
+            alt="Lehigh Valley longrifle after Herman Rupp, detail showing extensive carving and wide wrist, photography by Ric Lambert Studio"
+          >
+        </div>
+        <!-- 175yr buttstock detail -->
+        <div class="reveal delay-4 img-frame rounded overflow-hidden shadow-lg aspect-square">
+          <img
+            src="http://libertylongrifles.com/wp-content/gallery/175-years-commemorative-rifle/buttstock-left-side1.jpg"
+            alt="175th Anniversary Commemorative Rifle buttstock detail, left side"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CREDIBILITY / COMMISSION INFO ========== -->
+  <section class="py-28 bg-canopy">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+
+        <!-- Portrait of Marvin with Grouseland Rifle -->
+        <div class="reveal flex flex-col gap-3">
+          <div class="img-frame rounded overflow-hidden shadow-2xl" style="aspect-ratio: 3/4;">
+            <img
+              src="http://libertylongrifles.com/wp-content/uploads/2013/06/self-photo-6.jpg"
+              alt="Marvin Kemper with the 2016 reproduction of the Indiana State Rifle, authorized by the Grouseland Foundation for Indiana's bicentennial"
+            >
+          </div>
+          <p class="text-muted text-xs font-body italic leading-snug">
+            Marvin Kemper with the 2016 Indiana State Rifle reproduction. Authorized by the Grouseland Foundation, Vincennes, Indiana, for the state bicentennial (1816-2016).
+          </p>
+        </div>
+
+        <!-- Commission info -->
+        <div class="reveal">
+          <h2 class="font-display text-4xl text-bone mb-8 leading-tight">
+            Commissioning a piece
+          </h2>
+          <p class="text-parchment leading-relaxed mb-5">
+            A custom rifle from Liberty Longrifles starts at $5,000 and runs to $10,000 depending on the level of embellishment. After a conversation about your preferences, Marvin sends a written proposal covering specifications, price, and an anticipated completion timeline.
+          </p>
+          <p class="text-parchment leading-relaxed mb-5">
+            Most customers come with a school in mind: Lehigh Valley, Lancaster, Allegheny County, early Virginia. Those who don't are welcome to start in the gallery. Either way, Marvin will ask the right questions and offer suggestions based on what he's built before.
+          </p>
+          <p class="text-parchment leading-relaxed mb-12">
+            Phone calls and shop visits are welcome. Email works too. The conversation comes first.
+          </p>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-6 border-t border-bone/10 pt-10">
+            <div>
+              <div class="font-display text-3xl text-brass font-bold mb-1">~50</div>
+              <div class="text-muted text-xs leading-snug">Years of Kemper family longrifle craft <!-- verify: Cornell Kemper "nearly fifty years" --></div>
+            </div>
+            <div>
+              <div class="font-display text-3xl text-brass font-bold mb-1">1750</div>
+              <div class="text-muted text-xs leading-snug">Era of gunmaking Marvin specializes in (1750-1830)</div>
+            </div>
+            <div>
+              <div class="font-display text-3xl text-brass font-bold mb-1">$5K+</div>
+              <div class="text-muted text-xs leading-snug">Starting price for a full commission</div>
+            </div>
+          </div>
+
+          <!-- Contact block -->
+          <div class="mt-12 border border-bone/10 rounded p-6">
+            <p class="font-display text-bone mb-1">Marvin Kemper, Gunmaker</p>
+            <p class="text-parchment text-sm mb-4">8996 Winery Road, Wadesville, IN 47638</p>
+            <div class="flex items-center gap-6 flex-wrap">
+              <a href="tel:8124301992" class="text-brass text-sm hover:text-brass-lt transition-colors">812.430.1992</a>
+              <a href="mailto:libertylongrifles@gmail.com" class="text-brass text-sm hover:text-brass-lt transition-colors">libertylongrifles@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA STRIP ========== -->
+  <section class="py-20 bg-brass">
+    <div class="max-w-7xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display text-3xl md:text-4xl text-forest font-bold mb-4 leading-tight">
+        Ready to commission a rifle?
+      </h2>
+      <p class="text-forest/65 mb-8 max-w-md mx-auto font-body leading-relaxed">
+        Call Marvin directly or send an email. Every piece starts with a conversation.
+      </p>
+      <div class="flex items-center justify-center gap-4 flex-wrap">
+        <a href="tel:8124301992"
+           class="bg-forest text-bone font-semibold px-8 py-3 rounded hover:bg-forest/90 transition-colors duration-200">
+          812.430.1992
+        </a>
+        <a href="mailto:libertylongrifles@gmail.com"
+           class="border-2 border-forest text-forest font-semibold px-8 py-3 rounded hover:bg-forest/10 transition-colors duration-200">
+          libertylongrifles@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="py-16 bg-forest border-t border-bone/8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <p class="font-display text-xl text-bone mb-0.5">Liberty Longrifles LLC</p>
+          <p class="text-muted text-xs mb-5">Marvin Kemper, Gunmaker</p>
+          <p class="text-muted text-xs leading-relaxed max-w-xs">
+            Handcrafted Kentucky longrifles, fowlers, pistols, and pipe tomahawks. Built primarily from the flintlock era, 1750-1830. All pieces built to customer specifications.
+          </p>
+        </div>
+        <div>
+          <p class="text-bone text-xs tracking-widest uppercase mb-5 font-body">Gallery</p>
+          <ul class="space-y-2.5 text-muted text-sm">
+            <li><a href="http://libertylongrifles.com/galleries-of-guns/re-creations-of-classic-originals/" class="hover:text-brass transition-colors">Recreations of Classic Originals</a></li>
+            <li><a href="http://libertylongrifles.com/galleries-of-guns/custom-and-interpretive-pieces/" class="hover:text-brass transition-colors">Custom and Interpretive Pieces</a></li>
+            <li><a href="http://libertylongrifles.com/galleries-of-guns/works-in-progress/" class="hover:text-brass transition-colors">Works in Progress</a></li>
+            <li><a href="http://libertylongrifles.com/how-to-order/" class="hover:text-brass transition-colors">How to Order</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-bone text-xs tracking-widest uppercase mb-5 font-body">Contact</p>
+          <address class="not-italic text-muted text-sm space-y-1.5">
+            <p>8996 Winery Road</p>
+            <p>Wadesville, IN 47638</p>
+            <p class="pt-2">
+              <a href="tel:8124301992" class="hover:text-brass transition-colors">812.430.1992</a>
+            </p>
+            <p>
+              <a href="mailto:libertylongrifles@gmail.com" class="hover:text-brass transition-colors">libertylongrifles@gmail.com</a>
+            </p>
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
