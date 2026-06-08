@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scott Meek Woodworks - Wood Body Planes, Asheville NC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            smw: {
+              bg:           '#0e0c0b',
+              raised:       '#141210',
+              elevated:     '#1c1916',
+              accent:       '#c47c3a',
+              'accent-lit': '#d4923f',
+              text:         '#e6ddd4',
+              't2':         '#9e9088',
+              't3':         '#5c524c',
+              border:       'rgba(196,124,58,0.15)',
+            }
+          },
+          fontFamily: {
+            display: ['"Barlow Condensed"', 'sans-serif'],
+            body:    ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html  { background: #0e0c0b; scroll-behavior: smooth; }
+    body  { font-family: 'DM Sans', sans-serif; color: #e6ddd4; background: #0e0c0b; overflow-x: hidden; margin: 0; }
+
+    /* ── Scroll reveal ────────────────────────────────── */
+    .rv { opacity: 0; transform: translateY(30px);
+      transition: opacity .72s cubic-bezier(.16,1,.3,1), transform .72s cubic-bezier(.16,1,.3,1); }
+    .rv.in { opacity: 1; transform: none; }
+    .d1 { transition-delay: .08s; }
+    .d2 { transition-delay: .17s; }
+    .d3 { transition-delay: .26s; }
+    .d4 { transition-delay: .35s; }
+
+    /* ── Nav ──────────────────────────────────────────── */
+    #top-nav { transition: background .3s, box-shadow .3s; }
+    #top-nav.stuck {
+      background: rgba(14,12,11,.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 0 rgba(196,124,58,.14);
+    }
+
+    /* ── Buttons ──────────────────────────────────────── */
+    .btn-a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: .88rem; letter-spacing: .1em;
+      text-transform: uppercase; color: #0e0c0b; background: #c47c3a;
+      padding: 13px 26px; display: inline-block; text-decoration: none;
+      border-radius: 2px; white-space: nowrap;
+      transition: background .18s, transform .14s;
+    }
+    .btn-a:hover { background: #d4923f; transform: translateY(-1px); }
+    .btn-a:active { transform: scale(.98); }
+
+    .btn-o {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: .88rem; letter-spacing: .1em;
+      text-transform: uppercase; color: #c47c3a; background: transparent;
+      border: 1px solid rgba(196,124,58,.5);
+      padding: 12px 26px; display: inline-block; text-decoration: none;
+      border-radius: 2px; white-space: nowrap;
+      transition: border-color .18s, color .18s, transform .14s;
+    }
+    .btn-o:hover { border-color: #c47c3a; color: #d4923f; transform: translateY(-1px); }
+    .btn-o:active { transform: scale(.98); }
+
+    /* ── Feature rows ─────────────────────────────────── */
+    .feat { display: flex; gap: 18px; padding: 18px 0; border-bottom: 1px solid rgba(196,124,58,.12); }
+    .feat:first-of-type { border-top: 1px solid rgba(196,124,58,.12); }
+    .feat-n { font-family: 'Barlow Condensed', sans-serif; font-size: .72rem;
+      font-weight: 700; letter-spacing: .12em; color: #c47c3a;
+      padding-top: 3px; min-width: 28px; flex-shrink: 0; }
+    .feat-h { font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 1rem; letter-spacing: .02em; color: #e6ddd4; margin-bottom: 3px; }
+    .feat-b { font-size: .875rem; color: #9e9088; line-height: 1.6; }
+
+    /* ── Gallery cells ────────────────────────────────── */
+    .gcell { position: relative; overflow: hidden; }
+    .gcell img { display: block; width: 100%; height: 100%; object-fit: cover;
+      transition: transform .65s cubic-bezier(.16,1,.3,1); }
+    .gcell:hover img { transform: scale(1.06); }
+    .gcell::after { content: ''; position: absolute; inset: 0;
+      background: rgba(14,12,11,0); transition: background .3s; pointer-events: none; }
+    .gcell:hover::after { background: rgba(14,12,11,.26); }
+
+    /* ── Image zoom wrapper ───────────────────────────── */
+    .zoom { overflow: hidden; }
+    .zoom img { display: block; width: 100%; height: 100%; object-fit: cover;
+      transition: transform .65s cubic-bezier(.16,1,.3,1); }
+    .zoom:hover img { transform: scale(1.04); }
+
+    /* ── Divider ──────────────────────────────────────── */
+    .divider { height: 1px; background: rgba(196,124,58,.18); }
+
+    /* ── Responsive ───────────────────────────────────── */
+    @media (max-width: 767px) {
+      .split       { flex-direction: column !important; }
+      .split-rev   { flex-direction: column !important; }
+      .split > *,
+      .split-rev > * { width: 100% !important; min-height: 300px; }
+      .nav-links   { display: none !important; }
+      .gallery-grid{ grid-template-columns: 1fr 1fr !important;
+                     grid-template-rows: auto !important; }
+      .gcell.tall  { grid-row: span 1 !important; }
+      .hero-pad    { padding: 0 24px 5rem !important; }
+      .sec-pad     { padding: 64px 24px !important; }
+      .test-grid   { flex-direction: column !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════════════════════════ -->
+<nav id="top-nav" style="position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 48px;display:flex;justify-content:space-between;align-items:center;">
+  <a href="#" style="font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#e6ddd4;text-decoration:none;">
+    Scott Meek Woodworks
+  </a>
+  <div class="nav-links" style="display:flex;align-items:center;gap:32px;">
+    <a href="#planes" style="font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">Planes</a>
+    <a href="#classes" style="font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">Classes</a>
+    <a href="#about" style="font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">About</a>
+    <a href="https://scottmeekwoodworks.com/contact/" class="btn-a" style="padding:9px 18px;font-size:.82rem;">Get a Quote</a>
+  </div>
+</nav>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     HERO
+     Layout: full-bleed photo + left-aligned copy
+═══════════════════════════════════════════════════════════════ -->
+<section style="position:relative;min-height:100dvh;display:flex;align-items:flex-end;">
+
+  <!-- Background photo -->
+  <img
+    src="https://scottmeekwoodworks.com/wp-content/uploads/2015/05/Carved-Texture-Mesquite-and-Blackwood-High-Angle-Smoother.jpg"
+    alt="Carved texture Mesquite and Blackwood high-angle smoother by Scott Meek Woodworks"
+    style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;"
+    loading="eager">
+
+  <!-- Directional overlay -->
+  <div style="position:absolute;inset:0;background:linear-gradient(105deg,rgba(14,12,11,.95) 0%,rgba(14,12,11,.78) 40%,rgba(14,12,11,.22) 100%);"></div>
+  <!-- Bottom fade for legibility -->
+  <div style="position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(to top,rgba(14,12,11,.7),transparent);"></div>
+
+  <!-- Copy -->
+  <div class="hero-pad rv" style="position:relative;z-index:1;padding:0 48px 6rem;max-width:740px;">
+    <p style="font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#c47c3a;margin:0 0 14px;">Leicester, NC</p>
+    <h1 style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.8rem,5.5vw,5.2rem);font-weight:800;line-height:1.02;letter-spacing:-.01em;text-transform:uppercase;color:#e6ddd4;margin:0 0 20px;">
+      Wood Body Planes<br>Built to Be Used Hard
+    </h1>
+    <p class="d1 rv" style="font-size:1.05rem;line-height:1.68;color:#b5a89e;max-width:500px;margin:0 0 36px;">
+      Shaped by hand from exotic hardwoods in the Blue Ridge Mountains. Every plane a working tool. Every piece one of a kind.
+    </p>
+    <div class="d2 rv" style="display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="https://scottmeekwoodworks.com/store/" class="btn-a">Browse Planes</a>
+      <a href="https://scottmeekwoodworks.com/custom-planes/" class="btn-o">Commission a Plane</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 1: PLANES — asymmetric split (text 55%, image 45%)
+     Layout family: split-screen
+═══════════════════════════════════════════════════════════════ -->
+<section id="planes" style="background:#0e0c0b;">
+  <div class="split" style="display:flex;min-height:620px;">
+
+    <!-- Text column -->
+    <div class="sec-pad" style="padding:80px 64px 80px 48px;display:flex;flex-direction:column;justify-content:center;width:55%;">
+      <h2 class="rv" style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:800;letter-spacing:-.01em;text-transform:uppercase;color:#e6ddd4;line-height:1.05;margin:0 0 16px;">
+        Krenov-Style Wood Planes<br>with No Shortcuts
+      </h2>
+      <p class="rv d1" style="font-size:.95rem;line-height:1.7;color:#9e9088;max-width:460px;margin:0 0 36px;">
+        Each plane is made entirely by hand. No production batches. No jigs beyond what Scott builds himself. The result is a tool that fits the way you work, built to outlast you.
+      </p>
+
+      <div class="rv d2">
+        <div class="feat">
+          <span class="feat-n">01</span>
+          <div>
+            <p class="feat-h">Exotic hardwood bodies</p>
+            <p class="feat-b">Tiger Maple, Bubinga, Blackwood, Rosewood, Mesquite, Resin-Infused White Oak, and more. Every body chosen for grain, density, and beauty.</p>
+          </div>
+        </div>
+        <div class="feat">
+          <span class="feat-n">02</span>
+          <div>
+            <p class="feat-h">Tuned and tested before shipping</p>
+            <p class="feat-b">Each plane is set up and verified to shave a full-width continuous ribbon. You plane the day it arrives.</p>
+          </div>
+        </div>
+        <div class="feat">
+          <span class="feat-n">03</span>
+          <div>
+            <p class="feat-h">Full range of planes and spokeshaves</p>
+            <p class="feat-b">Smoothers, jack planes, jointers, block planes, scrub planes, and spokeshaves. Custom commissions welcome.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://scottmeekwoodworks.com/store/" class="btn-a rv d3" style="margin-top:32px;align-self:flex-start;">Shop All Planes</a>
+    </div>
+
+    <!-- Image column -->
+    <div class="zoom" style="width:45%;flex-shrink:0;">
+      <img
+        src="https://scottmeekwoodworks.com/wp-content/uploads/2014/12/16-inch-Tiger-Maple-and-Bubinga-Wave-Grip-Jack.jpg"
+        alt="16-inch Tiger Maple and Bubinga wave-grip jack plane"
+        style="height:100%;min-height:560px;">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 2: THE CRAFT — reversed split (image 42%, text 58%)
+     Layout family: split-screen (reversed)
+═══════════════════════════════════════════════════════════════ -->
+<section id="about" style="background:#141210;">
+  <div class="split-rev" style="display:flex;min-height:580px;">
+
+    <!-- Image column -->
+    <div class="zoom split-img" style="width:42%;flex-shrink:0;">
+      <img
+        src="https://scottmeekwoodworks.com/wp-content/uploads/2015/04/12-inch-Rosewood-and-Blackwood-Jack.png"
+        alt="12-inch Rosewood and Blackwood jack plane"
+        style="height:100%;min-height:520px;">
+    </div>
+
+    <!-- Text column -->
+    <div class="sec-pad" style="padding:80px 48px 80px 60px;display:flex;flex-direction:column;justify-content:center;width:58%;">
+      <h2 class="rv" style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.8rem,3vw,2.9rem);font-weight:800;letter-spacing:-.01em;text-transform:uppercase;color:#e6ddd4;line-height:1.1;margin:0 0 20px;">
+        An Intimacy with the Wood<br>You Can't Get Any Other Way
+      </h2>
+      <p class="rv d1" style="font-size:.95rem;line-height:1.75;color:#9e9088;max-width:480px;margin:0 0 16px;">
+        Scott started as a trim carpenter, moved into custom cabinetry, and got hooked the first time he took a full-width ribbon shaving off a properly tuned hand plane. He went all in.
+      </p>
+      <p class="rv d2" style="font-size:.95rem;line-height:1.75;color:#9e9088;max-width:480px;margin:0 0 32px;">
+        "Creating something with hand tools forces me to focus more intently on what I am doing - how I use the grain of the wood, what type of joinery I will use. Each piece is created with passion, focus, and a desire to learn something new."
+      </p>
+      <a href="https://scottmeekwoodworks.com/about/" class="btn-o rv d3" style="align-self:flex-start;">About Scott</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 3: GALLERY — photo grid (breaks the zigzag)
+     Layout family: editorial photography grid
+═══════════════════════════════════════════════════════════════ -->
+<section style="background:#0e0c0b;padding:0;">
+  <div class="gallery-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:340px 260px;gap:3px;">
+
+    <!-- Row 1, col 1: tall -->
+    <div class="gcell" style="grid-row:span 2;">
+      <img src="https://scottmeekwoodworks.com/wp-content/uploads/2015/05/Blackwood-Spokeshave.jpg"
+           alt="Blackwood spokeshave" loading="lazy">
+    </div>
+
+    <!-- Row 1, col 2 -->
+    <div class="gcell">
+      <img src="https://scottmeekwoodworks.com/wp-content/uploads/2015/03/hero-1.jpg"
+           alt="Scott Meek hand plane detail" loading="lazy">
+    </div>
+
+    <!-- Row 1, col 3 -->
+    <div class="gcell">
+      <img src="https://scottmeekwoodworks.com/wp-content/uploads/2015/04/Hero-7.jpg"
+           alt="Scott Meek plane workshop" loading="lazy">
+    </div>
+
+    <!-- Row 2, col 2 -->
+    <div class="gcell">
+      <img src="https://scottmeekwoodworks.com/wp-content/uploads/2015/03/hero-3.jpg"
+           alt="Handmade wood plane" loading="lazy">
+    </div>
+
+    <!-- Row 2, col 3 -->
+    <div class="gcell">
+      <img src="https://scottmeekwoodworks.com/wp-content/uploads/2015/04/Hero-4.jpg"
+           alt="Wood plane sole detail" loading="lazy">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 4: TESTIMONIALS
+     Layout family: asymmetric testimonial columns
+═══════════════════════════════════════════════════════════════ -->
+<section style="background:#141210;padding:96px 48px;">
+  <div class="test-grid" style="display:flex;gap:56px;max-width:1200px;margin:0 auto;">
+
+    <!-- Primary testimonial (large) -->
+    <div class="rv" style="flex:1.4;min-width:0;">
+      <div class="zoom" style="height:260px;margin-bottom:32px;border-radius:2px;">
+        <img src="https://scottmeekwoodworks.com/wp-content/uploads/2015/04/Tiger-Maple-and-Bubinga-Smoothing-Plane-Testimonial.jpg"
+             alt="Tiger Maple and Bubinga smoothing plane" loading="lazy">
+      </div>
+      <span style="font-family:'Barlow Condensed',sans-serif;font-size:4rem;line-height:.8;color:#c47c3a;opacity:.35;display:block;margin-bottom:8px;">"</span>
+      <p style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.5rem,2.5vw,2.2rem);font-weight:700;line-height:1.25;color:#e6ddd4;margin:0 0 20px;letter-spacing:.01em;">
+        Move over Lie-Nielsen, there's another smoothing plane on the shelf.
+      </p>
+      <p style="font-size:.88rem;line-height:1.65;color:#9e9088;margin:0 0 24px;max-width:420px;">
+        Scott delivers the best value in smoothing planes surrounded by exceptional craftsmanship. Not only has he shown me another use for quarter-sawn White Oak, he's delivered an awesome smoothing plane.
+      </p>
+      <p style="font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#5c524c;">
+        Stewart Crick
+      </p>
+    </div>
+
+    <!-- Secondary testimonials (stacked) -->
+    <div class="rv d1" style="flex:1;min-width:0;display:flex;flex-direction:column;gap:40px;">
+
+      <div>
+        <div class="zoom" style="height:200px;margin-bottom:24px;border-radius:2px;">
+          <img src="https://scottmeekwoodworks.com/wp-content/uploads/2015/04/Resin-Infused-Reclaimed-White-Oak-Smoother-Testimonial.jpg"
+               alt="Resin-infused reclaimed white oak smoother" loading="lazy">
+        </div>
+        <span style="font-family:'Barlow Condensed',sans-serif;font-size:2.6rem;line-height:.8;color:#c47c3a;opacity:.35;display:block;margin-bottom:6px;">"</span>
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;line-height:1.25;color:#e6ddd4;margin:0 0 8px;">
+          This is officially my favorite Jack plane. Poetry in planing.
+        </p>
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#5c524c;">
+          Shannon Rogers
+        </p>
+      </div>
+
+      <!-- Credibility stat block -->
+      <div style="background:#1c1916;padding:28px;border-radius:2px;border:1px solid rgba(196,124,58,.12);">
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:3rem;font-weight:800;color:#c47c3a;line-height:1;margin-bottom:4px;">10+</p>
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#e6ddd4;margin-bottom:8px;">Years Making Planes</p>
+        <p style="font-size:.85rem;color:#9e9088;line-height:1.6;">Building custom wood body planes from Leicester, NC since 2013. Every plane still shaped entirely by hand.</p><!-- verify: year -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 5: CLASSES
+     Layout family: full-width editorial band
+═══════════════════════════════════════════════════════════════ -->
+<section id="classes" style="background:#0e0c0b;">
+  <div style="display:flex;min-height:480px;">
+
+    <!-- Text half -->
+    <div class="sec-pad rv" style="padding:80px 64px 80px 48px;display:flex;flex-direction:column;justify-content:center;width:52%;background:#141210;">
+      <p style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#c47c3a;margin:0 0 12px;">Asheville, NC</p>
+      <h2 style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(2rem,3vw,3rem);font-weight:800;letter-spacing:-.01em;text-transform:uppercase;color:#e6ddd4;line-height:1.08;margin:0 0 18px;">
+        Learn to Make Your Own Planes
+      </h2>
+      <p class="d1 rv" style="font-size:.95rem;line-height:1.72;color:#9e9088;max-width:440px;margin:0 0 18px;">
+        Scott teaches week-long plane making classes in Asheville, NC. You leave with three finished planes and the skill to make more. Seats are limited and fill fast.
+      </p>
+      <p class="d2 rv" style="font-size:.95rem;line-height:1.72;color:#9e9088;max-width:440px;margin:0 0 32px;">
+        Classes cover layout, sawing, fitting, adjusting, and final tuning. No experience with planes required - just a willingness to pay attention to the wood.
+      </p>
+      <a href="https://scottmeekwoodworks.com/plane-making-classes/" class="btn-a rv d3" style="align-self:flex-start;">View Class Dates</a>
+    </div>
+
+    <!-- Image half -->
+    <div class="zoom" style="width:48%;flex-shrink:0;">
+      <img src="https://scottmeekwoodworks.com/wp-content/uploads/2015/03/hero-5.jpg"
+           alt="Plane making class Asheville NC" loading="lazy"
+           style="height:100%;min-height:440px;">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 6: CTA STRIP
+     Layout family: full-width CTA band
+═══════════════════════════════════════════════════════════════ -->
+<section style="background:#c47c3a;padding:64px 48px;">
+  <div class="rv" style="max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
+    <div>
+      <h2 style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;letter-spacing:-.01em;text-transform:uppercase;color:#0e0c0b;line-height:1.1;margin:0 0 8px;">
+        Want a Plane Built for Your Hands?
+      </h2>
+      <p style="font-size:.95rem;color:rgba(14,12,11,.65);margin:0;">Custom commissions open. 828.283.0796 or use the form.</p>
+    </div>
+    <a href="https://scottmeekwoodworks.com/contact/"
+       style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;color:#c47c3a;background:#0e0c0b;padding:14px 28px;display:inline-block;text-decoration:none;border-radius:2px;white-space:nowrap;transition:opacity .18s;"
+       onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
+      Get in Touch
+    </a>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════════ -->
+<footer style="background:#0e0c0b;border-top:1px solid rgba(196,124,58,.12);padding:56px 48px 36px;">
+  <div style="max-width:1200px;margin:0 auto;">
+
+    <!-- Footer columns -->
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:56px;">
+
+      <!-- Brand column -->
+      <div>
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#e6ddd4;margin:0 0 12px;">Scott Meek Woodworks</p>
+        <p style="font-size:.85rem;line-height:1.7;color:#5c524c;max-width:260px;margin:0 0 20px;">Hand-made wood body planes and woodworking classes in Leicester, NC.</p>
+        <p style="font-size:.85rem;color:#5c524c;">828.283.0796</p>
+      </div>
+
+      <!-- Planes column -->
+      <div>
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c47c3a;margin:0 0 16px;">Planes</p>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a href="https://scottmeekwoodworks.com/store/" style="font-size:.85rem;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">All Planes</a></li>
+          <li><a href="https://scottmeekwoodworks.com/custom-planes/" style="font-size:.85rem;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">Custom Orders</a></li>
+          <li><a href="https://scottmeekwoodworks.com/instructions-and-troubleshooting/" style="font-size:.85rem;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">Instructions</a></li>
+        </ul>
+      </div>
+
+      <!-- Classes column -->
+      <div>
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c47c3a;margin:0 0 16px;">Classes</p>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a href="https://scottmeekwoodworks.com/plane-making-classes/" style="font-size:.85rem;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">Plane Making</a></li>
+          <li><a href="https://scottmeekwoodworks.com/woodworking-classes-offered-in-asheville-nc/" style="font-size:.85rem;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">All Classes</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact column -->
+      <div>
+        <p style="font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c47c3a;margin:0 0 16px;">Contact</p>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a href="https://scottmeekwoodworks.com/contact/" style="font-size:.85rem;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">Inquiry Form</a></li>
+          <li><a href="https://www.instagram.com/smeekwoodworks/" style="font-size:.85rem;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">Instagram</a></li>
+          <li><a href="https://www.facebook.com/scottmeekwoodworks/" style="font-size:.85rem;color:#9e9088;text-decoration:none;transition:color .18s;" onmouseover="this.style.color='#e6ddd4'" onmouseout="this.style.color='#9e9088'">Facebook</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer base -->
+    <div style="border-top:1px solid rgba(196,124,58,.1);padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+      <p style="font-size:.78rem;color:#5c524c;">Scott Meek Woodworks, Leicester NC</p>
+      <p style="font-size:.78rem;color:#5c524c;">Prototype only - all photography from scottmeekwoodworks.com</p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════════════════════════ -->
+<script>
+  // Nav: add .stuck class on scroll using IntersectionObserver
+  const sentinel = document.createElement('div');
+  sentinel.style.cssText = 'position:absolute;top:80px;height:1px;width:1px;pointer-events:none;';
+  document.body.insertBefore(sentinel, document.body.firstChild);
+  const nav = document.getElementById('top-nav');
+  new IntersectionObserver(
+    ([e]) => nav.classList.toggle('stuck', !e.isIntersecting),
+    { threshold: 0 }
+  ).observe(sentinel);
+
+  // Scroll reveals via IntersectionObserver
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.rv').forEach(el => revealObserver.observe(el));
+</script>
+
+</body>
+</html>

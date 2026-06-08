@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highliner Custom Rods, Bend Oregon — Custom Spey, Fly, Salmon &amp; Steelhead Rods</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Step 6 Design Declarations
+    Page kind: redesign-overhaul
+    Audience: Serious fly fishers and spey casters fishing Pacific Northwest rivers for salmon,
+      steelhead, and trout. They own quality gear. They know the difference between factory
+      and custom. They pay premium prices for work that performs better than the rack.
+    Vibe: Performance craft for Pacific Northwest rivers
+    Scene sentence: A graphite spey rod laid across Deschutes River cobblestones at first light,
+      thread wrapping catching the amber glow, cold current out of focus in the background.
+      Forces: DARK background from the near-black river stones. No -- actually: first light
+      on pale stone with dark water behind. Forces LIGHT treatment with deep contrast anchor.
+    Chosen aesthetic family: light-olive-editorial — Pacific Northwest fly fishing heritage,
+      premium price point, craftsman's own description "works of performance art."
+      Not used in last 4 runs (only dark-amber-barlow in design_history).
+    Typography: DM Serif Display (headlines, editorial precision craft) + Inter 300/400 (body)
+    Accent extracted from photography: deep forest olive #3a5921 (Pacific Northwest river banks,
+      rod thread wrapping in forest tones — conflicts with the amber #c18002 of the existing
+      site; the photography drives this decision toward green over amber)
+    Corner radius: 2px throughout (sharp, precision instrument feel)
+    DESIGN_VARIANCE: 7
+    MOTION_INTENSITY: 4 (IntersectionObserver reveals only)
+    VISUAL_DENSITY: 4
+  -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            cream:    '#f5f1e8',
+            parchment:'#ede7d9',
+            espresso: '#1a1208',
+            olive:    '#3a5921',
+            'olive-mid': '#4d7830',
+            bark:     '#7a6a58',
+            stone:    '#a89880',
+          },
+          borderRadius: {
+            DEFAULT: '2px',
+            sm: '2px',
+            md: '2px',
+            lg: '2px',
+            xl: '2px',
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: #f5f1e8; color: #1a1208; }
+
+    .reveal        { opacity: 0; transform: translateY(24px);  transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal-left   { opacity: 0; transform: translateX(-28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right  { opacity: 0; transform: translateX(28px);  transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible,
+    .reveal-left.visible,
+    .reveal-right.visible { opacity: 1; transform: translate(0); }
+
+    .nav-link { font-size: 0.8125rem; font-weight: 400; color: #7a6a58; letter-spacing: 0.02em; transition: color 0.2s; }
+    .nav-link:hover { color: #3a5921; }
+
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #3a5921;
+    }
+
+    .stat-num { font-family: 'DM Serif Display', serif; font-size: 2.5rem; color: #3a5921; line-height: 1; }
+    .stat-label { font-size: 0.75rem; color: #a89880; margin-top: 0.35rem; }
+  </style>
+</head>
+
+<body class="font-sans antialiased">
+
+  <!-- ================================================================
+       NAV
+  ================================================================ -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-espresso/8">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between gap-8">
+
+      <a href="https://highlinercustomrods.com/" class="flex-shrink-0">
+        <img src="https://highlinercustomrods.com/wp-content/uploads/2016/09/highliner_custom_rods_logo_220x71b.png"
+             alt="Highliner Custom Rods"
+             class="h-7 w-auto">
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7">
+        <a href="https://highlinercustomrods.com/custom-fly-rods-and-spey-rods/" class="nav-link">Fly &amp; Spey</a>
+        <a href="https://highlinercustomrods.com/custom-hand-made-salmon-and-steelhead-rods/" class="nav-link">Salmon &amp; Steelhead</a>
+        <a href="https://highlinercustomrods.com/custom-hand-made-saltwater-rods/" class="nav-link">Saltwater</a>
+        <a href="https://highlinercustomrods.com/custom-hand-made-travel-rods/" class="nav-link">Travel</a>
+        <a href="https://highlinercustomrods.com/about-us/" class="nav-link">About</a>
+      </div>
+
+      <a href="https://highlinercustomrods.com/order/"
+         class="flex-shrink-0 bg-olive text-cream text-xs font-medium px-5 py-2.5 rounded hover:bg-olive-mid transition-colors">
+        Order a Rod
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- ================================================================
+       HERO — min-h-[100dvh], left-aligned, directional gradient
+  ================================================================ -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20 pt-20 overflow-hidden">
+
+    <div class="absolute inset-0">
+      <img src="https://highlinercustomrods.com/wp-content/uploads/2016/12/Gallery_Fly-Spey_NEW01_1.jpg"
+           alt="Highliner custom spey rod thread detail, Bend Oregon"
+           class="w-full h-full object-cover object-center">
+      <div class="absolute inset-0 bg-gradient-to-r from-espresso/85 via-espresso/55 to-espresso/10"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 w-full">
+      <div class="max-w-2xl">
+
+        <span class="eyebrow block mb-7 text-cream/60 reveal">Bend, Oregon</span>
+
+        <h1 class="font-serif text-cream leading-[1.06] mb-7 reveal"
+            style="font-size: clamp(2.8rem, 6vw, 5rem);">
+          Forty years.<br>One rod at a time.
+        </h1>
+
+        <p class="text-cream/75 text-lg leading-relaxed mb-10 max-w-lg reveal">
+          Custom spey rods, fly rods, and salmon rods built to your specifications.
+          Each one takes 30 hours or more to complete and ships worldwide.
+        </p>
+
+        <div class="flex flex-wrap gap-4 reveal">
+          <a href="https://highlinercustomrods.com/order/"
+             class="bg-olive text-cream px-8 py-3.5 text-sm font-medium rounded hover:bg-olive-mid transition-colors">
+            Start Your Order
+          </a>
+          <a href="https://highlinercustomrods.com/gallery-fly-rod-spey-rod/"
+             class="border border-cream/35 text-cream px-8 py-3.5 text-sm font-medium rounded hover:bg-cream/10 transition-colors">
+            View Gallery
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       PRIMARY PRODUCT SECTION
+       Asymmetric split: image left, numbered features right
+  ================================================================ -->
+  <section class="py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-12 lg:gap-20 items-center">
+
+        <!-- Image -->
+        <div class="reveal-left">
+          <img src="https://highlinercustomrods.com/wp-content/uploads/2016/09/Gallery_Fly-Spey_01_1.jpg"
+               alt="Custom fly rod cork grip and thread wrapping, Highliner Custom Rods"
+               class="w-full rounded object-cover"
+               style="aspect-ratio: 4/5;">
+        </div>
+
+        <!-- Numbered features -->
+        <div class="reveal-right">
+          <span class="eyebrow block mb-7">How every rod is built</span>
+
+          <h2 class="font-serif text-espresso leading-tight mb-12"
+              style="font-size: clamp(2rem, 3.5vw, 2.8rem);">
+            No two rods leave this shop the same.
+          </h2>
+
+          <div class="space-y-10">
+
+            <div class="flex gap-7">
+              <span class="font-serif text-olive text-2xl leading-none pt-0.5 flex-shrink-0 select-none">01</span>
+              <div>
+                <h3 class="text-espresso font-medium text-base mb-2">You choose every detail</h3>
+                <p class="text-bark text-sm leading-relaxed">
+                  Thread colors, grip shape, blank, components. We work through it together by phone or email until the specs are exactly what you want on the water.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-7">
+              <span class="font-serif text-olive text-2xl leading-none pt-0.5 flex-shrink-0 select-none">02</span>
+              <div>
+                <h3 class="text-espresso font-medium text-base mb-2">Finest materials only</h3>
+                <p class="text-bark text-sm leading-relaxed">
+                  CF Burkheimer, RL Winston, Sage, Orvis, and Talon blanks. Cork from Portugal, Superior Grade. No substitutions, no compromises on components.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-7">
+              <span class="font-serif text-olive text-2xl leading-none pt-0.5 flex-shrink-0 select-none">03</span>
+              <div>
+                <h3 class="text-espresso font-medium text-base mb-2">Numbered, named, shipped to you</h3>
+                <p class="text-bark text-sm leading-relaxed">
+                  Photos of your finished rod arrive before your final payment. Your name and specs go on before it ships, in a cloth bag and custom aluminum case.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       SECONDARY SECTION
+       Reversed split: casting performance angle (different from above)
+  ================================================================ -->
+  <section class="py-28 bg-parchment">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-12 lg:gap-20 items-center">
+
+        <!-- Content left -->
+        <div class="reveal-left order-2 lg:order-1">
+          <h2 class="font-serif text-espresso leading-tight mb-7"
+              style="font-size: clamp(2rem, 3.5vw, 2.8rem);">
+            Built to cast farther than the factory blank it came from.
+          </h2>
+
+          <p class="text-bark leading-relaxed mb-5">
+            Through a guide train modification developed over 40 years, every Highliner rod out-casts the factory version of the same blank. The exact distance added depends on the angler. The improvement is consistent.
+          </p>
+
+          <p class="text-bark leading-relaxed mb-10">
+            I fish these rivers myself. The Deschutes, the McKenzie, the Columbia. A spey rod for salmon and steelhead work on Oregon water is built from that experience, not from a catalog spec sheet.
+          </p>
+
+          <a href="https://highlinercustomrods.com/custom-fly-rods-and-spey-rods/"
+             class="inline-flex items-center gap-2 text-olive font-medium text-sm hover:gap-3 transition-all duration-200">
+            Fly &amp; Spey Rod Details
+            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Image right -->
+        <div class="reveal-right order-1 lg:order-2">
+          <img src="https://highlinercustomrods.com/wp-content/uploads/2016/09/Gallery_Salmon_Steelhead_05_1.jpg"
+               alt="Highliner custom salmon steelhead rod thread detail, Oregon"
+               class="w-full rounded object-cover"
+               style="aspect-ratio: 4/5;">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       GALLERY — layout break from zigzag, photography grid
+  ================================================================ -->
+  <section class="py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 reveal">
+        <h2 class="font-serif text-espresso leading-tight"
+            style="font-size: clamp(2rem, 3.5vw, 2.75rem); max-width: 28rem;">
+          Works of performance art.
+        </h2>
+        <p class="text-bark text-sm leading-relaxed max-w-sm">
+          Every rod in this gallery was built for a specific angler. Thread design, grip shape, and components chosen for the person who would fish it.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5">
+
+        <!-- Large feature image -->
+        <div class="col-span-2 row-span-2 reveal">
+          <img src="https://highlinercustomrods.com/wp-content/uploads/2016/12/Gallery_Fly-Spey_NEW01_2.jpg"
+               alt="Custom spey rod thread wrapping detail, Highliner Custom Rods Bend Oregon"
+               class="w-full h-full object-cover rounded"
+               style="aspect-ratio: 1;">
+        </div>
+
+        <div class="reveal">
+          <img src="https://highlinercustomrods.com/wp-content/uploads/2016/09/Gallery_Fly-Spey_02_1.jpg"
+               alt="Custom fly rod, Highliner"
+               class="w-full object-cover rounded"
+               style="aspect-ratio: 1;">
+        </div>
+        <div class="reveal">
+          <img src="https://highlinercustomrods.com/wp-content/uploads/2016/09/Gallery_Salmon_Steelhead_02_1.jpg"
+               alt="Custom salmon rod, Highliner Custom Rods"
+               class="w-full object-cover rounded"
+               style="aspect-ratio: 1;">
+        </div>
+        <div class="reveal">
+          <img src="https://highlinercustomrods.com/wp-content/uploads/2016/09/Gallery_Fly-Spey_03_1.jpg"
+               alt="Highliner custom spey rod close-up"
+               class="w-full object-cover rounded"
+               style="aspect-ratio: 1;">
+        </div>
+        <div class="reveal">
+          <img src="https://highlinercustomrods.com/wp-content/uploads/2016/09/Gallery_Salmon_Steelhead_03_1.jpg"
+               alt="Custom steelhead rod thread detail, Bend Oregon"
+               class="w-full object-cover rounded"
+               style="aspect-ratio: 1;">
+        </div>
+
+      </div>
+
+      <div class="mt-10 text-center reveal">
+        <a href="https://highlinercustomrods.com/gallery-fly-rod-spey-rod/"
+           class="inline-block border border-espresso/25 text-espresso text-xs font-medium px-10 py-3.5 rounded hover:border-olive hover:text-olive transition-colors tracking-wide uppercase"
+           style="letter-spacing: 0.1em;">
+          View All Galleries
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       TESTIMONIAL / CREDIBILITY
+       Real quote from site, business facts
+  ================================================================ -->
+  <section class="py-28 bg-espresso">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+        <!-- Quote + bio -->
+        <div class="reveal">
+          <span class="eyebrow block mb-8 text-cream/40">About the builder</span>
+
+          <blockquote class="mb-10">
+            <p class="font-serif italic text-cream/90 leading-relaxed mb-6"
+               style="font-size: clamp(1.25rem, 2vw, 1.6rem);">
+              "My passion lies in creating works of performance art which cannot be purchased from a manufacturer or mass producer."
+            </p>
+            <cite class="text-stone text-xs not-italic">Highliner Custom Rods, Bend Oregon</cite>
+          </blockquote>
+
+          <p class="text-cream/60 text-sm leading-relaxed mb-5">
+            Highliner Custom Rods is a one-person shop. Over 40 years of custom rod building, starting as a hobby and becoming a business. Every rod is built by one pair of hands.
+          </p>
+          <p class="text-cream/60 text-sm leading-relaxed">
+            25 years in the Pacific Northwest. Familiar with the Deschutes, the McKenzie, the Columbia, and the many fisheries those rivers hold. When not building, I'm fishing.
+          </p>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-6 mt-12 pt-10 border-t border-cream/10">
+            <div>
+              <div class="stat-num">40+</div>
+              <div class="stat-label">Years building</div>
+            </div>
+            <div>
+              <div class="stat-num">30+</div>
+              <div class="stat-label">Hours per rod</div>
+            </div>
+            <div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">One of a kind</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rod types + build details -->
+        <div class="reveal">
+          <h3 class="font-serif text-cream text-2xl mb-8">Rod types we build.</h3>
+
+          <div class="space-y-5">
+            <a href="https://highlinercustomrods.com/custom-fly-rods-and-spey-rods/"
+               class="flex items-start gap-5 group p-5 rounded border border-cream/8 hover:border-olive/50 hover:bg-cream/5 transition-all">
+              <div class="w-1 h-1 rounded-full bg-olive mt-2.5 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-cream text-sm font-medium mb-1 group-hover:text-olive transition-colors">Fly &amp; Spey Rods</h4>
+                <p class="text-cream/45 text-xs leading-relaxed">3-weight trout rods through full spey. Guide train modification for measurable added casting distance.</p>
+              </div>
+            </a>
+            <a href="https://highlinercustomrods.com/custom-hand-made-salmon-and-steelhead-rods/"
+               class="flex items-start gap-5 group p-5 rounded border border-cream/8 hover:border-olive/50 hover:bg-cream/5 transition-all">
+              <div class="w-1 h-1 rounded-full bg-olive mt-2.5 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-cream text-sm font-medium mb-1 group-hover:text-olive transition-colors">Salmon &amp; Steelhead</h4>
+                <p class="text-cream/45 text-xs leading-relaxed">Purpose-built for Pacific Northwest rivers. Designed by someone who fishes the same water you do.</p>
+              </div>
+            </a>
+            <a href="https://highlinercustomrods.com/custom-hand-made-saltwater-rods/"
+               class="flex items-start gap-5 group p-5 rounded border border-cream/8 hover:border-olive/50 hover:bg-cream/5 transition-all">
+              <div class="w-1 h-1 rounded-full bg-olive mt-2.5 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-cream text-sm font-medium mb-1 group-hover:text-olive transition-colors">Saltwater</h4>
+                <p class="text-cream/45 text-xs leading-relaxed">Built for big game and coastal species. Experience from light-tackle marlin tournaments on the Southern California coast.</p>
+              </div>
+            </a>
+            <a href="https://highlinercustomrods.com/custom-hand-made-travel-rods/"
+               class="flex items-start gap-5 group p-5 rounded border border-cream/8 hover:border-olive/50 hover:bg-cream/5 transition-all">
+              <div class="w-1 h-1 rounded-full bg-olive mt-2.5 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-cream text-sm font-medium mb-1 group-hover:text-olive transition-colors">Travel Rods</h4>
+                <p class="text-cream/45 text-xs leading-relaxed">Multi-piece rods that pack down without sacrificing action. Same build quality as a single-piece.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       CTA STRIP — bold full-width
+  ================================================================ -->
+  <section class="py-20 bg-olive">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 reveal">
+        <div>
+          <h2 class="font-serif text-cream text-3xl md:text-4xl mb-2">Ready to order your rod?</h2>
+          <p class="text-cream/65 text-sm">50% deposit to begin. Photos before your final payment. Ships worldwide.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+          <a href="tel:+15412807550"
+             class="bg-cream text-olive text-sm font-medium px-8 py-3.5 rounded hover:bg-parchment transition-colors text-center">
+            (541) 280-7550
+          </a>
+          <a href="https://highlinercustomrods.com/order/"
+             class="border border-cream/35 text-cream text-sm font-medium px-8 py-3.5 rounded hover:bg-cream/10 transition-colors text-center">
+            Order Form
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       FOOTER — 4 columns
+  ================================================================ -->
+  <footer class="bg-espresso border-t border-cream/8 pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
+
+        <div class="col-span-2 md:col-span-1">
+          <img src="https://highlinercustomrods.com/wp-content/uploads/2016/09/highliner_custom_rods_logo_220x71b.png"
+               alt="Highliner Custom Rods"
+               class="h-7 w-auto mb-4 opacity-70">
+          <p class="text-cream/35 text-xs leading-relaxed max-w-[14rem]">
+            World class custom fishing rods. Built one at a time in Bend, Oregon. Ships worldwide.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-cream/50 text-xs font-medium tracking-widest uppercase mb-5" style="letter-spacing: 0.14em;">Rods</h4>
+          <ul class="space-y-3 text-xs text-cream/40">
+            <li><a href="https://highlinercustomrods.com/custom-fly-rods-and-spey-rods/" class="hover:text-cream transition-colors">Fly &amp; Spey Rods</a></li>
+            <li><a href="https://highlinercustomrods.com/custom-hand-made-salmon-and-steelhead-rods/" class="hover:text-cream transition-colors">Salmon &amp; Steelhead</a></li>
+            <li><a href="https://highlinercustomrods.com/custom-hand-made-saltwater-rods/" class="hover:text-cream transition-colors">Saltwater Rods</a></li>
+            <li><a href="https://highlinercustomrods.com/custom-hand-made-travel-rods/" class="hover:text-cream transition-colors">Travel Rods</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-cream/50 text-xs font-medium tracking-widest uppercase mb-5" style="letter-spacing: 0.14em;">Gallery</h4>
+          <ul class="space-y-3 text-xs text-cream/40">
+            <li><a href="https://highlinercustomrods.com/gallery-fly-rod-spey-rod/" class="hover:text-cream transition-colors">Fly &amp; Spey Gallery</a></li>
+            <li><a href="https://highlinercustomrods.com/gallery-salmon-and-steelhead-rods/" class="hover:text-cream transition-colors">Salmon &amp; Steelhead Gallery</a></li>
+            <li><a href="https://highlinercustomrods.com/about-us/" class="hover:text-cream transition-colors">About</a></li>
+            <li><a href="https://highlinercustomrods.com/order/" class="hover:text-cream transition-colors">Order a Rod</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-cream/50 text-xs font-medium tracking-widest uppercase mb-5" style="letter-spacing: 0.14em;">Contact</h4>
+          <ul class="space-y-3 text-xs text-cream/40">
+            <li><a href="tel:+15412807550" class="hover:text-cream transition-colors">(541) 280-7550</a></li>
+            <li><a href="mailto:highliner@bendbroadband.com" class="hover:text-cream transition-colors">highliner@bendbroadband.com</a></li>
+            <li class="text-cream/25">Bend, Oregon</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-cream/8 pt-8 text-xs text-cream/25">
+        &copy;2016-2024 Highliner Custom Rods. Bend, Oregon.
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
