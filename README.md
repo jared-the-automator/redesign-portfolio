@@ -14,3 +14,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Highliner Custom Rods](https://jared-the-automator.github.io/redesign-portfolio/highlinercustomrods.com/) | Custom fly and spey rods | Bend, OR |
 | [Liberty Longrifles LLC](https://jared-the-automator.github.io/redesign-portfolio/libertylongrifles.com/) | Custom Kentucky longrifles | Wadesville, IN |
 | [Cat Tracks Wildlife Design](https://jared-the-automator.github.io/redesign-portfolio/cattrackswildlife.com/) | Trophy taxidermy | Broadus, MT |
+| [Wilderness Innovation](https://jared-the-automator.github.io/redesign-portfolio/wildernessinnovation.com/) | Ultralight survival gear | Harrisburg, UT |
