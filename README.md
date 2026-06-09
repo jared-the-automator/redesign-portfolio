@@ -26,3 +26,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Secor Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/secorfuneralhomes.com/) | Family funeral home | Willard, OH |
 | [Richardson Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/richardsonfuneralhomes.com/) | Family funeral home & cremation services | Perry, GA |
 | [Town & Country Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/townandcountryvet.net/) | Small animal veterinary clinic | Midland, TX |
+| [Endless Mountains Veterinary Center](https://jared-the-automator.github.io/redesign-portfolio/emvets.com/) | Mixed practice veterinary clinic | Athens, PA |

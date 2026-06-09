@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endless Mountains Veterinary Center | Mixed Practice Since 1917 | Athens, Rome, Montrose PA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'forest':      '#1a2e1a',
+            'forest-deep': '#0f1f0f',
+            'forest-mid':  '#243824',
+            'gold':        '#c9a55a',
+            'gold-light':  '#ddbf7a',
+            'bone':        '#f0ebe0',
+            'bone-dim':    '#c8bfaa',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body:    ['Lato', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { border-radius: 2px !important; }
+    body { font-family: 'Lato', sans-serif; background: #0f1f0f; }
+
+    .reveal        { opacity: 0; transform: translateY(28px);  transition: opacity .65s ease, transform .65s ease; }
+    .reveal-left   { opacity: 0; transform: translateX(-28px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal-right  { opacity: 0; transform: translateX(28px);  transition: opacity .65s ease, transform .65s ease; }
+    .reveal.in, .reveal-left.in, .reveal-right.in { opacity: 1; transform: none; }
+
+    .gold-rule { width: 48px; height: 2px; background: #c9a55a; }
+    .nav-bg    { background: rgba(15,31,15,.97); backdrop-filter: blur(8px); }
+  </style>
+</head>
+<body class="text-[#f0ebe0]">
+
+<!-- ── NAV ── -->
+<nav id="nav" class="fixed top-0 inset-x-0 z-50 py-4 px-6 lg:px-14 flex items-center justify-between transition-all duration-300">
+  <a href="/">
+    <img src="https://emvets.com/wp-content/uploads/2023/06/Endless-Mountains-Veterinary-Center-PC_logo1.png"
+         alt="Endless Mountains Veterinary Center" class="h-10">
+  </a>
+  <div class="hidden lg:flex items-center gap-8 text-xs font-body font-semibold tracking-widest text-[#c8bfaa] uppercase">
+    <a href="#large-animal" class="hover:text-[#c9a55a] transition-colors">Large Animal</a>
+    <a href="#services"     class="hover:text-[#c9a55a] transition-colors">Small Animal</a>
+    <a href="#history"      class="hover:text-[#c9a55a] transition-colors">Our History</a>
+    <a href="#locations"    class="hover:text-[#c9a55a] transition-colors">Locations</a>
+  </div>
+  <a href="tel:5708888387"
+     class="hidden lg:inline-flex items-center gap-2 border border-[#c9a55a] text-[#c9a55a] px-5 py-2.5 text-xs font-body font-semibold tracking-widest uppercase hover:bg-[#c9a55a] hover:text-[#0f1f0f] transition-all duration-200">
+    (570) 888-VETS
+  </a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="relative min-h-[100dvh] flex items-end" id="hero-section">
+  <div id="hero-sentinel" class="absolute top-0 h-px w-full pointer-events-none"></div>
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+       style="background-image:url('https://emvets.com/wp-content/uploads/2023/06/home-sec_2.png')"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-[#0f1f0f]/95 via-[#0f1f0f]/65 to-[#0f1f0f]/15"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0f1f0f]/80 via-transparent to-transparent"></div>
+
+  <div class="relative z-10 px-6 lg:px-20 pb-24 max-w-3xl">
+    <p class="text-[#c9a55a] text-[10px] font-body tracking-widest uppercase mb-5 reveal">
+      Athens · Rome · Montrose · Owego · Tunkhannock, PA
+    </p>
+    <h1 class="font-display text-5xl lg:text-7xl text-[#f0ebe0] leading-none mb-7 reveal" style="transition-delay:.1s">
+      Caring for the<br>
+      Endless Mountains<br>
+      <em class="text-[#c9a55a]">since 1917.</em>
+    </h1>
+    <p class="text-[#c8bfaa] text-lg font-body font-light leading-relaxed mb-9 max-w-xl reveal" style="transition-delay:.2s">
+      Mixed practice for farm animals, horses, and companion pets across five locations in northeastern Pennsylvania. A mobile large animal team that drives to your barn.
+    </p>
+    <div class="flex flex-wrap gap-4 reveal" style="transition-delay:.3s">
+      <a href="tel:5708888387"
+         class="bg-[#c9a55a] text-[#0f1f0f] px-9 py-4 font-body font-semibold tracking-widest text-xs uppercase hover:bg-[#ddbf7a] transition-colors">
+        Call (570) 888-VETS
+      </a>
+      <a href="#locations"
+         class="border border-[#f0ebe0]/30 text-[#f0ebe0] px-9 py-4 font-body font-semibold tracking-widest text-xs uppercase hover:border-[#c9a55a] hover:text-[#c9a55a] transition-colors">
+        Find a Location
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRIMARY: LARGE ANIMAL ── -->
+<section class="bg-[#0f1f0f]" id="large-animal">
+  <div class="grid lg:grid-cols-2 min-h-[640px]">
+    <div class="relative min-h-[420px] lg:min-h-0 overflow-hidden reveal-left">
+      <img src="https://emvets.com/large-animal/wp-content/uploads/sites/7/2023/08/home-sec-2.png"
+           alt="Large animal veterinary care on a northeastern Pennsylvania farm"
+           class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-[#0f1f0f]/20"></div>
+    </div>
+    <div class="px-10 lg:px-16 py-20 flex flex-col justify-center bg-[#1a2e1a] reveal-right">
+      <p class="text-[#c9a55a] text-[10px] tracking-widest uppercase font-body mb-5">Large Animal Practice</p>
+      <div class="gold-rule mb-6"></div>
+      <h2 class="font-display text-4xl lg:text-5xl text-[#f0ebe0] mb-10 leading-tight">
+        Farm calls across<br>a 50-mile radius.
+      </h2>
+      <div class="space-y-8">
+        <div class="flex gap-6">
+          <span class="font-display text-[#c9a55a] text-2xl leading-none mt-0.5 shrink-0 w-8">01</span>
+          <div>
+            <h3 class="text-[#f0ebe0] font-body font-semibold text-xs tracking-widest uppercase mb-2">Cattle and Dairy Herds</h3>
+            <p class="text-[#c8bfaa] font-body font-light leading-relaxed text-sm">Wellness programs, herd health, reproduction management, and emergency calls for beef and dairy operations across Bradford and Susquehanna counties.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <span class="font-display text-[#c9a55a] text-2xl leading-none mt-0.5 shrink-0 w-8">02</span>
+          <div>
+            <h3 class="text-[#f0ebe0] font-body font-semibold text-xs tracking-widest uppercase mb-2">Equine Services</h3>
+            <p class="text-[#c8bfaa] font-body font-light leading-relaxed text-sm">Lameness evaluation, Coggins testing, wellness and prevention, reproductive management, and nutritional consulting. We come to your facility.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <span class="font-display text-[#c9a55a] text-2xl leading-none mt-0.5 shrink-0 w-8">03</span>
+          <div>
+            <h3 class="text-[#f0ebe0] font-body font-semibold text-xs tracking-widest uppercase mb-2">Small Farm Animals</h3>
+            <p class="text-[#c8bfaa] font-body font-light leading-relaxed text-sm">Goats, sheep, pigs, and camelids. Both in-clinic evaluation and on-farm visits for surgery and long-term care.</p>
+          </div>
+        </div>
+      </div>
+      <a href="tel:5702477862"
+         class="mt-11 inline-flex items-center gap-4 text-[#c9a55a] font-body font-semibold text-xs tracking-widest uppercase hover:text-[#ddbf7a] transition-colors">
+        Large Animal: (570) 247-7862
+        <span class="flex-1 max-w-[3rem] h-px bg-[#c9a55a]"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECONDARY: COMPANION CARE (reversed) ── -->
+<section class="bg-[#1a2e1a]" id="services">
+  <div class="grid lg:grid-cols-2 min-h-[640px]">
+    <div class="px-10 lg:px-16 py-20 flex flex-col justify-center order-2 lg:order-1 reveal-left">
+      <p class="text-[#c9a55a] text-[10px] tracking-widest uppercase font-body mb-5">Small Animal Clinics</p>
+      <div class="gold-rule mb-6"></div>
+      <h2 class="font-display text-4xl lg:text-5xl text-[#f0ebe0] mb-10 leading-tight">
+        Full-service care for<br>dogs, cats, and exotics.
+      </h2>
+      <div class="space-y-8">
+        <div class="flex gap-6">
+          <span class="font-display text-[#c9a55a] text-2xl leading-none mt-0.5 shrink-0 w-8">01</span>
+          <div>
+            <h3 class="text-[#f0ebe0] font-body font-semibold text-xs tracking-widest uppercase mb-2">Wellness and Prevention</h3>
+            <p class="text-[#c8bfaa] font-body font-light leading-relaxed text-sm">Annual exams, vaccines, parasite prevention, screening bloodwork, and urinalysis. Routine visits find problems before they become urgent ones.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <span class="font-display text-[#c9a55a] text-2xl leading-none mt-0.5 shrink-0 w-8">02</span>
+          <div>
+            <h3 class="text-[#f0ebe0] font-body font-semibold text-xs tracking-widest uppercase mb-2">Surgery and Dentistry</h3>
+            <p class="text-[#c8bfaa] font-body font-light leading-relaxed text-sm">Soft tissue and orthopedic procedures, comprehensive dental care, and advanced diagnostics across multiple fully equipped surgical suites.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <span class="font-display text-[#c9a55a] text-2xl leading-none mt-0.5 shrink-0 w-8">03</span>
+          <div>
+            <h3 class="text-[#f0ebe0] font-body font-semibold text-xs tracking-widest uppercase mb-2">Exotics and Grooming</h3>
+            <p class="text-[#c8bfaa] font-body font-light leading-relaxed text-sm">Exotic animal care and professional grooming available at the Athens location. Call to schedule.</p>
+          </div>
+        </div>
+      </div>
+      <a href="tel:5708888387"
+         class="mt-11 inline-flex items-center gap-4 text-[#c9a55a] font-body font-semibold text-xs tracking-widest uppercase hover:text-[#ddbf7a] transition-colors">
+        Athens: (570) 888-VETS
+        <span class="flex-1 max-w-[3rem] h-px bg-[#c9a55a]"></span>
+      </a>
+    </div>
+    <div class="relative min-h-[420px] lg:min-h-0 overflow-hidden order-1 lg:order-2 reveal-right">
+      <img src="https://emvets.com/wp-content/uploads/2023/06/blog-img2.png"
+           alt="The heritage of Endless Mountains Veterinary Center"
+           class="absolute inset-0 w-full h-full object-cover object-top">
+      <div class="absolute inset-0 bg-[#1a2e1a]/20"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HISTORY (editorial full-width, breaks zigzag) ── -->
+<section class="bg-[#0f1f0f] py-28 px-6 lg:px-20" id="history">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal-left">
+        <p class="text-[#c9a55a] text-[10px] tracking-widest uppercase font-body mb-5">A Legacy in Northeastern Pennsylvania</p>
+        <div class="gold-rule mb-6"></div>
+        <h2 class="font-display text-4xl lg:text-5xl text-[#f0ebe0] leading-tight mb-7">
+          Started with a horse.<br>Built over a century.
+        </h2>
+        <p class="text-[#c8bfaa] font-body font-light leading-relaxed mb-5">
+          In 1916, Dr. Isaac V. Stoll graduated from the University of Pennsylvania School of Veterinary Medicine and returned to Rome. He hitched a road cart to his father's colt and drove out to treat a horse in the Orwell community. That was the first call. First-year fees: $1,500.
+        </p>
+        <p class="text-[#c8bfaa] font-body font-light leading-relaxed mb-5">
+          What started as horses became dairy herds as farms in Bradford County shifted. The practice expanded to a 50-mile radius. Partners joined, sons graduated from veterinary school, and the firm changed names. What did not change was driving out to the farm when something needed tending.
+        </p>
+        <p class="text-[#c8bfaa] font-body font-light leading-relaxed">
+          Five small animal clinics across northeastern Pennsylvania today. One mobile large animal team. Serving Bradford, Susquehanna, Sullivan, and Tioga counties for over 107 years.
+        </p>
+      </div>
+      <div class="reveal-right">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="overflow-hidden" style="aspect-ratio:1/1">
+            <img src="https://emvets.com/wp-content/uploads/2023/06/blog-img2.png"
+                 alt="Dr. I.V. Stoll, founder, Rome PA 1916"
+                 class="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-700">
+          </div>
+          <div class="overflow-hidden mt-10" style="aspect-ratio:1/1">
+            <img src="https://emvets.com/large-animal/wp-content/uploads/sites/7/2023/08/home-sec-2.png"
+                 alt="Large animal team on a farm visit"
+                 class="w-full h-full object-cover">
+          </div>
+          <div class="col-span-2 overflow-hidden" style="aspect-ratio:16/7">
+            <img src="https://emvets.com/wp-content/uploads/2023/06/home-sec_2.png"
+                 alt="Endless Mountains Veterinary Center team"
+                 class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS / CREDIBILITY ── -->
+<section class="bg-[#1a2e1a] py-24 px-6 lg:px-20" id="testimonials">
+  <div class="max-w-5xl mx-auto">
+    <div class="mb-14 reveal">
+      <p class="text-[#c9a55a] text-[10px] tracking-widest uppercase font-body mb-4">What Clients Say</p>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-7">
+      <div class="border border-[#c9a55a]/20 p-8 reveal">
+        <p class="text-[#c8bfaa] font-body font-light leading-relaxed text-sm mb-6">"The staff at Endless Mountains is totally top notch."</p>
+        <p class="text-[#c9a55a] font-body font-semibold text-xs tracking-wide">Karin A.</p>
+      </div>
+      <div class="border border-[#c9a55a]/20 p-8 reveal" style="transition-delay:.12s">
+        <p class="text-[#c8bfaa] font-body font-light leading-relaxed text-sm mb-6">"I thought I was going to have to put my dog down and they got him on the mend. They were nothing but sweet to me."</p>
+        <p class="text-[#c9a55a] font-body font-semibold text-xs tracking-wide">Tiffany P.</p>
+      </div>
+      <div class="border border-[#c9a55a]/20 p-8 reveal" style="transition-delay:.24s">
+        <p class="text-[#c8bfaa] font-body font-light leading-relaxed text-sm mb-6">"They have taken great care of all my 4-legged family. When our Sheltie went missing for 3 weeks, they helped us look for her."</p>
+        <p class="text-[#c9a55a] font-body font-semibold text-xs tracking-wide">Deb W.</p>
+      </div>
+    </div>
+    <div class="mt-16 pt-12 border-t border-[#c9a55a]/15 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center reveal">
+      <div>
+        <p class="font-display text-[#c9a55a] text-4xl mb-2">1917</p>
+        <p class="text-[#c8bfaa] text-[10px] font-body tracking-widest uppercase">Year Founded</p>
+      </div>
+      <div>
+        <p class="font-display text-[#c9a55a] text-4xl mb-2">5</p>
+        <p class="text-[#c8bfaa] text-[10px] font-body tracking-widest uppercase">Clinic Locations</p>
+      </div>
+      <div>
+        <p class="font-display text-[#c9a55a] text-4xl mb-2">50 mi</p>
+        <p class="text-[#c8bfaa] text-[10px] font-body tracking-widest uppercase">Large Animal Radius</p>
+      </div>
+      <div>
+        <p class="font-display text-[#c9a55a] text-4xl mb-2">107</p>
+        <p class="text-[#c8bfaa] text-[10px] font-body tracking-widest uppercase">Years Serving NE Pennsylvania</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LOCATIONS ── -->
+<section class="bg-[#0f1f0f] py-24 px-6 lg:px-20" id="locations">
+  <div class="max-w-5xl mx-auto">
+    <div class="mb-12 reveal">
+      <p class="text-[#c9a55a] text-[10px] tracking-widest uppercase font-body mb-4">Find a Location</p>
+      <div class="gold-rule mb-6"></div>
+      <h2 class="font-display text-4xl text-[#f0ebe0]">Five locations across northeastern Pennsylvania.</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
+      <div class="border border-[#c9a55a]/20 p-8 hover:border-[#c9a55a]/50 transition-colors">
+        <p class="text-[#c9a55a] font-body font-semibold text-xs tracking-widest uppercase mb-4">Athens</p>
+        <p class="text-[#c8bfaa] font-body font-light text-sm leading-relaxed">507 W Pine St<br>Athens, PA 18810</p>
+        <a href="tel:5708888387" class="block mt-4 text-[#f0ebe0] font-body font-semibold text-sm hover:text-[#c9a55a] transition-colors">(570) 888-VETS</a>
+        <p class="text-[#c8bfaa]/60 font-body font-light text-xs mt-2">Mon, Wed, Thu, Fri, Sat: 8am–5pm<br>Tue: 8am–8pm</p>
+      </div>
+      <div class="border border-[#c9a55a]/20 p-8 hover:border-[#c9a55a]/50 transition-colors">
+        <p class="text-[#c9a55a] font-body font-semibold text-xs tracking-widest uppercase mb-4">Rome</p>
+        <p class="text-[#c8bfaa] font-body font-light text-sm leading-relaxed">101 Vet Center Drive<br>Rome, PA 18837</p>
+        <a href="tel:5702472861" class="block mt-4 text-[#f0ebe0] font-body font-semibold text-sm hover:text-[#c9a55a] transition-colors">(570) 247-2861</a>
+      </div>
+      <div class="border border-[#c9a55a]/20 p-8 hover:border-[#c9a55a]/50 transition-colors">
+        <p class="text-[#c9a55a] font-body font-semibold text-xs tracking-widest uppercase mb-4">Montrose</p>
+        <p class="text-[#c8bfaa] font-body font-light text-sm leading-relaxed">23 S. Main Street<br>Montrose, PA 18801</p>
+        <a href="tel:5702783252" class="block mt-4 text-[#f0ebe0] font-body font-semibold text-sm hover:text-[#c9a55a] transition-colors">(570) 278-3252</a>
+      </div>
+      <div class="border border-[#c9a55a]/20 p-8 hover:border-[#c9a55a]/50 transition-colors">
+        <p class="text-[#c9a55a] font-body font-semibold text-xs tracking-widest uppercase mb-4">Owego</p>
+        <p class="text-[#c8bfaa] font-body font-light text-sm leading-relaxed">114 Southside Drive<br>Owego, NY 13827</p><!-- verify address -->
+        <a href="https://emvets.com/owego/" class="block mt-4 text-[#f0ebe0] font-body font-semibold text-sm hover:text-[#c9a55a] transition-colors">View Location</a>
+      </div>
+      <div class="border border-[#c9a55a]/20 p-8 hover:border-[#c9a55a]/50 transition-colors">
+        <p class="text-[#c9a55a] font-body font-semibold text-xs tracking-widest uppercase mb-4">Tunkhannock</p>
+        <p class="text-[#c8bfaa] font-body font-light text-sm leading-relaxed">Tunkhannock, PA</p><!-- verify address -->
+        <a href="https://emvets.com/tunkhannock/" class="block mt-4 text-[#f0ebe0] font-body font-semibold text-sm hover:text-[#c9a55a] transition-colors">View Location</a>
+      </div>
+      <div class="border border-[#c9a55a]/40 p-8 bg-[#243824]">
+        <p class="text-[#c9a55a] font-body font-semibold text-xs tracking-widest uppercase mb-4">Large Animal Mobile</p>
+        <p class="text-[#c8bfaa] font-body font-light text-sm leading-relaxed">Cattle, horses, goats, sheep, pigs, and camelids. Mobile clinic serving Bradford, Susquehanna, and surrounding counties.</p>
+        <a href="tel:5702477862" class="block mt-4 text-[#c9a55a] font-body font-semibold text-sm hover:text-[#ddbf7a] transition-colors">(570) 247-7862</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA STRIP ── -->
+<section class="bg-[#c9a55a] py-16 px-6 lg:px-20">
+  <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 reveal">
+    <div>
+      <h2 class="font-display text-3xl lg:text-4xl text-[#0f1f0f] leading-tight">Serving the Endless Mountains for over 107 years.</h2>
+      <p class="text-[#0f1f0f]/60 font-body font-light mt-2 text-sm">Farm calls, companion care, mixed practice. Call us today.</p>
+    </div>
+    <a href="tel:5708888387"
+       class="shrink-0 bg-[#0f1f0f] text-[#f0ebe0] px-10 py-4 font-body font-semibold tracking-widest text-xs uppercase hover:bg-[#1a2e1a] transition-colors">
+      (570) 888-VETS
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="bg-[#0f1f0f] border-t border-[#c9a55a]/15 py-16 px-6 lg:px-20">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <img src="https://emvets.com/wp-content/uploads/2023/06/Endless-Mountains-Veterinary-Center-PC_logo1.png"
+           alt="Endless Mountains Veterinary Center" class="h-10 mb-5 opacity-80">
+      <p class="text-[#c8bfaa] font-body font-light text-sm leading-relaxed">Mixed practice veterinary care in northeastern Pennsylvania. Farm calls, companion pets, and exotic animals since 1917.</p>
+      <a href="https://www.facebook.com/EMVETS"
+         class="inline-block mt-5 text-[#c8bfaa]/50 hover:text-[#c9a55a] font-body text-xs transition-colors">Facebook</a>
+    </div>
+    <div>
+      <p class="text-[#c9a55a] font-body font-semibold text-[10px] tracking-widest uppercase mb-5">Services</p>
+      <ul class="space-y-2.5 text-[#c8bfaa] font-body font-light text-sm">
+        <li><a href="#large-animal" class="hover:text-[#f0ebe0] transition-colors">Large Animal</a></li>
+        <li><a href="#services"     class="hover:text-[#f0ebe0] transition-colors">Dogs and Cats</a></li>
+        <li><a href="https://emvets.com/athens/exotics/"   class="hover:text-[#f0ebe0] transition-colors">Exotics</a></li>
+        <li><a href="https://emvets.com/athens/grooming/"  class="hover:text-[#f0ebe0] transition-colors">Grooming</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-[#c9a55a] font-body font-semibold text-[10px] tracking-widest uppercase mb-5">Locations</p>
+      <ul class="space-y-2.5 text-[#c8bfaa] font-body font-light text-sm">
+        <li><a href="https://emvets.com/athens/"      class="hover:text-[#f0ebe0] transition-colors">Athens</a></li>
+        <li><a href="https://emvets.com/rome/"        class="hover:text-[#f0ebe0] transition-colors">Rome</a></li>
+        <li><a href="https://emvets.com/montrose/"    class="hover:text-[#f0ebe0] transition-colors">Montrose</a></li>
+        <li><a href="https://emvets.com/owego/"       class="hover:text-[#f0ebe0] transition-colors">Owego</a></li>
+        <li><a href="https://emvets.com/tunkhannock/" class="hover:text-[#f0ebe0] transition-colors">Tunkhannock</a></li>
+        <li><a href="https://emvets.com/large-animal/" class="hover:text-[#f0ebe0] transition-colors">Large Animal</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-[#c9a55a] font-body font-semibold text-[10px] tracking-widest uppercase mb-5">Contact</p>
+      <ul class="space-y-4 text-[#c8bfaa] font-body font-light text-sm">
+        <li>
+          <a href="tel:5708888387" class="text-[#f0ebe0] hover:text-[#c9a55a] transition-colors">(570) 888-VETS</a>
+          <span class="block text-[#c8bfaa]/50 text-xs mt-0.5">Athens clinic</span>
+        </li>
+        <li>
+          <a href="tel:5702477862" class="text-[#f0ebe0] hover:text-[#c9a55a] transition-colors">(570) 247-7862</a>
+          <span class="block text-[#c8bfaa]/50 text-xs mt-0.5">Large animal mobile</span>
+        </li>
+        <li>
+          <a href="mailto:vets@emvets.com" class="hover:text-[#f0ebe0] transition-colors">vets@emvets.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-5xl mx-auto mt-12 pt-8 border-t border-[#c9a55a]/10">
+    <p class="text-[#c8bfaa]/30 font-body font-light text-xs">Endless Mountains Veterinary Center, PC. Athens, Rome, Montrose, Owego, Tunkhannock, Pennsylvania.</p>
+  </div>
+</footer>
+
+<script>
+  // Nav: use IntersectionObserver on sentinel at top of hero
+  const sentinel = document.getElementById('hero-sentinel');
+  const nav = document.getElementById('nav');
+  new IntersectionObserver(([e]) => {
+    nav.classList.toggle('nav-bg', !e.isIntersecting);
+  }, { threshold: 0 }).observe(sentinel);
+
+  // Section reveals
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+
+  // Trigger reveals already in viewport on load, observe the rest
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) { el.classList.add('in'); }
+    else { io.observe(el); }
+  });
+</script>
+</body>
+</html>
