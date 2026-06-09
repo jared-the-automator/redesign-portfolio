@@ -27,3 +27,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Richardson Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/richardsonfuneralhomes.com/) | Family funeral home & cremation services | Perry, GA |
 | [Town & Country Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/townandcountryvet.net/) | Small animal veterinary clinic | Midland, TX |
 | [Endless Mountains Veterinary Center](https://jared-the-automator.github.io/redesign-portfolio/emvets.com/) | Mixed practice veterinary clinic | Athens, PA |
+| [Omni Energy LLC](https://jared-the-automator.github.io/redesign-portfolio/myomnienergy.com/) | Heating oil & propane delivery | Watertown, CT |
