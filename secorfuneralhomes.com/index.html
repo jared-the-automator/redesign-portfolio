@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secor Funeral Home | Willard, Plymouth &amp; New Washington, Ohio</title>
+  <meta name="description" content="Family owned and operated since 1928. Gus Secor and his family serve Willard, Plymouth, and New Washington, Ohio with personalized funeral and memorial services.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            chalk:  '#F4F4F0',
+            dark:   '#1A1A18',
+            stone:  '#888880',
+            accent: '#7C3D28',
+            'accent-pale': '#F0E8E4',
+            surface: '#E9E9E4',
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    /* One corner-radius scale: 4px everywhere */
+    img, a.btn, .card, .stat-box { border-radius: 4px; }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-up.in { opacity: 1; transform: translateY(0); }
+
+    .delay-1 { transition-delay: 0.12s; }
+    .delay-2 { transition-delay: 0.24s; }
+    .delay-3 { transition-delay: 0.36s; }
+
+    /* Nav state: transparent over hero, chalk when scrolled */
+    #site-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      transition: background 0.25s, box-shadow 0.25s;
+    }
+    #site-nav.scrolled {
+      background: #F4F4F0;
+      box-shadow: 0 1px 0 rgba(26,26,24,0.08);
+    }
+    #site-nav.scrolled .nav-link { color: #888880; }
+    #site-nav.scrolled .nav-brand { color: #1A1A18; }
+    #site-nav.scrolled .nav-cta { background: #7C3D28; color: #fff; }
+
+    .nav-brand { color: #1A1A18; }
+    .nav-link  { color: #888880; }
+  </style>
+</head>
+
+<body class="font-body bg-chalk text-dark antialiased">
+
+  <!-- ============================================================
+       1. NAV
+       ============================================================ -->
+  <nav id="site-nav">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="nav-brand font-display text-lg font-bold tracking-tight">Secor Funeral Home</a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#history"   class="nav-link text-sm font-medium hover:text-dark transition-colors">Our History</a>
+        <a href="#locations" class="nav-link text-sm font-medium hover:text-dark transition-colors">Locations</a>
+        <a href="https://www.secorfuneralhomes.com/pre-planning/" class="nav-link text-sm font-medium hover:text-dark transition-colors">Pre-Planning</a>
+        <a href="https://www.secorfuneralhomes.com/obituaries/" class="nav-link text-sm font-medium hover:text-dark transition-colors">Obituaries</a>
+        <a href="tel:4199332801"
+           class="nav-cta btn bg-accent text-white text-sm font-medium px-5 py-2.5 hover:opacity-90 transition-opacity">
+          Call 419-933-2801
+        </a>
+      </div>
+
+      <!-- Mobile: phone only -->
+      <a href="tel:4199332801"
+         class="md:hidden btn bg-accent text-white text-sm font-medium px-4 py-2 hover:opacity-90 transition-opacity">
+        Call Now
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       2. HERO
+       ============================================================ -->
+  <section id="hero"
+           class="relative min-h-[100dvh] flex items-center"
+           style="
+             background-image: url('https://www.secorfuneralhomes.com/wp-content/uploads/2015/03/willard_large-300x171.jpg');
+             background-size: cover;
+             background-position: center right;
+           ">
+
+    <!-- Directional gradient: chalk left, transparent right -->
+    <div class="absolute inset-0"
+         style="background: linear-gradient(to right, #F4F4F0 48%, rgba(244,244,240,0.82) 68%, rgba(244,244,240,0.18) 100%);"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pt-24 pb-20">
+      <div class="max-w-[520px]">
+
+        <!-- Location tag -->
+        <p class="text-xs font-medium tracking-widest uppercase text-stone mb-7">
+          Willard, Ohio
+        </p>
+
+        <!-- Headline: 2 lines max, left-aligned, no centering -->
+        <h1 class="font-display text-5xl md:text-6xl text-dark leading-[1.1] mb-7">
+          Three generations.<br>Same three Ohio towns.
+        </h1>
+
+        <!-- Subtext: 20 words max -->
+        <p class="text-base text-stone leading-relaxed mb-10 max-w-[400px]">
+          Gus Secor's family has served Willard, Plymouth, and New Washington since Raymond and Lillian opened in 1928.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap gap-4">
+          <a href="tel:4199332801"
+             class="btn bg-accent text-white text-sm font-medium px-7 py-3.5 hover:opacity-90 transition-opacity">
+            Call 419-933-2801
+          </a>
+          <a href="#history"
+             class="btn border border-dark text-dark text-sm font-medium px-7 py-3.5 hover:bg-dark hover:text-chalk transition-colors">
+            Our History
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       3. PRIMARY SECTION: Services (Gus photo left, numbered features right)
+       ============================================================ -->
+  <section class="py-28 bg-chalk">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- Image: Gus Secor -->
+        <div class="fade-up">
+          <img
+            src="https://www.secorfuneralhomes.com/wp-content/uploads/2015/03/gus_secor-300x201.jpg"
+            alt="Gus Secor, third-generation funeral director at Secor Funeral Home, Willard Ohio"
+            class="w-full object-cover object-top"
+            style="max-height: 420px; border-radius: 4px;">
+        </div>
+
+        <!-- Numbered features -->
+        <div class="fade-up delay-1">
+          <p class="text-xs font-medium tracking-widest uppercase text-accent mb-5">What We Provide</p>
+          <h2 class="font-display text-4xl text-dark leading-tight mb-14">
+            Care from first call<br>to final farewell
+          </h2>
+
+          <div class="space-y-10">
+
+            <div class="flex gap-7">
+              <span class="font-display text-3xl text-stone/50 leading-none flex-shrink-0 w-10">01</span>
+              <div>
+                <h3 class="font-medium text-dark mb-2">Traditional and Memorial Services</h3>
+                <p class="text-sm text-stone leading-relaxed">
+                  Full funeral services, graveside ceremonies, and memorial gatherings tailored to your family's wishes and traditions.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-7">
+              <span class="font-display text-3xl text-stone/50 leading-none flex-shrink-0 w-10">02</span>
+              <div>
+                <h3 class="font-medium text-dark mb-2">Pre-Arrangement Planning</h3>
+                <p class="text-sm text-stone leading-relaxed">
+                  Make your arrangements now and spare your family those decisions later. The Secor staff will walk you through every step, no pressure.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-7">
+              <span class="font-display text-3xl text-stone/50 leading-none flex-shrink-0 w-10">03</span>
+              <div>
+                <h3 class="font-medium text-dark mb-2">Three Locations, One Family</h3>
+                <p class="text-sm text-stone leading-relaxed">
+                  Willard, Plymouth, and New Washington. All three are Secor-run, with the same staff relationships your family may have had for decades.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       4. SECONDARY SECTION: History (reversed split, founders right)
+       ============================================================ -->
+  <section id="history" class="py-28 bg-surface">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- Text: left -->
+        <div class="fade-up md:order-1">
+          <p class="text-xs font-medium tracking-widest uppercase text-accent mb-5">Since 1928</p>
+          <h2 class="font-display text-4xl text-dark leading-tight mb-9">
+            The only locally owned family funeral home in Willard
+          </h2>
+
+          <div class="space-y-5 text-sm text-stone leading-relaxed">
+            <p>
+              E. Raymond and Lillian Secor opened the first location in 1928. Their son Tom joined the business in the 1950s, and the New Washington home was added around the same time. The Plymouth location came in 1973.
+            </p>
+            <p>
+              Gus Secor, Raymond and Lillian's grandson, has been directing since 1983. He's worked four decades of Huron County families through some of the hardest days of their lives. His daughter Madie completed her internship in 2022.
+            </p>
+            <p>
+              While corporate chains have acquired much of the funeral industry across Ohio, Secor has stayed independent, family-run, and local. That matters to the families who call at 2 a.m.
+            </p>
+          </div>
+
+          <!-- Credibility stats -->
+          <div class="mt-12 pt-8 border-t border-stone/20 flex gap-12">
+            <div>
+              <p class="font-display text-4xl text-dark">1928</p>
+              <p class="text-xs text-stone mt-1.5">Founded in Willard</p>
+            </div>
+            <div>
+              <p class="font-display text-4xl text-dark">4th</p><!-- verify: Madie Secor's generation count -->
+              <p class="text-xs text-stone mt-1.5">Generation now training</p>
+            </div>
+            <div>
+              <p class="font-display text-4xl text-dark">3</p>
+              <p class="text-xs text-stone mt-1.5">Ohio locations</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder portraits: right -->
+        <div class="fade-up delay-1 md:order-2">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <img
+                src="https://www.secorfuneralhomes.com/wp-content/uploads/2015/03/raymond_secor-214x300.jpg"
+                alt="E. Raymond Secor, founder of Secor Funeral Home in Willard, Ohio"
+                class="w-full object-cover"
+                style="border-radius: 4px; max-height: 340px; object-position: top;">
+              <p class="text-xs text-stone mt-2.5">E. Raymond Secor</p>
+            </div>
+            <div>
+              <img
+                src="https://www.secorfuneralhomes.com/wp-content/uploads/2015/03/lillian_secor-214x300.jpg"
+                alt="Lillian Secor, co-founder of Secor Funeral Home in Willard, Ohio"
+                class="w-full object-cover"
+                style="border-radius: 4px; max-height: 340px; object-position: top;">
+              <p class="text-xs text-stone mt-2.5">Lillian Secor</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       5. LOCATION GALLERY (layout break from splits)
+       ============================================================ -->
+  <section id="locations" class="py-28 bg-chalk">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="max-w-lg mb-14 fade-up">
+        <p class="text-xs font-medium tracking-widest uppercase text-accent mb-5">Three Locations</p>
+        <h2 class="font-display text-4xl text-dark leading-tight">
+          Serving Huron and Richland counties
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Willard -->
+        <div class="fade-up">
+          <div class="overflow-hidden mb-5" style="border-radius: 4px; height: 200px;">
+            <img
+              src="https://www.secorfuneralhomes.com/wp-content/uploads/2015/03/willard_large-300x171.jpg"
+              alt="Secor Funeral Home Willard Ohio location, 202 West Maple Street"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <h3 class="font-medium text-dark mb-2">Willard</h3>
+          <p class="text-sm text-stone leading-relaxed">
+            202 W. Maple St., Willard, OH 44890<br>
+            <a href="tel:4199332801" class="text-accent hover:underline">419-933-2801</a>
+          </p>
+        </div>
+
+        <!-- Plymouth -->
+        <div class="fade-up delay-1">
+          <div class="overflow-hidden mb-5" style="border-radius: 4px; height: 200px;">
+            <img
+              src="https://www.secorfuneralhomes.com/wp-content/uploads/2015/03/plymouth_large-300x171.jpg"
+              alt="Secor Funeral Home Plymouth Ohio location, 35 Railroad Street"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <h3 class="font-medium text-dark mb-2">Plymouth</h3>
+          <p class="text-sm text-stone leading-relaxed">
+            35 Railroad St., Plymouth, OH 44865<br>
+            <a href="tel:4196874431" class="text-accent hover:underline">419-687-4431</a>
+          </p>
+        </div>
+
+        <!-- New Washington -->
+        <div class="fade-up delay-2">
+          <div class="overflow-hidden mb-5" style="border-radius: 4px; height: 200px;">
+            <img
+              src="https://www.secorfuneralhomes.com/wp-content/uploads/2015/03/new_washington_large-300x171.jpg"
+              alt="Secor Funeral Home New Washington Ohio location, 414 East Main Street"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <h3 class="font-medium text-dark mb-2">New Washington</h3>
+          <p class="text-sm text-stone leading-relaxed">
+            414 E. Main St., New Washington, OH 44854<br>
+            <a href="tel:4194922174" class="text-accent hover:underline">419-492-2174</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       6. CREDIBILITY / QUOTE SECTION
+       ============================================================ -->
+  <section class="py-28 bg-dark">
+    <div class="max-w-4xl mx-auto px-6 text-center fade-up">
+
+      <p class="font-display text-3xl md:text-4xl text-chalk leading-relaxed mb-8">
+        "The only locally owned family funeral home in Willard."
+      </p>
+      <p class="text-xs text-stone uppercase tracking-widest">Secor Funeral Home, Willard, Ohio</p>
+
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-14">
+
+        <div class="stat-box">
+          <p class="font-display text-5xl text-chalk">98</p>
+          <p class="text-xs text-stone mt-2 leading-snug">Years in<br>Willard</p>
+        </div>
+
+        <div class="stat-box">
+          <p class="font-display text-5xl text-chalk">3</p>
+          <p class="text-xs text-stone mt-2 leading-snug">Secor<br>generations</p>
+        </div>
+
+        <div class="stat-box">
+          <p class="font-display text-5xl text-chalk">3</p>
+          <p class="text-xs text-stone mt-2 leading-snug">Ohio<br>locations</p>
+        </div>
+
+        <div class="stat-box">
+          <p class="font-display text-5xl text-chalk">24/7</p>
+          <p class="text-xs text-stone mt-2 leading-snug">Available<br>to call</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       7. CTA STRIP
+       ============================================================ -->
+  <section class="py-20 bg-accent">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 fade-up">
+
+        <div>
+          <h2 class="font-display text-3xl text-white mb-2">Available any hour of the day</h2>
+          <p class="text-accent-pale text-sm">Call any location. A Secor family member or staff will answer.</p>
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="tel:4199332801"
+             class="btn bg-white text-accent text-sm font-medium px-6 py-3.5 hover:bg-chalk transition-colors">
+            Willard: 419-933-2801
+          </a>
+          <a href="tel:4196874431"
+             class="btn border border-white/60 text-white text-sm font-medium px-6 py-3.5 hover:bg-white hover:text-accent transition-colors">
+            Plymouth: 419-687-4431
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       8. FOOTER
+       ============================================================ -->
+  <footer class="py-16 bg-dark">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-4 gap-12 mb-14">
+
+        <!-- Brand -->
+        <div class="md:col-span-1">
+          <p class="font-display text-xl text-chalk mb-4">Secor Funeral Home</p>
+          <p class="text-xs text-stone/70 leading-relaxed">
+            Family owned and operated in Huron County, Ohio since 1928. Three generations of the Secor family.
+          </p>
+          <p class="text-xs text-stone/50 mt-4">
+            <a href="mailto:secorfuneralhomes@frontier.com" class="hover:text-chalk transition-colors">
+              secorfuneralhomes@frontier.com
+            </a>
+          </p>
+        </div>
+
+        <!-- Three locations -->
+        <div>
+          <p class="text-xs font-medium uppercase tracking-widest text-stone mb-5">Locations</p>
+          <div class="space-y-4 text-xs text-stone/60 leading-relaxed">
+            <div>
+              <p class="text-stone/90 font-medium mb-0.5">Willard</p>
+              <p>202 W. Maple St., OH 44890</p>
+              <a href="tel:4199332801" class="hover:text-chalk transition-colors">419-933-2801</a>
+            </div>
+            <div>
+              <p class="text-stone/90 font-medium mb-0.5">Plymouth</p>
+              <p>35 Railroad St., OH 44865</p>
+              <a href="tel:4196874431" class="hover:text-chalk transition-colors">419-687-4431</a>
+            </div>
+            <div>
+              <p class="text-stone/90 font-medium mb-0.5">New Washington</p>
+              <p>414 E. Main St., OH 44854</p>
+              <a href="tel:4194922174" class="hover:text-chalk transition-colors">419-492-2174</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <p class="text-xs font-medium uppercase tracking-widest text-stone mb-5">Services</p>
+          <ul class="space-y-2 text-xs text-stone/60">
+            <li><a href="https://www.secorfuneralhomes.com/pre-planning/" class="hover:text-chalk transition-colors">Pre-Planning</a></li>
+            <li><a href="https://www.secorfuneralhomes.com/obituaries/" class="hover:text-chalk transition-colors">Obituaries</a></li>
+            <li><a href="https://www.secorfuneralhomes.com/staff/" class="hover:text-chalk transition-colors">Our Staff</a></li>
+            <li><a href="https://www.secorfuneralhomes.com/history/" class="hover:text-chalk transition-colors">Our History</a></li>
+            <li><a href="https://www.secorfuneralhomes.com/directions/" class="hover:text-chalk transition-colors">Directions</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <p class="text-xs font-medium uppercase tracking-widest text-stone mb-5">Contact</p>
+          <ul class="space-y-2 text-xs text-stone/60">
+            <li>
+              <a href="mailto:secorfuneralhomes@frontier.com" class="hover:text-chalk transition-colors">
+                secorfuneralhomes@frontier.com
+              </a>
+            </li>
+            <li>
+              <a href="https://www.secorfuneralhomes.com/cemeteries/" class="hover:text-chalk transition-colors">Local Cemeteries</a>
+            </li>
+            <li>
+              <a href="https://www.secorfuneralhomes.com/florists/" class="hover:text-chalk transition-colors">Florists</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-8">
+        <p class="text-xs text-stone/40">Copyright 2026 Secor Funeral Home. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS: IntersectionObserver only, no scroll listeners
+       ============================================================ -->
+  <script>
+    // Nav bg state: observe hero section
+    const nav = document.getElementById('site-nav');
+    const hero = document.getElementById('hero');
+
+    const navObs = new IntersectionObserver(
+      ([entry]) => {
+        nav.classList.toggle('scrolled', !entry.isIntersecting);
+      },
+      { threshold: 0.05 }
+    );
+    if (hero) navObs.observe(hero);
+
+    // Fade-up on scroll reveal
+    const fadeObs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.fade-up').forEach(el => fadeObs.observe(el));
+  </script>
+
+</body>
+</html>
