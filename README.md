@@ -25,3 +25,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Eagle Hardware Farm & Ranch](https://jared-the-automator.github.io/redesign-portfolio/eaglehardwarefarmandranch.com/) | Hardware & farm supply | Royse City, TX |
 | [Secor Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/secorfuneralhomes.com/) | Family funeral home | Willard, OH |
 | [Richardson Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/richardsonfuneralhomes.com/) | Family funeral home & cremation services | Perry, GA |
+| [Town & Country Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/townandcountryvet.net/) | Small animal veterinary clinic | Midland, TX |

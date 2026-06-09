@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Town &amp; Country Veterinary Hospital | Midland, TX Veterinarian Since 1995</title>
+  <meta name="description" content="Full-service veterinary care in Midland, TX. Routine wellness through complex orthopedic surgery. Family-owned since 1995. Call (432) 520-4427.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            amber: { DEFAULT: '#d97706', light: '#fbbf24', dark: '#b45309' },
+            ink: { DEFAULT: '#0a0a0a', 800: '#141414', 700: '#1e1e1e', 600: '#2a2a2a', 500: '#3a3a3a' },
+          },
+          fontFamily: {
+            display: ['"Barlow Condensed"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          borderRadius: { DEFAULT: '4px', sm: '4px', md: '4px', lg: '4px', xl: '4px', '2xl': '4px' },
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { background: #0a0a0a; color: #f0f0f0; font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Barlow Condensed', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-[#f0f0f0]">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-[#2a2a2a]">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display font-800 text-xl tracking-wide text-[#f0f0f0] uppercase" style="font-weight:800;">T&amp;C Vet Hospital</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[#a8a8a8]">
+        <a href="#services" class="hover:text-[#f0f0f0] transition-colors">Services</a>
+        <a href="#about" class="hover:text-[#f0f0f0] transition-colors">About</a>
+        <a href="#team" class="hover:text-[#f0f0f0] transition-colors">Our Doctors</a>
+        <a href="#contact" class="hover:text-[#f0f0f0] transition-colors">Contact</a>
+      </div>
+      <a href="tel:4325204427" class="bg-[#d97706] text-[#0a0a0a] text-sm font-semibold px-4 py-2 rounded hover:bg-[#b45309] transition-colors whitespace-nowrap"
+         style="border-radius:4px;">(432) 520-4427</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img
+        src="https://townandcountryvet.net/wp-content/uploads/2024/07/DSC0309-2-scaled.jpg"
+        alt="Town and Country Veterinary Hospital team in Midland TX"
+        class="w-full h-full object-cover object-center"
+      >
+      <div class="absolute inset-0" style="background: linear-gradient(105deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.75) 45%, rgba(10,10,10,0.35) 100%);"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 pt-24 pb-20 w-full">
+      <div class="max-w-xl">
+        <p class="font-display text-[#d97706] text-sm tracking-[0.2em] uppercase font-700 mb-5" style="font-weight:700;">Midland, TX</p>
+        <h1 class="font-display text-[#f0f0f0] leading-none mb-6" style="font-size: clamp(3rem, 7vw, 5.5rem); font-weight:800; line-height:0.95;">
+          Precision Veterinary Care.<br>Since 1995.
+        </h1>
+        <p class="text-[#c0c0c0] text-lg mb-10 leading-relaxed max-w-md">
+          Full-service care for dogs and cats in Midland and the Permian Basin. Routine wellness through complex orthopedic surgery.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="bg-[#d97706] text-[#0a0a0a] font-semibold px-7 py-3.5 hover:bg-[#b45309] transition-colors text-sm" style="border-radius:4px;">Schedule an Appointment</a>
+          <a href="tel:4325204427" class="border border-[#f0f0f0]/30 text-[#f0f0f0] font-medium px-7 py-3.5 hover:border-[#f0f0f0]/60 transition-colors text-sm" style="border-radius:4px;">(432) 520-4427</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES (asymmetric split: image LEFT, numbered RIGHT) -->
+  <section id="services" class="py-24 bg-[#0f0f0f]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
+        <!-- Image left -->
+        <div class="reveal-left relative overflow-hidden" style="min-height:520px;">
+          <img
+            src="https://townandcountryvet.net/wp-content/uploads/2019/03/Dr.-Hartzoge-utilizing-the-surgical-laser-technology-300x300.jpg"
+            alt="Dr. Hartzoge at the surgical laser in the Midland TX veterinary clinic"
+            class="w-full h-full object-cover"
+            style="min-height:520px;"
+          >
+          <div class="absolute inset-0" style="background: linear-gradient(to right, transparent 60%, #0f0f0f 100%);"></div>
+        </div>
+        <!-- Numbered features right -->
+        <div class="reveal-right bg-[#141414] p-12 flex flex-col justify-center">
+          <p class="font-display text-[#d97706] text-xs tracking-[0.2em] uppercase font-700 mb-8" style="font-weight:700;">What We Offer</p>
+          <div class="space-y-10">
+            <div class="flex gap-6">
+              <span class="font-display text-[#d97706] text-4xl leading-none flex-shrink-0" style="font-weight:800;">01</span>
+              <div>
+                <h3 class="font-display text-[#f0f0f0] text-2xl mb-2" style="font-weight:800;">Routine &amp; Preventive</h3>
+                <p class="text-[#909090] text-sm leading-relaxed">Vaccinations, dental care, spay and neuter, parasite control, wound care. The basics done right, every visit.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-[#d97706] text-4xl leading-none flex-shrink-0" style="font-weight:800;">02</span>
+              <div>
+                <h3 class="font-display text-[#f0f0f0] text-2xl mb-2" style="font-weight:800;">Diagnostics &amp; Imaging</h3>
+                <p class="text-[#909090] text-sm leading-relaxed">Digital X-ray, ultrasound, full blood analysis, urinalysis, otoscope and endoscope. NuQ cancer screening for hemangiosarcoma and lymphoma.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-[#d97706] text-4xl leading-none flex-shrink-0" style="font-weight:800;">03</span>
+              <div>
+                <h3 class="font-display text-[#f0f0f0] text-2xl mb-2" style="font-weight:800;">Surgical &amp; Orthopedic</h3>
+                <p class="text-[#909090] text-sm leading-relaxed">CO2 laser or traditional techniques. Cruciate ligament repair (TTA RAPID, TightRope). Fracture repair. Patella luxation. MLS laser therapy for pain and recovery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE STORY (reversed split: text LEFT, image RIGHT) -->
+  <section id="about" class="py-24 bg-[#0a0a0a]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
+        <!-- Text left -->
+        <div class="reveal-left bg-[#141414] p-12 flex flex-col justify-center order-2 lg:order-1">
+          <p class="font-display text-[#d97706] text-xs tracking-[0.2em] uppercase font-700 mb-6" style="font-weight:700;">31 Years in Midland</p>
+          <h2 class="font-display text-[#f0f0f0] text-5xl mb-6 leading-none" style="font-weight:800;">The practice Midland has trusted since before the millennium.</h2>
+          <p class="text-[#909090] leading-relaxed mb-6">
+            Dr. Riordan Hartzoge established Town &amp; Country Veterinary Hospital in 1995 after completing his Doctorate of Veterinary Medicine at Texas A&amp;M. He built a practice that handles routine care and advanced surgical cases in the same building, so your dog never gets referred across town.
+          </p>
+          <p class="text-[#909090] leading-relaxed mb-8">
+            His daughter, Dr. Nicole Hartzoge Janik, joined the practice in 2022. Three licensed doctors. One location. Orthopedic surgery, ultrasonography, and the day-to-day care that keeps a family's pets healthy for years.
+          </p>
+          <div class="flex gap-6">
+            <div>
+              <p class="font-display text-[#d97706] text-4xl" style="font-weight:800;">31</p>
+              <p class="text-[#707070] text-xs uppercase tracking-wider mt-1">Years open</p>
+            </div>
+            <div class="border-l border-[#2a2a2a] pl-6">
+              <p class="font-display text-[#d97706] text-4xl" style="font-weight:800;">3</p>
+              <p class="text-[#707070] text-xs uppercase tracking-wider mt-1">Licensed doctors</p>
+            </div>
+            <div class="border-l border-[#2a2a2a] pl-6">
+              <p class="font-display text-[#d97706] text-4xl" style="font-weight:800;">4x</p>
+              <p class="text-[#707070] text-xs uppercase tracking-wider mt-1">Reader's Choice Gold</p>
+            </div>
+          </div>
+        </div>
+        <!-- Image right -->
+        <div class="reveal-right relative overflow-hidden order-1 lg:order-2" style="min-height:480px;">
+          <img
+            src="https://townandcountryvet.net/wp-content/uploads/2022/10/wL9rnzzI-e1665887518824.jpeg"
+            alt="Doctors at Town and Country Veterinary Hospital Midland TX"
+            class="w-full h-full object-cover"
+            style="min-height:480px;"
+          >
+          <div class="absolute inset-0" style="background: linear-gradient(to left, transparent 60%, #0a0a0a 100%);"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION (layout break from zigzag) -->
+  <section id="team" class="py-24 bg-[#0f0f0f]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-14 reveal">
+        <h2 class="font-display text-[#f0f0f0] text-5xl mb-3" style="font-weight:800;">Our Doctors</h2>
+        <p class="text-[#707070] text-base max-w-lg">Three vets, one practice. Same building for routine checkups and surgical cases alike.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Dr. Hartzoge -->
+        <div class="reveal bg-[#141414] p-8" style="border-radius:4px;">
+          <div class="w-20 h-20 mb-5 overflow-hidden" style="border-radius:4px;">
+            <img
+              src="https://townandcountryvet.net/wp-content/uploads/2022/10/DBAjxrsX.jpeg"
+              alt="Dr. Riordan Hartzoge veterinarian owner"
+              class="w-full h-full object-cover"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div style="display:none; width:80px; height:80px; background:#1e1e1e; align-items:center; justify-content:center;">
+              <span class="font-display text-[#d97706] text-2xl" style="font-weight:800;">RH</span>
+            </div>
+          </div>
+          <h3 class="font-display text-[#f0f0f0] text-2xl mb-1" style="font-weight:800;">Dr. Riordan Hartzoge</h3>
+          <p class="text-[#d97706] text-xs uppercase tracking-wider mb-4 font-medium">Veterinarian, Owner</p>
+          <p class="text-[#808080] text-sm leading-relaxed">Texas A&amp;M DVM, Class of 1993. Founded T&amp;CVH in 1995. Specialty: orthopedic surgery. Midland native who built the practice around the kind of care he'd want for his own dogs.</p>
+        </div>
+        <!-- Dr. Lee -->
+        <div class="reveal bg-[#141414] p-8" style="border-radius:4px; transition-delay:0.1s;">
+          <div class="w-20 h-20 mb-5 overflow-hidden" style="border-radius:4px;">
+            <img
+              src="https://townandcountryvet.net/wp-content/uploads/2022/10/WPz-E9Zq.jpeg"
+              alt="Dr. Laura Lee veterinarian"
+              class="w-full h-full object-cover"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div style="display:none; width:80px; height:80px; background:#1e1e1e; align-items:center; justify-content:center;">
+              <span class="font-display text-[#d97706] text-2xl" style="font-weight:800;">LL</span>
+            </div>
+          </div>
+          <h3 class="font-display text-[#f0f0f0] text-2xl mb-1" style="font-weight:800;">Dr. Laura Lee</h3>
+          <p class="text-[#d97706] text-xs uppercase tracking-wider mb-4 font-medium">Veterinarian</p>
+          <p class="text-[#808080] text-sm leading-relaxed">University of Missouri DVM, 2012. 25 years in veterinary medicine. Specialty: ultrasonography. Additional training from Iowa State and Illinois College of Veterinary Medicine.</p>
+        </div>
+        <!-- Dr. Janik -->
+        <div class="reveal bg-[#141414] p-8" style="border-radius:4px; transition-delay:0.2s;">
+          <div class="w-20 h-20 mb-5 overflow-hidden" style="border-radius:4px;">
+            <img
+              src="https://townandcountryvet.net/wp-content/uploads/2022/10/WnyXAnrz.jpeg"
+              alt="Dr. Nicole Hartzoge Janik veterinarian owner"
+              class="w-full h-full object-cover"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div style="display:none; width:80px; height:80px; background:#1e1e1e; align-items:center; justify-content:center;">
+              <span class="font-display text-[#d97706] text-2xl" style="font-weight:800;">NJ</span>
+            </div>
+          </div>
+          <h3 class="font-display text-[#f0f0f0] text-2xl mb-1" style="font-weight:800;">Dr. Nicole Hartzoge Janik</h3>
+          <p class="text-[#d97706] text-xs uppercase tracking-wider mb-4 font-medium">Veterinarian, Owner</p>
+          <p class="text-[#808080] text-sm leading-relaxed">Texas A&amp;M BS Biomedical Sciences. Ross University DVM, Class of 2022. Midland High graduate who came home to practice with her father. Joined T&amp;CVH in October 2022.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL + CREDIBILITY -->
+  <section class="py-24 bg-[#0a0a0a]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <!-- Testimonial -->
+        <div class="reveal">
+          <div class="relative bg-[#141414] p-10" style="border-radius:4px;">
+            <span class="font-display text-[#d97706] text-8xl leading-none absolute top-4 left-8 opacity-30" style="font-weight:800; line-height:1;">"</span>
+            <p class="text-[#d0d0d0] text-xl leading-relaxed relative z-10 mt-6 mb-8">
+              Hands down the best vet in Midland and Odessa! They have cared for our two dogs for over 6 years. Just great people and very patient. I would recommend Dr. H and Dr. Lee to anyone.
+            </p>
+            <p class="text-[#707070] text-sm">Verified patient, Midland TX</p>
+          </div>
+        </div>
+        <!-- Credibility facts -->
+        <div class="reveal space-y-6">
+          <h3 class="font-display text-[#f0f0f0] text-3xl mb-6" style="font-weight:800;">Why Midland keeps coming back.</h3>
+          <div class="flex items-start gap-4 bg-[#141414] p-6" style="border-radius:4px;">
+            <div class="w-2 h-2 rounded-full bg-[#d97706] mt-2 flex-shrink-0"></div>
+            <div>
+              <p class="text-[#f0f0f0] font-medium mb-1">Reader's Choice Gold 2021, 2023, 2024</p>
+              <p class="text-[#707070] text-sm">Voted best veterinarian in Midland Reporter-Telegram four of the last five years.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 bg-[#141414] p-6" style="border-radius:4px;">
+            <div class="w-2 h-2 rounded-full bg-[#d97706] mt-2 flex-shrink-0"></div>
+            <div>
+              <p class="text-[#f0f0f0] font-medium mb-1">BBB Accredited Business</p>
+              <p class="text-[#707070] text-sm">A+ rating with the Better Business Bureau, Austin and Central Texas region.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 bg-[#141414] p-6" style="border-radius:4px;">
+            <div class="w-2 h-2 rounded-full bg-[#d97706] mt-2 flex-shrink-0"></div>
+            <div>
+              <p class="text-[#f0f0f0] font-medium mb-1">Advanced Surgical Capability On-Site</p>
+              <p class="text-[#707070] text-sm">CO2 laser surgery, MLS laser therapy, NuQ cancer screening, and full orthopedic repair. No referrals out of town for most procedures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATIENT PHOTO FULL-WIDTH -->
+  <section class="relative overflow-hidden" style="height:380px;">
+    <img
+      src="https://townandcountryvet.net/wp-content/uploads/2019/03/Patient-after-having-MLS-Laser-Therapy-300x300.jpg"
+      alt="Patient recovering after MLS laser therapy at Town and Country Veterinary Hospital"
+      class="w-full h-full object-cover"
+      style="object-position: center 30%;"
+    >
+    <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.4) 50%, rgba(10,10,10,0.8) 100%);"></div>
+    <div class="absolute inset-0 flex items-center">
+      <div class="max-w-7xl mx-auto px-6 w-full">
+        <p class="font-display text-[#f0f0f0] text-4xl md:text-5xl max-w-lg leading-tight reveal" style="font-weight:800;">MLS Laser Therapy. Pain relief without the surgery recovery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="bg-[#d97706] py-16">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 reveal">
+      <div>
+        <h2 class="font-display text-[#0a0a0a] text-4xl mb-2" style="font-weight:800;">Ready to make an appointment?</h2>
+        <p class="text-[#3a1f00] text-base">Serving Midland, Odessa, and the Permian Basin since 1995.</p>
+      </div>
+      <div class="flex flex-wrap gap-4 flex-shrink-0">
+        <a href="tel:4325204427" class="bg-[#0a0a0a] text-[#f0f0f0] font-display text-2xl font-800 px-8 py-4 hover:bg-[#1e1e1e] transition-colors" style="font-weight:800; border-radius:4px;">(432) 520-4427</a>
+        <a href="#contact" class="border-2 border-[#0a0a0a] text-[#0a0a0a] font-semibold px-8 py-4 hover:bg-[#0a0a0a]/10 transition-colors text-sm" style="border-radius:4px;">Send a Message</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="bg-[#0a0a0a] border-t border-[#1e1e1e] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-14">
+        <!-- Column 1: About -->
+        <div>
+          <p class="font-display text-[#f0f0f0] text-lg mb-4 uppercase tracking-wide" style="font-weight:800;">Town &amp; Country Vet</p>
+          <p class="text-[#707070] text-sm leading-relaxed mb-6">Family-owned veterinary hospital in Midland, TX. Routine care through orthopedic surgery, all under one roof since 1995.</p>
+          <p class="text-[#505050] text-xs">4x Reader's Choice Gold Award Winner</p>
+        </div>
+        <!-- Column 2: Services -->
+        <div>
+          <p class="font-display text-[#d97706] text-sm uppercase tracking-[0.15em] mb-4" style="font-weight:700;">Services</p>
+          <ul class="space-y-2 text-[#808080] text-sm">
+            <li>Wellness Exams &amp; Vaccinations</li>
+            <li>Dental Care</li>
+            <li>Digital X-ray &amp; Ultrasound</li>
+            <li>Orthopedic Surgery</li>
+            <li>CO2 Laser Surgery</li>
+            <li>MLS Laser Therapy</li>
+            <li>Spay &amp; Neuter</li>
+            <li>Microchipping</li>
+          </ul>
+        </div>
+        <!-- Column 3: Contact -->
+        <div>
+          <p class="font-display text-[#d97706] text-sm uppercase tracking-[0.15em] mb-4" style="font-weight:700;">Contact</p>
+          <div class="space-y-3 text-sm">
+            <p class="text-[#c0c0c0]">3408 W. Loop 250 N<br>Midland, TX 79707</p>
+            <a href="tel:4325204427" class="block text-[#d97706] hover:text-[#fbbf24] transition-colors font-medium">(432) 520-4427</a>
+            <a href="mailto:office@townandcountryvet.net" class="block text-[#808080] hover:text-[#f0f0f0] transition-colors">office@townandcountryvet.net</a>
+            <div class="pt-2 text-[#707070]">
+              <p>Mon-Fri: 8:30am - 12:00pm, 2:00pm - 6:00pm</p>
+              <p>Saturday: 8:30am - 12:00pm</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-[#1e1e1e] pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-[#505050] text-xs">&copy; 2026 Town &amp; Country Veterinary Hospital. All rights reserved.</p>
+        <p class="text-[#505050] text-xs">3408 W. Loop 250 N, Midland, TX 79707 | (432) 520-4427</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
