@@ -15,3 +15,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Liberty Longrifles LLC](https://jared-the-automator.github.io/redesign-portfolio/libertylongrifles.com/) | Custom Kentucky longrifles | Wadesville, IN |
 | [Cat Tracks Wildlife Design](https://jared-the-automator.github.io/redesign-portfolio/cattrackswildlife.com/) | Trophy taxidermy | Broadus, MT |
 | [Wilderness Innovation](https://jared-the-automator.github.io/redesign-portfolio/wildernessinnovation.com/) | Ultralight survival gear | Harrisburg, UT |
+| [WaterDog Guide Service](https://jared-the-automator.github.io/redesign-portfolio/waterdogguideservice.com/) | Fishing charters | Beaufort, NC |
