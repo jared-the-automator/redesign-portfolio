@@ -19,3 +19,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [R&R Trap Sales & Service](https://jared-the-automator.github.io/redesign-portfolio/rrtraps.com/) | Sporting clays equipment | Devine, TX |
 | [McGee Creek Pack Station](https://jared-the-automator.github.io/redesign-portfolio/mcgeecreekpackstation.com/) | High Sierra mule pack trips | Crowley Lake, CA |
 | [Dean Meckes Charters](https://jared-the-automator.github.io/redesign-portfolio/deanmeckes.com/) | Smallmouth bass and walleye guide | Clayton, NY |
+| [Viking Log Furniture](https://jared-the-automator.github.io/redesign-portfolio/vikinglogfurniture.com/) | Handmade log and rustic furniture | St. Joseph, MN |

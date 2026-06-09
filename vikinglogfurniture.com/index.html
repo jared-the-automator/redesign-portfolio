@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Log Furniture | Handmade in St. Joseph, MN | Viking Log Furniture</title>
+  <meta name="description" content="Viking Log Furniture hand-crafts rustic log beds, barnwood dining tables, pool tables, and kitchen cabinets at our St. Joseph, MN workshop. Est. 1979. Lifetime warranty included.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest:      '#0C1A0A',
+            'forest-mid':'#111F0F',
+            'forest-lit': '#1C2E19',
+            gold:        '#B08830',
+            'gold-hi':   '#C9A040',
+            bone:        '#EDE8D8',
+            'bone-dim':  '#8A8470',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { border-radius: 2px !important; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { background: #0C1A0A; color: #EDE8D8; font-family: 'Inter', system-ui, sans-serif; }
+
+    /* Reveal animations — IntersectionObserver only, no scroll listener */
+    .rv  { opacity: 0; transform: translateY(26px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .rv.in { opacity: 1; transform: none; }
+
+    /* Nav glass on scroll */
+    #nav.scrolled { background: rgba(12,26,10,0.97); border-bottom: 1px solid #1C2E19; }
+
+    /* Feature number style */
+    .num { font-family: 'Playfair Display', Georgia, serif; font-size: 2.8rem; line-height: 1; color: #B08830; font-weight: 700; min-width: 3rem; }
+
+    /* Gallery hover */
+    .gal-item img { transition: transform 0.55s ease; }
+    .gal-item:hover img { transform: scale(1.04); }
+    .gal-item .gal-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(12,26,10,0.85) 0%, transparent 100%); }
+
+    /* Stat number */
+    .stat-val { font-family: 'Playfair Display', Georgia, serif; font-size: 3.5rem; font-weight: 700; line-height: 1; color: #B08830; }
+  </style>
+</head>
+
+<body class="bg-forest font-sans">
+
+  <!-- ================================================
+       NAV
+  ================================================ -->
+  <nav id="nav" class="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-6 md:px-14 py-4 transition-all duration-300">
+    <a href="https://vikinglogfurniture.com/" class="font-display text-bone text-lg font-bold tracking-wide" aria-label="Viking Log Furniture homepage">
+      Viking Log Furniture
+    </a>
+    <ul class="hidden md:flex items-center gap-7 list-none m-0 p-0">
+      <li><a href="https://vikinglogfurniture.com/rustic-bedroom-furniture/" class="text-bone-dim hover:text-bone text-sm font-medium transition-colors duration-200">Bedroom</a></li>
+      <li><a href="https://vikinglogfurniture.com/rustic-dining-room-furniture/" class="text-bone-dim hover:text-bone text-sm font-medium transition-colors duration-200">Dining</a></li>
+      <li><a href="https://vikinglogfurniture.com/pool-tables-and-game-room/" class="text-bone-dim hover:text-bone text-sm font-medium transition-colors duration-200">Game Room</a></li>
+      <li><a href="https://vikinglogfurniture.com/about/" class="text-bone-dim hover:text-bone text-sm font-medium transition-colors duration-200">About</a></li>
+      <li>
+        <a href="https://vikinglogfurniture.com/contact-us/" class="bg-gold hover:bg-gold-hi text-forest text-sm font-semibold px-5 py-2 transition-colors duration-200">
+          Request a Quote
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ================================================
+       HERO
+  ================================================ -->
+  <section
+    class="relative min-h-[100dvh] flex items-center"
+    style="
+      background-image: url('https://vikinglogfurniture.com/wp-content/uploads/2019/04/slide1_op.jpg');
+      background-size: cover;
+      background-position: center 40%;
+    "
+    aria-label="Viking Log Furniture — Handmade log and barnwood furniture since 1979"
+  >
+    <div
+      class="absolute inset-0"
+      style="background: linear-gradient(90deg, rgba(12,26,10,0.94) 0%, rgba(12,26,10,0.74) 52%, rgba(12,26,10,0.22) 100%);"
+    ></div>
+
+    <div class="relative z-10 px-6 md:px-16 max-w-2xl pt-20">
+      <p class="text-gold text-xs font-semibold tracking-widest uppercase mb-5 rv">St. Joseph, Minnesota</p>
+
+      <h1 class="font-display text-5xl md:text-6xl xl:text-7xl text-bone leading-[1.08] mb-6 rv">
+        Handmade Log Furniture<br>
+        <span style="color: #B08830;">Built Since 1979</span>
+      </h1>
+
+      <p class="text-bone-dim text-lg max-w-md mb-9 rv">
+        Pine, barnwood, and sawtooth hickory crafted to order in our Minnesota shop.
+        Lifetime warranty on every piece we make.
+      </p>
+
+      <div class="flex flex-wrap gap-4 rv">
+        <a
+          href="https://vikinglogfurniture.com/product-category/"
+          class="bg-gold hover:bg-gold-hi text-forest font-semibold px-8 py-3 transition-colors duration-200"
+        >
+          Browse Collections
+        </a>
+        <a
+          href="https://vikinglogfurniture.com/contact-us/"
+          class="border border-bone text-bone hover:bg-bone hover:text-forest px-8 py-3 font-semibold transition-colors duration-200"
+        >
+          Get a Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 2 — BEDROOM COLLECTION
+       Asymmetric split: image left, numbered features right
+  ================================================ -->
+  <section class="py-24 px-6 md:px-14 bg-forest" aria-label="Log bedroom furniture collection">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+      <div class="rv">
+        <img
+          src="https://vikinglogfurniture.com/wp-content/uploads/2020/06/RUSTIC-BEDROOM-FURNITURE.jpg"
+          alt="Rustic pine log bedroom set with Northwoods log bed and barnwood dresser, handmade in St. Joseph MN"
+          class="w-full object-cover"
+          style="aspect-ratio: 4 / 3;"
+          loading="lazy"
+        >
+      </div>
+
+      <div>
+        <p class="text-gold text-xs font-semibold tracking-widest uppercase mb-4 rv">The Bedroom Collection</p>
+        <h2 class="font-display text-4xl text-bone mb-9 rv">Log Beds Built to Last a Generation</h2>
+
+        <div class="space-y-8">
+          <div class="flex gap-5 rv">
+            <span class="num">01</span>
+            <div>
+              <h3 class="text-bone font-semibold mb-1 text-base">Four distinct styles</h3>
+              <p class="text-bone-dim text-sm leading-relaxed">Wilderness Log, Northwoods Log, Barnwood, and Sawtooth Hickory. Each available in twin through king with bunk and under-bed drawer options.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 rv">
+            <span class="num">02</span>
+            <div>
+              <h3 class="text-bone font-semibold mb-1 text-base">Built to work, not just look good</h3>
+              <p class="text-bone-dim text-sm leading-relaxed">Solid Maple dovetail drawer boxes, side-mount full-extension roller slides rated for 100 pounds. Kiln-dried pine throughout.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 rv">
+            <span class="num">03</span>
+            <div>
+              <h3 class="text-bone font-semibold mb-1 text-base">Ships from stock, or custom in 3 weeks</h3>
+              <p class="text-bone-dim text-sm leading-relaxed">Most pieces ship from our Minnesota warehouse the next business day. Custom dimensions and configurations take 3 weeks.</p>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://vikinglogfurniture.com/rustic-bedroom-furniture/"
+          class="inline-block mt-8 text-gold text-sm font-semibold hover:text-gold-hi transition-colors duration-200 rv"
+        >
+          See All Bedroom Furniture &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 3 — BRAND STORY
+       Reversed split: story left, shop photo right
+  ================================================ -->
+  <section class="py-24 px-6 md:px-14 bg-forest-mid" aria-label="About Viking Log Furniture">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+      <div class="order-2 md:order-1">
+        <h2 class="font-display text-4xl text-bone mb-6 rv">A Minnesota Manufacturer That Will Never Be a Factory</h2>
+        <p class="text-bone-dim mb-4 leading-relaxed rv">
+          In 1979, we started building log bedroom furniture in a small shop outside St. Joseph.
+          Today that same workshop manufactures 14 bed styles, dining sets, pool tables, and kitchen
+          cabinets. Every piece still ships from the same address.
+        </p>
+        <p class="text-bone-dim mb-9 leading-relaxed rv">
+          We hand-select every log, control every step from raw pine to finished piece, and back
+          the result with a lifetime warranty because we stand behind what we build. Custom
+          dimensions and configurations are always welcome.
+        </p>
+        <blockquote class="mb-8 rv">
+          <p class="font-display text-xl text-bone italic mb-2 leading-snug">
+            "We will never become a factory for mass production."
+          </p>
+          <cite class="text-bone-dim text-sm not-italic">Mike Legatt, President</cite>
+        </blockquote>
+        <a
+          href="https://vikinglogfurniture.com/about/"
+          class="inline-block text-gold text-sm font-semibold hover:text-gold-hi transition-colors duration-200 rv"
+        >
+          About the Shop &rarr;
+        </a>
+      </div>
+
+      <div class="order-1 md:order-2 rv">
+        <img
+          src="https://vikinglogfurniture.com/wp-content/uploads/2018/12/stc0831bivikingindustries2.jpg"
+          alt="Viking Log Furniture manufacturing workshop floor in St. Joseph, Minnesota"
+          class="w-full object-cover"
+          style="aspect-ratio: 4 / 3;"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 4 — GALLERY
+       Breaks the split-section pattern. 4-up grid.
+  ================================================ -->
+  <section class="py-24 px-6 md:px-14 bg-forest" aria-label="Furniture collections gallery">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="mb-10 rv">
+        <h2 class="font-display text-4xl text-bone mb-3">The Collections</h2>
+        <p class="text-bone-dim max-w-lg">
+          Every category manufactured in-house. Minnesota pine, reclaimed barnwood, and
+          hand-peeled hickory, all backed by a lifetime warranty.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <a href="https://vikinglogfurniture.com/rustic-dining-room-furniture/" class="gal-item relative overflow-hidden rv block">
+          <img
+            src="https://vikinglogfurniture.com/wp-content/uploads/2020/06/RUSTIC-DINING-ROOM-FURNITURE.jpg"
+            alt="Rustic log dining table and chairs, handmade in Minnesota"
+            class="w-full object-cover"
+            style="aspect-ratio: 1;"
+            loading="lazy"
+          >
+          <div class="gal-label">
+            <p class="text-bone text-sm font-semibold">Dining Room</p>
+          </div>
+        </a>
+        <a href="https://vikinglogfurniture.com/pool-tables-and-game-room/" class="gal-item relative overflow-hidden rv block">
+          <img
+            src="https://vikinglogfurniture.com/wp-content/uploads/2021/10/POOL-TABLES-GAME-ROOM.jpg"
+            alt="Handmade rustic log pool table in barnwood finish, Viking Log Furniture"
+            class="w-full object-cover"
+            style="aspect-ratio: 1;"
+            loading="lazy"
+          >
+          <div class="gal-label">
+            <p class="text-bone text-sm font-semibold">Pool Tables</p>
+          </div>
+        </a>
+        <a href="https://vikinglogfurniture.com/kitchen-and-bathroom-cabinets/" class="gal-item relative overflow-hidden rv block">
+          <img
+            src="https://vikinglogfurniture.com/wp-content/uploads/2020/06/KITCHEN-BATHROOM-CABINETS.jpg"
+            alt="Rustic log kitchen cabinets and bathroom vanities, custom built in Minnesota"
+            class="w-full object-cover"
+            style="aspect-ratio: 1;"
+            loading="lazy"
+          >
+          <div class="gal-label">
+            <p class="text-bone text-sm font-semibold">Kitchen</p>
+          </div>
+        </a>
+        <a href="https://vikinglogfurniture.com/rustic-living-room-furniture/" class="gal-item relative overflow-hidden rv block">
+          <img
+            src="https://vikinglogfurniture.com/wp-content/uploads/2020/06/RUSTIC-LIVING-ROOM-FURNITURE.jpg"
+            alt="Rustic barnwood living room furniture, log sofa tables and chairs"
+            class="w-full object-cover"
+            style="aspect-ratio: 1;"
+            loading="lazy"
+          >
+          <div class="gal-label">
+            <p class="text-bone text-sm font-semibold">Living Room</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="mt-8 text-center rv">
+        <a
+          href="https://vikinglogfurniture.com/product-category/"
+          class="inline-block border border-gold text-gold hover:bg-gold hover:text-forest px-8 py-3 text-sm font-semibold transition-colors duration-200"
+        >
+          View All Collections
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 5 — CREDIBILITY
+       Stats + three commitment cards
+  ================================================ -->
+  <section class="py-24 px-6 md:px-14 bg-forest-mid" aria-label="Why Viking Log Furniture">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        <div class="text-center rv">
+          <p class="stat-val">1979</p>
+          <p class="text-bone-dim text-sm mt-2">Established in Minnesota</p>
+        </div>
+        <div class="text-center rv">
+          <p class="stat-val">14</p>
+          <p class="text-bone-dim text-sm mt-2">Bed styles in production <!-- verify --></p>
+        </div>
+        <div class="text-center rv">
+          <p class="stat-val">3 wk</p>
+          <p class="text-bone-dim text-sm mt-2">Custom order lead time</p>
+        </div>
+        <div class="text-center rv">
+          <p class="stat-val">&infin;</p>
+          <p class="text-bone-dim text-sm mt-2">Lifetime warranty included</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="border border-forest-lit p-7 rv">
+          <p class="text-gold text-xs font-semibold tracking-widest uppercase mb-3">Lifetime Warranty</p>
+          <p class="text-bone font-medium leading-relaxed">Every piece Viking manufactures ships with a lifetime warranty. Not a limited guarantee. If it breaks under normal use, we fix it.</p>
+        </div>
+        <div class="border border-forest-lit p-7 rv">
+          <p class="text-gold text-xs font-semibold tracking-widest uppercase mb-3">BBB Accredited</p>
+          <p class="text-bone font-medium leading-relaxed">Viking Log Furniture holds BBB accreditation. Most furniture retailers selling "rustic" pieces online do not.</p>
+        </div>
+        <div class="border border-forest-lit p-7 rv">
+          <p class="text-gold text-xs font-semibold tracking-widest uppercase mb-3">Custom Orders</p>
+          <p class="text-bone font-medium leading-relaxed">Different dimensions, non-standard finishes, and custom configurations are available on any piece. Custom pieces ship in 3 weeks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 6 — CTA STRIP
+  ================================================ -->
+  <section class="py-20 px-6 md:px-14" style="background-color: #B08830;" aria-label="Contact Viking Log Furniture">
+    <div class="max-w-3xl mx-auto text-center rv">
+      <h2 class="font-display text-4xl text-forest mb-4">Ready to furnish your cabin or lodge?</h2>
+      <p class="text-forest text-base mb-9 opacity-80">
+        Call our St. Joseph workshop or fill out the quote form.
+        Most in-stock pieces ship next business day.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a
+          href="tel:3202590909"
+          class="bg-forest hover:bg-forest-mid text-bone font-semibold px-8 py-4 text-lg transition-colors duration-200"
+        >
+          (320) 259-0909
+        </a>
+        <a
+          href="https://vikinglogfurniture.com/contact-us/"
+          class="border-2 border-forest text-forest hover:bg-forest hover:text-bone px-8 py-4 font-semibold text-lg transition-colors duration-200"
+        >
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="bg-forest-mid py-16 px-6 md:px-14" aria-label="Site footer">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="grid md:grid-cols-3 gap-10 mb-12">
+
+        <div>
+          <p class="font-display text-xl text-bone mb-3">Viking Log Furniture</p>
+          <p class="text-bone-dim text-sm leading-relaxed mb-4">
+            Manufacturing rustic log, barnwood, and hickory furniture
+            in St. Joseph, Minnesota since 1979.
+          </p>
+          <img
+            src="https://vikinglogfurniture.com/wp-content/uploads/2019/01/bbb-seal.png"
+            alt="BBB Accredited Business"
+            class="h-12 w-auto opacity-70"
+            loading="lazy"
+          >
+        </div>
+
+        <div>
+          <p class="text-bone text-xs font-semibold tracking-widest uppercase mb-5">Collections</p>
+          <ul class="space-y-2 list-none p-0 m-0">
+            <li><a href="https://vikinglogfurniture.com/rustic-bedroom-furniture/" class="text-bone-dim text-sm hover:text-bone transition-colors duration-200">Bedroom Furniture</a></li>
+            <li><a href="https://vikinglogfurniture.com/rustic-dining-room-furniture/" class="text-bone-dim text-sm hover:text-bone transition-colors duration-200">Dining Room</a></li>
+            <li><a href="https://vikinglogfurniture.com/pool-tables-and-game-room/" class="text-bone-dim text-sm hover:text-bone transition-colors duration-200">Pool Tables</a></li>
+            <li><a href="https://vikinglogfurniture.com/kitchen-and-bathroom-cabinets/" class="text-bone-dim text-sm hover:text-bone transition-colors duration-200">Kitchen</a></li>
+            <li><a href="https://vikinglogfurniture.com/rustic-living-room-furniture/" class="text-bone-dim text-sm hover:text-bone transition-colors duration-200">Living Room</a></li>
+            <li><a href="https://vikinglogfurniture.com/custom-orders/" class="text-bone-dim text-sm hover:text-bone transition-colors duration-200">Custom Orders</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-bone text-xs font-semibold tracking-widest uppercase mb-5">Contact</p>
+          <address class="not-italic text-bone-dim text-sm space-y-1">
+            <p>18169 County Road 1</p>
+            <p>St. Joseph, MN 56374</p>
+            <p class="pt-2"><a href="tel:3202590909" class="hover:text-bone transition-colors duration-200">(320) 259-0909</a></p>
+            <p><a href="mailto:sales@vikinglogfurniture.com" class="hover:text-bone transition-colors duration-200">sales@vikinglogfurniture.com</a></p>
+          </address>
+          <div class="mt-4 text-bone-dim text-xs space-y-1">
+            <p>Mon-Thu: 8am - 5:30pm</p>
+            <p>Fri: 8am - 4:30pm</p>
+            <p>Evenings and weekends by appointment</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-forest-lit pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
+        <p class="text-bone-dim text-xs">&copy; 2026 Viking Log Furniture. All Rights Reserved.</p>
+        <p class="text-bone-dim text-xs">Proudly Made in the USA</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================================================
+       JS — IntersectionObserver for reveals + nav state
+  ================================================ -->
+  <script>
+    // Nav: add .scrolled class when hero is no longer in viewport
+    (function () {
+      var nav = document.getElementById('nav');
+      var hero = document.querySelector('section');
+      var navObs = new IntersectionObserver(function (entries) {
+        nav.classList.toggle('scrolled', !entries[0].isIntersecting);
+      }, { threshold: 0 });
+      navObs.observe(hero);
+    })();
+
+    // Reveal: fade-in-up when element enters viewport
+    (function () {
+      var rvObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            rvObs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.rv').forEach(function (el) { rvObs.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
