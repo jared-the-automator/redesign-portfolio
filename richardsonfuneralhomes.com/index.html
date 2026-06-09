@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Richardson Funeral Homes | Funeral &amp; Cremation Services in Perry &amp; Warner Robins, GA</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          forest:  { DEFAULT: '#1e4d2b', light: '#2d6a4f', pale: '#3d8b5e' },
+          bone:    { DEFAULT: '#ede8df', dark: '#d6cfbf' },
+          stone:   '#f8f5f0',
+          ink:     '#1c1c1c',
+          mist:    '#6b7280',
+        },
+        fontFamily: {
+          display: ['Oswald', 'sans-serif'],
+          body:    ['Lato', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  *, *::before, *::after { border-radius: 4px; }
+  body { font-family: 'Lato', sans-serif; background: #f8f5f0; color: #1c1c1c; }
+  h1,h2,h3,h4 { font-family: 'Oswald', sans-serif; }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .fade-up.visible          { opacity: 1; transform: translateY(0); }
+  .fade-up.d1               { transition-delay: 0.10s; }
+  .fade-up.d2               { transition-delay: 0.20s; }
+  .fade-up.d3               { transition-delay: 0.30s; }
+  .fade-up.d4               { transition-delay: 0.40s; }
+
+  .hero-bg {
+    background-color: #1a3d22;
+    background-image: url('https://richardsonfuneralhomes.com/wp-content/uploads/2021/12/jhgjhgjgjgj.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      rgba(20, 51, 28, 0.92) 0%,
+      rgba(20, 51, 28, 0.80) 50%,
+      rgba(20, 51, 28, 0.50) 100%
+    );
+  }
+
+  .eyebrow {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .service-num {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #1e4d2b;
+    flex-shrink: 0;
+    width: 2.5rem;
+    margin-top: 2px;
+  }
+  .stat-val {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    line-height: 1;
+    color: #f8f5f0;
+  }
+  .img-card {
+    overflow: hidden;
+    background: #ede8df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="sticky top-0 z-50 bg-stone border-b border-bone-dark" style="background:#f8f5f0;">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/" class="flex flex-col leading-none gap-0.5">
+      <span class="font-display font-bold text-forest uppercase tracking-wide" style="font-size:1.15rem;">Richardson</span>
+      <span class="eyebrow text-mist" style="font-size:0.58rem;">Funeral Homes</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-ink" style="opacity:0.75;">
+      <a href="#services"  class="hover:text-forest transition-colors duration-150">Services</a>
+      <a href="#story"     class="hover:text-forest transition-colors duration-150">About</a>
+      <a href="#locations" class="hover:text-forest transition-colors duration-150">Locations</a>
+      <a href="#locations" class="hover:text-forest transition-colors duration-150">Pre-Plan</a>
+    </div>
+    <a href="tel:+14789871122"
+       class="bg-forest text-stone text-sm font-medium px-5 py-2 hover:bg-forest-light transition-colors duration-150"
+       style="border-radius:4px;">
+      Call Now
+    </a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO  —  left-aligned, min-h 100dvh
+     ============================================================ -->
+<section class="hero-bg" style="min-height:100dvh; display:flex; align-items:flex-end; padding-bottom:6rem;">
+  <div class="hero-overlay"></div>
+  <div class="relative max-w-7xl mx-auto px-6 w-full">
+    <div style="max-width:42rem;">
+      <p class="eyebrow mb-5 fade-up" style="color:#5aad7a;">Perry &middot; Warner Robins &middot; Middle Georgia</p>
+      <h1 class="font-display font-bold text-stone leading-tight mb-6 fade-up d1"
+          style="font-size:clamp(2.4rem,5.5vw,4.2rem);">
+        Serving Middle Georgia<br>with Dignity Since 1958
+      </h1>
+      <p class="text-stone mb-10 leading-relaxed fade-up d2"
+         style="font-size:1.1rem; opacity:0.80; max-width:34rem;">
+        Two locations. One family name. 68 years of compassionate service when yours needs it most.
+      </p>
+      <div class="flex flex-wrap gap-4 fade-up d3">
+        <a href="tel:+14789871122"
+           class="bg-stone text-forest font-medium px-8 py-3.5 hover:bg-bone transition-colors duration-150"
+           style="font-size:0.9rem; border-radius:4px;">
+          Arrange Services
+        </a>
+        <a href="tel:+14789871122"
+           class="text-stone font-medium px-8 py-3.5 hover:bg-white/10 transition-colors duration-150"
+           style="font-size:0.9rem; border:1px solid rgba(255,255,255,0.45); border-radius:4px;">
+          (478) 987-1122
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES  —  split: numbered features left, image right
+     ============================================================ -->
+<section id="services" class="py-24 md:py-32" style="background:#f8f5f0;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-14 lg:gap-24 items-center">
+
+      <!-- Features column -->
+      <div>
+        <h2 class="font-display font-bold text-ink leading-tight mb-10 fade-up"
+            style="font-size:clamp(2rem,4vw,3rem);">
+          Full-Service Care<br>for Every Family
+        </h2>
+        <div style="display:flex; flex-direction:column; gap:2rem;">
+          <div class="flex gap-6 fade-up d1">
+            <span class="service-num">01</span>
+            <div>
+              <h3 class="font-display font-bold text-ink mb-1" style="font-size:1.1rem;">Funeral Services</h3>
+              <p class="text-mist leading-relaxed" style="font-size:0.9rem;">Complete funeral arrangements handled with care and respect for your loved one's memory and your family's wishes.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 fade-up d2">
+            <span class="service-num">02</span>
+            <div>
+              <h3 class="font-display font-bold text-ink mb-1" style="font-size:1.1rem;">Burial Services</h3>
+              <p class="text-mist leading-relaxed" style="font-size:0.9rem;">Direct burial for families seeking a dignified, uncomplicated farewell.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 fade-up d3">
+            <span class="service-num">03</span>
+            <div>
+              <h3 class="font-display font-bold text-ink mb-1" style="font-size:1.1rem;">Cremation Services</h3>
+              <p class="text-mist leading-relaxed" style="font-size:0.9rem;">Cremation options with transparent pricing and careful, compassionate service throughout.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 fade-up d4">
+            <span class="service-num">04</span>
+            <div>
+              <h3 class="font-display font-bold text-ink mb-1" style="font-size:1.1rem;">Veterans Services</h3>
+              <p class="text-mist leading-relaxed" style="font-size:0.9rem;">Ceremonies that honor the service and sacrifice your family member gave.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image column -->
+      <div class="fade-up d1 relative">
+        <div class="img-card" style="aspect-ratio:4/5; border-radius:4px; background:#c8dccb;">
+          <img src="https://richardsonfuneralhomes.com/wp-content/uploads/2021/12/1450830.png"
+               alt="Richardson Funeral Services"
+               style="width:100%; height:100%; object-fit:cover;" />
+        </div>
+        <!-- Inline stat tag -->
+        <div class="hidden md:block absolute"
+             style="bottom:-1.5rem; right:-1.5rem; background:#1e4d2b; color:#f8f5f0; padding:1.25rem 1.5rem; border-radius:4px;">
+          <p class="font-display font-bold" style="font-size:2.5rem; line-height:1;">68</p>
+          <p class="eyebrow" style="color:rgba(248,245,240,0.6); margin-top:0.25rem;">Years in Service</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STORY  —  reversed split: image left, text right
+     ============================================================ -->
+<section id="story" class="py-24 md:py-32" style="background:#ede8df;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-14 lg:gap-24 items-center">
+
+      <!-- Image column (left) -->
+      <div class="fade-up order-2 md:order-1 relative">
+        <div class="img-card" style="aspect-ratio:1/1; border-radius:4px; background:#c0cfc3;">
+          <img src="https://richardsonfuneralhomes.com/wp-content/uploads/2021/12/3598439.png"
+               alt="The Richardson family legacy in middle Georgia"
+               style="width:100%; height:100%; object-fit:cover;" />
+        </div>
+        <div class="absolute hidden md:flex items-center gap-4"
+             style="bottom:-1.5rem; left:0; right:0; background:#f8f5f0; padding:1.25rem 1.5rem; border-radius:4px; border-left:3px solid #1e4d2b;">
+          <div>
+            <p class="font-display font-bold text-forest" style="font-size:0.95rem; letter-spacing:0.02em;">FAMILY OWNED SINCE 1958</p>
+            <p class="text-mist" style="font-size:0.78rem; margin-top:0.2rem;">Perry, GA &nbsp;&middot;&nbsp; Warner Robins, GA</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text column (right) -->
+      <div class="order-1 md:order-2">
+        <p class="eyebrow text-forest mb-4 fade-up">Our Story</p>
+        <h2 class="font-display font-bold text-ink leading-tight mb-8 fade-up d1"
+            style="font-size:clamp(2rem,4vw,3rem);">
+          Founded in 1958.<br>Still Family.
+        </h2>
+        <div class="space-y-4 fade-up d2" style="color:#4a5568; line-height:1.75; font-size:0.95rem;">
+          <p>Rayfield and Ruby Richardson started R.N.T. Funeral Home in Warner Robins, Georgia in 1958. Their belief was straightforward: every family deserves to say goodbye with dignity, regardless of means.</p>
+          <p>Nearly 70 years later, Richardson Funeral Homes serves families across Perry and Warner Robins under the same name and the same principle. Two locations. Still family-owned.</p>
+          <p>When you call Richardson, you reach someone who has served your neighbors, and very likely your family before.</p>
+        </div>
+        <div class="mt-10 pt-8 fade-up d3" style="border-top:1px solid #d6cfbf;">
+          <div class="flex gap-10">
+            <div>
+              <p class="font-display font-bold text-forest" style="font-size:1.9rem; line-height:1;">1958</p>
+              <p class="eyebrow text-mist mt-1">Year Founded</p>
+            </div>
+            <div>
+              <p class="font-display font-bold text-forest" style="font-size:1.9rem; line-height:1;">2</p>
+              <p class="eyebrow text-mist mt-1">GA Locations</p>
+            </div>
+            <div>
+              <p class="font-display font-bold text-forest" style="font-size:1.9rem; line-height:1;">24/7</p>
+              <p class="eyebrow text-mist mt-1">Available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOCATIONS  —  editorial grid (LAYOUT BREAK after 2 splits)
+     ============================================================ -->
+<section id="locations" class="py-24 md:py-32" style="background:#f8f5f0;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-14 fade-up" style="max-width:36rem;">
+      <h2 class="font-display font-bold text-ink leading-tight"
+          style="font-size:clamp(2rem,4vw,2.8rem);">
+        Two Locations.<br>Middle Georgia, Covered.
+      </h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Perry -->
+      <div class="fade-up" style="background:#ede8df; padding:2.5rem; border-radius:4px;">
+        <div class="flex items-center gap-3 mb-6">
+          <div style="width:2.5rem; height:2.5rem; background:#1e4d2b; border-radius:4px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="16" height="16" fill="#f8f5f0" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-ink" style="font-size:1.5rem;">Perry, Georgia</h3>
+        </div>
+        <p class="text-mist mb-6 leading-relaxed" style="font-size:0.9rem;">Serving Perry and surrounding Houston County communities.</p>
+        <div style="display:flex; flex-direction:column; gap:0.75rem; font-size:0.875rem;">
+          <div class="flex gap-4">
+            <span class="font-medium text-forest" style="width:4.5rem; flex-shrink:0;">Address</span>
+            <span class="text-ink">1447 Swift St, Perry, GA 31069</span>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-medium text-forest" style="width:4.5rem; flex-shrink:0;">Phone</span>
+            <a href="tel:+14789871122" class="text-ink hover:text-forest transition-colors">(478) 987-1122</a>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-medium text-forest" style="width:4.5rem; flex-shrink:0;">Hours</span>
+            <span class="text-ink">Available 24 hours, 7 days</span>
+          </div>
+        </div>
+        <a href="tel:+14789871122"
+           class="inline-block mt-8 bg-forest text-stone font-medium hover:bg-forest-light transition-colors duration-150"
+           style="font-size:0.875rem; padding:0.625rem 1.5rem; border-radius:4px;">
+          Call Perry
+        </a>
+      </div>
+
+      <!-- Warner Robins -->
+      <div class="fade-up d1" style="background:#ede8df; padding:2.5rem; border-radius:4px;">
+        <div class="flex items-center gap-3 mb-6">
+          <div style="width:2.5rem; height:2.5rem; background:#1e4d2b; border-radius:4px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="16" height="16" fill="#f8f5f0" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-ink" style="font-size:1.5rem;">Warner Robins, Georgia</h3>
+        </div>
+        <p class="text-mist mb-6 leading-relaxed" style="font-size:0.9rem;">The original Richardson location, where Rayfield and Ruby started serving families in 1958.</p>
+        <div style="display:flex; flex-direction:column; gap:0.75rem; font-size:0.875rem;">
+          <div class="flex gap-4">
+            <span class="font-medium text-forest" style="width:4.5rem; flex-shrink:0;">Address</span>
+            <span class="text-ink">405 S 3rd St, Warner Robins, GA 31088</span>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-medium text-forest" style="width:4.5rem; flex-shrink:0;">Phone</span>
+            <a href="tel:+14789291707" class="text-ink hover:text-forest transition-colors">(478) 929-1707</a>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-medium text-forest" style="width:4.5rem; flex-shrink:0;">Hours</span>
+            <span class="text-ink">Available 24 hours, 7 days</span>
+          </div>
+        </div>
+        <a href="tel:+14789291707"
+           class="inline-block mt-8 bg-forest text-stone font-medium hover:bg-forest-light transition-colors duration-150"
+           style="font-size:0.875rem; padding:0.625rem 1.5rem; border-radius:4px;">
+          Call Warner Robins
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS BAND  —  full-width credibility
+     ============================================================ -->
+<section class="py-20 md:py-24" style="background:#1e4d2b;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="fade-up">
+        <p class="stat-val">68</p>
+        <p class="eyebrow mt-2" style="color:rgba(248,245,240,0.55);">Years in Service</p>
+      </div>
+      <div class="fade-up d1">
+        <p class="stat-val">2</p>
+        <p class="eyebrow mt-2" style="color:rgba(248,245,240,0.55);">Georgia Locations</p>
+      </div>
+      <div class="fade-up d2">
+        <p class="stat-val">24/7</p>
+        <p class="eyebrow mt-2" style="color:rgba(248,245,240,0.55);">Always Available</p>
+      </div>
+      <div class="fade-up d3">
+        <p class="stat-val">4.8</p><!-- verify -->
+        <p class="eyebrow mt-2" style="color:rgba(248,245,240,0.55);">Stars on Google</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA STRIP
+     ============================================================ -->
+<section class="py-20 md:py-24 fade-up" style="background:#ede8df;">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="font-display font-bold text-ink mb-4"
+        style="font-size:clamp(1.6rem,3.5vw,2.4rem);">
+      We're available 24 hours a day, every day.
+    </h2>
+    <p class="text-mist mb-10" style="max-width:32rem; margin-left:auto; margin-right:auto; font-size:0.95rem; line-height:1.6;">
+      Call either location, any time. When a family needs Richardson, Richardson answers.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="tel:+14789871122"
+         class="bg-forest text-stone font-medium hover:bg-forest-light transition-colors duration-150"
+         style="font-size:0.9rem; padding:0.875rem 2rem; border-radius:4px;">
+        Perry: (478) 987-1122
+      </a>
+      <a href="tel:+14789291707"
+         class="text-forest font-medium hover:bg-forest hover:text-stone transition-colors duration-150"
+         style="font-size:0.9rem; padding:0.875rem 2rem; border-radius:4px; border:2px solid #1e4d2b;">
+        Warner Robins: (478) 929-1707
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer style="background:#1c1c1c; padding:4rem 0 2.5rem;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+      <!-- Brand -->
+      <div class="col-span-2 md:col-span-1">
+        <p class="font-display font-bold uppercase tracking-wide" style="color:#f8f5f0; font-size:1.1rem;">Richardson</p>
+        <p class="eyebrow mt-0.5 mb-4" style="color:rgba(248,245,240,0.35); font-size:0.55rem;">Funeral Homes</p>
+        <p style="color:rgba(248,245,240,0.45); font-size:0.85rem; line-height:1.6;">
+          Serving middle Georgia families with dignity and compassion since 1958.
+        </p>
+      </div>
+      <!-- Services -->
+      <div>
+        <h4 class="font-display font-bold uppercase tracking-wide mb-4" style="color:#f8f5f0; font-size:0.8rem; letter-spacing:0.12em;">Services</h4>
+        <ul style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.85rem; color:rgba(248,245,240,0.45);">
+          <li><a href="#services" style="color:inherit;" onmouseover="this.style.color='#f8f5f0'" onmouseout="this.style.color='rgba(248,245,240,0.45)'">Funeral Services</a></li>
+          <li><a href="#services" style="color:inherit;" onmouseover="this.style.color='#f8f5f0'" onmouseout="this.style.color='rgba(248,245,240,0.45)'">Burial Services</a></li>
+          <li><a href="#services" style="color:inherit;" onmouseover="this.style.color='#f8f5f0'" onmouseout="this.style.color='rgba(248,245,240,0.45)'">Cremation Services</a></li>
+          <li><a href="#services" style="color:inherit;" onmouseover="this.style.color='#f8f5f0'" onmouseout="this.style.color='rgba(248,245,240,0.45)'">Veterans Services</a></li>
+          <li><a href="#locations" style="color:inherit;" onmouseover="this.style.color='#f8f5f0'" onmouseout="this.style.color='rgba(248,245,240,0.45)'">Pre-Planning</a></li>
+        </ul>
+      </div>
+      <!-- Locations -->
+      <div>
+        <h4 class="font-display font-bold uppercase tracking-wide mb-4" style="color:#f8f5f0; font-size:0.8rem; letter-spacing:0.12em;">Locations</h4>
+        <div style="display:flex; flex-direction:column; gap:1rem; font-size:0.82rem; color:rgba(248,245,240,0.45);">
+          <div>
+            <p style="color:rgba(248,245,240,0.65); font-weight:500; margin-bottom:0.25rem;">Perry</p>
+            <p>1447 Swift St</p>
+            <p>Perry, GA 31069</p>
+          </div>
+          <div>
+            <p style="color:rgba(248,245,240,0.65); font-weight:500; margin-bottom:0.25rem;">Warner Robins</p>
+            <p>405 S 3rd St</p>
+            <p>Warner Robins, GA 31088</p>
+          </div>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div>
+        <h4 class="font-display font-bold uppercase tracking-wide mb-4" style="color:#f8f5f0; font-size:0.8rem; letter-spacing:0.12em;">Contact</h4>
+        <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.85rem;">
+          <p style="color:rgba(248,245,240,0.55); font-weight:500;">Perry</p>
+          <a href="tel:+14789871122" style="color:rgba(248,245,240,0.45);" onmouseover="this.style.color='#f8f5f0'" onmouseout="this.style.color='rgba(248,245,240,0.45)'">(478) 987-1122</a>
+          <p style="color:rgba(248,245,240,0.55); font-weight:500; margin-top:0.4rem;">Warner Robins</p>
+          <a href="tel:+14789291707" style="color:rgba(248,245,240,0.45);" onmouseover="this.style.color='#f8f5f0'" onmouseout="this.style.color='rgba(248,245,240,0.45)'">(478) 929-1707</a>
+          <p style="color:rgba(248,245,240,0.3); margin-top:0.5rem; font-size:0.78rem;">Available 24/7</p>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom bar -->
+    <div style="border-top:1px solid rgba(248,245,240,0.08); padding-top:1.5rem; display:flex; flex-direction:column; gap:0.5rem; align-items:center; text-align:center;">
+      <p style="color:rgba(248,245,240,0.25); font-size:0.78rem;">
+        &copy; 2026 Richardson Funeral Homes. All rights reserved. &nbsp;&middot;&nbsp; Perry, GA &nbsp;&middot;&nbsp; Warner Robins, GA
+      </p>
+      <p style="color:rgba(248,245,240,0.15); font-size:0.72rem;">
+        License FEST000669 &nbsp;&middot;&nbsp; Serving Middle Georgia Since 1958
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.08 }
+  );
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
