@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rose Creek Lumber | Custom Hardwood Flooring, Live-Edge Slabs &amp; Moulding | Southern Illinois</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'walnut':    '#C8712A',
+            'charcoal':  '#0D0D0B',
+            'ash':       '#1A1A17',
+            'plank':     '#242420',
+            'smoke':     '#9E9D97',
+            'bone':      '#F0EDE6',
+          },
+          fontFamily: {
+            'display': ['Oswald', 'sans-serif'],
+            'body':    ['DM Sans', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { border-radius: 3px; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-28px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+
+    .species-img { transition: transform 0.5s ease; }
+    .species-card:hover .species-img { transform: scale(1.05); }
+
+    .nav-link {
+      position: relative;
+      color: #9E9D97;
+      transition: color 0.2s ease;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #C8712A;
+      transition: width 0.2s ease;
+    }
+    .nav-link:hover { color: #F0EDE6; }
+    .nav-link:hover::after { width: 100%; }
+  </style>
+</head>
+<body class="bg-charcoal text-bone antialiased">
+
+  <!-- ===== NAV ===== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-charcoal/95 backdrop-blur-sm border-b border-white/[0.07]">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-8">
+      <a href="#" class="font-display font-700 text-lg tracking-wider text-bone shrink-0">
+        ROSE CREEK <span class="text-walnut">LUMBER</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-xs font-display font-500 tracking-widest uppercase">
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#species" class="nav-link">Species</a>
+        <a href="#slabs" class="nav-link">Slabs</a>
+        <a href="#moulding" class="nav-link">Moulding</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="bg-walnut text-white px-5 py-2 text-xs font-display font-500 tracking-widest hover:bg-walnut/80 transition-colors ml-2">
+          GET A QUOTE
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO — split layout: text left, slab right ===== -->
+  <section class="min-h-[100dvh] grid lg:grid-cols-[55fr_45fr] pt-16">
+    <!-- Left: dark text panel -->
+    <div class="flex flex-col justify-center px-10 md:px-16 lg:px-20 py-24 bg-charcoal">
+      <p class="font-display text-xs font-500 tracking-[0.25em] text-walnut uppercase mb-5 reveal-left">
+        Southern Illinois Hardwood Mill
+      </p>
+      <h1 class="font-display font-700 text-bone leading-[0.93] mb-7 reveal-left" style="transition-delay:0.08s; font-size: clamp(3rem, 6vw, 5.5rem);">
+        CUSTOM<br>HARDWOOD<br>CUT AT<br>THE SOURCE.
+      </h1>
+      <p class="text-smoke text-base md:text-lg leading-relaxed max-w-md mb-10 reveal-left" style="transition-delay:0.16s;">
+        Kyle Finnie mills flooring, live-edge slabs, and moulding to order in Southern Illinois. Competitive with big-box pricing, without the big-box finish.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 reveal-left" style="transition-delay:0.24s;">
+        <a href="#products"
+           class="bg-walnut text-white font-display font-500 tracking-widest text-xs px-8 py-4 hover:bg-walnut/80 transition-colors text-center">
+          VIEW PRODUCTS
+        </a>
+        <a href="#contact"
+           class="border border-bone/25 text-bone font-display font-500 tracking-widest text-xs px-8 py-4 hover:border-bone/55 transition-colors text-center">
+          GET A QUOTE
+        </a>
+      </div>
+    </div>
+    <!-- Right: walnut slab photo -->
+    <div class="relative hidden lg:block overflow-hidden bg-ash min-h-[100dvh]">
+      <img
+        src="http://rosecreeklumber.com/wp-content/uploads/2019/08/Crotch-Walnut-Slab-1-800x1600.jpg"
+        alt="Crotch walnut live-edge slab milled at Rose Creek Lumber, Southern Illinois"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-charcoal/60 to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS — numbered list left, second slab right ===== -->
+  <section id="products" class="py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <!-- Left: numbered feature list -->
+        <div>
+          <div class="space-y-12">
+            <div class="flex gap-7 reveal">
+              <span class="font-display font-700 text-walnut/35 leading-none shrink-0 mt-1" style="font-size: 3rem;">01</span>
+              <div>
+                <h3 class="font-display font-700 text-bone tracking-wide mb-2" style="font-size: 1.15rem;">CUSTOM HARDWOOD FLOORING</h3>
+                <p class="text-smoke text-sm leading-relaxed">
+                  Milled from locally sourced hardwoods. Cherry, hickory, maple, pine, poplar, post oak, red oak, and walnut in stock. We can match antique profiles for restoration projects from a single piece of trim.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-7 reveal" style="transition-delay:0.1s;">
+              <span class="font-display font-700 text-walnut/35 leading-none shrink-0 mt-1" style="font-size: 3rem;">02</span>
+              <div>
+                <h3 class="font-display font-700 text-bone tracking-wide mb-2" style="font-size: 1.15rem;">LIVE-EDGE SLABS</h3>
+                <p class="text-smoke text-sm leading-relaxed">
+                  Crotch walnut and other species milled with the natural edge intact. No two slabs are the same. Table tops, fireplace mantels, headboards, vanity tops, countertops.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-7 reveal" style="transition-delay:0.2s;">
+              <span class="font-display font-700 text-walnut/35 leading-none shrink-0 mt-1" style="font-size: 3rem;">03</span>
+              <div>
+                <h3 class="font-display font-700 text-bone tracking-wide mb-2" style="font-size: 1.15rem;">MOULDING &amp; TRIM</h3>
+                <p class="text-smoke text-sm leading-relaxed">
+                  Access to 15,000 blade profiles. We cut custom profiles from physical samples, so you can match original moulding in a historic restoration without replacing every room.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 reveal" style="transition-delay:0.3s;">
+            <a href="#contact"
+               class="inline-block border border-walnut text-walnut font-display font-500 tracking-widest text-xs px-7 py-3 hover:bg-walnut hover:text-white transition-colors">
+              TALK TO KYLE
+            </a>
+          </div>
+        </div>
+        <!-- Right: walnut slab 2 -->
+        <div class="reveal overflow-hidden" style="transition-delay:0.1s;">
+          <img
+            src="http://rosecreeklumber.com/wp-content/uploads/2019/08/Crotch-Walnut-Slab-2-800x1600.jpg"
+            alt="Second crotch walnut live-edge slab, natural grain and form"
+            class="w-full object-cover max-h-[640px]"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / STORY — reversed split ===== -->
+  <section id="about" class="bg-ash py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <!-- Left: third slab photo -->
+        <div class="reveal overflow-hidden">
+          <img
+            src="http://rosecreeklumber.com/wp-content/uploads/2019/08/Crotch-Walnut-Slab-3-800x1600.jpg"
+            alt="Third crotch walnut slab, live edge and natural form"
+            class="w-full object-cover max-h-[640px]"
+          />
+        </div>
+        <!-- Right: family story -->
+        <div>
+          <h2 class="font-display font-700 text-bone leading-[0.96] mb-7 reveal" style="font-size: clamp(2.2rem, 4vw, 3.5rem);">
+            RESPONSIBLY<br>SOURCED.<br>LOCALLY MILLED.
+          </h2>
+          <div class="space-y-4 text-smoke text-sm leading-relaxed reveal" style="transition-delay:0.1s;">
+            <p>
+              Kyle and Natalie Finnie built Rose Creek Lumber on two principles their parents gave them: hard work and honesty produce something worth standing behind.
+            </p>
+            <p>
+              Every board is certified by foresters for responsible harvest in Southern Illinois. No shortcuts on the grade. No surprises on the species. What you order is what arrives.
+            </p>
+            <p>
+              We supply contractors on new builds, DIYers on renovation projects, and homeowners who want flooring that won't look like everyone else's. One board or a full house. Same quality, same pricing.
+            </p>
+          </div>
+          <div class="mt-10 grid grid-cols-3 gap-6 reveal" style="transition-delay:0.2s;">
+            <div>
+              <p class="font-display font-700 text-bone mb-1" style="font-size: 2rem;">15K+</p>
+              <p class="text-smoke text-xs leading-snug">Moulding profiles on file</p>
+            </div>
+            <div class="border-l border-white/10 pl-5">
+              <p class="font-display font-700 text-bone mb-1" style="font-size: 2rem;">8</p>
+              <p class="text-smoke text-xs leading-snug">In-stock hardwood species</p>
+            </div>
+            <div class="border-l border-white/10 pl-5">
+              <p class="font-display font-700 text-bone mb-1" style="font-size: 2rem;">NAHB</p>
+              <p class="text-smoke text-xs leading-snug">Member, Home Builders Association</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECIES GALLERY — 4x2 grid, layout break from splits ===== -->
+  <section id="species" class="py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 reveal">
+        <div>
+          <p class="font-display text-xs font-500 tracking-[0.25em] text-walnut uppercase mb-3">IN-STOCK HARDWOODS</p>
+          <h2 class="font-display font-700 text-bone leading-[0.96]" style="font-size: clamp(2rem, 3.5vw, 3rem);">
+            CHOOSE YOUR SPECIES
+          </h2>
+        </div>
+        <p class="text-smoke text-sm max-w-xs leading-relaxed">
+          Custom orders available in additional species. Ask Kyle about current availability.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-1">
+        <!-- Cherry -->
+        <div class="species-card cursor-pointer group reveal" style="transition-delay:0.00s;">
+          <div class="overflow-hidden aspect-square">
+            <img src="http://www.rosecreeklumber.com/wp-content/uploads/2019/10/Cherry-txt_1000x1000.jpg"
+                 alt="Cherry hardwood grain, warm reddish-brown tones"
+                 class="species-img w-full h-full object-cover" />
+          </div>
+          <div class="bg-plank py-3 px-4">
+            <p class="font-display font-500 text-xs tracking-widest text-bone uppercase">Cherry</p>
+          </div>
+        </div>
+        <!-- Hickory -->
+        <div class="species-card cursor-pointer group reveal" style="transition-delay:0.05s;">
+          <div class="overflow-hidden aspect-square">
+            <img src="http://www.rosecreeklumber.com/wp-content/uploads/2019/10/Hickory-txt_1000x1000.jpg"
+                 alt="Hickory hardwood grain, tan with dramatic variation"
+                 class="species-img w-full h-full object-cover" />
+          </div>
+          <div class="bg-plank py-3 px-4">
+            <p class="font-display font-500 text-xs tracking-widest text-bone uppercase">Hickory</p>
+          </div>
+        </div>
+        <!-- Maple -->
+        <div class="species-card cursor-pointer group reveal" style="transition-delay:0.10s;">
+          <div class="overflow-hidden aspect-square">
+            <img src="http://www.rosecreeklumber.com/wp-content/uploads/2019/09/Maple-txt_1000x1000.jpg"
+                 alt="Maple hardwood grain, pale and tight"
+                 class="species-img w-full h-full object-cover" />
+          </div>
+          <div class="bg-plank py-3 px-4">
+            <p class="font-display font-500 text-xs tracking-widest text-bone uppercase">Maple</p>
+          </div>
+        </div>
+        <!-- Pine -->
+        <div class="species-card cursor-pointer group reveal" style="transition-delay:0.15s;">
+          <div class="overflow-hidden aspect-square">
+            <img src="http://www.rosecreeklumber.com/wp-content/uploads/2019/10/Pine-txt_1000x1000.jpg"
+                 alt="Pine hardwood grain, knotty and rustic"
+                 class="species-img w-full h-full object-cover" />
+          </div>
+          <div class="bg-plank py-3 px-4">
+            <p class="font-display font-500 text-xs tracking-widest text-bone uppercase">Pine</p>
+          </div>
+        </div>
+        <!-- Poplar -->
+        <div class="species-card cursor-pointer group reveal" style="transition-delay:0.20s;">
+          <div class="overflow-hidden aspect-square">
+            <img src="http://www.rosecreeklumber.com/wp-content/uploads/2019/10/Poplar-txt_1000x1000.jpg"
+                 alt="Poplar hardwood grain, light with mineral streaks"
+                 class="species-img w-full h-full object-cover" />
+          </div>
+          <div class="bg-plank py-3 px-4">
+            <p class="font-display font-500 text-xs tracking-widest text-bone uppercase">Poplar</p>
+          </div>
+        </div>
+        <!-- Post Oak -->
+        <div class="species-card cursor-pointer group reveal" style="transition-delay:0.25s;">
+          <div class="overflow-hidden aspect-square">
+            <img src="http://www.rosecreeklumber.com/wp-content/uploads/2019/10/Post-Oak-txt_1000x1000.jpg"
+                 alt="Post oak hardwood grain, heavy and tight-grained"
+                 class="species-img w-full h-full object-cover" />
+          </div>
+          <div class="bg-plank py-3 px-4">
+            <p class="font-display font-500 text-xs tracking-widest text-bone uppercase">Post Oak</p>
+          </div>
+        </div>
+        <!-- Red Oak -->
+        <div class="species-card cursor-pointer group reveal" style="transition-delay:0.30s;">
+          <div class="overflow-hidden aspect-square">
+            <img src="http://www.rosecreeklumber.com/wp-content/uploads/2019/10/Red-Oak-txt_1000x1000.jpg"
+                 alt="Red oak hardwood grain, warm honey tones with open grain"
+                 class="species-img w-full h-full object-cover" />
+          </div>
+          <div class="bg-plank py-3 px-4">
+            <p class="font-display font-500 text-xs tracking-widest text-bone uppercase">Red Oak</p>
+          </div>
+        </div>
+        <!-- Walnut -->
+        <div class="species-card cursor-pointer group reveal" style="transition-delay:0.35s;">
+          <div class="overflow-hidden aspect-square">
+            <img src="http://www.rosecreeklumber.com/wp-content/uploads/2019/10/Walnut-txt_1000x1000.jpg"
+                 alt="Walnut hardwood grain, deep chocolate brown"
+                 class="species-img w-full h-full object-cover" />
+          </div>
+          <div class="bg-plank py-3 px-4">
+            <p class="font-display font-500 text-xs tracking-widest text-bone uppercase">Walnut</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MOULDING / CREDIBILITY — photos left, text + testimonial right ===== -->
+  <section id="moulding" class="bg-ash py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-2 gap-14 items-start">
+        <!-- Left: stacked moulding photos -->
+        <div class="space-y-2 reveal">
+          <img
+            src="http://www.rosecreeklumber.com/wp-content/uploads/2019/12/BeautifulLivingRoomMouldingTrim-1-300x198.jpg"
+            alt="Living room with custom crown moulding and trim installed"
+            class="w-full object-cover"
+          />
+          <img
+            src="http://www.rosecreeklumber.com/wp-content/uploads/2019/12/custom-crown-moulding-1-300x198.jpg"
+            alt="Custom crown moulding profile cut to order"
+            class="w-full object-cover"
+          />
+          <div class="bg-plank p-5">
+            <p class="text-smoke text-xs leading-relaxed">
+              We also supply shiplap in multiple species for accent walls, ceilings, and exterior siding applications.
+              <a href="http://rosecreeklumber.com/products/shiplap/" class="text-walnut ml-1 hover:underline">See shiplap options.</a>
+            </p>
+          </div>
+        </div>
+        <!-- Right: moulding story + testimonial -->
+        <div>
+          <h2 class="font-display font-700 text-bone leading-[0.96] mb-7 reveal" style="font-size: clamp(2rem, 3.5vw, 3rem);">
+            15,000 PROFILES.<br>CUSTOM CUTS<br>FROM SAMPLES.
+          </h2>
+          <div class="space-y-4 text-smoke text-sm leading-relaxed reveal" style="transition-delay:0.1s;">
+            <p>
+              We have access to 15,000 blade profiles, which means we can match almost any standard moulding you bring in. For profiles that no longer exist in any catalog, we cut a custom blade from a physical sample.
+            </p>
+            <p>
+              Useful for older homes where replacing a single damaged section requires matching trim from the 1920s or 1950s. Bring us a piece. We'll handle the rest.
+            </p>
+          </div>
+          <!-- Testimonial / credibility block -->
+          <div class="mt-10 bg-plank p-6 reveal" style="transition-delay:0.2s;">
+            <p class="text-bone text-sm leading-relaxed italic mb-4">
+              "They matched the original trim in our 1920s bungalow from a single piece we brought in. Came back two weeks later with everything we needed."
+            </p>
+            <p class="text-smoke text-xs">Rose Creek Lumber customer<!-- verify: pull from Google or BBB reviews --></p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4 reveal" style="transition-delay:0.3s;">
+            <div class="bg-charcoal px-5 py-3 text-center">
+              <p class="font-display font-700 text-bone text-lg">NAHB</p>
+              <p class="text-smoke text-xs mt-1">National Assoc. of Home Builders</p>
+            </div>
+            <div class="bg-charcoal px-5 py-3 text-center">
+              <p class="font-display font-700 text-bone text-lg">BBB</p>
+              <p class="text-smoke text-xs mt-1">Better Business Bureau</p>
+            </div>
+            <div class="bg-charcoal px-5 py-3 text-center">
+              <p class="font-display font-700 text-bone text-lg">HBAI</p>
+              <p class="text-smoke text-xs mt-1">Home Builders Assoc. of Illinois</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA STRIP ===== -->
+  <section class="bg-walnut py-20">
+    <div class="max-w-3xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display font-700 text-white leading-[0.95] mb-5" style="font-size: clamp(2.5rem, 5vw, 4.5rem);">
+        READY TO ORDER?
+      </h2>
+      <p class="text-white/80 text-base md:text-lg leading-relaxed mb-8">
+        Call Kyle at <span class="text-white font-500">618-559-9199</span>. One board or a full house project, same turnaround, same pricing.
+      </p>
+      <a href="mailto:kyle@rosecreeklumber.com"
+         class="inline-block border-2 border-white text-white font-display font-500 tracking-widest text-sm px-10 py-4 hover:bg-white hover:text-walnut transition-colors">
+        EMAIL KYLE
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact" class="bg-charcoal border-t border-white/[0.07] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 pb-12 border-b border-white/[0.07]">
+        <!-- Brand -->
+        <div class="col-span-2 md:col-span-1">
+          <p class="font-display font-700 text-bone mb-3" style="font-size: 1.05rem;">
+            ROSE CREEK <span class="text-walnut">LUMBER</span>
+          </p>
+          <p class="text-smoke text-xs leading-relaxed mb-4">
+            Family-owned hardwood mill in Southern Illinois. Custom flooring, live-edge slabs, and moulding to order.
+          </p>
+          <a href="https://www.facebook.com/RoseCreekLumber/" class="text-smoke hover:text-bone text-xs transition-colors">
+            Facebook
+          </a>
+        </div>
+        <!-- Products -->
+        <div>
+          <p class="font-display font-500 text-xs tracking-[0.18em] text-smoke uppercase mb-4">Products</p>
+          <ul class="space-y-2 text-xs text-smoke/70">
+            <li><a href="http://www.rosecreeklumber.com/products/custom-hardwood-flooring/" class="hover:text-bone transition-colors">Hardwood Flooring</a></li>
+            <li><a href="http://rosecreeklumber.com/products/slabs/" class="hover:text-bone transition-colors">Live-Edge Slabs</a></li>
+            <li><a href="http://rosecreeklumber.com/products/moulding/" class="hover:text-bone transition-colors">Moulding &amp; Trim</a></li>
+            <li><a href="http://rosecreeklumber.com/products/shiplap/" class="hover:text-bone transition-colors">Shiplap</a></li>
+          </ul>
+        </div>
+        <!-- Company -->
+        <div>
+          <p class="font-display font-500 text-xs tracking-[0.18em] text-smoke uppercase mb-4">Company</p>
+          <ul class="space-y-2 text-xs text-smoke/70">
+            <li><a href="http://www.rosecreeklumber.com/about/" class="hover:text-bone transition-colors">About Us</a></li>
+            <li><a href="http://www.rosecreeklumber.com/lumber-on-hand/" class="hover:text-bone transition-colors">Lumber On Hand</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <p class="font-display font-500 text-xs tracking-[0.18em] text-smoke uppercase mb-4">Contact</p>
+          <ul class="space-y-2 text-xs text-smoke/70">
+            <li><a href="tel:6185599199" class="hover:text-bone transition-colors">618-559-9199</a></li>
+            <li><a href="mailto:kyle@rosecreeklumber.com" class="hover:text-bone transition-colors">kyle@rosecreeklumber.com</a></li>
+            <li>Raleigh, IL</li>
+            <li>Ships nationwide</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-smoke/40 text-xs">
+        <p>Rose Creek Lumber LLC, Raleigh, IL</p>
+        <p>NAHB Member &nbsp;|&nbsp; BBB Accredited &nbsp;|&nbsp; HBAI Member</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-left').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
