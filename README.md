@@ -21,3 +21,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Dean Meckes Charters](https://jared-the-automator.github.io/redesign-portfolio/deanmeckes.com/) | Smallmouth bass and walleye guide | Clayton, NY |
 | [Viking Log Furniture](https://jared-the-automator.github.io/redesign-portfolio/vikinglogfurniture.com/) | Handmade log and rustic furniture | St. Joseph, MN |
 | [Rose Creek Lumber](https://jared-the-automator.github.io/redesign-portfolio/rosecreeklumber.com/) | Custom hardwood flooring & slabs | Raleigh, IL |
+| [Vintage Millwork](https://jared-the-automator.github.io/redesign-portfolio/vintagemillworkga.com/) | Custom hardwood mouldings & architectural trim | Atlanta, GA |
