@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phenix Knives — Hand-Forged Custom Blades | Bellville, Texas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Barlow Condensed', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forge: {
+              black: '#0f0e0c',
+              charcoal: '#1c1a17',
+              ash: '#2e2b26',
+              amber: '#c87d2e',
+              'amber-bright': '#e8942a',
+              bone: '#e8dfd0',
+              white: '#f5f0e8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Barlow Condensed', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+    /* One corner radius for the whole page */
+    .btn { border-radius: 2px; }
+  </style>
+</head>
+<body style="background-color:#0f0e0c; color:#f5f0e8; margin:0;">
+
+  <!-- NAV -->
+  <nav style="position:fixed; top:0; left:0; right:0; z-index:50; background:rgba(15,14,12,0.96); backdrop-filter:blur(4px); border-bottom:1px solid #2e2b26;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 24px; height:64px; display:flex; align-items:center; justify-content:space-between;">
+      <a href="/" class="font-display" style="font-size:1.375rem; font-weight:800; letter-spacing:0.05em; text-transform:uppercase; color:#f5f0e8; text-decoration:none;">
+        Phenix <span style="color:#c87d2e;">Knives</span>
+      </a>
+      <div style="display:flex; align-items:center; gap:32px;">
+        <div style="display:none; gap:32px;" id="nav-links">
+          <a href="https://www.phenixknives.com/hand-forged-knives/" style="font-size:0.8125rem; font-weight:500; color:rgba(232,223,208,0.7); text-decoration:none; letter-spacing:0.02em;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.7)'">The Knives</a>
+          <a href="https://www.phenixknives.com/about-cowboy/" style="font-size:0.8125rem; font-weight:500; color:rgba(232,223,208,0.7); text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.7)'">About Cowboy</a>
+          <a href="https://www.phenixknives.com/come-and-make-it/" style="font-size:0.8125rem; font-weight:500; color:rgba(232,223,208,0.7); text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.7)'">Come and Make It</a>
+          <a href="https://www.phenixknives.com/blacksmith-demo-tour/" style="font-size:0.8125rem; font-weight:500; color:rgba(232,223,208,0.7); text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.7)'">Shop Tours</a>
+        </div>
+        <a href="tel:7137246813" class="btn font-display" style="background:#c87d2e; color:#0f0e0c; font-size:0.75rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; padding:10px 20px; text-decoration:none; white-space:nowrap;" onmouseover="this.style.background='#e8942a'" onmouseout="this.style.background='#c87d2e'">
+          713-724-6813
+        </a>
+      </div>
+    </div>
+  </nav>
+  <script>
+    if (window.innerWidth >= 768) document.getElementById('nav-links').style.display = 'flex';
+    window.addEventListener('resize', () => {
+      document.getElementById('nav-links').style.display = window.innerWidth >= 768 ? 'flex' : 'none';
+    });
+  </script>
+
+  <!-- HERO -->
+  <section style="min-height:100dvh; position:relative; display:flex; align-items:flex-end; padding-bottom:80px;">
+    <div style="position:absolute; inset:0; background-image:url('https://www.phenixknives.com/wp-content/uploads/2021/09/20180915_154237_web.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat;"></div>
+    <div style="position:absolute; inset:0; background:linear-gradient(105deg, rgba(15,14,12,0.96) 0%, rgba(15,14,12,0.78) 45%, rgba(15,14,12,0.25) 100%);"></div>
+    <div style="position:relative; max-width:1280px; margin:0 auto; padding:0 24px; width:100%;">
+      <div style="max-width:640px;">
+        <p class="font-display" style="color:#c87d2e; text-transform:uppercase; letter-spacing:0.3em; font-size:0.75rem; font-weight:700; margin-bottom:16px;">Bellville, Texas &middot; Forging since 1999</p>
+        <h1 class="font-display" style="font-weight:800; font-size:clamp(3.5rem,8vw,6rem); line-height:0.95; text-transform:uppercase; color:#f5f0e8; margin-bottom:24px;">
+          Fire-Forged.<br>
+          <span style="color:#c87d2e;">Built to Last</span><br>
+          Generations.
+        </h1>
+        <p style="color:rgba(232,223,208,0.8); font-size:1.0625rem; max-width:480px; line-height:1.6; margin-bottom:32px;">Custom hand-forged knives from Cowboy Szymanski. Bladesmith with 27 years at the anvil. Featured on History Channel's Forged in Fire.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:16px;">
+          <a href="https://www.phenixknives.com/hand-forged-knives/" class="btn font-display" style="background:#c87d2e; color:#0f0e0c; font-size:0.8rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; padding:14px 32px; text-decoration:none;" onmouseover="this.style.background='#e8942a'" onmouseout="this.style.background='#c87d2e'">See the Knives</a>
+          <a href="https://www.phenixknives.com/contact/" class="btn font-display" style="border:1px solid rgba(232,223,208,0.4); color:#e8dfd0; font-size:0.8rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; padding:14px 32px; text-decoration:none;" onmouseover="this.style.borderColor='#c87d2e';this.style.color='#c87d2e'" onmouseout="this.style.borderColor='rgba(232,223,208,0.4)';this.style.color='#e8dfd0'">Commission a Blade</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIMARY PRODUCT: Asymmetric split, numbered features -->
+  <section style="background:#1c1a17; padding:96px 0;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:64px; align-items:center;">
+      <div class="reveal-left">
+        <img src="https://www.phenixknives.com/wp-content/uploads/2021/09/20180915_154558_web.jpg"
+             alt="Hand-forged Damascus hunting knife by Cowboy Szymanski, Phenix Knives Bellville Texas"
+             style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:2px; display:block;">
+      </div>
+      <div class="reveal-right">
+        <p class="font-display" style="color:#c87d2e; text-transform:uppercase; letter-spacing:0.3em; font-size:0.75rem; font-weight:700; margin-bottom:16px;">What goes into every blade</p>
+        <h2 class="font-display" style="font-weight:800; font-size:clamp(2.5rem,5vw,3.5rem); line-height:1; text-transform:uppercase; color:#f5f0e8; margin-bottom:40px;">No two<br>alike. Ever.</h2>
+        <div style="display:flex; flex-direction:column; gap:32px;">
+          <div style="display:flex; gap:24px; align-items:flex-start;">
+            <span class="font-display" style="font-size:3rem; font-weight:800; color:#c87d2e; line-height:1; flex-shrink:0;">01</span>
+            <div>
+              <h3 class="font-display" style="font-weight:700; font-size:1.125rem; text-transform:uppercase; color:#f5f0e8; margin-bottom:6px;">Damascus Pattern Steel</h3>
+              <p style="color:rgba(232,223,208,0.7); font-size:0.875rem; line-height:1.65; margin:0;">Each blade is pattern-welded from layered steel. The wavy grain running through the metal is structural, not decorative. It's the same technique bladesmiths have used for centuries, done by hand at the forge.</p>
+            </div>
+          </div>
+          <div style="display:flex; gap:24px; align-items:flex-start;">
+            <span class="font-display" style="font-size:3rem; font-weight:800; color:#c87d2e; line-height:1; flex-shrink:0;">02</span>
+            <div>
+              <h3 class="font-display" style="font-weight:700; font-size:1.125rem; text-transform:uppercase; color:#f5f0e8; margin-bottom:6px;">Handle Fitted to the Work</h3>
+              <p style="color:rgba(232,223,208,0.7); font-size:0.875rem; line-height:1.65; margin:0;">Stag, ironwood, Kirinite, bone. Cowboy matches the handle to how you'll use the knife. A hunting blade that rides your belt gets different scales than a presentation piece headed for a display case.</p>
+            </div>
+          </div>
+          <div style="display:flex; gap:24px; align-items:flex-start;">
+            <span class="font-display" style="font-size:3rem; font-weight:800; color:#c87d2e; line-height:1; flex-shrink:0;">03</span>
+            <div>
+              <h3 class="font-display" style="font-weight:700; font-size:1.125rem; text-transform:uppercase; color:#f5f0e8; margin-bottom:6px;">Sized for Your Hand</h3>
+              <p style="color:rgba(232,223,208,0.7); font-size:0.875rem; line-height:1.65; margin:0;">Before steel gets cut, Cowboy learns what you need from the knife: field dressing game, daily carry, or something to pass to your son in twenty years. Custom means measured, not just marked up.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY: About Cowboy, reversed split -->
+  <section style="background:#0f0e0c; padding:96px 0;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:64px; align-items:center;">
+      <div class="reveal-left" style="order:1;">
+        <p class="font-display" style="color:#c87d2e; text-transform:uppercase; letter-spacing:0.3em; font-size:0.75rem; font-weight:700; margin-bottom:16px;">The man behind the anvil</p>
+        <h2 class="font-display" style="font-weight:800; font-size:clamp(2.5rem,5vw,3.5rem); line-height:1; text-transform:uppercase; color:#f5f0e8; margin-bottom:24px;">Cowboy<br>Szymanski</h2>
+        <p style="color:rgba(232,223,208,0.8); font-size:1rem; line-height:1.65; margin-bottom:16px;">Cowboy moved to Bellville in 2003 to restore and operate the town's 1891 blacksmith shop. He has been at the forge ever since, through five seasons, a relocated shop, and a slot on History Channel's Forged in Fire.</p>
+        <p style="color:rgba(232,223,208,0.8); font-size:1rem; line-height:1.65; margin-bottom:16px;">In 2018 he and his wife started the Texas Select Custom Cutlery Event. It now draws more than 200 vendors and buyers from across the country and beyond.</p>
+        <p style="color:rgba(232,223,208,0.8); font-size:1rem; line-height:1.65; margin-bottom:32px;">Every knife that leaves his shop is one of a kind. The design, the steel, the handle. Nothing is repeated.</p>
+        <div style="display:flex; gap:32px; margin-bottom:32px;">
+          <div>
+            <p class="font-display" style="font-size:2.5rem; font-weight:800; color:#c87d2e; line-height:1;">27</p>
+            <p style="color:rgba(232,223,208,0.55); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-top:4px;">Years forging</p>
+          </div>
+          <div>
+            <p class="font-display" style="font-size:2.5rem; font-weight:800; color:#c87d2e; line-height:1;">1891</p>
+            <p style="color:rgba(232,223,208,0.55); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-top:4px;">Original shop</p>
+          </div>
+          <div>
+            <p class="font-display" style="font-size:2.5rem; font-weight:800; color:#c87d2e; line-height:1;">200+</p><!-- verify -->
+            <p style="color:rgba(232,223,208,0.55); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-top:4px;">TX Select vendors</p>
+          </div>
+        </div>
+        <a href="https://www.phenixknives.com/about-cowboy/" class="btn font-display" style="border:1px solid #c87d2e; color:#c87d2e; font-size:0.8rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; padding:12px 28px; text-decoration:none; display:inline-block;" onmouseover="this.style.background='#c87d2e';this.style.color='#0f0e0c'" onmouseout="this.style.background='transparent';this.style.color='#c87d2e'">His Story</a>
+      </div>
+      <div class="reveal-right" style="order:2;">
+        <img src="https://www.phenixknives.com/wp-content/uploads/2015/05/Phenix-130-300x450.jpg"
+             alt="Cowboy Szymanski, bladesmith and owner of Phenix Knives, Bellville Texas"
+             style="width:100%; max-width:380px; margin:0 auto; display:block; aspect-ratio:3/4; object-fit:cover; border-radius:2px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY: Photography grid, breaks the zigzag -->
+  <section style="background:#2e2b26; padding:96px 0;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 24px;">
+      <div class="reveal" style="text-align:center; margin-bottom:48px;">
+        <p class="font-display" style="color:#c87d2e; text-transform:uppercase; letter-spacing:0.3em; font-size:0.75rem; font-weight:700; margin-bottom:12px;">Each one is different</p>
+        <h2 class="font-display" style="font-weight:800; font-size:clamp(2.5rem,5vw,3.5rem); line-height:1; text-transform:uppercase; color:#f5f0e8;">The Work</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:auto auto; gap:8px;">
+        <div class="reveal" style="grid-column:span 2; grid-row:span 2;">
+          <img src="https://www.phenixknives.com/wp-content/uploads/2021/09/20180915_154208_web.jpg"
+               alt="Damascus pattern-welded blade showing layered steel grain, Phenix Knives"
+               style="width:100%; height:100%; object-fit:cover; border-radius:2px; display:block; aspect-ratio:1;">
+        </div>
+        <div class="reveal">
+          <img src="https://www.phenixknives.com/wp-content/uploads/2021/09/20180914_134608_web.jpg"
+               alt="Custom hunting knife on leather sheath, Phenix Knives Bellville Texas"
+               style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:2px; display:block;">
+        </div>
+        <div class="reveal">
+          <img src="https://www.phenixknives.com/wp-content/uploads/2015/06/2172013-005-scaled.jpg"
+               alt="Hand-forged blade with decorative filework, Phenix Knives"
+               style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:2px; display:block;">
+        </div>
+        <div class="reveal">
+          <img src="https://www.phenixknives.com/wp-content/uploads/2021/09/20180915_154259_web.jpg"
+               alt="Finished custom knife close-up showing handle material"
+               style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:2px; display:block;">
+        </div>
+        <div class="reveal">
+          <img src="https://www.phenixknives.com/wp-content/uploads/2021/09/20180915_154421_web.jpg"
+               alt="Custom Phenix Knives blade with stag handle scales"
+               style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:2px; display:block;">
+        </div>
+      </div>
+      <div class="reveal" style="text-align:center; margin-top:32px;">
+        <a href="https://www.phenixknives.com/hand-forged-knives/" class="btn font-display" style="border:1px solid rgba(232,223,208,0.35); color:#e8dfd0; font-size:0.8rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; padding:14px 40px; text-decoration:none; display:inline-block;" onmouseover="this.style.borderColor='#c87d2e';this.style.color='#c87d2e'" onmouseout="this.style.borderColor='rgba(232,223,208,0.35)';this.style.color='#e8dfd0'">See All Knives</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY + WORKSHOP -->
+  <section style="background:#1c1a17; padding:96px 0;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:64px; align-items:start;">
+      <div class="reveal">
+        <p class="font-display" style="color:#c87d2e; text-transform:uppercase; letter-spacing:0.3em; font-size:0.75rem; font-weight:700; margin-bottom:24px;">Recognition</p>
+        <div style="display:flex; flex-direction:column; gap:28px;">
+          <div style="border-left:2px solid #c87d2e; padding-left:24px;">
+            <p style="color:#f5f0e8; font-size:1.0625rem; font-weight:500; line-height:1.55; margin-bottom:8px;">"A bladesmith with 27 years of experience ... a world-traveled craftsman, honing his skills across the globe."</p>
+            <p style="color:rgba(232,223,208,0.5); font-size:0.8rem;">Austin County News Online, January 2025</p>
+          </div>
+          <div style="border-left:2px solid #2e2b26; padding-left:24px;">
+            <p class="font-display" style="font-size:2rem; font-weight:800; color:#f5f0e8; text-transform:uppercase; line-height:1;">Forged in Fire</p>
+            <p style="color:rgba(232,223,208,0.5); font-size:0.8rem; margin-top:6px;">History Channel, Season 1 Contestant</p>
+          </div>
+          <div style="border-left:2px solid #2e2b26; padding-left:24px;">
+            <p class="font-display" style="font-size:2rem; font-weight:800; color:#f5f0e8; text-transform:uppercase; line-height:1;">Texas Select Event</p>
+            <p style="color:rgba(232,223,208,0.5); font-size:0.8rem; margin-top:6px;">Custom Cutlery Event founder, 200+ vendors annually from across the US and beyond</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="font-display" style="color:#c87d2e; text-transform:uppercase; letter-spacing:0.3em; font-size:0.75rem; font-weight:700; margin-bottom:24px;">Forge Your Own</p>
+        <img src="https://www.phenixknives.com/wp-content/uploads/2021/10/Come-and-Make-it-2021-450x253.jpg"
+             alt="Visitors forging their own souvenir knives at the Phenix Knives Come and Make It workshop in Bellville Texas"
+             style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:2px; display:block; margin-bottom:24px;">
+        <h3 class="font-display" style="font-weight:800; font-size:2rem; text-transform:uppercase; color:#f5f0e8; line-height:1; margin-bottom:12px;">Come and Make It</h3>
+        <p style="color:rgba(232,223,208,0.75); font-size:0.9375rem; line-height:1.65; margin-bottom:20px;">Hammer out your own souvenir knife at the forge. No experience needed. Ages 6 and up, about 25 minutes per knife. $40 small, $60 large. Walk in anytime during shop hours.</p>
+        <a href="https://www.phenixknives.com/come-and-make-it/" style="color:#c87d2e; font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:0.8rem; letter-spacing:0.12em; text-transform:uppercase; text-decoration:none;" onmouseover="this.style.color='#e8942a'" onmouseout="this.style.color='#c87d2e'">Learn More &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="reveal" style="background:#c87d2e; padding:64px 0;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 24px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px;">
+      <div>
+        <h2 class="font-display" style="font-weight:800; font-size:clamp(1.75rem,4vw,2.5rem); text-transform:uppercase; color:#0f0e0c; line-height:1.1;">Ready to commission a blade?</h2>
+        <p style="color:rgba(15,14,12,0.7); font-size:1rem; margin-top:8px;">Call the shop or use the contact form. Cowboy will talk through what you need.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <a href="tel:7137246813" class="btn font-display" style="background:#0f0e0c; color:#f5f0e8; font-size:0.8rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; padding:14px 32px; text-decoration:none;" onmouseover="this.style.background='#1c1a17'" onmouseout="this.style.background='#0f0e0c'">713-724-6813</a>
+        <a href="https://www.phenixknives.com/contact/" class="btn font-display" style="border:2px solid #0f0e0c; color:#0f0e0c; font-size:0.8rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; padding:12px 32px; text-decoration:none; background:transparent;" onmouseover="this.style.background='#0f0e0c';this.style.color='#f5f0e8'" onmouseout="this.style.background='transparent';this.style.color='#0f0e0c'">Contact Form</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#0f0e0c; border-top:1px solid #2e2b26; padding:64px 0 0;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:40px;">
+      <div style="grid-column:span 2;">
+        <p class="font-display" style="font-size:1.375rem; font-weight:800; text-transform:uppercase; color:#f5f0e8; margin-bottom:12px;">Phenix <span style="color:#c87d2e;">Knives</span></p>
+        <p style="color:rgba(232,223,208,0.55); font-size:0.875rem; max-width:280px; line-height:1.6;">Hand-forged custom blades from a working Texas blacksmith shop. Open Monday through Saturday, 9 to 5.</p>
+      </div>
+      <div>
+        <p class="font-display" style="color:#c87d2e; font-size:0.7rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:16px;">Navigate</p>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;">
+          <li><a href="https://www.phenixknives.com/hand-forged-knives/" style="color:rgba(232,223,208,0.65); font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.65)'">Hand Forged Knives</a></li>
+          <li><a href="https://www.phenixknives.com/about-cowboy/" style="color:rgba(232,223,208,0.65); font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.65)'">About Cowboy</a></li>
+          <li><a href="https://www.phenixknives.com/come-and-make-it/" style="color:rgba(232,223,208,0.65); font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.65)'">Come and Make It</a></li>
+          <li><a href="https://www.phenixknives.com/blacksmith-demo-tour/" style="color:rgba(232,223,208,0.65); font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.65)'">Blacksmith Demo Tour</a></li>
+          <li><a href="https://www.phenixknives.com/gift-certificates/" style="color:rgba(232,223,208,0.65); font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.65)'">Gift Certificates</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display" style="color:#c87d2e; font-size:0.7rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:16px;">Visit</p>
+        <address style="font-style:normal; display:flex; flex-direction:column; gap:6px;">
+          <p style="color:rgba(232,223,208,0.65); font-size:0.875rem; margin:0;">317 E. Main Street</p>
+          <p style="color:rgba(232,223,208,0.65); font-size:0.875rem; margin:0;">Bellville, Texas 77418</p>
+          <p style="margin:8px 0 0;"><a href="tel:7137246813" style="color:rgba(232,223,208,0.65); font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.65)'">713-724-6813</a></p>
+          <p style="margin:0;"><a href="mailto:cowboy@phenixknives.com" style="color:rgba(232,223,208,0.65); font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.65)'">cowboy@phenixknives.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div style="max-width:1280px; margin:0 auto; padding:24px; margin-top:40px; border-top:1px solid #2e2b26; display:flex; justify-content:space-between; align-items:center;">
+      <p style="color:rgba(232,223,208,0.35); font-size:0.75rem; margin:0;">&copy; 2026 Phenix Knives &middot; Bellville, Texas</p>
+      <a href="https://www.facebook.com/phenixknives/" style="color:rgba(232,223,208,0.35); font-size:0.75rem; text-decoration:none;" onmouseover="this.style.color='#c87d2e'" onmouseout="this.style.color='rgba(232,223,208,0.35)'">Facebook</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

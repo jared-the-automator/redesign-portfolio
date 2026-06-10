@@ -36,3 +36,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Brackley Boats](https://jared-the-automator.github.io/redesign-portfolio/brackleyboats.com/) | Wooden boat restoration | Gravenhurst, ON |
 | [Striker Bows](https://jared-the-automator.github.io/redesign-portfolio/strikerbows.com/) | Custom traditional longbows | Ohio |
 | [Northwoods Canoe Co.](https://jared-the-automator.github.io/redesign-portfolio/wooden-canoes.com/) | Handcrafted wood and canvas canoes | Atkinson, ME |
+| [Phenix Knives](https://jared-the-automator.github.io/redesign-portfolio/phenixknives.com/) | Texas bladesmith, custom hunting knives | Bellville, TX |
