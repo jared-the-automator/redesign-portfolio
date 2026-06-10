@@ -32,3 +32,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Weymouth Rod Works](https://jared-the-automator.github.io/redesign-portfolio/weymouthrodworks.com/) | Handcrafted bamboo fly rods | Manitowoc, WI |
 | [Skyhorse Saddles](https://jared-the-automator.github.io/redesign-portfolio/skyhorse.com/) | Custom western saddles | Durango, CO |
 | [Out West Saddlery](https://jared-the-automator.github.io/redesign-portfolio/outwestsaddlery.com/) | Custom handmade saddles | Salmon, ID |
+| [Jean Street Shipyard](https://jared-the-automator.github.io/redesign-portfolio/jeanstreetshipyard.net/) | Classic boat restoration and marina | Tampa, FL |
+| [Brackley Boats](https://jared-the-automator.github.io/redesign-portfolio/brackleyboats.com/) | Wooden boat restoration | Gravenhurst, ON |

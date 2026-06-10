@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brackley Boats — Muskoka Wooden Boat Restoration | Gravenhurst, Ontario</title>
+<meta name="description" content="Paul Brackley and his team have restored Muskoka's most celebrated wooden boats for 30 years. Restorations, repairs, and new custom builds in Gravenhurst, Ontario.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy:      '#0d1b2a',
+        'navy-lg': '#142536',
+        'navy-cd': '#1a2f45',
+        amber:     '#c8881a',
+        'amber-h': '#d4970a',
+        ivory:     '#f0f4f8',
+        'ivory-d': '#bccad8',
+      },
+      fontFamily: {
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        body:    ['"DM Sans"', 'system-ui', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: #0d1b2a; color: #f0f4f8; font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Divider line */
+.divider { width: 40px; height: 2px; background: #c8881a; display: block; }
+</style>
+</head>
+<body class="bg-navy">
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-16">
+
+    <a href="#" class="font-display text-xl tracking-wide text-ivory leading-none">
+      BRACKLEY BOATS
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-body font-medium tracking-wide">
+      <a href="#restorations" class="text-ivory-d hover:text-amber transition-colors duration-200">Restorations</a>
+      <a href="#gallery"      class="text-ivory-d hover:text-amber transition-colors duration-200">Gallery</a>
+      <a href="#legacy"       class="text-ivory-d hover:text-amber transition-colors duration-200">Our Legacy</a>
+      <a href="#contact"      class="text-ivory-d hover:text-amber transition-colors duration-200">Contact</a>
+    </nav>
+
+    <a href="tel:18668110171"
+       class="text-sm font-medium px-5 py-2 border border-amber text-amber hover:bg-amber hover:text-navy transition-colors duration-200 tracking-wide font-body">
+      1-866-811-0171
+    </a>
+
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="relative min-h-[100dvh] flex items-end" id="hero">
+
+  <!-- Full-bleed background image -->
+  <div class="absolute inset-0 overflow-hidden">
+    <img
+      src="https://www.brackleyboats.com/wp-content/uploads/2024/01/BrackleyBoats.jpg"
+      alt="Vintage Muskoka mahogany runabout restored by Brackley Boats"
+      class="w-full h-full object-cover object-center"
+    >
+    <!-- Directional overlay: heavy left, fading right -->
+    <div class="absolute inset-0" style="background: linear-gradient(110deg, rgba(13,27,42,0.88) 0%, rgba(13,27,42,0.60) 45%, rgba(13,27,42,0.18) 100%);"></div>
+    <!-- Bottom fade for text legibility -->
+    <div class="absolute bottom-0 left-0 right-0 h-48" style="background: linear-gradient(to top, rgba(13,27,42,0.70) 0%, transparent 100%);"></div>
+  </div>
+
+  <!-- Hero content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full pb-24 pt-32">
+    <div class="max-w-2xl">
+
+      <!-- Location eyebrow -->
+      <p class="text-amber text-xs tracking-[0.22em] uppercase mb-7 font-body font-medium">
+        Gravenhurst, Ontario &nbsp;·&nbsp; Muskoka
+      </p>
+
+      <!-- Headline -->
+      <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-ivory mb-7">
+        Where Muskoka's<br>finest boats<br>come back to life.
+      </h1>
+
+      <!-- Subtext -->
+      <p class="text-ivory-d text-lg leading-relaxed mb-10 max-w-[480px] font-body font-light">
+        Paul Brackley has spent 30 years restoring the boats of Muskoka legend. The Jolly Roger. The Q.M. Lady Barbra. Boats once owned by people whose names you know.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#restorations"
+           class="inline-flex items-center justify-center px-8 py-4 bg-amber text-navy font-body font-medium text-sm tracking-wide hover:bg-amber-h transition-colors duration-200">
+          View Restorations
+        </a>
+        <a href="#contact"
+           class="inline-flex items-center justify-center px-8 py-4 border border-ivory/40 text-ivory text-sm font-body tracking-wide hover:border-ivory hover:bg-white/5 transition-colors duration-200">
+          Bring Us Your Boat
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     SECTION 2 — RESTORATIONS (split: image left, numbered features right)
+     ============================================================ -->
+<section class="bg-navy py-28 lg:py-36" id="restorations">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="grid lg:grid-cols-[55%_45%] gap-16 lg:gap-24 items-center">
+
+      <!-- Image -->
+      <div class="reveal order-2 lg:order-1">
+        <div class="relative">
+          <img
+            src="https://www.brackleyboats.com/wp-content/uploads/2019/10/JollyRoger08-0036-2-e1572445603354.jpg"
+            alt="The Jolly Roger after full restoration by Brackley Boats"
+            class="w-full h-[520px] object-cover object-center"
+          >
+          <!-- Amber accent corner -->
+          <div class="absolute top-0 left-0 w-12 h-1 bg-amber"></div>
+          <div class="absolute top-0 left-0 w-1 h-12 bg-amber"></div>
+        </div>
+        <p class="text-xs text-ivory-d mt-3 font-body font-light tracking-wide">
+          The Jolly Roger &mdash;<!-- verify: boat name from site -->
+          a Muskoka award winner, fully restored by Brackley Boats
+        </p>
+      </div>
+
+      <!-- Content -->
+      <div class="reveal reveal-delay-2 order-1 lg:order-2">
+        <span class="divider mb-8"></span>
+        <h2 class="font-display text-4xl lg:text-5xl text-ivory mb-8 leading-tight">
+          Every project<br>is our business card.
+        </h2>
+        <p class="text-ivory-d font-body font-light leading-relaxed mb-12 text-base">
+          We restore wooden boats up to 50 feet long. Hull planking, engine rebuilds, period-correct hardware, finish varnishing. Our clients are the kind of people who know what's supposed to be there, and they notice when it isn't.
+        </p>
+
+        <!-- Numbered features -->
+        <div class="space-y-8">
+
+          <div class="flex gap-5 items-start">
+            <span class="font-display text-4xl text-amber/40 leading-none font-bold select-none">01</span>
+            <div>
+              <h3 class="font-body font-medium text-ivory mb-2 text-base tracking-wide">Full Hull Restoration</h3>
+              <p class="text-ivory-d font-light text-sm leading-relaxed">Planks, frames, keel, stem. We rebuild what the years took, to original specifications or better.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start">
+            <span class="font-display text-4xl text-amber/40 leading-none font-bold select-none">02</span>
+            <div>
+              <h3 class="font-body font-medium text-ivory mb-2 text-base tracking-wide">Engine and Mechanical</h3>
+              <p class="text-ivory-d font-light text-sm leading-relaxed">Engine rebuilds and overhauls, mechanical systems, bilge and electrical. Reliable on the water.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start">
+            <span class="font-display text-4xl text-amber/40 leading-none font-bold select-none">03</span>
+            <div>
+              <h3 class="font-body font-medium text-ivory mb-2 text-base tracking-wide">Varnish, Upholstery, Finishing</h3>
+              <p class="text-ivory-d font-light text-sm leading-relaxed">The final ten percent is what people see. Period-accurate hardware, flawless varnish, upholstery that belongs on the boat.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 3 — STORY (split: text left, image right — reversed)
+     ============================================================ -->
+<section class="bg-navy-lg py-28 lg:py-36">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="grid lg:grid-cols-[45%_55%] gap-16 lg:gap-24 items-center">
+
+      <!-- Content -->
+      <div class="reveal">
+        <span class="divider mb-8"></span>
+        <p class="text-amber text-xs tracking-[0.22em] uppercase mb-4 font-body font-medium">30 Years in Muskoka</p>
+        <h2 class="font-display text-4xl lg:text-5xl text-ivory mb-8 leading-tight">
+          The last boat-<br>building tradition<br>worth preserving.
+        </h2>
+        <p class="text-ivory-d font-body font-light leading-relaxed mb-6 text-base">
+          Gravenhurst was the boat-building capital of Canada. Minett, Greavette, Duke, Ditchburn &mdash;<!-- verify: builders listed on site --> the great makers who put mahogany runabouts on every lake in cottage country. Paul Brackley learned the trade in that tradition and has kept it alive.
+        </p>
+        <p class="text-ivory-d font-body font-light leading-relaxed mb-10 text-base">
+          Clients bring us boats that have been in families for generations. Boats with stories. We don't take the responsibility of that lightly.
+        </p>
+        <a href="#contact"
+           class="inline-flex items-center gap-3 text-amber text-sm font-body font-medium tracking-wide hover:gap-5 transition-all duration-200">
+          Talk to us about your boat
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+
+      <!-- Image -->
+      <div class="reveal reveal-delay-2">
+        <div class="relative">
+          <img
+            src="https://www.brackleyboats.com/wp-content/uploads/2019/10/020-1-e1572036588652.jpg"
+            alt="Brackley Boats restoration work in progress, Gravenhurst workshop"
+            class="w-full h-[560px] object-cover"
+            style="object-position: center top;"
+          >
+          <div class="absolute bottom-0 right-0 w-12 h-1 bg-amber"></div>
+          <div class="absolute bottom-0 right-0 w-1 h-12 bg-amber"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 4 — GALLERY (layout break — editorial grid)
+     ============================================================ -->
+<section class="bg-navy py-28 lg:py-36" id="gallery">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <!-- Section header -->
+    <div class="mb-16 reveal">
+      <p class="text-amber text-xs tracking-[0.22em] uppercase mb-3 font-body font-medium">Award-Winning Work</p>
+      <h2 class="font-display text-4xl lg:text-5xl text-ivory leading-tight">
+        The boats we've brought back.
+      </h2>
+    </div>
+
+    <!-- Gallery grid — editorial, asymmetric -->
+    <div class="grid grid-cols-12 gap-3 lg:gap-4">
+
+      <!-- Large feature: spans 8 cols -->
+      <div class="col-span-12 lg:col-span-8 reveal">
+        <div class="relative overflow-hidden group">
+          <img
+            src="https://www.brackleyboats.com/wp-content/uploads/2019/10/QM1.jpg"
+            alt="The Q.M. — restored by Brackley Boats, Muskoka"
+            class="w-full h-[440px] lg:h-[560px] object-cover group-hover:scale-105 transition-transform duration-700"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p class="font-display text-xl text-ivory">The Q.M.</p>
+            <p class="text-ivory-d text-sm font-body font-light">Full restoration</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right stacked: 4 cols -->
+      <div class="col-span-12 lg:col-span-4 flex flex-col gap-3 lg:gap-4 reveal reveal-delay-1">
+        <div class="relative overflow-hidden group">
+          <img
+            src="https://www.brackleyboats.com/wp-content/uploads/2019/10/DUV5123rtl-2.jpg"
+            alt="Muskoka mahogany runabout restored by Brackley Boats"
+            class="w-full h-[266px] lg:h-[272px] object-cover group-hover:scale-105 transition-transform duration-700"
+          >
+        </div>
+        <div class="relative overflow-hidden group">
+          <img
+            src="https://www.brackleyboats.com/wp-content/uploads/2019/10/DSC_0177-2-e1572445241804.jpg"
+            alt="Restored vintage wooden boat, Brackley Boats Gravenhurst"
+            class="w-full h-[266px] lg:h-[272px] object-cover group-hover:scale-105 transition-transform duration-700"
+          >
+        </div>
+      </div>
+
+      <!-- Bottom row -->
+      <div class="col-span-12 lg:col-span-4 reveal reveal-delay-1">
+        <img
+          src="https://www.brackleyboats.com/wp-content/uploads/2019/10/DSC_0428-2-e1572445109726.jpg"
+          alt="Wooden boat engine detail, Brackley Boats restoration"
+          class="w-full h-[260px] object-cover"
+        >
+      </div>
+      <div class="col-span-12 lg:col-span-4 reveal reveal-delay-2">
+        <img
+          src="https://www.brackleyboats.com/wp-content/uploads/2019/10/PICT0669-e1572444432803.jpg"
+          alt="Classic Muskoka wooden boat hull — Brackley Boats"
+          class="w-full h-[260px] object-cover"
+        >
+      </div>
+      <div class="col-span-12 lg:col-span-4 reveal reveal-delay-3">
+        <img
+          src="https://www.brackleyboats.com/wp-content/uploads/2025/10/Water_Wagon.png"
+          alt="Water Wagon — Brackley Boats restoration, Muskoka"
+          class="w-full h-[260px] object-cover"
+        >
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 5 — CREDIBILITY / LEGACY
+     ============================================================ -->
+<section class="bg-navy-cd py-28 lg:py-36" id="legacy">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="grid lg:grid-cols-2 gap-20 lg:gap-32 items-start">
+
+      <!-- Left: Quote / testimonial -->
+      <div class="reveal">
+        <span class="divider mb-8"></span>
+        <blockquote>
+          <p class="font-display text-2xl lg:text-3xl italic text-ivory leading-relaxed mb-8">
+            "We're also strongly motivated to keep alive the old skills and workmanship that went into building these distinguished watercraft in the first place."
+          </p>
+          <footer class="text-ivory-d font-body text-sm font-light tracking-wide">
+            Paul Brackley, Founder
+          </footer>
+        </blockquote>
+      </div>
+
+      <!-- Right: Facts and named boats -->
+      <div class="reveal reveal-delay-2">
+
+        <!-- Stats row -->
+        <div class="grid grid-cols-2 gap-8 mb-14">
+          <div>
+            <p class="font-display text-5xl text-amber mb-2">30</p>
+            <p class="text-ivory-d font-body text-sm font-light">Years in Muskoka</p>
+          </div>
+          <div>
+            <p class="font-display text-5xl text-amber mb-2">50'</p>
+            <p class="text-ivory-d font-body text-sm font-light">Maximum boat length</p>
+          </div>
+        </div>
+
+        <!-- Named restorations -->
+        <div>
+          <p class="text-amber text-xs tracking-[0.22em] uppercase mb-6 font-body font-medium">Notable Restorations</p>
+          <div class="space-y-3">
+            <div class="flex items-baseline justify-between border-b border-white/10 pb-3">
+              <span class="font-body text-ivory text-sm">The Jolly Roger</span>
+              <span class="text-ivory-d text-xs font-light">Award winner</span>
+            </div>
+            <div class="flex items-baseline justify-between border-b border-white/10 pb-3">
+              <span class="font-body text-ivory text-sm">Lady Barbra</span>
+              <span class="text-ivory-d text-xs font-light">Full restoration</span>
+            </div>
+            <div class="flex items-baseline justify-between border-b border-white/10 pb-3">
+              <span class="font-body text-ivory text-sm">The Q.M.</span>
+              <span class="text-ivory-d text-xs font-light">Award winner</span>
+            </div>
+            <div class="flex items-baseline justify-between border-b border-white/10 pb-3">
+              <span class="font-body text-ivory text-sm">Flying Lady</span>
+              <span class="text-ivory-d text-xs font-light">Full restoration</span>
+            </div>
+            <div class="flex items-baseline justify-between border-b border-white/10 pb-3">
+              <span class="font-body text-ivory text-sm">Iconic</span>
+              <span class="text-ivory-d text-xs font-light">Award winner</span>
+            </div>
+            <div class="flex items-baseline justify-between pb-3">
+              <span class="font-body text-ivory-d text-sm italic">Boats once owned by Orville Wright, Al Capone, Rita Hayworth</span>
+              <span class="text-ivory-d text-xs font-light"><!-- verify --></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 6 — CTA STRIP
+     ============================================================ -->
+<section class="bg-amber py-20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-8 reveal">
+
+    <div>
+      <h2 class="font-display text-4xl lg:text-5xl text-navy leading-tight mb-2">
+        Bring us your dream.
+      </h2>
+      <p class="text-navy/70 font-body font-light text-lg">
+        Gravenhurst, Ontario &nbsp;·&nbsp; 1885 Beaver Creek Drive
+      </p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+      <a href="tel:18668110171"
+         class="inline-flex items-center justify-center px-8 py-4 bg-navy text-ivory font-body font-medium text-sm tracking-wide hover:bg-navy-lg transition-colors duration-200">
+        1-866-811-0171
+      </a>
+      <a href="mailto:info@brackleyboats.com"
+         class="inline-flex items-center justify-center px-8 py-4 border-2 border-navy text-navy font-body font-medium text-sm tracking-wide hover:bg-navy hover:text-ivory transition-colors duration-200">
+        Email Us
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 7 — CONTACT
+     ============================================================ -->
+<section class="bg-navy py-28 lg:py-36" id="contact">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="grid lg:grid-cols-2 gap-20 items-start">
+
+      <!-- Left: contact info -->
+      <div class="reveal">
+        <span class="divider mb-8"></span>
+        <h2 class="font-display text-4xl text-ivory mb-10 leading-tight">Get in touch.</h2>
+
+        <div class="space-y-8">
+          <div>
+            <p class="text-amber text-xs tracking-[0.22em] uppercase mb-2 font-body font-medium">Address</p>
+            <p class="text-ivory-d font-body font-light leading-relaxed">
+              1885 Beaver Creek Drive<br>
+              P.O. Box 913<br>
+              Gravenhurst, Ontario P1P 1V2
+            </p>
+          </div>
+          <div>
+            <p class="text-amber text-xs tracking-[0.22em] uppercase mb-2 font-body font-medium">Phone</p>
+            <a href="tel:18668110171" class="text-ivory font-body hover:text-amber transition-colors">1-866-811-0171</a>
+            <span class="text-ivory-d mx-2 font-light">/</span>
+            <a href="tel:17056849399" class="text-ivory font-body hover:text-amber transition-colors">705-684-9399</a>
+          </div>
+          <div>
+            <p class="text-amber text-xs tracking-[0.22em] uppercase mb-2 font-body font-medium">Email</p>
+            <a href="mailto:info@brackleyboats.com" class="text-ivory font-body hover:text-amber transition-colors">info@brackleyboats.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: image -->
+      <div class="reveal reveal-delay-2">
+        <img
+          src="https://www.brackleyboats.com/wp-content/uploads/2019/10/IMG_8617-copy-e1572444275870.jpg"
+          alt="Muskoka wooden boat in the workshop at Brackley Boats, Gravenhurst"
+          class="w-full h-[420px] object-cover"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="bg-navy-lg border-t border-white/10 pt-16 pb-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+
+      <!-- Brand -->
+      <div class="col-span-2 lg:col-span-1">
+        <p class="font-display text-xl text-ivory mb-4 tracking-wide">BRACKLEY BOATS</p>
+        <p class="text-ivory-d font-body font-light text-sm leading-relaxed">
+          Wooden boat restoration and custom builds.<br>
+          Gravenhurst, Ontario, since 1994.<!-- verify year -->
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <p class="text-amber text-xs tracking-[0.22em] uppercase mb-5 font-body font-medium">Services</p>
+        <ul class="space-y-3 text-ivory-d text-sm font-body font-light">
+          <li><a href="#" class="hover:text-ivory transition-colors">Restorations</a></li>
+          <li><a href="#" class="hover:text-ivory transition-colors">Repairs</a></li>
+          <li><a href="#" class="hover:text-ivory transition-colors">New Custom Boats</a></li>
+          <li><a href="#" class="hover:text-ivory transition-colors">Re-Finishing</a></li>
+          <li><a href="#" class="hover:text-ivory transition-colors">Boats For Sale</a></li>
+        </ul>
+      </div>
+
+      <!-- Gallery -->
+      <div>
+        <p class="text-amber text-xs tracking-[0.22em] uppercase mb-5 font-body font-medium">Gallery</p>
+        <ul class="space-y-3 text-ivory-d text-sm font-body font-light">
+          <li><a href="#" class="hover:text-ivory transition-colors">Award Winners</a></li>
+          <li><a href="#" class="hover:text-ivory transition-colors">Restoration Gallery</a></li>
+          <li><a href="#" class="hover:text-ivory transition-colors">Olde Muskoka</a></li>
+          <li><a href="#" class="hover:text-ivory transition-colors">Video Library</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <p class="text-amber text-xs tracking-[0.22em] uppercase mb-5 font-body font-medium">Contact</p>
+        <address class="not-italic space-y-3 text-ivory-d text-sm font-body font-light">
+          <p>1885 Beaver Creek Drive<br>Gravenhurst, Ontario P1P 1V2</p>
+          <p><a href="tel:18668110171" class="hover:text-ivory transition-colors">1-866-811-0171</a></p>
+          <p><a href="mailto:info@brackleyboats.com" class="hover:text-ivory transition-colors">info@brackleyboats.com</a></p>
+        </address>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-ivory-d text-xs font-body font-light">
+        &copy; Brackley Boats. All rights reserved.
+      </p>
+      <p class="text-ivory-d/50 text-xs font-body font-light">
+        Prototype design by Bigger Fish Intelligent Automation
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     INTERSECTION OBSERVER — fade-in reveals
+     ============================================================ -->
+<script>
+(function () {
+  var targets = document.querySelectorAll('.reveal');
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  targets.forEach(function (el) { observer.observe(el); });
+})();
+</script>
+
+</body>
+</html>
