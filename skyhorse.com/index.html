@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyhorse Saddles | Custom Western Saddles | Durango, Colorado</title>
+  <meta name="description" content="Lisa and Loren Skyhorse have built over 1,300 custom handmade saddles in Durango, Colorado since 1972. Collection saddles, show saddles, trail saddles, and sidesaddles. Base price $8,500.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream:  '#FAF7F2',
+            dark:   '#1C1410',
+            accent: '#B5591E',
+            muted:  '#8B7355',
+            border: '#E8DFD0',
+            alt:    '#F2EBE1',
+          },
+          fontFamily: {
+            slab: ['"Roboto Slab"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            DEFAULT: '2px',
+            sm: '2px',
+            md: '2px',
+            lg: '2px',
+            xl: '2px',
+            '2xl': '2px',
+            full: '9999px',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #FAF7F2;
+      color: #1C1410;
+      font-family: Inter, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-slab { font-family: "Roboto Slab", Georgia, serif; }
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-cream/96 backdrop-blur-sm border-b border-border">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
+    <a href="/" class="font-slab text-xl text-dark tracking-tight flex-shrink-0">
+      Skyhorse Saddles
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-dark/65">
+      <a href="/products/saddles/" class="hover:text-accent transition-colors duration-200">Saddles</a>
+      <a href="/products/custom-work/" class="hover:text-accent transition-colors duration-200">Custom Work</a>
+      <a href="/ordering/" class="hover:text-accent transition-colors duration-200">Ordering</a>
+      <a href="/outreach/" class="hover:text-accent transition-colors duration-200">Outreach</a>
+      <a href="/testimonials/" class="hover:text-accent transition-colors duration-200">Testimonials</a>
+    </div>
+    <a href="/ordering/contact-us/"
+       class="bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded hover:bg-accent/88 transition-colors duration-200 flex-shrink-0">
+      Start Your Saddle
+    </a>
+  </div>
+</nav>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="relative min-h-[100dvh] flex items-end pb-24 pt-16">
+  <div class="absolute inset-0 overflow-hidden">
+    <img
+      src="https://skyhorse.com/wp-content/uploads/2019/09/Lisa-detailing-one-of-her-paintings--1024x918.jpg"
+      alt="Lisa Skyhorse detailing hand-painted wildlife imagery into a custom saddle at her bench in Durango Colorado"
+      class="w-full h-full object-cover object-center"
+      loading="eager"
+    >
+    <div class="absolute inset-0" style="background: linear-gradient(100deg, rgba(28,20,16,0.92) 0%, rgba(28,20,16,0.72) 42%, rgba(28,20,16,0.15) 100%);"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+    <div class="max-w-xl">
+      <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-5">Durango, Colorado</p>
+      <h1 class="font-slab text-5xl md:text-6xl lg:text-7xl text-white leading-[1.05] mb-6">
+        Fifty years.<br>
+        One saddle<br>
+        at a time.
+      </h1>
+      <p class="text-white/78 text-lg leading-relaxed mb-10 max-w-md">
+        Lisa and Loren Skyhorse have built over 1,300 custom saddles entirely by their own four hands since 1972.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="/ordering/contact-us/"
+           class="bg-accent text-white font-semibold px-7 py-3.5 rounded hover:bg-accent/88 transition-colors duration-200">
+          Start Your Saddle
+        </a>
+        <a href="/products/saddles/collection/"
+           class="border border-white/45 text-white font-semibold px-7 py-3.5 rounded hover:border-white/80 hover:bg-white/8 transition-colors duration-200">
+          View Collection
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CREDENTIALS BAND  (dark, between hero and first split)
+     ============================================================ -->
+<section class="bg-dark py-10 px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-8">
+    <p class="text-white/85 text-lg font-slab max-w-xl leading-snug">
+      A Skyhorse saddle is a singular work of art, created specifically for horse and rider.
+    </p>
+    <div class="flex gap-12 flex-wrap">
+      <div>
+        <p class="font-slab text-4xl text-accent leading-none">1,300+</p>
+        <p class="text-white/50 text-sm mt-1.5">Custom saddles built</p>
+      </div>
+      <div>
+        <p class="font-slab text-4xl text-accent leading-none">54</p>
+        <p class="text-white/50 text-sm mt-1.5">Years full time</p>
+      </div>
+      <div>
+        <p class="font-slab text-4xl text-accent leading-none">2</p>
+        <p class="text-white/50 text-sm mt-1.5">People. Four hands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SPLIT 1 — Image left, numbered features right
+     ============================================================ -->
+<section class="py-24 lg:py-32 px-6 lg:px-8 bg-cream">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+    <div class="reveal">
+      <img
+        src="https://skyhorse.com/wp-content/uploads/2019/09/Navajoprayer.jpg"
+        alt="Navajo Prayer custom saddle, hand-tooled and painted by Lisa Skyhorse with silver lace braiding by Loren"
+        class="w-full rounded object-cover shadow-lg"
+        style="aspect-ratio: 4 / 5; object-position: center top;"
+      >
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-7">The Craft</p>
+      <h2 class="font-slab text-4xl lg:text-5xl text-dark leading-tight mb-12">
+        Built to the measurement.<br>Carved to the story.
+      </h2>
+      <div class="space-y-9">
+        <div class="flex gap-7 items-start">
+          <span class="font-slab text-3xl text-accent/25 leading-none flex-shrink-0 pt-0.5">01</span>
+          <div>
+            <h3 class="font-semibold text-dark text-base mb-2">Handmade wooden trees</h3>
+            <p class="text-muted text-sm leading-relaxed">
+              Every tree is built to your horse's exact measurements: specific bar width, fork shape, horn style, and cantle dimensions. Not a catalog tree. Built for your horse.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-7 items-start">
+          <span class="font-slab text-3xl text-accent/25 leading-none flex-shrink-0 pt-0.5">02</span>
+          <div>
+            <h3 class="font-semibold text-dark text-base mb-2">Lisa's hand-carved wildlife imagery</h3>
+            <p class="text-muted text-sm leading-relaxed">
+              Every design is drawn, sculpted, and painted directly into the leather by Lisa. Eagles, bears, wildlife: no transfers, no templates. Each saddle is singular.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-7 items-start">
+          <span class="font-slab text-3xl text-accent/25 leading-none flex-shrink-0 pt-0.5">03</span>
+          <div>
+            <h3 class="font-semibold text-dark text-base mb-2">Loren's signature edge braiding</h3>
+            <p class="text-muted text-sm leading-relaxed">
+              Eight-strand kangaroo leather lace or pure silver: Loren's braiding technique is a Skyhorse trademark unique in the industry. Fork, cantle, horn, any edge.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SPLIT 2 (REVERSED) — Text left, Loren-polishing right
+     ============================================================ -->
+<section class="py-24 lg:py-32 px-6 lg:px-8 bg-alt">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+    <div class="reveal lg:order-1 order-2">
+      <h2 class="font-slab text-4xl lg:text-5xl text-dark leading-tight mb-7">
+        We start with your horse, not a template.
+      </h2>
+      <p class="text-muted leading-relaxed mb-8">
+        Every saddle begins with your horse's measurements and your vision. Fit is built before any carving starts. Structure before art. Every Skyhorse saddle ships ready to ride: cinch, stirrups, and saddle strings included.
+      </p>
+      <div class="border-t-2 border-accent pt-7 mb-9">
+        <p class="font-slab text-2xl text-dark mb-1.5">Base price: $8,500</p>
+        <p class="text-muted text-sm">
+          $2,500 deposit locks your delivery date and design. Custom tooling quoted individually. Price is firm once your design is approved.
+        </p>
+      </div>
+      <a href="/ordering/"
+         class="inline-block border border-dark text-dark text-sm font-semibold px-7 py-3 rounded hover:bg-dark hover:text-cream transition-colors duration-200">
+        See Ordering Details
+      </a>
+    </div>
+
+    <div class="reveal lg:order-2 order-1">
+      <img
+        src="https://skyhorse.com/wp-content/uploads/2019/09/Loren-polishing-1024x768.jpg"
+        alt="Loren Skyhorse polishing a completed custom saddle at the workbench in Durango Colorado"
+        class="w-full rounded object-cover shadow-lg"
+        style="aspect-ratio: 4 / 3;"
+      >
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     GALLERY — Collection pieces (layout break from splits)
+     ============================================================ -->
+<section class="py-24 lg:py-32 px-6 lg:px-8 bg-cream">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="mb-14 reveal">
+      <h2 class="font-slab text-4xl lg:text-5xl text-dark mb-5">The Collection</h2>
+      <p class="text-muted max-w-lg leading-relaxed">
+        Each Collection piece is a one-of-a-kind work built entirely by Lisa and Loren. Museum quality. Built to ride.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+      <div class="reveal group">
+        <div class="overflow-hidden rounded" style="aspect-ratio: 3 / 4;">
+          <img src="https://skyhorse.com/wp-content/uploads/2021/11/Wild-Off-Side.jpg"
+               alt="Wild: collection saddle with hand-painted scene by Lisa Skyhorse"
+               class="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700">
+        </div>
+        <p class="font-slab text-dark text-sm mt-3">Wild</p>
+      </div>
+      <div class="reveal reveal-delay-1 group">
+        <div class="overflow-hidden rounded" style="aspect-ratio: 3 / 4;">
+          <img src="https://skyhorse.com/wp-content/uploads/2019/09/Bronzeportrait.jpg"
+               alt="The Golden Eagle Bronze: collection saddle"
+               class="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700">
+        </div>
+        <p class="font-slab text-dark text-sm mt-3">The Golden Eagle, Bronze</p>
+      </div>
+      <div class="reveal reveal-delay-2 group">
+        <div class="overflow-hidden rounded" style="aspect-ratio: 3 / 4;">
+          <img src="https://skyhorse.com/wp-content/uploads/2019/08/buckaroos-1.jpg"
+               alt="The Buckaroos: collection saddle"
+               class="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700">
+        </div>
+        <p class="font-slab text-dark text-sm mt-3">The Buckaroos</p>
+      </div>
+      <div class="reveal group">
+        <div class="overflow-hidden rounded" style="aspect-ratio: 3 / 4;">
+          <img src="https://skyhorse.com/wp-content/uploads/2023/08/blanket-left.png"
+               alt="Navajo Rugs: collection saddle with traditional weaving pattern"
+               class="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700">
+        </div>
+        <p class="font-slab text-dark text-sm mt-3">Navajo Rugs</p>
+      </div>
+      <div class="reveal reveal-delay-1 group">
+        <div class="overflow-hidden rounded" style="aspect-ratio: 3 / 4;">
+          <img src="https://skyhorse.com/wp-content/uploads/2019/09/Skyhorse-bearview-3-1.jpg"
+               alt="The Yellowstone: collection saddle with carved bear scene"
+               class="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700">
+        </div>
+        <p class="font-slab text-dark text-sm mt-3">The Yellowstone</p>
+      </div>
+      <div class="reveal reveal-delay-2 group">
+        <div class="overflow-hidden rounded" style="aspect-ratio: 3 / 4;">
+          <img src="https://skyhorse.com/wp-content/uploads/2019/10/BB-LSide-Straight-9438-.jpg"
+               alt="Buffalo Bill and Friends: collection saddle"
+               class="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700">
+        </div>
+        <p class="font-slab text-dark text-sm mt-3">Buffalo Bill &amp; Friends</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-14 reveal">
+      <a href="/products/saddles/collection/"
+         class="inline-block border border-dark text-dark text-sm font-semibold px-9 py-3.5 rounded hover:bg-dark hover:text-cream transition-colors duration-200">
+        View Full Collection
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROCESS STRIP — Lisa at bench, full-width editorial
+     ============================================================ -->
+<section class="relative py-28 px-6 lg:px-8 overflow-hidden">
+  <div class="absolute inset-0">
+    <img
+      src="https://skyhorse.com/wp-content/uploads/2019/09/Lisa-sketching-for-a-custom-panel-662x1024.jpg"
+      alt="Lisa Skyhorse sketching a custom design panel for a client's saddle"
+      class="w-full h-full object-cover object-top"
+    >
+    <div class="absolute inset-0" style="background: rgba(28,20,16,0.72);"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto text-center reveal">
+    <p class="text-white/55 text-sm font-semibold tracking-widest uppercase mb-5">The Process</p>
+    <blockquote class="font-slab text-3xl lg:text-4xl text-white max-w-3xl mx-auto leading-tight mb-8">
+      "In this collection we give ourselves the freedom to create without restrictions. Each piece challenges us, inspires us and moves us."
+    </blockquote>
+    <p class="text-white/55 text-sm">Lisa and Loren Skyhorse</p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="bg-dark py-24 lg:py-32 px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 mb-20">
+      <div class="reveal">
+        <p class="text-white/75 text-lg leading-relaxed italic mb-7">
+          "The workmanship and artistry of Skyhorse Saddles are like none other. They have an up-to-date show ring appearance but also possess a unique, authentic look. I was proud to ride a Skyhorse to my championships."
+        </p>
+        <p class="text-accent font-semibold text-sm mb-1">La Rae Fletcher-Powell</p>
+        <p class="text-white/40 text-sm">Western Woman Trainer, Horsewoman of the Year 1991 &amp; 1992</p>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <p class="text-white/75 text-lg leading-relaxed italic mb-7">
+          "Looking at a Skyhorse collection piece stimulates the soul. How fortunate am I to know the Skyhorses. Showcasing and selling their products in our stores is an honor and a privilege."
+        </p>
+        <p class="text-accent font-semibold text-sm mb-1">Danna Burns-Shaw</p>
+        <p class="text-white/40 text-sm">5th Generation Owner, Burns Saddlery and Burns Cowboy Shop</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p class="text-white/75 text-xl lg:text-2xl leading-relaxed italic text-center max-w-2xl mx-auto mb-8">
+        "I consider them to be National Treasures."
+      </p>
+      <p class="text-center text-accent font-semibold text-sm mb-1">Michael Pasternak, Ph.D.</p>
+      <p class="text-center text-white/40 text-sm">Founding Trustee, The Facial Pain Research Center</p>
+    </div>
+
+    <div class="mt-20 pt-14 border-t border-white/10 flex flex-wrap gap-12 reveal">
+      <div>
+        <p class="font-slab text-4xl text-white leading-none">1,300+</p>
+        <p class="text-white/40 text-sm mt-2">Saddles built since 1972</p>
+      </div>
+      <div>
+        <p class="font-slab text-4xl text-white leading-none">54 years</p>
+        <p class="text-white/40 text-sm mt-2">Full time, by their own hands</p>
+      </div>
+      <div>
+        <p class="font-slab text-4xl text-white leading-none">Durango, CO</p>
+        <p class="text-white/40 text-sm mt-2">Workshop open by appointment</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CTA STRIP
+     ============================================================ -->
+<section class="bg-accent py-18 px-6 lg:px-8" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+  <div class="max-w-7xl mx-auto text-center reveal">
+    <h2 class="font-slab text-3xl lg:text-4xl text-white mb-4">
+      Ready to start your saddle?
+    </h2>
+    <p class="text-white/80 mb-9 text-lg">
+      Call Loren at <a href="tel:9707648099" class="underline hover:text-white">(970) 764-8099</a>, or write to start the conversation.
+    </p>
+    <a href="mailto:skyhorsesaddles@gmail.com"
+       class="inline-block bg-white text-accent font-semibold text-sm px-9 py-4 rounded hover:bg-cream transition-colors duration-200">
+      Start the Conversation
+    </a>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="bg-dark pt-18 pb-10 px-6 lg:px-8" style="padding-top: 4.5rem;">
+  <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+
+    <div>
+      <p class="font-slab text-xl text-white mb-4">Skyhorse Saddles</p>
+      <p class="text-white/45 text-sm leading-relaxed">
+        Master Saddlemakers since 1972.<br>
+        Two people. Four hands.<br>
+        Durango, Colorado.
+      </p>
+    </div>
+
+    <div>
+      <p class="font-semibold text-white/60 text-xs uppercase tracking-widest mb-5">Saddles</p>
+      <ul class="space-y-2.5 text-sm text-white/45">
+        <li><a href="/products/saddles/collection/" class="hover:text-white transition-colors duration-200">Collection</a></li>
+        <li><a href="/products/saddles/pleasure/" class="hover:text-white transition-colors duration-200">Pleasure</a></li>
+        <li><a href="/products/saddles/show/" class="hover:text-white transition-colors duration-200">Show</a></li>
+        <li><a href="/products/saddles/trail/" class="hover:text-white transition-colors duration-200">Trail</a></li>
+        <li><a href="/products/saddles/sidesaddles/" class="hover:text-white transition-colors duration-200">Sidesaddles</a></li>
+        <li><a href="/products/saddles/skyrider/" class="hover:text-white transition-colors duration-200">Skyrider (from $3,750)</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="font-semibold text-white/60 text-xs uppercase tracking-widest mb-5">Ordering</p>
+      <ul class="space-y-2.5 text-sm text-white/45">
+        <li><a href="/ordering/" class="hover:text-white transition-colors duration-200">How to Order</a></li>
+        <li><a href="/ordering/pricing/" class="hover:text-white transition-colors duration-200">Pricing</a></li>
+        <li><a href="/ordering/measuring-your-horse/" class="hover:text-white transition-colors duration-200">Measuring Your Horse</a></li>
+        <li><a href="/ordering/contact-us/" class="hover:text-white transition-colors duration-200">Contact Us</a></li>
+        <li><a href="/testimonials/" class="hover:text-white transition-colors duration-200">Testimonials</a></li>
+        <li><a href="/outreach/" class="hover:text-white transition-colors duration-200">Outreach Projects</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="font-semibold text-white/60 text-xs uppercase tracking-widest mb-5">Contact</p>
+      <ul class="space-y-3 text-sm text-white/45">
+        <li class="leading-relaxed">P.O. Box 4317<br>Durango, CO 81302</li>
+        <li><a href="tel:9707648099" class="hover:text-white transition-colors duration-200">(970) 764-8099</a></li>
+        <li><a href="mailto:skyhorsesaddles@gmail.com" class="hover:text-white transition-colors duration-200">skyhorsesaddles@gmail.com</a></li>
+        <li><a href="https://www.facebook.com/SkyhorseSaddles/" target="_blank" rel="noopener" class="hover:text-white transition-colors duration-200">Facebook</a></li>
+        <li><a href="https://www.pinterest.com/skyhorsesaddles/" target="_blank" rel="noopener" class="hover:text-white transition-colors duration-200">Pinterest</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-white/25 text-xs">
+    <span>&copy; 2026 Skyhorse Saddles. All rights reserved.</span>
+    <span>Custom Western Saddles. Durango, Colorado.</span>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     INTERSECTION OBSERVER SCROLL REVEALS
+     ============================================================ -->
+<script>
+  (function () {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      observer.observe(el);
+    });
+  })();
+</script>
+
+</body>
+</html>
