@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northwoods Canoe Co. | Handcrafted Wood Canvas Canoes | Atkinson, Maine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest:      '#1B3A0A',
+            'forest-mid':'#264F10',
+            bone:        '#E6DFCF',
+            cream:       '#F7F4EE',
+            earth:       '#1A1F15',
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body:    ['Lato', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lato', sans-serif; background: #F7F4EE; color: #1A1F15; }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+  </style>
+</head>
+<body class="bg-cream text-earth antialiased">
+
+  <!-- ========== NAV ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/96 border-b border-bone backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="font-display font-bold text-lg tracking-wide uppercase text-earth">
+        Northwoods Canoe Co.
+      </a>
+      <div class="hidden md:flex items-center gap-8 font-body font-normal text-sm text-earth/60">
+        <a href="/canoes/"          class="hover:text-forest transition-colors duration-200">Canoes</a>
+        <a href="/restorations/"    class="hover:text-forest transition-colors duration-200">Restorations</a>
+        <a href="/canoes/materials/" class="hover:text-forest transition-colors duration-200">Kits &amp; Classes</a>
+        <a href="/about/"           class="hover:text-forest transition-colors duration-200">About</a>
+      </div>
+      <a href="/contact/" class="bg-forest text-cream font-body font-normal text-sm tracking-wide px-5 py-2.5 hover:bg-forest-mid transition-colors duration-200">
+        Start Your Order
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative min-h-[100dvh] flex items-end pb-24 pt-32">
+    <!-- Full-bleed background: couple paddling the Atkinson Traveler on a Maine lake -->
+    <div class="absolute inset-0">
+      <img
+        src="https://www.wooden-canoes.com/wp-content/uploads/2017/02/couple-canoe.jpg"
+        alt="Couple paddling a wood canvas canoe on a calm Maine lake"
+        class="w-full h-full object-cover object-center"
+      >
+      <div class="absolute inset-0 bg-gradient-to-r from-earth/85 via-earth/50 to-transparent"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-lg reveal">
+        <span class="inline-block font-body font-light text-xs tracking-[0.22em] uppercase text-bone/75 mb-6">
+          Atkinson, Maine
+        </span>
+        <h1 class="font-display font-bold text-6xl md:text-7xl leading-[1.04] uppercase text-cream mb-6">
+          Wood and Canvas<br>Canoes, Built<br>by Hand
+        </h1>
+        <p class="font-body font-light text-lg text-bone/85 mb-10 leading-relaxed max-w-xs">
+          One shop. One builder. Forty-two years of traditional wood and canvas construction in central Maine.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/canoes/" class="bg-forest text-cream font-body font-normal text-sm tracking-wide px-7 py-3.5 hover:bg-forest-mid transition-colors duration-200">
+            Browse the Models
+          </a>
+          <a href="/contact/" class="border border-bone/70 text-bone font-body font-normal text-sm tracking-wide px-7 py-3.5 hover:bg-bone/10 transition-colors duration-200">
+            Join the Wait List
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WAIT LIST BAND ========== -->
+  <div class="bg-forest text-bone py-4">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="font-body font-light text-sm text-center text-bone/80 tracking-wide">
+        Current wait for new canoes and restorations: approximately 24 months.
+        <a href="/contact/" class="underline underline-offset-2 hover:text-cream ml-2 transition-colors">Add your name.</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- ========== PRIMARY PRODUCT SECTION: Atkinson Traveler ========== -->
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <div class="grid md:grid-cols-2 gap-0 items-stretch">
+
+      <!-- Image left: the Atkinson Traveler beauty shot -->
+      <div class="reveal overflow-hidden">
+        <img
+          src="https://www.wooden-canoes.com/wp-content/uploads/2017/03/atkinson-e1493212755688.jpg"
+          alt="17.5 foot Atkinson Traveler wood canvas canoe, the flagship design of Northwoods Canoe Co."
+          class="w-full h-full object-cover"
+          style="min-height: 480px;"
+        >
+      </div>
+
+      <!-- Content right: numbered features -->
+      <div class="bg-bone px-10 py-14 md:px-14 md:py-16 flex flex-col justify-center reveal reveal-delay-1">
+        <span class="font-body font-normal text-xs tracking-[0.25em] uppercase text-forest/55 mb-4">
+          Featured Model
+        </span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl uppercase leading-tight text-earth mb-10">
+          The 17.5&apos;<br>Atkinson Traveler
+        </h2>
+
+        <div class="space-y-8 mb-10">
+          <div class="flex gap-5 items-start">
+            <span class="font-display font-bold text-3xl text-forest/25 leading-none mt-0.5 shrink-0">01</span>
+            <div>
+              <div class="font-body font-normal text-xs uppercase tracking-widest text-earth mb-1.5">Hull</div>
+              <p class="font-body font-light text-sm text-earth/70 leading-relaxed">
+                Maine white cedar planking over steam-bent ribs. Canvas-covered, oil-filled, spar-varnished interior. Built to last generations of hard use.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start">
+            <span class="font-display font-bold text-3xl text-forest/25 leading-none mt-0.5 shrink-0">02</span>
+            <div>
+              <div class="font-body font-normal text-xs uppercase tracking-widest text-earth mb-1.5">Rails and Trim</div>
+              <p class="font-body font-light text-sm text-earth/70 leading-relaxed">
+                White spruce gunwales. Ash decks, thwarts, and hand-caned seats. All fastenings are marine-grade brass or bronze.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start">
+            <span class="font-display font-bold text-3xl text-forest/25 leading-none mt-0.5 shrink-0">03</span>
+            <div>
+              <div class="font-body font-normal text-xs uppercase tracking-widest text-earth mb-1.5">Performance</div>
+              <p class="font-body font-light text-sm text-earth/70 leading-relaxed">
+                Fine entry for speed, modest rocker for rapids, 17.5 feet of hull for straight lake tracking. Generous load capacity for weeks away.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="/canoes/atkinson-traveler/" class="self-start border border-earth font-body font-normal text-sm tracking-wide px-6 py-3 hover:bg-earth hover:text-cream transition-colors duration-200">
+          View Specifications
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECONDARY SECTION: Reversed split, craft process ========== -->
+  <section class="max-w-7xl mx-auto px-6 pb-24">
+    <div class="grid md:grid-cols-2 gap-0 items-stretch">
+
+      <!-- Content left: dark, story/process -->
+      <div class="bg-earth text-cream px-10 py-14 md:px-14 md:py-16 flex flex-col justify-center order-2 md:order-1 reveal">
+        <span class="font-body font-normal text-xs tracking-[0.25em] uppercase text-bone/45 mb-4">
+          The Work
+        </span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl uppercase leading-tight mb-8">
+          Built to Outlast<br>Its Owner
+        </h2>
+        <p class="font-body font-light text-base text-bone/80 mb-5 leading-relaxed">
+          Rollin Thurlow co-authored "The Wood and Canvas Canoe" in 1988, the first book to fully document traditional construction techniques. It has not been out of print since.
+        </p>
+        <p class="font-body font-light text-base text-bone/80 mb-10 leading-relaxed">
+          Every restoration starts with a complete teardown. Each rib, plank, and fastening is assessed. A properly restored boat comes back rated for 75% of all canoeing demands and another lifetime of service.
+        </p>
+
+        <div class="flex gap-10 border-t border-bone/15 pt-8">
+          <div>
+            <div class="font-display font-bold text-3xl text-forest-mid mb-1">12+</div>
+            <div class="font-body font-light text-xs text-bone/55 uppercase tracking-widest">Canoe designs</div>
+          </div>
+          <div>
+            <div class="font-display font-bold text-3xl text-forest-mid mb-1">1,000+</div>
+            <div class="font-body font-light text-xs text-bone/55 uppercase tracking-widest">Canoes launched</div>
+          </div>
+          <div>
+            <div class="font-display font-bold text-3xl text-forest-mid mb-1">42</div>
+            <div class="font-body font-light text-xs text-bone/55 uppercase tracking-widest">Years building <!-- verify --></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image right: rail caps / craftsmanship detail -->
+      <div class="order-1 md:order-2 overflow-hidden reveal reveal-delay-1">
+        <img
+          src="https://www.wooden-canoes.com/wp-content/uploads/2017/04/rail-caps-03-1200x500.jpg"
+          alt="White spruce rail caps and brass fastenings on a Northwoods wood canvas canoe, Atkinson Maine"
+          class="w-full h-full object-cover"
+          style="min-height: 420px;"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY (layout break after 2 splits) ========== -->
+  <section class="bg-bone py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12 reveal">
+        <span class="font-body font-normal text-xs tracking-[0.25em] uppercase text-forest/55">The Canoes</span>
+        <h2 class="font-display font-bold text-4xl uppercase text-earth mt-3">Forty-Two Years of Boats</h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-2 reveal">
+        <!-- Large landscape: lake scene -->
+        <div class="col-span-2">
+          <img
+            src="https://www.wooden-canoes.com/wp-content/uploads/2017/02/lake-scaled.jpg"
+            alt="Expedition Atkinson Traveler on a Maine wilderness lake at dusk"
+            class="w-full h-72 md:h-80 object-cover"
+          >
+        </div>
+        <!-- Tall single: canoe on water -->
+        <div>
+          <img
+            src="https://www.wooden-canoes.com/wp-content/uploads/2017/02/canoe.jpg"
+            alt="Finished Northwoods wood canvas canoe on glassy water"
+            class="w-full h-72 md:h-80 object-cover"
+          >
+        </div>
+        <!-- Bottom row -->
+        <div>
+          <img
+            src="https://www.wooden-canoes.com/wp-content/uploads/2017/02/woman-canoe.jpg"
+            alt="Woman paddling a Northwoods canoe in early morning light"
+            class="w-full h-48 object-cover"
+          >
+        </div>
+        <div>
+          <img
+            src="https://www.wooden-canoes.com/wp-content/uploads/2017/02/blue-canoe.jpg"
+            alt="Blue-hulled wood canvas canoe, one of the available custom enamel colors"
+            class="w-full h-48 object-cover"
+          >
+        </div>
+        <div>
+          <img
+            src="https://www.wooden-canoes.com/wp-content/uploads/2017/04/Beauty-shots-01-1-1200x500.jpg"
+            alt="Finished wood canvas canoe in the Northwoods shop, Atkinson Maine"
+            class="w-full h-48 object-cover"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MODELS GRID ========== -->
+  <section class="py-20 max-w-7xl mx-auto px-6">
+    <div class="mb-12 reveal">
+      <span class="font-body font-normal text-xs tracking-[0.25em] uppercase text-forest/55">What we build</span>
+      <h2 class="font-display font-bold text-4xl uppercase text-earth mt-3">Twelve Models, Each with a Purpose</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-px bg-bone reveal">
+      <a href="/canoes/voyager/" class="bg-cream p-8 hover:bg-bone transition-colors duration-200 group">
+        <div class="font-display font-bold text-2xl uppercase text-earth mb-2 group-hover:text-forest transition-colors duration-200">20&apos; Voyager</div>
+        <div class="font-body font-light text-sm text-earth/60">The expedition canoe for the longest wilderness routes.</div>
+      </a>
+      <a href="/canoes/atkinson-traveler/" class="bg-cream p-8 hover:bg-bone transition-colors duration-200 group">
+        <div class="font-display font-bold text-2xl uppercase text-earth mb-2 group-hover:text-forest transition-colors duration-200">17.5&apos; Atkinson Traveler</div>
+        <div class="font-body font-light text-sm text-earth/60">The flagship wilderness tripper. Rollin&apos;s own design, proven on rivers and lakes.</div>
+      </a>
+      <a href="/canoes/morris-canoes/" class="bg-cream p-8 hover:bg-bone transition-colors duration-200 group">
+        <div class="font-display font-bold text-2xl uppercase text-earth mb-2 group-hover:text-forest transition-colors duration-200">17&apos; B.N. Morris</div>
+        <div class="font-body font-light text-sm text-earth/60">Reproduction of the classic 1900s Maine guide canoe.</div>
+      </a>
+      <a href="/canoes/the-medford-explorer/" class="bg-cream p-8 hover:bg-bone transition-colors duration-200 group">
+        <div class="font-display font-bold text-2xl uppercase text-earth mb-2 group-hover:text-forest transition-colors duration-200">16&apos; Medford Explorer</div>
+        <div class="font-body font-light text-sm text-earth/60">Versatile tandem for mixed flatwater and moving water.</div>
+      </a>
+      <a href="/canoes/kingfisher/" class="bg-cream p-8 hover:bg-bone transition-colors duration-200 group">
+        <div class="font-display font-bold text-2xl uppercase text-earth mb-2 group-hover:text-forest transition-colors duration-200">15&apos; Kingfisher</div>
+        <div class="font-body font-light text-sm text-earth/60">A smaller boat for day trips and shorter expeditions.</div>
+      </a>
+      <a href="/canoes/" class="bg-forest text-cream p-8 hover:bg-forest-mid transition-colors duration-200 group">
+        <div class="font-display font-bold text-2xl uppercase mb-2">All 12 Models</div>
+        <div class="font-body font-light text-sm text-bone/70">Including the 13&apos; American Beauty, 11&apos; Skimmer, Morris scale models, and custom options.</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIAL / CREDIBILITY ========== -->
+  <section class="bg-forest text-cream py-20 reveal">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <blockquote class="font-display font-normal text-2xl md:text-3xl leading-relaxed text-bone mb-8">
+        "Wow. What a lot of work, care, love and patience you have given my dear old friend. I thank you for doing a beautiful restoration on my Old Town canoe."
+      </blockquote>
+      <p class="font-body font-light text-sm text-bone/55 tracking-widest uppercase">
+        Mrs. Jeri Quick, Bonita Springs, Florida
+      </p>
+
+      <div class="mt-16 grid grid-cols-3 gap-8 border-t border-bone/15 pt-16">
+        <div>
+          <div class="font-display font-bold text-5xl text-bone mb-2">42</div>
+          <div class="font-body font-light text-xs text-bone/55 uppercase tracking-widest">Years building</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-5xl text-bone mb-2">1,000+</div>
+          <div class="font-body font-light text-xs text-bone/55 uppercase tracking-widest">Canoes launched</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-5xl text-bone mb-2">1988</div>
+          <div class="font-body font-light text-xs text-bone/55 uppercase tracking-widest">The book published</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SHOP PROCESS / BUILD PHOTO ========== -->
+  <section class="py-20 max-w-7xl mx-auto px-6 reveal">
+    <div class="grid md:grid-cols-5 gap-12 items-center">
+      <div class="md:col-span-2">
+        <span class="font-body font-normal text-xs tracking-[0.25em] uppercase text-forest/55 mb-4 block">The Shop</span>
+        <h3 class="font-display font-bold text-3xl uppercase text-earth mb-6">
+          One Craftsman, One Shop, Central Maine
+        </h3>
+        <p class="font-body font-light text-base text-earth/70 mb-5 leading-relaxed">
+          Rollin Thurlow runs the shop in Atkinson, Maine, with a small part-time staff. Every canoe that leaves is custom-built. There is no production line.
+        </p>
+        <p class="font-body font-light text-base text-earth/70 mb-8 leading-relaxed">
+          Classes and kits are also available for builders who want to construct their own. Rollin has taught at the Wooden Boat School and written the definitive reference on the craft.
+        </p>
+        <a href="/about/" class="font-body font-normal text-sm tracking-wide border border-earth px-6 py-3 hover:bg-earth hover:text-cream transition-colors duration-200">
+          About Rollin Thurlow
+        </a>
+      </div>
+      <div class="md:col-span-3 overflow-hidden">
+        <img
+          src="https://www.wooden-canoes.com/wp-content/uploads/2017/03/Canoe-1000-063-scaled.jpg"
+          alt="The 1000th canoe built at Northwoods Canoe Co., celebration with the shop staff and owners in Atkinson, Maine"
+          class="w-full h-72 md:h-96 object-cover"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA STRIP ========== -->
+  <section class="py-16 bg-bone border-t border-earth/10 reveal">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <h3 class="font-display font-bold text-3xl uppercase text-earth">Commission a Canoe</h3>
+        <p class="font-body font-light text-earth/60 mt-2 text-sm">Current wait is approximately 24 months. Call or write to put your name on the list.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+        <a href="tel:2075643667" class="bg-forest text-cream font-body font-normal text-sm tracking-wide px-8 py-4 hover:bg-forest-mid transition-colors duration-200 text-center">
+          (207) 564-3667
+        </a>
+        <a href="/contact/" class="border border-earth text-earth font-body font-normal text-sm tracking-wide px-8 py-4 hover:bg-earth hover:text-cream transition-colors duration-200 text-center">
+          Send a Message
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-earth text-bone py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+
+      <div class="md:col-span-2">
+        <div class="font-display font-bold text-xl uppercase text-cream mb-4">Northwoods Canoe Co.</div>
+        <p class="font-body font-light text-sm text-bone/60 leading-relaxed mb-6">
+          Traditional wood and canvas canoe construction, restoration, classes, kits, and building materials. One shop in central Maine, in operation since 1984.
+        </p>
+        <address class="font-body font-light text-sm text-bone/60 not-italic leading-relaxed">
+          336 Range Road<br>
+          Atkinson, Maine 04426
+        </address>
+      </div>
+
+      <div>
+        <div class="font-body font-normal text-xs uppercase tracking-widest text-bone/35 mb-6">Canoes</div>
+        <ul class="space-y-3 font-body font-light text-sm text-bone/65">
+          <li><a href="/canoes/"                     class="hover:text-cream transition-colors">All Models</a></li>
+          <li><a href="/canoes/atkinson-traveler/"   class="hover:text-cream transition-colors">Atkinson Traveler</a></li>
+          <li><a href="/canoes/voyager/"             class="hover:text-cream transition-colors">Voyager</a></li>
+          <li><a href="/restorations/"               class="hover:text-cream transition-colors">Restorations</a></li>
+          <li><a href="/canoes/materials/"           class="hover:text-cream transition-colors">Kits and Materials</a></li>
+          <li><a href="/canoes/books-videos/"        class="hover:text-cream transition-colors">Books and Videos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="font-body font-normal text-xs uppercase tracking-widest text-bone/35 mb-6">Contact</div>
+        <ul class="space-y-3 font-body font-light text-sm text-bone/65">
+          <li><a href="tel:2075643667"       class="hover:text-cream transition-colors">(207) 564-3667</a></li>
+          <li><a href="tel:18885642710"      class="hover:text-cream transition-colors">1-888-564-2710 (toll-free)</a></li>
+          <li><a href="mailto:info@wooden-canoes.com" class="hover:text-cream transition-colors">info@wooden-canoes.com</a></li>
+          <li class="pt-4">
+            <a href="/about/"  class="hover:text-cream transition-colors">About Rollin Thurlow</a>
+          </li>
+          <li><a href="/blog" class="hover:text-cream transition-colors">Shop Blog</a></li>
+          <li><a href="/contact/" class="hover:text-cream transition-colors">Join the Wait List</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-bone/10">
+      <p class="font-body font-light text-xs text-bone/25">
+        Northwoods Canoe Co., Atkinson, Maine. Handcrafted wood and canvas canoes since 1984.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const els = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    els.forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>
