@@ -31,3 +31,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [ABC Fuels, Inc.](https://jared-the-automator.github.io/redesign-portfolio/abcfuels.com/) | Heating oil & kerosene delivery | Woodstock, NY |
 | [Weymouth Rod Works](https://jared-the-automator.github.io/redesign-portfolio/weymouthrodworks.com/) | Handcrafted bamboo fly rods | Manitowoc, WI |
 | [Skyhorse Saddles](https://jared-the-automator.github.io/redesign-portfolio/skyhorse.com/) | Custom western saddles | Durango, CO |
+| [Out West Saddlery](https://jared-the-automator.github.io/redesign-portfolio/outwestsaddlery.com/) | Custom handmade saddles | Salmon, ID |

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out West Saddlery | Custom Handmade Saddles | Salmon, Idaho</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            parchment: '#F5F0E8',
+            rust:      '#B8431B',
+            'rust-dk': '#923414',
+            charcoal:  '#1D1A17',
+            mid:       '#6B5A4E',
+            card:      '#EDE8DF',
+            rule:      '#D4C9BB',
+          },
+          fontFamily: {
+            slab: ['Roboto Slab', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          borderRadius: {
+            DEFAULT: '2px',
+            sm: '2px',
+            md: '2px',
+            lg: '2px',
+            xl: '2px',
+            full: '9999px',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { border-radius: 2px !important; }
+    button, a { border-radius: 2px !important; }
+    .reveal        { opacity:0; transform:translateY(22px); transition:opacity .55s ease, transform .55s ease; }
+    .reveal-l      { opacity:0; transform:translateX(-22px); transition:opacity .55s ease, transform .55s ease; }
+    .reveal-r      { opacity:0; transform:translateX(22px); transition:opacity .55s ease, transform .55s ease; }
+    .visible       { opacity:1 !important; transform:none !important; }
+    .stagger-1     { transition-delay:.1s; }
+    .stagger-2     { transition-delay:.2s; }
+    .stagger-3     { transition-delay:.3s; }
+  </style>
+</head>
+<body class="bg-[#F5F0E8] text-[#1D1A17] font-sans antialiased">
+
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-[#1D1A17]/90 backdrop-blur-sm border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-16">
+    <a href="#" class="font-slab font-bold text-[17px] text-white tracking-tight leading-none">
+      Out West Saddlery
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/75">
+      <a href="#saddles"     class="hover:text-white transition-colors">Saddles</a>
+      <a href="#story"       class="hover:text-white transition-colors">Our Story</a>
+      <a href="#accessories" class="hover:text-white transition-colors">Gear</a>
+      <a href="#contact"     class="hover:text-white transition-colors">Contact</a>
+    </div>
+    <a href="#contact"
+       class="bg-[#B8431B] hover:bg-[#923414] text-white text-sm font-semibold px-5 py-2 transition-colors">
+      Order a Saddle
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative min-h-[100dvh] flex items-end"
+  style="background-image:url('https://outwestsaddlery.com/wp-content/uploads/2013/10/62_RH_Vaquero_Wade_Saddle.jpg');
+         background-size:cover; background-position:center 30%;">
+  <div class="absolute inset-0"
+       style="background:linear-gradient(105deg, rgba(29,26,23,0.93) 0%, rgba(29,26,23,0.72) 45%, rgba(29,26,23,0.18) 100%);"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pb-20 pt-32 w-full">
+    <div class="max-w-[560px]">
+      <div class="text-[#B8431B] text-[11px] font-semibold tracking-[0.18em] uppercase mb-5">
+        Salmon, Idaho
+      </div>
+      <h1 class="font-slab font-black text-[52px] lg:text-[64px] text-white leading-[1.05] mb-5">
+        Saddles built<br>to fit your horse.
+      </h1>
+      <p class="text-white/70 text-[17px] leading-relaxed mb-9 max-w-[460px]">
+        Wade and Vaquero-style, handmade from Herman Oak leather. Each one numbered, fitted
+        to the individual horse, built the old-time way.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#saddles"
+           class="bg-[#B8431B] hover:bg-[#923414] text-white font-semibold px-8 py-3 text-[15px] transition-colors">
+          See the Saddles
+        </a>
+        <a href="#contact"
+           class="border border-white/35 hover:border-white/70 text-white font-semibold px-8 py-3 text-[15px] transition-colors">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIMARY PRODUCT: asymmetric split, numbered features, image LEFT -->
+<section id="saddles" class="bg-[#F5F0E8] py-28">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-[1fr_1fr] gap-20 items-center">
+
+      <div class="reveal-l">
+        <img src="https://outwestsaddlery.com/wp-content/uploads/2013/10/59_KH_Wade_Saddle1.jpeg"
+             alt="KH Custom Wade saddle, catalog #59, by Out West Saddlery"
+             class="w-full object-cover"
+             style="aspect-ratio:4/5; object-position:center;">
+      </div>
+
+      <div class="reveal-r">
+        <div class="text-[#B8431B] text-[11px] font-semibold tracking-[0.18em] uppercase mb-7">The Work</div>
+        <h2 class="font-slab font-bold text-[38px] text-[#1D1A17] leading-[1.1] mb-14">
+          Old-time construction.<br>Built for today's horses.
+        </h2>
+        <div class="space-y-11">
+          <div class="flex gap-7">
+            <span class="font-slab font-black text-[42px] text-[#D4C9BB] leading-none flex-shrink-0 mt-1">01</span>
+            <div>
+              <h3 class="font-slab font-bold text-[17px] text-[#1D1A17] mb-2">Wade and Vaquero trees</h3>
+              <p class="text-[#6B5A4E] leading-relaxed text-[15px]">
+                All saddles built on Wade-style trees with wide bars. Herman Oak leather, rough
+                out or smooth side out, oiled and treated with Skidmore's Leather Cream. Saddle
+                fully covered, all stitching recessed.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-7">
+            <span class="font-slab font-black text-[42px] text-[#D4C9BB] leading-none flex-shrink-0 mt-1">02</span>
+            <div>
+              <h3 class="font-slab font-bold text-[17px] text-[#1D1A17] mb-2">Every saddle is numbered</h3>
+              <p class="text-[#6B5A4E] leading-relaxed text-[15px]">
+                Over 100 saddles built and cataloged, each with the owner's initials and serial
+                number. No two alike. Average weight is 32 pounds. Base price $5,600.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-7">
+            <span class="font-slab font-black text-[42px] text-[#D4C9BB] leading-none flex-shrink-0 mt-1">03</span>
+            <div>
+              <h3 class="font-slab font-bold text-[17px] text-[#1D1A17] mb-2">Fitted to your horse</h3>
+              <p class="text-[#6B5A4E] leading-relaxed text-[15px]">
+                Lisa Rensch combines saddle fitting with whole-horse health evaluation. The fit
+                is the starting point, not an afterthought. She works from photos and direct
+                assessment before any build begins.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECONDARY: reversed split, story/credentials, image RIGHT -->
+<section id="story" class="bg-[#EDE8DF] py-28">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-[1fr_1fr] gap-20 items-center">
+
+      <div class="reveal lg:order-2">
+        <img src="https://outwestsaddlery.com/wp-content/uploads/2013/10/41_Full_Lt_5001.jpeg"
+             alt="Out West Saddlery custom saddle full left view"
+             class="w-full object-cover"
+             style="aspect-ratio:4/5; object-position:center;">
+      </div>
+
+      <div class="reveal lg:order-1">
+        <h2 class="font-slab font-bold text-[38px] text-[#1D1A17] leading-[1.1] mb-6">
+          Built in Salmon, Idaho.<br>Shipped to Australia.
+        </h2>
+        <p class="text-[#6B5A4E] leading-relaxed text-[15px] mb-5">
+          Out West Saddlery was founded by Bob Beecher, who built over 100 custom saddles from
+          his shop in Salmon, Idaho. In January 2026, Lisa Rensch took over the shop, continuing
+          the same build philosophy: old-time construction, therapeutic fit, no shortcuts.
+        </p>
+        <p class="text-[#6B5A4E] leading-relaxed text-[15px] mb-10">
+          Saddle #70 was built on a Slick 9 tree for the film <em>Out Of The Wild</em>, based
+          on the novel by horseman and clinician Mark Rashid. Customers have come from Texas,
+          Australia, and across the mountain West.
+        </p>
+        <div class="bg-[#F5F0E8] p-7 border-t-2 border-[#B8431B]">
+          <p class="text-[#1D1A17] leading-relaxed italic text-[16px] mb-3">
+            "Bob, you will never know how much you have changed my life by enabling me to ride
+            with ease and refinement, comfort for me and my horse."
+          </p>
+          <p class="text-[#B8431B] font-semibold text-sm">Deb Desreaux, Monkira Station, Queensland, Australia</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY: photography grid, breaks the zigzag -->
+<section class="bg-[#F5F0E8] py-28">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="mb-14 reveal">
+      <h2 class="font-slab font-bold text-[38px] text-[#1D1A17] leading-tight">
+        Over 100 saddles built.<br>No two alike.
+      </h2>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+      <div class="col-span-2 row-span-2 reveal">
+        <img src="https://outwestsaddlery.com/wp-content/uploads/2018/06/98-Saddle-CKa.jpg"
+             alt="Custom Vaquero Wade #98 with Santa Fe handles, right view"
+             class="w-full h-full object-cover"
+             style="min-height:340px;">
+      </div>
+      <div class="reveal stagger-1">
+        <img src="https://outwestsaddlery.com/wp-content/uploads/2013/10/34_BR_Saddle1.jpeg"
+             alt="Custom saddle #34"
+             class="w-full h-full object-cover"
+             style="min-height:168px;">
+      </div>
+      <div class="reveal stagger-2">
+        <img src="https://outwestsaddlery.com/wp-content/uploads/2013/10/Saddle_66_1_5001.jpeg"
+             alt="Custom saddle #66 right view"
+             class="w-full h-full object-cover"
+             style="min-height:168px;">
+      </div>
+      <div class="reveal stagger-1">
+        <img src="https://outwestsaddlery.com/wp-content/uploads/2019/07/102-KW1-copy-1.jpg"
+             alt="Custom Wade saddle #102, KW build"
+             class="w-full h-full object-cover"
+             style="min-height:168px;">
+      </div>
+      <div class="reveal stagger-2">
+        <img src="https://outwestsaddlery.com/wp-content/uploads/2013/10/73KB-Right-View-copy1.jpg"
+             alt="KB Hope saddle #73 right view"
+             class="w-full h-full object-cover"
+             style="min-height:168px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS + CREDIBILITY NUMBERS -->
+<section class="bg-[#1D1A17] py-28" id="accessories">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-[#B8431B] text-[11px] font-semibold tracking-[0.18em] uppercase mb-12 reveal">
+      From the Riders
+    </div>
+    <div class="grid lg:grid-cols-2 gap-10 mb-20">
+      <div class="reveal bg-[#26211D] p-9">
+        <p class="text-white/82 leading-relaxed italic text-[17px] mb-6">
+          "I love my saddle so much. When I throw it up on my horse I reflect on how fortunate
+          I am to own such a fabulous saddle. It just feels right to let you know how much
+          I am enjoying it."
+        </p>
+        <p class="text-[#B8431B] font-semibold text-sm tracking-wide">Teresa Whitaker, Childress, Texas</p>
+      </div>
+      <div class="reveal stagger-1 bg-[#26211D] p-9">
+        <p class="text-white/82 leading-relaxed italic text-[17px] mb-6">
+          "Oh MY God it is amazing to ride in. My balance point is now clearly known to me
+          and my circles are round. Everyone notices how it sits so perfectly."
+        </p>
+        <p class="text-[#B8431B] font-semibold text-sm tracking-wide">Deb Desreaux, Monkira Station, Queensland, Australia</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-8 text-center reveal pt-6 border-t border-white/10">
+      <div>
+        <div class="font-slab font-black text-[52px] text-white leading-none mb-2">100+</div>
+        <div class="text-white/45 text-sm">Numbered saddles built</div>
+      </div>
+      <div>
+        <div class="font-slab font-black text-[52px] text-white leading-none mb-2">32 lb</div>
+        <div class="text-white/45 text-sm">Average saddle weight</div>
+      </div>
+      <div>
+        <div class="font-slab font-black text-[52px] text-white leading-none mb-2">$5,600</div>
+        <div class="text-white/45 text-sm">Custom starting price</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section id="contact" class="bg-[#B8431B] py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center reveal">
+    <h2 class="font-slab font-bold text-[42px] text-white leading-tight mb-4">
+      Ready to order a saddle<br>built for your horse?
+    </h2>
+    <p class="text-white/78 text-[17px] mb-11 max-w-xl mx-auto leading-relaxed">
+      Call or email Lisa. She fits saddles to the horse in front of her, not the template
+      on the shelf.
+    </p>
+    <div class="flex flex-wrap justify-center gap-5">
+      <a href="tel:2087563333"
+         class="bg-[#1D1A17] hover:bg-[#26211D] text-white font-bold text-[17px] px-10 py-4 transition-colors">
+        (208) 756-3333
+      </a>
+      <a href="mailto:outwestsaddlery@gmail.com"
+         class="border-2 border-white/60 hover:border-white text-white font-semibold text-[17px] px-10 py-4 transition-colors">
+        outwestsaddlery@gmail.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#1D1A17] py-16 border-t border-white/8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div class="col-span-2 lg:col-span-1">
+        <div class="font-slab font-bold text-white text-[17px] mb-4">Out West Saddlery</div>
+        <p class="text-white/45 text-sm leading-relaxed">
+          Salmon, Idaho<br>
+          Handmade Wade and Vaquero western saddles,<br>
+          fitted to the horse.
+        </p>
+      </div>
+      <div>
+        <div class="text-white/28 text-[10px] font-semibold tracking-[0.16em] uppercase mb-4">Saddles</div>
+        <ul class="space-y-2 text-sm text-white/55">
+          <li><a href="#" class="hover:text-white transition-colors">Custom Saddles</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Stock Saddles</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Saddle Gallery</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Ordering Info</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-white/28 text-[10px] font-semibold tracking-[0.16em] uppercase mb-4">Gear</div>
+        <ul class="space-y-2 text-sm text-white/55">
+          <li><a href="#" class="hover:text-white transition-colors">Breast Collars</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Cinches</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Saddle Bags</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Chinks and Armitas</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Saddle Fit Products</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-white/28 text-[10px] font-semibold tracking-[0.16em] uppercase mb-4">Contact</div>
+        <ul class="space-y-2 text-sm text-white/55">
+          <li><a href="tel:2087563333" class="hover:text-white transition-colors">(208) 756-3333</a></li>
+          <li><a href="mailto:outwestsaddlery@gmail.com" class="hover:text-white transition-colors">outwestsaddlery@gmail.com</a></li>
+          <li><a href="https://www.facebook.com/OutWestSaddlery" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-8 text-white/25 text-xs text-center">
+      Out West Saddlery, LLC. Salmon, Idaho.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
