@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ziggie Lures — Handmade Wood Muskie Lures, Marine City Michigan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              950: '#070e07',
+              900: '#0b170b',
+              800: '#111f11',
+              700: '#1a2e1a',
+              600: '#243d24',
+            },
+            gold: {
+              DEFAULT: '#c9a227',
+              light: '#ddb93a',
+              dim: '#957819',
+            },
+            bone: {
+              DEFAULT: '#e8dfc8',
+              dim: '#a9a08c',
+              muted: '#706960',
+            }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0b170b;
+      color: #e8dfc8;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* Reveal animations via IntersectionObserver */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.08s; }
+    .reveal-d2 { transition-delay: 0.16s; }
+    .reveal-d3 { transition-delay: 0.24s; }
+    .reveal-d4 { transition-delay: 0.32s; }
+
+    /* Corner radius: 4px everywhere */
+    .r { border-radius: 4px; }
+
+    /* Eyebrow label */
+    .eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #c9a227;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,14,7,0.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,0.05);">
+  <div style="max-width:1280px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:64px;">
+    <a href="/" style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:#e8dfc8;text-decoration:none;letter-spacing:0.06em;">
+      ZIGGIE LURES
+    </a>
+    <div style="display:flex;align-items:center;gap:2rem;">
+      <div style="display:none;" class="nav-links">
+        <a href="#lures" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;">Lures</a>
+        <a href="#process" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;margin-left:2rem;">Process</a>
+        <a href="#about" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;margin-left:2rem;">About</a>
+        <a href="#contact" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;margin-left:2rem;">Contact</a>
+      </div>
+      <a href="https://ziggielures.com/products/" style="background:#c9a227;color:#070e07;font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.8rem;padding:0.5rem 1.25rem;border-radius:4px;text-decoration:none;white-space:nowrap;">
+        Shop Lures
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+@media (min-width: 768px) {
+  .nav-links { display: flex !important; align-items: center; }
+}
+</style>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section style="position:relative;min-height:100dvh;display:flex;align-items:center;overflow:hidden;">
+
+  <!-- Background image -->
+  <div style="position:absolute;inset:0;">
+    <img
+      src="https://ziggielures.com/wp-content/uploads/2019/10/ziggieshop_008.jpg"
+      alt="Ziggie Obidzinski at the workbench in his Marine City workshop"
+      style="width:100%;height:100%;object-fit:cover;object-position:center;"
+    />
+    <!-- Directional gradient: strong left, fades right -->
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(7,14,7,0.92) 0%, rgba(7,14,7,0.65) 50%, rgba(7,14,7,0.15) 100%);"></div>
+    <!-- Bottom fade -->
+    <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(7,14,7,0.7) 0%, transparent 40%);"></div>
+  </div>
+
+  <div style="position:relative;max-width:1280px;margin:0 auto;padding:7rem 1.5rem 5rem;width:100%;">
+    <div style="max-width:560px;">
+
+      <p class="eyebrow reveal" style="margin-bottom:1.5rem;">
+        Marine City, Michigan
+      </p>
+
+      <h1 class="reveal reveal-d1" style="font-family:'Playfair Display',serif;font-size:clamp(2.8rem,6vw,4.5rem);font-weight:700;color:#e8dfc8;line-height:1.06;margin-bottom:1.5rem;">
+        Wood Lures Built<br>on the St. Clair River
+      </h1>
+
+      <p class="reveal reveal-d2" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:1.1rem;color:#a9a08c;line-height:1.7;margin-bottom:2.5rem;max-width:440px;">
+        Every lure handmade from Jelutong and Mahogany by a retired General Motors engineer. Designed and tested on the same river they fish.
+      </p>
+
+      <div class="reveal reveal-d3" style="display:flex;flex-wrap:wrap;gap:1rem;">
+        <a href="https://ziggielures.com/products/" style="background:#c9a227;color:#070e07;font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.85rem;padding:0.85rem 2rem;border-radius:4px;text-decoration:none;">
+          Shop the Lineup
+        </a>
+        <a href="#process" style="border:1px solid rgba(232,223,200,0.25);color:#e8dfc8;font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;padding:0.85rem 2rem;border-radius:4px;text-decoration:none;">
+          How They're Made
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PRIMARY PRODUCT SECTION
+     Asymmetric split: image left, numbered features right
+     ============================================================ -->
+<section id="lures" style="padding:6rem 0 6rem;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 1.5rem;">
+    <div class="grid-split" style="display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;">
+
+      <!-- Image -->
+      <div class="reveal">
+        <img
+          src="https://ziggielures.com/wp-content/uploads/2019/10/IMG_4912revised.jpg"
+          alt="Dozens of Ziggie's hand-painted muskie lures displayed across the workshop wall in Marine City"
+          style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;"
+        />
+      </div>
+
+      <!-- Numbered features -->
+      <div class="reveal reveal-d1">
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#e8dfc8;line-height:1.1;margin-bottom:3rem;">
+          Every Lure,<br>One Maker's Hands
+        </h2>
+
+        <div style="display:flex;flex-direction:column;gap:2.5rem;">
+
+          <div style="display:flex;gap:1.5rem;">
+            <span style="font-family:'Playfair Display',serif;font-size:0.8rem;color:#c9a227;flex-shrink:0;padding-top:0.2rem;min-width:1.8rem;">01</span>
+            <div>
+              <h3 style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.95rem;color:#e8dfc8;margin-bottom:0.5rem;">Wood construction, shaped by hand</h3>
+              <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.875rem;color:#a9a08c;line-height:1.75;">Jelutong or Mahogany blanks. Shaped, sanded, and sealed in two coats before paint. The same material discipline from 40 years of automotive R&amp;D.</p>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:1.5rem;">
+            <span style="font-family:'Playfair Display',serif;font-size:0.8rem;color:#c9a227;flex-shrink:0;padding-top:0.2rem;min-width:1.8rem;">02</span>
+            <div>
+              <h3 style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.95rem;color:#e8dfc8;margin-bottom:0.5rem;">Three fishing styles in one bait</h3>
+              <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.875rem;color:#a9a08c;line-height:1.75;">Work it as topwater over thick vegetation. Twitch it through emerging weed growth. Troll it deep into rocks, timber, and heavy cover. Jointed or straight, 6 inch to 13 inch.</p>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:1.5rem;">
+            <span style="font-family:'Playfair Display',serif;font-size:0.8rem;color:#c9a227;flex-shrink:0;padding-top:0.2rem;min-width:1.8rem;">03</span>
+            <div>
+              <h3 style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.95rem;color:#e8dfc8;margin-bottom:0.5rem;">Proven on the St. Clair River</h3>
+              <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.875rem;color:#a9a08c;line-height:1.75;">Every pattern is designed and field-tested in Marine City before it ships. No catalog patterns. Each one built around what pulls muskie on the St. Clair.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:2.5rem;">
+          <a href="https://ziggielures.com/products/" style="display:inline-flex;align-items:center;gap:0.75rem;font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.85rem;color:#c9a227;text-decoration:none;">
+            See the full lineup <span style="font-size:1.1rem;">&#8594;</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+@media (min-width: 900px) {
+  .grid-split { grid-template-columns: 1fr 1fr !important; gap: 5rem !important; }
+}
+</style>
+
+
+<!-- ============================================================
+     SECONDARY SECTION (REVERSED)
+     Text left, image right, story/process angle
+     ============================================================ -->
+<section id="about" style="padding:6rem 0;background:#111f11;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 1.5rem;">
+    <div class="grid-split-rev" style="display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;">
+
+      <!-- Text (left on desktop) -->
+      <div class="reveal order-text" style="order:2;">
+        <p class="eyebrow" style="margin-bottom:1.5rem;">The Maker</p>
+
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#e8dfc8;line-height:1.1;margin-bottom:2rem;">
+          From the GM Lab<br>to the Workshop Bench
+        </h2>
+
+        <div style="display:flex;flex-direction:column;gap:1.25rem;font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.9rem;color:#a9a08c;line-height:1.8;max-width:480px;">
+          <p>Ziggie Obidzinski spent 40 years at General Motors as a Research and Development Technician, Designer, and Manager. Metals, plastics, tolerances, manufacturing quality. He retired in 1999 and brought those disciplines to a workshop in Marine City, a few miles from where his grandfather first put a fishing rod in his hands.</p>
+          <p>He spent his early retirement competing in ice decoy carving. Multiple wins at the World and National Fish Decoy Championships. Then his Muskie fishing friends started asking him to repaint their lures.</p>
+          <p>In 2003, he made 150 lures and passed them out to his fishing circle on the St. Clair. They pulled some very large muskies that year.</p>
+          <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:#e8dfc8;">Now the word is out.</p>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:2.5rem;margin-top:2.5rem;">
+          <div>
+            <p style="font-family:'Playfair Display',serif;font-size:2.25rem;font-weight:700;color:#c9a227;">40+</p>
+            <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.8rem;color:#a9a08c;margin-top:0.25rem;">Years in manufacturing</p>
+          </div>
+          <div>
+            <p style="font-family:'Playfair Display',serif;font-size:2.25rem;font-weight:700;color:#c9a227;">2003</p>
+            <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.8rem;color:#a9a08c;margin-top:0.25rem;">First lures on the St. Clair</p>
+          </div>
+          <div>
+            <p style="font-family:'Playfair Display',serif;font-size:2.25rem;font-weight:700;color:#c9a227;">World</p>
+            <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.8rem;color:#a9a08c;margin-top:0.25rem;">Fish Decoy Championship</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image (right on desktop) -->
+      <div class="reveal reveal-d1 order-img" style="order:1;">
+        <img
+          src="https://ziggielures.com/wp-content/uploads/2019/10/shop8revised.jpg"
+          alt="Ziggie's Marine City workshop, where every lure is shaped, sealed, and painted by hand"
+          style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+@media (min-width: 900px) {
+  .grid-split-rev { grid-template-columns: 1fr 1fr !important; gap: 5rem !important; }
+  .order-text { order: 1 !important; }
+  .order-img  { order: 2 !important; }
+}
+</style>
+
+
+<!-- ============================================================
+     GALLERY (layout break after 2 consecutive splits)
+     ============================================================ -->
+<section id="process" style="padding:6rem 0;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 1.5rem;">
+
+    <div class="reveal" style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#e8dfc8;line-height:1.1;">The Lineup</h2>
+      <a href="https://ziggielures.com/products/" style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.85rem;color:#c9a227;text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+        Shop all lures <span>&#8594;</span>
+      </a>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;" class="gallery-grid">
+
+      <!-- Tall feature: lures hanging in rows during sealing process -->
+      <div class="reveal" style="grid-row:span 2;">
+        <img
+          src="https://ziggielures.com/wp-content/uploads/2019/10/IMG_4900.jpg"
+          alt="Finished Ziggie lures hanging in rows while two coats of sealant cure in the Marine City shop"
+          style="width:100%;height:100%;object-fit:cover;border-radius:4px;min-height:280px;"
+        />
+      </div>
+
+      <!-- Product shots -->
+      <div class="reveal reveal-d1">
+        <img
+          src="https://ziggielures.com/wp-content/uploads/2018/09/007.jpg"
+          alt="Ziggie 007 muskie lure, yellow and green striped paint pattern"
+          style="width:100%;aspect-ratio:1;object-fit:contain;background:#1a2e1a;border-radius:4px;padding:1.25rem;"
+        />
+      </div>
+
+      <div class="reveal reveal-d2">
+        <img
+          src="https://ziggielures.com/wp-content/uploads/2019/10/9perch.jpg"
+          alt="Ziggie 9 Perch muskie lure, green and yellow with treble hooks"
+          style="width:100%;aspect-ratio:1;object-fit:contain;background:#1a2e1a;border-radius:4px;padding:1.25rem;"
+        />
+      </div>
+
+    </div>
+
+    <!-- Second row -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin-top:0.75rem;" class="gallery-row2">
+
+      <div class="reveal">
+        <img
+          src="https://ziggielures.com/wp-content/uploads/2019/10/peacockbass.jpg"
+          alt="Ziggie Peacock Bass muskie lure, vivid tropical color pattern"
+          style="width:100%;aspect-ratio:1;object-fit:contain;background:#1a2e1a;border-radius:4px;padding:1.25rem;"
+        />
+      </div>
+
+      <div class="reveal reveal-d1">
+        <img
+          src="https://ziggielures.com/wp-content/uploads/2019/10/brownbass.jpg"
+          alt="Ziggie Bass Brown muskie lure, segmented jointed body"
+          style="width:100%;aspect-ratio:1;object-fit:contain;background:#1a2e1a;border-radius:4px;padding:1.25rem;"
+        />
+      </div>
+
+      <div class="reveal reveal-d2">
+        <img
+          src="https://ziggielures.com/wp-content/uploads/2018/09/9bass.jpg"
+          alt="Ziggie 9 Bass muskie lure"
+          style="width:100%;aspect-ratio:1;object-fit:contain;background:#1a2e1a;border-radius:4px;padding:1.25rem;"
+        />
+      </div>
+
+    </div>
+
+    <!-- Process shot: wood blanks -->
+    <div class="reveal" style="margin-top:0.75rem;">
+      <img
+        src="https://ziggielures.com/wp-content/uploads/2019/10/Step-1.jpg"
+        alt="Jelutong and Mahogany wood blanks before shaping. Every Ziggie lure starts here."
+        style="width:100%;aspect-ratio:16/6;object-fit:cover;border-radius:4px;"
+      />
+    </div>
+
+  </div>
+</section>
+
+<style>
+@media (min-width: 768px) {
+  .gallery-grid { grid-template-columns: 2fr 1fr !important; }
+  .gallery-row2 { grid-template-columns: repeat(3, 1fr) !important; }
+}
+</style>
+
+
+<!-- ============================================================
+     CREDIBILITY
+     ============================================================ -->
+<section style="padding:6rem 0;background:#111f11;">
+  <div style="max-width:900px;margin:0 auto;padding:0 1.5rem;">
+
+    <div class="reveal" style="text-align:center;">
+      <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.2rem,2.5vw,1.6rem);color:#e8dfc8;line-height:1.6;max-width:700px;margin:0 auto 2rem;">
+        "He passed them out to his fishing friends and they were very productive in catching some very large muskies that year. Now the word is out."
+      </p>
+      <p style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.8rem;color:#c9a227;letter-spacing:0.1em;">Ziggie Obidzinski</p>
+      <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.8rem;color:#a9a08c;margin-top:0.25rem;">Ziggie Lures, Marine City, Michigan</p>
+    </div>
+
+    <div class="reveal reveal-d1" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:4rem;padding-top:4rem;border-top:1px solid rgba(255,255,255,0.08);">
+      <div style="text-align:center;">
+        <p style="font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;color:#c9a227;">20+</p>
+        <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.8rem;color:#a9a08c;margin-top:0.5rem;line-height:1.5;">Years making lures on the St. Clair River</p>
+      </div>
+      <div style="text-align:center;">
+        <p style="font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;color:#c9a227;">6"–13"</p>
+        <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.8rem;color:#a9a08c;margin-top:0.5rem;line-height:1.5;">Sizes available, jointed and straight</p>
+      </div>
+      <div style="text-align:center;">
+        <p style="font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;color:#c9a227;">World</p>
+        <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.8rem;color:#a9a08c;margin-top:0.5rem;line-height:1.5;">National Fish Decoy Championship <!-- verify: multiple wins --></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CTA STRIP
+     ============================================================ -->
+<section id="contact" style="padding:5rem 0;background:#c9a227;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 1.5rem;">
+    <div class="reveal cta-inner" style="display:flex;flex-direction:column;align-items:flex-start;gap:1.5rem;">
+
+      <div>
+        <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#070e07;margin-bottom:0.75rem;opacity:0.7;">Ready to order?</p>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:#070e07;line-height:1.05;">Call Ziggie directly.</h2>
+      </div>
+
+      <div>
+        <a href="tel:+12486706820" style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.75rem);font-weight:700;color:#070e07;text-decoration:none;">
+          1-248-670-6820
+        </a>
+        <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.8rem;color:#070e07;margin-top:0.5rem;opacity:0.7;">Monday through Friday, 8 a.m. to 5 p.m. EST</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+@media (min-width: 768px) {
+  .cta-inner {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+}
+</style>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer style="background:#070e07;border-top:1px solid rgba(255,255,255,0.05);padding:4rem 0 2rem;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 1.5rem;">
+
+    <div class="footer-grid" style="display:grid;grid-template-columns:1fr;gap:3rem;margin-bottom:3rem;">
+
+      <!-- Col 1: Brand -->
+      <div>
+        <p style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;color:#e8dfc8;letter-spacing:0.06em;margin-bottom:0.75rem;">ZIGGIE LURES</p>
+        <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;line-height:1.6;">
+          Handmade wood muskie and pike lures.<br>
+          Marine City, Michigan.
+        </p>
+      </div>
+
+      <!-- Col 2: Shop -->
+      <div>
+        <p style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.75rem;color:#e8dfc8;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;">Shop</p>
+        <div style="display:flex;flex-direction:column;gap:0.65rem;">
+          <a href="https://ziggielures.com/products/" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;">All Lures</a>
+          <a href="https://ziggielures.com/product/007/" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;">007</a>
+          <a href="https://ziggielures.com/product/9-perch/" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;">9 Perch</a>
+          <a href="https://ziggielures.com/product/9-bass/" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;">9 Bass</a>
+          <a href="https://ziggielures.com/products/" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;">Bass Brown</a>
+        </div>
+      </div>
+
+      <!-- Col 3: Info -->
+      <div>
+        <p style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.75rem;color:#e8dfc8;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;">Info</p>
+        <div style="display:flex;flex-direction:column;gap:0.65rem;">
+          <a href="https://ziggielures.com/about/" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;">About Ziggie</a>
+          <a href="https://ziggielures.com/925-2/" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;">How They're Made</a>
+          <a href="https://ziggielures.com/contact/" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;text-decoration:none;">Contact</a>
+        </div>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div>
+        <p style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.75rem;color:#e8dfc8;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;">Contact</p>
+        <div style="display:flex;flex-direction:column;gap:0.5rem;font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;color:#a9a08c;line-height:1.6;">
+          <a href="tel:+12486706820" style="color:#a9a08c;text-decoration:none;">1-248-670-6820</a>
+          <p style="margin:0;">Mon–Fri, 8 a.m.–5 p.m. EST</p>
+          <p style="margin:0.75rem 0 0;">Ziggie Obidzinski<br>6923 S. River Rd.<br>Marine City, MI 48039</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;">
+      <p style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.75rem;color:#706960;">Ziggie Lures. Marine City, Michigan.</p>
+    </div>
+
+  </div>
+</footer>
+
+<style>
+@media (min-width: 768px) {
+  .footer-grid { grid-template-columns: repeat(4, 1fr) !important; }
+}
+</style>
+
+
+<!-- ============================================================
+     IntersectionObserver — no scroll events
+     ============================================================ -->
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
