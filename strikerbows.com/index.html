@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Striker Bows | Handcrafted Longbows and Recurves Since 1997</title>
+<meta name="description" content="Custom-built longbows and recurve bows from a family workshop in Ohio. One-piece, takedown, and fully custom orders. Ships worldwide.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Oswald', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        smoke: '#0f0f0f',
+        ember: '#C8792A',
+        chalk: '#f2f2f2',
+        steel: '#888888',
+      }
+    }
+  }
+}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: #0f0f0f; color: #f2f2f2; font-family: 'Inter', sans-serif; margin: 0; }
+a { text-decoration: none; }
+.r2 { border-radius: 2px; }
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.fade-up:nth-child(2) { transition-delay: 0.1s; }
+.fade-up:nth-child(3) { transition-delay: 0.2s; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav style="position:fixed;top:0;left:0;right:0;z-index:50;background:#0f0f0f;border-bottom:1px solid #222;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px;">
+    <a href="https://strikerbows.com/" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.15em;color:#f2f2f2;text-transform:uppercase;">Striker Bows</a>
+    <div style="display:flex;align-items:center;gap:32px;">
+      <div style="display:none;gap:28px;" class="md-nav">
+        <a href="#bows" style="font-family:'Oswald',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#888;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#888'">Bows</a>
+        <a href="#custom" style="font-family:'Oswald',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#888;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#888'">Custom</a>
+        <a href="#about" style="font-family:'Oswald',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#888;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#888'">About</a>
+      </div>
+      <a href="https://strikerbows.com/product-category/custom-bows/custom-bows-in-stock-now/" class="r2" style="background:#C8792A;color:#0f0f0f;font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;padding:10px 20px;transition:background .2s;" onmouseover="this.style.background='#e08c35'" onmouseout="this.style.background='#C8792A'">Shop In-Stock</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+@media (min-width: 768px) {
+  .md-nav { display: flex !important; }
+}
+</style>
+
+<!-- HERO -->
+<section style="position:relative;min-height:100dvh;display:flex;align-items:center;">
+  <div style="position:absolute;inset:0;">
+    <img src="https://strikerbows.com/wp-content/uploads/2017/10/Striker-Custom-Bows.jpg"
+         alt="Custom Striker Bows lineup in the Ohio workshop"
+         style="width:100%;height:100%;object-fit:cover;object-position:center;">
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(15,15,15,0.97) 0%, rgba(15,15,15,0.9) 38%, rgba(15,15,15,0.5) 65%, rgba(15,15,15,0.15) 100%);"></div>
+  </div>
+  <div style="position:relative;max-width:1280px;margin:0 auto;padding:96px 24px 64px;width:100%;">
+    <div style="max-width:540px;">
+      <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#C8792A;margin:0 0 20px;">Ohio / Since 1997</p>
+      <h1 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(52px,7vw,80px);line-height:0.95;text-transform:uppercase;color:#f2f2f2;margin:0 0 24px;">Every Bow<br>Built to Spec.</h1>
+      <p style="color:#c8c8c8;font-size:17px;line-height:1.65;margin:0 0 36px;max-width:400px;">Handcrafted longbows and recurves from a family workshop in Ohio. One-piece, takedown, or fully custom. Ships worldwide.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;">
+        <a href="https://strikerbows.com/product-category/custom-bows/custom-bows-in-stock-now/" class="r2" style="background:#C8792A;color:#0f0f0f;font-family:'Oswald',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;padding:14px 28px;transition:background .2s;" onmouseover="this.style.background='#e08c35'" onmouseout="this.style.background='#C8792A'">Shop In-Stock Bows</a>
+        <a href="https://strikerbows.com/striker-custom-bows/" class="r2" style="border:1px solid #666;color:#f2f2f2;font-family:'Oswald',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.12em;text-transform:uppercase;padding:14px 28px;transition:border-color .2s,color .2s;" onmouseover="this.style.borderColor='#C8792A';this.style.color='#C8792A'" onmouseout="this.style.borderColor='#666';this.style.color='#f2f2f2'">Design a Custom Bow</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS — asymmetric split, image left / numbered features right -->
+<section id="bows" style="background:#161616;padding:96px 0;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr;gap:0;" class="bows-grid">
+    <!-- Image -->
+    <div style="position:relative;height:520px;">
+      <img src="https://strikerbows.com/wp-content/uploads/2017/10/Sport-Longbow-target.jpg"
+           alt="Striker one-piece sport longbow at the range"
+           class="r2" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <!-- Numbered features -->
+    <div style="padding:48px 0 0;" class="bows-text">
+      <div style="max-width:520px;" class="fade-up">
+        <div style="margin-bottom:40px;">
+          <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:56px;line-height:1;color:#222;margin:0 0 6px;">01</p>
+          <h3 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:#f2f2f2;margin:0 0 8px;">One-Piece Longbows</h3>
+          <p style="color:#888;line-height:1.7;margin:0;">Stable, quiet, and fast. A single-limb design built to your exact draw weight, tuned in-house before it ships.</p>
+        </div>
+        <div style="margin-bottom:40px;">
+          <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:56px;line-height:1;color:#222;margin:0 0 6px;">02</p>
+          <h3 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:#f2f2f2;margin:0 0 8px;">Takedown Recurves</h3>
+          <p style="color:#888;line-height:1.7;margin:0;">Field-serviceable with interchangeable limbs. Classic, Sport, and Fastback models. Left or right hand, any draw weight.</p>
+        </div>
+        <div style="margin-bottom:40px;">
+          <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:56px;line-height:1;color:#222;margin:0 0 6px;">03</p>
+          <h3 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:#f2f2f2;margin:0 0 8px;">Custom Orders</h3>
+          <p style="color:#888;line-height:1.7;margin:0;">Your wood species, your handle geometry, your draw weight. Every custom bow is a one-of-a-kind build with no two alike.</p>
+        </div>
+        <a href="https://strikerbows.com/product-category/bows/" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;color:#C8792A;transition:color .2s;" onmouseover="this.style.color='#e08c35'" onmouseout="this.style.color='#C8792A'">Browse All Bows &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+@media (min-width: 768px) {
+  .bows-grid { grid-template-columns: 1fr 1fr !important; align-items: center; }
+  .bows-text { padding: 0 0 0 64px !important; }
+}
+</style>
+
+<!-- STORY — reversed split, text left / image right -->
+<section id="about" style="background:#0f0f0f;padding:96px 0;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr;gap:0;" class="story-grid">
+    <!-- Text left -->
+    <div style="padding:0 0 48px;" class="story-text">
+      <div style="max-width:500px;">
+        <h2 class="fade-up" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(36px,4.5vw,56px);line-height:0.95;text-transform:uppercase;color:#f2f2f2;margin:0 0 28px;">A Garage.<br>A Bow That<br>Didn't Exist.</h2>
+        <p class="fade-up" style="color:#c0c0c0;line-height:1.75;margin:0 0 18px;">Rick Ellis wanted a small, sleek hunting bow that no one made. So he built one from his garage in Ohio. Those first prototypes turned into Striker Bows.</p>
+        <p class="fade-up" style="color:#c0c0c0;line-height:1.75;margin:0 0 18px;">Twenty-nine years later, Rick's sons Dusty and John work the shop alongside him. Every bow still ships from Ohio. Every bow is still built by hand.</p>
+        <p class="fade-up" style="color:#666;font-style:italic;margin:0 0 6px;">"They have different stories but one common theme: they love their bow."</p>
+        <p style="color:#444;font-size:13px;margin:0 0 32px;">strikerbows.com/about-us</p>
+        <a href="https://strikerbows.com/about-us/" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;color:#C8792A;transition:color .2s;" onmouseover="this.style.color='#e08c35'" onmouseout="this.style.color='#C8792A'">About the Shop &rarr;</a>
+      </div>
+    </div>
+    <!-- Image right -->
+    <div style="position:relative;height:560px;">
+      <img src="https://strikerbows.com/wp-content/uploads/2017/10/Custom-Bows-with-Rick.jpg"
+           alt="Rick Ellis holding custom Striker Bows in the Ohio workshop"
+           class="r2" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+    </div>
+  </div>
+</section>
+
+<style>
+@media (min-width: 768px) {
+  .story-grid { grid-template-columns: 1fr 1fr !important; align-items: center; }
+  .story-text { padding: 0 64px 0 0 !important; }
+}
+</style>
+
+<!-- CUSTOM GALLERY — layout break from splits -->
+<section id="custom" style="background:#161616;padding:96px 0;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px;">
+    <!-- Section header -->
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:48px;">
+      <div>
+        <h2 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(36px,4.5vw,52px);line-height:0.95;text-transform:uppercase;color:#f2f2f2;margin:0;">No Two<br>the Same.</h2>
+        <p style="color:#888;margin:12px 0 0;font-size:15px;">Every custom bow is specced by the buyer, built by hand.</p>
+      </div>
+      <a href="https://strikerbows.com/custom-gallery/" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#666;white-space:nowrap;margin-left:24px;transition:color .2s;" onmouseover="this.style.color='#C8792A'" onmouseout="this.style.color='#666'" class="gallery-link">Full Gallery &rarr;</a>
+    </div>
+    <!-- Photo grid -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;" class="gallery-grid">
+      <div class="fade-up" style="overflow:hidden;" class="r2">
+        <div style="aspect-ratio:1/1;overflow:hidden;border-radius:2px;">
+          <img src="https://strikerbows.com/wp-content/gallery/custom-bows-gallery/FTR-0917867-3.jpg"
+               alt="Fastback Custom Takedown Recurve, Buckeye Burl riser with Waterfall Bubinga limbs"
+               style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="color:#555;font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin:8px 0 0;">Buckeye Burl / Waterfall Bubinga</p>
+      </div>
+      <div class="fade-up" style="overflow:hidden;">
+        <div style="aspect-ratio:1/1;overflow:hidden;border-radius:2px;">
+          <img src="https://strikerbows.com/wp-content/gallery/custom-bows-gallery/BTL-0917722-2-1024x1024.jpg"
+               alt="Striker custom takedown longbow gallery build"
+               style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="color:#555;font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin:8px 0 0;">Custom Takedown Longbow</p>
+      </div>
+      <div class="fade-up" style="overflow:hidden;">
+        <div style="aspect-ratio:1/1;overflow:hidden;border-radius:2px;">
+          <img src="https://strikerbows.com/wp-content/gallery/custom-bows-gallery/FTR-0917867-4.jpg"
+               alt="Fastback recurve riser detail showing Buckeye Burl and resin hybrid block"
+               style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="color:#555;font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin:8px 0 0;">Riser Detail / Hybrid Burl Block</p>
+      </div>
+      <div class="fade-up" style="overflow:hidden;">
+        <div style="aspect-ratio:1/1;overflow:hidden;border-radius:2px;">
+          <img src="https://strikerbows.com/wp-content/gallery/custom-bows-gallery/BTL-0917722-3-1024x1024.jpg"
+               alt="Striker custom longbow BTL series build"
+               style="width:100%;height:100%;object-fit:cover;transition:transform .5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="color:#555;font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin:8px 0 0;">Custom Longbow Build</p>
+      </div>
+    </div>
+    <!-- Wide showcase image -->
+    <div class="fade-up" style="margin-top:10px;overflow:hidden;border-radius:2px;">
+      <div style="aspect-ratio:16/7;overflow:hidden;border-radius:2px;">
+        <img src="https://strikerbows.com/wp-content/uploads/2015/12/Striker-Bows-Fastback-Custom-Takedown-Bow-Slider-1024x394.jpg"
+             alt="Fastback Custom Takedown Bow full profile"
+             style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+      </div>
+      <p style="color:#555;font-size:11px;font-family:'Oswald',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin:8px 0 0;">Fastback Custom Takedown / Full Profile</p>
+    </div>
+  </div>
+</section>
+
+<style>
+@media (min-width: 768px) {
+  .gallery-grid { grid-template-columns: repeat(4, 1fr) !important; }
+  .gallery-link { display: block !important; }
+}
+</style>
+
+<!-- WORKSHOP + CREDIBILITY -->
+<section style="background:#0f0f0f;padding:96px 0;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr;gap:48px;" class="workshop-grid">
+    <!-- Shop photo -->
+    <div style="position:relative;height:440px;">
+      <img src="https://strikerbows.com/wp-content/uploads/2015/08/Striker-Bow-Shop-Photo.jpg"
+           alt="The Striker Bows workshop in Ohio"
+           class="r2" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+      <div style="position:absolute;inset:0;border-radius:2px;background:linear-gradient(to top, rgba(15,15,15,0.88) 0%, rgba(15,15,15,0) 50%);display:flex;align-items:flex-end;padding:28px;">
+        <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;color:#f2f2f2;margin:0;">The Ohio Workshop</p>
+      </div>
+    </div>
+    <!-- Stats -->
+    <div class="fade-up workshop-stats">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:36px;" class="stats-grid">
+        <div>
+          <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:64px;color:#C8792A;line-height:1;margin:0;">29</p>
+          <p style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#666;margin:6px 0 0;">Years in the shop</p>
+        </div>
+        <div>
+          <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:64px;color:#C8792A;line-height:1;margin:0;">3</p>
+          <p style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:#666;margin:6px 0 0;">Family builders</p>
+        </div>
+      </div>
+      <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;color:#f2f2f2;text-transform:uppercase;margin:0 0 10px;">Sold Across the Globe.</p>
+      <p style="color:#888;line-height:1.75;margin:0 0 28px;">What started in a garage in Ohio now ships to traditional archers worldwide. Each bow still built one at a time by Rick, Dusty, and John.</p>
+      <a href="https://strikerbows.com/striker-custom-bows/" class="r2" style="display:inline-block;background:#C8792A;color:#0f0f0f;font-family:'Oswald',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;padding:14px 24px;transition:background .2s;" onmouseover="this.style.background='#e08c35'" onmouseout="this.style.background='#C8792A'">Start a Custom Order</a>
+    </div>
+  </div>
+</section>
+
+<style>
+@media (min-width: 768px) {
+  .workshop-grid { grid-template-columns: 3fr 2fr !important; align-items: center; gap: 64px !important; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+
+<!-- CTA STRIP -->
+<section style="background:#C8792A;padding:64px 0;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr;gap:32px;align-items:center;" class="cta-grid">
+    <div>
+      <h2 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(30px,4vw,46px);line-height:1.05;text-transform:uppercase;color:#0f0f0f;margin:0 0 10px;">Ready to Order?<br>Let's Talk.</h2>
+      <p style="color:#5a2c00;font-size:15px;margin:0;">Email directly for custom orders, draw weight questions, or wood options.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;" class="cta-buttons">
+      <a href="mailto:STRIKER@STRIKERBOWS.COM" class="r2" style="display:block;background:#0f0f0f;color:#f2f2f2;font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;padding:14px 24px;text-align:center;transition:background .2s;" onmouseover="this.style.background='#1e1e1e'" onmouseout="this.style.background='#0f0f0f'">STRIKER@STRIKERBOWS.COM</a>
+      <a href="https://strikerbows.com/product-category/custom-bows/custom-bows-in-stock-now/" class="r2" style="display:block;border:2px solid #0f0f0f;color:#0f0f0f;font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;padding:12px 24px;text-align:center;transition:background .2s,color .2s;" onmouseover="this.style.background='#0f0f0f';this.style.color='#f2f2f2'" onmouseout="this.style.background='transparent';this.style.color='#0f0f0f'">Shop In-Stock Bows</a>
+    </div>
+  </div>
+</section>
+
+<style>
+@media (min-width: 768px) {
+  .cta-grid { grid-template-columns: 1fr auto !important; }
+  .cta-buttons { flex-direction: row !important; }
+}
+</style>
+
+<!-- FOOTER -->
+<footer style="background:#0a0a0a;border-top:1px solid #1a1a1a;padding:56px 0 32px;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:48px;" class="footer-grid">
+      <!-- Brand -->
+      <div style="grid-column:1/-1;" class="footer-brand">
+        <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:17px;letter-spacing:0.15em;text-transform:uppercase;color:#f2f2f2;margin:0 0 10px;">Striker Bows</p>
+        <p style="color:#444;font-size:13px;line-height:1.7;margin:0;max-width:260px;">Handcrafted traditional bows since 1997. Built in Ohio by the Ellis family. Ships worldwide.</p>
+      </div>
+      <!-- Bows -->
+      <div>
+        <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#C8792A;margin:0 0 16px;">Bows</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a href="https://strikerbows.com/product-category/bows/one-piece-longbows/" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">One-Piece Longbows</a></li>
+          <li><a href="https://strikerbows.com/product-category/bows/takedown-recurve-bows/" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">Takedown Recurves</a></li>
+          <li><a href="https://strikerbows.com/product-category/bows/takedown-longbows/" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">Takedown Longbows</a></li>
+          <li><a href="https://strikerbows.com/product-category/custom-bows/custom-bows-in-stock-now/" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">In-Stock Now</a></li>
+        </ul>
+      </div>
+      <!-- Custom + Contact -->
+      <div>
+        <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#C8792A;margin:0 0 16px;">Custom</p>
+        <ul style="list-style:none;padding:0;margin:0 0 28px;display:flex;flex-direction:column;gap:10px;">
+          <li><a href="https://strikerbows.com/striker-custom-bows/" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">Custom Bows</a></li>
+          <li><a href="https://strikerbows.com/custom-order-guide/" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">Custom Order Guide</a></li>
+          <li><a href="https://strikerbows.com/custom-gallery/" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">Gallery</a></li>
+        </ul>
+        <p style="font-family:'Oswald',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#C8792A;margin:0 0 16px;">Contact</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a href="mailto:STRIKER@STRIKERBOWS.COM" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">STRIKER@STRIKERBOWS.COM</a></li>
+          <li><a href="https://strikerbows.com/contact-us/" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">Contact Us</a></li>
+          <li><a href="https://strikerbows.com/about-us/" style="color:#666;font-size:13px;transition:color .2s;" onmouseover="this.style.color='#f2f2f2'" onmouseout="this.style.color='#666'">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="border-top:1px solid #1a1a1a;padding-top:24px;">
+      <p style="color:#333;font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;margin:0;">Striker Bows / Ohio / Handcrafted Since 1997</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+@media (min-width: 768px) {
+  .footer-grid { grid-template-columns: 2fr 1fr 1fr !important; }
+  .footer-brand { grid-column: 1 !important; }
+}
+</style>
+
+<script>
+(function() {
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-up').forEach(function(el) {
+    observer.observe(el);
+  });
+})();
+</script>
+
+</body>
+</html>
