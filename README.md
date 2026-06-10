@@ -28,3 +28,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Town & Country Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/townandcountryvet.net/) | Small animal veterinary clinic | Midland, TX |
 | [Endless Mountains Veterinary Center](https://jared-the-automator.github.io/redesign-portfolio/emvets.com/) | Mixed practice veterinary clinic | Athens, PA |
 | [Omni Energy LLC](https://jared-the-automator.github.io/redesign-portfolio/myomnienergy.com/) | Heating oil & propane delivery | Watertown, CT |
+| [ABC Fuels, Inc.](https://jared-the-automator.github.io/redesign-portfolio/abcfuels.com/) | Heating oil & kerosene delivery | Woodstock, NY |
