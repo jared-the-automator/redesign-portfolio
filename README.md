@@ -38,3 +38,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Northwoods Canoe Co.](https://jared-the-automator.github.io/redesign-portfolio/wooden-canoes.com/) | Handcrafted wood and canvas canoes | Atkinson, ME |
 | [Phenix Knives](https://jared-the-automator.github.io/redesign-portfolio/phenixknives.com/) | Texas bladesmith, custom hunting knives | Bellville, TX |
 | [Ziggie Lures](https://jared-the-automator.github.io/redesign-portfolio/ziggielures.com/) | Handmade wood muskie and pike lures | Marine City, MI |
+| [RJ Lures](https://jared-the-automator.github.io/redesign-portfolio/rjlures.com/) | Handcrafted musky, walleye, and salmon lures | Houghton, MI |
