@@ -40,3 +40,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Ziggie Lures](https://jared-the-automator.github.io/redesign-portfolio/ziggielures.com/) | Handmade wood muskie and pike lures | Marine City, MI |
 | [RJ Lures](https://jared-the-automator.github.io/redesign-portfolio/rjlures.com/) | Handcrafted musky, walleye, and salmon lures | Houghton, MI |
 | [Frontier Pack Train](https://jared-the-automator.github.io/redesign-portfolio/frontierpacktrain.com/) | Backcountry pack trips & trail rides | June Lake, CA |
+| [Team Buck Rogers](https://jared-the-automator.github.io/redesign-portfolio/teambuckrogers.com/) | Offshore fishing charters | Jacksonville, FL |

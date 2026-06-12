@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Buck Rogers - Jacksonville Deep Sea Fishing Charters</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            slate: {
+              950: '#020617',
+              900: '#0f172a',
+              800: '#1e293b',
+              700: '#334155',
+              600: '#475569',
+            },
+            steel: {
+              400: '#5ca3b8',
+              500: '#4a8fa8',
+            },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero-bg {
+      background-image: linear-gradient(135deg, rgba(2,6,23,0.92) 0%, rgba(15,23,42,0.75) 50%, rgba(2,6,23,0.85) 100%),
+                        url('https://teambuckrogers.com/wp-content/uploads/2020/08/banner-final.jpg');
+      background-size: cover;
+      background-position: center 30%;
+    }
+  </style>
+</head>
+<body class="font-body text-slate-300 bg-slate-950 antialiased">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center gap-3">
+          <img src="https://teambuckrogers.com/wp-content/uploads/2020/08/banner-final.jpg" alt="Team Buck Rogers" class="h-10 w-10 object-cover rounded-md opacity-90">
+          <span class="font-display font-700 text-lg text-white tracking-tight">Team Buck Rogers</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#about" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">About</a>
+          <a href="#boats" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">The Fleet</a>
+          <a href="#catches" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Catches</a>
+          <a href="#rates" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Rates</a>
+        </div>
+        <a href="tel:904-362-0609" class="hidden md:inline-flex items-center px-6 py-2.5 bg-steel-500 text-white text-sm font-semibold rounded-md hover:bg-steel-400 transition-colors">
+          904-362-0609
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="relative min-h-[100dvh] flex items-center hero-bg">
+    <div class="max-w-7xl mx-auto px-6 w-full pt-32 pb-20">
+      <div class="max-w-2xl">
+        <span class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-widest text-steel-400 bg-steel-500/10 border border-steel-500/20 rounded-md">JACKSONVILLE, FL</span>
+        <h1 class="font-display font-800 text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
+          Deep Sea Fishing<br>for the Whole Family
+        </h1>
+        <p class="text-lg md:text-xl text-slate-300/80 max-w-lg mb-10 leading-relaxed">
+          Capt. Chad Starling has run Team Buck Rogers since 2006. Four boats, a retired lieutenant at the helm, and nearly two decades of Jacksonville charters.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="tel:904-362-0609" class="inline-flex items-center px-8 py-4 bg-steel-500 text-white font-semibold rounded-md hover:bg-steel-400 transition-colors">
+            Book Your Trip
+          </a>
+          <a href="#boats" class="inline-flex items-center px-8 py-4 border-2 border-slate-700 text-white font-semibold rounded-md hover:bg-slate-800 transition-colors">
+            Meet the Fleet
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary Product: The Fleet -->
+  <section id="boats" class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <img src="https://teambuckrogers.com/wp-content/uploads/2022/12/20220915_0720561-scaled.jpg" alt="Team Buck Rogers charter fleet" class="w-full h-[500px] object-cover rounded-md shadow-2xl">
+        </div>
+        <div class="reveal">
+          <span class="text-xs font-semibold tracking-widest text-steel-400 uppercase mb-4 block">THE FLEET</span>
+          <h2 class="font-display font-700 text-4xl md:text-5xl text-white mb-6">
+            Four Boats Built<br>for Serious Anglers
+          </h2>
+          <p class="text-slate-400 text-lg mb-10 leading-relaxed">
+            We grew from one boat to four to meet demand. Each vessel is fully licensed, insured, and equipped with the latest in sonar and radar. All have private heads and oversized T-tops for shade.
+          </p>
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <div class="flex-shrink-0 w-12 h-12 bg-steel-500/10 text-steel-400 font-display font-800 text-lg flex items-center justify-center rounded-md">01</div>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-1">37ft Cape Horn REAPER</h3>
+                <p class="text-slate-400">The flagship. Room, speed, and stability for up to six anglers.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <div class="flex-shrink-0 w-12 h-12 bg-steel-500/10 text-steel-400 font-display font-800 text-lg flex items-center justify-center rounded-md">02</div>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-1">35ft Pursuit BLOOD LINE</h3>
+                <p class="text-slate-400">Comfortable offshore platform with full electronics package.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <div class="flex-shrink-0 w-12 h-12 bg-steel-500/10 text-steel-400 font-display font-800 text-lg flex items-center justify-center rounded-md">03</div>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-1">Two 27ft Center Consoles</h3>
+                <p class="text-slate-400">DROP PLAN and a second 27-footer. Nimble, fast, and battle-tested.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary: About Capt. Chad (reversed split) -->
+  <section id="about" class="py-24 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <span class="text-xs font-semibold tracking-widest text-steel-400 uppercase mb-4 block">THE CAPTAIN</span>
+          <h2 class="font-display font-700 text-4xl md:text-5xl text-white mb-6">
+            From Law Enforcement<br>to Legendary Angler
+          </h2>
+          <p class="text-slate-400 text-lg mb-6 leading-relaxed">
+            Capt. Chad Starling spent 24 years as a lieutenant with the Jacksonville Sheriff's Office. In 2006, he traded chasing criminals for chasing fish. The name Team Buck Rogers honors his late grandfather "Buck" and his father "Roger," the men who taught him to fish.
+          </p>
+          <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+            What started as one boat has grown into one of the most trusted charter operations on the Northeast Florida coast. Voted number one in Northeast Florida in 2019, 2020, and 2021. Professional, family-friendly, and child-safe.
+          </p>
+          <div class="flex gap-10">
+            <div>
+              <p class="font-display font-800 text-3xl text-white">19</p>
+              <p class="text-sm text-slate-400 mt-1">Years in Business</p>
+            </div>
+            <div>
+              <p class="font-display font-800 text-3xl text-white">4</p>
+              <p class="text-sm text-slate-400 mt-1">Boats in Fleet</p>
+            </div>
+            <div>
+              <p class="font-display font-800 text-3xl text-white">#1</p>
+              <p class="text-sm text-slate-400 mt-1">Northeast Florida</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 reveal">
+          <img src="https://teambuckrogers.com/wp-content/uploads/2024/06/20240526_163235.jpg" alt="Capt. Chad Starling with a Jacksonville offshore catch" class="w-full h-[500px] object-cover rounded-md shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery: Recent Catches -->
+  <section id="catches" class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="text-xs font-semibold tracking-widest text-steel-400 uppercase mb-4 block">RECENT CATCHES</span>
+        <h2 class="font-display font-700 text-4xl md:text-5xl text-white max-w-2xl mx-auto">
+          The Fish Are Here.<br>Are You?
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="reveal lg:col-span-2 lg:row-span-2">
+          <img src="https://teambuckrogers.com/wp-content/uploads/2024/06/20240604_160955.jpg" alt="Jacksonville deep sea fishing catch" class="w-full h-full min-h-[400px] object-cover rounded-md">
+        </div>
+        <div class="reveal">
+          <img src="https://teambuckrogers.com/wp-content/uploads/2022/05/20220508_130437.jpg" alt="Team Buck Rogers fishing charter action" class="w-full h-full min-h-[200px] object-cover rounded-md">
+        </div>
+        <div class="reveal">
+          <img src="https://teambuckrogers.com/wp-content/uploads/2022/12/FB_IMG_16455922858601.jpg" alt="Jacksonville offshore fishing" class="w-full h-full min-h-[200px] object-cover rounded-md">
+        </div>
+      </div>
+      <p class="text-center text-slate-500 mt-6 text-sm">All photos taken on actual Team Buck Rogers charters</p>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / Credibility -->
+  <section id="rates" class="py-24 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="reveal">
+          <span class="text-xs font-semibold tracking-widest text-steel-400 uppercase mb-4 block">WHAT CUSTOMERS SAY</span>
+          <blockquote class="font-display text-2xl md:text-3xl text-white leading-relaxed mb-6">
+            "Come as a client and leave as a friend."
+          </blockquote>
+          <p class="text-slate-400">
+            We have heard this from our guests time and again. Capt. Chad and his crew pride themselves on making every trip memorable, safe, and productive. From first-timers to seasoned anglers, every guest gets personalized attention.
+          </p>
+        </div>
+        <div class="reveal bg-slate-900 rounded-md p-10">
+          <h3 class="font-display font-700 text-2xl text-white mb-8">Trip Packages</h3>
+          <div class="space-y-6">
+            <div class="flex justify-between items-center pb-4 border-b border-slate-800">
+              <div>
+                <p class="text-white font-semibold">4-Hour Half Day</p>
+                <p class="text-sm text-slate-400">Great for families and first-timers</p>
+              </div>
+              <span class="text-steel-400 font-display font-700 text-xl">$600</span>
+            </div>
+            <div class="flex justify-between items-center pb-4 border-b border-slate-800">
+              <div>
+                <p class="text-white font-semibold">6-Hour 3/4 Day</p>
+                <p class="text-sm text-slate-400">More time, more fish, more fun</p>
+              </div>
+              <span class="text-steel-400 font-display font-700 text-xl">$800</span>
+            </div>
+            <div class="flex justify-between items-center pb-4 border-b border-slate-800">
+              <div>
+                <p class="text-white font-semibold">8-Hour Full Day</p>
+                <p class="text-sm text-slate-400">The serious angler's choice</p>
+              </div>
+              <span class="text-steel-400 font-display font-700 text-xl">$1,000</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-white font-semibold">10-12 Hour Extended</p>
+                <p class="text-sm text-slate-400">Go deep. Go big. Go all day.</p>
+              </div>
+              <span class="text-steel-400 font-display font-700 text-xl">$1,200</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-500 mt-6">Pricing is per boat, not per person. Up to 6 anglers. All equipment, licenses, and bait included.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA Strip -->
+  <section class="py-20 bg-steel-500">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display font-800 text-3xl md:text-4xl text-white mb-4">
+        Ready to Catch Something Big?
+      </h2>
+      <p class="text-white/90 text-lg mb-10 max-w-xl mx-auto">
+        Phone lines open daily. Book directly with Capt. Chad and lock in your date.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:904-362-0609" class="inline-flex items-center px-10 py-4 bg-white text-slate-950 font-bold rounded-md hover:bg-slate-100 transition-colors">
+          Call 904-362-0609
+        </a>
+        <a href="mailto:teambuckrogers3@gmail.com" class="inline-flex items-center px-10 py-4 border-2 border-white text-white font-bold rounded-md hover:bg-white/10 transition-colors">
+          Email Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="md:col-span-2">
+          <h3 class="font-display font-700 text-xl text-white mb-4">Team Buck Rogers</h3>
+          <p class="text-slate-400 mb-4 leading-relaxed">
+            Jacksonville deep sea fishing charters since 2006. Family-friendly trips for anglers of all skill levels. Four boats, professional captains, and a commitment to making every trip memorable.
+          </p>
+          <p class="text-slate-500 text-sm">
+            Phone: 904-362-0609
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Navigate</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="text-slate-400 hover:text-white text-sm transition-colors">About Capt. Chad</a></li>
+            <li><a href="#boats" class="text-slate-400 hover:text-white text-sm transition-colors">The Fleet</a></li>
+            <li><a href="#catches" class="text-slate-400 hover:text-white text-sm transition-colors">Recent Catches</a></li>
+            <li><a href="#rates" class="text-slate-400 hover:text-white text-sm transition-colors">Rates & Packages</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Connect</h4>
+          <ul class="space-y-2">
+            <li><a href="https://www.facebook.com/TeamBuckRogers/" target="_blank" class="text-slate-400 hover:text-white text-sm transition-colors">Facebook</a></li>
+            <li><a href="mailto:teambuckrogers3@gmail.com" class="text-slate-400 hover:text-white text-sm transition-colors">teambuckrogers3@gmail.com</a></li>
+            <li><span class="text-slate-400 text-sm">Jacksonville, FL</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-slate-500 text-sm">2026 Team Buck Rogers Fishing Charters. All rights reserved.</p>
+        <p class="text-slate-600 text-xs">Jacksonville, Florida</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for reveal animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
