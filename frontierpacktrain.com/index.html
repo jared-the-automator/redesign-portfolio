@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontier Pack Train | Backcountry Pack Trips in the Eastern Sierra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Cabinet Grotesk"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            stone: { 850: '#1c1c1b' },
+            chalk: '#F5F3EE',
+            granite: '#8A8B82',
+            charcoal: '#1A1A1A',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@800&family=Inter:wght@400;500;600&display=swap');
+    .font-display { font-family: 'Cabinet Grotesk', sans-serif; }
+    .font-body { font-family: 'Inter', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .hero-bg { background-image: linear-gradient(to right, rgba(26,26,26,0.85) 0%, rgba(26,26,26,0.4) 60%, rgba(26,26,26,0.2) 100%), url('https://frontierpacktrain.com/wp-content/uploads/2017/03/private-trip-pack-train.jpg'); background-size: cover; background-position: center 30%; }
+    .section-bg { background-image: linear-gradient(to right, rgba(26,26,26,0.7) 0%, rgba(26,26,26,0.3) 100%), url('https://frontierpacktrain.com/wp-content/uploads/2017/03/private-trip-highcountry.jpg'); background-size: cover; background-position: center; }
+  </style>
+</head>
+<body class="font-body bg-chalk text-charcoal antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-chalk/95 backdrop-blur-sm border-b border-granite/10">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-tight text-charcoal">FRONTIER PACK TRAIN</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#trips" class="text-sm font-medium text-granite hover:text-charcoal transition-colors">Trips</a>
+        <a href="#about" class="text-sm font-medium text-granite hover:text-charcoal transition-colors">About</a>
+        <a href="#daily" class="text-sm font-medium text-granite hover:text-charcoal transition-colors">Daily Rides</a>
+        <a href="#contact" class="text-sm font-medium bg-charcoal text-chalk px-5 py-2 hover:bg-charcoal/90 transition-colors">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 md:pb-24 hero-bg">
+    <div class="max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl reveal">
+        <p class="text-chalk/80 text-sm font-medium tracking-widest uppercase mb-4">June Lake, California</p>
+        <h1 class="font-display text-4xl md:text-6xl lg:text-7xl text-chalk leading-[0.95] mb-6">BACKCOUNTRY<br>PACK TRIPS</h1>
+        <p class="text-chalk/90 text-base md:text-lg leading-relaxed max-w-lg mb-8">Over 35 years of packing experience in the Eastern Sierra and Yosemite. Full-service wilderness trips with experienced wranglers, camp cooks, and gentle horses.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#trips" class="bg-chalk text-charcoal px-8 py-3 font-medium text-sm hover:bg-chalk/90 transition-colors">View Trips</a>
+          <a href="#contact" class="border border-chalk/40 text-chalk px-8 py-3 font-medium text-sm hover:bg-chalk/10 transition-colors">Call (888) 437-MULE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-20 md:py-28 bg-chalk">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl reveal">
+        <p class="text-granite text-sm font-medium tracking-widest uppercase mb-6">The Eastern Sierra</p>
+        <h2 class="font-display text-3xl md:text-5xl text-charcoal leading-tight mb-8">A full camp set up each evening with latrines, tents, and a back-country kitchen for good old fashioned cooking.</h2>
+        <p class="text-granite text-lg leading-relaxed">The Dohnel family personally attend to the details of safety and hospitality that can make the difference between a mediocre trip and one that will be remembered for a long time. All trips are full service, designed to fit your personal needs and interests.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="trips" class="py-20 md:py-28 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <img src="https://frontierpacktrain.com/wp-content/uploads/2017/03/private-trip-pack-train.jpg" alt="Pack train in the Sierra highcountry" class="w-full h-80 object-cover" style="border-radius: 2px;">
+        </div>
+        <div class="reveal">
+          <p class="text-granite text-sm font-medium tracking-widest uppercase mb-6">What We Offer</p>
+          <h2 class="font-display text-3xl md:text-4xl text-charcoal leading-tight mb-10">Full-service pack trips into the Sierra backcountry.</h2>
+          <div class="space-y-7">
+            <div class="flex gap-5">
+              <span class="font-display text-2xl text-granite shrink-0">01</span>
+              <div>
+                <h3 class="font-medium text-charcoal mb-1">Scheduled Group Trips</h3>
+                <p class="text-granite text-sm leading-relaxed">Join a pre-planned adventure into the Ansel Adams Wilderness or Yosemite. Meals, gear, and guides included.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-2xl text-granite shrink-0">02</span>
+              <div>
+                <h3 class="font-medium text-charcoal mb-1">Private Custom Trips</h3>
+                <p class="text-granite text-sm leading-relaxed">Design your own itinerary. From menu selections to daily routes, every detail is tailored to your group.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-2xl text-granite shrink-0">03</span>
+              <div>
+                <h3 class="font-medium text-charcoal mb-1">Daily Trail Rides</h3>
+                <p class="text-granite text-sm leading-relaxed">One-hour, half-day, and full-day guided rides starting from our June Lake pack station base.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section -->
+  <section id="about" class="py-20 md:py-28 bg-charcoal text-chalk">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 md:order-1 reveal">
+          <p class="text-chalk/60 text-sm font-medium tracking-widest uppercase mb-6">Our Story</p>
+          <h2 class="font-display text-3xl md:text-4xl leading-tight mb-8">35 years of Sierra packing experience.</h2>
+          <p class="text-chalk/80 leading-relaxed mb-6">Frontier Pack Train has been guiding groups into the beautiful Sierra Mountain Range for over three decades. Our staff of wranglers, cooks, and assistants are some of the most experienced and personable you will meet at any packing operation.</p>
+          <p class="text-chalk/80 leading-relaxed mb-8">We match you with gentle, well-mannered horses suited to your riding ability, beginner or expert. A full camp is set up each evening with latrines, tents, and a back-country kitchen.</p>
+          <div class="grid grid-cols-3 gap-6 pt-6 border-t border-chalk/10">
+            <div>
+              <p class="font-display text-3xl text-chalk mb-1">35+</p>
+              <p class="text-chalk/60 text-sm">Years Experience</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl text-chalk mb-1">CA</p>
+              <p class="text-chalk/60 text-sm">Licensed Guides</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl text-chalk mb-1">June</p>
+              <p class="text-chalk/60 text-sm">Lake Base</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <img src="https://frontierpacktrain.com/wp-content/uploads/2017/03/private-trip-highcountry.jpg" alt="Sierra highcountry vista" class="w-full h-80 object-cover" style="border-radius: 2px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Trips Grid -->
+  <section class="py-20 md:py-28 bg-chalk">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12 reveal">
+        <p class="text-granite text-sm font-medium tracking-widest uppercase mb-4">2026 Schedule</p>
+        <h2 class="font-display text-3xl md:text-5xl text-charcoal leading-tight">This Summer's Adventures</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="reveal bg-stone-100 p-8 md:p-10 flex flex-col justify-between h-full" style="border-radius: 2px;">
+          <div>
+            <p class="text-granite text-sm font-medium mb-3">August 1-3, 2026</p>
+            <h3 class="font-display text-2xl text-charcoal mb-3">Ansel Adams Trail Ride</h3>
+            <p class="text-granite text-sm leading-relaxed">Wilderness base camp for the first-time horse traveler. Learn wilderness etiquette and horsemanship with ample time for fishing and photography.</p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-granite/20">
+            <p class="font-medium text-charcoal">$1,100 per person</p>
+            <p class="text-granite text-xs">+ 3% USFS fee</p>
+          </div>
+        </div>
+        <div class="reveal bg-stone-100 p-8 md:p-10 flex flex-col justify-between h-full" style="border-radius: 2px;">
+          <div>
+            <p class="text-granite text-sm font-medium mb-3">July 14-17, 2026</p>
+            <h3 class="font-display text-2xl text-charcoal mb-3">Golden Trout Base Camp</h3>
+            <p class="text-granite text-sm leading-relaxed">Ride into the Ansel Adams Wilderness to Algers Lakes. Fish for Golden Trout in three high alpine lakes. Five-star backcountry cooking included.</p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-granite/20">
+            <p class="font-medium text-charcoal">$1,375 per person</p>
+            <p class="text-granite text-xs">+ 3% USFS fee</p>
+          </div>
+        </div>
+        <div class="reveal bg-stone-100 p-8 md:p-10 flex flex-col justify-between h-full" style="border-radius: 2px;">
+          <div>
+            <p class="text-granite text-sm font-medium mb-3">August 12-16, 2026</p>
+            <h3 class="font-display text-2xl text-charcoal mb-3">Tuolumne Meadows</h3>
+            <p class="text-granite text-sm leading-relaxed">Five days through Yosemite National Park along the John Muir Trail. Conquer Donahue Pass and descend into the splendor of Tuolumne Meadows.</p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-granite/20">
+            <p class="font-medium text-charcoal">$1,350 per person</p>
+            <p class="text-granite text-xs">+ 3% USFS fee</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center reveal">
+        <p class="text-granite text-sm mb-4">Private trips available on request.</p>
+        <a href="#contact" class="inline-block bg-charcoal text-chalk px-8 py-3 font-medium text-sm hover:bg-charcoal/90 transition-colors">Plan Your Trip</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daily Rides -->
+  <section id="daily" class="py-20 md:py-28 section-bg">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-2xl reveal bg-charcoal/80 backdrop-blur-sm p-10 md:p-14" style="border-radius: 2px;">
+        <p class="text-chalk/60 text-sm font-medium tracking-widest uppercase mb-4">Day Rides</p>
+        <h2 class="font-display text-3xl md:text-4xl text-chalk leading-tight mb-8">Daily Guided Trail Rides from June Lake</h2>
+        <div class="space-y-6">
+          <div class="flex justify-between items-start border-b border-chalk/10 pb-4">
+            <div>
+              <p class="text-chalk font-medium">One Hour Ride</p>
+              <p class="text-chalk/60 text-sm">Meadows and sagebrush at the base of the Sierra. Ideal for beginners and children age 8+.</p>
+            </div>
+            <p class="font-display text-xl text-chalk shrink-0 ml-4">$60</p>
+          </div>
+          <div class="flex justify-between items-start border-b border-chalk/10 pb-4">
+            <div>
+              <p class="text-chalk font-medium">Half-Day Ride</p>
+              <p class="text-chalk/60 text-sm">Ride to Parker Bench with views of Mono Lake and the Mono Craters. 8:30am to 12:20pm.</p>
+            </div>
+            <p class="font-display text-xl text-chalk shrink-0 ml-4">$120</p>
+          </div>
+          <div class="flex justify-between items-start">
+            <div>
+              <p class="text-chalk font-medium">Full-Day Ride</p>
+              <p class="text-chalk/60 text-sm">Agnew Lake to Gem Lake in the Ansel Adams Wilderness. 7:30am to 5:00pm.</p>
+            </div>
+            <p class="font-display text-xl text-chalk shrink-0 ml-4">$175</p>
+          </div>
+        </div>
+        <p class="text-chalk/50 text-sm mt-8">Start times: 9:00am, 10:30am, 1:00pm, 2:30pm, 4:00pm Daily</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-20 md:py-28 bg-chalk">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <p class="text-granite text-sm font-medium tracking-widest uppercase mb-6">Why Frontier</p>
+          <h2 class="font-display text-3xl md:text-4xl text-charcoal leading-tight mb-8">Licensed California guides with decades of wilderness experience.</h2>
+          <p class="text-granite leading-relaxed mb-6">Our cooking has been described as five-star. All meals are made with fresh vegetables, fruit, and entrees that will satisfy any adventurer. The camp setup includes folding chairs, enclosed privy, solar showers, and horseshoe pitching.</p>
+          <p class="text-granite leading-relaxed">Whether you want to hike or go by horseback, fish or lay in the sun, we will provide you with a first-class experience you are sure never to forget.</p>
+        </div>
+        <div class="reveal bg-stone-100 p-10 md:p-12 flex flex-col justify-center" style="border-radius: 2px; min-height: 400px;">
+          <p class="font-display text-5xl text-granite/30 leading-none mb-6">"</p>
+          <p class="text-granite text-lg leading-relaxed mb-8">We match you up with gentle, well-mannered horses suited to your riding ability, beginner or expert. A full camp is set up each FG each evening with latrines, tents, and a back-country kitchen.</p>
+          <p class="text-charcoal font-medium text-sm">The Dohnel Family</p>
+          <p class="text-granite text-xs">Frontier Pack Train, June Lake, CA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 md:py-24 bg-charcoal text-chalk">
+    <div class="max-w-7xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display text-3xl md:text-5xl leading-tight mb-6">Ready for the backcountry?</h2>
+      <p class="text-chalk/70 text-lg max-w-2xl mx-auto mb-10">Call to book your 2026 pack trip or daily trail ride. Spots fill fast for the summer season.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:888-437-6853" class="bg-chalk text-charcoal px-10 py-4 font-medium text-sm hover:bg-chalk/90 transition-colors">(888) 437-MULE</a>
+        <a href="tel:760-937-0637" class="border border-chalk/30 text-chalk px-10 py-4 font-medium text-sm hover:bg-chalk/10 transition-colors">(760) 937-0637</a>
+      </div>
+      <p class="text-chalk/50 text-sm mt-8">frontierpacktrain@gmail.com</p>
+      <p class="text-chalk/40 text-xs mt-2">June Lake, California</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-chalk/50 py-12 border-t border-chalk/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div>
+          <p class="text-chalk font-medium text-sm mb-3">Frontier Pack Train</p>
+          <p class="text-xs leading-relaxed">Backcountry pack trips in the Eastern Sierra and Yosemite National Park. Based in June Lake, California.</p>
+        </div>
+        <div>
+          <p class="text-chalk font-medium text-sm mb-3">Trips</p>
+          <ul class="space-y-1 text-xs">
+            <li><a href="#" class="hover:text-chalk transition-colors">Scheduled Group Trips</a></li>
+            <li><a href="#" class="hover:text-chalk transition-colors">Private Custom Trips</a></li>
+            <li><a href="#" class="hover:text-chalk transition-colors">Daily Trail Rides</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-chalk font-medium text-sm mb-3">Contact</p>
+          <ul class="space-y-1 text-xs">
+            <li>(888) 437-MULE</li>
+            <li>(760) 937-0637</li>
+            <li>frontierpacktrain@gmail.com</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-chalk font-medium text-sm mb-3">Follow</p>
+          <ul class="space-y-1 text-xs">
+            <li><a href="https://www.facebook.com/frontierpacktrain" class="hover:text-chalk transition-colors">Facebook</a></li>
+            <li><a href="https://www.youtube.com/user/frontierpacktrain" class="hover:text-chalk transition-colors">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-chalk/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs">Frontier Pack Train. All rights reserved.</p>
+        <p class="text-xs text-chalk/30">Licensed guides in the state of California.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
