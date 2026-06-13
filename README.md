@@ -44,3 +44,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Devlin Designing Boat Builders](https://jared-the-automator.github.io/redesign-portfolio/devlinboat.com/) | Custom wooden boat design &amp; kits | Olympia, WA |
 | [Devlin Designing Boat Builders](https://jared-the-automator.github.io/redesign-portfolio/devlinboat.com/) | Custom wooden boat builders | Olympia, WA |
 | [Acadian Woods Custom Traditional Bows](https://jared-the-automator.github.io/redesign-portfolio/acadianwoods.com/) | Custom traditional bows | Pineville, LA |
+| [Revenant Custom Rifles](https://jared-the-automator.github.io/redesign-portfolio/revenantcustomrifles.com/) | Custom hunting rifles | USA |

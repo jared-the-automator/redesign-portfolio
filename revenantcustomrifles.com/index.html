@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Revenant Custom Rifles — Custom Hunting Rifles, Built in the USA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg-primary: #0a0908;
+      --bg-card: #161412;
+      --text-primary: #f5efea;
+      --text-secondary: #a49b93;
+      --accent: #c99030;
+      --accent-hover: #e5a844;
+      --border: #2c2623;
+      --corner-radius: 12px;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+    }
+    .font-display {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+    .corner-rounded {
+      border-radius: var(--corner-radius);
+    }
+    .accent-border {
+      border: 1px solid var(--accent);
+    }
+    .accent-text {
+      color: var(--accent);
+    }
+    .accent-bg {
+      background-color: var(--accent);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .reveal-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0908]/90 backdrop-blur-sm border-b border-[#2c2623]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-8">
+          <a href="#" class="font-display text-2xl tracking-tight text-[#f5efea]">REVENANT</a>
+          <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-[#a49b93]">
+            <a href="#" class="hover:text-[#f5efea] transition-colors">Ovis Rifle</a>
+            <a href="#" class="hover:text-[#f5efea] transition-colors">Shop</a>
+            <a href="#" class="hover:text-[#f5efea] transition-colors">About</a>
+            <a href="#" class="hover:text-[#f5efea] transition-colors">Contact</a>
+          </div>
+        </div>
+        <a href="#contact" class="hidden sm:inline-flex items-center px-5 py-2 bg-[#c99030] text-[#0a0908] font-medium text-sm corner-rounded hover:bg-[#e5a844] transition-colors">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://www.revenantcustomrifles.com/wp-content/uploads/bb-plugin/cache/Revenant-13-1024x683-panorama.jpg" alt="Custom hunting rifle on black background with receiver open camo" class="w-full h-full object-cover object-left">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0a0908]/90 via-[#0a0908]/60 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0a0908]/80 via-transparent to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24">
+      <div class="max-w-2xl">
+        <span class="inline-block mb-4 text-xs font-semibold tracking-widest uppercase text-[#c99030]">Made in the USA</span>
+        <h1 class="font-display text-5xl md:text-7xl text-[#f5efea] leading-none mb-6">
+          Your Hunt Starts<br>With Precision
+        </h1>
+        <p class="text-lg md:text-xl text-[#a49b93] mb-8 max-w-lg leading-relaxed">
+          Build your own custom hunting rifle with premium components from industry leaders in triggers, barrels, and stocks.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="inline-flex items-center px-6 py-3 bg-[#c99030] text-[#0a0908] font-semibold corner-rounded hover:bg-[#e5a844] transition-colors">
+            Design Your Rifle
+          </a>
+          <a href="#" class="inline-flex items-center px-6 py-3 border-2 border-[#f5efea] text-[#f5efea] font-semibold corner-rounded hover:bg-[#f5efea] hover:text-[#0a0908] transition-colors">
+            See the Ovis
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section class="py-24 lg:py-32 bg-[#0a0908]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="reveal">
+          <img src="https://www.revenantcustomrifles.com/wp-content/uploads/2021/06/Desert-Night-Base2.png" alt="Ovis custom hunting/desert night base rifle" class="w-full corner-rounded shadow-2xl border border-[#2c2623]">
+        </div>
+        <div class="reveal">
+          <span class="text-xs font-semibold tracking-widest uppercase text-[#c99030] block mb-3">The Ovis Rifle Platform</span>
+          <h2 class="font-display text-4xl md:text-5xl text-[#f5efea] mb-6 leading-tight">Built Your Way,<br>Down to the Last Detail</h2>
+          <p class="text-[#a49b93] text-lg leading-relaxed mb-10">
+            Every Ovis is assembled by hand with components chosen by you. From lightweight mountain rifles to precision long-range platforms, the configuration is entirely yours.
+          </p>
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#c99030] text-[#0a0908] font-display text-xl flex items-center justify-center corner-rounded font-bold">01</div>
+              <div>
+                <h3 class="text-[#f5efea] font-semibold text-lg mb-1">Choose Your Action &amp; Barrel</h3>
+                <p class="text-[#a49b93]">Select a precision-machined action and match it to a premium barrel from Bartlein, Shaw, or Douglas.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#c99030] text-[#0a0908] font-display text-xl flex items-center justify-center corner-rounded font-bold">02</div>
+              <div>
+                <h3 class="text-[#f5efea] font-semibold text-lg mb-1">Select Stock &amp; Cerakote Finish</h3>
+                <p class="text-[#a49b93]">Pick your stock profile and protect it with a custom Cerakote finish in colors that last.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <div class="flex-shrink-0 w-12 h-12 bg-[#c99030] text-[#0a0908] font-display text-xl flex items-center justify-center corner-rounded font-bold">03</div>
+              <div>
+                <h3 class="text-[#f5efea] font-semibold text-lg mb-1">Add a World-Class Trigger</h3>
+                <p class="text-[#a49b93]">Finish the build with a crisp Timney trigger tuned exactly to your preference.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section -->
+  <section class="py-24 lg:py-32 bg-[#161412]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="reveal order-2 lg:order-1">
+          <span class="text-xs font-semibold tracking-widest uppercase text-[#c99030] block mb-3">Components &amp; Craftsmanship</span>
+          <h2 class="font-display text-4xl md:text-5xl text-[#f5efea] mb-6 leading-tight">Trusted Names.<br>Hand-Fitted Results.</h2>
+          <p class="text-[#a49b93] text-lg leading-relaxed mb-6">
+            A rifle is only as good as the parts inside it. That is why we source every barrel, trigger, and stock from manufacturers with proven track records in precision shooting.
+          </p>
+          <p class="text-[#a49b93] text-lg leading-relaxed mb-8">
+            From Bartlein and Shaw barrels to Timney triggers and AG Composites stocks, each component is selected to perform in the field season after season.
+          </p>
+          <a href="#" class="inline-flex items-center text-[#c99030] font-semibold hover:text-[#e5a844] transition-colors">
+            View Component Partners
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="reveal order-1 lg:order-2">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://www.revenantcustomrifles.com/wp-content/uploads/2019/08/HIT-Timney-Triggers-Black-Curved.jpg" alt="Timney trigger curved black" class="w-full corner-rounded border border-[#2c2623]">
+            <img src="https://www.revenantcustomrifles.com/wp-content/uploads/2019/08/Timney-Trigger-Black_Curved_Right.jpg" alt="Timney trigger black curved right" class="w-full corner-rounded border border-[#2c2623]">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section class="py-24 lg:py-32 bg-[#0a0908]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <span class="text-xs font-semibold tracking-widest uppercase text-[#c99030] block mb-3">Cerakote Finishes</span>
+        <h2 class="font-display text-4xl md:text-5xl text-[#f5efea] mb-4">Color Your Build</h2>
+        <p class="text-[#a49b93] text-lg max-w-2xl mx-auto">Durable Cerakote finishes that hold up to the backcountry, in colors that range from field blends to tactical solids.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6 mb-8">
+        <img src="https://www.revenantcustomrifles.com/wp-content/uploads/2020/11/cerakote-smoke-300x300.jpg" alt="Cerakote smoke finish swatch" class="w-full corner-rounded border border-[#2c2623]">
+        <img src="https://www.revenantcustomrifles.com/wp-content/uploads/2020/11/cerakote-sand-300x300.jpg" alt="Cerakote sand finish swatch" class="w-full corner-rounded border border-[#2c2623]">
+        <img src="https://www.revenantcustomrifles.com/wp-content/uploads/2020/11/cerakote-midnight-300x300.jpg" alt="Cerakote midnight finish swatch" class="w-full corner-rounded border border-[#2c2623]">
+        <img src="https://www.revenantcustomrifles.com/wp-content/uploads/2020/11/cerakote-jungle-300x300.jpg" alt="Cerakote jungle finish swatch" class="w-full corner-rounded border border-[#2c2623]">
+        <img src="https://www.revenantcustomrifles.com/wp-content/uploads/2020/11/cerakote-earth-300x300.jpg" alt="Cerakote earth finish swatch" class="w-full corner-rounded border border-[#2c2623]">
+        <img src="https://www.revenantcustomrifles.com/wp-content/uploads/2020/11/cerakote-coyote-300x300.jpg" alt="Cerakote coyote finish swatch" class="w-full corner-rounded border border-[#2c2623]">
+      </div>
+      <div class="text-center reveal">
+        <p class="text-[#a49b93] text-sm">Shown from left: Smoke, Sand, Midnight, Jungle, Earth, Coyote.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility -->
+  <section class="py-24 lg:py-32 bg-[#161412]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12 items-center">
+        <div class="lg:col-span-1 reveal">
+          <span class="text-xs font-semibold tracking-widest uppercase text-[#c99030] block mb-3">Why Revenant</span>
+          <h2 class="font-display text-4xl md:text-5xl text-[#f5efea] mb-4 leading-tight">Made in the USA.<br>Built to Last.</h2>
+          <p class="text-[#a49b93] leading-relaxed">
+            Every Ovis rifle is hand-assembled in the United States with an eye for detail that carries from the workshop bench into the field.
+          </p>
+        </div>
+        <div class="lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="text-center p-8 bg-[#0a0908] corner-rounded border border-[#2c2623] reveal">
+            <div class="font-display text-5xl text-[#c99030] mb-2">USA</div>
+            <div class="text-[#a49b93] text-sm uppercase tracking-widest">Assembled</div>
+          </div>
+          <div class="text-center p-8 bg-[#0a0908] corner-rounded border border-[#2c2623] reveal">
+            <div class="font-display text-5xl text-[#c99030] mb-2">6+</div>
+            <div class="text-[#a49b93] text-sm uppercase tracking-widest">Cerakote Colors</div>
+          </div>
+          <div class="text-center p-8 bg-[#0a0908] corner-rounded border border-[#2c2623] reveal md:col-span-1 col-span-2 md:col-span-1">
+            <div class="font-display text-5xl text-[#c99030] mb-2">100%</div>
+            <div class="text-[#a49b93] text-sm uppercase tracking-widest">Custom Configured</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-[#c99030]">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+      <h2 class="font-display text-4xl md:text-6xl text-[#0a0908] mb-6 leading-tight">Start Your Custom Build</h2>
+      <p class="text-[#0a0908]/80 text-lg mb-8 max-w-2xl mx-auto">
+        Every Ovis is built one at a time, by hand, to your exact specifications. Get in touch and we will walk you through the configuration.
+      </p>
+      <a href="mailto:sales@revenantrifles.com" class="inline-flex items-center px-8 py-4 bg-[#0a0908] text-[#f5efea] font-display text-lg corner-rounded hover:bg-[#2c2623] transition-colors">
+        Get a Quote
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-[#0a0908] border-t border-[#2c2623]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="md:col-span-1">
+          <a href="#" class="font-display text-2xl text-[#f5efea] block mb-4">REVENANT</a>
+          <p class="text-[#a49b93] text-sm leading-relaxed">Custom hunting rifles, hand-assembled in the USA with premium components.</p>
+        </div>
+        <div>
+          <h4 class="text-[#f5efea] font-semibold mb-4 text-sm uppercase tracking-widest">Shop</h4>
+          <ul class="space-y-2 text-[#a49b93] text-sm">
+            <li><a href="#" class="hover:text-[#f5efea] transition-colors">Ovis Rifle</a></li>
+            <li><a href="#" class="hover:text-[#f5efea] transition-colors">Components</a></li>
+            <li><a href="#" class="hover:text-[#f5efea] transition-colors">Cerakote Finishes</a></li>
+            <li><a href="#" class="hover:text-[#f5efea] transition-colors">Configure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#f5efea] font-semibold mb-4 text-sm uppercase tracking-widest">Company</h4>
+          <ul class="space-y-2 text-[#a49b93] text-sm">
+            <li><a href="#" class="hover:text-[#f5efea] transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-[#f5efea] transition-colors">Blog</a></li>
+            <li><a href="#" class="hover:text-[#f5efea] transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#f5efea] font-semibold mb-4 text-sm uppercase tracking-widest">Contact</h4>
+          <ul class="space-y-2 text-[#a49b93] text-sm">
+            <li><a href="mailto:sales@revenantrifles.com" class="hover:text-[#f5efea] transition-colors">sales@revenantrifles.com</a></li>
+            <li><a href="#" class="hover:text-[#f5efea] transition-colors">Instagram</a></li>
+            <li><a href="#" class="hover:text-[#f5efea] transition-colors">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-[#2c2623] flex flex-col md:flex-row justify-between items-center text-[#a49b93] text-sm">
+        <p>&copy; 2022 Revenant Rifles. All rights reserved.</p>
+        <div class="flex gap-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-[#f5efea] transition-colors">Privacy</a>
+          <a href="#" class="hover:text-[#f5efea] transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver fade-in (MOT_INTENSITY 4)
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
