@@ -9,6 +9,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
 |---|---|---|
 | [Scott Meek Woodworks](https://jared-the-automator.github.io/redesign-portfolio/scottmeekwoodworks.com/) | Handmade wood body planes | Leicester, NC |
 | [Highliner Custom Rods](https://jared-the-automator.github.io/redesign-portfolio/highlinercustomrods.com/) | Custom fly and spey rods | Bend, OR |
@@ -47,3 +48,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Revenant Custom Rifles](https://jared-the-automator.github.io/redesign-portfolio/revenantcustomrifles.com/) | Custom hunting rifles | USA |
 | [Smokey River Bows](https://jared-the-automator.github.io/redesign-portfolio/smokeyriverbows.net/) | Handmade traditional archery bows | Wichita, KS |
 | [Newfound Woodworks](https://jared-the-automator.github.io/redesign-portfolio/newfound.com/) | Cedar strip boat kits | Newfound, NH |
+| [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
