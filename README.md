@@ -46,3 +46,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Acadian Woods Custom Traditional Bows](https://jared-the-automator.github.io/redesign-portfolio/acadianwoods.com/) | Custom traditional bows | Pineville, LA |
 | [Revenant Custom Rifles](https://jared-the-automator.github.io/redesign-portfolio/revenantcustomrifles.com/) | Custom hunting rifles | USA |
 | [Smokey River Bows](https://jared-the-automator.github.io/redesign-portfolio/smokeyriverbows.net/) | Handmade traditional archery bows | Wichita, KS |
+| [Newfound Woodworks](https://jared-the-automator.github.io/redesign-portfolio/newfound.com/) | Cedar strip boat kits | Newfound, NH |

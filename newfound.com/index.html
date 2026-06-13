@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newfound Woodworks — Cedar Strip Boat Kits</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'forest-900': '#0F1A0F',
+            'forest-800': '#162816',
+            'forest-700': '#1E3A1E',
+            'aged-gold': '#C5A059',
+            'bone': '#F5F0E6',
+            'sage': '#8BA38B',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['"Source Sans 3"', 'sans-serif'],
+          },
+          borderRadius: {
+            'DEFAULT': '2px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(20px); }
+    .reveal.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
+  </style>
+</head>
+<body class="bg-forest-900 text-bone font-body selection:bg-aged-gold selection:text-forest-900">
+  <nav class="fixed top-0 w-full z-50 bg-forest-900/90 backdrop-blur-sm border-b border-forest-700/50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-wide text-bone">Newfound</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-light text-sage">
+        <a href="#designs" class="hover:text-bone transition-colors">Designs</a>
+        <a href="#about" class="hover:text-bone transition-colors">About</a>
+        <a href="#contact" class="hover:text-bone transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="bg-aged-gold text-forest-900 px-5 py-2 text-sm font-semibold rounded-[2px] hover:bg-[#D4AF37] transition-colors">Get a Quote</a>
+    </div>
+  </nav>
+
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://newfound.com/wp-content/uploads/2020/08/excurs4.jpg" class="w-full h-full object-cover" alt="Small wooden boat on beach near water">
+      <div class="absolute inset-0 bg-gradient-to-r from-forest-900/90 via-forest-900/60 to-transparent"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 pt-32 pb-20">
+      <div class="max-w-2xl">
+        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">Cedar Strip<br>Boat Kits</h1>
+        <p class="text-lg md:text-xl text-sage leading-relaxed mb-8 max-w-xl">Everything you need to build a wooden boat in your own garage. Premium cedar strips, fiberglass, and step-by-step plans shipped to your door.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#designs" class="bg-aged-gold text-forest-900 px-8 py-3 font-semibold rounded-[2px] hover:bg-[#D4AF37] transition-colors">View Our Designs</a>
+          <a href="tel:6037446872" class="border border-sage/50 text-bone px-8 py-3 font-light rounded-[2px] hover:border-aged-gold hover:text-aged-gold transition-colors">Call (603) 744-6872</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="designs" class="py-24 bg-forest-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center reveal">
+        <div class="order-2 lg:order-1">
+          <img src="https://newfound.com/wp-content/uploads/2020/07/traveler-0092-f4204f22-9f91-46d2-a00e-532e4f8aa17b-1024x768.jpg" class="w-full rounded-[2px] object-cover h-[28rem]" alt="Wooden model of multi-hulled boat under construction">
+        </div>
+        <div class="order-1 lg:order-2">
+          <p class="text-aged-gold text-xs font-semibold tracking-[0.2em] uppercase mb-4">What's in the Box</p>
+          <h2 class="font-display text-4xl md:text-5xl mb-10">Everything But the Garage</h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-aged-gold/20 leading-none">01</span>
+              <div>
+                <h3 class="text-xl font-semibold mb-2 text-bone">Cedar Strips</h3>
+                <p class="text-sage leading-relaxed">Clear western red cedar, milled to exact dimensions and ready to bend around the forms.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-aged-gold/20 leading-none">02</span>
+              <div>
+                <h3 class="text-xl font-semibold mb-2 text-bone">Plans &amp; Instructions</h3>
+                <p class="text-sage leading-relaxed">Full-size templates, a builder's manual, and phone support from the Newfound team.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-aged-gold/20 leading-none">03</span>
+              <div>
+                <h3 class="text-xl font-semibold mb-2 text-bone">Epoxy &amp; Fiberglass</h3>
+                <p class="text-sage leading-relaxed">Resin, hardener, and cloth sized for your hull. No guessing, no extra trips to the store.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 bg-forest-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center reveal">
+        <div>
+          <h2 class="font-display text-4xl md:text-5xl mb-6">Built By Hand in New Hampshire</h2>
+          <p class="text-sage leading-relaxed mb-6">Every Newfound kit starts as a stack of cedar in our New Hampshire workshop. Cedar strips are milled to exact dimensions, fiberglass and epoxy are measured and packed, and full-size plans are rolled and shipped to your door. You supply the garage, the weekends, and the patience. We supply everything else.</p>
+          <p class="text-sage leading-relaxed">Rose Woodyard, co-owner, works alongside the crew to make sure each kit arrives complete.</p>
+        </div>
+        <div>
+          <img src="https://newfound.com/wp-content/uploads/2020/09/boatshop.jpg" class="w-full rounded-[2px] object-cover h-[28rem]" alt="Newfound boat shop interior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-forest-900">
+    <div class="max-w-7xl mx-auto px-6 reveal">
+      <h2 class="font-display text-4xl md:text-5xl mb-12">From Sketch to Shore</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="md:col-span-2 lg:col-span-2">
+          <img src="https://newfound.com/wp-content/uploads/bb-plugin/cache/Everyone-scaled-panorama-4ebfbbc77ae48e55d4a4937c66a714d5-0p3kfg6sjq4a.jpg" class="w-full h-80 object-cover rounded-[2px]" alt="Newfound Woodworks at WoodenBoat School">
+        </div>
+        <div>
+          <img src="https://newfound.com/wp-content/uploads/2020/08/range9.jpg" class="w-full h-80 object-cover rounded-[2px]" alt="Small wooden boat with two oars on the water">
+        </div>
+        <div>
+          <img src="https://newfound.com/wp-content/uploads/2021/06/DSC_0580-scaled.jpg" class="w-full h-64 object-cover rounded-[2px]" alt="Pre-Kit boat assembly">
+        </div>
+        <div class="md:col-span-2">
+          <img src="https://newfound.com/wp-content/uploads/bb-plugin/cache/Alan-Osprey-landscape-landscape-ad8d343522e305599041ad0b3be7003e-612d5106a420e.jpg" class="w-full h-64 object-cover rounded-[2px]" alt="Man in a canoe on the water">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-forest-800">
+    <div class="max-w-7xl mx-auto px-6 text-center reveal">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <p class="font-display text-7xl text-aged-gold mb-4">NH</p>
+          <p class="text-sage">New Hampshire workshop. Every kit ships from our shop, not a warehouse.</p>
+        </div>
+        <div>
+          <p class="font-display text-7xl text-aged-gold mb-4">5+</p>
+          <p class="text-sage">Boat designs. Strip canoes, kayaks, stitch-and-glue, and rowing craft.</p>
+        </div>
+        <div>
+          <p class="font-display text-7xl text-aged-gold mb-4">US</p>
+          <p class="text-sage">Ships nationwide. From Maine to California, builders trust Newfound.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-aged-gold text-forest-900">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 reveal">
+      <div>
+        <h2 class="font-display text-4xl md:text-5xl mb-2">Ready to start your build?</h2>
+        <p class="text-forest-800 text-lg">Call or email to talk designs, timelines, and shipping.</p>
+      </div>
+      <div class="flex flex-wrap gap-4 justify-center md:justify-end">
+        <a href="tel:6037446872" class="bg-forest-900 text-bone px-8 py-3 font-semibold rounded-[2px] hover:bg-forest-800 transition-colors">Call (603) 744-6872</a>
+        <a href="mailto:info@newfound.com" class="border border-forest-900 text-forest-900 px-8 py-3 font-semibold rounded-[2px] hover:bg-forest-900 hover:text-bone transition-colors">Email info@newfound.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-forest-900 border-t border-forest-700/50 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+      <div>
+        <h3 class="font-display text-2xl mb-4">Newfound Woodworks</h3>
+        <p class="text-sage text-sm leading-relaxed">Cedar strip boat kits, epoxy, and plans for the home builder. New Hampshire, USA.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-bone mb-4 tracking-wide text-sm uppercase">Navigate</h4>
+        <ul class="space-y-2 text-sage text-sm">
+          <li><a href="#" class="hover:text-aged-gold transition-colors">Home</a></li>
+          <li><a href="#designs" class="hover:text-aged-gold transition-colors">Designs</a></li>
+          <li><a href="#about" class="hover:text-aged-gold transition-colors">About</a></li>
+          <li><a href="#contact" class="hover:text-aged-gold transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-bone mb-4 tracking-wide text-sm uppercase">Contact</h4>
+        <p class="text-sage text-sm mb-1">info@newfound.com</p>
+        <p class="text-sage text-sm mb-1">(603) 744-6872</p>
+        <p class="text-sage text-sm">Newfound, New Hampshire</p>
+        <a href="http://instagram.com/newfoundwoodworks/" target="_blank" class="text-aged-gold text-sm mt-4 inline-block hover:underline">@newfoundwoodworks</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-forest-700/50 text-sage text-xs">
+      <p>&copy; 2026 Newfound Woodworks. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
