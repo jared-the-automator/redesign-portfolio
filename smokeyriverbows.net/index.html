@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smokey River Bows — Handmade Traditional Archery Bows</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    @layer base {
+      html { font-family: 'Lato', sans-serif; }
+      h1, h2, h3, .font-display { font-family: 'Oswald', sans-serif; }
+      body { background-color: #FAF9F6; color: #222; }
+    }
+    @layer utilities {
+      .reveal {
+        opacity: 0.1;
+        transform: translateY(24px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bone: '#F5F0E8',
+            forest: '#1B4D3E',
+            forestLight: '#2D6A52',
+            charcoal: '#222222',
+            warm: '#EDE8DF',
+          },
+          fontFamily: {
+            display: ['"Oswald"', 'sans-serif'],
+            body: ['"Lato"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-body antialiased">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-bone/90 backdrop-blur-sm border-b border-charMICZJ border-charcoal/10">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="#" class="font-display font-bold text-xl tracking-wide text-charcoal">SMOKEY RIVER BOWS</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-widest text-charcoal/70">
+        <a href="#shop" class="hover:text-forest transition">Shop</a>
+        <a href="#story" class="hover:text-forest transition">About</a>
+        <a href="#contact" class="hover:text-forest transition">Contact</a>
+      </div>
+      <a href="#collection" class="hidden md:inline-block bg-forest text-white text-sm font-bold uppercase tracking-wider px-6 py-2 hover:bg-forestLight transition">View Bows</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative min-h-[100dvh] flex items-end pb-24 md:pb-32 overflow-hidden" id="hero">
+    <img src="https://smokeyriverbows.net/wp-content/uploads/2018/10/WarBow.jpg" alt="English war bow with black water buffalo horn tips" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/60 to-charcoal/30"></div>
+    <div class="relative max-w-7xl mx-auto px-6 w-full">
+      <span class="inline-block bg-forest/20 text-bone text-xs font-bold uppercase tracking-[0.2em] px-4 py-1 mb-6 border border-bone/30">Handmade in Kansas</span>
+      <h1 class="font-display font-bold text-5xl md:text-7xl lg:text-8xl text-white leading-[0.95] max-w-4xl mb-6">
+        No Two Bows<br />Exactly The Same
+      </h1>
+      <p class="text-bone/90 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+        Traditional longbows and recurves shaped one at a time by hand since high school.
+      </p>
+      <a href="#collection" class="inline-block bg-forest text-white font-bold uppercase tracking-widest px-10 py-4 text-sm hover:bg-forestLight transition border border-white/20">Explore The Collection</a>
+    </div>
+  </header>
+
+  <!-- PRIMARY PRODUCT SECTION -->
+  <section class="max-w-7xl mx-auto px-6 py-24" id="shop">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="reveal">
+        <span class="text-forest font-bold text-sm uppercase tracking-[0.2em] mb-4 block">What Sets Us Apart</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-charcoal leading-tight mb-8">
+          Built The Old Way
+        </h2>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <span class="font-display font-bold text-5xl text-forest/30">01</span>
+            <div>
+              <h3 class="font-display font-bold text-xl mb-2 text-charcoal">Select Your Style</h3>
+              <p class="text-charcoal/70 leading-relaxed">Longbows, recurves, takedowns, and youth models. Each bow is matched to the archer.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="font-display font-bold text-5xl text-forest/30">02</span>
+            <div>
+              <h3 class="font-display font-bold text-xl mb-2 text-charcoal">Hand-Shaped Hardwood</h3>
+              <p class="text-charcoal/70 leading-relaxed">Every riser and limb is worked by hand, not routed by machine. The grain tells its own story.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="font-display font-bold text-5xl text-forest/30">03</span>
+            <div>
+              <h3 class="font-display font-bold text-xl mb-2 text-charcoal">String It And Shoot</h3>
+              <p class="text-charcoal/70 leading-relaxed">Each bow is tested before it ships. We back our work with honest service and real answers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="https://smokeyriverbows.net/wp-content/uploads/2018/10/Longbow.jpg" alt="Traditional longbow displayed on a dark background" class="w-full h-[500px] object-cover shadow-2xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split) -->
+  <section class="bg-bone" id="story">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1 reveal">
+          <img src="https://smokeyriverbows.net/wp-content/uploads/2018/10/Camo-Longbow.jpg" alt="Camouflage longbow designed for hunting" class="w-full h-[500px] object-cover shadow-2xl" />
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <span class="text-forest font-bold text-sm uppercase tracking-[0.2em] mb-4 block">Our Story</span>
+          <h2 class="font-display font-bold text-4xl md:text-5xl text-charcoal leading-tight mb-6">
+            It Began Back<br />In High School
+          </h2>
+          <p class="text-charcoal/70 leading-relaxed mb-6">
+            Smokey River Bows started as a high school dream that grew into a lifelong craft. Every bow is still shaped one at a time, by hand, in a small Kansas workshop. The camo survival recurve, the towering English war bow, the first longbow for a young shooter, each one carries the same attention to grain, balance, and quiet pride.
+          </p>
+          <p class="text-charcoal/70 leading-relaxed mb-8">
+            We do not run a factory. We make bows. And every bow leaves the shop ready to earn its stories in the woods.
+          </p>
+          <a href="#" class="inline-block border-2 border-forest text-forest font-bold uppercase tracking-widest px-8 py-3 text-sm hover:bg-forest hover:text-white transition">Read The Full Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY / PRODUCT SHOWCASE -->
+  <section class="max-w-7xl mx-auto px-6 py-24" id="collection">
+    <div class="text-center mb-16 reveal">
+      <span class="text-forest font-bold text-sm uppercase tracking-[0.2em] mb-4 block">The Lineup</span>
+      <h2 class="font-display font-bold text-4xl md:text-6xl text-charcoal">Built For The Woods</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 reveal">
+      <div class="group relative overflow-hidden cursor-pointer">
+        <img src="https://smokeyriverbows.net/wp-content/uploads/2018/10/WarBow.jpg" alt="English war bow" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="font-display font-bold text-xl text-white mb-1">English War Bow</h3>
+            <p class="text-bone/80 text-sm">80-inch longbow with water buffalo horn tips</p>
+          </div>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden cursor-pointer">
+        <img src="https://smokeyriverbows.net/wp-content/uploads/2018/10/Pink-Bow.jpg" alt="Camo recurve bow" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="font-display font-bold text-xl text-white mb-1">Camo Survival Recurve</h3>
+            <p class="text-bone/80 text-sm">Lightweight, dependable, made to travel</p>
+          </div>
+        </div>
+      </div>
+      <div class="group relative overflow-hidden cursor-pointer">
+        <img src="https://smokeyriverbows.net/wp-content/uploads/2018/10/20171120_193024-e1511232336496-768x392.jpg" alt="Bow workshop craftsmanship" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="font-display font-bold text-xl text-white mb-1">Traditional Longbows</h3>
+            <p class="text-bone/80 text-sm">Classic silhouette, honest wood, no shortcuts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6 mt-6 reveal">
+      <div class="group relative overflow-hidden cursor-pointer">
+        <img src="https://smokeyriverbows.net/wp-content/uploads/2018/10/IMG_1690resized.jpg" alt="Takedown recurve bow" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="font-display font-bold text-xl text-white mb-1">Takedown Recurve</h3>
+            <p class="text-bone/80 text-sm">Breaks down for travel, assembles for accuracy</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-forest text-white p-10 flex flex-col justify-between">
+        <div>
+          <h3 class="font-display font-bold text-2xl mb-4">Custom Orders</h3>
+          <p class="text-white/80 leading-relaxed">Need a specific draw weight, right-hand or left-hand, a custom finish? We take on custom orders for archers who know exactly what they want.</p>
+        </div>
+        <a href="#contact" class="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-sm mt-4 hover:text-bone transition">
+          Start A Conversation
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS / CREDIBILITY -->
+  <section class="bg-bone py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div class="reveal">
+          <span class="font-display font-bold text-5xl text-forest block mb-2">2018</span>
+          <span class="text-charcoal/60 text-sm uppercase tracking-wider font-semibold">Founded</span>
+        </div>
+        <div class="reveal">
+          <span class="font-display font-bold text-5xl text-forest block mb-2">KS</span>
+          <span class="text-charcoal/60 text-sm uppercase tracking-wider font-semibold">Wichita, Kansas</span>
+        </div>
+        <div class="reveal">
+          <span class="font-display font-bold text-5xl text-forest block mb-2">5+</span>
+          <span class="text-charcoal/60 text-sm uppercase tracking-wider font-semibold">Bow Styles</span>
+        </div>
+        <div class="reveal">
+          <span class="font-display font-bold text-5xl text-forest block mb-2">100%</span>
+          <span class="text-charcoal/60 text-sm uppercase tracking-wider font-semibold">Handmade</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="bg-forest py-16" id="contact">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display font-bold text-3xl md:text-5xl text-white mb-6">Ready For A Bow That Fits Your Hand?</h2>
+      <p class="text-white/80 text-lg mb-10 max-w-2xl mx-auto">Call or email to talk draw weight, style, and what you are hunting this season. Every bow ships ready to string and shoot.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:316-347-0394" class="bg-white text-forest font-bold uppercase tracking-widest px-8 py-4 text-sm hover:bg-bone transition">Call 316-347-0394</a>
+        <a href="mailto:info@smokeyriverbows.net" class="border-2 border-white text-white font-bold uppercase tracking-widest px-8 py-4 text-sm hover:bg-white hover:text-forest transition">Email info@smokeyriverbows.net</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-white/60 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <h3 class="font-display font-bold text-lg text-white mb-4 tracking-wide">SMOKEY RIVER BOWS</h3>
+        <p class="text-sm leading-relaxed">Handmade traditional archery bows from Wichita, Kansas. Built one at a time since 2018.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Shop</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition">Traditional Longbows</a></li>
+          <li><a href="#" class="hover:text-white transition">Recurve Bows</a></li>
+          <li><a href="#" class="hover:text-white transition">Survival Bows</a></li>
+          <li><a href="#" class="hover:text-white transition">Youth Bows</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition">About</a></li>
+          <li><a href="#" class="hover:text-white transition">Blog</a></li>
+          <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Contact</h4>
+        <p class="text-sm mb-2">Email: info@smokeyriverbows.net</p>
+        <p class="text-sm mb-2">Phone: 316-347-0394</p>
+        <p class="text-sm">Wichita, Kansas</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/10 text-center text-xs">
+      &copy; 2018-2026 Smokey River Bows, LLC. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver reveals
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
