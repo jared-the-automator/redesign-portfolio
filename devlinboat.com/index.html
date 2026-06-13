@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devlin Designing Boat Builders | Artfully Designed and Crafted Boats since 1978</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'DM Serif Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#f7f5f0',
+            olive: '#6b7c5e',
+            sage: '#a3b18a',
+            espresso: '#2d1f14',
+            bone: '#e8e6e0',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-espresso antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-bone">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-tight text-espresso">Devlin Boat</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-espresso/80">
+        <a href="#" class="hover:text-olive transition">Home</a>
+        <a href="#" class="hover:text-olive transition">Designs</a>
+        <a href="#" class="hover:text-olive transition">Build Your Own</a>
+        <a href="#" class="hover:text-olive transition">About</a>
+        <a href="#" class="hover:text-olive transition">Contact</a>
+      </div>
+      <a href="tel:360-866-0164" class="hidden md:inline-block bg-olive text-white text-sm font-semibold px-6 py-2.5 rounded-sm hover:bg-espresso transition">Call 360-866-0164</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20 md:pb-28">
+    <img src="https://devlinboat.com/wp-content/uploads/2019/03/home-motorboatpic.jpg" alt="Wooden motorboat on Puget Sound" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-espresso/80 via-espresso/40 to-transparent"></div>
+    <div class="relative max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block text-bone/80 text-xs font-semibold tracking-[0.2em] uppercase mb-4">Olympia, Washington</span>
+        <h1 class="font-display text-4xl md:text-6xl leading-tight text-white mb-4">Artfully designed and crafted boats since 1978</h1>
+        <p class="text-bone text-lg md:text-xl leading-relaxed mb-8 max-w-lg">Sam Devlin and the Devlin team have spent over four decades designing and building beautiful, seaworthy wooden boats in the Pacific Northwest.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="bg-olive text-white font-semibold px-8 py-3 rounded-sm hover:bg-espresso transition">Explore Designs</a>
+          <a href="#" class="border-2 border-white/40 text-white font-semibold px-8 py-3 rounded-sm hover:bg-white/10 transition">Build Your Own</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary product section -->
+  <section class="py-20 md:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-1 md:order-1">
+        <img src="https://devlinboat.com/wp-content/uploads/2019/03/home-humanpoweredpic.jpg" alt="Handcrafted wooden rowboat" class="w-full h-[500px] object-cover rounded-sm shadow-lg">
+      </div>
+      <div class="order-2 md:order-2">
+        <span class="text-olive text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">How We Build</span>
+        <h2 class="font-display text-3xl md:text-5xl text-espresso mb-6">Built with purpose, designed with soul</h2>
+        <p class="text-espresso/70 leading-relaxed mb-8">Every Devlin boat begins as a hand-drawn set of lines and evolves through careful engineering into a vessel that is both breathtaking and seaworthy. Power, displacement, intelligent interior space, and classic nautical lines all come into play.</p>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <span class="font-display text-olive text-2xl w-8">01</span>
+            <div>
+              <h3 class="font-semibold text-espresso">Custom Built Boats</h3>
+              <p class="text-sm text-espresso/60">Handcrafted at our Olympia shop, each boat reflects the owner's vision and Sam Devlin's eye for classic lines.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display text-olive text-2xl w-8">02</span>
+            <div>
+              <h3 class="font-semibold text-espresso">Design Plans</h3>
+              <p class="text-sm text-espresso/60">Dozens of complete building plans from 7 to 65 feet, refined by over 40 years of real-world boating experience.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display text-olive text-2xl w-8">03</span>
+            <div>
+              <h3 class="font-semibold text-espresso">Build Your Own Classic</h3>
+              <p class="text-sm text-espresso/60">Our stitch-and-glue kits bring the Devlin design into your own workshop, backed by decades of refined technique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary section -->
+  <section class="py-20 md:py-28 bg-bone">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <span class="text-olive text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">The Designer</span>
+        <h2 class="font-display text-3xl md:text-5xl text-espresso mb-6">Sam Devlin has spent his life on the water</h2>
+        <p class="text-espresso/70 leading-relaxed mb-6">From his father's boat shop to Alaskan fishing tugs and back to Olympia, Sam's love for wooden boats has shaped every design that leaves the shop. In 2012, Wooden Boat Magazine awarded him the Lifetime Achievement in Design.</p>
+        <p class="text-espresso/70 leading-relaxed mb-8">His impact on the world of wooden boat building is second to none. Hundreds of boats completed at the shop now grace waters throughout the US and Canada, and builders in over 85 countries have turned his plans into seaworthy realities.</p>
+        <div class="flex items-center gap-4">
+          <img src="https://devlinboat.com/wp-content/uploads/2019/03/SamCrop420b.jpg" alt="Sam Devlin portrait" class="w-16 h-16 rounded-full object-cover">
+          <div>
+            <p class="font-semibold text-espresso">Sam Devlin</p>
+            <p class="text-sm text-espresso/60">Founder & Lead Designer</p>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 md:order-2">
+        <img src="https://devlinboat.com/wp-content/uploads/2021/06/IMG_2213.jpg" alt="Wooden sailboat Josephine on the water" class="w-full h-[500px] object-cover rounded-sm shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-20 md:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12">
+        <span class="text-olive text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">Recent Builds</span>
+        <h2 class="font-display text-3xl md:text-5xl text-espresso">Every boat tells a story</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="reveal">
+          <img src="https://devlinboat.com/wp-content/uploads/2026/04/Scout3.jpg" alt="Scout sailboat ready for launch" class="w-full h-64 object-cover rounded-sm">
+          <h3 class="font-semibold text-espresso mt-3">Scout</h3>
+          <p class="text-sm text-espresso/60">Ready for launch</p>
+        </div>
+        <div class="reveal">
+          <img src="https://devlinboat.com/wp-content/uploads/2018/12/Tugzilla03.jpg" alt="Tugzilla 26 wooden tugboat" class="w-full h-64 object-cover rounded-sm">
+          <h3 class="font-semibold text-espresso mt-3">Tugzilla 26</h3>
+          <p class="text-sm text-espresso/60">A tugboat with character</p>
+        </div>
+        <div class="reveal">
+          <img src="https://devlinboat.com/wp-content/uploads/2025/10/image007.jpg" alt="Mud Dauber 23 powerboat" class="w-full h-64 object-cover rounded-sm">
+          <h3 class="font-semibold text-espresso mt-3">Mud Dauber 23</h3>
+          <p class="text-sm text-espresso/60">Modern power in classic lines</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-20 md:py-28 bg-olive text-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="https://devlinboat.com/wp-content/uploads/2019/03/home-sailboatpic.jpg" alt="Classic Devlin sailboat at anchor" class="w-full h-80 object-cover rounded-sm shadow-xl">
+      </div>
+      <div>
+        <blockquote class="font-display text-2xl md:text-4xl leading-snug mb-6">"For over 40 years Sam Devlin has been a pioneer in wooden boat building technique and a boat builder with a distinct sense of traditional style."</blockquote>
+        <p class="text-white/80 mb-8">Wooden Boat Magazine awarded Sam the Lifetime Achievement in Design in 2012. His boats grace waters in over 85 countries.</p>
+        <div class="flex gap-8 text-center">
+          <div>
+            <p class="font-display text-3xl">48</p>
+            <p class="text-xs uppercase tracking-wider text-white/70">Years in Business</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl">85+</p>
+            <p class="text-xs uppercase tracking-wider text-white/70">Countries</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl">100s</p>
+            <p class="text-xs uppercase tracking-wider text-white/70">Boats Built</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-16 bg-espresso text-white text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="font-display text-3xl md:text-5xl mb-4">How can we help you build a boat?</h2>
+      <p class="text-bone/80 mb-8">Shop tours on Fridays by appointment. Call or email to start the conversation.</p>
+      <a href="tel:360-866-0164" class="inline-block bg-olive text-white font-semibold text-lg px-10 py-4 rounded-sm hover:bg-sage transition">Call 360-866-0164</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-cream border-t border-bone py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+      <div>
+        <p class="font-display text-lg text-espresso mb-4">Devlin Boat</p>
+        <p class="text-sm text-espresso/60 leading-relaxed">Artfully designed and crafted wooden boats since 1978. Olympia, Washington.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-espresso mb-4 text-sm uppercase tracking-wider">Navigate</p>
+        <ul class="space-y-2 text-sm text-espresso/70">
+          <li><a href="#" class="hover:text-olive transition">Home</a></li>
+          <li><a href="#" class="hover:text-olive transition">Designs</a></li>
+          <li><a href="#" class="hover:text-olive transition">Build Your Own</a></li>
+          <li><a href="#" class="hover:text-olive transition">About</a></li>
+          <li><a href="#" class="hover:text-olive transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-espresso mb-4 text-sm uppercase tracking-wider">Contact</p>
+        <address class="not-italic text-sm text-espresso/70 leading-relaxed space-y-2">
+          <p>2424 Gravelly Beach Loop NW<br>Olympia, WA 98502</p>
+          <p><a href="tel:360-866-0164" class="hover:text-olive transition">360-866-0164</a></p>
+          <p><a href="mailto:lee@devlinboat.com" class="hover:text-olive transition">lee@devlinboat.com</a></p>
+          <p><a href="mailto:sam@devlinboat.com" class="hover:text-olive transition">sam@devlinboat.com</a></p>
+        </address>
+      </div>
+      <div>
+        <p class="font-semibold text-espresso mb-4 text-sm uppercase tracking-wider">Shop Tours</p>
+        <p class="text-sm text-espresso/70 mb-4">Fridays by appointment. Call ahead to schedule a visit and see the shop in action.</p>
+        <div class="flex gap-4">
+          <a href="https://www.facebook.com/DevlinBoat" target="_blank" class="text-espresso/60 hover:text-olive transition">Facebook</a>
+          <a href="https://www.instagram.com/devlinboatco/" target="_blank" class="text-espresso/60 hover:text-olive transition">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-bone text-center text-xs text-espresso/50">
+      <p>Devlin Designing Boat Builders. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver reveals
+    document.addEventListener('DOMContentLoaded', function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
