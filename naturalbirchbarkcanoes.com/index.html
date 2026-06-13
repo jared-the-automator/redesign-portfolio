@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural Birch Bark Canoes &mdash; Handcrafted by Tom Byers</title>
+  <meta name="description" content="Handcrafted birch bark canoes built in the traditional way by author and canoe builder Tom Byers. Custom orders, courses, and cultural programs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Lora', 'serif'],
+          },
+          colors: {
+            forest: { DEFAULT: '#1B4D1B', light: '#2D6B2D', dark: '#0F360F' },
+            bone: '#F5F3ED',
+            stone: '#2C2C2C',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-gradient { background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0) 100%); }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .corner-radius { border-radius: 0.5rem; }
+  </style>
+</head>
+<body class="bg-bone text-stone font-body antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-bone/95 backdrop-blur-sm border-b border-black/5">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display font-bold text-lg tracking-wide text-forest">BIRCH BARK CANOES</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#canoes" class="text-sm text-stone/80 hover:text-forest transition-colors">Canoes</a>
+        <a href="#gallery" class="text-sm text-stone/80 hover:text-forest transition-colors">Gallery</a>
+        <a href="#about" class="text-sm text-stone/80 hover:text-forest transition-colors">About</a>
+        <a href="#book" class="text-sm text-stone/80 hover:text-forest transition-colors">Book</a>
+      </div>
+      <a href="#contact" class="bg-forest text-bone px-5 py-2 text-sm font-display font-medium corner-radius hover:bg-forest-dark transition-colors">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 md:pb-24">
+    <div class="absolute inset-0">
+      <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/Canoe20on20Shore204.jpg" alt="Birch bark canoe resting on a mossy northern shore" class="w-full h-full object-cover">
+      <div class="hero-gradient absolute inset-0"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl reveal">
+        <p class="text-bone/70 text-xs font-display font-medium tracking-[0.2em] uppercase mb-4">Traditional Craft, Built by Hand</p>
+        <h1 class="font-display font-bold text-4xl md:text-6xl text-bone leading-tight mb-6">
+          Birch Bark Canoes<br>for the Wild
+        </h1>
+        <p class="text-bone/80 text-base md:text-lg leading-relaxed mb-8 max-w-lg">
+          Author and canoe builder Tom Byers carries on the ancestral craft of birchbark canoe building, creating functional art for paddlers, museums, and cultural programs.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#gallery" class="bg-forest text-bone px-7 py-3 font-display font-medium corner-radius hover:bg-forest-dark transition-colors">View the Gallery</a>
+          <a href="#contact" class="border-2 border-bone/60 text-bone px-7 py-3 font-display font-medium corner-radius hover:bg-bone/10 transition-colors">Order a Canoe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="canoes" class="py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <div class="aspect-[4/5] overflow-hidden corner-radius">
+            <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/Canoe20in20reeds.jpg" alt="Birch bark canoe among reeds on calm water" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="text-forest font-display font-medium text-sm tracking-wider uppercase mb-3">Handcrafted Construction</p>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-stone mb-6 leading-tight">Built the Way They Have Always Been Built</h2>
+          <p class="text-stone/70 leading-relaxed mb-10">
+            Every canoe starts with carefully harvested birch bark and white cedar, lashed and sealed using traditional methods passed down through generations. The result is a vessel that is light, strong, and alive with the character of natural materials.
+          </p>
+          <div class="space-y-6">
+            <div class="flex gap-5">
+              <span class="font-display font-bold text-3xl text-forest/30">01</span>
+              <div>
+                <h3 class="font-display font-medium text-lg text-stone mb-1">Hand-selected Materials</h3>
+                <p class="text-stone/60 text-sm leading-relaxed">Birch bark and white cedar chosen for grain, flexibility, and durability in real water conditions.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display font-bold text-3xl text-forest/30">02</span>
+              <div>
+                <h3 class="font-display font-medium text-lg text-stone mb-1">Traditional Methods</h3>
+                <p class="text-stone/60 text-sm leading-relaxed">Root lashing, spruce gum sealing, and hand-pegged ribs built exactly as they have been for centuries.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display font-bold text-3xl text-forest/30">03</span>
+              <div>
+                <h3 class="font-display font-medium text-lg text-stone mb-1">Custom Specifications</h3>
+                <p class="text-stone/60 text-sm leading-relaxed">Each canoe is built to order, sized and styled for the paddler and the waters they will travel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section -->
+  <section id="about" class="py-20 md:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 reveal">
+          <p class="text-forest font-display font-medium text-sm tracking-wider uppercase mb-3">The Builder</p>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-stone mb-6 leading-tight">Tom Byers, Author and Canoe Builder</h2>
+          <p class="text-stone/70 leading-relaxed mb-6">
+            Tom Byers is an author and birchbark canoe builder dedicated to keeping the ancient craft alive. Through commissioned builds, public workshops, and cultural revitalization programs, he works to make sure this knowledge does not disappear.
+          </p>
+          <p class="text-stone/70 leading-relaxed mb-8">
+            His canoes have been built for private collectors, museums, and cultural institutions. Each vessel carries the marks of its maker and the materials from which it came.
+          </p>
+          <a href="#contact" class="inline-flex items-center gap-2 text-forest font-display font-medium hover:underline">
+            Learn About Courses
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </a>
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <div class="aspect-[4/5] overflow-hidden corner-radius">
+            <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/Building20Nose20Tom20Byers.jpg" alt="Tom Byers building a birch bark canoe" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12 reveal">
+        <p class="text-forest font-display font-medium text-sm tracking-wider uppercase mb-3">The Work</p>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-stone leading-tight">Gallery of Canoes</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="reveal">
+          <div class="aspect-[4/3] overflow-hidden corner-radius">
+            <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/finishedCanoe.jpg" alt="Finished birch bark canoe" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="aspect-[4/3] overflow-hidden corner-radius">
+            <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/Canoe20by20Tree.jpg" alt="Canoe by a tree on the forest floor" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="aspect-[4/3] overflow-hidden corner-radius">
+            <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/craftsmanship.jpg" alt="Close-up of canoe craftsmanship detail" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="aspect-[4/3] overflow-hidden corner-radius">
+            <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/Cultural-1.jpg" alt="Cultural canoe building program" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="aspect-[4/3] overflow-hidden corner-radius">
+            <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/Three20canoes20by20Tom20Byers.jpg" alt="Three canoes by Tom Byers" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="aspect-[4/3] overflow-hidden corner-radius">
+            <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/Longnose20220by20Tom20Byers.jpg" alt="Longnose canoe by Tom Byers" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Section -->
+  <section id="book" class="py-20 md:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <div class="aspect-[3/4] max-w-sm mx-auto overflow-hidden corner-radius shadow-xl">
+            <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/TomMoonStars-1.jpg" alt="Tom Byers birch bark canoe" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="text-forest font-display font-medium text-sm tracking-wider uppercase mb-3">The Author</p>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-stone mb-6 leading-tight">Canoe Dreams</h2>
+          <p class="text-stone/70 leading-relaxed mb-6">
+            Tom Byers is the author of <em>Canoe Dreams</em>, a book that shares the stories, techniques, and cultural significance of birchbark canoe building. Drawing from decades of experience on the workshop floor and on the water, the book captures why this craft still matters.
+          </p>
+          <div class="flex items-center gap-4 p-4 bg-bone corner-radius mb-6">
+            <div class="w-12 h-12 bg-forest/10 corner-radius flex items-center justify-center">
+              <svg class="w-6 h-6 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+            <div>
+              <p class="font-display font-medium text-stone">Canoe Dreams</p>
+              <p class="text-sm text-stone/50">Available through the contact page</p>
+            </div>
+          </div>
+          <a href="#contact" class="inline-flex items-center gap-2 bg-forest text-bone px-6 py-3 font-display font-medium corner-radius hover:bg-forest-dark transition-colors">Inquire About the Book</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility -->
+  <section class="py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="reveal text-center p-6 bg-white corner-radius">
+          <div class="font-display font-bold text-4xl text-forest mb-2">Hand</div>
+          <p class="text-stone/60 text-sm">Every canoe built entirely by hand using traditional tools and techniques.</p>
+        </div>
+        <div class="reveal text-center p-6 bg-white corner-radius">
+          <div class="font-display font-bold text-4xl text-forest mb-2">Teach</div>
+          <p class="text-stone/60 text-sm">Workshops and courses that pass the craft on to the next generation of builders.</p>
+        </div>
+        <div class="reveal text-center p-6 bg-white corner-radius">
+          <div class="font-display font-bold text-4xl text-forest mb-2">Preserve</div>
+          <p class="text-stone/60 text-sm">Cultural revitalization programs that keep this knowledge alive in communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 md:py-24 bg-forest relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <img src="https://naturalbirchbarkcanoes.com/wp-content/uploads/2017/03/Canoe20in20reeds.jpg" alt="" class="w-full h-full object-cover">
+    </div>
+    <div class="relative max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display font-bold text-3xl md:text-5xl text-bone mb-6 leading-tight">Start Your Canoe Journey</h2>
+      <p class="text-bone/80 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+        Whether you are looking for a custom-built birch bark canoe, want to take a course, or are interested in a cultural program, get in touch to discuss what is possible.
+      </p>
+      <a href="mailto:tom_byers@hotmail.com" class="inline-block bg-bone text-forest px-8 py-4 font-display font-bold text-lg corner-radius hover:bg-white transition-colors">Contact Tom Byers</a>
+      <p class="text-bone/60 text-sm mt-4">or call: email for phone number</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone text-bone/60 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div>
+          <h3 class="font-display font-bold text-bone text-lg mb-4">BIRCH BARK CANOES</h3>
+          <p class="text-sm leading-relaxed">Handcrafted birch bark canoes built in the traditional way by Tom Byers. Author, builder, and teacher.</p>
+        </div>
+        <div>
+          <h4 class="font-display font-medium text-bone mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#canoes" class="hover:text-bone transition-colors">Canoes for Sale</a></li>
+            <li><a href="#gallery" class="hover:text-bone transition-colors">Gallery</a></li>
+            <li><a href="#about" class="hover:text-bone transition-colors">About</a></li>
+            <li><a href="#book" class="hover:text-bone transition-colors">The Book</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-medium text-bone mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:tom_byers@hotmail.com" class="hover:text-bone transition-colors">tom_byers@hotmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-medium text-bone mb-4">Connect</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-bone transition-colors">Facebook</a></li>
+            <li><a href="#" class="hover:text-bone transition-colors">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-bone/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm">&copy; 2025 Natural Birch Bark Canoes. Built with care.</p>
+        <p class="text-xs text-bone/40">All photographs property of Tom Byers</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for reveals only
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
