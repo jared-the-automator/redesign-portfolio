@@ -50,3 +50,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Newfound Woodworks](https://jared-the-automator.github.io/redesign-portfolio/newfound.com/) | Cedar strip boat kits | Newfound, NH |
 | [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
 | [Jeff Smith's Custom Saddles](https://jared-the-automator.github.io/redesign-portfolio/jeffsmithscustomsaddles.com/) | Custom western saddles | Texas, USA |
+| [Traditional Archery Products](https://jared-the-automator.github.io/redesign-portfolio/traditionalarcheryproducts.com/) | Archery tools & supplies | Idaho Springs, CO |

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traditional Archery Products — Tools for the Serious Bowhunter</title>
+  <meta name="description" content="Precision archery tools, broadhead sharpeners, and arrow-building jigs. Quality products you won't find anywhere else. Based in Idaho Springs, Colorado.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0a0a0f;
+        color: #e4e4e7;
+      }
+      h1, h2, h3, h4, h5, h6, .font-display {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+      }
+    }
+    @layer components {
+      .accent-amber {
+        color: #f59e0b;
+      }
+      .bg-accent-amber {
+        background-color: #f59e0b;
+      }
+      .border-accent-amber {
+        border-color: #f59e0b;
+      }
+    }
+  </style>
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero-bg {
+      background-image: linear-gradient(105deg, rgba(10,10,15,0.92) 0%, rgba(10,10,15,0.75) 50%, rgba(10,10,15,0.30) 100%),
+                        url('https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/Scene-From-Yesteryear.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0f]/90 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="font-display text-xl tracking-wide text-white uppercase">Traditional Archery Products</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#products" class="text-sm text-neutral-400 hover:text-white transition-colors tracking-wide">Products</a>
+          <a href="#about" class="text-sm text-neutral-400 hover:text-white transition-colors tracking-wide">About</a>
+          <a href="#how-to" class="text-sm text-neutral-400 hover:text-white transition-colors tracking-wide">How-To</a>
+          <a href="#contact" class="text-sm text-neutral-400 hover:text-white transition-colors tracking-wide">Contact</a>
+        </div>
+        <a href="#contact" class="hidden md:inline-flex items-center px-5 py-2.5 text-sm font-semibold text-[#0a0a0f] bg-accent-amber rounded-sm hover:bg-amber-400 transition-colors">Shop Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center hero-bg">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full pt-28 pb-20">
+      <div class="max-w-2xl">
+        <p class="text-sm font-medium tracking-widest uppercase accent-amber mb-4">Idaho Springs, Colorado</p>
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-display text-white leading-tight uppercase tracking-tight mb-6">
+          Tools for the<br>Serious Traditional<br>Bowhunter
+        </h1>
+        <p class="text-lg md:text-xl text-neutral-300 leading-relaxed mb-8 max-w-xl">
+          Precision broadhead sharpeners, patented arrow-building jigs, and hard-to-find archery tools built by bowhunters, for bowhunters.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#products" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-[#0a0a0f] bg-accent-amber rounded-sm hover:bg-amber-400 transition-colors uppercase tracking-wide">Explore Products</a>
+          <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white border border-white/20 rounded-sm hover:bg-white/10 transition-colors uppercase tracking-wide">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="products" class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <img
+            src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/scorpion-jig-012.jpg"
+            alt="Scorpion Footing Jig for building footed arrows"
+            class="w-full rounded-sm shadow-2xl shadow-black/40"
+            loading="lazy"
+          />
+        </div>
+        <div class="reveal">
+          <p class="text-sm font-medium tracking-widest uppercase accent-amber mb-4">What We Offer</p>
+          <h2 class="text-4xl md:text-5xl text-white font-display uppercase leading-tight mb-8">
+            Unique Tools You Will Not Find Anywhere Else
+          </h2>
+          <div class="space-y-8">
+            <div class="flex items-start gap-6">
+              <span class="text-5xl font-display accent-amber leading-none">01</span>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Precision Broadhead Sharpeners</h3>
+                <p class="text-neutral-400 leading-relaxed">Keep your broadhead's razor sharp for many years. Our double-bevel sharpeners are among the best on the market.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-6">
+              <span class="text-5xl font-display accent-amber leading-none">02</span>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Patented Arrow-Building Jigs</h3>
+                <p class="text-neutral-400 leading-relaxed">The Scorpion Footing Jig cuts precise grooves in your shafting while building the footed arrow. Unique and patented.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-6">
+              <span class="text-5xl font-display accent-amber leading-none">03</span>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">American-Made by Bowhunters</h3>
+                <p class="text-neutral-400 leading-relaxed">Our team is in the field during archery season, just like you. Every product is tested by people who live this sport.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (Reversed Split) -->
+  <section id="about" class="py-24 lg:py-32 bg-[#111118]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <p class="text-sm font-medium tracking-widest uppercase accent-amber mb-4">Our Story</p>
+          <h2 class="text-4xl md:text-5xl text-white font-display uppercase leading-tight mb-6">
+            Bringing You a Wide Selection of Archery Tools
+          </h2>
+          <p class="text-lg text-neutral-300 leading-relaxed mb-6">
+            If you are looking for superb, hard-to-find archery items, seek no further than Traditional Archery Products. We bring you quality archery products that you will not find anywhere else.
+          </p>
+          <p class="text-neutral-400 leading-relaxed mb-8">
+            With many years in the industry, our team sources and creates tools that make traditional archery more fun and more effective. Every item in our shop is something we use ourselves.
+          </p>
+          <div class="flex gap-8">
+            <div>
+              <p class="text-4xl font-display accent-amber">CO</p>
+              <p class="text-sm text-neutral-500 mt-1">Idaho Springs</p>
+            </div>
+            <div>
+              <p class="text-4xl font-display accent-amber">USA</p>
+              <p class="text-sm text-neutral-500 mt-1">Nationwide Shipping</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 reveal">
+          <img
+            src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/Super-Star-sharpening-tool2-1024x682-1.jpg"
+            alt="Super Star double-bevel broadhead sharpener weighing over 8 lbs"
+            class="w-full rounded-sm shadow-2xl shadow-black/40"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Product Grid -->
+  <section class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <p class="text-sm font-medium tracking-widest uppercase accent-amber mb-4">The Lineup</p>
+        <h2 class="text-4xl md:text-5xl text-white font-display uppercase leading-tight">
+          Every Product Is Tested in the Field
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="reveal group relative overflow-hidden rounded-sm">
+          <img
+            src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/scorpion-jig-012.jpg"
+            alt="Scorpion Footing Jig for building custom footed arrows"
+            class="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+            <h3 class="font-display text-lg uppercase text-white">Scorpion Footing Jig</h3>
+          </div>
+        </div>
+        <div class="reveal group relative overflow-hidden rounded-sm">
+          <img
+            src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/Super-Star-sharpening-tool2-1024x682-1.jpg"
+            alt="Super Star broadhead sharpener with long stroke capability"
+            class="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+            <h3 class="font-display text-lg uppercase text-white">Super Star Sharpener</h3>
+          </div>
+        </div>
+        <div class="reveal group relative overflow-hidden rounded-sm">
+          <img
+            src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/1-pound-Head-Dip-1024x683-1.jpg"
+            alt="Head Dip product for sealing and protecting broadhead edges"
+            class="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+            <h3 class="font-display text-lg uppercase text-white">Head Dip</h3>
+          </div>
+        </div>
+        <div class="reveal group relative overflow-hidden rounded-sm">
+          <img
+            src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/ARR-BOW-Mate-1-.jpg"
+            alt="Arr-Bow Mate all-in-one arrow tube and bow holder"
+            class="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+            <h3 class="font-display text-lg uppercase text-white">Arr-Bow Mate</h3>
+          </div>
+        </div>
+        <div class="reveal group relative overflow-hidden rounded-sm">
+          <img
+            src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/perfect-taper-1024x683-1.jpg"
+            alt="Perfect Taper tool for cutting precise tapers on wood arrows"
+            class="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+            <h3 class="font-display text-lg uppercase text-white">Perfect Taper</h3>
+          </div>
+        </div>
+        <div class="reveal group relative overflow-hidden rounded-sm">
+          <img
+            src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/point-brush-022-R2-e1323202890883.jpg"
+            alt="Point Brush for cleaning arrow points and preventing glue failure"
+            class="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+            <h3 class="font-display text-lg uppercase text-white">Point Brush</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How-To Guides Section -->
+  <section id="how-to" class="py-24 lg:py-32 bg-[#111118]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16 reveal">
+        <p class="text-sm font-medium tracking-widest uppercase accent-amber mb-4">Learn the Craft</p>
+        <h2 class="text-4xl md:text-5xl text-white font-display uppercase leading-tight mb-6">
+          How-To Guides for Traditional Archers
+        </h2>
+        <p class="text-lg text-neutral-300 leading-relaxed">
+          Aside from archery products, we have a wide selection of DVDs to guide you through many different aspects of traditional archery.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="reveal bg-[#0a0a0f] rounded-sm p-8 border border-white/5 hover:border-accent-amber/30 transition-colors group">
+          <div class="mb-6 overflow-hidden rounded-sm">
+            <img
+              src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/Blade-reduced-1024x690-1.jpg"
+              alt="Broadhead sharpening DVD cover"
+              class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="font-display text-xl uppercase text-white mb-3">A Guide to Broadhead Sharpening</h3>
+          <p class="text-neutral-400 leading-relaxed text-sm">Walks you through many different methods using a variety of tools. Learn to get a razor edge every time.</p>
+        </div>
+        <div class="reveal bg-[#0a0a0f] rounded-sm p-8 border border-white/5 hover:border-accent-amber/30 transition-colors group">
+          <div class="mb-6 overflow-hidden rounded-sm">
+            <img
+              src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/custom-footing-blade-1.jpg"
+              alt="Footed arrow building DVD cover"
+              class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="font-display text-xl uppercase text-white mb-3">Building the Footed Arrow</h3>
+          <p class="text-neutral-400 leading-relaxed text-sm">Explore the beauty and flight characteristics of a well-made footed arrow. A top-rated guide for over a decade.</p>
+        </div>
+        <div class="reveal bg-[#0a0a0f] rounded-sm p-8 border border-white/5 hover:border-accent-amber/30 transition-colors group">
+          <div class="mb-6 overflow-hidden rounded-sm">
+            <img
+              src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/Diamond-Sharpening-stones.jpg"
+              alt="Sharpening block building DVD cover"
+              class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="font-display text-xl uppercase text-white mb-3">Building Sharpening Blocks</h3>
+          <p class="text-neutral-400 leading-relaxed text-sm">Learn to cut accurate angles on any table saw and flatten lumber using only a table saw for perfect glue lines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div class="reveal">
+          <p class="text-sm font-medium tracking-widest uppercase accent-amber mb-4">From Our Customers</p>
+          <blockquote class="text-3xl md:text-4xl font-display text-white leading-tight uppercase mb-8">
+            "If you are looking for superb, hard-to-find archery items, seek no further."
+          </blockquote>
+          <p class="text-neutral-400 leading-relaxed">
+            Traditional Archery Products is not a faceless corporation. Our team hunts the same seasons you do.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="grid grid-cols-3 gap-4 mb-8">
+            <img
+              src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/Connie-About-Page.jpg"
+              alt="Connie from Traditional Archery Products"
+              class="w-full aspect-square object-cover rounded-sm"
+              loading="lazy"
+            />
+            <img
+              src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/Gary-About-Page.jpg"
+              alt="Gary from Traditional Archery Products"
+              class="w-full aspect-square object-cover rounded-sm"
+              loading="lazy"
+            />
+            <img
+              src="https://traditionalarcheryproducts.com/wp-content/uploads/2021/07/Dereck-About-Page.jpg"
+              alt="Dereck from Traditional Archery Products"
+              class="w-full aspect-square object-cover rounded-sm"
+              loading="lazy"
+            />
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="border-l-2 border-white/10 pl-6">
+              <p class="text-3xl font-display text-white">CO</p>
+              <p class="text-sm text-neutral-500 mt-1">Idaho Springs, Colorado</p>
+            </div>
+            <div class="border-l-2 border-white/10 pl-6">
+              <p class="text-3xl font-display text-white">USA</p>
+              <p class="text-sm text-neutral-500 mt-1">Shipping Nationwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-accent-amber">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-display text-[#0a0a0f] uppercase leading-tight mb-4">
+        Ready to Upgrade Your Gear?
+      </h2>
+      <p class="text-lg text-[#0a0a0f]/80 mb-8 max-w-2xl mx-auto">
+        Our friendly staff will personally answer any questions you may have. We look forward to hearing from you soon.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="mailto:twoselfbows@msn.com" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white bg-[#0a0a0f] rounded-sm hover:bg-neutral-800 transition-colors uppercase tracking-wide">Email Us</a>
+        <a href="tel:+13037254183" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-[#0a0a0f] border-2 border-[#0a0a0f] rounded-sm hover:bg-[#0a0a0f] hover:text-white transition-colors uppercase tracking-wide">(303) 725-4183</a>
+      </div>
+      <p class="text-sm text-[#0a0a0f]/60 mt-4">PO Box 1045, Idaho Springs, CO 80452</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-[#0a0a0f] border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div class="md:col-span-2">
+          <p class="font-display text-xl text-white uppercase mb-4">Traditional Archery Products</p>
+          <p class="text-neutral-400 leading-relaxed max-w-md">
+            If you are looking for superb, hard-to-find archery items, seek no further. We bring you quality products you will not find anywhere else.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-display text-sm uppercase text-white tracking-widest mb-4">Shop</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors text-sm">Arrow Building Tools</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors text-sm">Broadhead Sharpeners</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors text-sm">How-To DVDs</a></li>
+            <li><a href="#" class="text-neutral-400 hover:text-white transition-colors text-sm">All Products</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-display text-sm uppercase text-white tracking-widest mb-4">Contact</h3>
+          <ul class="space-y-3">
+            <li><a href="mailto:twoselfbows@msn.com" class="text-neutral-400 hover:text-white transition-colors text-sm">twoselfbows@msn.com</a></li>
+            <li><a href="tel:+13037254183" class="text-neutral-400 hover:text-white transition-colors text-sm">(303) 725-4183</a></li>
+            <li><span class="text-neutral-500 text-sm">PO Box 1045</span></li>
+            <li><span class="text-neutral-500 text-sm">Idaho Springs, CO 80452</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-neutral-500">© 2026 Traditional Archery Products. All Rights Reserved.</p>
+        <p class="text-sm text-neutral-600">Proudly serving traditional archers nationwide.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for scroll reveals
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
