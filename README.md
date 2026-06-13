@@ -42,3 +42,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Frontier Pack Train](https://jared-the-automator.github.io/redesign-portfolio/frontierpacktrain.com/) | Backcountry pack trips & trail rides | June Lake, CA |
 | [Team Buck Rogers](https://jared-the-automator.github.io/redesign-portfolio/teambuckrogers.com/) | Offshore fishing charters | Jacksonville, FL |
 | [Devlin Designing Boat Builders](https://jared-the-automator.github.io/redesign-portfolio/devlinboat.com/) | Custom wooden boat design &amp; kits | Olympia, WA |
+| [Devlin Designing Boat Builders](https://jared-the-automator.github.io/redesign-portfolio/devlinboat.com/) | Custom wooden boat builders | Olympia, WA |
