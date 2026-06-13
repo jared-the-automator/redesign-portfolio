@@ -49,3 +49,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Smokey River Bows](https://jared-the-automator.github.io/redesign-portfolio/smokeyriverbows.net/) | Handmade traditional archery bows | Wichita, KS |
 | [Newfound Woodworks](https://jared-the-automator.github.io/redesign-portfolio/newfound.com/) | Cedar strip boat kits | Newfound, NH |
 | [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
+| [Jeff Smith's Custom Saddles](https://jared-the-automator.github.io/redesign-portfolio/jeffsmithscustomsaddles.com/) | Custom western saddles | Texas, USA |
