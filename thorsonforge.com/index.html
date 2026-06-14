@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thorson Forge | Custom Forged Knives, Axes, and Blades</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Bebas Neue', 'Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forge: {
+              950: '#0a0a0e',
+              900: '#111114',
+              800: '#1a1a1f',
+              700: '#2a2a33',
+              600: '#3a3a44',
+              500: '#5a5a66',
+              400: '#8a8a99',
+              300: '#b0b0bb',
+              100: '#f5f5f7',
+              accent: '#e8e8ec',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    html { scroll-behavior: smooth; }
+    body { background-color: #0a0a0e; color: #f5f5f7; }
+    ::selection { background: #f5f5f7; color: #0a0a0e; }
+  </style>
+</head>
+<body class="font-body antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-forge-950/90 backdrop-blur-md border-b border-forge-700/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="text-2xl font-display tracking-wider text-forge-100 uppercase">Thorson Forge</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#work" class="text-sm text-forge-400 hover:text-forge-100 transition-colors">Work</a>
+          <a href="#process" class="text-sm text-forge-400 hover:text-forge-100 transition-colors">Process</a>
+          <a href="#contact" class="text-sm text-forge-400 hover:text-forge-100 transition-colors">Contact</a>
+        </div>
+        <a href="mailto:orders@thorsonforge.com" class="inline-flex items-center px-5 py-2 bg-forge-100 text-forge-950 text-sm font-medium tracking-wide uppercase rounded-sm hover:bg-white transition-colors">Order</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://i0.wp.com/thorsonforge.com/wp-content/uploads/2020/04/Icelandic-Axe-1-scaled.jpeg" alt="Forged Icelandic axe on dark surface" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-forge-950/95 via-forge-950/70 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24">
+      <div class="max-w-2xl">
+        <p class="text-sm font-display tracking-widest text-forge-400 uppercase mb-4">Shelton, Washington</p>
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-display text-forge-100 leading-[0.9] mb-6">Forge Work,<br>Not Factory Work</h1>
+        <p class="text-lg md:text-xl text-forge-400 leading-relaxed max-w-lg mb-10">Custom forged knives, axes, and blades with a Viking flair. Every piece forged by hand in our Shelton workshop.</p>
+        <a href="#work" class="inline-flex items-center px-8 py-4 bg-forge-100 text-forge-950 text-base font-medium tracking-wide uppercase rounded-sm hover:bg-white transition-colors">See the Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="work" class="py-24 lg:py-32 relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <img src="https://i0.wp.com/thorsonforge.com/wp-content/uploads/2020/04/Thorson-Forge-Grim-Knife-4.jpeg" alt="Grim Knife on dark surface with leather sheath" class="w-full aspect-[4/5] object-cover rounded-sm">
+        </div>
+        <div class="reveal">
+          <p class="text-sm font-display tracking-widest text-forge-400 uppercase mb-4">01 / Blades</p>
+          <h2 class="text-4xl md:text-5xl font-display text-forge-100 mb-6 leading-tight">Knives That Hold an Edge</h2>
+          <p class="text-forge-400 leading-relaxed mb-10 max-w-lg">From the Grim Knife to the Mara, each blade is forged for real use. Hunting, kitchen, or camp. You pick the steel, we handle the rest.</p>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <span class="text-3xl font-display text-forge-600">01</span>
+              <div>
+                <h3 class="text-forge-100 font-medium mb-1">Hand Forged</h3>
+                <p class="text-sm text-forge-500">Each blade shaped on the anvil, not stamped from sheet.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-3xl font-display text-forge-600">02</span>
+              <div>
+                <h3 class="text-forge-100 font-medium mb-1">Custom Handles</h3>
+                <p class="text-sm text-forge-500">Wood, bone, micarta, or stone. Matched to the blade and the hand.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-3xl font-display text-forge-600">03</span>
+              <div>
+                <h3 class="text-forge-100 font-medium mb-1">Built to Last</h3>
+                <p class="text-sm text-forge-500">Heat treated and finished in-house. No shortcuts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (Reversed Split) -->
+  <section id="process" class="py-24 lg:py-32 relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <p class="text-sm font-display tracking-widest text-forge-400 uppercase mb-4">02 / Axes</p>
+          <h2 class="text-4xl md:text-5xl font-display text-forge-100 mb-6 leading-tight">Axes Worth Swinging</h2>
+          <p class="text-forge-400 leading-relaxed mb-10 max-w-lg">The Icelandic axe. The Camp axe. The Northman. Each pattern drawn from history, forged for modern hands. Splitting wood or showing on the wall.</p>
+          <a href="mailto:orders@thorsonforge.com" class="inline-flex items-center px-6 py-3 border border-forge-500 text-forge-100 text-sm font-medium tracking-wide uppercase rounded-sm hover:bg-forge-700 transition-colors">Request a Quote</a>
+        </div>
+        <div class="order-1 lg:order-2 reveal">
+          <img src="https://i0.wp.com/thorsonforge.com/wp-content/uploads/2020/04/Camp-Axe-data-image.jpeg" alt="Camp axe on dark leather with wood background" class="w-full aspect-[4/5] object-cover rounded-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Editorial Break -->
+  <section class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="reveal mb-12">
+        <p class="text-sm font-display tracking-widest text-forge-400 uppercase mb-4">The Shop</p>
+        <h2 class="text-4xl md:text-5xl font-display text-forge-100">Steel, Fire, and Patience</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 reveal">
+        <div class="col-span-2 row-span-2">
+          <img src="https://i0.wp.com/thorsonforge.com/wp-content/uploads/2020/04/Icelandic-Axe-1-scaled.jpeg" alt="Icelandic axe with hand-forged head on dark surface" class="w-full h-full object-cover rounded-sm aspect-square">
+        </div>
+        <div>
+          <img src="https://i0.wp.com/thorsonforge.com/wp-content/uploads/2020/04/Thorson-Forge-Grim-Knife-4.jpeg" alt="Grim Knife with leather sheath" class="w-full h-full object-cover rounded-sm aspect-square">
+        </div>
+        <div>
+          <img src="https://i0.wp.com/thorsonforge.com/wp-content/uploads/2019/09/Domascus-Mara-with-green-opal-handle.jpg" alt="Damascus Mara knife with green opal handle" class="w-full h-full object-cover rounded-sm aspect-square">
+        </div>
+        <div>
+          <img src="https://i0.wp.com/thorsonforge.com/wp-content/uploads/2020/04/Chef-Knife-2.jpeg" alt="Chef knife on dark surface" class="w-full h-full object-cover rounded-sm aspect-square">
+        </div>
+        <div>
+          <img src="https://i0.wp.com/thorsonforge.com/wp-content/uploads/2019/09/Black-handle-Mara-on-stump-1.jpg" alt="Black handle Mara knife on wooden stump" class="w-full h-full object-cover rounded-sm aspect-square">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-24 lg:py-32 border-t border-forge-700/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="reveal">
+          <p class="text-forge-400 leading-relaxed mb-6 italic">"The Grim Knife is my go-to for camp. Holds an edge through a full season of use. You can feel the hand in every strike."</p>
+          <p class="text-forge-100 font-medium">A longtime customer</p>
+        </div>
+        <div class="reveal">
+          <h3 class="text-sm font-display tracking-widest text-forge-400 uppercase mb-4">The Facts</h3>
+          <div class="space-y-4">
+            <div>
+              <p class="text-3xl font-display text-forge-100">Shelton, WA</p>
+              <p class="text-sm text-forge-500">Forged in the Pacific Northwest</p>
+            </div>
+            <div>
+              <p class="text-3xl font-display text-forge-100">Handmade</p>
+              <p class="text-sm text-forge-500">Every piece forged to order</p>
+            </div>
+            <div>
+              <p class="text-3xl font-display text-forge-100">Axe + Knife + Damascus</p>
+              <p class="text-sm text-forge-500">Custom work across all lines</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="text-sm font-display tracking-widest text-forge-400 uppercase mb-4">Inquiries</h3>
+          <p class="text-forge-400 leading-relaxed mb-6">Every piece is made to order. Turnaround depends on the project and the queue. Reach out with your idea and we will talk steel.</p>
+          <a href="mailto:orders@thorsonforge.com" class="inline-flex items-center px-6 py-3 bg-forge-100 text-forge-950 text-sm font-medium tracking-wide uppercase rounded-sm hover:bg-white transition-colors">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-forge-900 border-t border-forge-700/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center reveal">
+      <h2 class="text-4xl md:text-6xl font-display text-forge-100 mb-6">Ready For Your Blade?</h2>
+      <p class="text-forge-400 text-lg mb-10 max-w-xl mx-auto">Tell us what you need. We will talk steel, handle material, and timeline. No catalogs, just custom.</p>
+      <a href="mailto:orders@thorsonforge.com" class="inline-flex items-center px-10 py-4 bg-forge-100 text-forge-950 text-base font-medium tracking-wide uppercase rounded-sm hover:bg-white transition-colors">orders@thorsonforge.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-forge-950 border-t border-forge-700/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <p class="text-2xl font-display text-forge-100 mb-4 uppercase tracking-wider">Thorson Forge</p>
+          <p class="text-forge-500 text-sm leading-relaxed max-w-sm">Custom forged knives, axes, and blades with a Viking flair. Handmade in Shelton, Washington.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-display tracking-widest text-forge-400 uppercase mb-4">Shop</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-sm text-forge-500 hover:text-forge-100 transition-colors">Axes</a></li>
+            <li><a href="#" class="text-sm text-forge-500 hover:text-forge-100 transition-colors">Knives</a></li>
+            <li><a href="#" class="text-sm text-forge-500 hover:text-forge-100 transition-colors">Damascus</a></li>
+            <li><a href="#" class="text-sm text-forge-500 hover:text-forge-100 transition-colors">Hatchets</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-display tracking-widest text-forge-400 uppercase mb-4">Contact</h4>
+          <ul class="space-y-2">
+            <li><a href="mailto:orders@thorsonforge.com" class="text-sm text-forge-500 hover:text-forge-100 transition-colors">orders@thorsonforge.com</a></li>
+            <li><a href="https://www.facebook.com/thorsonknives/" class="text-sm text-forge-500 hover:text-forge-100 transition-colors">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-forge-700/30 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-forge-600">Thorson Forge. Shelton, Washington.</p>
+        <p class="text-xs text-forge-600">Custom forged. Handmade. Built to last.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
