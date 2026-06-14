@@ -1,187 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saltydawg Custom Fishing Rods — Handcrafted in the USA</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        navy: '#030712',
-        'navy-light': '#0b1120',
-        steel: '#4682b4',
-        'slate-text': '#94a3b8',
-        cream: '#f8fafc',
-      },
-      fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        body: ['Inter', 'sans-serif'],
-      },
-    },
-  },
-};
-</script>
-<style>html{scroll-behavior:smooth}</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saltydawg Custom Fishing Rods</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+    @layer base {
+      :root { --accent: #3a8dc7; --accent-dark: #2c6fa3; --bg-dark: #0a0e1a; --bg-card: #111827; }
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Inter', sans-serif; background-color: var(--bg-dark); color: #e5e7eb; overflow-x: hidden; }
+      h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+    }
+    @layer components {
+      .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+      .reveal.visible { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body class="bg-navy text-cream font-body antialiased">
-
-<!-- NAV -->
-<nav class="sticky top-0 z-50 bg-navy/90 backdrop-blur border-b border-slate-800">
-  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a href="#" class="font-display text-xl font-bold tracking-tight">SALTYDAWG</a>
-    <div class="hidden md:flex items-center gap-8 text-sm text-slate-text">
-      <a href="#about" class="hover:text-cream transition">About</a>
-      <a href="#gallery" class="hover:text-cream transition">Gallery</a>
-      <a href="#testimonials" class="hover:text-cream transition">Testimonials</a>
-      <a href="#contact" class="hover:text-cream transition">Contact</a>
-    </div>
-    <a href="#contact" class="bg-steel text-white px-5 py-2 text-sm font-medium hover:bg-steel/90 transition rounded-sm">Start Your Build</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="min-h-[100dvh] relative flex items-center">
-  <div class="absolute inset-0">
-    <img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/1262752_64f6279a537a5f9ebbd6cfd79a5f5d5c.JPG" class="w-full h-full object-cover" alt="Custom fishing rod on a workbench">
-    <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent"></div>
-  </div>
-  <div class="relative max-w-7xl mx-auto px-6 py-24">
-    <div class="max-w-2xl reveal">
-      <p class="text-steel text-sm font-semibold tracking-widest uppercase mb-4">USA Handcrafted</p>
-      <h1 class="font-display text-5xl md:text-7xl font-bold leading-tight mb-6">Custom rods built for the fish you chase.</h1>
-      <p class="text-slate-text text-lg md:text-xl mb-8 max-w-lg">Each Saltydawg rod is handcrafted by Bill Havens using premium components and tested on the water.</p>
-      <div class="flex flex-wrap gap-4">
-        <a href="#contact" class="bg-steel text-white px-8 py-3 font-semibold hover:bg-steel/90 transition rounded-sm">Start Your Build</a>
-        <a href="#gallery" class="border border-slate-text/30 text-cream px-8 py-3 font-semibold hover:border-cream/30 transition rounded-sm">View Gallery</a>
+<body>
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0e1a]/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-wide text-white" style="font-family:'Playfair Display',serif;">Saltydawg</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#rods" class="text-sm text-gray-300 hover:text-white transition-colors">Rods</a>
+        <a href="#about" class="text-sm text-gray-300 hover:text-white transition-colors">About</a>
+        <a href="#gallery" class="text-sm text-gray-300 hover:text-white transition-colors">Gallery</a>
+        <a href="#contact" class="text-sm bg-[#3a8dc7] text-white px-5 py-2.5 rounded-sm hover:bg-[#2c6fa3] transition-colors font-medium">Order a Rod</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- PRODUCT -->
-<section class="py-24">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="reveal">
-        <img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/1273704_449ff38bd89214c932da6e2836b5cb99-1.JPG" class="w-full h-[500px] object-cover rounded-sm" alt="Guide wrap detail on a custom rod">
+  </nav>
+  <section class="relative min-h-[100dvh] flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img src="https://www.saltydawgcustomrods.com/wp-content/uploads/2017/04/857610_c7854750ae74e3339b1d2baa0496e406.jpg" alt="" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0a0e1a]/90 via-[#0a0e1a]/80 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block text-xs font-medium tracking-widest text-[#3a8dc7] uppercase mb-6">San Diego, California</span>
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">Hand-Built Saltwater Weapons</h1>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 max-w-xl">Bill Havens builds only the finest hand-tailored custom fishing rods for novice, avid recreational, and tournament anglers who want the very best in hand-crafted, custom-fit, and one-of-a-kind fishing rods with the utmost attention to detail.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#order" class="inline-block bg-[#3a8dc7] text-white px-8 py-4 rounded-sm font-medium hover:bg-[#2c6fa3] transition-colors">Order a Custom Rod</a>
+          <a href="#about" class="inline-block border border-white/30 text-white px-8 py-4 rounded-sm font-medium hover:bg-white/10 transition-colors">The Story</a>
+        </div>
       </div>
-      <div class="reveal">
-        <h2 class="font-display text-3xl md:text-4xl font-bold mb-8">Built one rod at a time.</h2>
-        <div class="space-y-8">
-          <div class="flex gap-4">
-            <span class="text-steel font-display text-4xl font-bold leading-none">01</span>
-            <div>
-              <h3 class="font-semibold text-lg mb-1">Select Your Blank</h3>
-              <p class="text-slate-text">Choose graphite or fiberglass blanks matched to your target species and casting style.</p>
+    </div>
+  </section>
+  <section id="rods" class="py-24 bg-[#0a0e1a]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 reveal">
+          <img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/20251220_093418.jpg" alt="Custom fishing rod" class="w-full h-[400px] md:h-[500px] object-cover rounded-sm shadow-2xl">
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <span class="text-5xl font-bold text-[#3a8dc7]/30 block mb-4" style="font-family:'Playfair Display',serif;">01</span>
+          <h2 class="text-4xl font-bold text-white mb-6">Custom Rod, Built for You</h2>
+          <p class="text-gray-300 leading-relaxed mb-8">Every rod is hand-tailored to your exact specifications. Whether you are chasing trophy tuna on the rail or throwing for bass in the surf, we match the blank, guides, and grip to your technique and target species.</p>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <span class="text-2xl font-bold text-[#3a8dc7]" style="font-family:'Playfair Display',serif;">02</span>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Patented Rail Dawg Grips</h3>
+                <p class="text-gray-400">The original rail fishing rod grip system. Purpose-built to lock your rod to the rail when the tuna are running and you need both hands free.</p>
+              </div>
             </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-steel font-display text-4xl font-bold leading-none">02</span>
-            <div>
-              <h3 class="font-semibold text-lg mb-1">Pick Your Guides</h3>
-              <p class="text-slate-text">Match guide material and spacing to maximize casting distance and reduce line fatigue.</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-steel font-display text-4xl font-bold leading-none">03</span>
-            <div>
-              <h3 class="font-semibold text-lg mb-1">Match Your Reel Seat</h3>
-              <p class="text-slate-text">Finish with your choice of cork or EVA, reel seat, and custom thread color.</p>
+            <div class="flex gap-4">
+              <span class="text-2xl font-bold text-[#3a8dc7]" style="font-family:'Playfair Display',serif;">03</span>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Exotic Finishes</h3>
+                <p class="text-gray-400">Leveraging 25 years of exotic finish work, each rod gets a finish that stands up to salt, sun, and the wear of hard fishing.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- STORY -->
-<section class="py-24 bg-navy-light">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="order-2 md:order-1 reveal">
-        <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">From blank to boat in five days.</h2>
-        <p class="text-slate-text mb-6">Bill Havens has been building rods for years. Every blank is hand-selected, every guide wrapped with precision, and every rod tested before it leaves the shop.</p>
-        <p class="text-slate-text mb-8">No factory lines. No outsourced labor. Just one builder.</p>
-        <a href="#gallery" class="border border-slate-text/30 text-cream px-6 py-3 font-semibold hover:border-cream/30 transition rounded-sm inline-block">See the Builds</a>
-      </div>
-      <div class="order-1 md:order-2 reveal">
-        <img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/12829141_1091895557539845_3786760998368814630_o.jpg" class="w-full h-[500px] object-cover rounded-sm" alt="Finished custom rod ready for the water">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="py-24">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="font-display text-3xl md:text-4xl font-bold mb-12 text-center">The Workshop</h2>
-    <div class="grid md:grid-cols-3 gap-4">
-      <img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/1262752_64f6279a537a5f9ebbd6cfd79a5f5d5c.JPG" class="w-full h-64 object-cover rounded-sm md:col-span-2" alt="Rod components laid out before assembly">
-      <img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/1273704_449ff38bd89214c932da6e2836b5cb99-1.JPG" class="w-full h-64 object-cover rounded-sm" alt="Close-up of a finished guide wrap">
-      <img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/12829141_1091895557539845_3786760998368814630_o.jpg" class="w-full h-64 object-cover rounded-sm" alt="Custom rod on a workbench">
-      <img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/20260429_135930.jpg" class="w-full h-64 object-cover rounded-sm md:col-span-2" alt="Rod building workspace">
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="py-24 bg-navy-light">
-  <div class="max-w-4xl mx-auto px-6 text-center reveal">
-    <p class="text-slate-text mb-6 text-lg italic">"Bill built me a rod that casts like a dream. The custom wrap detail is dialed in perfectly for my local redfish. Could not be happier."</p>
-    <p class="font-semibold">Mark T.</p>
-    <div class="mt-8 flex justify-center gap-8 text-sm text-slate-text">
-      <div><span class="font-bold text-cream">Custom</span> Every Build</div>
-      <div><span class="font-bold text-cream">USA</span> Handcrafted</div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section id="contact" class="py-20 bg-steel">
-  <div class="max-w-7xl mx-auto px-6 text-center reveal">
-    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Ready to fish your dream rod?</h2>
-    <p class="text-white/80 mb-8 max-w-2xl mx-auto">Every rod is built to order. Reach out to Bill and start your build today.</p>
-    <a href="mailto:billrh56@gmail.com" class="bg-white text-steel px-8 py-3 font-semibold hover:bg-white/90 transition rounded-sm">Get in Touch</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="border-t border-slate-800 py-12 bg-navy">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-sm">
-    <div>
-      <h3 class="font-display text-lg font-bold mb-2">SALTYDAWG</h3>
-      <p class="text-slate-text">Custom fishing rods, handcrafted in the USA by Bill Havens.</p>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-2">Navigate</h4>
-      <ul class="space-y-1 text-slate-text">
-        <li><a href="#" class="hover:text-cream">Home</a></li>
-        <li><a href="#about" class="hover:text-cream">About</a></li>
-        <li><a href="#gallery" class="hover:text-cream">Gallery</a></li>
-        <li><a href="#contact" class="hover:text-cream">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-2">Contact</h4>
-      <p class="text-slate-text">billrh56@gmail.com</p>
-      <div class="flex gap-4 mt-2">
-        <a href="https://www.facebook.com/Saltydawgrods/" class="text-slate-text hover:text-cream">Facebook</a>
-        <a href="https://www.instagram.com/saltydawgrods/" class="text-slate-text hover:text-cream">Instagram</a>
+  </section>
+  <section id="about" class="py-24 bg-[#111827]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <span class="inline-block text-xs font-medium tracking-widest text-[#3a8dc7] uppercase mb-4">The Story</span>
+          <h2 class="text-4xl font-bold text-white mb-6">From Sign Paint to Rod Wraps</h2>
+          <p class="text-gray-300 leading-relaxed mb-6">Bill's step-grandfather first taught him how to hand-wrap rods in the late 60s, mostly bamboo rods on a notched cardboard box and a phone book for a thread tensioner. He would do his own repairs and build an occasional rod over the years.</p>
+          <p class="text-gray-300 leading-relaxed mb-6">After working as a sign painter for two master sign crafters, then as a cabinet finisher for 25 years, Bill returned to rod building in 2004 when he saw pictures of beautiful custom rods on BD Outdoors.</p>
+          <p class="text-gray-300 leading-relaxed mb-8">He brings a little bit from all his sign painting and cabinet finishing knowledge and incorporates it into the design and building of custom fishing rods. So there ya have it. Give me a call and order your custom rod today.</p>
+          <div class="flex items-center gap-6 pt-6 border-t border-white/10">
+            <div>
+              <p class="text-3xl font-bold text-white" style="font-family:'Playfair Display',serif;">2004</p>
+              <p class="text-sm text-gray-400">Building since</p>
+            </div>
+            <div>
+              <p class="text-3xl font-bold text-white" style="font-family:'Playfair Display',serif;">San Diego</p>
+              <p class="text-sm text-gray-400">California</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <img src="https://www.saltydawgcustomrods.com/wp-content/uploads/2017/04/BillHavens2.jpg" alt="Bill Havens building custom fishing rods in his San Diego workshop" class="w-full h-[400px] md:h-[500px] object-cover rounded-sm shadow-2xl">
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-
-<script>
-const observer=new IntersectionObserver((e)=>{e.forEach(e=>e.isIntersecting&&(e.target.classList.add('opacity-100','translate-y-0'),e.target.classList.remove('opacity-0','translate-y-6')))},{threshold:0.1});
-document.querySelectorAll('.reveal').forEach(el=>el.classList.add('opacity-0','translate-y-6','transition','duration-700')||observer.observe(el));
-</script>
+  </section>
+  <section id="gallery" class="py-24 bg-[#0a0e1a]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="inline-block text-xs font-medium tracking-widest text-[#3a8dc7] uppercase mb-4">The Work</span>
+        <h2 class="text-4xl md:text-5xl font-bold text-white">Latest Builds</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="reveal"><img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/20251220_093418.jpg" alt="Custom fishing rod build" class="w-full h-64 md:h-80 object-cover rounded-sm hover:opacity-80 transition-opacity"></div>
+        <div class="reveal"><img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/20251225_083758.jpg" alt="Custom fishing rod build" class="w-full h-64 md:h-80 object-cover rounded-sm hover:opacity-80 transition-opacity"></div>
+        <div class="reveal"><img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/20260111_134732.jpg" alt="Custom fishing rod build" class="w-full h-64 md:h-80 object-cover rounded-sm hover:opacity-80 transition-opacity"></div>
+        <div class="reveal"><img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/20260422_062728.jpg" alt="Custom fishing rod build" class="w-full h-64 md:h-80 object-cover rounded-sm hover:opacity-80 transition-opacity"></div>
+        <div class="reveal"><img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/20260424_124205.jpg" alt="Custom fishing rod build" class="w-full h-64 md:h-80 object-cover rounded-sm hover:opacity-80 transition-opacity"></div>
+        <div class="reveal"><img src="https://www.saltydawgcustomrods.com/wp-content/gallery/main-gallery/20260429_135855.jpg" alt="Custom fishing rod build" class="w-full h-64 md:h-80 object-cover rounded-sm hover:opacity-80 transition-opacity"></div>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 bg-[#111827]">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <span class="inline-block text-xs font-medium tracking-widest text-[#3a8dc7] uppercase mb-8">What Anglers Say</span>
+      <blockquote class="text-2xl md:text-3xl font-light text-white leading-relaxed mb-8" style="font-family:'Playfair Display',serif;">
+        "Salty has built 5 rail rods for me with the rail dawg grips... all of them are beautiful and kill fish...what more can you ask for."
+      </blockquote>
+      <p class="text-gray-400">Fishybuzz, BD Outdoors</p>
+    </div>
+  </section>
+  <section id="contact" class="py-20 bg-[#3a8dc7]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" style="font-family:'Playfair Display',serif;">Ready for Your Custom Rod?</h2>
+      <p class="text-white/90 text-lg mb-8">Call Bill to talk through your build. Every rod starts with a conversation.</p>
+      <a href="tel:6195186737" class="inline-block bg-white text-[#0a0e1a] px-10 py-4 rounded-sm font-semibold text-lg hover:bg-gray-100 transition-colors">(619) 518-6737</a>
+    </div>
+  </section>
+  <footer class="bg-[#0a0e1a] border-t border-white/10 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4" style="font-family:'Playfair Display',serif;">Saltydawg</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Hand-built custom fishing rods from San Diego, California. Built one at a time, built to last.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" class="text-gray-400 text-sm hover:text-white transition-colors">About</a></li>
+            <li><a href="#gallery" class="text-gray-400 text-sm hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="#contact" class="text-gray-400 text-sm hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Rod Types</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Inshore Rods</a></li>
+            <li><a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Rail Rods</a></li>
+            <li><a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Custom Builds</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <p class="text-gray-400 text-sm mb-2">(619) 518-6737</p>
+          <p class="text-gray-400 text-sm mb-2">San Diego, California</p>
+          <a href="mailto:billrh56@gmail.com" class="text-[#3a8dc7] text-sm hover:text-white transition-colors">billrh56@gmail.com</a>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm">Custom Fishing Rods by Bill Havens</p>
+        <div class="flex gap-4">
+          <a href="https://www.facebook.com/Saltydawgrods/" class="text-gray-400 hover:text-white transition-colors">Facebook</a>
+          <a href="https://www.instagram.com/saltydawgrods/" class="text-gray-400 hover:text-white transition-colors">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
