@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan Lake Taxidermy | Durham, NC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:wght@400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        'forest': '#1A3A2F',
+        'forest-dark': '#0f1f18',
+        'aged-gold': '#B89454',
+        'bone': '#E8DFD5',
+        'warm-white': '#F5F1EB',
+      },
+      fontFamily: {
+        'display': ['Playfair Display', 'serif'],
+        'body': ['Source Serif 4', 'serif'],
+        'bebas': ['Bebas Neue', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Source Serif 4', serif; }
+  h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+  .font-bebas { font-family: 'Bebas Neue', sans-serif; }
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.show { opacity: 1; transform: translateY(0); }
+  .sharp { border-radius: 0 !important; }
+</style>
+</head>
+<body class="bg-bone text-forest-dark antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-forest/95 backdrop-blur-sm border-b border-aged-gold/20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="https://www.jordanlaketaxidermy.net/wp-content/uploads/2019/11/jordan-lake-taxidermy-logo-full-color.png" alt="Jordan Lake Taxidermy" class="h-10 w-auto sharp">
+      <span class="font-display font-bold text-warm-white text-lg leading-tight hidden sm:inline-block">Jordan Lake<br>Taxidermy</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#" class="text-warm-white/80 hover:text-warm-white text-sm tracking-wide transition">Home</a>
+      <a href="#" class="text-warm-white/80 hover:text-warm-white text-sm tracking-wide transition">Studio</a>
+      <a href="#" class="text-warm-white/80 hover:text-warm-white text-sm tracking-wide transition">Pricing</a>
+      <a href="#" class="text-warm-white/80 hover:text-warm-white text-sm tracking-wide transition">Contact</a>
+    </div>
+    <a href="tel:9197308882" class="bg-aged-gold text-forest px-5 py-2 text-sm font-semibold tracking-wide sharp hover:bg-warm-white transition">Get a Quote</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative min-h-[100dvh] flex items-end pb-20 lg:pb-32 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="https://www.jordanlaketaxidermy.net/wp-content/uploads/2019/11/deer.jpg" alt="Whitetail deer shoulder mount" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-forest-dark/90 via-forest-dark/40 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-forest-dark/70 to-transparent"></div>
+  </div>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-32">
+    <div class="max-w-2xl reveal">
+      <p class="text-aged-gold text-sm tracking-widest uppercase mb-4 font-bebas">Durham, North Carolina</p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold text-warm-white leading-tight mb-6">
+        Jordan Lake<br>Taxidermy
+      </h1>
+      <p class="text-lg sm:text-xliproblems text-warm-white/80 leading-relaxed mb-8 max-w-lg">
+        One-man trophy mount shop behind my house, near Jordan Lake. Every piece gets the time it deserves.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="tel:9197308882" class="bg-aged-gold text-forest px-8 py-3 text-base font-semibold tracking-wide sharp text-center inline-block hover:bg-warm-white transition">Get a Quote</a>
+        <a href="#gallery" class="border border-warm-white/40 text-warm-white px-8 py-3 text-base tracking-wide sharp text-center inline-block hover:bg-warm-white/10 transition">See Our Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Primary Product Section -->
+<section class="py-24 lg:py-32 bg-bone">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="reveal">
+        <img src="https://www.jordanlaketaxidermy.net/wp-content/uploads/2019/11/manikin.jpg" alt="Taxidermy mannequin in the shop" class="w-full h-[500px] object-cover sharp">
+      </div>
+      <div class="reveal">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-forest mb-10">How a Piece Comes Together</h2>
+        <div class="space-y-10">
+          <div class="flex gap-6">
+            <span class="font-bebas text-5xl text-aged-gold leading-none">01</span>
+            <div>
+              <h3 class="text-xl font-semibold text-forest mb-2">Personal Attention</h3>
+              <p class="text-forest/70 leading-relaxed">I do not sub out work to other taxidermists. Each piece stays in my hands from intake to finish.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="font-bebas text-5xl text-aged-gold leading-none">02</span>
+            <div>
+              <h3 class="text-xl font-semibold text-forest mb-2">Limited Volume</h3>
+              <p class="text-forest/70 leading-relaxed">I limit the number of pieces I take in each year so nothing gets rushed and every mount gets the time it deserves.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="font-bebas text-5xl text-aged-gold leading-none">03</span>
+            <div>
+              <h3 class="text-xl font-semibold text-forest mb-2">Lifelike Details</h3>
+              <p class="text-forest/70 leading-relaxed">Bringing out lifelike details is what separates a fair mount from a great one. I adjust daily while the hide dries. No pins, no clips.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Secondary Shop Story -->
+<section class="py-24 lg:py-32 bg-forest">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="order-2 lg:order-1 reveal">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-warm-white mb-6">A Backroom Shop in Durham</h2>
+        <p class="text-warm-white/80 leading-relaxed mb-6 text-lg">
+          The shop is located behind my house, not far from Jordan Lake. You are welcome to stop by and look around when passing through. We are open to the public.
+        </p>
+        <p class="text-warm-white/80 leading-relaxed mb-8">
+          I do taxidermy on a part-time basis and have found that I must limit the number of pieces I take in each year or risk getting behind on turnaround times.
+        </p>
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <p class="font-bebas text-4xl text-aged-gold">In House</p>
+            <p class="text-warm-white/70 mt-1">Tanning & prep</p>
+          </div>
+          <div>
+            <p class="font-bebas text-4xl text-aged-gold">NO Borax</p>
+            <p class="text-warm-white/70 mt-1">or dry preservative</p>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2 reveal">
+        <img src="https://www.jordanlaketaxidermy.net/wp-content/uploads/2019/11/wood-duck.jpg" alt="Wood duck mount" class="w-full h-[500px] object-cover sharp">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="py-24 lg:py-32 bg-bone">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl mb-16 reveal">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold text-forest mb-4">In the Studio</h2>
+      <p class="text-forest/70 text-lg">A look at the work that goes into every mount.</p>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[250px]">
+      <div class="row-span-2 reveal">
+        <img src="https://www.jordanlaketaxidermy.net/wp-content/uploads/2019/11/DSC_0005-1.jpg" alt="Work in progress" class="w-full h-full object-cover sharp">
+      </div>
+      <div class="reveal">
+        <img src="https://www.jordanlaketaxidermy.net/wp-content/uploads/2019/11/wire-wheel.jpg" alt="Wire wheel" class="w-full h-full object-cover sharp">
+      </div>
+      <div class="row-span-2 reveal">
+        <img src="https://www.jordanlaketaxidermy.net/wp-content/uploads/2019/11/DSC_0243.jpg" alt="Studio scene" class="w-full h-full object-cover sharp">
+      </div>
+      <div class="reveal">
+        <img src="https://www.jordanlaketaxidermy.net/wp-content/uploads/2019/11/deer.jpg" alt="Whitetail deer mount" class="w-full h-full object-cover sharp">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-24 lg:py-32 bg-warm-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center reveal">
+      <blockquote class="text-2xl lg:text-3xl font-display text-forest leading-relaxed mb-8">
+        "I strive to produce the highest quality in each and every piece. I give each piece the time it deserves, bringing out the lifelike details."
+      </blockquote>
+      <p class="font-semibold text-forest text-lg">Mike</p>
+      <p class="text-forest/60">Owner, Jordan Lake Taxidermy</p>
+    </div>
+    <div class="grid grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto">
+      <div class="text-center reveal">
+        <p class="font-bebas text-4xl text-aged-gold">Durham, NC</p>
+        <p class="text-forest/60 text-sm mt-1">Home shop location</p>
+      </div>
+      <div class="text-center reveal">
+        <p class="font-bebas text-4xl text-aged-gold">Triangle</p>
+        <p class="text-forest/60 text-sm mt-1">Areas served</p>
+      </div>
+      <div class="text-center reveal">
+        <p class="font-bebas text-4xl text-aged-gold">No Outsourcing</p>
+        <p class="text-forest/60 text-sm mt-1">Every piece in-house</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Strip -->
+<section class="py-20 bg-forest">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center reveal">
+    <h2 class="text-3xl lg:text-4xl font-display font-bold text-warm-white mb-4">Ready for a Mount?</h2>
+    <p class="text-warm-white/80 mb-8 text-lg max-w-2xl mx-auto">Call or email to schedule a drop-off. We are open to the public and happy for you to stop by and look around.</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="tel:9197308882" class="bg-aged-gold text-forest px-8 py-3 font-semibold text-lg sharp hover:bg-warm-white transition inline-block">(919) 730-8882</a>
+      <a href="mailto:mike@jordanlaketaxidermy.net" class="border border-warm-white/40 text-warm-white px-8 py-3 font-semibold text-lg sharp hover:bg-warm-white/10 transition inline-block">mike@jordanlaketaxidermy.net</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-forest-dark border-t border-aged-gold/20 py-16">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="https://www.jordanlaketaxidermy.net/wp-content/uploads/2019/11/jordan-lake-taxidermy-logo-full-color.png" alt="Jordan Lake Taxidermy" class="h-8 w-auto sharp">
+          <span class="font-display font-bold text-warm-white">Jordan Lake Taxidermy</span>
+        </div>
+        <p class="text-warm-white/50 text-sm">One-man taxidermy shop near Jordan Lake, NC.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-warm-white mb-4">Services</h4>
+        <ul class="space-y-2 text-sm text-warm-white/60">
+          <li>Waterfowl & Ducks</li>
+          <li>Whitetail Shoulder Mounts</li>
+          <li>Full Body Mammals</li>
+          <li>European Mounts</li>
+          <li>Hides & Tanning</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-warm-white mb-4">Navigate</h4>
+        <ul class="space-y-2 text-sm text-warm-white/60">
+          <li><a href="#" class="hover:text-warm-white transition">Home</a></li>
+          <li><a href="#" class="hover:text-warm-white transition">Studio</a></li>
+          <li><a href="#" class="hover:text-warm-white transition">Pricing</a></li>
+          <li><a href="#" class="hover:text-warm-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-warm-white mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm text-warm-white/60">
+          <li>(919) 730-8882</li>
+          <li>mike@jordanlaketaxidermy.net</li>
+          <li>7606 NC HWY 751</li>
+          <li>Durham, NC 27713</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-warm-white/10 text-center">
+      <p class="text-warm-white/40 text-sm">Jordan Lake Taxidermy. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // IntersectionObserver for reveal animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
