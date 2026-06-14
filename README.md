@@ -55,3 +55,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Thorson Forge](https://jared-the-automator.github.io/redesign-portfolio/thorsonforge.com/) | Custom forged knives & axes | Shelton, WA |
 | [Red Hawk Trading](https://jared-the-automator.github.io/redesign-portfolio/redhawktrading.com/) | Canvas tents & tipis | Idaho |
 | [Ugly Dog Hunting](https://jared-the-automator.github.io/redesign-portfolio/uglydoghunting.com/) | Hunting dog gear & supplies | Northfield, MN |
+| [Saltydawg Custom Fishing Rods](https://jared-the-automator.github.io/redesign-portfolio/saltydawgcustomrods.com/) | Custom fishing rods | USA |
