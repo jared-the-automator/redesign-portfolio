@@ -53,3 +53,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Traditional Archery Products](https://jared-the-automator.github.io/redesign-portfolio/traditionalarcheryproducts.com/) | Archery tools & supplies | Idaho Springs, CO |
 | [Natural Birch Bark Canoes](https://jared-the-automator.github.io/redesign-portfolio/naturalbirchbarkcanoes.com/) | Handcrafted birch bark canoes | Ontario, Canada |
 | [Thorson Forge](https://jared-the-automator.github.io/redesign-portfolio/thorsonforge.com/) | Custom forged knives & axes | Shelton, WA |
+| [Red Hawk Trading](https://jared-the-automator.github.io/redesign-portfolio/redhawktrading.com/) | Canvas tents & tipis | Idaho |

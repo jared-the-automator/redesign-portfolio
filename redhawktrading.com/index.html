@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Hawk Trading - Handcrafted Canvas Tents & Tipis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Space Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            stone: { 50: '#F5F5F0', 100: '#E8E8E2', 200: '#D0D0C8', 700: '#3A3A38', 900: '#1C1C1C' },
+            copper: '#B87333',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .hero-bg { background-image: linear-gradient(to right, rgba(28,28,28,0.85) 0%, rgba(28,28,28,0.4) 60%, rgba(28,28,28,0.1) 100%), url('https://www.redhawktrading.com/wp-content/uploads/2025/05/tipi6.jpg'); background-size: cover; background-position: center; }
+  </style>
+</head>
+<body class="font-body text-stone-900 bg-stone-50 antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-stone-50/95 backdrop-blur-sm border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display font-bold text-xl tracking-tight text-stone-900">Red Hawk Trading</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-700">
+        <a href="#about" class="hover:text-copper transition-colors">About</a>
+        <a href="#products" class="hover:text-copper transition-colors">Products</a>
+        <a href="#gallery" class="hover:text-copper transition-colors">Gallery</a>
+        <a href="#contact" class="hover:text-copper transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="bg-copper text-white px-5 py-2 rounded-sm text-sm font-semibold hover:bg-stone-900 transition-colors">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[100dvh] relative flex items-center">
+    <div class="max-w-7xl mx-auto px-6 py-24 pt-32 relative z-10">
+      <div class="max-w-2xl">
+        <span class="inline-block text-copper text-xs font-semibold tracking-widest uppercase mb-4">Family-owned since 1978</span>
+        <h1 class="font-display font-bold text-5xl md:text-7xl text-white leading-tight mb-6">Handcrafted Canvas<br>Tents & Tipis</h1>
+        <p class="text-lg md:text-xl text-stone-100 mb-8 max-w-lg font-light">Quality shelters built for hunters, campers, and adventurers who demand gear that lasts.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#products" class="bg-copper text-white px-8 py-3 rounded-sm font-semibold hover:bg-white hover:text-stone-900 transition-all">View Products</a>
+          <a href="#contact" class="border-2 border-white/30 text-white px-8 py-3 rounded-sm font-semibold hover:border-white transition-colors">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="products" class="py-24 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="fade-in">
+          <img src="https://www.redhawktrading.com/wp-content/uploads/2025/05/us.alafia.jpg" alt="Canvas tent in rugged outdoor setting" class="w-full h-96 object-cover rounded-sm shadow-lg">
+        </div>
+        <div class="fade-in">
+          <span class="text-copper text-sm font-semibold tracking-wide uppercase mb-2 block">Why Red Hawk</span>
+          <h2 class="font-display font-bold text-4xl text-stone-900 mb-8">Built for the elements, crafted to endure</h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="font-display font-bold text-3xl text-copper">01</span>
+              <div>
+                <h3 class="font-display font-semibold text-xl text-stone-900 mb-1">Heavy-duty canvas construction</h3>
+                <p class="text-stone-600 leading-relaxed">Military-grade cotton canvas, double-stitched seams, and reinforced stress points that stand up to decades of use.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display font-bold text-3xl text-copper">02</span>
+              <div>
+                <h3 class="font-display font-semibold text-xl text-stone-900 mb-1">Handcrafted in the American West</h3>
+                <p class="text-stone-600 leading-relaxed">Every tent and tipi is cut, sewn, and finished by hand in our Idaho workshop.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display font-bold text-3xl text-copper">03</span>
+              <div>
+                <h3 class="font-display font-semibold text-xl text-stone-900 mb-1">All-season, all-terrain design</h3>
+                <p class="text-stone-600 leading-relaxed">Engineered for snow loads, wind, and rain. From high-country elk camps to desert basecamps.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section -->
+  <section class="py-24 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="fade-in md:order-2">
+          <img src="https://www.redhawktrading.com/wp-content/uploads/2025/05/IMG_0865.jpg" alt="Close-up detail of canvas tent material" class="w-full h-96 object-cover rounded-sm shadow-lg">
+        </div>
+        <div class="fade-in md:order-1">
+          <span class="text-copper text-sm font-semibold tracking-wide uppercase mb-2 block">Our Story</span>
+          <h2 class="font-display font-bold text-4xl text-stone-900 mb-6">Forty-seven years of canvas tradition</h2>
+          <p class="text-stone-600 leading-relaxed mb-6">Red Hawk Trading began in 1978 with a single sewing machine and a belief that outdoor shelters should be built to last, not replaced every season. Today, four decades later, we still cut every panel by hand and inspect every stitch before it leaves our workshop.</p>
+          <p class="text-stone-600 leading-relaxed">Our canvas wall tents and tipis have sheltered hunters in Montana, guided expeditions in Alaska, and served as base camp for families exploring the American West. The same principles guide us now as they did then: quality materials, honest construction, and a tent you can pass down.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-24 bg-stone-900 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 fade-in">
+        <span class="text-copper text-sm font-semibold tracking-wide uppercase mb-3 block">Works in the Wild</span>
+        <h2 class="font-display font-bold text-4xl md:text-5xl">Built for real camps</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="fade-in md:col-span-2">
+          <img src="https://www.redhawktrading.com/wp-content/uploads/2025/05/IMG_0166-2.jpg" alt="Canvas tent setup in scenic landscape" class="w-full h-80 object-cover rounded-sm">
+        </div>
+        <div class="fade-in">
+          <img src="https://www.redhawktrading.com/wp-content/uploads/2025/05/tipi6.jpg" alt="Traditional tipi against open skies" class="w-full h-80 object-cover rounded-sm">
+        </div>
+        <div class="fade-in">
+          <img src="https://www.redhawktrading.com/wp-content/uploads/2025/05/IMG_0865.jpg" alt="Canvas tent material and construction detail" class="w-full h-80 object-cover rounded-sm">
+        </div>
+        <div class="fade-in md:col-span-2">
+          <img src="https://www.redhawktrading.com/wp-content/uploads/2025/05/us.alafia.jpg" alt="Camp scene with canvas shelter" class="w-full h-80 object-cover rounded-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Credibility -->
+  <section class="py-24 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="md:col-span-2 fade-in">
+          <span class="text-copper text-sm font-semibold tracking-wide uppercase mb-3 block">What Campers Say</span>
+          <blockquote class="font-display font-medium text-2xl md:text-3xl text-stone-900 leading-snug mb-6">Red Hawk built us a wall tent nearly a decade ago. It has been through blizzards, dust storms, and blazing heat without a single leak. There is no comparison to mass-market gear.</blockquote>
+          <p class="text-stone-600 font-medium">Sarah M.</p>
+        </div>
+        <div class="fade-in bg-stone-100 rounded-sm p-8 h-fit">
+          <h3 class="font-display font-bold text-xl text-stone-900 mb-6">Red Hawk at a Glance</h3>
+          <ul class="space-y-4 text-stone-700">
+            <li class="flex items-start gap-3">
+              <span class="text-copper font-display font-bold text-lg">47</span>
+              <span>Years crafting canvas shelters</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-copper font-display font-bold text-lg">ID</span>
+              <span>Made in the American West</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-copper font-display font-bold text-lg">100%</span>
+              <span>Hand-cut and hand-sewn</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-copper font-display font-bold text">1-800</span>
+              <span>Direct phone support</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-copper text-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="font-display font-bold text-3xl md:text-4xl mb-4">Ready for your next adventure?</h2>
+      <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">Call us at (208) 766-2960 or request a custom quote for your wall tent, tipi, or camp shelter.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:2087662960" class="bg-white text-stone-900 px-8 py-3 rounded-sm font-semibold hover:bg-stone-100 transition-colors">Call (208) 766-2960</a>
+        <a href="mailto:redhawktrading@gmail.com" class="border-2 border-white/40 text-white px-8 py-3 rounded-sm font-semibold hover:border-white transition-colors">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-400 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="md:col-span-2">
+          <h3 class="font-display font-bold text-xl text-white mb-4">Red Hawk Trading</h3>
+          <p class="leading-relaxed mb-4">Handcrafted canvas tents and tipis for hunters, campers, and adventurers. Family-owned since 1978.</p>
+          <p class="text-sm">&copy; 2026 Red Hawk Trading. All Rights Reserved.</p>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold text-white mb-4">Navigate</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-copper transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-copper transition-colors">About</a></li>
+            <li><a href="#products" class="hover:text-copper transition-colors">Products</a></li>
+            <li><a href="#gallery" class="hover:text-copper transition-colors">Gallery</a></li>
+            <li><a href="#contact" class="hover:text-copper transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold text-white mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:redhawktrading@gmail.com" class="hover:text-copper transition-colors">redhawktrading@gmail.com</a></li>
+            <li><a href="tel:2087662960" class="hover:text-copper transition-colors">(208) 766-2960</a></li>
+            <li><a href="tel:18004034295" class="hover:text-copper transition-colors">1-800-403-4295</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for fade-in animations only. No scroll listeners.
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
