@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wooden Bird | Hand Carved Waterfowl by Rick Mignano</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+    @theme {
+      --color-forest: #0A1A0E;
+      --color-forest-light: #132C1A;
+      --color-forest-soft: #1D3F26;
+      --color-gold: #C8A457;
+      --color-bone: #F5F1EB;
+      --color-bone-muted: #C5C1BB;
+      --color-bone-dim: #8D7B68;
+      --font-playfair: 'Playfair Display', serif;
+      --font-inter: 'Inter', sans-serif;
+    }
+  </style>
+  <style>
+    .font-playfair { font-family: 'Playfair Display', serif; }
+    .font-inter { font-family: 'Inter', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-forest font-inter text-bone antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-forest/90 backdrop-blur-md border-b border-forest-soft/40">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="font-playfair text-xl font-bold text-gold tracking-tight">The Wooden Bird</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-bone-muted">
+        <a href="#" class="hover:text-gold transition-colors duration-300">Home</a>
+        <a href="#about" class="hover:text-gold transition-colors duration-300">About</a>
+        <a href="#gallery" class="hover:text-gold transition-colors duration-300">Gallery</a>
+        <a href="#contact" class="hover:text-gold transition-colors duration-300">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:inline-flex items-center px-5 py-2 bg-gold text-forest font-semibold text-sm rounded hover:bg-bone-muted transition-colors duration-300">Commission a Bird</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0" style="background: linear-gradient(105deg, #0A1A0E 40%, #0A1A0E80 65%, transparent 85%), url('https://thewoodenbird.com/wp-content/uploads/2025/09/Rick-Carving-summer-2-scaled.jpeg') center right / cover no-repeat;"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-forest via-forest/70 to-transparent"></div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-32 pt-40">
+      <div class="max-w-2xl">
+        <span class="inline-block text-xs font-bold uppercase tracking-[0.25em] text-gold mb-4">Louisiana Waterfowl Carver</span>
+        <h1 class="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] text-bone mb-6">Hand carved waterfowl that feel alive</h1>
+        <p class="text-lg md:text-xl text-bone-muted leading-relaxed mb-10 max-w-xl">Starting from a block of tupelo, Rick Mignano brings life-sized waterfowl to life. Over 50 ribbons from competitions across the country.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#gallery" class="inline-flex items-center px-8 py-3.5 bg-gold text-forest font-semibold rounded hover:bg-bone-muted transition-colors duration-300">See the Gallery</a>
+          <a href="#contact" class="inline-flex items-center px-8 py-3.5 border border-gold/40 text-gold font-semibold rounded hover:bg-gold/10 transition-colors duration-300">Commission a Bird</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Primary Product Section -->
+  <section class="py-24 lg:py-32 bg-forest-light" id="about">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <img src="https://thewoodenbird.com/wp-content/uploads/2024/10/7efcdc9455a96dd976558f7cd1d9f276.jpg" alt="Rick Mignano at work carving a duck decoy" class="w-full rounded">
+        </div>
+        <div class="reveal">
+          <span class="text-gold text-sm font-bold uppercase tracking-[0.25em] mb-4 block">The Carver</span>
+          <h2 class="font-playfair text-4xl md:text-5xl font-bold text-bone mb-6 leading-tight">One block of tupelo. One ribbon at a time.</h2>
+          <p class="text-bone-muted leading-relaxed mb-8">Rick Mignano has been awarded over 50 ribbons from competitions across Louisiana, Wisconsin, Ohio, Ward World, and online carved decoy contests. Each bird begins as a rough form of tupelo, shaped by hand until it breathes.</p>
+          <div class="space-y-6">
+            <div class="flex gap-4 items-start">
+              <span class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded bg-gold/10 text-gold font-playfair font-bold text-lg">01</span>
+              <div>
+                <h3 class="text-bone font-semibold mb-1">Pattern to Block</h3>
+                <p class="text-bone-muted text-sm leading-relaxed">Each piece starts from a custom-built pattern and a solid block of tupelo.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <span class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded bg-gold/10 text-gold font-playfair font-bold text-lg">02</span>
+              <div>
+                <h3 class="text-bone font-semibold mb-1">Shaped by Hand</h3>
+                <p class="text-bone-muted text-sm leading-relaxed">Carved, burned, and painted using techniques refined through decades in the workshop.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <span class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded bg-gold/10 text-gold font-playfair font-bold text-lg">03</span>
+              <div>
+                <h3 class="text-bone font-semibold mb-1">Awarded and Recognized</h3>
+                <p class="text-bone-muted text-sm leading-relaxed">Over 50 competition ribbons, including multiple Best of Show awards at the Louisiana Waterfowl Carvers Show.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section -->
+  <section class="py-24 lg:py-32 bg-forest">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <span class="text-gold text-sm font-bold uppercase tracking-[0.25em] mb-4 block">The Collection</span>
+          <h2 class="font-playfair text-4xl md:text-5xl font-bold text-bone mb-6 leading-tight">Species that belong on every shelf.</h2>
+          <p class="text-bone-muted leading-relaxed mb-6">From the iconic mallard to the delicate blue-winged teal, each species is available as a unique, hand-carved piece. They are so realistic that clients say they want to squeeze them.</p>
+          <p class="text-bone-muted leading-relaxed mb-8">Whether you are collecting your first piece or adding to a growing flock, there is a bird waiting for you.</p>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 rounded bg-forest-light text-bone-dim text-sm border border-forest-soft/30">Mallard</span>
+            <span class="px-4 py-2 rounded bg-forest-light text-bone-dim text-sm border border-forest-soft/30">Pintail</span>
+            <span class="px-4 py-2 rounded bg-forest-light text-bone-dim text-sm border border-forest-soft/30">Wood Duck</span>
+            <span class="px-4 py-2 rounded bg-forest-light text-bone-dim text-sm border border-forest-soft/30">Loon</span>
+            <span class="px-4 py-2 rounded bg-forest-light text-bone-dim text-sm border border-forest-soft/30">Canvasback</span>
+            <span class="px-4 py-2 rounded bg-forest-light text-bone-dim text-sm border border-forest-soft/30">Teal</span>
+            <span class="px-4 py-2 rounded bg-forest-light text-bone-dim text-sm border border-forest-soft/30">Merganser</span>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 reveal">
+          <img src="https://thewoodenbird.com/wp-content/uploads/2024/11/0BDBF253-26E4-4818-B6E9-E9B028C9388B_1_105_c.jpeg" alt="A hand-carved duck decoy on a wooden shelf" class="w-full rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-24 lg:py-32 bg-forest-light" id="gallery">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold text-sm font-bold uppercase tracking-[0.25em] mb-4 block">Selected Works</span>
+        <h2 class="font-playfair text-4xl md:text-5xl font-bold text-bone mb-4">Gallery</h2>
+        <p class="text-bone-muted max-w-2xl mx-auto leading-relaxed">A few of the pieces that have turned heads at shows across the country.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="reveal">
+          <img src="https://thewoodenbird.com/wp-content/uploads/2024/11/176-Loon-with-baby-Hansen-2024-1.jpeg" alt="Hand-carved loon with baby decoy on a wooden stand" class="w-full rounded aspect-[4/3] object-cover">
+        </div>
+        <div class="reveal">
+          <img src="https://thewoodenbird.com/wp-content/uploads/2024/10/ac94479f7f8c9b91eb2d6c8bfc38f73c.jpg" alt="Hand-carved mallard drake wooden decoy" class="w-full rounded aspect-[4/3] object-cover">
+        </div>
+        <div class="reveal">
+          <img src="https://thewoodenbird.com/wp-content/uploads/2024/10/631febf37604915865ed71044a10ff82.jpg" alt="Hand-carved wood duck decoy on display" class="w-full rounded aspect-[4/3] object-cover">
+        </div>
+        <div class="reveal md:col-span-2 lg:col-span-1">
+          <img src="https://thewoodenbird.com/wp-content/uploads/2024/11/142-King-Eider-Lovell-63022-scaled.jpeg" alt="Hand-carved king eider decoy" class="w-full rounded aspect-[4/3] object-cover">
+        </div>
+        <div class="reveal md:col-span-2 lg:col-span-1">
+          <img src="https://thewoodenbird.com/wp-content/uploads/2025/09/Quotes-loon.jpg" alt="Hand-carved loon decoy" class="w-full rounded aspect-[4/3] object-cover">
+        </div>
+        <div class="reveal md:col-span-2 lg:col-span-1">
+          <img src="https://thewoodenbird.com/wp-content/uploads/2024/11/354C0AC0-ACCB-4B5A-A2E9-00EF24F84D2C_1_105_c.jpeg" alt="Hand-carved duck decoy close-up" class="w-full rounded aspect-[4/3] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-24 lg:py-32 bg-forest">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <img src="https://thewoodenbird.com/wp-content/uploads/2024/11/2019InsideJudging-3-of-4-ducks-are-mine-for-BOS.jpg" alt="Rick Mignano's ducks being judged at a competition" class="w-full rounded">
+        </div>
+        <div class="reveal">
+          <span class="text-gold text-sm font-bold uppercase tracking-[0.25em] mb-4 block">From Judges and Collectors</span>
+          <blockquote class="font-playfair text-2xl md:text-3xl font-bold text-bone leading-snug mb-6">
+            "Clients say they look so real, you want to squeeze them."
+          </blockquote>
+          <div class="space-y-5">
+            <div>
+              <h4 class="text-bone font-semibold mb-1">October 2025</h4>
+              <p class="text-bone-muted text-sm leading-relaxed">Best of Show for the merganser hen at the Louisiana Waterfowl Carvers Show. Also first and second in species, and best diver for the merganser.</p>
+            </div>
+            <div>
+              <h4 class="text-bone font-semibold mb-1">October 2024</h4>
+              <p class="text-bone-muted text-sm leading-relaxed">Awarded 7 ribbons, including 2nd Best of Show at the Louisiana Waterfowl Carvers Show.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-20 bg-forest-soft" id="contact">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center reveal">
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold text-bone mb-4">Ready to own a hand-carved bird?</h2>
+      <p class="text-bone-muted text-lg mb-8 leading-relaxed">Commission a one-of-a-kind piece or explore what is ready to ship in the duck shop. Every bird is hand-cast from a block of tupelo.</p>
+      <a href="mailto:info@thewoodenbird.com" class="inline-flex items-center px-10 py-4 bg-gold text-forest font-semibold rounded hover:bg-bone-muted transition-colors duration-300">Email Rick</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest border-t border-forest-soft/30 py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <h3 class="font-playfair text-xl font-bold text-gold mb-4">The Wooden Bird</h3>
+          <p class="text-bone-muted text-sm leading-relaxed">Hand carved duck decoys and waterfowl by Rick Mignano. Over 50 competition ribbons and counting.</p>
+        </div>
+        <div>
+          <h4 class="text-bone font-semibold mb-4 text-sm uppercase tracking-wider">Explore</h4>
+          <ul class="space-y-2 text-sm text-bone-muted">
+            <li><a href="#" class="hover:text-gold transition-colors duration-300">Home</a></li>
+            <li><a href="#about" class="hover:text-gold transition-colors duration-300">About</a></li>
+            <li><a href="#gallery" class="hover:text-gold transition-colors duration-300">Gallery</a></li>
+            <li><a href="#contact" class="hover:text-gold transition-colors duration-300">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-bone font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
+          <p class="text-bone-muted text-sm mb-2">Email: info@thewoodenbird.com</p>
+          <p class="text-bone-muted text-sm">Visit: thewoodenbird.com</p>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-forest-soft/30 text-center text-bone-dim text-sm">
+        Hand carved with care. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
