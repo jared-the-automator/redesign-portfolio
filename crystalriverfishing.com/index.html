@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reel Florida Fishing Charters | Crystal River, FL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0c1624',
+            slate: '#111f33',
+            steel: '#4a7c9b',
+            ivory: '#f4f5f7',
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          borderRadius: {
+            uniform: '12px',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, .font-display { font-family: 'Playfair Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .no-emdash { font-variant-numeric: lining-nums; }
+    ::selection { background: #4a7c9b30; }
+  </style>
+</head>
+<body class="bg-navy text-white antialiased">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-navy/90 backdrop-blur-sm border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://crystalriverfishing.com/wp-content/uploads/2020/02/logo.png" alt="Reel Florida Fishing Charters" class="h-10 w-auto brightness-200" />
+        <span class="font-display font-bold text-lg tracking-wide hidden sm:block">Reel Florida Fishing</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="#charters" class="text-white/80 hover:text-steel transition-colors uppercase text-xs tracking-widest">Charters</a>
+        <a href="#scalloping" class="text-white/80 hover:text-steel transition-colors uppercase text-xs tracking-widest">Scalloping</a>
+        <a href="#about" class="text-white/80 hover:text-steel transition-colors uppercase text-xs tracking-widest">About</a>
+        <a href="#contact" class="text-white/80 hover:text-steel transition-colors uppercase text-xs tracking-widest">Contact</a>
+        <a href="tel:3526344002" class="bg-steel text-navy px-5 py-2 font-semibold text-xs tracking-widest uppercase hover:bg-white transition-colors" style="border-radius: 12px;">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative min-h-[100dvh] flex items-end pb-20 pt-40 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://crystalriverfishing.com/wp-content/uploads/2020/05/1543539434000_xxl.jpg" alt="Crystal River fishing charter at dawn" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-navy/60" style="background: linear-gradient(to top, #0c1624 0%, rgba(12,22,36,0.4) 100%);"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <p class="text-steel text-xs font-semibold tracking-[0.25em] uppercase mb-4">Crystal River & Homosassa, FL</p>
+        <h1 class="font-display text-5xl md:text-7xl font-bold leading-[1.05] mb-6">World Famous Fishing Charters on Florida's Nature Coast</h1>
+        <p class="text-lg md:text-xl text-white/80 leading-relaxed max-w-xl font-light">Join Capt. Kyle Messier for light tackle and fly fishing adventures through the mangrove mazes of Crystal River and Homosassa.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="tel:3526344002" class="inline-block bg-steel text-white px-8 py-3 font-semibold tracking-wide hover:bg-white hover:text-navy transition-colors" style="border-radius: 12px;">Call (352) 634-4002</a>
+          <a href="#charters" class="inline-block border border-white/30 text-white px-8 py-3 font-semibold tracking-wide hover:border-steel hover:text-steel transition-colors" style="border-radius: 12px;">View Charters</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="charters" class="py-24 bg-navy">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <img src="https://crystalriverfishing.com/wp-content/uploads/2020/05/Kyle-Wins.jpg" alt="Capt. Kyle Messier with a trophy fish" class="w-full h-[480px] object-cover" style="border-radius: 12px;" />
+        </div>
+        <div class="reveal">
+          <p class="text-steel text-xs font-semibold tracking-[0.25em] uppercase mb-4">Fishing Charters</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">Twenty Species. One Unforgettable Day.</h2>
+          <p class="text-white/70 leading-relaxed mb-8">Crystal River and Homosassa are a true fisherman's paradise, and Reel Florida Fishing Charters is the premier guide service of the Nature Coast. All anglers, no matter their experience, are welcome on board.</p>
+          <div class="space-y-6">
+            <div class="flex gap-5">
+              <span class="font-display text-3xl font-bold text-steel/60 shrink-0">01</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Backcountry & Fly Fishing</h3>
+                <p class="text-white/60 text-sm leading-relaxed">Poling the flats for redfish, bonefish, and tarpon.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-3xl font-bold text-steel/60 shrink-0">02</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Grouper & Shark Trips</h3>
+                <p class="text-white/60 text-sm leading-relaxed">Nearshore wrecks and reefs for hard fighters.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-3xl font-bold text-steel/60 shrink-0">03</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Kid Friendly & Group Trips</h3>
+                <p class="text-white/60 text-sm leading-relaxed">Corporate outings and family days on the water.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="scalloping" class="py-24 bg-slate">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 reveal">
+          <p class="text-steel text-xs font-semibold tracking-[0.25em] uppercase mb-4">Scalloping Adventures</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">An Underwater Easter Egg Hunt for the Whole Family.</h2>
+          <p class="text-white/70 leading-relaxed mb-8">The Nature Coast's scallop season has been a fan favorite for decades. For a true Nature Coast experience, try the VIP scallop trip that includes a day of scalloping and a manatee swim.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="tel:3526344002" class="inline-block bg-steel text-white px-8 py-3 font-semibold tracking-wide hover:bg-white hover:text-navy transition-colors" style="border-radius: 12px;">Book Scalloping</a>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <img src="https://crystalriverfishing.com/wp-content/uploads/2020/03/manatee.png" alt="Florida manatee swimming in Crystal River" class="w-full h-[480px] object-cover" style="border-radius: 12px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-navy">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 reveal">
+        <img src="https://crystalriverfishing.com/wp-content/uploads/2020/05/IMG_3379.jpg" alt="Fishing in Crystal River" class="w-full h-64 object-cover" style="border-radius: 12px;" />
+        <img src="https://crystalriverfishing.com/wp-content/uploads/2020/05/Mark-Best-008.jpg" alt="Guide Mark with a redfish" class="w-full h-64 object-cover" style="border-radius: 12px;" />
+        <img src="https://crystalriverfishing.com/wp-content/uploads/2020/05/Kyle-Wins.jpg" alt="Capt. Kyle Messier with trophy fish" class="w-full h-64 object-cover col-span-2 md:col-span-2" style="border-radius: 12px;" />
+      </div>
+      <div class="mt-16 text-center max-w-3xl mx-auto reveal">
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Crystal River and Homosassa: The World's Best Kept Secret</h2>
+        <p class="text-white/70 leading-relaxed">Crystal River is home to the world's largest population of the endangered West Indian Manatee. It is also the only destination in the United States that permits swimming with these gentle giants. Whether casting a line or swimming with manatees, the Nature Coast delivers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-slate">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <p class="text-steel text-xs font-semibold tracking-[0.25em] uppercase mb-4">Testimonials</p>
+        <h2 class="font-display text-4xl md:text-5xl font-bold">What Anglers Say</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-navy/60 p-10 reveal" style="border-radius: 12px; border: 1px solid rgba(255,255,255,0.08);">
+          <p class="font-display text-2xl leading-relaxed mb-6">"Kyle has cost us a small fortune over the past FIFTEEN years. We have had such fun and such success fishing with him that we decided to buy a house and two boats in Crystal River so that we could hire him on a regular basis."</p>
+          <p class="text-white/60 text-sm font-medium">Longtime customer, Crystal River</p>
+        </div>
+        <div class="bg-navy/60 p-10 reveal" style="border-radius: 12px; border: 1px solid rgba(255,255,255,0.08);">
+          <p class="font-display text-2xl leading-relaxed mb-6">"For the past five years we've had one 'red hot' experience after another with Capt. Kyle on the 'gin clear' waters off Crystal River. Our days on the water always meet and often exceed our expectations."</p>
+          <p class="text-white/60 text-sm font-medium">Regular client, Nature Coast</p>
+        </div>
+      </div>
+      <div class="mt-16 flex flex-wrap justify-center gap-10 text-center">
+        <div class="reveal">
+          <p class="font-display text-4xl font-bold text-steel">15+</p>
+          <p class="text-white/60 text-sm mt-1">Years Guiding</p>
+        </div>
+        <div class="reveal">
+          <p class="font-display text-4xl font-bold text-steel">USCG</p>
+          <p class="text-white/60 text-sm mt-1">Licensed & Insured</p>
+        </div>
+        <div class="reveal">
+          <p class="font-display text-4xl font-bold text-steel">20+</p>
+          <p class="text-white/60 text-sm mt-1">Species Targeted</p>
+        </div>
+        <div class="reveal">
+          <p class="font-display text-4xl font-bold text-steel">8</p>
+          <p class="text-white/60 text-sm mt-1">Pro Guides</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-steel text-navy">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Ready to Reel One In?</h2>
+      <p class="text-lg mb-8 text-navy/80">Book your Crystal River fishing charter or scalloping adventure with Reel Florida Fishing Charters today.</p>
+      <a href="tel:3526344002" class="inline-block bg-navy text-white px-10 py-4 font-semibold tracking-wide hover:bg-slate transition-colors" style="border-radius: 12px;">Call (352) 634-4002</a>
+    </div>
+  </section>
+
+  <footer class="bg-navy border-t border-white/10 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <img src="https://crystalriverfishing.com/wp-content/uploads/2020/02/logo.png" alt="Reel Florida Fishing Charters" class="h-10 w-auto brightness-200 mb-4" />
+          <p class="text-white/60 text-sm leading-relaxed">Premier fishing charters and scalloping adventures in Crystal River and Homosassa, Florida.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider text-white/90">Charters</h4>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="#" class="hover:text-steel">Backcountry</a></li>
+            <li><a href="#" class="hover:text-steel">Fly Fishing</a></li>
+            <li><a href="#" class="hover:text-steel">Grouper</a></li>
+            <li><a href="#" class="hover:text-steel">Tarpon</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider text-white/90">Adventures</h4>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="#" class="hover:text-steel">Scalloping</a></li>
+            <li><a href="#" class="hover:text-steel">Manatee Tours</a></li>
+            <li><a href="#" class="hover:text-steel">Kid Friendly</a></li>
+            <li><a href="#" class="hover:text-steel">Corporate Groups</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider text-white/90">Contact</h4>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="tel:3526344002" class="hover:text-steel">(352) 634-4002</a></li>
+            <li><a href="mailto:kylemessier@yahoo.com" class="hover:text-steel">kylemessier@yahoo.com</a></li>
+            <li>Crystal River, Florida</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-white/40">&copy; 2025 Reel Florida Fishing Charters. All rights reserved.</p>
+        <p class="text-xs text-white/40">A U.S. Coast Guard licensed and insured charter company.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
