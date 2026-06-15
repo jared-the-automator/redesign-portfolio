@@ -61,3 +61,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Little Trapper Inc.](https://jared-the-automator.github.io/redesign-portfolio/littletrapper.com/) | Sporting clays equipment | Rock Creek Ranch, Idaho |
 | [Wilderness Ridge Trail Llamas](https://jared-the-automator.github.io/redesign-portfolio/wildernessridgetrailllamas.com/) | Llama packing & guided trips | Idaho |
 | [Reel Florida Fishing Charters](https://jared-the-automator.github.io/redesign-portfolio/crystalriverfishing.com/) | Fishing charters | Crystal River, FL |
+| [The Taxidermy Studio](https://jared-the-automator.github.io/redesign-portfolio/thetaxidermystudio.net/) | Taxidermy studio | Northeastern Pennsylvania |
