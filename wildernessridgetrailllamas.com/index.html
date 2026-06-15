@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wilderness Ridge Trail Llamas — Llama Packing in Utah & Jackson Hole</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forest: { DEFAULT: '#1A2B1A', dark: '#0D1A0D', light: '#2D3E2D' },
+            bone: '#F2EDE4',
+            muted: '#B8B0A0',
+            gold: '#C9A047',
+            goldHover: '#DDBB6C',
+          },
+          borderRadius: {
+            common: '12px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-forest-dark text-bone">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-forest-dark/90 backdrop-blur border-b border-gold/10">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-lg tracking-wide">Wilderness Ridge Trail Llamas</a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#about" class="hover:text-gold transition">About</a>
+        <a href="#services" class="hover:text-gold transition">Services</a>
+        <a href="#contact" class="hover:text-gold transition">Contact</a>
+        <a href="#contact" class="bg-gold text-forest-dark px-5 py-2 text-sm font-medium hover:bg-goldHover transition rounded-common">Book a Trip</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20 md:pb-24">
+    <div class="absolute inset-0">
+      <img src="https://wildernessridgetrailllamas.com/wp-content/uploads/2017/04/packing-llama-outdoor-adventures.jpg" alt="Pack llamas on a mountain trail" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-forest-dark via-forest-dark/70 to-forest-dark/30"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <span class="text-xs font-medium uppercase tracking-widest text-gold mb-4 block">Utah &amp; Jackson Hole</span>
+        <h1 class="font-display text-5xl md:text-7xl leading-tight mb-6">The backcountry, without the heavy pack.</h1>
+        <p class="text-lg md:text-xl text-bone/80 mb-8 max-w-xl">Guided llama trips through Capitol Reef and the Tetons. We carry the load so you can enjoy the trail.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="bg-gold text-forest-dark px-8 py-3 font-medium hover:bg-goldHover transition rounded-common">Plan Your Trip</a>
+          <a href="#about" class="border border-bone/30 text-bone px-8 py-3 font-medium hover:bg-bone/10 transition rounded-common">Meet the Llamas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary Section (asymmetric split) -->
+  <section id="services" class="py-20 md:py-28 bg-forest-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="reveal">
+          <img src="https://wildernessridgetrailllamas.com/wp-content/uploads/slider/cache/af82affe6d0aaf650f1ce6790eb67865/Llama-Rental-promo.jpg" alt="Llama on a ridgeline" class="w-full h-[400px] md:h-[520px] object-cover rounded-common" />
+        </div>
+        <div class="reveal">
+          <span class="text-xs font-medium uppercase tracking-widest text-gold mb-4 block">What We Do</span>
+          <h2 class="font-display text-4xl md:text-5xl mb-8">Three ways to walk with llamas</h2>
+          <div class="space-y-8">
+            <div>
+              <span class="text-gold font-display text-xl block mb-2">01</span>
+              <p class="text-bone/80">Day hikes, overnight trips, and custom pack trips in Capitol Reef, Utah and Jackson Hole, Wyoming.</p>
+            </div>
+            <div>
+              <span class="text-gold font-display text-xl block mb-2">02</span>
+              <p class="text-bone/80">Llama support for backcountry hunters. Quiet, steady animals that stay with your string and haul the gear.</p>
+            </div>
+            <div>
+              <span class="text-gold font-display text-xl block mb-2">03</span>
+              <p class="text-bone/80">Rentals, breeding, clinics, and llama rendezvous. Learn to pack your own string under Beau and Kirstin's guidance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary Section (reversed split) -->
+  <section id="about" class="py-20 md:py-28 bg-forest-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="reveal order-2 md:order-1">
+          <h2 class="font-display text-4xl md:text-5xl mb-6">Meet Beau and Kirstin Baty</h2>
+          <p class="text-bone/80 mb-4">Years in the high country with a herd of trained pack llamas. Leave No Trace partners. American Hiking Society members. Greater Yellowstone Coalition supporters. Licensed on USFS land.</p>
+          <p class="text-bone/80">Based in Idaho with regular trips to Capitol Reef and Jackson Hole.</p>
+        </div>
+        <div class="reveal order-1 md:order-2">
+          <img src="https://wildernessridgetrailllamas.com/wp-content/uploads/2017/12/Beau-and-Kirsten-Baty-Llamas.jpg" alt="Beau and Kirstin Baty with their llamas" class="w-full h-[400px] md:h-[520px] object-cover rounded-common" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery / Brand Story -->
+  <section class="py-20 md:py-28 bg-forest-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 reveal">
+        <img src="https://wildernessridgetrailllamas.com/wp-content/uploads/2016/02/llamas-for-rent.jpg" alt="Pack llamas ready for a trip" class="w-full h-64 object-cover rounded-common" />
+        <img src="https://wildernessridgetrailllamas.com/wp-content/uploads/2017/12/Utah-Thumbnail.jpg" alt="Utah landscape with llamas" class="w-full h-64 object-cover rounded-common" />
+        <img src="https://wildernessridgetrailllamas.com/wp-content/uploads/2017/12/Jackson-Hole-Thumbnail.jpg" alt="Jackson Hole scenery" class="w-full h-64 object-cover rounded-common" />
+        <img src="https://wildernessridgetrailllamas.com/wp-content/uploads/2016/02/beau-batyllama.jpg" alt="Beau Baty with a llama" class="w-full h-64 object-cover rounded-common" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / Credibility -->
+  <section class="py-20 md:py-28 bg-forest-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center reveal">
+        <h3 class="font-display text-3xl md:text-4xl mb-6">Trusted on the trail</h3>
+        <p class="text-bone/80 mb-8">Wilderness Ridge Trail Llamas partners with organizations that protect the land we walk on.</p>
+        <div class="flex flex-wrap justify-center gap-8">
+          <span class="text-sm text-muted">American Hiking Society</span>
+          <span class="text-sm text-muted">Greater Yellowstone Coalition</span>
+          <span class="text-sm text-muted">Leave No Trace</span>
+          <span class="text-sm text-muted">US Forest Service</span>
+          <span class="text-sm text-muted">BHA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA Strip -->
+  <section id="contact" class="py-20 md:py-28 bg-forest-dark border-t border-gold/10">
+    <div class="max-w-7xl mx-auto px-6 reveal">
+      <div class="text-center">
+        <h2 class="font-display text-4xl md:text-5xl mb-4">Ready to walk with llamas?</h2>
+        <p class="text-bone/80 mb-8">Call or email to book a trip in Utah or Jackson Hole.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+          <a href="tel:+12082707749" class="bg-gold text-forest-dark px-8 py-3 font-medium hover:bg-goldHover transition rounded-common">Call 208.270.7749</a>
+          <a href="mailto:hike@wildernessridgetrailllamas.com" class="border border-bone/30 text-bone px-8 py-3 font-medium hover:bg-bone/10 transition rounded-common">Email Beau &amp; Kirstin</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="py-16 bg-forest-dark border-t border-gold/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h4 class="font-display text-lg mb-4">Navigate</h4>
+          <ul class="space-y-2 text-sm text-bone/70">
+            <li><a href="#about" class="hover:text-gold transition">About</a></li>
+            <li><a href="#services" class="hover:text-gold transition">Services</a></li>
+            <li><a href="#contact" class="hover:text-gold transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-lg mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-bone/70">
+            <li>208.270.7749</li>
+            <li>hike@wildernessridgetrailllamas.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-lg mb-4">Partners</h4>
+          <ul class="space-y-2 text-sm text-bone/70">
+            <li>American Hiking Society</li>
+            <li>Greater Yellowstone Coalition</li>
+            <li>Leave No Trace</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-lg mb-4">Bring llamas</h4>
+          <p class="text-sm text-bone/70">Capitol Reef, Utah. Jackson Hole, Wyoming. Guided llama pack trips, rentals, and clinics.</p>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-gold/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted">
+        <p>Wilderness Ridge Trail Llamas. All rights reserved.</p>
+        <p>Powered by fresh WordPress and strong coffee.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
