@@ -42,7 +42,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [RJ Lures](https://jared-the-automator.github.io/redesign-portfolio/rjlures.com/) | Handcrafted musky, walleye, and salmon lures | Houghton, MI |
 | [Frontier Pack Train](https://jared-the-automator.github.io/redesign-portfolio/frontierpacktrain.com/) | Backcountry pack trips & trail rides | June Lake, CA |
 | [Team Buck Rogers](https://jared-the-automator.github.io/redesign-portfolio/teambuckrogers.com/) | Offshore fishing charters | Jacksonville, FL |
-| [Devlin Designing Boat Builders](https://jared-the-automator.github.io/redesign-portfolio/devlinboat.com/) | Custom wooden boat design &amp; kits | Olympia, WA |
+| [Devlin Designing Boat Builders](https://jared-the-automator.github.io/redesign-portfolio/devlinboat.com/) | Custom wooden boat design & kits | Olympia, WA |
 | [Devlin Designing Boat Builders](https://jared-the-automator.github.io/redesign-portfolio/devlinboat.com/) | Custom wooden boat builders | Olympia, WA |
 | [Acadian Woods Custom Traditional Bows](https://jared-the-automator.github.io/redesign-portfolio/acadianwoods.com/) | Custom traditional bows | Pineville, LA |
 | [Revenant Custom Rifles](https://jared-the-automator.github.io/redesign-portfolio/revenantcustomrifles.com/) | Custom hunting rifles | USA |
@@ -65,3 +65,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Trail Saddles by Steele](https://jared-the-automator.github.io/redesign-portfolio/steelesaddle.com/) | Custom trail saddles | McEwen, Tennessee |
 | [Caddo Watershed](https://jared-the-automator.github.io/redesign-portfolio/caddowatershed.com/) | Wooden canoe builder | Gordon, TX |
 | [Jim's Boatworks](https://jared-the-automator.github.io/redesign-portfolio/jimsboatworks.com/) | Custom rowboats and duck boats | Upstate New York |
+| [The Knife Maker](https://jared-the-automator.github.io/redesign-portfolio/theknifemaker.com/) | Custom hand-forged knives | Unknown |
