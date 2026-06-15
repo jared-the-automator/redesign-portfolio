@@ -64,3 +64,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [The Taxidermy Studio](https://jared-the-automator.github.io/redesign-portfolio/thetaxidermystudio.net/) | Taxidermy studio | Northeastern Pennsylvania |
 | [Trail Saddles by Steele](https://jared-the-automator.github.io/redesign-portfolio/steelesaddle.com/) | Custom trail saddles | McEwen, Tennessee |
 | [Caddo Watershed](https://jared-the-automator.github.io/redesign-portfolio/caddowatershed.com/) | Wooden canoe builder | Gordon, TX |
+| [Jim's Boatworks](https://jared-the-automator.github.io/redesign-portfolio/jimsboatworks.com/) | Custom rowboats and duck boats | Upstate New York |
