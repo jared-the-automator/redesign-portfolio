@@ -58,3 +58,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Saltydawg Custom Fishing Rods](https://jared-the-automator.github.io/redesign-portfolio/saltydawgcustomrods.com/) | Custom fishing rods | USA |
 | [Jordan Lake Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/jordanlaketaxidermy.net/) | Custom taxidermy studio | Durham, NC |
 | [The Wooden Bird](https://jared-the-automator.github.io/redesign-portfolio/thewoodenbird.com/) | Hand carved duck decoys | Louisiana |
+| [Little Trapper Inc.](https://jared-the-automator.github.io/redesign-portfolio/littletrapper.com/) | Sporting clays equipment | Rock Creek Ranch, Idaho |
