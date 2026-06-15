@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Flintlock Rifles and Pistols | Cabin Creek Muzzleloading | Hallam, PA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green:  #1B2F1E;
+      --bone:   #F5F0E8;
+      --bone2:  #EDE8DE;
+      --brass:  #C4922A;
+      --ink:    #1B1B1B;
+      --body:   #3D3028;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: 'Source Serif 4', Georgia, serif; background-color: var(--bone); color: var(--ink); }
+    .display { font-family: 'Playfair Display', Georgia, serif; }
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .fade-up.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav style="background-color: var(--green); position: sticky; top: 0; z-index: 50;"
+     class="px-6 py-4">
+  <div style="max-width: 1280px; margin: 0 auto;"
+       class="flex items-center justify-between">
+    <a href="#" class="display font-bold text-lg tracking-tight"
+       style="color: var(--bone);">Cabin Creek Muzzleloading</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#rifles" style="color: rgba(240,235,224,0.75);"
+         class="text-sm tracking-wide hover:opacity-100 transition-opacity">Rifles</a>
+      <a href="#gallery" style="color: rgba(240,235,224,0.75);"
+         class="text-sm tracking-wide hover:opacity-100 transition-opacity">Gallery</a>
+      <a href="#field-reports" style="color: rgba(240,235,224,0.75);"
+         class="text-sm tracking-wide hover:opacity-100 transition-opacity">Field Reports</a>
+      <a href="https://cabincreek.net/contact-us/"
+         style="background-color: var(--brass); color: var(--green);"
+         class="px-5 py-2 text-sm font-bold tracking-wide rounded-[2px] hover:opacity-90 transition-opacity">
+        Inquire
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section style="background-color: var(--green); position: relative; min-height: 100dvh;"
+         class="flex items-end">
+  <!-- Background photo -->
+  <div style="position: absolute; inset: 0; background-image: url('https://cabincreek.net/wp-content/uploads/2013/08/mainpic.jpg'); background-size: cover; background-position: center;"></div>
+  <!-- Directional gradient: opaque left, transparent right -->
+  <div style="position: absolute; inset: 0; background: linear-gradient(95deg, rgba(27,47,30,0.92) 0%, rgba(27,47,30,0.70) 45%, rgba(27,47,30,0.20) 100%);"></div>
+  <!-- Bottom lift -->
+  <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(27,47,30,0.88) 0%, transparent 55%);"></div>
+
+  <div style="position: relative; z-index: 10; max-width: 1280px; margin: 0 auto; width: 100%;"
+       class="px-6 pb-20 pt-32">
+    <div style="max-width: 640px;">
+      <p style="color: var(--brass);"
+         class="text-sm font-bold tracking-widest uppercase mb-5">
+        Hallam, Pennsylvania &middot; Est. 1999
+      </p>
+      <h1 class="display font-bold leading-[1.03] mb-7"
+          style="color: var(--bone); font-size: clamp(3rem, 6.5vw, 5.25rem);">
+        Every Screw.<br>Every Lock Bolt.<br>Made by Hand.
+      </h1>
+      <p class="text-xl leading-relaxed mb-10"
+         style="color: rgba(240,235,224,0.82); max-width: 520px;">
+        18th century flintlock rifles and pistols by Brad and Shane Emig. Period technique, period materials, period accuracy.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="https://cabincreek.net/contact-us/"
+           style="background-color: var(--brass); color: var(--green);"
+           class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-wide rounded-[2px] hover:opacity-90 transition-opacity">
+          Inquire About a Build
+        </a>
+        <a href="#rifles"
+           style="border: 1px solid rgba(240,235,224,0.35); color: var(--bone);"
+           class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-wide rounded-[2px] hover:border-opacity-70 transition-colors">
+          See the Rifles
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 3: PRIMARY PRODUCT — asymmetric split, numbered features
+     ============================================================ -->
+<section id="rifles" style="background-color: var(--green);" class="py-24 px-6">
+  <div style="max-width: 1280px; margin: 0 auto;"
+       class="grid md:grid-cols-2 gap-16 items-center">
+    <!-- Image -->
+    <div class="fade-up">
+      <img src="https://cabincreek.net/wp-content/uploads/2013/09/brad_casting.jpg"
+           alt="Brad Emig at the forge, Cabin Creek Muzzleloading workshop, Hallam Pennsylvania"
+           class="w-full rounded-[2px]"
+           style="height: 540px; object-fit: cover;">
+    </div>
+    <!-- Numbered features -->
+    <div class="fade-up">
+      <p style="color: var(--brass);" class="text-sm font-bold tracking-widest uppercase mb-10">The Work</p>
+      <div class="space-y-10">
+        <div class="flex gap-6 items-start">
+          <span class="display font-bold shrink-0"
+                style="font-size: 3rem; line-height: 1; color: rgba(196,146,42,0.3);">01</span>
+          <div>
+            <h3 class="display font-bold text-xl mb-2" style="color: var(--bone);">Period Technique</h3>
+            <p style="color: rgba(240,235,224,0.70);" class="leading-relaxed">
+              Skelp-welded wrought iron barrels. Hand-forged locks. All hardware forged on-site in an 18th century manner, just as it was done 250 years ago.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <span class="display font-bold shrink-0"
+                style="font-size: 3rem; line-height: 1; color: rgba(196,146,42,0.3);">02</span>
+          <div>
+            <h3 class="display font-bold text-xl mb-2" style="color: var(--bone);">Documented From the Start</h3>
+            <p style="color: rgba(240,235,224,0.70);" class="leading-relaxed">
+              Before fabrication begins, each project is researched and documented for historical correctness. Every screw, lock bolt, inlay, and fitting is accounted for.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <span class="display font-bold shrink-0"
+                style="font-size: 3rem; line-height: 1; color: rgba(196,146,42,0.3);">03</span>
+          <div>
+            <h3 class="display font-bold text-xl mb-2" style="color: var(--bone);">60 Combined Years</h3>
+            <p style="color: rgba(240,235,224,0.70);" class="leading-relaxed">
+              Brad and Shane Emig have been building together since the early 1990s. Their Arms Making Workshops have trained students to build period-accurate rifles from raw stock.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 4: SECONDARY — reversed split, story angle
+     ============================================================ -->
+<section style="background-color: var(--bone);" class="py-24 px-6">
+  <div style="max-width: 1280px; margin: 0 auto;"
+       class="grid md:grid-cols-2 gap-16 items-center">
+    <!-- Text left -->
+    <div class="fade-up">
+      <h2 class="display font-bold leading-tight mb-6"
+          style="color: var(--ink); font-size: clamp(2rem, 4vw, 3rem);">
+        Setting the Standard<br>Since 1985
+      </h2>
+      <p class="text-lg leading-relaxed mb-5" style="color: var(--body);">
+        The Yorktown Rifle has been in production since 1985. It set the standard for quality and authenticity at a price that makes this craft accessible. Since then, the shop has developed the Pennsylvania Mountain Rifle, Colonial Virginia Rifle, Colonial American Fowler, Colonial American Pistol, and the Boys and Ladies Rifle.
+      </p>
+      <p class="leading-relaxed mb-8" style="color: var(--body);">
+        Each model is based on a documented surviving example. The Colonial American Fowler derives from a gun believed made by John Newcomer in Hempfield Township, Lancaster County, circa 1760-1780. The documentation matters to them.
+      </p>
+      <a href="https://cabincreek.net/revspec/semi-custom-guns/"
+         style="border: 2px solid var(--ink); color: var(--ink);"
+         class="inline-flex items-center justify-center px-8 py-3 text-sm font-bold tracking-wide rounded-[2px] hover:bg-[#1B1B1B] hover:text-[#F5F0E8] transition-colors">
+        View the Full Line
+      </a>
+    </div>
+    <!-- Image right -->
+    <div class="fade-up">
+      <img src="https://cabincreek.net/wp-content/uploads/2013/09/shop5.jpg"
+           alt="Cabin Creek Muzzleloading shop interior, Hallam Pennsylvania"
+           class="w-full rounded-[2px]"
+           style="height: 540px; object-fit: cover;">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 5: GALLERY — breaks the zigzag
+     ============================================================ -->
+<section id="gallery" style="background-color: var(--green);" class="py-24 px-6">
+  <div style="max-width: 1280px; margin: 0 auto;">
+    <div class="mb-12 fade-up">
+      <h2 class="display font-bold" style="color: var(--bone); font-size: clamp(1.8rem, 3.5vw, 2.5rem);">
+        From the Shop
+      </h2>
+      <p class="mt-2" style="color: rgba(240,235,224,0.55);">Rifles, pistols, fowling pieces, and accoutrements</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+      <div class="fade-up overflow-hidden rounded-[2px]" style="aspect-ratio: 1;">
+        <img src="https://cabincreek.net/wp-content/uploads/2013/09/shop6.jpg"
+             alt="Cabin Creek Muzzleloading workshop"
+             class="w-full h-full hover:scale-105 transition-transform duration-700"
+             style="object-fit: cover;">
+      </div>
+      <div class="fade-up overflow-hidden rounded-[2px]" style="aspect-ratio: 1;">
+        <img src="https://cabincreek.net/wp-content/uploads/2000/11/IMG_8153.jpg"
+             alt="Pennsylvania Mountain Rifle by Cabin Creek Muzzleloading"
+             class="w-full h-full hover:scale-105 transition-transform duration-700"
+             style="object-fit: cover;">
+      </div>
+      <div class="fade-up overflow-hidden rounded-[2px]" style="aspect-ratio: 1;">
+        <img src="https://cabincreek.net/wp-content/uploads/2000/11/IMG_40811.jpg"
+             alt="Colonial Virginia Rifle by Cabin Creek Muzzleloading"
+             class="w-full h-full hover:scale-105 transition-transform duration-700"
+             style="object-fit: cover;">
+      </div>
+      <div class="fade-up col-span-2 overflow-hidden rounded-[2px]" style="aspect-ratio: 16/9;">
+        <img src="https://cabincreek.net/wp-content/uploads/2000/11/IMG_2583.jpg"
+             alt="Colonial American Fowler by Cabin Creek Muzzleloading"
+             class="w-full h-full hover:scale-105 transition-transform duration-700"
+             style="object-fit: cover;">
+      </div>
+      <div class="fade-up overflow-hidden rounded-[2px]" style="aspect-ratio: 16/9;">
+        <img src="https://cabincreek.net/wp-content/uploads/2014/06/IMG_0161.jpg"
+             alt="Colonial American Pistol by Cabin Creek Muzzleloading"
+             class="w-full h-full hover:scale-105 transition-transform duration-700"
+             style="object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 6: TESTIMONIALS
+     ============================================================ -->
+<section id="field-reports" style="background-color: var(--bone);" class="py-24 px-6">
+  <div style="max-width: 1280px; margin: 0 auto;">
+    <div class="mb-12 fade-up">
+      <h2 class="display font-bold" style="color: var(--ink); font-size: clamp(1.8rem, 3.5vw, 2.5rem);">
+        Field Reports
+      </h2>
+      <div class="mt-4 flex flex-wrap gap-8" style="color: var(--body);">
+        <span class="text-sm font-bold">Hallam, Pennsylvania</span>
+        <span class="text-sm font-bold">Since 1999</span>
+        <span class="text-sm font-bold">Nearly 60 combined years</span>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="fade-up p-8 rounded-[2px]" style="background-color: var(--bone2);">
+        <p class="text-lg leading-relaxed mb-6" style="color: var(--body);">
+          "Ian had this nice doe standing broadside at 35 yards. He is hunting with his .54 caliber Pennsylvania Mountain Rifle that he picked up last year."
+        </p>
+        <p class="text-sm font-bold tracking-wide" style="color: var(--ink);">Ian</p>
+        <p class="text-xs mt-1" style="color: rgba(61,48,40,0.55);">.54 Caliber Pennsylvania Mountain Rifle</p>
+      </div>
+      <div class="fade-up p-8 rounded-[2px]" style="background-color: var(--bone2);">
+        <p class="text-lg leading-relaxed mb-6" style="color: var(--body);">
+          "Thom Stein shot this monster 12 point with his .54 caliber flintlock built by Brad. Thom said he weighed in at 200lbs. Congratulations to Thom on a beautiful buck."
+        </p>
+        <p class="text-sm font-bold tracking-wide" style="color: var(--ink);">Thom Stein</p>
+        <p class="text-xs mt-1" style="color: rgba(61,48,40,0.55);">.54 Caliber Custom Flintlock</p>
+      </div>
+      <div class="fade-up p-8 rounded-[2px]" style="background-color: var(--bone2);">
+        <p class="text-lg leading-relaxed mb-6" style="color: var(--body);">
+          "Congratulations to Eric for his 1st Place ribbon at Dixons Gunmakers Fair for the excellent job he did on his first ever flintlock build."
+        </p>
+        <p class="text-sm font-bold tracking-wide" style="color: var(--ink);">Eric</p>
+        <p class="text-xs mt-1" style="color: rgba(61,48,40,0.55);">Colonial American Pistol, Arms Making Workshop</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION 7: CTA STRIP
+     ============================================================ -->
+<section style="background-color: var(--brass);" class="py-16 px-6">
+  <div style="max-width: 1280px; margin: 0 auto;"
+       class="flex flex-col md:flex-row items-center justify-between gap-8 fade-up">
+    <div>
+      <h2 class="display font-bold text-3xl mb-2" style="color: var(--green);">
+        Ready to discuss a build?
+      </h2>
+      <p class="text-lg" style="color: rgba(27,47,30,0.72);">
+        Brad and Shane take calls directly. Ask about specifications, lead times, and current availability.
+      </p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+      <a href="tel:7177575841"
+         style="background-color: var(--green); color: var(--bone);"
+         class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold tracking-wide rounded-[2px] hover:opacity-90 transition-opacity whitespace-nowrap">
+        717-757-5841
+      </a>
+      <a href="mailto:CabinCreekMuzzleloading@gmail.com"
+         style="border: 2px solid var(--green); color: var(--green);"
+         class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-wide rounded-[2px] hover:bg-[#1B2F1E] hover:text-[#F5F0E8] transition-colors whitespace-nowrap">
+        Send a Note
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer style="background-color: var(--green);" class="py-16 px-6">
+  <div style="max-width: 1280px; margin: 0 auto;"
+       class="grid md:grid-cols-4 gap-12">
+    <div class="md:col-span-2">
+      <p class="display font-bold text-xl mb-3" style="color: var(--bone);">Cabin Creek Muzzleloading</p>
+      <p style="color: rgba(240,235,224,0.58);" class="leading-relaxed mb-4">
+        A full-time, professional 18th century gunsmithing shop. Brad and Shane Emig. Father and son. Hallam, Pennsylvania.
+      </p>
+      <p class="text-sm" style="color: rgba(240,235,224,0.35);">
+        Copyright Cabin Creek Muzzleloading 1999-2026
+      </p>
+    </div>
+    <div>
+      <p class="text-xs font-bold tracking-widest uppercase mb-4" style="color: var(--brass);">Products</p>
+      <ul class="space-y-2">
+        <li><a href="https://cabincreek.net/revspec/custom-guns/"
+               style="color: rgba(240,235,224,0.58);"
+               class="text-sm hover:opacity-100 transition-opacity">Traditional Hand Made Rifles</a></li>
+        <li><a href="https://cabincreek.net/revspec/semi-custom-guns/"
+               style="color: rgba(240,235,224,0.58);"
+               class="text-sm hover:opacity-100 transition-opacity">Rifles, Pistols &amp; Custom Kits</a></li>
+        <li><a href="https://cabincreek.net/revspec/accouterments/"
+               style="color: rgba(240,235,224,0.58);"
+               class="text-sm hover:opacity-100 transition-opacity">Accouterments &amp; Tools</a></li>
+        <li><a href="https://cabincreek.net/revspec/custom-knives/"
+               style="color: rgba(240,235,224,0.58);"
+               class="text-sm hover:opacity-100 transition-opacity">Custom Hand Forged Knives</a></li>
+        <li><a href="https://cabincreek.net/revspec/current/"
+               style="color: rgba(240,235,224,0.58);"
+               class="text-sm hover:opacity-100 transition-opacity">Available Now</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs font-bold tracking-widest uppercase mb-4" style="color: var(--brass);">Contact</p>
+      <ul class="space-y-2" style="color: rgba(240,235,224,0.58);">
+        <li class="text-sm">50 West Beaver Street</li>
+        <li class="text-sm">Hallam, Pennsylvania 17406</li>
+        <li class="mt-3">
+          <a href="tel:7177575841" style="color: rgba(240,235,224,0.58);"
+             class="text-sm hover:opacity-100 transition-opacity">717-757-5841</a>
+        </li>
+        <li>
+          <a href="mailto:CabinCreekMuzzleloading@gmail.com"
+             style="color: rgba(240,235,224,0.58);"
+             class="text-sm hover:opacity-100 transition-opacity">CabinCreekMuzzleloading@gmail.com</a>
+        </li>
+        <li class="mt-3 text-xs" style="color: rgba(240,235,224,0.35);">By appointment only</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('in');
+    }),
+    { threshold: 0.12 }
+  );
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shallow Point Charters | Tampa Bay Fishing Since 1988</title>
+<meta name="description" content="Book a Tampa Bay fishing charter with Captain David Beede. Redfish, snook, sea trout, cobia and more. Family friendly since 1988.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: { 900: '#0B1C2E', 800: '#102a3f', 700: '#153550' },
+        steel: { 500: '#3A6D8C', 400: '#5A8DAF' },
+        gold: { 400: '#C9A96E', 500: '#B8964F' },
+        bone: '#F5F0EB',
+        ink: '#0f172a',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
+      }
+    }
+  }
+}
+</script>
+<style>
+body { font-family: 'Inter', sans-serif; }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</head>
+<body class="bg-navy-900 text-white antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-navy-900/90 backdrop-blur-md border-b border-steel-500/20">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="font-display text-xl tracking-tight text-white">Shallow Point</span>
+    </div>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-bone/80">
+      <a href="#trips" class="hover:text-gold-400 transition-colors">Trips</a>
+      <a href="#about" class="hover:text-gold-400 transition-colors">About</a>
+      <a href="#gallery" class="hover:text-gold-400 transition-colors">Gallery</a>
+      <a href="#contact" class="hover:text-gold-400 transition-colors">Contact</a>
+    </div>
+    <a href="tel:813-758-3406" class="hidden md:inline-flex items-center gap-2 bg-gold-400 text-navy-900 px-5 py-2.5 text-sm font-semibold hover:bg-gold-500 transition-colors">
+      Call (813) 758-3406
+    </a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative min-h-[100dvh] flex items-end pb-16 md:pb-24 pt-32">
+  <div class="absolute inset-0">
+    <img src="https://shallowpointcharters.com/wp-content/uploads/2018/12/main-slide2-1-min.jpg" alt="Tampa Bay fishing charter at dawn" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/60 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-2xl reveal" id="hero-content">
+      <p class="text-gold-400 font-semibold tracking-widest text-sm uppercase mb-4">Tampa Bay, Florida</p>
+      <h1 class="font-display text-4xl md:text-6xl font-bold leading-tight mb-6">
+        Fishing Charters<br>Since 1988
+      </h1>
+      <p class="text-bone/90 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
+        Captain David Beede has guided anglers across Tampa Bay for over three decades. Inshore and nearshore trips for redfish, snook, seatrout, cobia and more.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="tel:813-758-3406" class="inline-flex items-center gap-2 bg-gold-400 text-navy-900 px-6 py-3 font-semibold hover:bg-gold-500 transition-colors">
+          Book Your Trip
+        </a>
+        <a href="#trips" class="inline-flex items-center gap-2 border border-white/30 px-6 py-3 font-medium hover:bg-white/10 transition-colors">
+          View Trip Options
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Primary Section -->
+<section class="py-20 md:py-32 bg-navy-900" id="trips">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <img src="https://shallowpointcharters.com/wp-content/uploads/2018/12/main-slide1-min.jpg" alt="Redfish caught on Tampa Bay charter" class="w-full h-[480px] object-cover">
+      </div>
+      <div class="reveal">
+        <p class="text-steel-400 font-semibold text-sm tracking-widest uppercase mb-4">Trip Options</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 leading-tight">
+          Every trip is built around the fish and the tide.
+        </h2>
+        <div class="space-y-8">
+          <div class="flex gap-4">
+            <span class="text-gold-400 font-display text-3xl font-bold">01</span>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Half-Day Inshore</h3>
+              <p class="text-bone/70">Four hours of dedicated fishing inside Tampa Bay. Perfect for families and first-timers.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold-400 font-display text-3xl font-bold">02</span>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Nearshore Adventure</h3>
+              <p class="text-bone/70">Six to eight hours targeting cobia, kingfish and tarpon along the beaches.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold-400 font-display text-3xl font-bold">03</span>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Kids Fishing Camp</h3>
+              <p class="text-bone/70">Summer sessions designed for young anglers. Safety, technique and a whole lot of fun.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Secondary Section (reversed split) -->
+<section class="py-20 md:py-32 bg-navy-800" id="about">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1 reveal">
+        <p class="text-steel-400 font-semibold text-sm tracking-widest uppercase mb-4">The Captain</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-6 leading-tight">
+          David Beede knows these waters like his own backyard.
+        </h2>
+        <p class="text-bone/80 leading-relaxed mb-6">
+          David started Shallow Point Charters in 1988, long before Tampa Bay became the fishing destination it is today. He grew up poling the same flats, reading the same mangrove lines and watching the same bait schools that he still chases with clients today.
+        </p>
+        <p class="text-bone/80 leading-relaxed mb-8">
+          Whether you are after your first redfish or a personal best snook, David tailors each trip to the conditions, the season and your experience level. All gear is provided, tackle is top-tier, and the goal is always the same: fish.
+        </p>
+        <div class="flex items-center gap-6 text-bone/70">
+          <div>
+            <p class="font-display text-2xl font-bold text-gold-400">36+</p>
+            <p class="text-sm">Years Guiding</p>
+          </div>
+          <div class="h-10 w-px bg-white/20"></div>
+          <div>
+            <p class="font-display text-2xl font-bold text-gold-400">Tampa Bay</p>
+            <p class="text-sm">Home Waters</p>
+          </div>
+          <div class="h-10 w-px bg-white/20"></div>
+          <div>
+          <div>
+            <p class="font-display text-2xl font-bold text-gold-400">5-Star</p>
+            <p class="text-sm">TripAdvisor Rated</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 md:order-2 reveal">
+        <img src="https://shallowpointcharters.com/wp-content/uploads/2024/02/IMG_6239-1.jpeg" alt="Captain David Beede with a Tampa Bay snook" class="w-full h-[480px] object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery/Editorial -->
+<section class="py-20 md:py-32 bg-navy-900" id="gallery">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <p class="text-steel-400 font-semibold text-sm tracking-widest uppercase mb-3">On The Water</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold">The morning bite is worth the early alarm.</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="reveal">
+        <img src="https://shallowpointcharters.com/wp-content/uploads/2018/12/main-slide3-min.jpg" alt="Early morning fishing on Tampa Bay" class="w-full h-64 md:h-80 object-cover">
+      </div>
+      <div class="reveal md:col-span-2">
+        <img src="https://shallowpointcharters.com/wp-content/uploads/2024/08/IMG_7215.jpeg" alt="Redfish caught during a charter" class="w-full h-64 md:h-80 object-cover">
+      </div>
+      <div class="reveal md:col-span-2">
+        <img src="https://shallowpointcharters.com/wp-content/uploads/2022/05/097ED2AF-E347-4F0C-B685-7BF57BD86252.jpeg" alt="Anglers on a Tampa Bay charter" class="w-full h-64 md:h-80 object-cover">
+      </div>
+      <div class="reveal">
+        <img src="https://shallowpointcharters.com/wp-content/uploads/2018/12/slide3.jpg" alt="Tampa Bay shoreline at sunrise" class="w-full h-64 md:h-80 object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials / Credibility -->
+<section class="py-20 md:py-32 bg-navy-800">
+  <div class="max-w-4xl mx-auto px-6 text-center reveal">
+    <svg class="w-10 h-10 text-gold-400 mx-auto mb-8" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+    <p class="font-display text-2xl md:text-3xl font-bold leading-relaxed mb-8 text-bone">
+      We caught more fish in one morning with Captain David than we had in our entire trip. He knows exactly where the schools are moving.
+    </p>
+    <div class="flex items-center justify-center gap-4 text-bone/80">
+      <div>
+        <p class="font-semibold text-white">TripAdvisor Review</p>
+        <p class="text-sm">Verified Guest, Tampa Bay Fishing Charter</p>
+      </div>
+    </div>
+    <div class="mt-12 flex items-center justify-center gap-12 text-bone/70">
+      <div>
+        <p class="font-display text-3xl font-bold text-gold-400">36+</p>
+        <p class="text-sm">Years Guiding</p>
+      </div>
+      <div>
+        <p class="font-display text-3xl font-bold text-gold-400">1988</p>
+        <p class="text-sm">Founded</p>
+      </div>
+      <div>
+        <p class="font-display text-3xl font-bold text-gold-400">Tampa</p>
+        <p class="text-sm">Bay & Nearshore</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Strip -->
+<section class="py-16 bg-gold-400" id="contact">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-navy-900 mb-4">The best tides wait for no one.</h2>
+    <p class="text-navy-900/80 text-lg mb-8 max-w-2xl mx-auto">Call Captain David directly to check availability and book your trip. Every charter is customized to the season and what you want to catch.</p>
+    <a href="tel:813-758-3406" class="inline-flex items-center gap-3 bg-navy-900 text-white px-8 py-4 font-semibold text-lg hover:bg-navy-800 transition-colors">
+      Call (813) 758-3406
+    </a>
+    <p class="text-navy-900/60 text-sm mt-4">Or email: david@shallowpointcharters.com</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy-900 border-t border-white/10 py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-10">
+      <div>
+        <p class="font-display text-xl font-bold mb-4">Shallow Point Charters</p>
+        <p class="text-bone/60 text-sm leading-relaxed">Tampa Bay, Florida fishing charters since 1988. Inshore and nearshore trips with Captain David Beede.</p>
+      </div>
+      <div>
+        <p class="font-semibold mb-4 text-sm tracking-widest uppercase text-bone/80">Trips</p>
+        <ul class="space-y-2 text-sm text-bone/60">
+          <li><a href="#" class="hover:text-gold-400 transition-colors">Half-Day Inshore</a></li>
+          <li><a href="#" class="hover:text-gold-400 transition-colors">Nearshore Adventure</a></li>
+          <li><a href="#" class="hover:text-gold-400 transition-colors">Kids Fishing Camp</a></li>
+          <li><a href="#" class="hover:text-gold-400 transition-colors">Rates</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-4 text-sm tracking-widest uppercase text-bone/80">Explore</p>
+        <ul class="space-y-2 text-sm text-bone/60">
+          <li><a href="#" class="hover:text-gold-400 transition-colors">What to Expect</a></li>
+          <li><a href="#" class="hover:text-gold-400 transition-colors">Photo Gallery</a></li>
+          <li><a href="#" class="hover:text-gold-400 transition-colors">Awards</a></li>
+          <li><a href="#" class="hover:text-gold-400 transition-colors">Trip Options</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-4 text-sm tracking-widest uppercase text-bone/80">Contact</p>
+        <ul class="space-y-2 text-sm text-bone/60">
+          <li><a href="tel:813-758-3406" class="hover:text-gold-400 transition-colors">(813) 758-3406</a></li>
+          <li><a href="mailto:david@shallowpointcharters.com" class="hover:text-gold-400 transition-colors">david@shallowpointcharters.com</a></li>
+          <li>Tampa Bay, Florida</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-white/10 text-center text-sm text-bone/40">
+      &copy; 2026 Shallow Point Charters. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

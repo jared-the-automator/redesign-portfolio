@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean Street Shipyard | Classic Boat Restoration and Marina, Tampa FL Since 1843</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#070f1d',
+              900: '#0b1425',
+              800: '#0e1e36',
+              700: '#152843',
+              600: '#1d3a5e',
+            },
+            steel: {
+              300: '#93c5e0',
+              400: '#6aaed2',
+              500: '#4b8fb5',
+              600: '#3a7296',
+              700: '#2a5570',
+            },
+            bone: '#d5e3ef',
+            mist: '#7ea5bf',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body:    ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    * { border-radius: 2px; }
+    nav, nav * { border-radius: 0; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+
+    .reveal       { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal-left  { opacity: 0; transform: translateX(-36px); transition: opacity 0.70s ease, transform 0.70s ease; }
+    .reveal-right { opacity: 0; transform: translateX(36px);  transition: opacity 0.70s ease, transform 0.70s ease; }
+    .in-view { opacity: 1 !important; transform: none !important; }
+
+    .num {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: rgba(75,143,181,0.16);
+      line-height: 1;
+      user-select: none;
+      min-width: 2.5rem;
+    }
+  </style>
+</head>
+<body class="bg-navy-900 text-bone" style="font-family:'Inter',system-ui,sans-serif;">
+
+
+<!-- ============================================================
+     NAV
+============================================================ -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-[rgba(7,15,29,0.94)] backdrop-blur-sm border-b border-[rgba(255,255,255,0.08)]" style="border-radius:0;">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+
+    <div class="flex items-center gap-4">
+      <span class="font-display text-[1.2rem] font-bold text-white leading-none tracking-tight">Jean Street Shipyard</span>
+      <span class="hidden sm:block text-[10px] font-semibold tracking-[0.2em] text-steel-400 uppercase border-l border-navy-600 pl-4">Est. 1843</span>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8 text-[13px] font-medium text-mist">
+      <a href="#restoration" class="hover:text-white transition-colors">Restoration</a>
+      <a href="#history"     class="hover:text-white transition-colors">History</a>
+      <a href="#marina"      class="hover:text-white transition-colors">Marina</a>
+      <a href="#store"       class="hover:text-white transition-colors">Ship's Store</a>
+    </div>
+
+    <a href="tel:+18132392526"
+       class="bg-steel-500 hover:bg-steel-400 text-white text-[13px] font-semibold px-5 py-2.5 transition-colors"
+       style="border-radius:2px;">
+      (813) 239-2526
+    </a>
+
+  </div>
+</nav>
+
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="relative min-h-[100dvh] flex items-end" style="padding-bottom: clamp(4.5rem, 11vh, 7.5rem);">
+
+  <div class="absolute inset-0 overflow-hidden" style="border-radius:0;">
+    <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/GateSign-1.jpg"
+         alt="Jean Street Shipyard entrance, Tampa FL, established 1843"
+         class="w-full h-full object-cover object-center" style="border-radius:0;">
+    <div class="absolute inset-0" style="background:linear-gradient(108deg, rgba(7,15,29,0.96) 0%, rgba(7,15,29,0.78) 52%, rgba(7,15,29,0.28) 100%); border-radius:0;"></div>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-6 w-full">
+    <div style="max-width:530px;">
+
+      <p class="text-[11px] font-semibold tracking-[0.22em] text-steel-400 uppercase mb-6">
+        Tampa, FL &nbsp;&middot;&nbsp; Hillsborough River &nbsp;&middot;&nbsp; Since 1843
+      </p>
+
+      <h1 class="font-display font-bold text-white leading-[1.03] mb-7"
+          style="font-size: clamp(3rem, 6.5vw, 5.25rem);">
+        Florida's<br>Oldest<br>Shipyard
+      </h1>
+
+      <p class="text-[rgba(213,227,239,0.72)] text-[1.05rem] leading-relaxed mb-10" style="max-width:410px;">
+        Classic and antique boat restoration on the Hillsborough River. Full service marina. A ship's store that has supplied Tampa Bay boaters for over 180 years.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="#restoration"
+           class="bg-steel-500 hover:bg-steel-400 text-white text-[14px] font-semibold px-7 py-3.5 transition-colors"
+           style="border-radius:2px;">
+          Start Your Restoration
+        </a>
+        <a href="#marina"
+           class="border border-[rgba(213,227,239,0.28)] hover:border-[rgba(213,227,239,0.60)] text-[rgba(213,227,239,0.72)] hover:text-white text-[14px] font-semibold px-7 py-3.5 transition-colors"
+           style="border-radius:2px;">
+          Marina Availability
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     HERITAGE BAND
+============================================================ -->
+<section class="bg-navy-800 border-y border-[rgba(255,255,255,0.07)] py-6">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="w-6 h-[2px] bg-steel-500 mx-auto mb-3" style="border-radius:1px;"></div>
+        <p class="font-display text-[1.9rem] font-bold text-white">1843</p>
+        <p class="text-[11px] text-mist tracking-widest uppercase mt-1">Founded</p>
+      </div>
+      <div>
+        <div class="w-6 h-[2px] bg-steel-500 mx-auto mb-3" style="border-radius:1px;"></div>
+        <p class="font-display text-[1.9rem] font-bold text-white">183</p>
+        <p class="text-[11px] text-mist tracking-widest uppercase mt-1">Years at This Address</p>
+      </div>
+      <div>
+        <div class="w-6 h-[2px] bg-steel-500 mx-auto mb-3" style="border-radius:1px;"></div>
+        <p class="font-display text-[1.9rem] font-bold text-white">24&ndash;80 ft</p>
+        <p class="text-[11px] text-mist tracking-widest uppercase mt-1">Vessel Class</p>
+      </div>
+      <div>
+        <div class="w-6 h-[2px] bg-steel-500 mx-auto mb-3" style="border-radius:1px;"></div>
+        <p class="font-display text-[1.9rem] font-bold text-white">No. 1</p>
+        <p class="text-[11px] text-mist tracking-widest uppercase mt-1">Oldest in Florida</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     RESTORATION SERVICES  (split 1 of 2)
+============================================================ -->
+<section id="restoration" class="py-28 bg-navy-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div class="reveal-left">
+        <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/Repair-57.jpg"
+             alt="Classic wooden boat hull under restoration in the Jean Street Shipyard wood shop"
+             class="w-full object-cover" style="aspect-ratio:4/3; border-radius:2px;">
+      </div>
+
+      <div class="reveal-right">
+        <p class="text-[11px] font-semibold tracking-[0.2em] text-steel-400 uppercase mb-5">Restoration</p>
+        <h2 class="font-display font-bold text-white leading-[1.05] mb-7"
+            style="font-size: clamp(2.3rem, 4vw, 3.25rem);">
+          Antique and Classic<br>Boat Restoration
+        </h2>
+        <p class="text-mist leading-relaxed mb-10">
+          We specialize in classic-era boats and antique runabouts. Wood work, metal shaping, mechanical and electrical systems, interior and exterior finishes. Small repairs to complete restorations, with planning and consultation from the start.
+        </p>
+
+        <div class="space-y-9">
+          <div class="flex gap-6 items-start">
+            <span class="num shrink-0">01</span>
+            <div style="padding-top:0.55rem;">
+              <h3 class="text-white font-semibold text-[15px] mb-2">Wood Shop and Metal Fabrication</h3>
+              <p class="text-mist text-[14px] leading-relaxed">Hull planking, decks, and structural work built to original specifications. Full in-house fabrication. Classic-era knowledge most shops don't carry.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start">
+            <span class="num shrink-0">02</span>
+            <div style="padding-top:0.55rem;">
+              <h3 class="text-white font-semibold text-[15px] mb-2">Mechanical and Electrical</h3>
+              <p class="text-mist text-[14px] leading-relaxed">Engine repowers and full system replacements. Gas and diesel. Complete accessories and electronics installation, straight from the yard.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start">
+            <span class="num shrink-0">03</span>
+            <div style="padding-top:0.55rem;">
+              <h3 class="text-white font-semibold text-[15px] mb-2">Long-Term Restoration Projects</h3>
+              <p class="text-mist text-[14px] leading-relaxed">The yard is set up for multi-month work. We schedule around your budget and walk through the whole project from first assessment to launch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     HISTORY  (split 2 of 2, reversed -- gallery breaks the zigzag after this)
+============================================================ -->
+<section id="history" class="py-28 bg-navy-800">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div class="reveal order-2 lg:order-1">
+        <h2 class="font-display font-bold text-white leading-[1.05] mb-7"
+            style="font-size: clamp(2.3rem, 4vw, 3.25rem);">
+          Two Years Before<br>Florida Was a State
+        </h2>
+        <p class="text-mist leading-relaxed mb-5">
+          Jean Street Shipyard opened in 1843, still at the same address on the Hillsborough River. That makes it Florida's oldest shipyard, and one of the longest-running boatyards in the South.
+        </p>
+        <p class="text-mist leading-relaxed mb-10">
+          It started as a hardware supplier for local boatbuilders. Over 183 years it grew into a full repair, refit, and restoration yard with a wood shop, metal fabrication shop, and a ship's store that still carries the marine hardware Tampa Bay boaters have relied on for generations.
+        </p>
+        <p class="font-display text-[1.1rem] italic text-[rgba(213,227,239,0.65)] leading-relaxed">
+          "We have been in the same place, doing the same thing since 1843."
+        </p>
+      </div>
+
+      <div class="reveal-right order-1 lg:order-2">
+        <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/AboutText-29.jpg"
+             alt="The Jean Street Shipyard wood shop interior, Tampa, FL"
+             class="w-full object-cover" style="aspect-ratio:4/3; border-radius:2px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     GALLERY  (layout break, no more consecutive splits)
+============================================================ -->
+<section class="py-28 bg-navy-900">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="reveal mb-12">
+      <h2 class="font-display font-bold text-white leading-tight"
+          style="font-size: clamp(2rem, 3.5vw, 2.75rem);">
+        Restoration Work
+      </h2>
+      <p class="text-mist mt-3 max-w-lg leading-relaxed">
+        Classic-era boats documented through every stage, from stripped hull to finished launch.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+      <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/Repair-7.jpg"
+           alt="Wooden boat hull stripped and prepared for structural wood work"
+           class="w-full object-cover reveal" style="aspect-ratio:1/1; border-radius:2px;">
+      <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/Repair-22.jpg"
+           alt="Antique runabout receiving varnish and finish restoration"
+           class="w-full object-cover reveal" style="aspect-ratio:1/1; border-radius:2px; transition-delay:0.1s;">
+      <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/Repair-27.jpg"
+           alt="Classic wooden boat on dry dock at Jean Street Shipyard"
+           class="w-full object-cover reveal" style="aspect-ratio:1/1; border-radius:2px; transition-delay:0.2s;">
+      <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/Repair-43.jpg"
+           alt="Hull planking repair and structural wood work in progress"
+           class="w-full object-cover reveal" style="aspect-ratio:1/1; border-radius:2px; transition-delay:0.05s;">
+      <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/AboutText-7.jpg"
+           alt="Jean Street Shipyard interior workspace and tools"
+           class="w-full object-cover reveal" style="aspect-ratio:1/1; border-radius:2px; transition-delay:0.15s;">
+      <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/Repair-55.jpg"
+           alt="Finished restoration work on a classic wooden vessel"
+           class="w-full object-cover reveal" style="aspect-ratio:1/1; border-radius:2px; transition-delay:0.25s;">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     MARINA
+============================================================ -->
+<section id="marina" class="py-28 bg-navy-800">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid lg:grid-cols-[2fr_3fr] gap-14 items-start">
+
+      <div class="reveal">
+        <p class="text-[11px] font-semibold tracking-[0.2em] text-steel-400 uppercase mb-5">Marina</p>
+        <h2 class="font-display font-bold text-white leading-[1.07] mb-7"
+            style="font-size: clamp(2rem, 3.5vw, 2.7rem);">
+          Full Service Marina<br>on the Hillsborough River
+        </h2>
+        <p class="text-mist leading-relaxed mb-8">
+          Wet slips for vessels 24 to 80 feet. Live-aboard available. Secure, gated facility with 24-hour access for registered customers. Four miles from Tampa Bay.
+        </p>
+        <ul class="space-y-3 text-[14px]">
+          <li class="flex items-start gap-3 text-mist">
+            <span class="mt-2 w-[5px] h-[5px] bg-steel-500 shrink-0" style="border-radius:50%;"></span>
+            Wet slips and dry storage
+          </li>
+          <li class="flex items-start gap-3 text-mist">
+            <span class="mt-2 w-[5px] h-[5px] bg-steel-500 shrink-0" style="border-radius:50%;"></span>
+            Live-aboard accommodations
+          </li>
+          <li class="flex items-start gap-3 text-mist">
+            <span class="mt-2 w-[5px] h-[5px] bg-steel-500 shrink-0" style="border-radius:50%;"></span>
+            Showers and laundry on site
+          </li>
+          <li class="flex items-start gap-3 text-mist">
+            <span class="mt-2 w-[5px] h-[5px] bg-steel-500 shrink-0" style="border-radius:50%;"></span>
+            Self-work yard for DIY projects
+          </li>
+          <li class="flex items-start gap-3 text-mist">
+            <span class="mt-2 w-[5px] h-[5px] bg-steel-500 shrink-0" style="border-radius:50%;"></span>
+            Haul-outs and bottom work
+          </li>
+        </ul>
+        <div class="mt-10">
+          <a href="tel:+18132392526"
+             class="inline-block bg-steel-500 hover:bg-steel-400 text-white text-[14px] font-semibold px-7 py-3.5 transition-colors"
+             style="border-radius:2px;">
+            Ask About Availability
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal-right flex flex-col gap-2">
+        <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/MarinaText-4.jpg"
+             alt="Jean Street Shipyard marina slips on the Hillsborough River, Tampa"
+             class="w-full object-cover" style="aspect-ratio:16/10; border-radius:2px;">
+        <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/MarinaText-2.jpg"
+             alt="Boats docked at Jean Street Shipyard with Tampa skyline in distance"
+             class="w-full object-cover" style="aspect-ratio:16/7; border-radius:2px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CREDIBILITY
+============================================================ -->
+<section class="py-24 bg-navy-950">
+  <div class="max-w-3xl mx-auto px-6 text-center reveal">
+    <div class="w-10 h-[2px] bg-steel-500 mx-auto mb-10" style="border-radius:1px;"></div>
+    <p class="font-display italic text-[rgba(213,227,239,0.82)] leading-[1.55]"
+       style="font-size: clamp(1.35rem, 2.5vw, 1.85rem);">
+      "We only sell and endorse the products that we use in our own shop and on our own boats. We have been around long enough to know what will work and what does not."
+    </p>
+    <p class="text-mist text-[12px] tracking-widest uppercase mt-7">Jean Street Shipyard, Tampa, FL</p>
+    <div class="mt-14 grid grid-cols-3 gap-6 max-w-[440px] mx-auto">
+      <div>
+        <p class="font-display text-[1.9rem] font-bold text-steel-400">1843</p>
+        <p class="text-mist text-[11px] mt-1">Established</p>
+      </div>
+      <div>
+        <p class="font-display text-[1.9rem] font-bold text-steel-400">Tampa</p>
+        <p class="text-mist text-[11px] mt-1">Hillsborough River</p>
+      </div>
+      <div>
+        <p class="font-display text-[1.9rem] font-bold text-steel-400">No. 1</p>
+        <p class="text-mist text-[11px] mt-1">Oldest in Florida</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SHIP'S STORE
+============================================================ -->
+<section id="store" class="py-28 bg-navy-800">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid lg:grid-cols-[3fr_2fr] gap-14 items-center">
+
+      <div class="reveal">
+        <h2 class="font-display font-bold text-white leading-[1.07] mb-7"
+            style="font-size: clamp(2rem, 3.5vw, 2.7rem);">
+          Marine Hardware<br>In Stock at the Yard
+        </h2>
+        <p class="text-mist leading-relaxed mb-5">
+          Jean Street is an authorized Seachoice dealer and stocks thousands of marine items at the shipyard. You speak with someone who has used the product, not a call center reading from a card.
+        </p>
+        <p class="text-mist leading-relaxed mb-10">
+          No-hassle returns. Real customer support. We handle the manufacturer warranty for you. If it is not in stock, we locate and procure it quickly.
+        </p>
+        <a href="https://www.jean-street-shipyard.com"
+           class="inline-block border border-steel-500/50 hover:border-steel-400 hover:bg-steel-500/10 text-white text-[14px] font-semibold px-7 py-3.5 transition-colors"
+           style="border-radius:2px;">
+          Browse the Online Store
+        </a>
+      </div>
+
+      <div class="reveal-right flex flex-col gap-2">
+        <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/store-1.jpg"
+             alt="Jean Street Shipyard ship's store stocked with marine hardware and supplies"
+             class="w-full object-cover" style="aspect-ratio:4/3; border-radius:2px;">
+        <img src="https://jeanstreetshipyard.net/wp-content/uploads/2018/01/store-2.jpg"
+             alt="Marine supplies and fittings at Jean Street Shipyard ship's store"
+             class="w-full object-cover" style="aspect-ratio:16/7; border-radius:2px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CTA STRIP
+============================================================ -->
+<section class="py-24 bg-steel-700">
+  <div class="max-w-6xl mx-auto px-6 text-center reveal">
+    <h2 class="font-display font-bold text-white leading-tight mb-5"
+        style="font-size: clamp(2.3rem, 5vw, 3.75rem);">
+      Ready to Bring Your Boat Back?
+    </h2>
+    <p class="text-[rgba(255,255,255,0.72)] text-[1.05rem] mb-10 max-w-xl mx-auto">
+      Call us, stop by the yard, or send a message. We are at 337 W Jean St on the Hillsborough River, Tampa, FL 33604.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="tel:+18132392526"
+         class="bg-white text-navy-900 hover:bg-bone text-[1rem] font-bold px-8 py-4 transition-colors"
+         style="border-radius:2px;">
+        (813) 239-2526
+      </a>
+      <a href="mailto:johnb@jeanstreetshipyard.com"
+         class="border-2 border-white text-white hover:bg-white hover:text-navy-900 text-[1rem] font-bold px-8 py-4 transition-colors"
+         style="border-radius:2px;">
+        Email Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="bg-navy-950 pt-16 pb-10 border-t border-[rgba(255,255,255,0.07)]">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
+      <div>
+        <p class="font-display text-[1.15rem] font-bold text-white mb-3">Jean Street Shipyard</p>
+        <p class="text-mist text-[13px] leading-relaxed">Florida's oldest shipyard. Still at the original location on the Hillsborough River since 1843.</p>
+      </div>
+      <div>
+        <p class="text-white text-[11px] font-semibold tracking-widest uppercase mb-5">Services</p>
+        <ul class="space-y-2.5 text-mist text-[13px]">
+          <li><a href="#restoration" class="hover:text-white transition-colors">Wooden Boat Restoration</a></li>
+          <li><a href="#restoration" class="hover:text-white transition-colors">Complete Refits</a></li>
+          <li><a href="#restoration" class="hover:text-white transition-colors">Mechanical and Electrical</a></li>
+          <li><a href="#marina"      class="hover:text-white transition-colors">Self-Work Yard</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-white text-[11px] font-semibold tracking-widest uppercase mb-5">Marina</p>
+        <ul class="space-y-2.5 text-mist text-[13px]">
+          <li><a href="#marina" class="hover:text-white transition-colors">Wet Slips</a></li>
+          <li><a href="#marina" class="hover:text-white transition-colors">Dry Storage</a></li>
+          <li><a href="#marina" class="hover:text-white transition-colors">Live-Aboard</a></li>
+          <li><a href="#store"  class="hover:text-white transition-colors">Ship's Store</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-white text-[11px] font-semibold tracking-widest uppercase mb-5">Contact</p>
+        <ul class="space-y-2.5 text-mist text-[13px]">
+          <li>337 W Jean St</li>
+          <li>Tampa, FL 33604</li>
+          <li><a href="tel:+18132392526" class="hover:text-white transition-colors">(813) 239-2526</a></li>
+          <li><a href="mailto:johnb@jeanstreetshipyard.com" class="hover:text-white transition-colors">johnb@jeanstreetshipyard.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-[rgba(255,255,255,0.07)] pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
+      <p class="text-[rgba(126,165,191,0.45)] text-[12px]">Jean Street Shipyard, Tampa, FL. Established 1843.</p>
+      <p class="text-[rgba(126,165,191,0.30)] text-[12px]">Florida's oldest shipyard.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('in-view');
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

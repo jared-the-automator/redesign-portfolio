@@ -63,3 +63,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Reel Florida Fishing Charters](https://jared-the-automator.github.io/redesign-portfolio/crystalriverfishing.com/) | Fishing charters | Crystal River, FL |
 | [The Taxidermy Studio](https://jared-the-automator.github.io/redesign-portfolio/thetaxidermystudio.net/) | Taxidermy studio | Northeastern Pennsylvania |
 | [Trail Saddles by Steele](https://jared-the-automator.github.io/redesign-portfolio/steelesaddle.com/) | Custom trail saddles | McEwen, Tennessee |
+| [Caddo Watershed](https://jared-the-automator.github.io/redesign-portfolio/caddowatershed.com/) | Wooden canoe builder | Gordon, TX |

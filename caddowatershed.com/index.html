@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caddo Watershed - Hand-Built Wooden Canoes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+    @theme {
+      --font-display: 'DM Serif Display', serif;
+      --font-body: 'Lora', serif;
+      --color-cream: #f8f6f1;
+      --color-olive: #6b7c3f;
+      --color-olive-deep: #4a5a2a;
+      --color-espresso: #2c1a0e;
+      --color-espresso-light: #4a3c2e;
+      --color-stone: #8c8578;
+    }
+  </style>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lora', serif; background: #f8f6f1; }
+    .font-display { font-family: 'DM Serif Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.in-view { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.12s; }
+    .reveal-delay-2 { transition-delay: 0.24s; }
+  </style>
+</head>
+<body class="bg-cream text-espresso antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-stone/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-tight text-espresso">Caddo Watershed</a>
+      <div class="hidden md:flex items-center gap-8 text-sm tracking-wide">
+        <a href="#about" class="hover:text-olive transition-colors">About</a>
+        <a href="#canoes" class="hover:text-olive transition-colors">Canoes</a>
+        <a href="#craft" class="hover:text-olive transition-colors">Craft</a>
+        <a href="#contact" class="bg-olive text-cream px-5 py-2 text-sm hover:bg-olive-deep transition-colors">Get a quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <img src="https://i0.wp.com/www.caddowatershed.com/wp-content/uploads/2019/06/IMG_2996.jpg" alt="Starr Bowen working on a wooden canoe in his Texas workshop" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-espresso/80 via-espresso/50 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-16 w-full">
+      <div class="max-w-xl">
+        <p class="text-olive text-sm tracking-[0.2em] uppercase font-medium mb-4">Gordon, Texas</p>
+        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl text-cream leading-[1.1] mb-6">Hand-Built Wooden Canoes, Crafted to Last</h1>
+        <p class="text-cream/80 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">Every canoe is designed and built by Starr Bowen in his Texas workshop, shaped by decades of wilderness paddling.</p>
+        <a href="#canoes" class="inline-block bg-olive text-cream px-8 py-3 text-sm tracking-wide hover:bg-olive-deep transition-colors">Explore canoes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section (asymmetric split) -->
+  <section id="canoes" class="py-20 lg:py-28 max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal">
+        <img src="https://i0.wp.com/www.caddowatershed.com/wp-content/uploads/2019/06/Starr-6.jpg" alt="Starr Bowen showing a completed wooden canoe" class="w-full h-[500px] object-cover" />
+      </div>
+      <div class="reveal reveal-delay-1">
+        <p class="text-olive text-sm tracking-[0.15em] uppercase font-medium mb-4">Built to order</p>
+        <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight mb-6">Three Models, One Craftsman</h2>
+        <p class="text-stone leading-relaxed mb-8">Each canoe is custom built from cedar and poplar, reinforced with fiberglass and epoxy. Starr works directly with every customer to design the perfect canoe.</p>
+        <div class="space-y-6">
+          <div class="flex gap-6">
+            <span class="font-display text-3xl text-olive">01</span>
+            <div>
+              <h3 class="font-display text-xl text-espresso mb-1">Quetico Tripper II</h3>
+              <p class="text-stone text-sm">Carries 650 pounds. Built for Boundary Waters wind, waves, and weather. $4,500.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="font-display text-3xl text-olive">02</span>
+            <div>
+              <h3 class="font-display text-xl text-espresso mb-1">Wee Lassie</h3>
+              <p class="text-stone text-sm">35-pound solo canoe based on J. Henry Rushton designs. Includes Greenland paddle. $3,000.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="font-display text-3xl text-olive">03</span>
+            <div>
+              <h3 class="font-display text-xl text-espresso mb-1">Arkansas Traveler</h3>
+              <p class="text-stone text-sm">17-foot open water racing canoe. $4,500.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (reversed split, story angle) -->
+  <section id="about" class="py-20 lg:py-28 bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="reveal order-2 lg:order-1">
+          <p class="text-olive text-sm tracking-[0.15em] uppercase font-medium mb-4">Our story</p>
+          <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight mb-6">A Lifetime on the Water</h2>
+          <p class="text-stone leading-relaxed mb-4">Starr Bowen learned to canoe as a Boy Scout on the Brazos River. He built his first canoe in Scotland while studying theology, then spent years as a Methodist minister before dedicating himself full-time to the craft.</p>
+          <p class="text-stone leading-relaxed mb-6">Since 2008, Caddo Watershed has built custom canoes and paddles for serious wilderness paddlers across the country. every boat is guaranteed to be treasured for a lifetime.</p>
+          <div class="flex gap-8">
+            <div>
+              <p class="font-display text-3xl text-olive">17</p>
+              <p class="text-stone text-sm">Years building</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl text-olive">2008</p>
+              <p class="text-stone text-sm">Year founded</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1 order-1 lg:order-2">
+          <img src="https://i0.wp.com/www.caddowatershed.com/wp-content/uploads/2023/06/IMG_4947D-scaled.jpeg" alt="Starr Bowen at work in his workshop shaping a cedar canoe" class="w-full h-[500px] object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section class="py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="reveal mb-12">
+        <p class="text-olive text-sm tracking-[0.15em] uppercase font-medium mb-4">Gallery</p>
+        <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight">From Workshop to Wilderness</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="reveal">
+          <img src="https://i0.wp.com/www.caddowatershed.com/wp-content/uploads/2025/05/IMG_7583.jpg" alt="Wooden canoes in the workshop" class="w-full h-80 object-cover" />
+        </div>
+        <div class="reveal reveal-delay-1">
+          <img src="https://i0.wp.com/www.caddowatershed.com/wp-content/uploads/2019/07/Starr_TexasMonthly.jpg" alt="Starr Bowen featured in Texas Monthly magazine" class="w-full h-80 object-cover object-top" />
+        </div>
+        <div class="reveal reveal-delay-2">
+          <img src="https://www.caddowatershed.com/wp-content/gallery/2/IMG_2928.JPG" alt="Canoe on a calm lake at sunset" class="w-full h-80 object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Credibility -->
+  <section class="py-20 lg:py-28 bg-cream">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <div class="reveal">
+        <p class="text-olive text-sm tracking-[0.15em] uppercase font-medium mb-4">Featured in</p>
+        <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight mb-6">Texas Monthly</h2>
+        <p class="text-stone leading-relaxed mb-8">Caddo Watershed has been featured in Texas Monthly magazine for its dedication to Texas craftsmanship and the art of wooden canoe building.</p>
+      </div>
+      <div class="reveal reveal-delay-1 grid md:grid-cols-3 gap-8 border-t border-stone/20 pt-12">
+        <div>
+          <p class="font-display text-2xl text-olive mb-1">2008</p>
+          <p class="text-stone text-sm">Founded in Gordon, Texas</p>
+        </div>
+        <div>
+          <p class="font-display text-2xl text-olive mb-1">40+</p>
+          <p class="text-stone text-sm">States shipped to</p>
+        </div>
+        <div>
+          <p class="font-display text-2xl text-olive mb-1">Family Run</p>
+          <p class="text-stone text-sm">Three generations of paddlers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 lg:py-28 bg-olive">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="font-display text-4xl md:text-5xl text-cream leading-tight mb-6">Ready for your next adventure?</h2>
+      <p class="text-cream/80 text-lg mb-8">Custom canoes take 3 to 6 months from order to delivery. Start the conversation now.</p>
+      <a href="mailto:StarrBowen@sbcglobal.net" class="inline-block bg-cream text-espresso px-8 py-3 text-sm tracking-wide hover:bg-white transition-colors mb-4">Get a quote</a>
+      <p class="text-cream/70 text-sm">Or call Starr at (254) 693-6503</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-espresso text-cream/60 py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="font-display text-lg text-cream mb-4">Caddo Watershed</h4>
+        <p class="text-sm leading-relaxed">Hand-built wooden canoes, paddles, and kayaks from Gordon, Texas.</p>
+      </div>
+      <div>
+        <h5 class="text-cream text-sm tracking-wide uppercase mb-4">Navigate</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-cream transition-colors">About</a></li>
+          <li><a href="#canoes" class="hover:text-cream transition-colors">Canoes</a></li>
+          <li><a href="#craft" class="hover:text-cream transition-colors">Craft</a></li>
+          <li><a href="#contact" class="hover:text-cream transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-cream text-sm tracking-wide uppercase mb-4">Models</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-cream transition-colors">Quetico Tripper II</a></li>
+          <li><a href="#" class="hover:text-cream transition-colors">Wee Lassie</a></li>
+          <li><a href="#" class="hover:text-cream transition-colors">Arkansas Traveler</a></li>
+          <li><a href="#" class="hover:text-cream transition-colors">Paddles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-cream text-sm tracking-wide uppercase mb-4">Contact</h5>
+        <ul class="space-y-2 text-sm">
+          <li>StarrBowen@sbcglobal.net</li>
+          <li>(254) 693-6503</li>
+          <li>404 N. Main</li>
+          <li>Gordon, TX 76453</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-atik8 mt-12 pt-8 border-t border-cream/10 text-sm text-center">
+      <p>Built with care, just like every canoe. Powered by redesign.</p>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
