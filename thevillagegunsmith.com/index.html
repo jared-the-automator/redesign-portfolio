@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Village Gunsmith - Expert Gunsmithing Since 1971</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Barlow Condensed', sans-serif; }
+    .text-amber-warm { color: #C68E17; }
+    .bg-amber-warm { background-color: #C68E17; }
+    .border-amber-warm { border-color: #C68E17; }
+    .text-charcoal { color: #141414; }
+    .bg-charcoal { background-color: #0a0a0a; }
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .hero-bg { background-image: linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.6) 50%, rgba(10,10,10,0.3) 100%), url('https://thevillagegunsmith.com/wp-content/uploads/2020/09/home01.jpg'); background-size: cover; background-position: center; }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-[#e8e4df] antialiased">
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-sm border-b border-[#1a1a1a]">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-wide uppercase text-[#e8e4df]">
+        The Village Gunsmith
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="#services" class="text-[#a0a0a0] hover:text-[#e8e4df] transition-colors">Services</a>
+        <a href="#about" class="text-[#a0a0a0] hover:text-[#e8e4df] transition-colors">About</a>
+        <a href="#gallery" class="text-[#a0a0a0] hover:text-[#e8e4df] transition-colors">Gallery</a>
+        <a href="#contact" class="text-[#a0a0a0] hover:text-[#e8e4df] transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:inline-block px-5 py-2 bg-[#C68E17] text-[#0a0a0a] text-sm font-semibold tracking-wide hover:bg-[#d4a035] transition-colors">
+        Get a Quote
+      </a>
+      <button class="md:hidden text-[#e8e4df]" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[100dvh] flex items-end relative">
+    <div class="max-w-7xl mx-auto px-6 pb-20 pt-32 w-full">
+      <div class="max-w-2xl">
+        <p class="text-[#C68E17] text-sm font-semibold tracking-widest uppercase mb-4">North Dartmouth, Massachusetts</p>
+        <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-none mb-6 text-[#e8e4df] uppercase">
+          Expert<br>Gunsmithing<br><span class="text-[#C68E17]">Since 1971</span>
+        </h1>
+        <p class="text-[#a0a0a0] text-lg md:text-xl leading-relaxed max-w-lg mb-8">
+          Trusted Massachusetts firearm dealer and experienced gunsmith for repairs, restoration, and custom work on pistols, rifles, and antique arms.
+        </p>
+        <a href="#contact" class="inline-block px-8 py-4 bg-[#C68E17] text-[#0a0a0a] font-semibold tracking-wide hover:bg-[#d4a035] transition-colors text-lg">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-24 md:py-32 bg-[#0a0a0a]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <p class="text-[#C68E17] text-sm font-semibold tracking-widest uppercase mb-4">What We Do</p>
+          <h2 class="font-display text-4xl md:text-5xl text-[#e8e4df] mb-8 uppercase">Every Facet of the Trade</h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-[#C68E17]">01</span>
+              <div>
+                <h3 class="font-display text-2xl text-[#e8e4df] mb-2 uppercase">Repairs & Restoration</h3>
+                <p class="text-[#a0a0a0] leading-relaxed">Stock work, handguns, rifle restoration, and antique arms repair by a master gunsmith with over 50 years of experience.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-[#C68E17]">02</span>
+              <div>
+                <h3 class="font-display text-2xl text-[#e8e4df] mb-2 uppercase">Custom Work</h3>
+                <p class="text-[#a0a0a0] leading-relaxed">Hand-forged parts, barrel fitting, scratch builds, and modern custom target pistols and rifles made to order.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-[#C68E17]">03</span>
+              <div>
+                <h3 class="font-display text-2xl text-[#e8e4df] mb-2 uppercase">Firearm Sales</h3>
+                <p class="text-[#a0a0a0] leading-relaxed">New and used pistols, rifles, and accessories from brands you trust, backed by decades of expertise.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <img src="https://thevillagegunsmith.com/wp-content/uploads/2020/09/DSCN8696.jpg" alt="Gunsmithing workspace at The Village Gunsmith" class="w-full h-[500px] lg:h-[700px] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="about" class="py-24 md:py-32 bg-[#0f0f0f]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="h-[500px] lg:h-[700px]">
+          <img src="https://thevillagegunsmith.com/wp-content/uploads/2020/09/DSCN8680.jpg" alt="Hand-built New England flintlock rifle at The Village Gunsmith" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <p class="text-[#C68E17] text-sm font-semibold tracking-widest uppercase mb-4">Our Story</p>
+          <h2 class="font-display text-4xl md:text-5xl text-[#e8e4df] mb-6 uppercase">Built by Hand, One Part at a Time</h2>
+          <p class="text-[#a0a0a0] leading-relaxed mb-6">
+            In 1984, Kenneth Pacheco began a project to show the type of work he could do. Starting with a 2 1/4 inch cherry plank, he fabricated every small part by hand as a gunsmith would have done in the late 1700s. The rifle took 852 hours to build and spanned four years to complete.
+          </p>
+          <p class="text-[#a0a0a0] leading-relaxed mb-6">
+            That same dedication defines every repair, restoration, and custom build that comes through the door. From vintage Colt and Smith & Wesson revolvers to modern custom target pistols, Ken treats every firearm with the same precision and care that went into that flintlock rifle.
+          </p>
+          <div class="flex items-center gap-4 pt-4 border-t border-[#1a1a1a]">
+            <img src="https://thevillagegunsmith.com/wp-content/uploads/2020/09/logo.png" alt="" class="h-12 w-auto opacity-80">
+            <div>
+              <p class="font-display text-xl text-[#e8e4df] uppercase">Kenneth P. Pacheco</p>
+              <p class="text-[#C68E17] text-sm">Founder & Gunsmith Since 1971</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-24 md:py-32 bg-[#0a0a0a]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12">
+        <p class="text-[#C68E17] text-sm font-semibold tracking-widest uppercase mb-4">The Workshop</p>
+        <h2 class="font-display text-4xl md:text-5xl text-[#e8e4df] uppercase">Restoration & Craft</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="aspect-square overflow-hidden">
+          <img src="https://thevillagegunsmith.com/wp-content/uploads/2020/09/DSCN8676.jpg" alt="Gunsmithing tools and rifle parts on workbench" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden">
+          <img src="https://thevillagegunsmith.com/wp-content/uploads/2020/09/DSCN8672.jpg" alt="Detailed view of firearm restoration work" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden">
+          <img src="https://thevillagegunsmith.com/wp-content/uploads/2020/09/DSCN8671.jpg" alt="Custom rifle stock being shaped by hand" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden">
+          <img src="https://thevillagegunsmith.com/wp-content/uploads/2020/09/DSCN8670.jpg" alt="Antique revolver restoration project" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden">
+          <img src="https://thevillagegunsmith.com/wp-content/uploads/2020/09/DSCN8669.jpg" alt="Gunsmith's bench with hand tools and parts" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="aspect-square overflow-hidden">
+          <img src="https://thevillagegunsmith.com/wp-content/uploads/2020/09/DSCN8668.jpg" alt="Finished rifle stock with hand-rubbed finish" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility -->
+  <section class="py-24 md:py-32 bg-[#0f0f0f]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12 text-center">
+        <div>
+          <p class="font-display text-6xl md:text-7xl text-[#C68E17] mb-2">55+</p>
+          <p class="text-[#a0a0a0] text-sm uppercase tracking-widest">Years in Business</p>
+        </div>
+        <div>
+          <p class="font-display text-6xl md:text-7xl text-[#C68E17]  mb-2">852</p>
+          <p class="text-[#a0a0a0] text-sm uppercase tracking-widest">Hours on the Flintlock</p>
+        </div>
+        <div>
+          <p class="font-display text-6xl md:text-7xl text-[#C68E17] mb-2">MA</p>
+          <p class="text-[#a0a0a0] text-sm uppercase tracking-widest">Serving Southeastern Mass</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-[#C68E17]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl text-[#0a0a0a] mb-4 uppercase">Bring Your Firearm to Ken</h2>
+      <p class="text-[#0a0a0a]/80 text-lg mb-8 max-w-2xl mx-auto">
+        Whether you need a simple repair, a full restoration, or a custom build, The Village Gunsmith brings over five decades of hands-on expertise to every project.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <a href="tel:508-993-4093" class="inline-block px-8 py-4 bg-[#0a0a0a] text-[#e8e4df] font-semibold tracking-wide hover:bg-[#141414] transition-colors text-lg">
+          Call 508-993-4093
+        </a>
+        <p class="text-[#0a0a0a]/80 font-medium">21R College Lane, North Dartmouth, MA 02747</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-[#0a0a0a] border-t border-[#1a1a1a]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <h3 class="font-display text-2xl text-[#e8e4df] mb-4 uppercase">The Village Gunsmith</h3>
+          <p class="text-[#a0a0a0] text-sm leading-relaxed">
+            Trusted Massachusetts firearm dealer and experienced gunsmith serving southeastern Massachusetts since 1971.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-[#e8e4df] font-semibold mb-4 tracking-wide uppercase text-sm">Services</h4>
+          <ul class="space-y-2 text-sm text-[#a0a0a0]">
+            <li><a href="#" class="hover:text-[#C68E17] transition-colors">Repairs & Restoration</a></li>
+            <li><a href="#" class="hover:text-[#C68E17] transition-colors">Custom Builds</a></li>
+            <li><a href="#" class="hover:text-[#C68E17] transition-colors">New & Used Sales</a></li>
+            <li><a href="#" class="hover:text-[#C68E17] transition-colors">Gunbroker Auctions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#e8e4df] font-semibold mb-4 tracking-wide uppercase text-sm">Contact</h4>
+          <ul class="space-y-2 text-sm text-[#a0a0a0]">
+            <li>21R College Lane</li>
+            <li>North Dartmouth, MA 02747</li>
+            <li><a href="tel:508-993-4093" class="hover:text-[#C68E17] transition-colors">508-993-4093</a></li>
+            <li><a href="mailto:gun007@comcast.net" class="hover:text-[#C68E17] transition-colors">gun007@comcast.net</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#e8e4df] font-semibold mb-4 tracking-wide uppercase text-sm">Hours</h4>
+          <ul class="space-y-2 text-sm text-[#a0a0a0]">
+            <li>Mon - Fri: 10 AM to 5 PM</li>
+            <li class="text-[#a0a0a0]/60">(Closed 12 - 2 PM)</li>
+            <li>Saturday: By Appointment Only</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-[#1a1a1a] flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-[#a0a0a0] text-sm">&copy; 2020 The Village Gunsmith. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="https://www.facebook.com/pages/category/Gun-Store/The-Village-Gunsmith-289231471190559/" target="_blank" class="text-[#a0a0a0] hover:text-[#C68E17] transition-colors text-sm">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for fade-in reveals
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

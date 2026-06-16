@@ -66,3 +66,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Caddo Watershed](https://jared-the-automator.github.io/redesign-portfolio/caddowatershed.com/) | Wooden canoe builder | Gordon, TX |
 | [Jim's Boatworks](https://jared-the-automator.github.io/redesign-portfolio/jimsboatworks.com/) | Custom rowboats and duck boats | Upstate New York |
 | [The Knife Maker](https://jared-the-automator.github.io/redesign-portfolio/theknifemaker.com/) | Custom hand-forged knives | Unknown |
+| [The Village Gunsmith](https://jared-the-automator.github.io/redesign-portfolio/thevillagegunsmith.com/) | Gunsmith & Firearm Dealer | North Dartmouth, MA |
