@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Wild Adventures — Guided Wilderness Trekking Since 1978</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a2a1a',
+                            med: '#111d17',
+                            mid: '#1b4a2e',
+                            gold: '#c5a059',
+                            bone: '#f2f0ea',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', 'serif'],
+                        body: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .fade-in-up.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-brand-bone antialiased">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/95 backdrop-blur-sm border-b border-brand-mid/30">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="font-display text-xl font-bold tracking-tight text-brand-bone">BIG WILD</div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-brand-gold transition-colors">Home</a>
+                <a href="#" class="hover:text-brand-gold transition-colors">Trips</a>
+                <a href="#" class="hover:text-brand-gold transition-colors">About</a>
+                <a href="#" class="hover:text-brand-gold transition-colors">Blog</a>
+                <a href="#" class="hover:text-brand-gold transition-colors">Contact</a>
+            </div>
+            <a href="#" class="bg-brand-gold text-brand-dark px-5 py-2.5 rounded-sm text-sm font-semibold hover:bg-brand-bone transition-colors">Book a Trip</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="min-h-[100dvh] relative flex items-center">
+        <img src="https://www.bigwildadventures.com/wp-content/uploads/2026/06/WestUteCreekWeminuche.jpg" alt="West Ute Creek in the Weminuche Wilderness" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-dark/70 to-transparent"></div>
+        <div class="relative max-w-7xl mx-auto px-6 pt-32 pb-24">
+            <span class="inline-block text-brand-gold text-xs tracking-[0.3em] uppercase font-semibold">Gardiner, Montana</span>
+            <h1 class="font-display text-5xl md:text-7xl font-bold mt-4 leading-tight max-w-3xl">Guided Wilderness Trekking Since 1978</h1>
+            <p class="mt-6 text-lg md:text-xl text-brand-bone/80 max-w-xl leading-relaxed">Fully outfitted backpacking and canoe trips in the most beautiful wilderness of the American West. Year 48.</p>
+            <div class="mt-8 flex flex-wrap gap-4">
+                <a href="#" class="bg-brand-gold text-brand-dark px-7 py-3.5 rounded-sm font-semibold hover:bg-brand-bone transition-colors">See Our Trips</a>
+                <a href="#" class="border border-brand-bone/30 text-brand-bone px-7 py-3.5 rounded-sm font-semibold hover:bg-brand-bone/10 transition-colors">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Primary Product Section -->
+    <section class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="order-1 fade-in-up">
+                <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/Pebble-Creek-Big-Wilders-Version-3.jpg" alt="Pebble Creek in Wyoming" class="w-full h-[480px] lg:h-[580px] object-cover rounded-sm">
+            </div>
+            <div class="order-2 fade-in-up">
+                <h2 class="font-display text-4xl md:text-5xl font-bold">Yellowstone and Beyond</h2>
+                <p class="mt-4 text-brand-bone/70 text-lg">We offer fully outfitted guided backpacking in the most beautiful wilderness lands of the American West and Alaska.</p>
+                <div class="mt-10 space-y-8">
+                    <div class="flex gap-5">
+                        <span class="text-brand-gold font-display text-3xl font-bold shrink-0">01</span>
+                        <div>
+                            <h3 class="font-semibold text-lg">Yellowstone National Park</h3>
+                            <p class="text-brand-bone/70 mt-1 leading-relaxed">Our most famous destination. Multi-day backpacking through the world's first national park.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5">
+                        <span class="text-brand-gold font-display text-3xl font-bold shrink-0">02</span>
+                        <div>
+                            <h3 class="font-semibold text-lg">The American West</h3>
+                            <p class="text-brand-bone/70 mt-1 leading-relaxed">Montana, Wyoming, Utah, New Mexico, Alaska. Remote places with no roads and no telephones.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5">
+                        <span class="text-brand-gold font-display text-3xl font-bold shrink-0">03</span>
+                        <div>
+                            <h3 class="font-semibold text-lg">Fully Outfitted</h3>
+                            <p class="text-brand-bone/70 mt-1 leading-relaxed">A real old-fashioned primitive wilderness experience with expert guides and all gear provided.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secondary Section (Reversed Split) -->
+    <section class="py-24 bg-brand-med">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="order-2 md:order-1 fade-in-up">
+                <h2 class="font-display text-4xl md:text-5xl font-bold">Year 48</h2>
+                <p class="mt-6 text-brand-bone/80 text-lg leading-relaxed">Big Wild Adventures was founded in 1978 by Howie Wolke. We are a family business, owned by Jesse Ford and David Ellis. All trips have the personal touch of experienced owners, and we are happy to accommodate student groups and folks with disabilities.</p>
+                <p class="mt-4 text-brand-bone/80 leading-relaxed">We have run well over one thousand multi-day wilderness treks across the American West and Alaska. As featured in Backpacker, Sierra, National Geographic Adventure, Outside, The New York Times, Outside Bozeman and more.</p>
+                <div class="mt-8 grid grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-brand-gold font-display text-3xl font-bold">48</div>
+                        <div class="text-sm text-brand-bone/60 mt-1">Years</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-brand-gold font-display text-3xl font-bold">1000+</div>
+                        <div class="text-sm text-brand-bone/60 mt-1">Treks</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-brand-gold font-display text-3xl font-bold">5+</div>
+                        <div class="text-sm text-brand-bone/60 mt-1">States</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 fade-in-up">
+                <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/Arctic-Caribou.jpg" alt="Caribou in the Arctic Refuge" class="w-full h-[480px] lg:h-[580px] object-cover rounded-sm">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12 fade-in-up">
+                <h2 class="font-display text-4xl md:text-5xl font-bold">Where We Trek</h2>
+                <p class="mt-4 text-brand-bone/70 text-lg max-w-2xl">The haunting wail of the gray wolf. Golden dawn at a crystal clear alpine lake. Rugged snow-flecked peaks over dazzling wildflower meadows. These are the big wilds we share with you.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in-up">
+                <div class="aspect-square rounded-sm overflow-hidden">
+                    <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/Beartooth-High-Country.jpg" alt="Beartooth High Country" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square rounded-sm overflow-hidden">
+                    <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/Canyonlands-Cliff.jpg" alt="Canyonlands Cliff" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square rounded-sm overflow-hidden">
+                    <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/Bighorn-Sheep.jpg" alt="Bighorn Sheep in the Beartooths" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square rounded-sm overflow-hidden">
+                    <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/Big-Canyon-of-the-Yellowstone.jpg" alt="Big Canyon of the Yellowstone" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square rounded-sm overflow-hidden">
+                    <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/West-DuNoir4.jpg" alt="West DuNoir Wilderness" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square rounded-sm overflow-hidden">
+                    <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/Mt7.jpg" alt="Mountain landscape in Wyoming" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square rounded-sm overflow-hidden">
+                    <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/Salt-Creek1.jpg" alt="Salt Creek in the backcountry" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square rounded-sm overflow-hidden">
+                    <img src="https://www.bigwildadventures.com/wp-content/uploads/2011/12/Thermal-Area.jpg" alt="Thermal area in Yellowstone" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Credibility -->
+    <section class="py-24 bg-brand-med">
+        <div class="max-w-4xl mx-auto px-6 text-center fade-in-up">
+            <p class="text-brand-gold text-sm tracking-[0.2em] uppercase font-semibold">As Featured In</p>
+            <h2 class="font-display text-3xl md:text-4xl font-bold mt-4 leading-snug">"The most experienced wilderness guides in the United States"</h2>
+            <p class="mt-6 text-brand-bone/70 text-lg leading-relaxed">As featured in Backpacker, Sierra, National Geographic Adventure, Outside, The New York Times, Outside Bozeman and more. Since our inception in 1978 we have run well over one thousand multi-day wilderness treks.</p>
+            <div class="mt-12 flex flex-wrap justify-center gap-8 text-sm text-brand-bone/50">
+                <span>Backpacker Magazine</span>
+                <span>Sierra Club</span>
+                <span>National Geographic Adventure</span>
+                <span>The New York Times</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="py-16 bg-brand-mid border-y border-brand-gold/20">
+        <div class="max-w-4xl mx-auto px-6 text-center fade-in-up">
+            <h2 class="font-display text-3xl md:text-4xl font-bold">Ready for the Wild?</h2>
+            <p class="mt-4 text-brand-bone/80 text-lg">Book an adventure or call now for trip details.</p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="#" class="bg-brand-gold text-brand-dark px-8 py-3.5 rounded-sm font-semibold hover:bg-brand-bone transition-colors">Book a Trip</a>
+                <span class="border border-brand-bone/30 text-brand-bone px-8 py-3.5 rounded-sm font-semibold">(406) 823-0337</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-brand-dark border-t border-brand-mid/30">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div>
+                <div class="font-display text-xl font-bold text-brand-bone">BIG WILD</div>
+                <p class="mt-4 text-sm text-brand-bone/60 leading-relaxed">Fully outfitted guided backpacking and canoe trips in Yellowstone, Montana, Wyoming and beyond.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-sm tracking-wider uppercase text-brand-bone/80 mb-4">Trips</h4>
+                <ul class="space-y-2 text-sm text-brand-bone/60">
+                    <li><a href="#" class="hover:text-brand-gold transition-colors">Yellowstone</a></li>
+                    <li><a href="#" class="hover:text-brand-gold transition-colors">Montana</a></li>
+                    <li><a href="#" class="hover:text-brand-gold transition-colors">Wyoming</a></li>
+                    <li><a href="#" class="hover:text-brand-gold transition-colors">Alaska</a></li>
+                    <li><a href="#" class="hover:text-brand-gold transition-colors">Custom Trips</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-sm tracking-wider uppercase text-brand-bone/80 mb-4">About</h4>
+                <ul class="space-y-2 text-sm text-brand-bone/60">
+                    <li><a href="#" class="hover:text-brand-gold transition-colors">Our Story</a></li>
+                    <li><a href="#" class="hover:text-brand-gold transition-colors">Staff</a></li>
+                    <li><a href="#" class="hover:text-brand-gold transition-colors">Safety</a></li>
+                    <li><a href="#" class="hover:text-brand-gold transition-colors">Testimonials</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-sm tracking-wider uppercase text-brand-bone/80 mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm text-brand-bone/60">
+                    <li>(406) 823-0337</li>
+                    <li>Gardiner, Montana</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-brand-mid/30 text-center text-sm text-brand-bone/50">
+            &copy; 2026 Big Wild Adventures. Guided wilderness trekking since 1978.
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
