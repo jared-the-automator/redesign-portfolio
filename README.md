@@ -26,7 +26,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Eagle Hardware Farm & Ranch](https://jared-the-automator.github.io/redesign-portfolio/eaglehardwarefarmandranch.com/) | Hardware & farm supply | Royse City, TX |
 | [Secor Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/secorfuneralhomes.com/) | Family funeral home | Willard, OH |
 | [Richardson Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/richardsonfuneralhomes.com/) | Family funeral home & cremation services | Perry, GA |
-| [Town & Country Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/townandcountryvet.net/) | Small animal veterinary clinic | Midland, TX |
+| [Town & Country Veterinary Hospital](https://jared-the-automator.github.io/redoa-read-portfolio/townandcountryvet.net/) | Small animal veterinary clinic | Midland, TX |
 | [Endless Mountains Veterinary Center](https://jared-the-automator.github.io/redesign-portfolio/emvets.com/) | Mixed practice veterinary clinic | Athens, PA |
 | [Omni Energy LLC](https://jared-the-automator.github.io/redesign-portfolio/myomnienergy.com/) | Heating oil & propane delivery | Watertown, CT |
 | [ABC Fuels, Inc.](https://jared-the-automator.github.io/redesign-portfolio/abcfuels.com/) | Heating oil & kerosene delivery | Woodstock, NY |
@@ -43,12 +43,10 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Frontier Pack Train](https://jared-the-automator.github.io/redesign-portfolio/frontierpacktrain.com/) | Backcountry pack trips & trail rides | June Lake, CA |
 | [Team Buck Rogers](https://jared-the-automator.github.io/redesign-portfolio/teambuckrogers.com/) | Offshore fishing charters | Jacksonville, FL |
 | [Devlin Designing Boat Builders](https://jared-the-automator.github.io/redesign-portfolio/devlinboat.com/) | Custom wooden boat design & kits | Olympia, WA |
-| [Devlin Designing Boat Builders](https://jared-the-automator.github.io/redesign-portfolio/devlinboat.com/) | Custom wooden boat builders | Olympia, WA |
 | [Acadian Woods Custom Traditional Bows](https://jared-the-automator.github.io/redesign-portfolio/acadianwoods.com/) | Custom traditional bows | Pineville, LA |
 | [Revenant Custom Rifles](https://jared-the-automator.github.io/redesign-portfolio/revenantcustomrifles.com/) | Custom hunting rifles | USA |
 | [Smokey River Bows](https://jared-the-automator.github.io/redesign-portfolio/smokeyriverbows.net/) | Handmade traditional archery bows | Wichita, KS |
 | [Newfound Woodworks](https://jared-the-automator.github.io/redesign-portfolio/newfound.com/) | Cedar strip boat kits | Newfound, NH |
-| [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
 | [Jeff Smith's Custom Saddles](https://jared-the-automator.github.io/redesign-portfolio/jeffsmithscustomsaddles.com/) | Custom western saddles | Texas, USA |
 | [Traditional Archery Products](https://jared-the-automator.github.io/redesign-portfolio/traditionalarcheryproducts.com/) | Archery tools & supplies | Idaho Springs, CO |
 | [Natural Birch Bark Canoes](https://jared-the-automator.github.io/redesign-portfolio/naturalbirchbarkcanoes.com/) | Handcrafted birch bark canoes | Ontario, Canada |
@@ -71,4 +69,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Jimmy D's River Bugs](https://jared-the-automator.github.io/redesign-portfolio/jimmydsriverbugs.com/) | Custom hand tied jigs | Sartell, MN |
 | [Big Jim's Bow Company](https://jared-the-automator.github.io/redesign-portfolio/bigjimsbowcompany.com/) | Custom longbows & traditional archery | Albany, GA |
 | [Homer Decoys](https://jared-the-automator.github.io/redesign-portfolio/homerdecoys.com/) | Foam decoys & decoy heads | Conowingo, MD |
+| [Jim Taylor Custom Saddlery](https://jared-the-automator.github.io/redesign-portfolio/jimtaylorsaddlery.com/) | Custom western saddles | Texas |
 |---|---|---|
