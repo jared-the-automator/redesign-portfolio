@@ -69,4 +69,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [The Village Gunsmith](https://jared-the-automator.github.io/redesign-portfolio/thevillagegunsmith.com/) | Gunsmith & Firearm Dealer | North Dartmouth, MA |
 | [Big Wild Adventures](https://jared-the-automator.github.io/redesign-portfolio/bigwildadventures.com/) | Guided wilderness backpacking trips | Gardiner, MT |
 | [Jimmy D's River Bugs](https://jared-the-automator.github.io/redesign-portfolio/jimmydsriverbugs.com/) | Custom hand tied jigs | Sartell, MN |
+| [Homer Decoys](https://jared-the-automator.github.io/redesign-portfolio/homerdecoys.com/) | Foam decoys & decoy heads | Conowingo, MD |
 |---|---|---|
