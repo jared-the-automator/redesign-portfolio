@@ -10,7 +10,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
-|---|---|---|
+
 | [Scott Meek Woodworks](https://jared-the-automator.github.io/redesign-portfolio/scottmeekwoodworks.com/) | Handmade wood body planes | Leicester, NC |
 | [Highliner Custom Rods](https://jared-the-automator.github.io/redesign-portfolio/highlinercustomrods.com/) | Custom fly and spey rods | Bend, OR |
 | [Liberty Longrifles LLC](https://jared-the-automator.github.io/redesign-portfolio/libertylongrifles.com/) | Custom Kentucky longrifles | Wadesville, IN |
@@ -70,4 +70,6 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Big Jim's Bow Company](https://jared-the-automator.github.io/redesign-portfolio/bigjimsbowcompany.com/) | Custom longbows & traditional archery | Albany, GA |
 | [Homer Decoys](https://jared-the-automator.github.io/redesign-portfolio/homerdecoys.com/) | Foam decoys & decoy heads | Conowingo, MD |
 | [Jim Taylor Custom Saddlery](https://jared-the-automator.github.io/redesign-portfolio/jimtaylorsaddlery.com/) | Custom western saddles | Texas |
-|---|---|---|
+
+| [TallTines Traditional Archery](https://jared-the-automator.github.io/redesign-portfolio/talltinesarchery.com/) | Custom traditional bows | Kansas, USA |
+|---|---|---|---|
