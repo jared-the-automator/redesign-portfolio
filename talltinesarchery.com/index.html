@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TallTines Traditional Archery | Custom Bows, Handcrafted in Kansas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forest: '#1b3a2b',
+            'forest-light': '#2d5a42',
+            gold: '#c9a84c',
+            'gold-light': '#dcc075',
+            bone: '#f0ede5',
+            charcoal: '#1a1a1a',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(27,58,43,0.95) 0%, rgba(27,58,43,0.75) 50%, rgba(27,58,43,0.6) 100%),
+                  url('https://talltinesarchery.com/wp-content/uploads/2024/10/img-2.webp');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .section-reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="font-body text-charcoal bg-bone antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-forest/95 backdrop-blur-sm border-b border-forest-light/30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-bone font-display text-xl font-bold tracking-wide">TallTines</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-bone/80">
+        <a href="#craft" class="hover:text-gold transition-colors">Craft</a>
+        <a href="#recurve" class="hover:text-gold transition-colors">Recurve Bows</a>
+        <a href="#longbows" class="hover:text-gold transition-colors">Longbows</a>
+        <a href="#story" class="hover:text-gold transition-colors">Story</a>
+        <a href="#contact" class="px-5 py-2 bg-gold text-forest font-semibold text-sm hover:bg-gold-light transition-colors">Get a Bow</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center hero-bg">
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-32">
+      <div class="max-w-2xl">
+        <span class="inline-block text-gold text-sm font-semibold uppercase tracking-widest mb-4">Handcrafted in Kansas</span>
+        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-bone leading-tight mb-6">
+          Custom Bows for the<br>Moment of Truth
+        </h1>
+        <p class="text-bone/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
+          Every bow is a work of functional art. Built from exotic hardwoods, cut and ground in house, backed by a one-year warranty.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#craft" class="px-8 py-3 bg-gold text-forest font-semibold text-sm hover:bg-gold-light transition-colors">Explore Our Bows</a>
+          <a href="#contact" class="px-8 py-3 border-2 border-bone/40 text-bone font-semibold text-sm hover:bg-bone/10 transition-colors">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product: Recurve -->
+  <section id="craft" class="py-20 md:py-28 bg-bone section-reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 md:order-1">
+          <img src="https://talltinesarchery.com/wp-content/uploads/2024/10/img-1.webp" alt="Custom recurve bow with exotic wood riser" class="w-full rounded-sm shadow-xl">
+        </div>
+        <div class="order-1 md:order-2">
+          <span class="text-forest font-semibold text-sm uppercase tracking-wider mb-3 block">Takedown Recurve</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-forest mb-6">Built for Shot After Shot Consistency</h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <span class="text-gold font-display text-3xl font-bold leading-none">01</span>
+              <div>
+                <h3 class="font-semibold text-forest text-lg mb-1">Repeatable Grip Design</h3>
+                <p class="text-charcoal/70">The riser is cut 1/8 inch past center for a wide range of arrow spines and easy tuning.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-gold font-display text-3xl font-bold leading-none">02</span>
+              <div>
+                <h3 class="font-semibold text-forest text-lg mb-1">Bamboo or Actionwood Core</h3>
+                <p class="text-charcoal/70">FF Fast Flight compatible. Every board is hand selected and cut in house.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-gold font-display text-3xl font-bold leading-none">03</span>
+              <div>
+                <h3 class="font-semibold text-forest text-lg mb-1">Lengths from 58 to 64 Inches</h3>
+                <p class="text-charcoal/70">Risers in 16 or 18 inch lengths. Fit every archer by height and draw length.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: Longbows -->
+  <section id="longbows" class="py-20 md:py-28 bg-forest section-reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <span class="text-gold font-semibold text-sm uppercase tracking-wider mb-3 block">Reflexed Longbow</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-bone mb-6">Smooth Draw. Surprising Speed.</h2>
+          <p class="text-bone/80 text-lg leading-relaxed mb-6">
+            Our reflexed longbow profile marries the classic feel of a longbow with modern performance. The result is a smooth draw cycle and surprising arrow speed from a traditional platform.
+          </p>
+          <p class="text-bone/80 text-lg leading-relaxed mb-8">
+            Hand-selected exotic wood risers. Bamboo or actionwood core. One-year warranty. Each bow built to order after a detailed consultation.
+          </p>
+          <a href="#contact" class="inline-block px-8 py-3 bg-gold text-forest font-semibold text-sm hover:bg-gold-light transition-colors">Start Your Longbow</a>
+        </div>
+        <div>
+          <img src="https://talltinesarchery.com/wp-content/uploads/2024/10/img-6.webp" alt="Reflexed longbow with exotic hardwood riser" class="w-full rounded-sm shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section id="story" class="py-20 md:py-28 bg-bone section-reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-forest mb-4">Where the Bow Begins</h2>
+        <p class="text-charcoal/70 max-w-2xl mx-auto text-lg">Every bow starts as a conversation. We learn how you hunt, where you shoot, and what matters most to you. Then we build.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="col-span-2 row-span-2">
+          <img src="https://talltinesarchery.com/wp-content/uploads/2024/10/img-3.webp" alt="Bow riser detail" class="w-full h-full object-cover rounded-sm">
+        </div>
+        <div>
+          <img src="https://talltinesarchery.com/wp-content/uploads/2024/10/img-4.webp" alt="Bow limb close up" class="w-full h-full object-cover rounded-sm">
+        </div>
+        <div>
+          <img src="https://talltinesarchery.com/wp-content/uploads/2024/10/img-5.webp" alt="Finished bow" class="w-full h-full object-cover rounded-sm">
+        </div>
+        <div class="col-span-2 bg-forest rounded-sm flex items-center justify-center p-8">
+          <div class="text-center">
+            <p class="font-display text-bone text-xl md:text-2xl leading-relaxed italic">"Aim to create naturally beautiful bows that exhibit the perfect combination of smoothness, stability, and speed."</p>
+            <span class="text-gold text-sm mt-4 block">TallTines Mission</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Credibility -->
+  <section class="py-20 md:py-28 bg-forest-light section-reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="md:col-span-2">
+          <span class="text-gold text-sm font-semibold uppercase tracking-wider mb-4 block">What Hunters Say</span>
+          <blockquote class="font-display text-2xl md:text-3xl text-bone leading-relaxed mb-8">
+            "Each bow is made to be a work of functional art. We thank each of our customers who trust TallTines Traditional Archery bows for the moment of truth."
+          </blockquote>
+          <p class="text-bone/60 font-medium">TallTines Traditional Archery</p>
+        </div>
+        <div class="space-y-8">
+          <div class="border-l-4 border-gold pl-6">
+            <p class="text-bone/80 text-lg font-semibold">8 Months</p>
+            <p class="text-bone/60 text-sm">Current wait time for a custom bow. Each one is built to order.</p>
+          </div>
+          <div class="border-l-4 border-gold pl-6">
+            <p class="text-bone/80 text-lg font-semibold">1 Year</p>
+            <p class="text-bone/60 text-sm">Warranty on every bow. We stand behind our work.</p>
+          </div>
+          <div class="border-l-4 border-gold pl-6">
+            <p class="text-bone/80 text-lg font-semibold">Kansas</p>
+            <p class="text-bone/60 text-sm">Handcrafted in the heart of the Midwest and shipped nationwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-20 bg-gold section-reveal">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-forest mb-4">Ready for Your Custom Bow?</h2>
+      <p class="text-forest/80 text-lg mb-8 max-w-2xl mx-auto">Custom bow wait time is currently 8 months. The sooner we start, the sooner your bow is in your hands.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:6202182139" class="px-8 py-4 bg-forest text-bone font-semibold text-sm hover:bg-forest-light transition-colors">Call (620) 218-2139</a>
+        <a href="mailto:talltinesarcherybyjones@gmail.com" class="px-8 py-4 border-2 border-forest text-forest font-semibold text-sm hover:bg-forest/10 transition-colors">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest text-bone/70 py-16 border-t border-forest-light/30">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10">
+      <div>
+        <h4 class="font-display text-bone font-bold text-lg mb-4">TallTines</h4>
+        <p class="text-sm leading-relaxed">Beautiful, dependable custom bows built from exotic hardwoods. Handcrafted in Kansas.</p>
+      </div>
+      <div>
+        <h4 class="font-display text-bone font-bold text-lg mb-4">Bows</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-gold transition-colors">Takedown Recurves</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">Reflexed Longbows</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">Stock Bows</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">Apparel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-bone font-bold text-lg mb-4">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-gold transition-colors">Our Story</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">Talltines Success</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">Prices & Options</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-bone font-bold text-lg mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="tel:6202182139" class="hover:text-gold transition-colors">(620) 218-2139</a></li>
+          <li><a href="mailto:talltinesarcherybyjones@gmail.com" class="hover:text-gold transition-colors">talltinesarcherybyjones@gmail.com</a></li>
+          <li>Kansas, USA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-forest-light/30 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm">2026 TallTines Traditional Archery. All Rights Reserved.</p>
+      <p class="text-xs text-bone/50">Handcrafted with intention.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section-reveal').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
