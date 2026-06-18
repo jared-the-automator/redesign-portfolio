@@ -73,3 +73,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | [TallTines Traditional Archery](https://jared-the-automator.github.io/redesign-portfolio/talltinesarchery.com/) | Custom traditional bows | Kansas, USA |
 |---|---|---|---|
+| [Jonas Blade](https://jared-the-automator.github.io/redesign-portfolio/jonasblade.com/) | Custom hand-forged knives | Massachusetts, USA |

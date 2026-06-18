@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonas Blade | Custom Hand-Forged Knives by Zack Jonas</title>
+  <meta name="description" content="Hand-forged knives and blades by master bladesmith Zack Jonas. Culinary, field, and legacy collections crafted to order.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F5F2ED;
+      --accent: #2D5016;
+      --bone: #E8E3D8;
+      --text: #1A1816;
+      --text-muted: #5B5752;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+    .font-display { font-family: 'Oswald', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Nav -->
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background: rgba(245,242,237,0.92); backdrop-filter: blur(8px);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl font-bold tracking-tight" style="color:var(--accent)">JONAS BLADE</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium" style="color:var(--text-muted)">
+        <a href="#collections" class="hover:text-[var(--accent)] transition-colors">Collections</a>
+        <a href="#craft" class="hover:text-[var(--accent)] transition-colors">The Craft</a>
+        <a href="#about" class="hover:text-[var(--accent)] transition-colors">About</a>
+        <a href="#contact" class="px-5 py-2 rounded-sm text-white text-sm font-semibold" style="background:var(--accent)">Commission a Blade</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end md:items-center">
+    <div class="absolute inset-0">
+      <img src="https://jonasblade.com/wp-content/uploads/2020/07/TwistPair2.jpg" alt="Pair of hand-forged twisted knives" class="w-full h-full object-cover">
+      <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(26,24,22,0.78) 0%, rgba(26,24,22,0.35) 55%, rgba(26,24,22,0.12) 100%);"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(26,24,22,0.55) 0%, transparent 40%);"></div>
+    </div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pb-16 pt-32 md:pt-0 md:pb-0">
+      <p class="text-xs font-semibold tracking-widest uppercase mb-4" style="color: var(--bone)">Master Bladesmith</p>
+      <h1 class="font-display text-5xl md:text-7xl font-bold leading-[0.95] mb-6" style="color:var(--bg)">
+        Hand-Forged<br>Blades That Last
+      </h1>
+      <p class="text-base md:text-lg max-w-md mb-8 leading-relaxed" style="color: rgba(232,227,216,0.85)">
+        Every knife begins at the forge. No two are the same. Culinary, field, and legacy collections by master bladesmith Zack Jonas.
+      </p>
+      <a href="#contact" class="inline-block px-8 py-3 rounded-sm text-sm font-semibold text-white" style="background:var(--accent)">Commission a Blade</a>
+      <a href="#collections" class="ml-4 inline-block px-8 py-3 rounded-sm text-sm font-semibold border" style="border-color:var(--bone); color:var(--bone)">View Collections</a>
+    </div>
+  </section>
+
+  <!-- Primary Product Section (Asymmetric Split) -->
+  <section id="collections" class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
+        <div class="md:col-span-5 reveal">
+          <img src="https://jonasblade.com/wp-content/uploads/2019/01/Cocobolo-Quartet-3-2-crop.jpg" alt="Cocobolo Quartet knife set" class="w-full h-auto object-cover rounded-sm shadow-lg">
+        </div>
+        <div class="md:col-span-7 reveal" style="transition-delay: 100ms;">
+          <p class="text-xs font-semibold tracking-widest uppercase mb-3" style="color:var(--accent)">Collections</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">Built for People Who Refuse Mass-Produced</h2>
+          <p class="text-base leading-relaxed mb-8" style="color:var(--text-muted)">From the kitchen to the field, each collection is forged for a specific purpose. High-carbon steel, Damascus patterns, and handle materials chosen for function first.</p>
+          <div class="space-y-6">
+            <div class="flex gap-5">
+              <span class="font-display text-2xl font-bold mt-1" style="color:var(--accent)">01</span>
+              <div>
+                <h3 class="font-semibold mb-1">Culinary</h3>
+                <p class="text-sm" style="color:var(--text-muted)">Chef knives designed for daily performance. Balanced, razor-sharp, and built to outlast any factory blade.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-2xl font-bold mt-1" style="color:var(--accent)">02</span>
+              <div>
+                <h3 class="font-semibold mb-1">Field</h3>
+                <p class="text-sm" style="color:var(--text-muted)">Camp knives, hunters, and outdoor tools that handle whatever the backcountry throws at them.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-2xl font-bold mt-1" style="color:var(--accent)">03</span>
+              <div>
+                <h3 class="font-semibold mb-1">Legacy</h3>
+                <p class="text-sm" style="color:var(--text-muted)">Heirloom pieces meant to be handed down. Art and function in equal measure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (Reversed Split, layout break) -->
+  <section id="craft" class="py-20 md:py-28" style="background:var(--bone)">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
+        <div class="md:col-span-7 reveal order-2 md:order-1" style="transition-delay: 100ms;">
+          <p class="text-xs font-semibold tracking-widest uppercase mb-3" style="color:var(--accent)">The Craft</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">Fire, Steel, and Patience</h2>
+          <p class="text-base leading-relaxed mb-6" style="color:var(--text-muted)">Zack Jonas is a master bladesmith who has spent over a decade refining the art of hand-forging. Each blade starts as raw steel and ends as a tool that fits the hand like it was made for it, because it was.</p>
+          <p class="text-base leading-relaxed mb-8" style="color:var(--text-muted)">No two knives leave the forge identical. The process demands heat shaping, hand grinding, and finish work that machines simply cannot replicate. That is what you are paying for.</p>
+          <a href="#about" class="inline-block px-6 py-3 rounded-sm text-sm font-semibold text-white" style="background:var(--accent)">Discover the Process</a>
+        </div>
+        <div class="md:col-span-5 reveal order-1 md:order-2">
+          <img src="https://jonasblade.com/wp-content/uploads/2019/01/Zack-At-MassArt-2-1.jpg" alt="Zack Jonas at work in the forge" class="w-full h-auto object-cover rounded-sm shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Editorial -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-xs font-semibold tracking-widest uppercase mb-3 text-center" style="color:var(--accent)">From the Forge</p>
+      <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-12 text-center">Every Blade Tells a Story</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="reveal" style="transition-delay: 0ms;">
+          <img src="https://jonasblade.com/wp-content/uploads/2019/01/knives-7780-2.jpg" alt="Collection of hand-forged knives" class="w-full h-64 object-cover rounded-sm">
+        </div>
+        <div class="reveal" style="transition-delay: 100ms;">
+          <img src="https://jonasblade.com/wp-content/uploads/2019/01/Jonas-Jan2017-030-2.jpg" alt="Zack Jonas forging a blade" class="w-full h-64 object-cover rounded-sm">
+        </div>
+        <div class="reveal" style="transition-delay: 200ms;">
+          <img src="https://jonasblade.com/wp-content/uploads/2019/01/about-zack-1024x683.jpg" alt="Zack Jonas in the workshop" class="w-full h-64 object-cover rounded-sm">
+        </div>
+        <div class="reveal" style="transition-delay: 300ms;">
+          <img src="https://jonasblade.com/wp-content/uploads/2020/07/TwistPair2.jpg" alt="Twisted hand-forged knives" class="w-full h-64 object-cover rounded-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Credibility -->
+  <section class="py-20 md:py-28" style="background:var(--bone)">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-xs font-semibold tracking-widest uppercase mb-8" style="color:var(--accent)">What Collectors Say</p>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="reveal" style="transition-delay: 0ms;">
+          <p class="text-base leading-relaxed mb-4 italic" style="color:var(--text)">&quot;The balance on my chef knife is unlike anything I have owned. It sits in my hand like it was forged for it.&quot;</p>
+          <p class="text-sm font-semibold">Michael T.</p>
+          <p class="text-sm" style="color:var(--text-muted)">Culinary Collection</p>
+        </div>
+        <div class="reveal" style="transition-delay: 100ms;">
+          <p class="text-base leading-relaxed mb-4 italic" style="color:var(--text)">&quot;Took my field knife on a two-week elk hunt. It held an edge the whole trip. Beautiful and functional.&quot;</p>
+          <p class="text-sm font-semibold">Sarah K.</p>
+          <p class="text-sm" style="color:var(--text-muted)">Field Collection</p>
+        </div>
+        <div class="reveal" style="transition-delay: 200ms;">
+          <p class="text-base leading-relaxed mb-4 italic" style="color:var(--text)">&quot;I commissioned a legacy piece for my son. Zack walked me through every step. The result is a family heirloom.&quot;</p>
+          <p class="text-sm font-semibold">David R.</p>
+          <p class="text-sm" style="color:var(--text-muted)">Legacy Commission</p>
+        </div>
+      </div>
+      <div class="mt-12 flex justify-center gap-16 reveal">
+        <div class="text-center">
+          <p class="font-display text-3xl font-bold" style="color:var(--accent)">10+</p>
+          <p class="text-sm mt-1" style="color:var(--text-muted)">Years Forging</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-3xl font-bold" style="color:var(--accent)">100%</p>
+          <p class="text-sm mt-1" style="color:var(--text-muted)">Hand-Forged</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-3xl font-bold" style="color:var(--accent)">Custom</p>
+          <p class="text-sm mt-1" style="color:var(--text-muted)">Made to Order</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 md:py-24" style="background:var(--accent)">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl font-bold mb-4" style="color:var(--bg)">Ready for a Blade of Your Own?</h2>
+      <p class="text-base md:text-lg mb-8 max-w-2xl mx-auto" style="color: rgba(232,227,216,0.8)">Commission a custom knife or explore the ready-made collection. Each piece is forged by hand and made to order.</p>
+      <a href="mailto:zack@jonasblade.com" class="inline-block px-10 py-4 rounded-sm text-sm font-bold tracking-wide" style="background:var(--bg); color:var(--accent)">Start Your Commission</a>
+      <p class="mt-4 text-sm" style="color: rgba(232,227,216,0.7)">zack@jonasblade.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16" style="background:#1A1816; color:#E8E3D8;">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div>
+          <p class="font-display text-xl font-bold mb-4" style="color:var(--bg)">JONAS BLADE</p>
+          <p class="text-sm leading-relaxed" style="color:rgba(232,227,216,0.6)">Custom hand-forged knives and blades by master bladesmith Zack Jonas.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-sm mb-4" style="color:var(--bg)">Collections</p>
+          <ul class="space-y-2 text-sm" style="color:rgba(232,227,216,0.6)">
+            <li><a href="#" class="hover:text-white transition-colors">Culinary</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Field</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Legacy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Lifestyle</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-sm mb-4" style="color:var(--bg)">Explore</p>
+          <ul class="space-y-2 text-sm" style="color:rgba(232,227,216,0.6)">
+            <li><a href="#" class="hover:text-white transition-colors">The Craft</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">About Zack Jonas</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Care for Carbon Steel</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-sm mb-4" style="color:var(--bg)">Contact</p>
+          <p class="text-sm mb-2" style="color:rgba(232,227,216,0.6)">zack@jonasblade.com</p>
+          <p class="text-sm" style="color:rgba(232,227,216,0.6)">Instagram: @jonas_blade</p>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-gray-800 text-center text-xs" style="color:rgba(232,227,216,0.4)">
+        &copy; 2026 Jonas Blade. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
