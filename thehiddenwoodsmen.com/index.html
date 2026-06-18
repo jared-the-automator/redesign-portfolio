@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Hidden Woodsmen - Old World Gear Company</title>
+  <meta name="description" content="Boutique gear shop outfitting the wilderness enthusiast and historical collector with vintage style gear." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"DM Serif Display"', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            cream: '#F8F5F0',
+            'cream-dark': '#EDE8E0',
+            olive: '#556B2F',
+            'olive-light': '#6B7B3A',
+            espresso: '#2C1F16',
+            stone: '#8C857B',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-olive-gradient { background: linear-gradient(135deg, #556B2F, #6B7B3A); }
+  </style>
+</head>
+<body class="font-body text-espresso bg-cream antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-cream/90 backdrop-blur-sm border-b border-cream-dark">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-tight text-espresso">The Hidden Woodsmen</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#gear" class="text-sm font-medium hover:text-olive transition-colors">Gear</a>
+        <a href="#story" class="text-sm font-medium hover:text-olive transition-colors">Story</a>
+        <a href="#collections" class="text-sm font-medium hover:text-olive transition-colors">Collections</a>
+        <a href="#contact" class="text-sm font-medium hover:text-olive transition-colors">Contact</a>
+      </div>
+      <a href="#shop" class="hidden md:inline-flex items-center bg-espresso text-cream px-5 py-2.5 text-sm font-medium hover:bg-olive transition-colors">Shop Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://thehiddenwoodsmen.com/wp-content/uploads/2015/09/back3_1680x.jpg" alt="Wooded wilderness backdrop" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-espresso/80 via-espresso/50 to-transparent"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-32">
+      <div class="max-w-2xl">
+        <span class="inline-block text-cream/80 text-sm font-medium tracking-widest uppercase mb-4">Est. 2015</span>
+        <h1 class="font-display text-5xl md:text-7xl text-cream leading-tight mb-6">Old World Gear <br /> for Modern <br /> Wilderness</h1>
+        <p class="text-cream/90 text-lg md:text-xl font-light max-w-md mb-8">Vintage style packs, pouches, and accessories built for the wilderness enthusiast and the historical collector.</p>
+        <a href="#shop" class="inline-flex items-center bg-olive text-cream px-8 py-3.5 text-sm font-medium hover:bg-olive-light transition-colors">Browse the Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section (asymmetric split, numbered features) -->
+  <section id="gear" class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 lg:order-1">
+          <img src="https://thehiddenwoodsmen.com/wp-content/uploads/2019/05/IMG_20180606_102342_749-e1561720610224.jpg" alt="Vintage canvas pack with leather details in a woodland setting" class="w-full h-[500px] object-cover" style="border-radius:2px;" />
+        </div>
+        <div class="order-1 lg:order-2">
+          <span class="inline-block text-olive text-sm font-medium tracking-widest uppercase mb-4">Heritage Craft</span>
+          <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight mb-6">Gear That Honours <br /> the Past</h2>
+          <p class="text-stone text-base leading-relaxed mb-10 max-w-md">Every piece is designed to look and feel like it came from another era, while standing up to the demands of modern backcountry travel.</p>
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <span class="font-display text-3xl text-olive w-10">01</span>
+              <div>
+                <h3 class="font-body font-semibold text-espresso mb-1">Heavy Canvas Builds</h3>
+                <p class="text-stone text-sm leading-relaxed">Waxed canvas and leather construction that improves with age and hard use.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-3xl text-olive w-10">02</span>
+              <div>
+                <h3 class="font-body font-semibold text-espresso mb-1">Period-Inspired Details</h3>
+                <p class="text-stone text-sm leading-relaxed">Brass hardware, hand-stitched seams, and heritage patterns drawn from 19th and early 20th century archives.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-3xl text-olive w-10">03</span>
+              <div>
+                <h3 class="font-body font-semibold text-espresso mb-1">Built for the Bush</h3>
+                <p class="text-stone text-sm leading-relaxed">Tested in real field conditions. Every strap, gusset, and pocket serves a purpose on the trail.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (reversed split) -->
+  <section id="story" class="py-24 lg:py-32 bg-cream-dark/50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-1">
+          <span class="inline-block text-olive text-sm font-medium tracking-widest uppercase mb-4">Boutique Collection</span>
+          <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight mb-6">Packs, Pouches, <br /> and Accessories</h2>
+          <p class="text-stone text-base leading-relaxed mb-8 max-w-md">A curated line of equipment for the person who values character as much as utility. Each item is made to carry your kit and tell a story.</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-espresso text-sm font-medium">
+              <span class="w-1.5 h-1.5 rounded-full bg-olive"></span>
+              Daypacks and haversacks
+            </li>
+            <li class="flex items-center gap-3 text-espresso text-sm font-medium">
+              <span class="w-1.5 h-1.5 rounded-full bg-olive"></span>
+              Hip pouches and belt kits
+            </li>
+            <li class="flex items-center gap-3 text-espresso text-sm font-medium">
+              <span class="w-1.5 h-1.5 rounded-full bg-olive"></span>
+              Leather and canvas accessories
+            </li>
+          </ul>
+          <a href="#shop" class="inline-flex items-center border-2 border-espresso text-espresso px-6 py-3 text-sm font-medium hover:bg-espresso hover:text-cream transition-colors">View the Range</a>
+        </div>
+        <div class="order-2">
+          <img src="https://thehiddenwoodsmen.com/wp-content/uploads/2023/01/DSC06377-scaled.jpg" alt="Detailed view of waxed canvas and leather pack craftsmanship" class="w-full h-[500px] object-cover" style="border-radius:2px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story (breaks the zigzag) -->
+  <section id="collections" class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="inline-block text-olive text-sm font-medium tracking-widest uppercase mb-4">The Hidden Woodsmen</span>
+        <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight">Made for the Trail</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="lg:col-span-2 lg:row-span-2">
+          <img src="https://thehiddenwoodsmen.com/wp-content/uploads/2020/02/Blueman.jpg" alt="Blue canvas pack in a forest setting" class="w-full h-full min-h-[400px] object-cover" style="border-radius:2px;" />
+        </div>
+        <div>
+          <img src="https://thehiddenwoodsmen.com/wp-content/uploads/2019/10/new-flat.png" alt="Flat lay of vintage style gear and accessories" class="w-full h-[240px] object-cover" style="border-radius:2px;" />
+        </div>
+        <div>
+          <img src="https://thehiddenwoodsmen.com/wp-content/uploads/2016/02/menu_photo.jpg" alt="Heritage leather and canvas pieces arranged" class="w-full h-[240px] object-cover" style="border-radius:2px;" />
+        </div>
+        <div class="lg:col-span-2">
+          <img src="https://thehiddenwoodsmen.com/wp-content/uploads/2016/01/back2_1680x.jpg" alt="Wooded landscape with vintage camp aesthetic" class="w-full h-[240px] object-cover" style="border-radius:2px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-24 lg:py-32 bg-cream-dark/50">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <span class="inline-block text-olive text-sm font-medium tracking-widest uppercase mb-6">What Collectors Say</span>
+      <blockquote class="font-display text-2xl md:text-3xl text-espresso leading-relaxed mb-8 max-w-3xl mx-auto">
+        "The Hidden Woodsmen exists to outfit the wilderness enthusiast and the historical collector with vintage style gear."
+      </blockquote>
+      <p class="text-stone text-sm mb-12">- The Hidden Woodsmen</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <span class="font-display text-4xl text-olive block mb-2">2015</span>
+          <p class="text-stone text-sm">Founded in New England</p>
+        </div>
+        <div>
+          <span class="font-display text-4xl text-olive block mb-2">3</span>
+          <p class="text-stone text-sm">Core Product Lines</p>
+        </div>
+        <div>
+          <span class="font-display text-4xl text-olive block mb-2">Nationwide</span>
+          <p class="text-stone text-sm">Shipping Across the US</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-espresso text-cream">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="font-display text-3xl md:text-4xl mb-4">Ready to Outfit Your Next Expedition?</h2>
+      <p class="text-cream/80 mb-8 max-w-lg mx-auto">Browse the full collection of vintage style packs, pouches, and accessories for the wilderness and the trail.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="mailto:Thehiddenwoodsmen@gmail.com" class="inline-flex items-center bg-olive text-cream px-8 py-3.5 text-sm font-medium hover:bg-olive-light transition-colors">Email the Shop</a>
+        <a href="#shop" class="inline-flex items-center border-2 border-cream/30 text-cream px-8 py-3.5 text-sm font-medium hover:bg-cream/10 transition-colors">Shop the Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-cream border-t border-cream-dark">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div>
+          <span class="font-display text-xl text-espresso block mb-4">The Hidden Woodsmen</span>
+          <p class="text-stone text-sm leading-relaxed">Boutique gear shop outfitting the wilderness enthusiast and the historical collector with vintage style gear.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-espresso text-sm mb-4">Shop</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-stone text-sm hover:text-olive transition-colors">All Gear</a></li>
+            <li><a href="#" class="text-stone text-sm hover:text-olive transition-colors">Packs</a></li>
+            <li><a href="#" class="text-stone text-sm hover:text-olive transition-colors">Pouches</a></li>
+            <li><a href="#" class="text-stone text-sm hover:text-olive transition-colors">Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-espresso text-sm mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-stone text-sm hover:text-olive transition-colors">Our Story</a></li>
+            <li><a href="#" class="text-stone text-sm hover:text-olive transition-colors">Contact</a></li>
+            <li><a href="#" class="text-stone text-sm hover:text-olive transition-colors">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-espresso text-sm mb-4">Contact</h4>
+          <ul class="space-y-2">
+            <li class="text-stone text-sm">Thehiddenwoodsmen@gmail.com</li>
+            <li class="text-stone text-sm">New England, USA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-cream-dark flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-stone text-xs"> All rights reserved. The Hidden Woodsmen.</p>
+        <div class="flex gap-6">
+          <a href="#" class="text-stone text-xs hover:text-olive transition-colors">Privacy</a>
+          <a href="#" class="text-stone text-xs hover:text-olive transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
