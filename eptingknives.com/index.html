@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epting Knives | Custom Handmade Knives and Leatherwork</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forge: {
+              black: '#0a0a0c',
+              steel: '#1e1e20',
+              warm: '#2a2a2c',
+              accent: '#c9a84c',
+              muted: '#8a8a8e',
+              light: '#f0f0f0',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient-hero {
+      background: linear-gradient(135deg, rgba(10,10,12,0.95) 0%, rgba(10,10,12,0.7) 50%, rgba(10,10,12,0.4) 100%);
+    }
+    .gradient-cta {
+      background: linear-gradient(90deg, #c9a84c 0%, #b8983a 100%);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .img-hover:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-forge-black text-forge-light font-body antialiased">
+
+  <!-- Section 1: Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-forge-black/90 backdrop-blur-sm border-b border-forge-steel/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="font-display text-2xl tracking-wider text-forge-light">EPTING KNIVES</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#gallery" class="text-sm font-medium text-forge-muted hover:text-forge-light transition-colors">Gallery</a>
+          <a href="#about" class="text-sm font-medium text-forge-muted hover:text-forge-light transition-colors">About</a>
+          <a href="#contact" class="text-sm font-medium text-forge-muted hover:text-forge-light transition-colors">Contact</a>
+          <a href="#" class="text-sm font-medium bg-forge-accent text-forge-black px-5 py-2 hover:bg-forge-accent/90 transition-colors">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section 2: Hero -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <div class="absolute inset-0">
+      <img src="https://eptingknives.com/wp-content/uploads/2020/02/472_12222-1030x773.jpg" alt="Custom forged fixed blade knife by R.G. Epting" class="w-full h-full object-cover">
+      <div class="gradient-hero absolute inset-0"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-32">
+      <div class="max-w-2xl">
+        <p class="text-forge-accent font-medium text-sm tracking-widest uppercase mb-4">Custom Knifemaker, Texas</p>
+        <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-none mb-6">HANDMADE KNIVES.<br>FORGED IN FIRE.</h1>
+        <p class="text-lg md:text-xl text-forge-muted max-w-lg mb-10 leading-relaxed">Custom blades and leatherwork by R.G. Epting, finalist on the History Channel's Forged in Fire.</p>
+        <a href="#gallery" class="inline-block text-sm font-medium bg-forge-accent text-forge-black px-8 py-4 hover:bg-forge-accent/90 transition-colors">VIEW THE COLLECTION</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Primary Product (Asymmetric) -->
+  <section class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 reveal">
+          <img src="https://eptingknives.com/wp-content/uploads/2020/02/473_kit-3-773x1030.jpg" alt="Custom knife kit with leather sheath" class="w-full h-auto">
+        </div>
+        <div class="lg:col-span-5 reveal">
+          <h2 class="font-display text-4xl md:text-5xl mb-8">BUILT TO BE USED.</h2>
+          <div class="space-y-8">
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-forge-accent">01</span>
+              <div>
+                <h3 class="font-display text-xl mb-1">FIXED BLADES</h3>
+                <p class="text-forge-muted text-sm leading-relaxed">Full-tang fixed blade knives designed for hunting, bushcraft, and everyday carry.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-forge-accent">02</span>
+              <div>
+                <h3 class="font-display text-xl mb-1">FOLDING KNIVES</h3>
+                <p class="text-forge-muted text-sm leading-relaxed">Precision folders with smooth action and hand-finished details.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-forge-accent">03</span>
+              <div>
+                <h3 class="font-display text-xl mb-1">CUSTOM LEATHER</h3>
+                <p class="text-forge-muted text-sm leading-relaxed">Hand-tooled holsters, wallets, and leather accessories built to match.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Secondary (Reversed Split) -->
+  <section class="py-24 lg:py-32 bg-forge-steel">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5 order-2 lg:order-1 reveal">
+          <h2 class="font-display text-4xl md:text-5xl mb-6">FORGED IN FIRE FINALIST.</h2>
+          <p class="text-forge-muted mb-6 leading-relaxed">Richard Epting competed on the History Channel's Forged in Fire, Season 4, Episode 17, The K'pinga. Each knife is forged by hand in Texas with the same dedication to craft that took him to national television.</p>
+          <p class="text-forge-muted mb-8 leading-relaxed">From raw steel to finished blade, every piece carries the mark of a maker who treats each knife as a functional work of art.</p>
+          <a href="https://play.history.com/shows/forged-in-fire/season-4/episode-17" target="_blank" class="text-forge-accent text-sm font-medium hover:text-forge-light transition-colors">WATCH THE EPISODE &rarr;</a>
+        </div>
+        <div class="lg:col-span-7 order-1 lg:order-2 reveal">
+          <img src="https://eptingknives.com/wp-content/uploads/2020/02/ForgedInFire-300x169.jpg" alt="Richard Epting Forged in Fire TV appearance" class="w-full h-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Gallery Grid -->
+  <section id="gallery" class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <h2 class="font-display text-4xl md:text-5xl mb-4">THE COLLECTION.</h2>
+        <p class="text-forge-muted max-w-xl mx-auto">Fixed blades, folders, holsters, and leatherwork. Every piece built by hand in Texas.</p>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+        <div class="img-hover overflow-hidden aspect-[3/2]">
+          <img src="https://eptingknives.com/wp-content/uploads/2020/02/FixedBlades.jpg" alt="Fixed blade knives" class="w-full h-full object-cover transition-transform duration-500">
+        </div>
+        <div class="img-hover overflow-hidden aspect-[3/2]">
+          <img src="https://eptingknives.com/wp-content/uploads/2020/02/Folders.jpg" alt="Folding knives" class="w-full h-full object-cover transition-transform duration-500">
+        </div>
+        <div class="img-hover overflow-hidden aspect-[3/2]">
+          <img src="https://eptingknives.com/wp-content/uploads/2020/02/Holsters.jpg" alt="Custom leather holsters" class="w-full h-full object-cover transition-transform duration-500">
+        </div>
+        <div class="img-hover overflow-hidden aspect-[3/2]">
+          <img src="https://eptingknives.com/wp-content/uploads/2020/02/Leatherwork.jpg" alt="Handmade leather goods" class="w-full h-full object-cover transition-transform duration-500">
+        </div>
+        <div class="img-hover overflow-hidden aspect-[3/2]">
+          <img src="https://eptingknives.com/wp-content/uploads/2020/02/WalletRazors.jpg" alt="Wallets and razors" class="w-full h-full object-cover transition-transform duration-500">
+        </div>
+        <div class="img-hover overflow-hidden aspect-[3/2]">
+          <img src="https://eptingknives.com/wp-content/uploads/2020/02/475_folder-344-824x1030.jpg" alt="Custom folding knife detail" class="w-full h-full object-cover transition-transform duration-500">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Testimonials / Credibility -->
+  <section class="py-24 lg:py-32 bg-forge-steel">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+      <p class="text-forge-accent font-medium text-sm tracking-widest uppercase mb-6">As Seen On</p>
+      <h2 class="font-display text-4xl md:text-5xl mb-8">FORGED IN FIRE, SEASON 4.</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-10">
+        <img src="https://eptingknives.com/wp-content/uploads/2020/02/ForgedInFire-300x169.jpg" alt="Richard Epting on Forged in Fire" class="w-64 h-auto rounded-sm">
+        <div class="text-left max-w-md">
+          <p class="text-2xl font-display leading-tight mb-4">"I was a finalist on the History Channel's hit show Forged in Fire. Season 4, Episode 17. The K'pinga."</p>
+          <p class="text-forge-muted text-sm">Richard Epting, Owner and Founder</p>
+        </div>
+      </div>
+      <div class="flex justify-center gap-12 text-sm">
+        <div class="text-center">
+          <p class="font-display text-3xl text-forge-accent">TX</p>
+          <p class="text-forge-muted">Texas, USA</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-3xl text-forge-accent">FiF</p>
+          <p class="text-forge-muted">TV Finalist</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-3xl text-forge-accent"> handmade</p>
+          <p class="text-forge-muted">Every Piece</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: CTA Strip -->
+  <section id="contact" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="relative overflow-hidden" style="background-color: #1e1e20;">
+        <div class="absolute inset-0 opacity-10">
+          <img src="https://eptingknives.com/wp-content/uploads/2020/02/478_thumbnail_IMG_3591-773x1030.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="relative py-16 px-8 md:px-16 text-center reveal">
+          <h2 class="font-display text-4xl md:text-5xl mb-4">READY FOR YOUR CUSTOM PIECE?</h2>
+          <p class="text-forge-muted mb-8 max-w-xl mx-auto">Every knife starts with a conversation. Call or email to discuss your next blade.</p>
+          <p class="font-display text-2xl md:text-3xl text-forge-accent mb-2">(979) 255-2161</p>
+          <p class="text-forge-muted text-sm">rgeknives@hotmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: Footer -->
+  <footer class="py-16 border-t border-forge-steel/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h3 class="font-display text-xl mb-4">EPTING KNIVES</h3>
+          <p class="text-forge-muted text-sm leading-relaxed">Custom handmade knives and leatherwork by R.G. Epting. Forged in Fire finalist. Texas, USA.</p>
+        </div>
+        <div>
+          <h4 class="font-display text-lg mb-4">SHOP</h4>
+          <ul class="space-y-2 text-sm text-forge-muted">
+            <li><a href="#" class="hover:text-forge-light transition-colors">Fixed Blades</a></li>
+            <li><a href="#" class="hover:text-forge-light transition-colors">Folding Knives</a></li>
+            <li><a href="#" class="hover:text-forge-light transition-colors">Holsters</a></li>
+            <li><a href="#" class="hover:text-forge-light transition-colors">Leatherwork</a></li>
+            <li><a href="#" class="hover:text-forge-light transition-colors">Wallets and Razors</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-lg mb-4">COMPANY</h4>
+          <ul class="space-y-2 text-sm text-forge-muted">
+            <li><a href="#" class="hover:text-forge-light transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-forge-light transition-colors">Gallery</a></li>
+            <li><a href="#" class="hover:text-forge-light transition-colors">Pricing</a></li>
+            <li><a href="#" class="hover:text-forge-light transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-lg mb-4">CONTACT</h4>
+          <ul class="space-y-2 text-sm text-forge-muted">
+            <li>(979) 255-2161</li>
+            <li>rgeknives@hotmail.com</li>
+            <li>Texas, USA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-forge-steel/30 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-forge-muted text-xs"> Epting Knives. All rights reserved.</p>
+        <p class="text-forge-muted text-xs">Custom handmade knives and leatherwork.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer for reveal animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
