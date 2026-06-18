@@ -77,3 +77,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [The Hidden Woodsmen](https://jared-the-automator.github.io/redesign-portfolio/thehiddenwoodsmen.com/) | Boutique wilderness gear | New England, USA |
 | [Saucon Archery](https://jared-the-automator.github.io/redesign-portfolio/sauconarchery.com/) | Traditional archery supplies | Lehigh Valley, PA |
 | [Epting Knives](https://jared-the-automator.github.io/redesign-portfolio/eptingknives.com/) | Custom handmade knives and leatherwork | Texas, USA |
+| [MF Hunting Outfitter](https://jared-the-automator.github.io/redesign-portfolio/mfhunting.com/) | Hunting outfitter | Jackson Hole, WY |
