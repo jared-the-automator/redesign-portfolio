@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Laurel Designs | Super Ultralight Backpacking Gear</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forest: '#2D5016',
+            bone: '#E8E4D9',
+            cream: '#F5F5F0',
+            charcoal: '#1A1A1A',
+            warmwhite: '#FAFAF7',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="font-body text-charcoal bg-cream antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-bone">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://mountainlaureldesigns.com/wp-content/uploads/2022/11/MLDLogo2022.jpg" alt="Mountain Laurel Designs Logo" class="h-10 w-auto rounded">
+        <span class="font-display text-lg tracking-tight">MOUNTAIN LAUREL DESIGNS</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#" class="hover:text-forest transition-colors">Shelters</a>
+        <a href="#" class="hover:text-forest transition-colors">Packs</a>
+        <a href="#" class="hover:text-forest transition-colors">Tarps</a>
+        <a href="#" class="hover:text-forest transition-colors">Bivys</a>
+      </div>
+      <a href="#" class="bg-forest text-white px-5 py-2.5 text-sm font-semibold rounded hover:bg-forest/90 transition-colors">Shop Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-[100dvh] relative flex items-center">
+    <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/TrailStar.jpg" alt="TrailStar ultralight shelter pitched on a mountain ridge" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-charcoal/60 to-charcoal/30"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full">
+      <div class="max-w-2xl">
+        <span class="text-bone/80 text-sm font-medium tracking-wide uppercase mb-4 block">Roanoke, Virginia since 2002</span>
+        <h1 class="font-display text-5xl md:text-7xl text-white leading-[0.95] mb-6">Super Ultralight<br>Backpacking Gear</h1>
+        <p class="text-white/80 text-lg md:text-xl mb-8 max-w-xl">For over two decades, MLD has built the lightest, most trusted shelters and packs for serious wilderness miles.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="bg-forest text-white px-8 py-3.5 font-semibold rounded hover:bg-forest/90 transition-colors">Shop Shelters</a>
+          <a href="#" class="border-2 border-white/30 text-white px-8 py-3.5 font-medium rounded hover:bg-white/10 transition-colors">View Packs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/CricketTarpSetUp-e1489957979551.jpg" alt="Cricket pyramid tarp pitched in the backcountry" class="rounded-2xl w-full">
+        </div>
+        <div class="reveal">
+          <span class="text-forest font-medium text-sm tracking-wide uppercase mb-2 block">Shelters</span>
+          <h2 class="font-display text-4xl md:text-5xl mb-6">Sleep lighter.<br>Go further.</h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-forest leading-none">01</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Pyramid Tents</h3>
+                <p class="text-charcoal/70">SoloMid, DuoMid, and TrailStar. Our legendary pyramid shelters have carried thru-hikers from Georgia to Maine and beyond.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-forest leading-none">02</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Flat Tarps</h3>
+                <p class="text-charcoal/70">Monk, Grace, and Cricket tarps built from the lightest silnylon and Dyneema composites on the market.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-forest leading-none">03</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Bivy Sacks</h3>
+                <p class="text-charcoal/70">Superlight Solo and Soul ProVent bivys deliver the ultimate minimalist sleep system for gram-counters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (reversed split) -->
+  <section class="py-24 bg-bone">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal order-2 md:order-1">
+          <span class="text-forest font-medium text-sm tracking-wide uppercase mb-2 block">Our Story</span>
+          <h2 class="font-display text-4xl md:text-5xl mb-6">Built by hand<br>in Virginia since 2002</h2>
+          <p class="text-charcoal/70 text-lg mb-4">Mountain Laurel Designs was started by Ron Bell in 2002. His lightweight background spans over 40 years, from Search and Rescue in Yosemite to Ironman triathlons.</p>
+          <p class="text-charcoal/70 text-lg mb-4">After you sleep inside a haul bag on a big wall, you realize how little you need to reach your goals. That philosophy drives every piece of gear we build.</p>
+          <p class="text-charcoal/70 text-lg">Our products are proudly handmade in Roanoke, Virginia and shipped worldwide to outdoor lovers everywhere.</p>
+        </div>
+        <div class="reveal order-1 md:order-2">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/DuoMid-e1489969126526.jpg" alt="DuoMid shelter in mountain setting" class="rounded-2xl w-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <span class="text-forest font-medium text-sm tracking-wide uppercase mb-2 block">The Lineup</span>
+      <h2 class="font-display text-4xl md:text-5xl mb-12">Carry Less.<br>Do More.</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="reveal group relative">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/prophetultra1.jpg" alt="Prophet 48L ultralight backpack" class="rounded-xl w-full aspect-square object-cover">
+          <div class="absolute bottom-3 left-3 text-white font-semibold drop-shadow">Prophet 48L</div>
+        </div>
+        <div class="reveal group relative">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/Burn2026-side.png" alt="Burn 38L backpack" class="rounded-xl w-full aspect-square object-cover">
+          <div class="absolute bottom-3 left-3 text-white font-semibold drop-shadow">Burn 38L</div>
+        </div>
+        <div class="reveal group relative">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/exodusultra1.jpg" alt="Exodus 55L backpack" class="rounded-xl w-full aspect-square object-cover">
+          <div class="absolute bottom-3 left-3 text-white font-semibold drop-shadow">Exodus 55L</div>
+        </div>
+        <div class="reveal group relative">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2020/02/Hell-FrontView.jpg" alt="Hell 27L daypack" class="rounded-xl w-full aspect-square object-cover">
+          <div class="absolute bottom-3 left-3 text-white font-semibold drop-shadow">Hell 27L</div>
+        </div>
+        <div class="reveal group relative">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/MLDSoloMidXLGreen2022.jpg" alt="SoloMid XL pyramid tent" class="rounded-xl w-full aspect-square object-cover">
+          <div class="absolute bottom-3 left-3 text-white font-semibold drop-shadow">SoloMid XL</div>
+        </div>
+        <div class="reveal group relative">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/TrailStar.jpg" alt="TrailStar pyramid shelter" class="rounded-xl w-full aspect-square object-cover">
+          <div class="absolute bottom-3 left-3 text-white font-semibold drop-shadow">TrailStar</div>
+        </div>
+        <div class="reveal group relative">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/GraceTarpSilNylon.jpg" alt="Grace Tarp" class="rounded-xl w-full aspect-square object-cover">
+          <div class="absolute bottom-3 left-3 text-white font-semibold drop-shadow">Grace Tarp</div>
+        </div>
+        <div class="reveal group relative">
+          <img src="https://mountainlaureldesigns.com/wp-content/uploads/2017/03/SuperlightBivyOverhead.jpg" alt="Superlight Solo Bivy" class="rounded-xl w-full aspect-square object-cover">
+          <div class="absolute bottom-3 left-3 text-white font-semibold drop-shadow">Superlight Bivy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-24 bg-warmwhite">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="reveal">
+          <span class="text-forest font-medium text-sm tracking-wide uppercase mb-2 block">Philosophy</span>
+          <h2 class="font-display text-4xl md:text-5xl mb-6">Simplicity.<br>Self-Reliance.<br>Adventure.</h2>
+          <p class="text-charcoal/70 text-lg mb-4">Selecting a minimal number of SUL multiple-use gear, and only what we really need, creates the opportunity to transcend daily life and discover more. It is not about suffering or denial. It is about purity of form.</p>
+          <p class="text-charcoal/70 text-lg">Traveling longer trail distances efficiently and via ecologically sound principles creates a challenge and forms a basis for a new way of experiencing life.</p>
+        </div>
+        <div class="reveal bg-cream border border-bone rounded-2xl p-8">
+          <h3 class="font-semibold text-lg mb-4">Mountain Laurel Designs</h3>
+          <div class="space-y-3 text-charcoal/70">
+            <p><strong>Founded:</strong> 2002 in Roanoke, Virginia</p>
+            <p><strong>Founder:</strong> Ron Bell</p>
+            <p><strong>Location:</strong> 1909 Salem Ave SW, Roanoke, VA 24016</p>
+            <p><strong>Email:</strong> team@mountainlaureldesigns.com</p>
+            <p><strong>Build Times:</strong> Small items 2 weeks, Large items 8-12 weeks</p>
+            <p><strong>Known For:</strong> Super Ultralight (SUL) shelters, packs, and bivys</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-20 bg-forest text-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl mb-4">Ready to go lighter?</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">Our monthly ordering window is open now. Hand-built in Virginia, shipped worldwide.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#" class="bg-white text-forest px-8 py-3.5 font-semibold rounded hover:bg-white/90 transition-colors">Shop the Collection</a>
+        <a href="#" class="border-2 border-white/30 text-white px-8 py-3.5 font-medium rounded hover:bg-white/10 transition-colors">Contact Ron</a>
+      </div>
+      <p class="text-white/60 text-sm mt-6">1909 Salem Ave SW, Roanoke, VA 24016 | team@mountainlaureldesigns.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div>
+          <h4 class="font-display text-lg mb-4">Mountain Laurel Designs</h4>
+          <p class="text-white/60 text-sm">Super ultralight backpacking and wilderness equipment. Hand-built in Roanoke, Virginia since 2002.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Shop</h4>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="#" class="hover:text-white transition-colors">Shelters</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Packs</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Tarps</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Bivys</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li><a href="#" class="hover:text-white transition-colors">History</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Philosophy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li>1909 Salem Ave SW</li>
+            <li>Roanoke, VA 24016</li>
+            <li>team@mountainlaureldesigns.com</li>
+            <li>Mon-Fri 9am-3pm EST</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-white/40 text-xs">2026 Mountain Laurel Designs. All rights reserved.</p>
+        <div class="flex gap-4 text-sm">
+          <a href="#" class="text-white/60 hover:text-white transition-colors">Privacy</a>
+          <a href="#" class="text-white/60 hover:text-white transition-colors">Shipping</a>
+          <a href="#" class="text-white/60 hover:text-white transition-colors">Warranty</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

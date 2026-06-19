@@ -86,3 +86,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | [Pond Craft Boats](https://jared-the-automator.github.io/redesign-portfolio/pondcraftboats.com/) | Custom handmade pontoon boats | Bainbridge, NY |
 | [Roger Carroll Boats](https://jared-the-automator.github.io/redesign-portfolio/rogercarrollboats.com/) | Custom wooden boat builder | Cape Cod, MA |
+| [Mountain Laurel Designs](https://jared-the-automator.github.io/redesign-portfolio/mountainlaureldesigns.com/) | Ultralight backpacking gear | Roanoke, VA |
