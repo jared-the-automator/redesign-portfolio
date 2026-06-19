@@ -84,3 +84,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Ashes Still Water Boats](https://jared-the-automator.github.io/redesign-portfolio/ashesstillwaterboats.com/) | Cedar strip canoe & kayak plans | Schaffhausen, Switzerland |
 | [Relaks Fishing Charters](https://jared-the-automator.github.io/redesign-portfolio/relaksfishing.com/) | Fishing charters | Jupiter/Riviera Beach, FL |
 
+| [Pond Craft Boats](https://jared-the-automator.github.io/redesign-portfolio/pondcraftboats.com/) | Custom handmade pontoon boats | Bainbridge, NY |

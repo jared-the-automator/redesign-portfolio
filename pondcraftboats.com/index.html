@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pond Craft Boats | Custom Handmade Pontoon Boats</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            'pond-green': '#0e1f17',
+            'pond-card': '#162b20',
+            'pond-bone': '#e8e0d5',
+            'pond-gold': '#c5a059',
+            'pond-muted': '#8a9b8d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0e1f17;
+      color: #e8e0d5;
+    }
+    .font-display { font-family: 'Playfair Display', serif; }
+    ::selection { background-color: #c5a059; color: #0e1f17; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="font-body">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-pond-green/90 backdrop-blur-sm border-b border-pond-muted/20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl text-pond-bone tracking-wide">Pond Craft</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#boats" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Our Boats</a>
+        <a href="#why" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Why Pond Craft</a>
+        <a href="#gallery" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Gallery</a>
+        <a href="#contact" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Contact</a>
+      </div>
+      <a href="#contact" class="px-5 py-2 bg-pond-gold text-pond-green text-sm font-medium rounded-sm hover:bg-pond-bone transition-colors duration-300">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- 2. Hero: full-bleed, left-aligned, min-h-[100dvh] -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://pondcraftboats.com/wp-content/uploads/2024/07/image000001_2.jpg" alt="Pond Craft pontoon boat on calm water" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-pond-green/70"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 py-32 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block text-xs tracking-widest uppercase text-pond-gold mb-4">Bainbridge, New York</span>
+        <h1 class="font-display text-5xl md:text-7xl text-pond-bone leading-tight mb-6">Hand Built.<br>All Aluminum.<br>A Lifetime on the Water.</h1>
+        <p class="text-lg md:text-xl text-pond-muted max-w-lg mb-8">Custom pontoon boats for ponds, small lakes, and rivers. Modest enough to navigate the smallest of waterways, spacious enough for your whole crew.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#boats" class="px-6 py-3 bg-pond-gold text-pond-green font-medium rounded-sm hover:bg-pond-bone transition-colors duration-300">Explore Our Boats</a>
+          <a href="#contact" class="px-6 py-3 border border-pond-muted text-pond-bone font-medium rounded-sm hover:border-pond-gold hover:text-pond-gold transition-colors duration-300">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary product section: asymmetric split -->
+  <section id="boats" class="py-24 bg-pond-green">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <img src="https://pondcraftboats.com/wp-content/uploads/2020/05/green-22-seats.jpeg" alt="Green Pond Craft boat with seating" class="w-full h-[400px] object-cover rounded-sm" />
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <span class="text-xs tracking-widest uppercase text-pond-gold mb-2 block">Built for Your Water</span>
+          <h2 class="font-display text-4xl text-pond-bone mb-6">Every Boat Is Custom Made</h2>
+          <p class="text-pond-muted mb-8 leading-relaxed">Pond Craft Boats are custom built for people who enjoy fishing on ponds, small lakes, and rivers. We offer stability similar to larger pontoon boats but are small and versatile enough to navigate the waterways you call home.</p>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <span class="text-pond-gold font-display text-2xl">01</span>
+              <div>
+                <h3 class="text-pond-bone font-medium mb-1">Handcrafted One at a Time</h3>
+                <p class="text-pond-muted text-sm">All aluminum construction means no rot, no maintenance, and a lifetime of use.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-pond-gold font-display text-2xl">02</span>
+              <div>
+                <h3 class="text-pond-bone font-medium mb-1">Sized to Your Needs</h3>
+                <p class="text-pond-muted text-sm">Choose from 10', 12', or 13'6" models. Add a V-nose, tri-toon, or custom seating.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-pond-gold font-display text-2xl">03</span>
+              <div>
+                <h3 class="text-pond-bone font-medium mb-1">Electric or Gas Powered</h3>
+                <p class="text-pond-muted text-sm">Compatible with Honda and Mercury outboards up to 40 HP.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary section: reversed split -->
+  <section id="why" class="py-24 bg-pond-card">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <span class="text-xs tracking-widest uppercase text-pond-gold mb-2 block">Why Pond Craft</span>
+          <h2 class="font-display text-4xl text-pond-bone mb-6">Made for the Way You Fish</h2>
+          <p class="text-pond-muted mb-6 leading-relaxed">Whether enjoying the day on a pond, small lake, or river, our custom pontoons are the perfect fit. Fishing, hunting, sunbathing, swimming platform, or any use, our custom boats are made for you.</p>
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-3">
+              <span class="w-2 h-2 bg-pond-gold rounded-full mt-2 flex-shrink-0"></span>
+              <span class="text-pond-bone">1,000 lbs weight capacity</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-2 h-2 bg-pond-gold rounded-full mt-2 flex-shrink-0"></span>
+              <span class="text-pond-bone">Handicap accessible builds available</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-2 h-2 bg-pond-gold rounded-full mt-2 flex-shrink-0"></span>
+              <span class="text-pond-bone">Honda and Mercury motor options</span>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div>
+              <span class="font-display text-3xl text-pond-gold block">2015</span>
+              <span class="text-xs text-pond-muted uppercase tracking-wide">Building Since</span>
+            </div>
+            <div>
+              <span class="font-display text-3xl text-pond-gold block">NY</span>
+              <span class="text-xs text-pond-muted uppercase tracking-wide">Made in Upstate</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="https://pondcraftboats.com/wp-content/uploads/2018/06/pond-craft-2-optimized.jpg" alt="Overhead view of Pond Craft boat on water" class="w-full h-[400px] object-cover rounded-sm" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery: photography grid -->
+  <section id="gallery" class="py-24 bg-pond-green">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <span class="text-xs tracking-widest uppercase text-pond-gold mb-2 block">On the Water</span>
+        <h2 class="font-display text-4xl text-pond-bone">See What We Build</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+        <div class="reveal">
+          <img src="https://pondcraftboats.com/wp-content/uploads/2020/05/blue2.jpg" alt="Blue Pond Craft boat on calm water" class="w-full h-64 object-cover rounded-sm" />
+        </div>
+        <div class="reveal">
+          <img src="https://pondcraftboats.com/wp-content/uploads/2021/02/small_pontoon_pond_boat_dock.jpg" alt="Small pontoon at dock" class="w-full h-64 object-cover rounded-sm" />
+        </div>
+        <div class="reveal">
+          <img src="https://pondcraftboats.com/wp-content/uploads/2020/05/car-green.jpeg" alt="Green Pond Craft boat with cover" class="w-full h-64 object-cover rounded-sm" />
+        </div>
+        <div class="reveal">
+          <img src="https://pondcraftboats.com/wp-content/uploads/2018/06/pond-craft-4-optimized.jpg" alt="Boat on the water from above" class="w-full h-64 object-cover rounded-sm" />
+        </div>
+        <div class="reveal">
+          <img src="https://pondcraftboats.com/wp-content/uploads/2020/05/storm2.jpeg" alt="Boat in stormy weather" class="w-full h-64 object-cover rounded-sm" />
+        </div>
+        <div class="reveal">
+          <img src="https://pondcraftboats.com/wp-content/uploads/2018/04/river2.jpg" alt="River scene with boat" class="w-full h-64 object-cover rounded-sm" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / credibility -->
+  <section class="py-24 bg-pond-card">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center reveal">
+        <span class="text-xs tracking-widest uppercase text-pond-gold mb-4 block">What Owners Say</span>
+        <p class="font-display text-2xl md:text-3xl text-pond-bone leading-relaxed mb-6">"You know you'd love to cruise along your favorite lake, pond, or river in your own boat, listening to the rushing water and casting out for that big fish. For you, only the best, a Pond Craft Boat."</p>
+        <p class="text-pond-muted text-sm">Pond Craft Owner</p>
+      </div>
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="reveal">
+          <span class="font-display text-3xl text-pond-gold block">10'-13'</span>
+          <span class="text-xs text-pond-muted uppercase tracking-wide">Deck Lengths</span>
+        </div>
+        <div class="reveal">
+          <span class="font-display text-3xl text-pond-gold block">1,000</span>
+          <span class="text-xs text-pond-muted uppercase tracking-wide">Lbs Capacity</span>
+        </div>
+        <div class="reveal">
+          <span class="font-display text-3xl text-pond-gold block">40 HP</span>
+          <span class="text-xs text-pond-muted uppercase tracking-wide">Max Motor</span>
+        </div>
+        <div class="reveal">
+          <span class="font-display text-3xl text-pond-gold block">$7,096</span>
+          <span class="text-xs text-pond-muted uppercase tracking-wide">Starting Price</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA strip -->
+  <section id="contact" class="py-16 bg-pond-gold">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl md:text-4xl text-pond-green mb-4">Ready to Build Your Boat?</h2>
+      <p class="text-pond-green/80 mb-8 max-w-xl mx-auto">Call or email for a custom quote on the perfect small pontoon boat for your water.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <a href="tel:607-639-2354" class="px-8 py-3 bg-pond-green text-pond-bone font-medium rounded-sm hover:bg-pond-card transition-colors duration-300">(607) 639-2354</a>
+        <a href="mailto:paul@pondcraftboats.com" class="px-8 py-3 border border-pond-green text-pond-green font-medium rounded-sm hover:bg-pond-green hover:text-pond-bone transition-colors duration-300">paul@pondcraftboats.com</a>
+      </div>
+      <p class="mt-6 text-xs text-pond-green/70">144 Owlville Road, Bainbridge, NY 13733</p>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="py-12 bg-pond-green border-t border-pond-muted/20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+      <div>
+        <span class="font-display text-xl text-pond-bone block mb-2">Pond Craft</span>
+        <p class="text-pond-muted text-sm">Custom handmade pontoon boats for ponds, small lakes, and rivers.</p>
+      </div>
+      <div>
+        <span class="text-xs tracking-widest uppercase text-pond-muted block mb-3">Navigation</span>
+        <ul class="space-y-2">
+          <li><a href="#boats" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Our Boats</a></li>
+          <li><a href="#why" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Why Pond Craft</a></li>
+          <li><a href="#gallery" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Gallery</a></li>
+          <li><a href="#contact" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="text-xs tracking-widest uppercase text-pond-muted block mb-3">Contact</span>
+        <ul class="space-y-2">
+          <li class="text-sm text-pond-muted">(607) 639-2354</li>
+          <li class="text-sm text-pond-muted">paul@pondcraftboats.com</li>
+          <li class="text-sm text-pond-muted">144 Owlville Road</li>
+          <li class="text-sm text-pond-muted">Bainbridge, NY 13733</li>
+        </ul>
+      </div>
+      <div>
+        <span class="text-xs tracking-widest uppercase text-pond-muted block mb-3">Follow</span>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Facebook</a></li>
+          <li><a href="#" class="text-sm text-pond-muted hover:text-pond-gold transition-colors duration-300">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-pond-muted/20 text-center">
+      <p class="text-xs text-pond-muted"> Hand Built in Bainbridge, New York, since 2015.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
