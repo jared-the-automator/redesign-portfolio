@@ -3,368 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RJ Lures | Handcrafted Fishing Lures | Houghton, Michigan</title>
+  <title>RJ Lures - Hand-Crafted Fishing Lures</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --forest: #0F1F0F;
-      --grove: #1A2D1A;
-      --canopy: #2A3D2A;
-      --gold: #C9A227;
-      --bone: #F0EAD6;
-      --sage: #9CA891;
-    }
-    * { box-sizing: border-box; }
-    body {
-      background: var(--forest);
-      color: var(--bone);
-      font-family: 'Source Sans 3', system-ui, sans-serif;
-      margin: 0;
-    }
-    .font-display { font-family: 'Playfair Display', Georgia, serif; }
-    .text-gold  { color: var(--gold);  }
-    .text-bone  { color: var(--bone);  }
-    .text-sage  { color: var(--sage);  }
-    .bg-forest  { background: var(--forest); }
-    .bg-grove   { background: var(--grove);  }
-    .bg-gold    { background: var(--gold);   }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.55s ease, transform 0.55s ease;
-    }
-    .reveal.visible { opacity: 1; transform: none; }
-    .delay-1 { transition-delay: 0.12s; }
-    .delay-2 { transition-delay: 0.24s; }
-
-    .btn-gold {
-      background: var(--gold); color: var(--forest);
-      font-weight: 700; border-radius: 4px;
-      padding: 0.875rem 2rem; text-decoration: none;
-      display: inline-block; transition: opacity 0.2s;
-    }
-    .btn-gold:hover { opacity: 0.87; }
-
-    .btn-outline-bone {
-      border: 2px solid rgba(240,234,214,0.35); color: var(--bone);
-      font-weight: 600; border-radius: 4px;
-      padding: 0.875rem 2rem; text-decoration: none;
-      display: inline-block; transition: border-color 0.2s;
-    }
-    .btn-outline-bone:hover { border-color: var(--bone); }
-
-    .btn-outline-gold {
-      border: 2px solid var(--gold); color: var(--gold);
-      font-weight: 700; border-radius: 4px;
-      padding: 0.75rem 1.75rem; text-decoration: none;
-      display: inline-block; transition: all 0.2s;
-    }
-    .btn-outline-gold:hover { background: var(--gold); color: var(--forest); }
-
-    .btn-sm-gold {
-      background: var(--gold); color: var(--forest);
-      font-weight: 700; border-radius: 4px;
-      padding: 0.5rem 1.2rem; text-decoration: none;
-      display: inline-block; font-size: 0.875rem;
-      transition: opacity 0.2s;
-    }
-    .btn-sm-gold:hover { opacity: 0.87; }
-
-    a { color: inherit; }
-    img { display: block; }
-
-    @media (max-width: 768px) {
-      .split-grid     { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
-      .footer-grid    { grid-template-columns: 1fr 1fr !important; gap: 2rem !important; }
-      .stats-grid     { grid-template-columns: 1fr !important; gap: 2rem !important; }
-      .gallery-grid   { grid-template-columns: 1fr 1fr !important; }
-      .split-grid > [style*="order: 2"] { order: 1 !important; }
-      .split-grid > [style*="order: 1"] { order: 2 !important; }
-    }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Inter', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
   </style>
 </head>
-<body>
+<body class="font-body bg-[#0B132B] text-white antialiased">
 
-  <!-- NAV -->
-  <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(15,31,15,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--canopy);">
-    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between" style="height: 4rem;">
-      <a href="#" class="font-display text-gold" style="font-size: 1.25rem; font-weight: 700; text-decoration: none;">RJ Lures</a>
-      <div class="hidden md:flex items-center gap-8 text-sage" style="font-size: 0.875rem; font-weight: 600;">
-        <a href="#walleye" class="text-sage hover:text-bone transition-colors" style="text-decoration: none;">Walleye</a>
-        <a href="#musky"   class="text-sage hover:text-bone transition-colors" style="text-decoration: none;">Musky &amp; Pike</a>
-        <a href="#salmon"  class="text-sage hover:text-bone transition-colors" style="text-decoration: none;">Salmon &amp; Trout</a>
-        <a href="#gallery" class="text-sage hover:text-bone transition-colors" style="text-decoration: none;">Gallery</a>
-        <a href="https://rjlures.com/store" class="text-sage hover:text-bone transition-colors" style="text-decoration: none;">Shop</a>
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-[#0B132B]/90 backdrop-blur-sm border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="font-display text-xl text-white tracking-wide">RJ Lures</span>
       </div>
-      <a href="https://rjlures.com/store" class="btn-sm-gold">Order Now</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#products" class="text-sm text-slate-300 hover:text-white transition-colors">Products</a>
+        <a href="#about" class="text-sm text-slate-300 hover:text-white transition-colors">About</a>
+        <a href="#contact" class="text-sm text-slate-300 hover:text-white transition-colors">Contact</a>
+      </div>
+      <a href="#store" class="hidden md:inline-flex items-center px-5 py-2 bg-[#5B8C8A] text-white text-sm font-semibold rounded-lg hover:bg-[#4A7A78] transition-colors">Shop Now</a>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section style="position: relative; min-height: 100dvh; display: flex; align-items: center; overflow: hidden;">
-    <img
-      src="https://www.rjlures.com/wp-content/uploads/2013/01/web-esox-tigertails.jpg"
-      alt="Esox Tiger Tail custom-painted musky and pike lures, handmade by RJ Lures in Houghton, Michigan"
-      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;"
-    >
-    <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(15,31,15,0.97) 42%, rgba(15,31,15,0.55));"></div>
-    <div class="relative w-full max-w-7xl mx-auto px-6" style="padding-top: 5rem;">
-      <div style="max-width: 545px;">
-        <span style="color: var(--gold); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; display: block; margin-bottom: 1.5rem;">Houghton, Michigan, Upper Peninsula</span>
-        <h1 class="font-display text-bone" style="font-size: clamp(2.5rem, 5.5vw, 4.25rem); line-height: 1.1; font-weight: 700; margin-bottom: 1.5rem;">
-          Handcrafted in the UP.<br>Built to Get Bit.
-        </h1>
-        <p class="text-sage" style="font-size: 1.125rem; line-height: 1.75; margin-bottom: 2.5rem; max-width: 430px;">
-          Every lure hand-airbrushed by Ron Wiitanen in Houghton, Michigan. Proven for walleye, musky, salmon, and trout.
-        </p>
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://www.rjlures.com/wp-content/uploads/2016/01/web2-h-and-l-spoons.jpg" alt="Hand-crafted fishing spoons" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0B132B]/95 via-[#0B132B]/70 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0B132B]/60 via-transparent to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-16">
+      <div class="max-w-2xl">
+        <span class="inline-block px-3 py-1 bg-[#5B8C8A]/20 text-[#5B8C8A] text-xs font-semibold tracking-wider uppercase rounded-lg mb-6">Houghton, Michigan</span>
+        <h1 class="font-display text-5xl md:text-7xl text-white leading-tight mb-6">Hand-Crafted<br/>Fishing Lures</h1>
+        <p class="text-lg text-slate-300 mb-8 max-w-lg">Built in Michigan's Upper Peninsula. Fish proven and tested on walleye, musky, bass, and trout. Custom colors available.</p>
         <div class="flex flex-wrap gap-4">
-          <a href="https://rjlures.com/store" class="btn-gold">Shop Lures</a>
-          <a href="#gallery" class="btn-outline-bone">View All Designs</a>
+          <a href="#store" class="inline-flex items-center px-6 py-3 bg-[#5B8C8A] text-white font-semibold rounded-lg hover:bg-[#4A7A78] transition-colors">Shop the Collection</a>
+          <a href="#about" class="inline-flex items-center px-6 py-3 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">Our Story</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CRAWLER HARNESSES — Primary product section, image left -->
-  <section id="walleye" class="bg-grove" style="padding: 6rem 0;">
-    <div class="max-w-7xl mx-auto px-6 split-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
-      <div class="reveal">
-        <img
-          src="https://www.rjlures.com/wp-content/uploads/2013/01/web1-blades-harnesses.jpg"
-          alt="Hand-airbrushed crawler harness blades, built with Blood Run Tackle and VMC fast grip hooks"
-          style="width: 100%; border-radius: 4px;"
-        >
-      </div>
-      <div class="reveal delay-1">
-        <h2 class="font-display text-bone" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Crawler Harnesses</h2>
-        <p class="text-sage" style="line-height: 1.75; margin-bottom: 2.5rem;">Hand-tied for walleye. The blades are hand-airbrushed across a wide range of colors and finished with a hard clear coat that holds season after season.</p>
-        <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
-          <div style="display: flex; gap: 1.25rem; align-items: flex-start;">
-            <span class="font-display text-gold" style="font-size: 1.75rem; font-weight: 700; min-width: 2.5rem; line-height: 1.1;">01</span>
-            <div>
-              <div class="text-bone" style="font-weight: 600; margin-bottom: 0.25rem;">Blood Run Tackle Leader Material</div>
-              <div class="text-sage" style="font-size: 0.9rem;">Premium walleye harness leader. Every single tie.</div>
+  <!-- Primary Product Section -->
+  <section id="products" class="py-24 bg-[#0B132B]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <img src="https://www.rjlures.com/wp-content/uploads/2014/01/web-blade-baits-2.jpg" alt="Trigger blade baits" class="w-full h-[500px] object-cover rounded-lg shadow-2xl" />
+        </div>
+        <div class="order-1 lg:order-2">
+          <h2 class="font-display text-4xl text-white mb-8">Built for Every Species</h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <span class="text-4xl font-display text-[#5B8C8A]">01</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Walleye Specialists</h3>
+                <p class="text-slate-400">Our spoons, blade baits, and crawler harnesses are tuned for the biggest walleye in the Great Lakes. Proven on Lake Superior and beyond.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <span class="text-4xl font-display text-[#5B8C8A]">02</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Musky Power</h3>
+                <p class="text-slate-400">The Esox Tiger Tail and Buzz Tail bucktails are built to handle the biggest musky and pike. Heavy-duty components for heavy fish.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <span class="text-4xl font-display text-[#5B8C8A]">03</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Multi-Species Versatility</h3>
+                <p class="text-slate-400">From bass to trout to salmon, our lures work across fresh water. One lure, countless trophy catches.</p>
+              </div>
             </div>
           </div>
-          <div style="display: flex; gap: 1.25rem; align-items: flex-start;">
-            <span class="font-display text-gold" style="font-size: 1.75rem; font-weight: 700; min-width: 2.5rem; line-height: 1.1;">02</span>
-            <div>
-              <div class="text-bone" style="font-weight: 600; margin-bottom: 0.25rem;">Hand Airbrushed Blades</div>
-              <div class="text-sage" style="font-size: 0.9rem;">Multiple blade styles with a durable clear coat finish that holds color through a full season of trolling.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (Reversed Split) -->
+  <section id="about" class="py-24 bg-[#111B36]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="font-display text-4xl text-white mb-6">Made by Hand in the Upper Peninsula</h2>
+          <p class="text-lg text-slate-300 mb-6">RJ Lures are hand crafted and painted in our shop in Houghton, Michigan, located in the state's Upper Peninsula. We use the highest quality components, including VMC hooks.</p>
+          <p class="text-lg text-slate-300 mb-8">What makes our lures so special? They are fish proven and work for many different fish species. If you are looking for an enjoyable day on the water or that tournament winning fish, RJ Lures can help you Get Bit.</p>
+          <div class="flex items-center gap-8">
+            <div class="text-center">
+              <div class="text-3xl font-display text-[#5B8C8A]">2014</div>
+              <div class="text-sm text-slate-400 mt-1">Crafting Lures</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-display text-[#5B8C8A]">MI</div>
+              <div class="text-sm text-slate-400 mt-1">Upper Peninsula</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-display text-[#5B8C8A]">Custom</div>
+              <div class="text-sm text-slate-400 mt-1">Paint Jobs</div>
             </div>
           </div>
-          <div style="display: flex; gap: 1.25rem; align-items: flex-start;">
-            <span class="font-display text-gold" style="font-size: 1.75rem; font-weight: 700; min-width: 2.5rem; line-height: 1.1;">03</span>
+        </div>
+        <div>
+          <img src="https://www.rjlures.com/wp-content/uploads/2014/01/web-spoons-3.jpg" alt="Trolling spoons collection" class="w-full h-[500px] object-cover rounded-lg shadow-2xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section class="py-24 bg-[#0B132B]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-4xl text-white mb-4">The Collection</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto">Every lure is hand-painted with precision and tested on the water before it reaches your tackle box.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="reveal">
+          <img src="https://www.rjlures.com/wp-content/uploads/2014/01/web-tigertail.jpg" alt="Esox Tiger Tail lure" class="w-full h-80 object-cover rounded-lg shadow-lg" />
+          <div class="mt-4">
+            <h3 class="text-lg font-semibold text-white">Esox Tiger Tail</h3>
+            <p class="text-sm text-slate-400">A new look to a bucktail lure. Outstanding for big pike and muskie.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <img src="https://www.rjlures.com/wp-content/uploads/2014/01/web-blade-baits-2.jpg" alt="Trigger Blade Baits" class="w-full h-80 object-cover rounded-lg shadow-lg" />
+          <div class="mt-4">
+            <h3 class="text-lg font-semibold text-white">Trigger Blade Baits</h3>
+            <p class="text-sm text-slate-400">Vibrating lures that excel at vertical jigging and casting. Open water or ice.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <img src="https://www.rjlures.com/wp-content/uploads/2016/01/web2-h-and-l-spoons.jpg" alt="Heavy and Light Spoons" class="w-full h-80 object-cover rounded-lg shadow-lg" />
+          <div class="mt-4">
+            <h3 class="text-lg font-semibold text-white">Heavy and Light Spoons</h3>
+            <p class="text-sm text-slate-400">New casting, jigging, and trolling spoons for walleye, trout, and salmon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-24 bg-[#111B36]">
+    <div class="max-w-7xl mx-auto Woolrich px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="font-display text-4xl text-white mb-8">Fish Proven and Tournament Tested</h2>
+          <blockquote class="text-xl text-slate-300 italic mb-8">"What makes our lures so special? They are fish proven and work for many different fish species!"</blockquote>
+          <p class="text-white font-semibold">Ron J. Wiitanen</p>
+          <p class="text-slate-400 text-sm">Founder, RJ Lures</p>
+          <div class="grid grid-cols-2 gap-8 mt-12">
             <div>
-              <div class="text-bone" style="font-weight: 600; margin-bottom: 0.25rem;">VMC Fast Grip Hooks</div>
-              <div class="text-sage" style="font-size: 0.9rem;">Top-end hooks on every harness. Consistent sets, nothing lost at the boat.</div>
+              <div class="text-4xl font-display text-[#5B8C8A]">5+</div>
+              <div class="text-sm text-slate-400 mt-1">Species Covered</div>
+            </div>
+            <div>
+              <div class="text-4xl font-display text-[#5B8C8A]">UP</div>
+              <div class="text-sm text-slate-400 mt-1">Made in Michigan</div>
             </div>
           </div>
         </div>
-        <a href="https://rjlures.com/store" class="btn-gold">Shop Harnesses</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRIGGER BLADE BAITS — Reversed split, content left, image right -->
-  <section class="bg-forest" style="padding: 6rem 0;">
-    <div class="max-w-7xl mx-auto px-6 split-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
-      <div class="reveal" style="order: 1;">
-        <h2 class="font-display text-bone" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Trigger Blade Baits</h2>
-        <p class="text-sage" style="line-height: 1.75; margin-bottom: 1.5rem;">Cast them, jig them vertically, or troll them. Open water or ice, they catch walleye, pike, bass, and lake trout in any season and any depth.</p>
-        <p class="text-sage" style="line-height: 1.75; margin-bottom: 2.5rem;">Available in 1/4 oz., 1/2 oz., and 3/4 oz. Hand-airbrushed in a full range of proven colors. Every blade holds up to repeated use.</p>
-        <a href="https://rjlures.com/store" class="btn-outline-gold">Shop Blade Baits</a>
-      </div>
-      <div class="reveal delay-1" style="order: 2;">
-        <img
-          src="https://www.rjlures.com/wp-content/uploads/2013/01/bladebaitsw.jpg"
-          alt="Trigger blade baits by RJ Lures, hand-airbrushed in multiple colors for walleye and ice fishing"
-          style="width: 100%; border-radius: 4px;"
-        >
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY GRID — Layout break from the zigzag -->
-  <section id="gallery" class="bg-grove" style="padding: 6rem 0;">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="reveal" style="margin-bottom: 3rem;">
-        <span style="color: var(--gold); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; display: block; margin-bottom: 0.75rem;">The Full Lineup</span>
-        <h2 class="font-display text-bone" style="font-size: 2.25rem; font-weight: 700;">Every lure, hand-painted in Houghton.</h2>
-      </div>
-      <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.875rem;">
-        <div class="reveal" style="aspect-ratio: 1; overflow: hidden; background: var(--canopy); border-radius: 4px;">
-          <img src="https://www.rjlures.com/wp-content/uploads/2013/01/web1-heavy-weight-spoons.jpg" alt="Heavy weight casting and jigging spoons in four sizes, hand-painted by RJ Lures" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="reveal delay-1" style="aspect-ratio: 1; overflow: hidden; background: var(--canopy); border-radius: 4px;">
-          <img src="https://www.rjlures.com/wp-content/uploads/2016/01/web2-h-and-l-spoons.jpg" alt="Heavy and light weight spoon lineup, RJ Lures, handcrafted in Michigan" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="reveal delay-2" style="aspect-ratio: 1; overflow: hidden; background: var(--canopy); border-radius: 4px;">
-          <img src="https://www.rjlures.com/wp-content/uploads/2013/01/web1-flutter-spoons.jpg" alt="Trolling flutter spoons for king salmon, coho, lake trout, and steelhead by RJ Lures" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="reveal" style="aspect-ratio: 1; overflow: hidden; background: var(--canopy); border-radius: 4px;">
-          <img src="https://www.rjlures.com/wp-content/uploads/2013/01/web1-Leight-Weight-spoons.jpg" alt="Light weight trolling spoons in four sizes for salmon, trout, and steelhead" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="reveal delay-1" style="aspect-ratio: 1; overflow: hidden; background: var(--canopy); border-radius: 4px;">
-          <img src="https://www.rjlures.com/wp-content/uploads/2013/01/web-shimmy-spoons.jpeg" alt="Shimmy spoon with slow-fall action for ice fishing and open water jigging, RJ Lures" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="reveal delay-2" style="aspect-ratio: 1; overflow: hidden; background: var(--canopy); border-radius: 4px;">
-          <img src="https://www.rjlures.com/wp-content/uploads/2014/01/web-blade-baits-2.jpg" alt="Trigger blade baits in hand-airbrushed colors, RJ Lures Michigan" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ESOX TIGER TAIL — Musky/pike feature -->
-  <section id="musky" class="bg-forest" style="padding: 6rem 0;">
-    <div class="max-w-7xl mx-auto px-6 split-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
-      <div class="reveal">
-        <img
-          src="https://www.rjlures.com/wp-content/uploads/2013/01/web-esox-tigertails.jpg"
-          alt="Esox Tiger Tail musky and northern pike bucktail lures in two sizes, by RJ Lures"
-          style="width: 100%; border-radius: 4px;"
-        >
-      </div>
-      <div class="reveal delay-1">
-        <h2 class="font-display text-bone" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Esox Tiger Tail</h2>
-        <p class="text-sage" style="line-height: 1.75; margin-bottom: 1.5rem;">Built for trophy northern pike and giant muskies. High-contrast painted blades and tail combinations trigger reactionary strikes. Cast it or troll it. Two sizes for any water.</p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2.5rem;">
-          <div style="background: var(--grove); border: 1px solid var(--canopy); padding: 1.25rem; border-radius: 4px;">
-            <div class="text-gold" style="font-weight: 700; margin-bottom: 0.25rem;">D8</div>
-            <div class="text-sage" style="font-size: 0.875rem;">8.5 in., 2.25 oz.</div>
-          </div>
-          <div style="background: var(--grove); border: 1px solid var(--canopy); padding: 1.25rem; border-radius: 4px;">
-            <div class="text-gold" style="font-weight: 700; margin-bottom: 0.25rem;">D10</div>
-            <div class="text-sage" style="font-size: 0.875rem;">10.5 in., 3.25 oz.</div>
+        <div class="bg-[#0B132B] p-8 rounded-lg">
+          <img src="https://www.rjlures.com/wp-content/uploads/2014/01/web-spoons-3.jpg" alt="Trolling spoons" class="w-full h-64 object-cover rounded-lg mb-6" />
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 bg-[#5B8C8A] rounded-full"></div>
+              <p class="text-slate-300">Hand painted in Houghton, MI</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 bg-[#5B8C8A] rounded-full"></div>
+              <p class="text-slate-300">Premium VMC hooks on every lure</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 bg-[#5B8C8A] rounded-full"></div>
+              <p class="text-slate-300">Custom colors available on request</p>
+            </div>
           </div>
         </div>
-        <a href="https://rjlures.com/store" class="btn-gold">Shop Tiger Tail</a>
       </div>
     </div>
   </section>
 
-  <!-- CREDIBILITY — Stats grid + quote -->
-  <section class="bg-grove" style="padding: 6rem 0; border-top: 1px solid var(--canopy);">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="stats-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-bottom: 5rem;">
-        <div class="reveal" style="text-align: center;">
-          <div class="font-display text-gold" style="font-size: 3.25rem; font-weight: 700; line-height: 1; margin-bottom: 0.5rem;">6+</div>
-          <div class="text-bone" style="font-weight: 600; margin-bottom: 0.25rem;">Species Covered</div>
-          <div class="text-sage" style="font-size: 0.875rem;">Walleye, musky, pike, salmon, trout, and bass</div>
+  <!-- CTA Strip -->
+  <section id="store" class="py-20 bg-[#5B8C8A]">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="font-display text-4xl text-white mb-6">Ready to Get Bit?</h2>
+      <p class="text-lg text-white/90 mb-8">Browse the full collection of hand-crafted lures and find the perfect pattern for your next fishing trip.</p>
+      <a href="https://www.rjlures.com/store" target="_blank" class="inline-flex items-center px-8 py-4 bg-white text-[#0B132B] font-semibold rounded-lg hover:bg-slate-100 transition-colors">Visit the Store</a>
+      <p class="mt-4 text-sm text-white/80">Questions? Call Ron at <a href="tel:9063700945" class="underline">(906) 370-0945</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="py-16 bg-[#0B132B] border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div>
+          <h3 class="font-display text-xl text-white mb-4">RJ Lures</h3>
+          <p class="text-slate-400 text-sm">Hand-crafted fishing lures made in Michigan's Upper Peninsula since 2014.</p>
         </div>
-        <div class="reveal delay-1" style="text-align: center;">
-          <div class="font-display text-gold" style="font-size: 3.25rem; font-weight: 700; line-height: 1; margin-bottom: 0.5rem;">4</div>
-          <div class="text-bone" style="font-weight: 600; margin-bottom: 0.25rem;">Spoon Sizes</div>
-          <div class="text-sage" style="font-size: 0.875rem;">2 in. through 5 in. for casting, jigging, and trolling</div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Products</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-slate-400 hover:text-white text-sm transition-colors">Walleye Lures</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-white text-sm transition-colors">Musky and Pike</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-white text-sm transition-colors">Salmon and Trout</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-white text-sm transition-colors">Bass Lures</a></li>
+          </ul>
         </div>
-        <div class="reveal delay-2" style="text-align: center;">
-          <div class="font-display text-gold" style="font-size: 3.25rem; font-weight: 700; line-height: 1; margin-bottom: 0.5rem;">UP</div>
-          <div class="text-bone" style="font-weight: 600; margin-bottom: 0.25rem;">Michigan Made</div>
-          <div class="text-sage" style="font-size: 0.875rem;">Houghton, Michigan. Every lure built by Ron Wiitanen.</div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-slate-400 hover:text-white text-sm transition-colors">About Us</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-white text-sm transition-colors">Photo Gallery</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-white text-sm transition-colors">News</a></li>
+            <li><a href="#" class="text-slate-400 hover:text-white text-sm transition-colors">Links</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>Ron J. Wiitanen</li>
+            <li>300 W. Jacker Ave.</li>
+            <li>Houghton, MI 49931</li>
+            <li><a href="tel:9063700945" class="hover:text-white transition-colors">(906) 370-0945</a></li>
+            <li><a href="mailto:info@rjlures.com" class="hover:text-white transition-colors">info@rjlures.com</a></li>
+          </ul>
         </div>
       </div>
-      <div class="reveal" style="max-width: 700px; margin: 0 auto; text-align: center;">
-        <blockquote class="font-display text-bone" style="font-size: 1.5rem; line-height: 1.55; font-style: italic; margin-bottom: 1.25rem;">
-          "RJ Lures are hand crafted and painted in our shop in Houghton, Michigan. They are fish proven and work for many different fish species."
-        </blockquote>
-        <cite class="text-gold" style="font-size: 0.875rem; font-weight: 700; font-style: normal;">Ron J. Wiitanen, RJ Lures</cite>
+      <div class="mt-12 pt-8 border-t border-white/10 text-center">
+        <p class="text-slate-500 text-sm">Copyright 2026 RJ Lures. All Rights Reserved.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- SALMON AND TROUT -->
-  <section id="salmon" class="bg-forest" style="padding: 6rem 0;">
-    <div class="max-w-7xl mx-auto px-6 split-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
-      <div class="reveal" style="order: 2;">
-        <img
-          src="https://www.rjlures.com/wp-content/uploads/2013/01/web1-flutter-spoons.jpg"
-          alt="Flutter spoons for king salmon, coho salmon, lake trout, and steelhead trolling by RJ Lures"
-          style="width: 100%; border-radius: 4px;"
-        >
-      </div>
-      <div class="reveal delay-1" style="order: 1;">
-        <h2 class="font-display text-bone" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Salmon &amp; Trout</h2>
-        <p class="text-sage" style="line-height: 1.75; margin-bottom: 1.5rem;">Trolling flutter spoons with outstanding action and flash. They mimic smelt, herring, and shiners behind downriggers, copper line, or leadcore. Spring or fall, the fish tell you which size to run.</p>
-        <p class="text-sage" style="line-height: 1.75; margin-bottom: 2.5rem;">The Shimmy Spoon adds a slow, wounded-baitfish fall for jigging open water or through the ice. King salmon, coho, lake trout, steelhead, brown trout, splake, brook trout, and whitefish all take them.</p>
-        <a href="https://rjlures.com/store" class="btn-outline-gold">Shop Salmon Lures</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA STRIP -->
-  <section class="bg-gold" style="padding: 4.5rem 0;">
-    <div class="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-between gap-6">
-      <div>
-        <h2 class="font-display" style="font-size: 2rem; font-weight: 700; color: var(--forest); margin-bottom: 0.375rem;">Ready to Get Bit?</h2>
-        <p style="color: rgba(15,31,15,0.65);">Call Ron or order online. Custom colors available.</p>
-      </div>
-      <div class="flex flex-wrap gap-3">
-        <a href="tel:9063700945" style="background: var(--forest); color: var(--bone); font-weight: 700; padding: 0.875rem 2rem; text-decoration: none; border-radius: 4px; font-size: 1.0625rem;">906-370-0945</a>
-        <a href="https://rjlures.com/store" style="border: 2px solid var(--forest); color: var(--forest); font-weight: 700; padding: 0.875rem 2rem; text-decoration: none; border-radius: 4px;">Shop Online</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-grove" style="border-top: 1px solid var(--canopy); padding: 4rem 0 2.5rem;">
-    <div class="max-w-7xl mx-auto px-6 footer-grid" style="display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 3rem;">
-      <div>
-        <div class="font-display text-gold" style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">RJ Lures</div>
-        <p class="text-sage" style="font-size: 0.875rem; line-height: 1.75;">Handcrafted fishing lures built in Michigan's Upper Peninsula by Ron J. Wiitanen. Proven for walleye, musky, pike, salmon, trout, and bass.</p>
-      </div>
-      <div>
-        <div class="text-bone" style="font-weight: 700; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">Products</div>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
-          <li><a href="#walleye" class="text-sage" style="text-decoration: none; font-size: 0.875rem;">Walleye Lures</a></li>
-          <li><a href="#musky"   class="text-sage" style="text-decoration: none; font-size: 0.875rem;">Musky &amp; Pike</a></li>
-          <li><a href="#salmon"  class="text-sage" style="text-decoration: none; font-size: 0.875rem;">Salmon &amp; Trout</a></li>
-          <li><a href="https://rjlures.com/store" class="text-sage" style="text-decoration: none; font-size: 0.875rem;">Bass Lures</a></li>
-          <li><a href="https://rjlures.com/store" class="text-sage" style="text-decoration: none; font-size: 0.875rem;">Ice Fishing</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="text-bone" style="font-weight: 700; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">More</div>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
-          <li><a href="https://rjlures.com/store"                   class="text-sage" style="text-decoration: none; font-size: 0.875rem;">Online Store</a></li>
-          <li><a href="https://www.rjlures.com/photo-album/"        class="text-sage" style="text-decoration: none; font-size: 0.875rem;">Photo Gallery</a></li>
-          <li><a href="https://www.rjlures.com/news/"               class="text-sage" style="text-decoration: none; font-size: 0.875rem;">News</a></li>
-          <li><a href="https://www.rjlures.com/contact-us/"         class="text-sage" style="text-decoration: none; font-size: 0.875rem;">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="text-bone" style="font-weight: 700; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem;">Contact</div>
-        <address class="text-sage" style="font-style: normal; font-size: 0.875rem; line-height: 1.85;">
-          <div>Ron J. Wiitanen</div>
-          <div>300 W. Jacker Ave.</div>
-          <div>Houghton, MI 49931</div>
-          <div style="margin-top: 0.75rem;"><a href="tel:9063700945"      class="text-sage" style="text-decoration: none;">906-370-0945</a></div>
-          <div><a href="mailto:info@rjlures.com" class="text-sage" style="text-decoration: none;">Info@RJLures.com</a></div>
-        </address>
-      </div>
-    </div>
-    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-between items-center gap-3" style="padding-top: 2rem; border-top: 1px solid var(--canopy);">
-      <span class="text-sage" style="font-size: 0.75rem;">RJ Lures, Houghton, Michigan</span>
-      <span class="text-sage" style="font-size: 0.75rem;">Handcrafted in the Upper Peninsula</span>
     </div>
   </footer>
 
   <script>
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            observer.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
