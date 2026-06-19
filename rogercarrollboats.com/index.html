@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roger Carroll Boats | Custom Wooden Boat Builder Cape Cod</title>
+  <meta name="description" content="Custom Monomoy skiffs, Hurricane sloops, and boat restoration by Roger Carroll in Cape Cod, Massachusetts. Handcrafted wooden boats since 2008.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Barlow Condensed"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .fade-in-up { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+    .fade-in-up.visible { opacity: 1; transform: translateY(0); }
+    ::selection { background: #c9912b; color: #0a0a0a; }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-[#e5e3df] antialiased font-body">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[#0a0a0a]/90 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-2xl tracking-tight text-white">Roger Carroll Boats</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#boats" class="text-sm text-gray-400 hover:text-white transition-colors">Boats</a>
+        <a href="#restoration" class="text-sm text-gray-400 hover:text-white transition-colors">Restoration</a>
+        <a href="#about" class="text-sm text-gray-400 hover:text-white transition-colors">About</a>
+        <a href="#contact" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="bg-[#c9912b] text-[#0a0a0a] px-5 py-2 text-sm font-semibold hover:bg-[#dca64a] transition-colors">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20">
+    <img src="https://www.rogercarrollboats.com/wp-content/uploads/2015/05/sailing-on-hurricane-sloop.jpg" alt="Hurricane S Toolbar Sloop sailing on Cape Cod waters with green shore in background" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-[#0a0a0a]/30"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-3xl">
+        <span class="text-[#c9912b] text-sm font-medium uppercase tracking-widest mb-4 block">Cape Cod, Massachusetts</span>
+        <h1 class="font-display text-5xl md:text-7xl leading-[0.95] mb-6">Handcrafted Wooden<br>Boats Since 2008</h1>
+        <p class="text-lg text-gray-300 mb-8 max-w-xl leading-relaxed">Custom Monomoy skiffs, Hurricane sloops, and restorations from a builder who works one boat at a time.</p>
+        <div class="flex gap-4">
+          <a href="#boats" class="bg-[#c9912b] text-[#0a0a0a] px-8 py-3 text-sm font-semibold hover:bg-[#dca64a] transition-colors">View Our Boats</a>
+          <a href="#contact" class="border border-white/20 text-white px-8 py-3 text-sm hover:bg-white/10 transition-colors">Contact Roger</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary: Monomoy 19 -->
+  <section id="boats" class="py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="fade-in-up">
+          <img src="https://www.rogercarrollboats.com/wp-content/uploads/2015/05/monomoy_19.jpg" alt="Monomoy 19 skiff gliding on Cape Cod water" class="w-full aspect-[4/3] object-cover">
+        </div>
+        <div class="fade-in-up">
+          <h2 class="font-display text-4xl md:text-5xl mb-6">The Monomoy 19</h2>
+          <p class="text-gray-400 mb-8 leading-relaxed">A traditional Novi style fishing skiff built for the shallow waters and big fish of Cape Cod. Stable, seaworthy, and designed for the way people actually fish.</p>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-[#c9912b]">01</span>
+              <div>
+                <h3 class="font-semibold text-white mb-1">Shallow Draft Hull</h3>
+                <p class="text-gray-400 text-sm">Drafts in water where most boats run aground.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-[#c9912b]">02</span>
+              <div>
+                <h3 class="font-semibold text-white mb-1">Traditional Novi Lines</h3>
+                <p class="text-gray-400 text-sm">Honest lines that have carried New England fishermen for generations.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-[#c9912b]">03</span>
+              <div>
+                <h3 class="font-semibold text-white mb-1">Custom Fit</h3>
+                <p class="text-gray-400 text-sm">Built to your specifications. No two boats leave the shop the same.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: Hurricane Sloop (reversed) -->
+  <section class="py-24 bg-[#0f0f0f]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="fade-in-up order-2 lg:order-1">
+          <h2 class="font-display text-4xl md:text-5xl mb-6">The Hurricane Sloop</h2>
+          <p class="text-gray-400 mb-6 leading-relaxed">A 17-foot fiberglass keel centerboard gaff rig sloop with Alberg lines. Fast, stable, and a joy to single-hand on Cape Cod Bay.</p>
+          <p class="text-gray-400 mb-8 leading-relaxed">The Hurricane carries the tradition of New England boatbuilding into a hull that is light enough to trailer and strong enough for open water.</p>
+          <a href="#about" class="text-[#c9912b] text-sm font-semibold hover:text-[#dca64a] transition-colors">Read the full story</a>
+        </div>
+        <div class="fade-in-up order-1 lg:order-2">
+          <img src="https://www.rogercarrollboats.com/wp-content/uploads/2015/05/hurricane-sloop-7.jpg" alt="Hurricane Sloop sailing with full sails" class="w-full aspect-[4/3] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery grid -->
+  <section id="about" class="py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12">
+        <h2 class="font-display text-4xl md:text-5xl mb-4">Built on Cape Cod</h2>
+        <p class="text-gray-400 max-w-2xl">Every boat that leaves our shop carries the lessons of New England boatwrights who worked these waters for generations.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="fade-in-up">
+          <img src="https://www.rogercarrollboats.com/wp-content/uploads/2017/02/highhopesII-3-e1487943929739.jpg" alt="High Hopes II wooden boat" class="w-full aspect-[3/4] object-cover">
+        </div>
+        <div class="fade-in-up">
+          <img src="https://www.rogercarrollboats.com/wp-content/uploads/2015/05/hurricane-sloop-5.jpg" alt="Hurricane Sloop side profile on water" class="w-full aspect-[3/4] object-cover">
+        </div>
+        <div class="fade-in-up">
+          <img src="https://www.rogercarrollboats.com/wp-content/uploads/2017/10/Monomoy-19-and-hurricane.jpg" alt="Monomoy 19 and Hurricane Sloop together" class="w-full aspect-[3/4] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial + Credibility -->
+  <section class="py-24 bg-[#0f0f0f]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="fade-in-up">
+        <p class="text-gray-400 text-lg leading-relaxed mb-8">"Roger builds boats the way they used to be built. You can feel the difference the moment you step aboard."</p>
+        <p class="text-white font-semibold">Roger Carroll</p>
+        <p class="text-gray-500 text-sm">Boatbuilder, Cape Cod</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-white/10">
+        <div>
+          <p class="font-display text-4xl text-[#c9912b]">18+</p>
+          <p class="text-gray-400 text-sm mt-2">Years building boats</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl text-[#c9912b]">2008</p>
+          <p class="text-gray-400 text-sm mt-2">Year established</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl text-[#c9912b]">Cape Cod</p>
+          <p class="text-gray-400 text-sm mt-2">Massachusetts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-24 border-t border-white/10">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-6xl mb-6">Ready大和 Ready for Your Next Boat?</h2>
+      <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Whether you need a new Monomoy skiff, a Hurricane sloop, or a full restoration, we can help. Call or email to talk about your build.</p>
+      <a href="mailto:rogercarrollboatcarpenter@gmail.com" class="bg-[#c9912b] text-[#0a0a0a] px-8 py-4 text-sm font-semibold hover:bg-[#dca64a] transition-colors inline-block">Email Roger</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 border-t border-white/10 bg-[#0f0f0f]">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+      <div>
+        <p class="font-display text-xl mb-4">Roger Carroll Boats</p>
+        <p class="text-gray-400 text-sm">Custom wooden boat builder in Cape Cod, Massachusetts.</p>
+      </div>
+      <div>
+        <p class="font-semibold mb-4 text-white">Navigation</p>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#boats" class="hover:text-white transition-colors">Boats</a></li>
+          <li><a href="#restoration" class="hover:text-white transition-colors">Restoration</a></li>
+          <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-4 text-white">Services</p>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li>Custom Building</li>
+          <li>Boat Restoration</li>
+          <li>Repair</li>
+          <li>Consultation</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-4 text-white">Contact</p>
+        <p class="text-gray-400 text-sm mb-2">rogercarrollboatcarpenter@gmail.com</p>
+        <p class="text-gray-400 text-sm">Cape Cod, Massachusetts</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/10 text-center">
+      <p class="text-gray-500 text-sm">Copyright 2008 to present, All Rights Reserved — Roger Carroll Boats</p>
+    </div>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
