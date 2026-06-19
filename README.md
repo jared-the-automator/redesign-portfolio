@@ -80,3 +80,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [MF Hunting Outfitter](https://jared-the-automator.github.io/redesign-portfolio/mfhunting.com/) | Hunting outfitter | Jackson Hole, WY |
 | [Godin Art](https://jared-the-automator.github.io/redesign-portfolio/godinart.com/) | Wildfowl sculpture & decoy carving | Unknown |
 | [Heart Wood Trade](https://jared-the-automator.github.io/redesign-portfolio/heartwoodtrade.com/) | Handcrafted landing nets | USA |
+| [Ashes Still Water Boats](https://jared-the-automator.github.io/redesign-portfolio/ashesstillwaterboats.com/) | Cedar strip canoe & kayak plans | Schaffhausen, Switzerland |
