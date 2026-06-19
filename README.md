@@ -9,6 +9,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Kyle Tack](https://jared-the-automator.github.io/redesign-portfolio/kyletack.com/) | Custom saddles & tack | Whitesboro, TX |
 | [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
 
 | [Scott Meek Woodworks](https://jared-the-automator.github.io/redesign-portfolio/scottmeekwoodworks.com/) | Handmade wood body planes | Leicester, NC |
@@ -72,7 +73,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Jim Taylor Custom Saddlery](https://jared-the-automator.github.io/redesign-portfolio/jimtaylorsaddlery.com/) | Custom western saddles | Texas |
 
 | [TallTines Traditional Archery](https://jared-the-automator.github.io/redesign-portfolio/talltinesarchery.com/) | Custom traditional bows | Kansas, USA |
-|---|---|---|---|
+|---|---|---|
 | [Jonas Blade](https://jared-the-automator.github.io/redesign-portfolio/jonasblade.com/) | Custom hand-forged knives | Massachusetts, USA |
 | [The Hidden Woodsmen](https://jared-the-automator.github.io/redesign-portfolio/thehiddenwoodsmen.com/) | Boutique wilderness gear | New England, USA |
 | [Saucon Archery](https://jared-the-automator.github.io/redesign-portfolio/sauconarchery.com/) | Traditional archery supplies | Lehigh Valley, PA |
