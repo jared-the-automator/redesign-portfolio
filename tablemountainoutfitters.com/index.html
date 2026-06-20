@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Mountain Outfitters - Wyoming Guided Hunts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#0a170c', light: '#132a14', mid: '#1a3718' },
+            gold: { DEFAULT: '#b8983c', bright: '#d4af37', dim: '#8a7030' },
+            bone: { DEFAULT: '#f0e6d2', dark: '#c9b896', muted: '#a09378' },
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .text-shadow { text-shadow: 0 2px 6px rgba(0,0,0,0.5); }
+      .text-shadow-lg { text-shadow: 0 4px 12px rgba(0,0,0,0.7); }
+    }
+  </style>
+</head>
+<body class="font-body text-bone bg-forest antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-forest/90 backdrop-blur-sm border-b border-bone-dark/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0">
+          <span class="font-display text-xl text-bone tracking-wide">Table Mountain Outfitters</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="flex items-center space-x-8">
+            <a href="#about" class="text-bone-dark hover:text-bone transition-colors text-sm font-medium">About</a>
+            <a href="#hunts" class="text-bone-dark hover:text-bone transition-colors text-sm font-medium">Hunts</a>
+            <a href="#gallery" class="text-bone-dark hover:text-bone transition-colors text-sm font-medium">Gallery</a>
+            <a href="#contact" class="bg-gold text-forest px-5 py-2 rounded-sm text-sm font-semibold hover:bg-gold-bright transition-colors">Book a Hunt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://www.tablemountainoutfitters.com/wp-content/uploads/2022/10/10.7-RoyMontgomery-scaled.jpeg" alt="Wyoming hunting landscape" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-forest/80 via-forest/50 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-forest/70 via-transparent to-forest/20"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 pt-32">
+      <div class="max-w-2xl">
+        <p class="text-gold font-medium tracking-widest text-xs uppercase mb-4">Table Mountain Outfitters</p>
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl text-bone leading-tight mb-6 text-shadow-lg">Guided Trophy Hunts<br>in Wyoming</h1>
+        <p class="text-bone-dark text-lg sm:text-xl mb-8 max-w-lg leading-relaxed">Antelope, elk, mule deer, and black bear guided hunts across the best Wyoming range. Over 10 years of proven success in the field.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:13076326352" class="bg-gold text-forest px-8 py-4 rounded-sm text-center font-semibold hover:bg-gold-bright transition-colors">Call (307) 632-6352</a>
+          <a href="#hunts" class="border border-bone text-bone px-8 py-4 rounded-sm text-center font-medium hover:bg-bone/10 transition-colors">View Our Hunts</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="hunts" class="py-20 lg:py-28 bg-forest-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 lg:order-1">
+          <img src="https://www.tablemountainoutfitters.com/wp-content/uploads/2024/07/10.18-SamGrayson-scaled-1.jpeg" alt="Sam Grayson trophy" class="w-full rounded-sm shadow-2xl">
+        </div>
+        <div class="order-1 lg:order-2">
+          <p class="text-gold font-medium tracking-widest text-xs uppercase mb-2">Why Table Mountain Outfitters</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-bone mb-6">Premier Wyoming<br>Guided Hunts</h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-gold/10 flex items-center justify-center rounded-sm">
+                <span class="text-gold font-display text-lg">01</span>
+              </div>
+              <div>
+                <h3 class="text-bone font-semibold mb-1">Expert Guides</h3>
+                <p class="text-bone-dark text-sm leading-relaxed">Experienced Wyoming guides who know the terrain and animal patterns for consistent trophy success.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-gold/10 flex items-center justify-center rounded-sm">
+                <span class="text-gold font-display text-lg">02</span>
+              </div>
+              <div>
+                <h3 class="text-bone font-semibold mb-1">Prime Ground</h3>
+                <p class="text-bone-dark text-sm leading-relaxed">Hunt proven private and public land across Wyoming's best trophy-producing units for elk, deer, and antelope.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-gold/10 flex items-center justify-center rounded-sm">
+                <span class="text-gold font-display text-lg">03</span>
+              </div>
+              <div>
+                <h3 class="text-bone font-semibold mb-1">Trophy Focus</h3>
+                <p class="text-bone-dark text-sm leading-relaxed">Every hunt is focused on quality animals. We target trophy-class elk, mule deer, and antelope.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (Reversed Split) -->
+  <section id="about" class="py-20 lg:py-28 bg-forest">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <p class="text-gold font-medium tracking-widest text-xs uppercase mb-2">Our Story</p>
+          <h2 class="font-display text-3xl sm:text-4xl text-bone mb-6">Built by Hunters,<br>for Hunters</h2>
+          <p class="text-bone-dark leading-relaxed mb-4">Table Mountain Outfitters was founded on one simple belief: that a great hunt starts with great preparation and even better country. Based in Wyoming, we have spent years building relationships with landowners, studying migration patterns, and learning the terrain that produces trophy animals.</p>
+          <p class="text-bone-dark leading-relaxed mb-6">From the first scouting trip to the final pack-out, we handle the logistics so you can focus on the hunt. Our camp is comfortable, our guides are skilled, and our commitment to your success is absolute.</p>
+          <div class="flex items-center gap-6 text-sm">
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-gold rounded-sm"></div>
+              <span class="text-bone-muted">Licensed Wyoming Outfitter</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-gold rounded-sm"></div>
+              <span class="text-bone-muted">Over 10 Years in the Field</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="https://www.tablemountainoutfitters.com/wp-content/uploads/2016/03/IMG_3560.jpg" alt="Hunting in Wyoming" class="w-full rounded-sm shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-20 lg:py-28 bg-forest-mid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-gold font-medium tracking-widest text-xs uppercase mb-2 text-center">The Experience</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-bone mb-12 text-center">On the Mountain</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="col-span-2 md:col-span-2 row-span-2">
+          <img src="https://www.tablemountainoutfitters.com/wp-content/uploads/2022/10/10.10-BillLaufenburg-scaled.jpeg" alt="Trophy hunt in Wyoming" class="w-full h-full object-cover rounded-sm">
+        </div>
+        <div>
+          <img src="https://www.tablemountainoutfitters.com/wp-content/uploads/2015/01/cougar-feature.jpg" alt="Mountain lion hunt" class="w-full h-full object-cover rounded-sm">
+        </div>
+        <div>
+          <img src="https://www.tablemountainoutfitters.com/wp-content/uploads/2022/10/10.7-RoyMontgomery-scaled.jpeg" alt="Wyoming landscape and hunting" class="w-full h-full object-cover rounded-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Credibility -->
+  <section class="py-20 lg:py-28 bg-forest-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-gold font-medium tracking-widest text-xs uppercase mb-2 text-center">What Hunters Say</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-bone mb-12 text-center">Trophy Stories from the Field</h2>
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <div class="bg-forest p-8 rounded-sm border border-bone-dark/10">
+          <p class="text-bone-dark leading-relaxed mb-6">"I have hunted with Table Mountain Outfitters multiple times and have always been impressed by their professionalism. The guides know the land and the animals, and the accommodations are excellent. Highly recommend for anyone wanting a serious Wyoming hunt."</p>
+          <p class="text-bone font-semibold">Bill Laufenburg</p>
+        </div>
+        <div class="bg-forest p-8 rounded-sm border border-bone-dark/10">
+          <p class="text-bone-dark leading-relaxed mb-6">"Best hunt of my life. The Table Mountain crew put us on trophy elk within the first two days. Their knowledge of Wyoming terrain is unmatched."</p>
+          <p class="text-bone font-semibold">Roy Montgomery</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <p class="font-display text-4xl text-gold mb-2">5</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl text-gold mb-2">10+</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl text-gold mb-2">Hundreds</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl text-gold mb-2">100%</p>
+        </div>
+        <div>
+          <p class="text-sm text-bone-muted mt-4">Species</p>
+        </div>
+        <div>
+          <p class="text-sm text-bone-muted mt-4">Years of Experience</p>
+        </div>
+        <div>
+          <p class="text-sm text-bone-muted mt-4">Trophy Hunts</p>
+        </div>
+        <div>
+          <p class="text-sm text-bone-muted mt-4">Commitment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-gold">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl text-forest mb-4">Ready for Your Wyoming Hunt?</h2>
+      <p class="text-forest/80 text-lg mb-8 max-w-2xl mx-auto">Spots fill fast for prime seasons. Contact us today to discuss availability and book your guided hunt.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:13076326352" class="bg-forest text-bone px-8 py-4 rounded-sm font-semibold hover:bg-forest-light transition-colors">Call (307) 632-6352</a>
+        <a href="mailto:TMOHunts@gmail.com" class="border-2 border-forest text-forest px-8 py-4 rounded-sm font-semibold hover:bg-forest/10 transition-colors">Email TMOHunts@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest border-t border-bone-dark/10 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="md:col-span-1">
+          <h3 class="font-display text-xl text-bone mb-4">Table Mountain Outfitters</h3>
+          <p class="text-bone-dark text-sm leading-relaxed">Premier guided hunts in Wyoming. Antelope, elk, mule deer, whitetail, and black bear.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-bone mb-4 text-sm tracking-wider uppercase">Hunts</h4>
+          <ul class="space-y-2 text-sm text-bone-dark">
+            <li><a href="#" class="hover:text-bone transition-colors">Antelope</a></li>
+            <li><a href="#" class="hover:text-bone transition-colors">Elk</a></li>
+            <li><a href="#" class="hover:text-bone transition-colors">Mule Deer</a></li>
+            <li><a href="#" class="hover:text-bone transition-colors">Black Bear</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-bone mb-4 text-sm tracking-wider uppercase">Company</h4>
+          <ul class="space-y-2 text-sm text-bone-dark">
+            <li><a href="#" class="hover:text-bone transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-bone transition-colors">Gallery</a></li>
+            <li><a href="#" class="hover:text-bone transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-bone mb-4 text-sm tracking-wider uppercase">Contact</h4>
+          <ul class="space-y-2 text-sm text-bone-dark">
+            <li>(307) 632-6352</li>
+            <li>TMOHunts@gmail.com</li>
+            <li>Wyoming, USA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-bone-dark/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-bone-muted text-sm">Copyright 2026 Table Mountain Outfitters. All rights reserved.</p>
+        <p class="text-bone-muted text-sm">Licensed Wyoming Outfitter</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for reveal effects
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-8');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-700');
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>

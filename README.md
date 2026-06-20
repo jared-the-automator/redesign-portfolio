@@ -88,3 +88,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Roger Carroll Boats](https://jared-the-automator.github.io/redesign-portfolio/rogercarrollboats.com/) | Custom wooden boat builder | Cape Cod, MA |
 | [Mountain Laurel Designs](https://jared-the-automator.github.io/redesign-portfolio/mountainlaureldesigns.com/) | Ultralight backpacking gear | Roanoke, VA |
 | [Diamond Outfitters](https://jared-the-automator.github.io/redesign-portfolio/diamondoutfitters.com/) | Hunting outfitter | Prescott, AZ |
+| [Table Mountain Outfitters](https://jared-the-automator.github.io/redesign-portfolio/tablemountainoutfitters.com/) | Hunting outfitter | Wyoming, USA |
