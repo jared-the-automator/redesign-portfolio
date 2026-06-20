@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kober Decoys - Hand Painted Fish Decoys Since 1970</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F7F5F0',
+            espresso: '#2E1F15',
+            olive: '#6B7E3A',
+            parchment: '#EDEAE2',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'DM Serif Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-cream text-espresso antialiased">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-espresso/10">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-medium tracking-tight text-espresso" style="font-family: 'DM Serif Display', serif;">Kober Decoys</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-olive transition-colors">About</a>
+        <a href="#decoys" class="hover:text-olive transition-colors">Decoys</a>
+        <a href="#commissions" class="hover:text-olive transition-colors">Commissions</a>
+        <a href="#contact" class="hover:text-olive transition-colors">Contact</a>
+      </div>
+      <a href="#decoys" class="bg-olive text-cream px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-olive/90 transition-colors">View Gallery</a>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20 md:items-center md:pb-0">
+    <img src="https://koberdecoys.com/wp-content/uploads/2023/06/sunsetk2-e1765679234533.jpg" alt="North Woods sunset over calm water" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+    <div class="absolute inset-0 bg-gradient-to-r from-espresso/80 via-espresso/50 to-transparent"></div>
+    <div class="relative max-w-6xl mx-auto px-6 py-20 w-full">
+      <div class="max-w-xl">
+        <p class="text-olive/90 text-xs font-semibold tracking-widest uppercase mb-4" style="font-family: 'Inter', sans-serif;">Hand Painted in Northern Michigan Since 1970</p>
+        <h1 class="text-4xl md:text-6xl text-cream leading-tight mb-6">Every Decoy Carries Five Generations of Craft</h1>
+        <p class="text-cream/80 text-base md:text-lg leading-relaxed mb-8 max-w-md">Michigan Heritage Award winner and two-time HGTV featured carver, creating hand-painted fish decoys that collectors, museums, and sportsmen have treasured since 1970.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#decoys" class="bg-olive text-cream px-6 py-3 rounded-xl font-semibold hover:bg-olive/90 transition-colors">Explore Our Decoys</a>
+          <a href="#commissions" class="border-2 border-cream/40 text-cream px-6 py-3 rounded-xl font-semibold hover:bg-cream/10 transition-colors">Commission a Piece</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary Product / Features -->
+  <section id="decoys" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <img src="https://koberdecoys.com/wp-content/uploads/2023/06/laketrout-big.jpg" alt="Hand painted lake trout decoy in rich detail" class="w-full h-[500px] object-cover rounded-xl">
+        </div>
+        <div class="reveal">
+          <p class="text-olive text-xs font-semibold tracking-widest uppercase mb-3">What Makes a Kober Decoy</p>
+          <h2 class="text-3xl md:text-4xl mb-8">Craft That Stands Apart</h2>
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <span class="text-3xl text-olive font-light shrink-0" style="font-family: 'DM Serif Display', serif;">01</span>
+              <div>
+                <h3 class="text-xl mb-2" style="font-family: 'DM Serif Display', serif;">Hand Painted, Never Air Brushed</h3>
+                <p class="text-espresso/70 leading-relaxed">Every decoy is hand painted with brushes, not air brushed, giving each piece a depth and character no machine can replicate.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="text-3xl text-olive font-light shrink-0" style="font-family: 'DM Serif Display', serif;">02</span>
+              <div>
+                <h3 class="text-xl mb-2" style="font-family: 'DM Serif Display', serif;">Numbered and Logged Since 1970</h3>
+                <p class="text-espresso/70 leading-relaxed">Each decoy receives a serial number. Over five decades, that record has become a provenance collectors trust.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="text-3xl text-olive font-light shrink-0" style="font-family: 'DM Serif Display', serif;">03</span>
+              <div>
+                <h3 class="text-xl mb-2" style="font-family: 'DM Serif Display', serif;">Five Generations of Michigan Craft</h3>
+                <p class="text-espresso/70 leading-relaxed">From Grandpa Ballard through Dave to the next generation, the Kober family has shaped the North Woods decoy tradition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary / Story -->
+  <section id="about" class="py-24 px-6 bg-parchment">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal md:order-2">
+          <img src="https://koberdecoys.com/wp-content/uploads/2023/06/grandpa2.jpg" alt="Grandpa Ballard, Kober family carver, at work in the shop" class="w-full h-[500px] object-cover rounded-xl">
+        </div>
+        <div class="reveal md:order-1">
+          <p class="text-olive text-xs font-semibold tracking-widest uppercase mb-3">The Story Behind the Decoys</p>
+          <h2 class="text-3xl md:text-4xl mb-6">A Name Museums and Collectors Trust</h2>
+          <p class="text-espresso/70 leading-relaxed mb-6">In 1990 Dave Kober received the Michigan Heritage Award, the state's highest honor for traditional craft. His decoys hang in the Michigan State University Museum and the Bass Pro Shop in Springfield, Missouri.</p>
+          <p class="text-espresso/70 leading-relaxed mb-6">Kober decoys live in the private collections of Mort Neff of Michigan Outdoors, HGTV's Pete Nelson, MSU Basketball's Tom Izzo, and world-renowned carver Jim Foote.</p>
+          <p class="text-espresso/70 leading-relaxed">Every decoy is still painted by hand in the same Northern Michigan workshop where Grandpa Ballard taught the trade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery -->
+  <section id="commissions" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <p class="text-olive text-xs font-semibold tracking-widest uppercase mb-3">Currently Available Decoys</p>
+        <h2 class="text-3xl md:text-4xl">From the Workbench</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="reveal col-span-2 row-span-2">
+          <img src="https://koberdecoys.com/wp-content/uploads/2023/06/steelheadtrout.jpg" alt="Hand painted steelhead trout decoy" class="w-full h-full object-cover rounded-xl min-h-[300px]">
+        </div>
+        <div class="reveal">
+          <img src="https://koberdecoys.com/wp-content/uploads/2023/06/newpike.jpg" alt="Hand painted northern pike decoy" class="w-full h-48 object-cover rounded-xl">
+        </div>
+        <div class="reveal">
+          <img src="https://koberdecoys.com/wp-content/uploads/2025/12/img_2686-1.jpeg" alt="Hand painted fish decoy detail work" class="w-full h-48 object-cover rounded-xl">
+        </div>
+        <div class="reveal col-span-2">
+          <img src="https://koberdecoys.com/wp-content/uploads/2025/12/fullsizerender.jpeg" alt="Finished hand painted decoy" class="w-full h-48 object-cover rounded-xl">
+        </div>
+      </div>
+      <p class="text-center text-espresso/60 text-sm mt-8">Smaller decoys start at $150. Larger pieces and commissions priced on request.</p>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / Credibility -->
+  <section class="py-24 px-6 bg-parchment">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="reveal">
+          <p class="text-olive text-xs font-semibold tracking-widest uppercase mb-3">What Collectors Say</p>
+          <blockquote class="text-2xl md:text-3xl leading-snug mb-6" style="font-family: 'DM Serif Display', serif;">"Outstanding craftsmanship - now a treasured heirloom."</blockquote>
+          <p class="text-espresso/70">A collector in the Upper Peninsula after receiving a custom brook trout decoy for a cabin on Lake Superior.</p>
+        </div>
+        <div class="reveal">
+          <div class="grid grid-cols-2 gap-8">
+            <div class="text-center">
+              <p class="text-4xl text-olive mb-2" style="font-family: 'DM Serif Display', serif;">1970</p>
+              <p class="text-sm text-espresso/60">Numbering and logging began</p>
+            </div>
+            <div class="text-center">
+              <p class="text-4xl text-olive mb-2" style="font-family: 'DM Serif Display', serif;">5</p>
+              <p class="text-sm text-espresso/60">Generations of carvers</p>
+            </div>
+            <div class="text-center">
+              <p class="text-4xl text-olive mb-2" style="font-family: 'DM Serif Display', serif;">2x</p>
+              <p class="text-sm text-espresso/60">HGTV appearances</p>
+            </div>
+            <div class="text-center">
+              <p class="text-4xl text-olive mb-2" style="font-family: 'DM Serif Display', serif;">1990</p>
+              <p class="text-sm text-espresso/60">Michigan Heritage Award</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA Strip -->
+  <section id="contact" class="py-20 px-6 bg-espresso text-cream">
+    <div class="max-w-6xl mx-auto text-center reveal">
+      <h2 class="text-3xl md:text-4xl mb-4">Ready for a Decoy That Tells a Story?</h2>
+      <p class="text-cream/70 max-w-xl mx-auto mb-8">Call or email to discuss a custom piece or ask about currently available decoys.</p>
+      <p class="text-2xl md:text-3xl font-semibold mb-3" style="font-family: 'DM Serif Display', serif;">(231) 388-4170</p>
+      <a href="mailto:dave@koberdecoys.com" class="text-olive hover:text-cream transition-colors underline underline-offset-4">dave@koberdecoys.com</a>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="py-16 px-6 bg-cream border-t border-espresso/10">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-10 mb-10">
+        <div>
+          <h4 class="text-lg mb-4" style="font-family: 'DM Serif Display', serif;">Kober Decoys</h4>
+          <p class="text-espresso/60 text-sm leading-relaxed">Hand painted fish decoys from five generations of Michigan carvers.</p>
+        </div>
+        <div>
+          <h5 class="font-semibold text-sm uppercase tracking-wider mb-4">Navigate</h5>
+          <ul class="space-y-2 text-sm text-espresso/70">
+            <li><a href="#about" class="hover:text-olive transition-colors">About</a></li>
+            <li><a href="#decoys" class="hover:text-olive transition-colors">Decoys</a></li>
+            <li><a href="#commissions" class="hover:text-olive transition-colors">Commissions</a></li>
+            <li><a href="#contact" class="hover:text-olive transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold text-sm uppercase tracking-wider mb-4">Connect</h5>
+          <ul class="space-y-2 text-sm text-espresso/70">
+            <li><a href="https://instagram.com/koberdecoys" class="hover:text-olive transition-colors">Instagram</a></li>
+            <li><a href="https://facebook.com/koberdecoys" class="hover:text-olive transition-colors">Facebook</a></li>
+            <li><a href="https://yelp.com" class="hover:text-olive transition-colors">Yelp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold text-sm uppercase tracking-wider mb-4">Contact</h5>
+          <ul class="space-y-2 text-sm text-espresso/70">
+            <li>(231) 388-4170</li>
+            <li>dave@koberdecoys.com</li>
+            <li>Northern Michigan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-espresso/10 pt-6 text-center text-sm text-espresso/50">
+        <p>&copy; 2025 Kober Decoys. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Intersection Observer -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
