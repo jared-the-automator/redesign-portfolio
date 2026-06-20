@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streamside - Au Sable River Fly Fishing Guides</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-display { font-family: 'Oswald', sans-serif; }
+    .font-body { font-family: 'Inter', sans-serif; }
+    .reveal-on-scroll { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-stone-50 text-neutral-900 font-body antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-stone-50/90 backdrop-blur-sm border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-2xl tracking-tight uppercase text-neutral-900">Streamside</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-600">
+        <a href="#" class="hover:text-green-900 transition-colors">Guide Service</a>
+        <a href="#" class="hover:text-green-900 transition-colors">Waters</a>
+        <a href="#" class="hover:text-green-900 transition-colors">Gallery</a>
+        <a href="#" class="hover:text-green-900 transition-colors">Shop</a>
+      </div>
+      <a href="#" class="bg-green-900 text-white px-5 py-2.5 text-sm font-semibold rounded-xl hover:bg-green-800 transition-colors">
+        Book a Trip
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20 pt-32 px-6 md:px-12">
+    <div class="absolute inset-0 z-0">
+      <img src="https://michigan-streamside.com/wp-content/uploads/2024/02/banner-king-streamer-scaled.jpg" alt="Fly fishing on Lake Michigan for king salmon" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-3xl">
+      <p class="text-white/80 text-sm font-semibold tracking-widest uppercase mb-4">Michigan Au Sable River</p>
+      <h1 class="font-display text-5xl md:text-7xl text-white leading-[1.05] mb-4">25 Years Guiding<br>Legendary Waters</h1>
+      <p class="text-white/90 text-lg md:text-xl max-w-xl mb-8 leading-relaxed">Veteran guides and high quality tackle on the fabled Au Sable, Betsie, and Lake Huron. Trout, salmon, and steelhead year round.</p>
+      <div class="flex gap-4 flex-wrap">
+        <a href="#" class="bg-white text-neutral-900 px-6 py-3 font-semibold rounded-xl hover:bg-stone-200 transition-colors">Book Your Trip</a>
+        <a href="#" class="border border-white/40 text-white px-6 py-3 font-semibold rounded-xl hover:bg-white/10 transition-colors">View the Waters</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section class="py-24 px-6 md:px-12 bg-white reveal-on-scroll">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div class="relative rounded-xl overflow-hidden h-[500px]">
+        <img src="https://michigan-streamside.com/wp-content/uploads/2019/01/Brown-Trout-Streamer.jpg" alt="Brown Trout caught on a streamer" class="w-full h-full object-cover">
+      </div>
+      <div>
+        <h2 class="font-display text-4xl md:text-5xl text-neutral-900 mb-6 leading-tight">The Experience<br>That Sets Us Apart</h2>
+        <p class="text-neutral-600 text-lg mb-10 leading-relaxed">Head guide Kelly Neuman has spent 25 years guiding the Au Sable River and other Michigan waters. Our reputation as true craftsmen is well earned.</p>
+        <div class="space-y-8">
+          <div class="flex gap-4">
+            <span class="font-display text-3xl text-green-900">01</span>
+            <div>
+              <h3 class="font-display text-xl mb-1">Veteran Guides</h3>
+              <p class="text-neutral-600">Decades of combined experience reading water, hatches, and fish behavior on Michigan's finest rivers.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display text-3xl text-green-900">02</span>
+            <div>
+              <h3 class="font-display text-xl mb-1">Premium Tackle</h3>
+              <p class="text-neutral-600">High quality rods, reels, and flies matched to the season and species from Winston, Simms, and Bauer.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display text-3xl text-green-900">03</span>
+            <div>
+              <h3 class="font-display text-xl mb-1">Custom Flies and Rods</h3>
+              <p class="text-neutral-600">Hand-tied patterns and custom-built fly rods designed for the Au Sable's unique conditions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (reversed split) -->
+  <section class="py-24 px-6 md:px-12 bg-stone-50 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div class="order-2 md:order-1">
+        <h2 class="font-display text-4xl md:text-5xl text-neutral-900 mb-6 leading-tight">Year Round<br>on Michigan Rivers</h2>
+        <p class="text-neutral-600 text-lg mb-6 leading-relaxed">From spring steelheading to trophy browns and smallmouth bass in the summertime. Want to catch a big brown trout on a hex on the Au Sable or Jordan River? Atlantic salmon on a swung streamer? We have a trip for that.</p>
+        <div class="grid grid-cols-2 gap-6 mt-8">
+          <div class="bg-white rounded-xl p-6">
+            <p class="font-display text-4xl text-green-900 mb-2">25+</p>
+            <p class="text-sm text-neutral-600">Years Guiding Michigan</p>
+          </div>
+          <div class="bg-white rounded-xl p-6">
+            <p class="font-display text-4xl text-green-900 mb-2">Au Sable</p>
+            <p class="text-sm text-neutral-600">Primary Water</p>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 md:order-2 relative rounded-xl overflow-hidden h-[500px]">
+        <img src="https://michigan-streamside.com/wp-content/uploads/2026/01/IMG_1704-scaled.jpeg" alt="Drift boat on the Au Sable River" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-24 px-6 md:px-12 bg-white reveal-on-scroll">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-end justify-between mb-12">
+        <h2 class="font-display text-4xl md:text-5xl text-neutral-900">From the Water</h2>
+        <a href="#" class="text-green-900 font-medium hover:underline">View Full Gallery</a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden h-64 md:h-[500px]">
+          <img src="https://michigan-streamside.com/wp-content/uploads/2019/01/Steelhead-Au-Sable.jpg" alt="Steelhead caught on the Au Sable River" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden h-64">
+          <img src="https://michigan-streamside.com/wp-content/uploads/2019/01/Brown-Trout-Hex.jpg" alt="Brown trout caught on a hex pattern" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden h-64">
+          <img src="https://michigan-streamside.com/wp-content/uploads/2022/11/Atlantic-Banner-1.jpg" alt="Atlantic salmon fly fishing" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden h-64">
+          <img src="https://michigan-streamside.com/wp-content/uploads/2019/01/Lake-Trout-Fly-Huron.jpg" alt="Lake trout on the fly from Lake Huron" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden h-64">
+          <img src="https://michigan-streamside.com/wp-content/uploads/2019/03/smallie-lake-huron-1.jpg" alt="Smallmouth bass from Lake Huron" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials and Credibility -->
+  <section class="py-24 px-6 md:px-12 bg-stone-50 reveal-on-scroll">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="font-display text-3xl md:text-4xl text-neutral-900 leading-snug mb-8">"Our fishing guide service in Michigan provides a first class experience with veteran guides and high quality tackle."</p>
+      <p class="text-neutral-600 font-medium mb-2">Kelly Neuman</p>
+      <p class="text-sm text-neutral-500">Head Guide, Streamside</p>
+      <div class="mt-12 flex justify-center gap-12">
+        <div class="text-center">
+          <p class="font-display text-3xl text-green-900">25</p>
+          <p class="text-sm text-neutral-600 mt-1">Years Guiding</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-3xl text-green-900">MI</p>
+          <p class="text-sm text-neutral-600 mt-1">Au Sable River</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-3xl text-green-900">Yr Round</p>
+          <p class="text-sm text-neutral-600 mt-1">Fishing Season</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-20 px-6 md:px-12 bg-green-900 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-display text-4xl md:text-5xl mb-6">Book Your Trip</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Call (989) 889-5374 or email kelly@michiganstreamside.com. Summer weekends fill up fast.</p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="#" class="bg-white text-green-900 px-8 py-4 font-semibold rounded-xl hover:bg-stone-200 transition-colors">Call Now</a>
+        <a href="#" class="border border-white/40 text-white px-8 py-4 font-semibold rounded-xl hover:bg-white/10 transition-colors">Email to Book</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 px-6 md:px-12 bg-neutral-900 text-white">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+      <div>
+        <p class="font-display text-2xl mb-4">Streamside</p>
+        <p class="text-white/60 text-sm leading-relaxed">Fly fishing guide service on Michigan's legendary Au Sable River and beyond.</p>
+      </div>
+      <div>
+        <h4 class="font-display mb-4">Navigate</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li><a href="#" class="hover:text-white transition-colors">Guide Service</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Waters We Fish</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Gallery</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Custom Rods</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li>(989) 889-5374</li>
+          <li>kelly@michiganstreamside.com</li>
+          <li>Michigan, Au Sable River</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display mb-4">Follow</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-sm text-white/40">
+      <p> Fly fishing guide service on the Au Sable River, Michigan.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.05 });
+      document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
