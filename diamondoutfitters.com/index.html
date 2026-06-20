@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Outfitters | Trophy Hunts for Serious Hunters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-display { font-family: 'Playfair Display', serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest-dark': '#0a1f0d',
+                        'forest': '#1a3a1e',
+                        'gold': '#b68d2e',
+                        'bone': '#f0ece4',
+                        'muted': '#9a9a8e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-forest-dark text-bone">
+    <!-- Nav -->
+    <nav class="fixed w-full z-50 bg-forest-dark/90 backdrop-blur-sm border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="font-display text-xl font-bold tracking-wide">DIAMOND OUTFITTERS</a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="#" class="hover:text-gold transition-colors">Home</a>
+                <a href="#" class="hover:text-gold transition-colors">Hunts</a>
+                <a href="#" class="hover:text-gold transition-colors">About</a>
+                <a href="#" class="hover:text-gold transition-colors">Contact</a>
+            </div>
+            <a href="#" class="bg-gold text-forest-dark px-6 py-2 text-sm font-semibold hover:bg-gold/90 transition-colors">Book a Hunt</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="min-h-[100dvh] relative flex items-end pb-20">
+        <img src="https://diamondoutfitters.com/wp-content/uploads/2023/07/2023-Governors-Tag-Giant-Bull-Elk-feature.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Arizona Governor's Tag bull elk in mountain meadow">
+        <div class="absolute inset-0 bg-gradient-to-r from-forest-dark/90 via-forest-dark/70 to-transparent"></div>
+        <div class="relative z-10 container mx-auto px-6 max-w-4xl">
+            <p class="text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-4">Prescott, Arizona</p>
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">Trophy Hunts for<br>Serious Hunters</h1>
+            <p class="text-lg md:text-xl text-bone/80 max-w-2xl mb-8">Landowner tags, draw applications, and over-the-counter hunts across the West and 45 states. Veteran owned and operated.</p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#" class="bg-gold text-forest-dark px-8 py-3 font-semibold hover:bg-gold/90 transition-colors">View Our Hunts</a>
+                <a href="#" class="border border-bone/30 px-8 py-3 font-semibold hover:bg-bone/10 transition-colors">(520) 730-8147</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Primary Product Section -->
+    <section class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <img src="https://diamondoutfitters.com/wp-content/uploads/2021/04/IMG_3952-2-scaled.jpg" class="w-full h-auto object-cover" alt="Hunting scene in Arizona">
+                <div>
+                    <p class="text-gold text-sm font-semibold tracking-wider uppercase mb-4">How We Hunt</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Three Ways to Fill Your Tag</h2>
+
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <span class="text-gold text-3xl font-display font-bold">01</span>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Landowner Hunts</h3>
+                                <p class="text-bone/70">Know what you want and when you want to hunt? Our premium landowner tags are your ticket to guaranteed yearly hunts for elk, mule deer, oryx, Coues deer, and bighorn sheep.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6">
+                            <span class="text-gold text-3xl font-display font-bold">02</span>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Zero Outfitter Fees</h3>
+                                <p class="text-bone/70">Want the best shot at trophy tags in the West with zero outfitter fees when drawn? We handle your draw applications in AZ, NM, NV, UT, WY, and 45 other states.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6">
+                            <span class="text-gold text-3xl font-display font-bold">03</span>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Over-The-Counter</h3>
+                                <p class="text-bone/70">No application draw. Just pure opportunity to hunt. Perfect if you want to hunt soon and stay extremely budget-friendly. Mountain lion, black bear, archery deer, Merriam's turkey, and much more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secondary Section (Story) -->
+    <section class="py-20 md:py-32 bg-forest/30">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="md:order-2">
+                    <img src="https://diamondoutfitters.com/wp-content/uploads/2020/08/Diamond-Outfitters-Waldo-09-980x735.jpg" class="w-full h-auto object-cover" alt="Trophy bull elk">
+                </div>
+                <div class="md:order-1">
+                    <p class="text-gold text-sm font-semibold tracking-wider uppercase mb-4">The Turkey Foot Story</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">300 Hours for a Once-in-a-Lifetime Bull</h2>
+                    <p class="text-bone/70 mb-6">In 2023, our team spent over 300 man hours on the Arizona Governor's Tag Monster Bull Elk they call "Turkey Foot." The result was a 458 1/8 dream bull: Philip's personal best, and a testament to the world-class professionalism our team brings to every hunt.</p>
+                    <p class="text-bone/70">This is what we do. Not just fill tags, but build the kind of story you will tell for the rest of your life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">In the Field</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <img src="https://diamondoutfitters.com/wp-content/uploads/2021/04/IMG_3952-2-scaled.jpg" class="w-full h-80 object-cover" alt="Hunting in Arizona wilderness">
+                <img src="https://diamondoutfitters.com/wp-content/uploads/2020/08/Diamond-Outfitters-Waldo-09-980x735.jpg" class="w-full h-80 object-cover" alt="Trophy elk in the field">
+                <img src="https://diamondoutfitters.com/wp-content/uploads/2021/04/Dan-Lion-scaled.jpg" class="w-full h-80 object-cover" alt="Guide with trophy bull">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Credibility -->
+    <section class="py-20 md:py-32 bg-forest/30">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <p class="text-gold text-sm font-semibold tracking-wider uppercase mb-4">As Seen On</p>
+            <div class="flex flex-wrap items-center justify-center gap-8 mb-12 text-bone/60">
+                <span class="font-display text-xl">Best of the West</span>
+                <span class="font-display text-xl">Pulse Factor TV</span>
+                <span class="font-display text-xl">Deadly Passion</span>
+                <span class="font-display text-xl">The Hunt Podcast</span>
+            </div>
+            <blockquote class="text-2xl md:text-3xl font-display italic mb-6">"The Diamond Outfitters Team spent over 300 man hours on this once in a lifetime 458 1/8 dream bull. This accomplishment is a true testament to the world-class professionalism and expertise of the Diamond Outfitters Team."</blockquote>
+            <p class="text-muted">On the Governor's Tag "Turkey Foot" hunt</p>
+        </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="py-20 bg-forest-dark relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-gold/10 to-transparent"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready for Your Trophy Hunt?</h2>
+            <p class="text-bone/70 text-lg mb-8 max-w-2xl mx-auto">Landowner tags, draw application services, and over-the-counter hunts across the West and 45 states. Veteran owned. Patriot welcome.</p>
+            <a href="#" class="bg-gold text-forest-dark px-10 py-4 text-lg font-semibold hover:bg-gold/90 transition-colors inline-block">Book a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-display font-bold text-lg mb-4">Diamond Outfitters</h3>
+                    <p class="text-bone/50 text-sm">Veteran owned and operated. Trophy hunts across the West and 45 states.</p>
+                </div>
+                <div>
+                    <h3 class="font-display font-bold text-lg mb-4">Contact</h3>
+                    <p class="text-bone/50 text-sm">(520) 730-8147</p>
+                    <p class="text-bone/50 text-sm">info@diamondoutfitters.com</p>
+                    <p class="text-bone/50 text-sm">Prescott, AZ</p>
+                </div>
+                <div>
+                    <h3 class="font-display font-bold text-lg mb-4">Follow</h3>
+                    <div class="flex gap-4 text-bone/50 text-sm">
+                        <a href="#" class="hover:text-gold transition-colors">Facebook</a>
+                        <a href="#" class="hover:text-gold transition-colors">Instagram</a>
+                        <a href="#" class="hover:text-gold transition-colors">RSS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-white/10 text-center text-bone/30 text-sm">
+                <p>&copy; 2025 Diamond Outfitters LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // IntersectionObserver for fade-in reveals
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-700', 'ease-out');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
