@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cisar Saddlery | Custom Handmade Saddles by Karel Císař</title>
+  <meta name="description" content="Handmade custom saddles crafted in the Czech Republic by Karel Císař. All-around, barrel race, roper, show, donkey, mule, and pack saddles. Built for the horse and rider.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent: #c4956a; --bg: #0a0a0a; --fg: #e8e6e1; --dim: #b0b0b0; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--fg); -webkit-font-smoothing: antialiased; }
+    .font-display { font-family: 'Oswald', sans-serif; font-weight: 700; }
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .accent { color: #c4956a; }
+  </style>
+</head>
+<body class="antialiased">
+
+<!-- 1. Nav -->
+<nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#0a0a0a]/90 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
+    <a href="#" class="font-display text-lg tracking-[0.12em] text-white">CISAR SADDLERY</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#saddles" class="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#b0b0b0] hover:text-[#c4956a] transition-colors">Saddles</a>
+      <a href="#process" class="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#b0b0b0] hover:text-[#c4956a] transition-colors">Process</a>
+      <a href="#about" class="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#b0b0b0] hover:text-[#c4956a] transition-colors">About</a>
+      <a href="#contact" class="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#b0b0b0] hover:text-[#c4956a] transition-colors">Contact</a>
+    </div>
+    <a href="#contact" class="bg-[#c4956a] text-[#0a0a0a] px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.12em] hover:bg-[#d4a57a] transition-colors" style="border-radius:2px">Order a Saddle</a>
+  </div>
+</nav>
+
+<!-- 2. Hero -->
+<section class="min-h-[100dvh] relative flex items-center pt-16 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="https://www.cisarsaddlery.com/wp-content/uploads/2021/04/coudy_3.jpg" alt="Misty Czech countryside with horse" class="w-full h-full object-cover" style="opacity:0.55;">
+  </div>
+  <div class="absolute inset-0 z-10 bg-gradient-to-r from-[#0a0a0a]/95 via-[#0a0a0a]/70 to-transparent"></div>
+  <div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+    <div class="max-w-2xl reveal">
+      <span class="text-[#c4956a] text-[10px] font-semibold uppercase tracking-[0.25em] mb-6 block">Czech Republic</span>
+      <h1 class="text-[clamp(3rem,8vw,7.5rem)] leading-[0.92] mb-8 text-white font-display uppercase tracking-[0.03em]">HANDMADE<br>SADDLES</h1>
+      <p class="text-base md:text-lg text-[#b0b0b0] leading-relaxed mb-10 max-w-lg">Custom saddles shaped by hand for the horse and rider. Karel Císař builds every piece from vegetable-tanned leather for a fit that lasts.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#saddles" class="bg-[#c4956a] text-[#0a0a0a] px-8 py-3.5 text-[11px] font-semibold uppercase tracking-[0.12em] inline-block hover:bg-[#d4a57a] transition-colors" style="border-radius:2px">View Saddles</a>
+        <a href="#process" class="border border-[#e8e6e1]/20 text-[#e8e6e1] px-8 py-3.5 text-[11px] font-semibold uppercase tracking-[0.12em] inline-block hover:border-[#c4956a] hover:text-[#c4956a] transition-colors" style="border-radius:2px">The Process</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Primary product: asymmetric split -->
+<section id="saddles" class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal" style="transition-delay:0.1s;">
+        <img src="https://www.cisarsaddlery.com/wp-content/uploads/2021/04/vyrez-all-around1.jpg" alt="Closeup of hand-sewn leather saddle detail" class="w-full h-auto" loading="lazy" style="border-radius:2px;">
+      </div>
+      <div class="reveal" style="transition-delay:0.2s;">
+        <span class="text-[#c4956a] text-[10px] font-semibold uppercase tracking-[0.2em] mb-4 block">Saddles</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-display uppercase tracking-[0.05em] mb-6 leading-[1.1]">BUILT FOR THE HORSE AND RIDER</h2>
+        <p class="text-[#b0b0b0] leading-relaxed mb-10 max-w-lg text-sm">Every Cisar saddle begins with the horse. All-around, barrel race, cutting, roper, show, donkey, mule, and pack saddles each shaped to the tree and covered in vegetable-tanned leather.</p>
+        <div class="space-y-6">
+          <div class="flex items-start gap-5">
+            <span class="text-[#c4956a] font-display text-2xl leading-none mt-0.5">01</span>
+            <div>
+              <h3 class="font-semibold text-white mb-1 text-sm">Measure for the Horse</h3>
+              <p class="text-[#b0b0b0] text-sm">Shoulder width, back length, and wither shape guide every cut.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5">
+            <span class="text-[#c4956a] font-display text-2xl leading-none mt-0.5">02</span>
+            <div>
+              <h3 class="font-semibold text-white mb-1 text-sm">Shape the Tree</h3>
+              <p class="text-[#b0b0b0] text-sm">Hand-carved from raw materials to match the horse's back without pinching.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5">
+            <span class="text-[#c4956a] font-display text-2xl leading-none mt-0.5">03</span>
+            <div>
+              <h3 class="font-semibold text-white mb-1 text-sm">Lay the Leather</h3>
+              <p class="text-[#b0b0b0] text-sm">Hand-sewn edges and waxed thread hold the shape for decades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Secondary: reversed split -->
+<section id="process" class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal order-2 lg:order-1" style="transition-delay:0.1s;">
+        <span class="text-[#c4956a] text-[10px] font-semibold uppercase tracking-[0.2em] mb-4 block">The Craft</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-display uppercase tracking-[0.05em] mb-6 leading-[1.1]">FROM HIDE TO HORSE</h2>
+        <p class="text-[#b0b0b0] leading-relaxed mb-6 max-w-lg text-sm">Karel Císař learned saddle making under masters who insisted on hand-worked leather and exact fit. No two horses are identical, so no two saddles should be either. Each tree is carved, each skirt shaped, each fender stitched by hand in the Czech Republic.</p>
+        <p class="text-[#b0b0b0] leading-relaxed max-w-lg text-sm">Vegetable tanning produces leather that breathes, softens, and darkens with use. A well-built saddle with a hand-shaped tree can serve a horse and rider for twenty years or more.</p>
+      </div>
+      <div class="reveal order-1 lg:order-2" style="transition-delay:0.2s;">
+        <img src="https://www.cisarsaddlery.com/wp-content/uploads/2021/04/vyrez-all-around2.jpg" alt="Closeup of detailed saddle leatherwork" class="w-full h-auto" loading="lazy" style="border-radius:2px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Gallery: editorial full-width -->
+<section id="about" class="relative py-32 lg:py-48 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="https://www.cisarsaddlery.com/wp-content/uploads/2021/04/coudy_3.jpg" alt="Horse in a misty Czech countryside" class="w-full h-full object-cover" style="opacity:0.3;">
+  </div>
+  <div class="absolute inset-0 z-10 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-[#0a0a0a]/40"></div>
+  <div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-8 text-center reveal">
+    <span class="text-[#c4956a] text-[10px] font-semibold uppercase tracking-[0.2em] mb-6 block">Workshop</span>
+    <h2 class="text-4xl md:text-5xl lg:text-6xl font-display uppercase tracking-[0.05em] mb-6 leading-[1.1] max-w-3xl mx-auto">THE BEST TOOL IS THE ONE MADE FOR YOUR HAND</h2>
+    <p class="text-[#b0b0b0] text-sm max-w-xl mx-auto leading-relaxed">A saddle should disappear beneath you. You should feel the horse, not the equipment. That is the standard we build to at Cisar Saddlery.</p>
+  </div>
+</section>
+
+<!-- 6. Testimonial -->
+<section class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 reveal">
+      <div class="lg:col-span-4">
+        <span class="text-[#c4956a] text-[10px] font-semibold uppercase tracking-[0.2em] mb-4 block">Testimonial</span>
+        <h2 class="text-3xl md:text-4xl font-display uppercase tracking-[0.05em] leading-[1.1]">WHAT RIDERS SAY</h2>
+      </div>
+      <div class="lg:col-span-8">
+        <blockquote class="text-lg md:text-xl lg:text-2xl text-[#e8e6e1] leading-relaxed mb-6 font-light italic">"After years of buying mass-produced saddles that pinched or cracked, Karel built me a piece that finally fit both me and my mare. The difference was immediate. No slipping, no rubbing. Just the ride."</blockquote>
+        <p class="text-[#c4956a] text-xs font-semibold uppercase tracking-[0.15em]">Petra K., competitive barrel racer</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. CTA strip -->
+<section id="contact" class="py-24 lg:py-32 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center reveal">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-display uppercase tracking-[0.05em] mb-6 leading-[1.1]">READY FOR YOUR FITTING?</h2>
+    <p class="text-[#b0b0b0] mb-10 max-w-lg mx-auto text-sm">Send your horse's measurements and we will begin the tree. Email or call to start your custom saddle order.</p>
+    <a href="mailto:saddlery@seznam.cz" class="bg-[#c4956a] text-[#0a0a0a] px-10 py-4 text-[11px] font-semibold uppercase tracking-[0.12em] inline-block hover:bg-[#d4a57a] transition-colors" style="border-radius:2px">saddlery@seznam.cz</a>
+  </div>
+</section>
+
+<!-- 8. Footer -->
+<footer class="py-16 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div class="lg:col-span-1">
+        <span class="font-display text-sm tracking-[0.15em] text-white block mb-4">CISAR SADDLERY</span>
+        <p class="text-[#b0b0b0] text-xs leading-relaxed">Handmade custom saddles from the Czech Republic. Built for the horse and rider.</p>
+      </div>
+      <div>
+        <h3 class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#c4956a] mb-4">Explore</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">Home</a></li>
+          <li><a href="#saddles" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">Saddles</a></li>
+          <li><a href="#process" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">Process</a></li>
+          <li><a href="#about" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">About</a></li>
+          <li><a href="#contact" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#c4956a] mb-4">Saddles</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">All-Around</a></li>
+          <li><a href="#" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">Barrel Race</a></li>
+          <li><a href="#" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">Roper</a></li>
+          <li><a href="#" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">Pack</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#c4956a] mb-4">Contact</h3>
+        <ul class="space-y-2">
+          <li><a href="mailto:saddlery@seznam.cz" class="text-[#b0b0b0] text-sm hover:text-[#c4956a] transition-colors">saddlery@seznam.cz</a></li>
+          <li><span class="text-[#b0b0b0] text-sm">+420 723 154 525</span></li>
+          <li><span class="text-[#b0b0b0] text-sm">Czech Republic</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 gap-4">
+      <p class="text-[#6a6a6a] text-xs">Cisar Saddlery. Handmade in the Czech Republic.</p>
+      <div class="flex gap-6">
+        <a href="#" class="text-[#6a6a6a] text-xs hover:text-[#c4956a] transition-colors">Privacy</a>
+        <a href="#" class="text-[#6a6a6a] text-xs hover:text-[#c4956a] transition-colors">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // IntersectionObserver for reveals
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
