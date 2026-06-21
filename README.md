@@ -102,3 +102,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Doug Cox Custom Saddles](https://jared-the-automator.github.io/redesign-portfolio/dougcoxcustomsaddles.com/) | Custom handmade saddles | Nevada |
 | [Roberts' Outfitting](https://jared-the-automator.github.io/redesign-portfolio/robertsoutfitting.com/) | Hunting outfitter | Newfoundland & Labrador, Canada |
 | [Skeena River Fly Supply](https://jared-the-automator.github.io/redesign-portfolio/skeenariverflysupply.com/) | Fly tying materials | Terrace, BC, Canada |
+| [Badger Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/badgerfuneral.com/) | Family funeral home | Littleton & Groton, MA |
