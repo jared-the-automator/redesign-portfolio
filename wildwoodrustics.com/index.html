@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildwood Rustics - Crafters of Quality Log Furniture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amber: { warm: '#d4a853' },
+                        dark: { base: '#0a0a0a', surface: '#141414', border: '#2a2a2a' },
+                        light: { base: '#f0f0f0', muted: '#999999' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #f0f0f0; }
+        .font-display { font-family: 'Barlow Condensed', sans-serif; }
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dark-base/90 backdrop-blur-sm border-b border-dark-border">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-display text-xl uppercase tracking-wider text-light-base">Wildwood Rustics</div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-light-muted">
+                <a href="#indoor" class="hover:text-amber-warm transition-colors">Indoor</a>
+                <a href="#outdoor" class="hover:text-amber-warm transition-colors">Outdoor</a>
+                <a href="#kitchens" class="hover:text-amber-warm transition-colors">Kitchens</a>
+                <a href="#about" class="hover:text-amber-warm transition-colors">About</a>
+            </div>
+            <a href="#quote" class="bg-amber-warm text-dark-base px-6 py-2 text-sm font-semibold rounded-[2px] hover:bg-[#e8c87a] transition-colors">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://wildwoodrustics.b-cdn.net/wp-content/uploads/2024/01/red-cedar-dining-room-furniture-1-scaled.jpg" alt="Red cedar dining room furniture in a wood-paneled home" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-dark-base/80"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-dark-base via-dark-base/70 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-xl">
+                <div class="reveal visible">
+                    <span class="text-amber-warm text-xs font-bold uppercase tracking-widest block mb-4">Mifflinburg, Pennsylvania</span>
+                    <h1 class="font-display text-5xl md:text-7xl uppercase text-light-base leading-none mb-6">Crafters of Quality Log Furniture.</h1>
+                    <p class="text-light-muted text-lg leading-relaxed mb-8 max-w-md">Handcrafted rustic furniture, custom kitchen cabinets, and outdoor pieces built from natural hardwoods. American made since opening our workshop doors.</p>
+                    <a href="#shop" class="inline-block bg-amber-warm text-dark-base px-8 py-3 text-sm font-bold uppercase tracking-wide rounded-[2px] hover:bg-[#e8c87a] transition-colors">Shop the Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Primary Product Section -->
+    <section class="py-24 bg-dark-base">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 reveal">
+                    <img src="https://wildwoodrustics.b-cdn.net/wp-content/uploads/2024/01/white-cedar-living-room-furniture.jpg" alt="White cedar living room furniture" class="w-full h-[500px] object-cover rounded-[2px]">
+                </div>
+                <div class="lg:col-span-5 reveal">
+                    <span class="text-amber-warm text-xs font-bold uppercase tracking-widest block mb-4">Built to Last</span>
+                    <h2 class="font-display text-4xl md:text-5xl uppercase text-light-base leading-tight mb-6">Furniture That Speaks for Itself</h2>
+                    <p class="text-light-muted leading-relaxed mb-10">Every piece is shaped by hand from raw timber. No shortcuts. No veneers. Just solid hardwood, honest joinery, and a finish that only gets richer with age.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="text-amber-warm font-display text-2xl leading-none w-12 shrink-0">01</div>
+                            <div>
+                                <h3 class="font-semibold text-light-base mb-1">Built from Natural Hardwoods</h3>
+                                <p class="text-light-muted text-sm">White cedar, red cedar, and aspen selected for grain and durability.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="text-amber-warm font-display text-2xl leading-none w-12 shrink-0">02</div>
+                            <div>
+                                <h3 class="font-semibold text-light-base mb-1">Hand-Crafted in Pennsylvania</h3>
+                                <p class="text-light-muted text-sm">Designed and built in our Mifflinburg workshop by skilled craftsmen.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="text-amber-warm font-display text-2xl leading-none w-12 shrink-0">03</div>
+                            <div>
+                                <h3 class="font-semibold text-light-base mb-1">Lifetime Warranty Included</h3>
+                                <p class="text-light-muted text-sm">Every piece backed by our limited lifetime warranty against manufacturing defects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secondary Section -->
+    <section class="py-24 bg-dark-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 order-2 lg:order-1 reveal">
+                    <span class="text-amber-warm text-xs font-bold uppercase tracking-widest block mb-4">Our Process</span>
+                    <h2 class="font-display text-4xl md:text-5xl uppercase text-light-base leading-tight mb-6">From Log to Living Room</h2>
+                    <p class="text-light-muted leading-relaxed mb-6">It starts in the timber yard. We select logs with character, not perfection. In our Mifflinburg workshop, those logs become beds, tables, and cabinets that carry the warmth of the forest into your home.</p>
+                    <p class="text-light-muted leading-relaxed mb-8">Each piece is sanded by hand and finished with care. The result is furniture that feels alive, with grain patterns and knots that tell the story of the tree it came from.</p>
+                    <div class="flex gap-8">
+                        <div>
+                            <div class="font-display text-3xl text-amber-warm mb-1">100%</div>
+                            <div class="text-light-muted text-sm">Solid Hardwood</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-3xl text-amber-warm mb-1">USA</div>
+                            <div class="text-light-muted text-sm">Made in America</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 order-1 lg:order-2 reveal">
+                    <img src="https://wildwoodrustics.b-cdn.net/wp-content/uploads/2024/01/23-12-13-14-1-scaled.jpg" alt="Inside the Wildwood Rustics workshop with timber and boards" class="w-full h-[500px] object-cover rounded-[2px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery/Brand Story -->
+    <section class="py-24 bg-dark-base">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12 reveal">
+                <h2 class="font-display text-4xl md:text-5xl uppercase text-light-base leading-tight mb-4">Collections</h2>
+                <p class="text-light-muted text-lg max-w-xl">Browse the full range of handcrafted rustic furniture for every room in your home or cabin.</p>
+            </div>
+            <div class="grid md:grid-cols-12 gap-4 auto-rows-[300px]">
+                <div class="md:col-span-7 reveal">
+                    <img src="https://wildwoodrustics.b-cdn.net/wp-content/uploads/2024/01/05-001WC-A-frame-Swing-3-scaled.jpg" alt="Wildwood Rustics A-frame swing in grass" class="w-full h-full object-cover rounded-[2px]">
+                </div>
+                <div class="md:col-span-5 reveal">
+                    <img src="https://wildwoodrustics.b-cdn.net/wp-content/uploads/2024/01/0F6A4403-scaled.jpg" alt="Wildwood Rustics kitchen cabinets" class="w-full h-full object-cover rounded-[2px]">
+                </div>
+                <div class="md:col-span-5 reveal">
+                    <img src="https://wildwoodrustics.b-cdn.net/wp-content/uploads/2024/01/0F6A5036-scaled.jpg" alt="Wildwood Rustics handmade railings" class="w-full h-full object-cover rounded-[2px]">
+                </div>
+                <div class="md:col-span-7 reveal">
+                    <img src="https://wildwoodrustics.b-cdn.net/wp-content/uploads/rustic-canopy-bed-edited.jpg" alt="Rustic canopy bed" class="w-full h-full object-cover rounded-[2px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials + Credibility -->
+    <section class="py-24 bg-dark-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="reveal">
+                    <span class="text-amber-warm text-xs font-bold uppercase tracking-widest block mb-4">What Customers Say</span>
+                    <blockquote class="font-display text-3xl md:text-4xl uppercase text-light-base leading-tight mb-8">
+                        "Wildwood Rustics builds beautiful quality furniture. We ordered nightstands and a dresser that were delivered damaged through shipping. Elvin and his crew stopped by and fixed our dresser on the spot, took the nightstands back to his shop and within a week called us that they were fixed."
+                    </blockquote>
+                    <div class="text-light-muted">Verified Customer</div>
+                </div>
+                <div class="reveal">
+                    <div class="bg-dark-base p-8 rounded-[2px] border border-dark-border mb-8">
+                        <p class="text-light-muted leading-relaxed mb-4">"I really appreciate doing business with the guys at Wildwood Rustics. They are very much on top of things and have outstanding customer service. Thanks Elvin!"</p>
+                        <div class="text-light-base font-semibold">Verified Customer</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="font-display text-3xl text-amber-warm mb-1">Nationwide</div>
+                            <div class="text-light-muted text-sm">Shipping Available</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-3xl text-amber-warm mb-1">Lifetime</div>
+                            <div class="text-light-muted text-sm">Warranty</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="py-20 bg-amber-warm">
+        <div class="max-w-4xl mx-auto px-6 text-center reveal">
+            <h2 class="font-display text-4xl md:text-5xl uppercase text-dark-base leading-tight mb-4">Ready to Furnish Your Home?</h2>
+            <p class="text-dark-base/80 text-lg mb-8 max-w-xl mx-auto">Request a free quote on custom rustic furniture for your space. We ship nationwide from our workshop in Mifflinburg, Pennsylvania.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:570-966-2034" class="inline-block bg-dark-base text-amber-warm px-8 py-3 text-sm font-bold uppercase tracking-wide rounded-[2px] hover:bg-dark-surface transition-colors">Call (570) 966-2034</a>
+                <a href="#quote" class="inline-block border-2 border-dark-base text-dark-base px-8 py-3 text-sm font-bold uppercase tracking-wide rounded-[2px] hover:bg-dark-base hover:text-amber-warm transition-colors">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-dark-base border-t border-dark-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <div class="font-display text-xl uppercase text-light-base mb-4">Wildwood Rustics</div>
+                    <p class="text-light-muted text-sm leading-relaxed">Handcrafted rustic log furniture, custom kitchen cabinets, and outdoor pieces built from natural hardwoods in Mifflinburg, Pennsylvania.</p>
+                </div>
+                <div>
+                    <h3 class="font-display text-sm uppercase text-light-base tracking-wider mb-4">Shop</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-light-muted text-sm hover:text-amber-warm transition-colors">Bedroom Furniture</a></li>
+                        <li><a href="#" class="text-light-muted text-sm hover:text-amber-warm transition-colors">Kitchen & Dining</a></li>
+                        <li><a href="#" class="text-light-muted text-sm hover:text-amber-warm transition-colors">Outdoor Furniture</a></li>
+                        <li><a href="#" class="text-light-muted text-sm hover:text-amber-warm transition-colors">Steps & Railings</a></li>
+                        <li><a href="#" class="text-light-muted text-sm hover:text-amber-warm transition-colors">Pavilions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-display text-sm uppercase text-light-base tracking-wider mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-light-muted text-sm hover:text-amber-warm transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-light-muted text-sm hover:text-amber-warm transition-colors">Our Process</a></li>
+                        <li><a href="#" class="text-light-muted text-sm hover:text-amber-warm transition-colors">Shipping & Delivery</a></li>
+                        <li><a href="#" class="text-light-muted text-sm hover:text-amber-warm transition-colors">Care Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-display text-sm uppercase text-light-base tracking-wider mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-light-muted text-sm">212 Turkey Run Road</li>
+                        <li class="text-light-muted text-sm">Mifflinburg, PA 17844</li>
+                        <li class="text-light-muted text-sm mt-4">(570) 966-2034</li>
+                        <li class="text-light-muted text-sm">furniture@wildwoodrustics.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-dark-border text-center">
+                <p class="text-light-muted text-xs">Hand-crafted and American Made. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer for scroll reveals -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
