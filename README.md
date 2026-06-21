@@ -95,3 +95,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Kober Decoys](https://jared-the-automator.github.io/redesign-portfolio/koberdecoys.com/) | Hand painted fish decoys | Northern Michigan |
 
 | [Streamside](https://jared-the-automator.github.io/redesign-portfolio/michigan-streamside.com/) | Fly fishing guide | Au Sable River, MI |
+| [Bayou Custom Holsters](https://jared-the-automator.github.io/redesign-portfolio/bayoucustomholsters.com/) | Custom gun leather | Holden, LA |
