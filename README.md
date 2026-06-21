@@ -98,3 +98,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Bayou Custom Holsters](https://jared-the-automator.github.io/redesign-portfolio/bayoucustomholsters.com/) | Custom gun leather | Holden, LA |
 | [Wildwood Rustics](https://jared-the-automator.github.io/redesign-portfolio/wildwoodrustics.com/) | Handcrafted log furniture | Mifflinburg, PA |
 | [Beartooth Flyfishing](https://jared-the-automator.github.io/redesign-portfolio/beartoothflyfishing.com/) | Custom fly rods & Madison River guides | Cameron, MT |
+| [Doug Cox Custom Saddles](https://jared-the-automator.github.io/redesign-portfolio/dougcoxcustomsaddles.com/) | Custom handmade saddles | Nevada |
