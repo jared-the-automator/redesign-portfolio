@@ -101,3 +101,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Beartooth Flyfishing](https://jared-the-automator.github.io/redesign-portfolio/beartoothflyfishing.com/) | Custom fly rods & Madison River guides | Cameron, MT |
 | [Doug Cox Custom Saddles](https://jared-the-automator.github.io/redesign-portfolio/dougcoxcustomsaddles.com/) | Custom handmade saddles | Nevada |
 | [Roberts' Outfitting](https://jared-the-automator.github.io/redesign-portfolio/robertsoutfitting.com/) | Hunting outfitter | Newfoundland & Labrador, Canada |
+| [Skeena River Fly Supply](https://jared-the-automator.github.io/redesign-portfolio/skeenariverflysupply.com/) | Fly tying materials | Terrace, BC, Canada |
