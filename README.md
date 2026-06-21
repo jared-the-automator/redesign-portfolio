@@ -9,6 +9,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Dakota Decoy Company](https://jared-the-automator.github.io/redesign-portfolio/dakotadecoy.com/) | Waterfowl decoys & blindsaggle blinds | Central Flyway, USA |
 | [Kyle Tack](https://jared-the-automator.github.io/redesign-portfolio/kyletack.com/) | Custom saddles & tack | Whitesboro, TX |
 | [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
 
