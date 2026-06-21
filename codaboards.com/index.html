@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coda Custom Boards & Skis - Handmade Custom Snowboards, Skis & Monoskis</title>
+  <meta name="description" content="Shop custom snowboards, handmade skis, and monoskis from Coda Custom Boards & Skis. Built in New Hampshire by a team of dedicated craftsmen.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cabin+Condensed:wght@700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&display=swap');
+    body{font-family:'Inter',sans-serif;}
+    .font-display{font-family:'Cabin Condensed',sans-serif;font-weight:700;}
+    .corner-rounded{border-radius:12px;}
+    .io-hidden{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease-out,transform 0.6s ease-out;}
+    .io-visible{opacity:1;transform:translateY(0);}
+    hero{position:relative;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;background-image:url('https://codaboards.com/wp-content/uploads/2020/11/IMG_2105-scaled.jpeg');background-size:cover;background-position:center;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(20,25,35,0.85) 0%,rgba(20,25,35,0.5) 60%,rgba(20,25,35,0.7) 100%);}
+  </style>
+</head>
+<body class="bg-stone-100 text-stone-900">
+  <style>
+    @media(prefers-reduced-motion:no-preference){.io-hidden{opacity:0;transform:translateY(24px);transition:opacity .6s ease-out SOURCES}.io-visible{opacity:1;transform:translateY(0)}}.hero-bg { background-attachment: fixed; }
+  </style>
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-stone-100/90 backdrop-blur-sm border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="https://codaboards.com/wp-content/uploads/2020/10/logo.jpg" alt="Coda Custom Boards & Skis logo" class="h-10 w-auto">
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-700">
+        <a href="#products" class="hover:text-stone-900 transition">Snowboards</a>
+        <a href="#products" class="hover:text-stone-900 transition">Skis</a>
+        <a href="#about" class="hover:text-stone-900 transition">About</a>
+        <a href="#contact" class="hover:text-stone-900 transition">Contact</a>
+      </div>
+      <a href="#contact" class="bg-stone-900 text-stone-50 px-5 py-2.5 text-sm font-semibold corner-rounded hover:bg-stone-800 transition">Get a Custom Build</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative min-h-[100dvh] flex items-center">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <p class="text-stone-300 text-sm font-medium tracking-wide uppercase mb-4">New Hampshire, USA</p>
+        <h1 class="font-display text-5xl md:text-7xl text-white leading-[0.95] mb-6">Custom Boards.<br>Built for You.</h1>
+        <p class="text-stone-300 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">Handmade snowboards, skis, and monoskis from a small New Hampshire workshop. Built board by board, rider by rider.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#products" class="bg-white text-stone-900 px-8 py-3.5 font-semibold corner-rounded hover:bg-stone-100 transition">Shop Boards</a>
+          <a href="#about" class="border border-stone-400 text-white px-8 py-3.5 font-semibold corner-rounded hover:bg-white/10 transition">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Primary Product Section -->
+  <section id="products" class="py-24 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="corner-rounded overflow-hidden">
+          <img src="https://codaboards.com/wp-content/uploads/2020/10/Scimitar-Snow-Skis2-e1609101474581.jpg" alt="Scimitar Snow Skis" class="w-full h-auto object-cover">
+        </div>
+        <div>
+          <p class="text-stone-500 text-sm font-semibold tracking-wide uppercase mb-3">01</p>
+          <h2 class="font-display text-4xl md:text-5xl text-stone-900 mb-6 leading-tight">Custom Snowboards, Skis & Monoskis</h2>
+          <p class="text-stone-700 text-lg leading-relaxed mb-8">Every Coda board starts with a conversation. We match your riding style, terrain, and build preferences to create a board cut for you. From powder-hungry backcountry skis to park-ready snowboards, we shape each one by hand in our New Hampshire workshop.</p>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <span class="text-stone-900 font-display text-2xl">02</span>
+              <div>
+                <h3 class="font-semibold text-stone-900 mb-1">Fully Handcrafted</h3>
+                <p class="text-stone-600">Cores shaped by CNC, pressed, finished, and tuned by the same builder who talks to you on the phone.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-stone-900 font-display text-2xl">03</span>
+              <div>
+                <h3 class="font-semibold text-stone-900 mb-1">Made in the USA</h3>
+                <p class="text-stone-600">Built locally with domestic materials. No overseas assembly, no middlemen. Just honest craft.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary / Process Section -->
+  <section class="py-24 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <p class="text-stone-500 text-sm font-semibold tracking-wide uppercase mb-3">Our Process</p>
+          <h2 class="font-display text-4xl md:text-5xl text-stone-900 mb-6 leading-tight">From Design to First Tracks</h2>
+          <p class="text-stone-700 text-lg leading-relaxed mb-8">It starts with a phone call. We talk about how you ride, where you ride, and what you want to feel under your boots. Then we design the core profile, lay up the materials, shape the board, bake it in our press, and tune it by hand before shipping it to your door.</p>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-white p-6 corner-rounded">
+              <p class="font-display text-4xl text-stone-900 mb-2">15+</p>
+              <p class="text-stone-600 text-sm">Years building boards</p>
+            </div>
+            <div class="bg-white p-6 corner-rounded">
+              <p class="font-display text-4xl text-stone-900 mb-2">50+</p>
+              <p class="text-stone-600 text-sm">Board models over the years</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 corner-rounded overflow-hidden">
+          <img src="https://codaboards.com/wp-content/uploads/2020/10/Chad1-scaled.jpg" alt="Chad shaping a board in the Coda workshop" class="w-full h-auto object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-24 bg-stone-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-stone-400 text-sm font-semibold tracking-wide uppercase mb-3">The Lineup</p>
+      <h2 class="font-display text-4xl md:text-5xl text-stone-100 mb-12 leading-tight">Boards Born in the Shop</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="corner-rounded overflow-hidden bg-stone-800 group">
+          <img src="https://codaboards.com/wp-content/uploads/2020/10/Phoenix-Monoski1-scaled-1-e1609193560369.jpg" alt="Phoenix Monoski" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="p-4">
+            <p class="text-stone-100 font-semibold">Phoenix Monoski</p>
+            <p class="text-stone-400 text-sm">Free-ride monoski built for deep powder days</p>
+          </div>
+        </div>
+        <div class="corner-rounded overflow-hidden bg-stone-800 group">
+          <img src="https://codaboards.com/wp-content/uploads/2020/10/Saber-Snow-Skis1-scaled-2.jpg" alt="Saber Snow Skis" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="p-4">
+            <p class="text-stone-100 font-semibold">Saber Snow Skis</p>
+            <p class="text-stone-400 text-sm">All-mountain twin-tip for park and groomers</p>
+          </div>
+        </div>
+        <div class="corner-rounded overflow-hidden bg-stone-800 group">
+          <img src="https://codaboards.com/wp-content/uploads/2020/10/Sidecarve-Snowboard1-scaled-1.jpg" alt="Sidecarve Snowboard" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="p-4">
+            <p class="text-stone-100 font-semibold">Sidecarve Snowboard</p>
+            <p class="text-stone-400 text-sm">Carving-focused board for hardpack and corduroy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 bg-stone-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-stone-500 text-sm font-semibold tracking-wide uppercase mb-8">What Riders Say</p>
+      <blockquote class="text-2xl md:text-3xl text-stone-900 leading-relaxed mb-6 font-display">"The board arrived perfectly dialed. Tighter edge hold than anything I have owned, and the custom graphics were exactly what I asked for."</blockquote>
+      <p class="text-stone-600">Verified Coda Rider</p>
+      <div class="mt-12 flex justify-center gap-12">
+        <div class="text-center">
+          <p class="font-display text-4xl text-stone-900">2007</p>
+          <p class="text-stone-500 text-sm mt-1">Founded in New Hampshire</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-4xl text-stone-900">1-on-1</p>
+          <p class="text-stone-500 text-sm mt-1">Direct builder relationship</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-24 bg-stone-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl text-stone-100 mb-4 leading-tight">Ready to Ride Your Board?</h2>
+      <p class="text-stone-400 text-lg mb-8 max-w-xl mx-auto">Call us, send an email, or fill out a custom build request. We will walk you through every option and get your board on the snow.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:6035550123" class="bg-stone-100 text-stone-900 px-8 py-4 font-semibold corner-rounded hover:bg-white transition">Call (603) 555-0123</a>
+        <a href="mailto:chad@codaboards.com" class="border border-stone-600 text-stone-300 px-8 py-4 font-semibold corner-rounded hover:border-stone-400 hover:text-stone-100 transition">chad@codaboards.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <img src="https://codaboards.com/wp-content/uploads/2020/10/logo.jpg" alt="Coda Custom Boards & Skis" class="h-8 w-auto mb-4 brightness-0 invert opacity-80">
+          <p class="text-stone-500 text-sm leading-relaxed">Handmade snowboards, skis, and monoskis built in New Hampshire, USA.</p>
+        </div>
+        <div>
+          <h4 class="text-stone-100 font-medium mb-4">Boards</h4>
+          <ul class="text-stone-400 text-sm space-y-2">
+            <li><a href="#" class="hover:text-stone-200 transition">Snowboards</a></li>
+            <li><a href="#" class="hover:text-stone-200 transition">Skis</a></li>
+            <li><a href="#" class="hover:text-stone-200 transition"> Helen</a></li>
+            <li><a href="#" class="hover:text-stone-200 transition">Monoskis</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-stone-100 font-medium mb-4">Company</h4>
+          <ul class="text-stone-400 text-sm space-y-2">
+            <li><a href="#" class="hover:text-stone-200 transition">About</a></li>
+            <li><a href="#" class="hover:text-stone-200 transition">Process</a></li>
+            <li><a href="#" class="hover:text-stone-200 transition">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-stone-100 font-medium mb-4">Contact</h4>
+          <p class="text-stone-400 text-sm">New Hampshire, USA</p>
+          <p class="text-stone-400 text-sm">chad@codaboards.com</p>
+        </div>
+      </div>
+      <div class="border-t border-stone-800 pt-8 text-center text-stone-600 text-sm">
+        <p> 2007-2026 Coda Custom Boards & Skis. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('io-visible'); } }); }, { threshold: 0.1 });
+    document.querySelectorAll('.io-hidden').forEach(el => observer.observe(el));
+    // Mark all sections initially as readily revealed for this simple script
+    document.querySelectorAll('section').forEach(el => el.classList.add('io-hidden'));
+  </script>
+</body>
+</html>

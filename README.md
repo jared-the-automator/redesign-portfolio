@@ -103,3 +103,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Roberts' Outfitting](https://jared-the-automator.github.io/redesign-portfolio/robertsoutfitting.com/) | Hunting outfitter | Newfoundland & Labrador, Canada |
 | [Skeena River Fly Supply](https://jared-the-automator.github.io/redesign-portfolio/skeenariverflysupply.com/) | Fly tying materials | Terrace, BC, Canada |
 | [Badger Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/badgerfuneral.com/) | Family funeral home | Littleton & Groton, MA |
+
+| [Coda Custom Boards & Skis](https://jared-the-automator.github.io/redesign-portfolio/codaboards.com/) | Custom snowboards, skis & monoskis | New Hampshire, USA |
