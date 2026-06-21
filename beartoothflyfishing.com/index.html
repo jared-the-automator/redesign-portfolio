@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beartooth Flyfishing - Custom Rods & Madison River Guides</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1,h2,h3,h4 { font-family: 'Oswald', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-[#f5f5f0] text-[#1e3a2f]">
+  <div id="nav-sentinel" class="absolute top-0 left-0 w-full h-1"></div>
+
+  <!-- 1. Nav -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-['Oswald'] font-bold text-xl tracking-tight">BEARTOOTH</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#" class="hover:opacity-70 transition">Rods</a>
+        <a href="#" class="hover:opacity-70 transition">Guides</a>
+        <a href="#" class="hover:opacity-70 transition">Flies</a>
+        <a href="#" class="hover:opacity-70 transition">Lodge</a>
+      </div>
+      <a href="#" class="px-5 py-2 bg-[#1e3a2f] text-white text-sm font-medium rounded-sm hover:bg-[#152a1f] transition">Book a Trip</a>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://www.beartoothflyfishing.com/wp-content/uploads/2013/04/homepage-slider1.jpg');"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#1e3a2f]/80 via-[#1e3a2f]/40 to-transparent"></div>
+    <div class="relative max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-xl">
+        <span class="inline-block text-xs font-semibold tracking-widest text-white/80 mb-4">CAMERON, MONTANA</span>
+        <h1 class="font-['Oswald'] font-bold text-5xl md:text-6xl text-white leading-[1.05] mb-5">Handcrafted Fly Rods on the Madison River</h1>
+        <p class="text-white/90 text-base md:text-lg leading-relaxed mb-8 max-w-md">Custom rods, handmade leaders, and guided trips on one of America's legendary trout rivers since 1975.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#" class="px-6 py-3 bg-white text-[#1e3a2f] font-semibold text-sm rounded-sm hover:bg-white/90 transition">Shop Flies</a>
+          <a href="#" class="px-6 py-3 border border-white/50 text-white font-semibold text-sm rounded-sm hover:bg-white/10 transition">Meet Our Guides</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary Product (asymmetric split) -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="reveal">
+          <h2 class="font-['Oswald'] font-bold text-3xl md:text-4xl mb-8">Built for the Angler Who Demands More</h2>
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <span class="font-['Oswald'] font-bold text-3xl text-[#1e3a2f]/20 leading-none">01</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Handcrafted in Montana</h3>
+                <p class="text-[#1e3a2f]/70 text-sm leading-relaxed">Dan Delekta began building fly rods in 1975. Every Beartooth rod is built in our lodge on the Madison River.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-['Oswald'] font-bold text-3xl text-[#1e3a2f]/20 leading-none">02</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Custom Actions and Materials</h3>
+                <p class="text-[#1e3a2f]/70 text-sm leading-relaxed">We build rods that fit a broad spectrum of individual needs and desires, using unique components for every make.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-['Oswald'] font-bold text-3xl text-[#1e3a2f]/20 leading-none">03</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Built by Dan and Marty</h3>
+                <p class="text-[#1e3a2f]/70 text-sm leading-relaxed">Dan now works alongside his apprentice Marty Authement, carrying forward decades of craftsmanship and tradition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <img src="https://www.beartoothflyfishing.com/wp-content/uploads/2013/04/slider-flies-4.jpg" alt="Hand tied fly patterns by Beartooth" class="w-full h-80 md:h-[480px] object-cover rounded-sm shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary (reversed split) -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="reveal order-2 md:order-1">
+          <img src="https://www.beartoothflyfishing.com/wp-content/uploads/2013/04/slider-flies-6.jpg" alt="Custom fly selection at Beartooth Flyfishing" class="w-full h-80 md:h-[480px] object-cover rounded-sm shadow-lg">
+        </div>
+        <div class="reveal order-1 md:order-2">
+          <h2 class="font-['Oswald'] font-bold text-3xl md:text-4xl mb-5">More Than a Fly Shop</h2>
+          <p class="text-[#1e3a2f]/70 leading-relaxed mb-6">Beartooth Flyfishing is located on the legendary Madison River and includes a fly shop, lodge, and flyfishing guiding services.</p>
+          <p class="text-[#1e3a2f]/70 leading-relaxed mb-6">The shop carries an incredible selection of flies, several thousand different patterns and especially Dan's own designs. There are now over 800 Delektable Flies in our collection.</p>
+          <p class="text-[#1e3a2f]/70 leading-relaxed mb-6">Our guide crew is seasoned with over 20 guides to draw from, anchored by Dan's 30 plus years of guiding experience.</p>
+          <a href="#" class="inline-block px-6 py-3 border-2 border-[#1e3a2f] text-[#1e3a2f] font-semibold text-sm rounded-sm hover:bg-[#1e3a2f] hover:text-white transition">Explore the Shop</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery / Brand Story -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="font-['Oswald'] font-bold text-3xl md:text-4xl mb-10 text-center">The Water. The Craft. The Experience.</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="reveal col-span-2 md:col-span-2 row-span-2">
+          <img src="https://www.beartoothflyfishing.com/wp-content/uploads/2013/04/Home-Page-445_222.jpg" alt="Madison River fly fishing at Beartooth" class="w-full h-full min-h-[300px] object-cover rounded-sm">
+        </div>
+        <div class="reveal">
+          <img src="https://www.beartoothflyfishing.com/wp-content/uploads/2013/04/slider-flies-3.jpg" alt="Hand tied Delektable fly pattern" class="w-full h-48 object-cover rounded-sm">
+        </div>
+        <div class="reveal">
+          <img src="https://www.beartoothflyfishing.com/wp-content/uploads/2013/04/slider-flies-1.jpg" alt="Custom fly by Beartooth" class="w-full h-48 object-cover rounded-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / Credibility -->
+  <section class="py-20 md:py-28 bg-[#1e3a2f] text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        <div class="reveal">
+          <span class="font-['Oswald'] font-bold text-4xl md:text-5xl block mb-2">1975</span>
+          <p class="text-white/70 text-sm">Dan began building fly rods</p>
+        </div>
+        <div class="reveal">
+          <span class="font-['Oswald'] font-bold text-4xl md:text-5xl block mb-2">800+</span>
+          <p class="text-white/70 text-sm">Original Delektable Flies</p>
+        </div>
+        <div class="reveal">
+          <span class="font-['Oswald'] font-bold text-4xl md:text-5xl block mb-2">#680</span>
+          <p class="text-white/70 text-sm">Licensed Montana Outfitter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA Strip -->
+  <section class="py-16 bg-[#e8e4d9]">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <h2 class="font-['Oswald'] font-bold text-3xl md:text-4xl mb-2">Book Your Madison River Adventure</h2>
+        <p class="text-[#1e3a2f]/70">Guided trips, custom rods, and the legendary fly shop on the Upper Madison.</p>
+      </div>
+      <a href="tel:4066827525" class="px-8 py-4 bg-[#1e3a2f] text-white font-semibold rounded-sm hover:bg-[#152a1f] transition whitespace-nowrap">(406) 682-7525</a>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="py-16 bg-[#1e3a2f] text-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <span class="font-['Oswald'] font-bold text-lg tracking-tight block mb-4">BEARTOOTH</span>
+        <p class="text-white/60 text-sm leading-relaxed">Fly shop, custom rods, and guided trips on the legendary Madison River in Cameron, Montana.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm mb-4">Explore</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li><a href="#" class="hover:text-white transition">Custom Rods</a></li>
+          <li><a href="#" class="hover:text-white transition">Guided Trips</a></li>
+          <li><a href="#" class="hover:text-white transition">Delektable Flies</a></li>
+          <li><a href="#" class="hover:text-white transition">Lodge</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm mb-4">Resources</h4>
+        <ul class="space-y-2 text-sm text-white/60">
+          <li><a href="#" class="hover:text-white transition">Fishing Reports</a></li>
+          <li><a href="#" class="hover:text-white transition">Photo Gallery</a></li>
+          <li><a href="#" class="hover:text-white transition">Our Guide Crew</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm mb-4">Contact</h4>
+        <address class="not-italic text-sm text-white/60 leading-relaxed">
+          2925 Highway 287 North<br>
+          Cameron, MT 59720<br>
+          (406) 682-7525
+        </address>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/10 text-center text-xs text-white/40">
+      Copyright 2026 Beartooth Flyfishing. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => { observer.observe(el); });
+    const navbar = document.getElementById('navbar');
+    const sent = document.getElementById('nav-sentinel');
+    if (navbar && sent) {
+      const navObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => navbar.classList.toggle('bg-[#1e3a2f]/90', !e.isIntersecting));
+      }, { threshold: 0 });
+      navObs.observe(sent);
+    }
+  </script>
+</body>
+</html>
