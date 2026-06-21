@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roberts' Outfitting | Canadian Wilderness Hunting & Fishing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forest: {
+              900: '#0d1f0d',
+              800: '#1a2f1a',
+              700: '#2a4a2a',
+              600: '#3d5c3d',
+            },
+            gold: {
+              400: '#c8a96e',
+              300: '#d4bc8a',
+              500: '#b8973e',
+            },
+            bone: {
+              50: '#faf8f3',
+              100: '#f5f0e8',
+              200: '#e8e0d0',
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      html {
+        scroll-behavior: smooth;
+      }
+    }
+  </style>
+</head>
+<body class="font-body bg-bone-50 text-gray-800 antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-forest-900/95 backdrop-blur border-b border-gold-400/20">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-bone-100 font-display text-xl font-bold tracking-wide">Roberts' Outfitting</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-bone-200">
+        <a href="#hunts" class="hover:text-gold-400 transition">Hunts</a>
+        <a href="#about" class="hover:text-gold-400 transition">About</a>
+        <a href="#camp" class="hover:text-gold-400 transition">Camp</a>
+        <a href="#contact" class="px-5 py-2 bg-gold-400 text-forest-900 font-semibold hover:bg-gold-300 transition">Book Your Trip</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <img src="https://robertsoutfitting.com/wp-content/uploads/2018/01/Completed-Outfitting-Camp.jpg" alt="Outfitting camp in the Canadian wilderness" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-forest-900/60" />
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-32">
+      <div class="max-w-2xl">
+        <span class="inline-block text-gold-300 text-sm font-semibold tracking-widest uppercase mb-4">Since 1998 — Newfoundland & Labrador</span>
+        <h1 class="font-display text-5xl md:text-7xl font-bold text-bone-50 leading-tight mb-6">Canadian Wilderness<br>Hunting & Fishing</h1>
+        <p class="text-bone-200 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">Experience world-class woodland caribou, moose, and black bear hunts in the remote Canadian wilderness. Fully guided trips with comfortable camp accommodations.</p>
+        <a href="#contact" class="inline-block px-8 py-4 bg-gold/spring-600 text-bone-50 font-semibold hover:bg-forest-700 transition">Plan Your Adventure</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="hunts" class="py-24 bg-bone-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <img src="https://robertsoutfitting.com/wp-content/uploads/2017/06/moose2.png" alt="Canadian moose in the wilderness" class="w-full h-[500px] object-cover" style="border-radius: 0;" />
+        </div>
+        <div>
+          <span class="text-gold-500 text-sm font-semibold tracking-widest uppercase mb-4 block">Guided Hunts</span>
+          <h2 class="font-display text-4xl font-bold text-forest-900 mb-6">The Hunt of a Lifetime</h2>
+          <p class="text-gray-600 leading-relaxed mb-8 text-lg">Roberts' Outfitting offers fully guided hunts for Eastern Canadian Moose, Woodland Caribou, and North American Black Bear in the pristine wilderness of Newfoundland and Labrador.</p>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <span class="text-gold-400 font-display text-2xl font-bold">01</span>
+              <div>
+                <h3 class="font-semibold text-forest-900 text-lg">Eastern Canadian Moose</h3>
+                <p class="text-gray-500 mt-1">Prime bull moose hunting in remote wilderness areas.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="text-gold-400 font-display text-2xl font-bold">02</span>
+              <div>
+                <h3 class="font-semibold text-forest-900 text-lg">Woodland Caribou</h3>
+                <p class="text-gray-500 mt-1">Pursue the iconic woodland caribou in their natural habitat.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="text-gold-400 font-display text-2xl font-bold">03</span>
+              <div>
+                <h3 class="font-semibold text-forest-900 text-lg">Black Bear</h3>
+                <p class="text-gray-500 mt-1">Exciting spring and fall black bear hunts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section -->
+  <section id="about" class="py-24 bg-forest-900 text-bone-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1">
+          <span class="text-gold-400 text-sm font-semibold tracking-widest uppercase mb-4 block">The Outfitter</span>
+          <h2 class="font-display text-4xl font-bold mb-6">Generations of Wilderness Expertise</h2>
+          <p class="text-bone-200 leading-relaxed mb-6 text-lg">Roberts' Outfitting has been providing exceptional guided hunting and fishing experiences since 1998. Our camp is located in the heart of Newfoundland's prime hunting territory, offering clients access to some of the finest wilderness areas in North America.</p>
+          <p class="text-bone-200 leading-relaxed mb-8 text-lg">With experienced guides, comfortable accommodations, and a commitment to ethical hunting practices, we deliver memorable outdoor adventures that keep hunters coming back year after year.</p>
+          <div class="flex gap-8">
+            <div>
+              <span class="text-gold-400 font-display text-4xl font-bold">25+</span>
+              <p class="text-bone-300 mt-1">Years Running</p>
+            </div>
+            <div>
+              <span class="text-gold-400 font-display text-4xl font-bold">3</span>
+              <p class="text-bone-300 mt-1">Species</p>
+            </div>
+            <div>
+              <span class="text-gold-400 font-display text-4xl font-bold">100%</span>
+              <p class="text-bone-300 mt-1">Guided</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 relative">
+          <img src="https://robertsoutfitting.com/wp-content/uploads/2019/01/Otto-Annie-5.jpg" alt="Roberts' Outfitting guides" class="w-full h-[500px] object-cover" style="border-radius: 0;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Camp -->
+  <section id="camp" class="py-24 bg-bone-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-gold-500 text-sm font-semibold tracking-widest uppercase block mb-4">The Experience</span>
+        <h2 class="font-display text-4xl font-bold text-forest-900">Life at Camp</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="col-span-2 row-span-2">
+          <img src="https://robertsoutfitting.com/wp-content/uploads/2018/01/Completed-Outfitting-Camp.jpg" alt="Completed outfitting camp" class="w-full h-full object-cover" style="border-radius: 0;" />
+        </div>
+        <div>
+          <img src="https://robertsoutfitting.com/wp-content/uploads/2017/06/cairbou2.png" alt="Woodland caribou" class="w-full h-48 object-cover" style="border-radius: 0;" />
+        </div>
+        <div class="row-span-2">
+          <img src="https://robertsoutfitting.com/wp-content/uploads/2018/01/179.jpg" alt="Wilderness camp" class="w-full h-full object-cover" style="border-radius: 0;" />
+        </div>
+        <div>
+          <img src="https://robertsoutfitting.com/wp-content/uploads/2017/06/bear2.png" alt="Black bear" class="w-full h-48 object-cover" style="border-radius: 0;" />
+        </div>
+        <div class="col-span-2">
+          <img src="https://robertsoutfitting.com/wp-content/uploads/2018/01/FP5-1.jpg" alt="Remote fishing and hunting" class="w-full h-48 object-cover" style="border-radius: 0;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 bg-forest-800 text-bone-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <span class="text-gold-400 text-sm font-semibold tracking-widest uppercase block mb-8">From Our Hunters</span>
+      <blockquote class="font-display text-2xl md:text-3xl leading-relaxed italic mb-8">
+        "The hunt of a lifetime. We saw multiple trophy caribou and my guide put me on the perfect bull. The camp was comfortable and the food was excellent. I will be back."
+      </blockquote>
+      <p class="text-bone-300">A satisfied hunter from Ontario</p>
+      <div class="flex justify-center gap-12 mt-16">
+        <div class="text-center">
+          <span class="text-gold-400 font-display text-3xl font-bold block">25+</span>
+          <span class="text-bone-300 text-sm">Years Operating</span>
+        </div>
+        <div class="text-center">
+          <span class="text-gold-400 font-display text-3xl font-bold block">Newfoundland</span>
+          <span class="text-bone-300 text-sm">Prime Hunting Territory</span>
+        </div>
+        <div class="text-center">
+          <span class="text-gold-400 font-display text-3xl font-bold block">5-Star</span>
+          <span class="text-bone-300 text-sm">Camp Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-24 bg-gold-400 text-forest-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Book Your Adventure</h2>
+      <p class="text-lg mb-8 text-forest-800">Spaces fill quickly. Contact us to reserve your spot for the upcoming season.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="mailto:robertsoutfitting@email.com" class="px-8 py-4 bg-forest-900 text-bone-50 font-semibold hover:bg-forest-800 transition">Email robertsoutfitting@email.com</a>
+        <a href="tel:+1-234-567-8900" class="px-8 py-4 border-2 border-forest-900 text-forest-900 font-semibold hover:bg-forest-900 hover:text-bone-50 transition">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest-900 text-bone-300 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <h3 class="font-display text-xl font-bold text-bone-50 mb-4">Roberts' Outfitting</h3>
+          <p class="text-sm leading-relaxed">Guided wilderness hunting and fishing adventures in Newfoundland and Labrador since 1998.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-bone-50 mb-4">Hunts</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-gold-400 transition">Moose Hunts</a></li>
+            <li><a href="#" class="hover:text-gold-400 transition">Caribou Hunts</a></li>
+            <li><a href="#" class="hover:text-gold-400 transition">Black Bear</a></li>
+            <li><a href="#" class="hover:text-gold-400 transition">Fishing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-bone-50 mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li>robertsoutfitting@email.com</li>
+            <li>Newfoundland & Labrador</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-bone-50 mb-4">Follow</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.facebook.com/RobertsOutfitting" class="hover:text-gold-400 transition">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-bone-50/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+        <p>&copy; 2025 Roberts' Outfitting. All Rights Reserved.</p>
+        <p>Handcrafted in the Canadian Wilderness</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
