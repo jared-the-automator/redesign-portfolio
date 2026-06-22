@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sycamore Fly Fishing — Mountain Stream Guides</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #F5F3EE; color: #2A2826; }
+    .font-display { font-family: 'DM Serif Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#F5F3EE]/90 backdrop-blur-sm border-b border-[#2A2826]/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-tight text-[#2A2826]">Sycamore Fly Fishing</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[#2A2826]/80">
+        <a href="#trips" class="hover:text-[#6B7F58] transition-colors">Trips</a>
+        <a href="#about" class="hover:text-[#6B7F58] transition-colors">About</a>
+        <a href="#gallery" class="hover:text-[#6B7F58] transition-colors">Gallery</a>
+        <a href="#contact" class="px-5 py-2.5 bg-[#6B7F58] text-[#F5F3EE] rounded-xl hover:bg-[#5a6e49] transition-colors">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero: full-bleed background -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 md:pb-24">
+    <img src="https://www.sycamoreflyfishing.com/wp-content/uploads/2021/07/about_shot.jpg" alt="Guide on a mountain stream" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-t from-[#2A2826]/90 via-[#2A2826]/40 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <h1 class="font-display text-5xl md:text-7xl leading-tight text-[#F5F3EE] mb-6">
+          Fly fishing guides for the mountain streams of Western North Carolina
+        </h1>
+        <p class="text-lg md:text-xl text-[#F5F3EE]/80 mb-8 max-w-lg">
+          Full and half-day trips for trout and smallmouth in the Blue Ridge
+        </p>
+        <div class="flex gap-4">
+          <a href="#contact" class="px-8 py-3.5 bg-[#6B7F58] text-[#F5F3EE] rounded-xl font-medium hover:bg-[#5a6e49] transition-colors">Book a trip</a>
+          <a href="#trips" class="px-8 py-3.5 border-2 border-[#F5F3EE]/30 text-[#F5F3EE] rounded-xl font-medium hover:bg-[#F5F3EE]/10 transition-colors">See our trips</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary split: asymmetric -->
+  <section id="trips" class="max-w-7xl mx-auto px-6 py-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1 space-y-6">
+        <span class="text-sm font-semibold uppercase tracking-widest text-[#6B7F58]">Guided Trips</span>
+        <h2 class="font-display text-4xl md:text-5xl leading-tight text-[#2A2826]">Full and half-day fishing trips across three states</h2>
+        <div class="space-y-6 pt-4">
+          <div class="flex gap-5">
+            <span class="font-display text-3xl text-[#6B7F58]">01</span>
+            <div>
+              <h3 class="font-semibold text-lg text-[#2A2826]">Tailored to your goals</h3>
+              <p class="text-sm md:text-base text-[#2A2826]/70">Whether you are after trophy trout in Tennessee tailwaters or smallmouth bass on a Virginia float, every trip is built around what you want to do.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-3xl text-[#6B7F58]">02</span>
+            <div>
+              <h3 class="font-semibold text-lg text-[#2A2826]">All skill levels</h3>
+              <p class="text-sm md:text-base text-[#2A2826]/70">From your first roll cast to chasing wild browns with a 6x tippet, trips are paced for your comfort and ambition.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-3xl text-[#6B7F58]">03</span>
+            <div>
+              <h3 class="font-semibold text-lg text-[#2A2826]">Quality gear included</h3>
+              <p class="text-sm md:text-base text-[#2A2826]/70">Rods, reels, and flies are ready when you arrive. You bring sunscreen and a camera. We handle the rest.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 md:order-2 reveal">
+        <img src="https://www.sycamoreflyfishing.com/wp-content/uploads/2021/07/about_shot.jpg" alt="Fly fishing guide on a stream" class="w-full h-[500px] object-cover rounded-xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary split: reversed -->
+  <section id="about" class="bg-[#2A2826] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <img src="https://www.sycamoreflyfishing.com/wp-content/uploads/2021/07/593F8490-EDC5-446F-943E-D818603649EF-scaled.jpg" alt="Angler landing a trout" class="w-full h-[500px] object-cover rounded-xl" />
+        </div>
+        <div class="space-y-6">
+          <span class="text-sm font-semibold uppercase tracking-widest text-[#6B7F58]">About Preston</span>
+          <h2 class="font-display text-4xl md:text-5xl leading-tight text-[#F5F3EE]">A patient guide with deep local knowledge</h2>
+          <p class="text-lg text-[#F5F3EE]/80 leading-relaxed">
+            Preston has spent years on the rivers and streams of Tennessee, Virginia, and North Carolina. He knows where the fish sit when the water drops, where to cast when the cicadas are loud, and how to make a first-timer feel at home on a fly rod.
+          </p>
+          <p class="text-base text-[#F5F3EE]/70">
+            Sycamore Fly Fishing is built on one idea: make the sport enjoyable and approachable for everyone. If you want to learn, you will. If you want to catch your personal best, that happens too.
+          </p>
+          <a href="#contact" class="inline-block px-8 py-3.5 border-2 border-[#6B7F58] text-[#F5F3EE] rounded-xl font-medium hover:bg-[#6B7F58] transition-colors">Meet your guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery: breaks the zigzag -->
+  <section id="gallery" class="max-w-7xl mx-auto px-6 py-24">
+    <div class="mb-10 reveal">
+      <span class="text-sm font-semibold uppercase tracking-widest text-[#6B7F58]">On the Water</span>
+      <h2 class="font-display text-4xl md:text-5xl leading-tight text-[#2A2826] mt-3">Moments worth traveling for</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="reveal"><img src="https://www.sycamoreflyfishing.com/wp-content/uploads/2021/07/893AA1C-C0FC-4133-B29A-FE55AE2F857D.jpeg" alt="Fly fishing scene" class="w-full h-64 object-cover rounded-xl" /></div>
+      <div class="reveal"><img src="https://www.sycamoreflyfishing.com/wp-content/uploads/2021/07/106B3B68-0079-478C-A444-A8AA2C85D277-scaled.jpeg" alt="River landscape" class="w-full h-64 object-cover rounded-xl" /></div>
+      <div class="reveal"><img src="https://www.sycamoreflyfishing.com/wp-content/uploads/2021/07/2D4165E9-F170-4387-A5C9-32A262329234.jpeg" alt="Holding a trout" class="w-full h-64 object-cover rounded-xl" /></div>
+      <div class="reveal"><img src="https://www.sycamoreflyfishing.com/wp-content/uploads/2021/07/6282E7A2-F656-4590-9E3D-32C43F90E5E3.jpeg" alt="Fly fishing action" class="w-full h-64 object-cover rounded-xl" /></div>
+      <div class="reveal"><img src="https://www.sycamoreflyfishing.com/wp-content/uploads/2021/07/69F3C21F-6147-4FE5-B92B-3258888EF718.jpeg" alt="Catch of the day" class="w-full h-64 object-cover rounded-xl" /></div>
+      <div class="reveal"><img src="https://www.sycamoreflyfishing.com/wp-content/uploads/2021/07/7D7A63F4-2FCD-476B-A97F-07ADCC5DB0E0-scaled.jpeg" alt="On the river" class="w-full h-64 object-cover rounded-xl" /></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-[#2A2826] py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12 reveal">
+        <h2 class="font-display text-4xl md:text-5xl text-[#F5F3EE]">What anglers say</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="reveal bg-[#F5F3EE]/5 border border-[#F5F3EE]/10 rounded-xl p-8">
+          <p class="text-[#F5F3EE]/90 text-base leading-relaxed mb-6">"I have been fishing with Preston for a few years now. The well thought out day floats and his organization of time and supplies makes everything so streamlined. He always has quality equipment and an in depth knowledge of the rivers."</p>
+          <p class="text-[#F5F3EE]/60 text-sm font-medium">Spencer Smith</p>
+        </div>
+        <div class="reveal bg-[#F5F3EE]/5 border border-[#F5F3EE]/10 rounded-xl p-8">
+          <p class="text-[#F5F3EE]/90 text-base leading-relaxed mb-6">"As a Mothers Day gift, I took my wife for our first ever fly fishing trip. We had such an awesome day. Preston was a perfect guide, patiently teaching us the ins and outs of casting, mending, and more."</p>
+          <p class="text-[#F5F3EE]/60 text-sm font-medium">Jeremy Grant</p>
+        </div>
+        <div class="reveal bg-[#F5F3EE]/5 border border-[#F5F3EE]/10 rounded-xl p-8">
+          <p class="text-[#F5F3EE]/90 text-base leading-relaxed mb-6">"I highly recommend Sycamore Fly Fishing. I have been fishing with Preston for years, from wading trips to float trips. Extremely knowledgeable and a lot of fun on the water. Definitely 5 stars!"</p>
+          <p class="text-[#F5F3EE]/60 text-sm font-medium">Alan S., Mooresville, NC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip -->
+  <section id="contact" class="bg-[#6B7F58] py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl text-[#F5F3EE] mb-4">Ready to get on the water?</h2>
+      <p class="text-[#F5F3EE]/80 text-lg mb-8 max-w-xl mx-auto">Call or email to check availability and plan your trip.</p>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <a href="tel:8287298586" class="px-8 py-3.5 bg-[#2A2826] text-[#F5F3EE] rounded-xl font-medium hover:bg-[#1a1918] transition-colors">(828) 729-8586</a>
+        <a href="mailto:preston@sycamoreflyfishing.com" class="px-8 py-3.5 border-2 border-[#F5F3EE] text-[#F5F3EE] rounded-xl font-medium hover:bg-[#F5F3EE]/10 transition-colors">preston@sycamoreflyfishing.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#2A2826] py-16 border-t border-[#F5F3EE]/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="space-y-4">
+        <h3 class="font-display text-2xl text-[#F5F3EE]">Sycamore Fly Fishing</h3>
+        <p class="text-sm text-[#F5F3EE]/60">Guided fly fishing trips in Tennessee, Virginia, and North Carolina.</p>
+      </div>
+      <div class="space-y-3">
+        <h4 class="font-semibold text-[#F5F3EE]">Trips</h4>
+        <ul class="space-y-2 text-sm text-[#F5F3EE]/60">
+          <li><a href="#" class="hover:text-[#F5F3EE]">Half Day</a></li>
+          <li><a href="#" class="hover:text-[#F5F3EE]">Full Day</a></li>
+          <li><a href="#" class="hover:text-[#F5F3EE]">Float Trips</a></li>
+          <li><a href="#" class="hover:text-[#F5F3EE]">Wade Trips</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h4 class="font-semibold text-[#F5F3EE]">Company</h4>
+        <ul class="space-y-2 text-sm text-[#F5F3EE]/60">
+          <li><a href="#" class="hover:text-[#F5F3EE]">About</a></li>
+          <li><a href="#" class="hover:text-[#F5F3EE]">Gallery</a></li>
+          <li><a href="#" class="hover:text-[#F5F3EE]">Blog</a></li>
+          <li><a href="#" class="hover:text-[#F5F3EE]">Contact</a></li>
+        </ul>
+      </div>
+      <div class="space-y-3">
+        <h4 class="font-semibold text-[#F5F3EE]">Connect</h4>
+        <ul class="space-y-2 text-sm text-[#F5F3EE]/60">
+          <li><a href="https://www.instagram.com/sycamore_fly_fishing/" class="hover:text-[#F5F3EE]">Instagram</a></li>
+          <li><a href="https://www.youtube.com/channel/UCCJ2XzWEraUgIqczWJNylQA" class="hover:text-[#F5F3EE]">YouTube</a></li>
+        </ul>
+        <p class="text-xs text-[#F5F3EE]/40 pt-4">2021 Sycamore Fly Fishing. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
