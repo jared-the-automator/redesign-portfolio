@@ -116,3 +116,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Zoller's Outfitting](https://jared-the-automator.github.io/redesign-portfolio/zollersoutfitting.com/) | River guide (salmon, steelhead & turkey) | Klickitat, WA |
 | [OldSteel Guns](https://jared-the-automator.github.io/redesign-portfolio/oldsteelguns.com/) | Historical firearms & militaria | Littleton, CO |
 | [Nighthawk Canoes](https://jared-the-automator.github.io/redesign-portfolio/nighthawkcanoes.com/) | Custom lightweight Kevlar canoes | Madison, WI |
+| [Tim's Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/timstaxidermy.pro/) | Taxidermy studio | Cherry Hill, NJ |
