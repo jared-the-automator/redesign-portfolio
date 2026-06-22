@@ -105,3 +105,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Badger Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/badgerfuneral.com/) | Family funeral home | Littleton & Groton, MA |
 
 | [Coda Custom Boards & Skis](https://jared-the-automator.github.io/redesign-portfolio/codaboards.com/) | Custom snowboards, skis & monoskis | New Hampshire, USA |
+| [Nightlife Oil Burner Service](https://jared-the-automator.github.io/redesign-portfolio/nightlifeoil.com/) | Oil burner service & heating repair | Ashland, MA |
