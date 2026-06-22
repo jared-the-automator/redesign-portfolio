@@ -114,3 +114,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [7 Lazy P](https://jared-the-automator.github.io/redesign-portfolio/sevenlazyp.com/) | Wilderness pack trips & guest ranch | Montana, USA |
 
 | [Zoller's Outfitting](https://jared-the-automator.github.io/redesign-portfolio/zollersoutfitting.com/) | River guide (salmon, steelhead & turkey) | Klickitat, WA |
+| [OldSteel Guns](https://jared-the-automator.github.io/redesign-portfolio/oldsteelguns.com/) | Historical firearms & militaria | Littleton, CO |
