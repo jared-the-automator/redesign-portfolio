@@ -109,3 +109,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Nightlife Oil Burner Service](https://jared-the-automator.github.io/redesign-portfolio/nightlifeoil.com/) | Oil burner service & heating repair | Ashland, MA |
 | [Sycamore Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/sycamoreflyfishing.com/) | Fly fishing guide | Asheville, NC |
 | [Mag 10 Knifeworx](https://jared-the-automator.github.io/redesign-portfolio/mag10knifeworx.com/) | Hand-forged cutlery | USA |
+
+| [7 Lazy P](https://jared-the-automator.github.io/redesign-portfolio/sevenlazyp.com/) | Wilderness pack trips & guest ranch | Montana, USA |
