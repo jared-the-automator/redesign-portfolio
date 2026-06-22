@@ -111,3 +111,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Mag 10 Knifeworx](https://jared-the-automator.github.io/redesign-portfolio/mag10knifeworx.com/) | Hand-forged cutlery | USA |
 
 | [7 Lazy P](https://jared-the-automator.github.io/redesign-portfolio/sevenlazyp.com/) | Wilderness pack trips & guest ranch | Montana, USA |
+
+| [Zoller's Outfitting](https://jared-the-automator.github.io/redesign-portfolio/zollersoutfitting.com/) | River guide (salmon, steelhead & turkey) | Klickitat, WA |

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoller's Outfitting - Klickitat River Guides</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['"Playfair Display"', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: { custom: '#0B1120', lighter: '#151E32' },
+                        steel: '#7BA7BC',
+                        mist: '#94AAB8',
+                        bone: '#E8EDF3',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="font-body bg-slate-custom text-bone antialiased">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-custom/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="font-display text-xl tracking-wide text-bone">ZOLLER'S OUTFITTING</div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-mist">
+                <a href="#" class="hover:text-steel transition-colors">Home</a>
+                <a href="#" class="hover:text-steel transition-colors">Fishing</a>
+                <a href="#" class="hover:text-steel transition-colors mediation">Hunting</a>
+                <a href="#" class="hover:text-steel transition-colors">Reports</a>
+                <a href="#" class="hover:text-steel transition-colors">Contact</a>
+            </div>
+            <a href="#" class="hidden md:inline-block px-5 py-2 bg-steel text-slate-custom font-semibold text-sm rounded-xl hover:bg-mist transition-colors">Book a Trip</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://zollersoutfitting.com/wp-content/uploads/2014/02/BACKGROUND-Zolleroutfitting.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-custom/90 via-slate-custom/70 to-transparent"></div>
+        <div class="relative max-w-7xl mx-auto px-6 py-32">
+            <div class="max-w-2xl">
+                <span class="block text-steel font-semibold text-xs uppercase tracking-[0.2em] mb-6">Klickitat River, Washington</span>
+                <h1 class="font-display text-5xl md:text-7xl font-bold text-bone leading-tight mb-6">
+                    Third-Generation<br>River Guides
+                </h1>
+                <p class="text-mist text-lg md:text-xl max-w-lg leading-relaxed mb-8">
+                    Salmon, steelhead, and turkey with Levi Zoller, guiding the Klickitat where his family has fished for three generations.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#" class="inline-block px-8 py-3 bg-steel text-slate-custom font-semibold rounded-xl hover:bg-mist transition-colors">Book a Trip</a>
+                    <a href="#" class="inline-block px-8 py-3 border border-steel/40 text-steel font-semibold rounded-xl hover:bg-steel/10 transition-colors">See Reports</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Primary split -->
+    <section class="py-24 bg-slate-lighter">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://zollersoutfitting.com/wp-content/uploads/2018/06/FEATURED-Zolleroutfitting-Summer-Steelhead-June2018.jpg" alt="Summer steelhead on the Klickitat River" class="w-full h-[500px] object-cover rounded-xl shadow-2xl">
+                </div>
+                <div class="order-1 md:order-2">
+                    <span class="block text-steel font-semibold text-xs uppercase tracking-[0.2em] mb-4">What We Do</span>
+                    <h2 class="font-display text-4xl font-bold text-bone mb-6">Guided by Memory, Not a Script</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <span class="font-display text-4xl text-steel font-bold">01</span>
+                            <div>
+                                <h3 class="font-semibold text-bone text-lg mb-1">Salmon & Steelhead</h3>
+                                <p class="text-mist">Drift the Klickitat for chinook, coho, and summer steelhead, reading water the way Levi's grandfather taught him.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="font-display text-4xl text-steel font-bold">02</span>
+                            <div>
+                                <h3 class="font-semibold text-bone text-lg mb-1">Turkey Hunts</h3>
+                                <p class="text-mist">Spring turkey with dogs in the Washington hills, accessing land through three generations of local relationships.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="font-display text-4xl text-steel font-bold">03</span>
+                            <div>
+                                <h3 class="font-semibold text-bone text-lg mb-1">River Knowledge</h3>
+                                <p class="text-mist">Levi doesn't guess where the fish are. He knows the Klickikat's moods like his grandfather knew them before him.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secondary split (reversed) -->
+    <section class="py-24 bg-slate-custom">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="block text-steel font-semibold text-xs uppercase tracking-[0.2em] mb-4">The Zoller Story</span>
+                    <h2 class="font-display text-4xl font-bold text-bone mb-6">Three Generations on the River</h2>
+                    <p class="text-mist text-lg leading-relaxed mb-6">
+                        Levi Zoller was born and raised in Klickitat County. His grandfather Phil and father Tracy guided before him. When you fish with Levi, you're not just hiring a guide. You're hiring a family born and raised on this water.
+                    </p>
+                    <p class="text-mist leading-relaxed mb-8">
+                        Levi spends his off time expanding access to premium hunting locations and creating new ways to provide a successful fishing experience. The river is not a backdrop for his work. It is the work.
+                    </p>
+                    <a href="#" class="inline-block px-6 py-3 border border-steel/40 text-steel font-semibold rounded-xl hover:bg-steel/10 transition-colors">Read Reports</a>
+                </div>
+                <div>
+                    <img src="https://zollersoutfitting.com/wp-content/uploads/2017/11/Levi-Zoller-2017-Salmon-Coho-Klickitat-Columbia-River-800x500.jpg" alt="Levi Zoller with salmon on the Columbia River" class="w-full h-[500px] object-cover rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery grid -->
+    <section class="py-24 bg-slate-lighter">
+        <div class="max-w-7xl mx-auto px-6">
+            <span class="block text-steel font-semibold text-xs uppercase tracking-[0.2em] mb-4 text-center">On the Water</span>
+            <h2 class="font-display text-4xl font-bold text-bone text-center mb-12">Where the Stories Start</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="col-span-2 row-span-2">
+                    <img src="https://zollersoutfitting.com/wp-content/uploads/2019/03/Levi-Zoller-Turkey-Hunts-800x500.jpg" alt="Levi Zoller turkey hunting in Washington" class="w-full h-full object-cover rounded-xl">
+                </div>
+                <div>
+                    <img src="https://zollersoutfitting.com/wp-content/uploads/2017/07/zoller-outfitting-Klickitat-river-Steelhead-800x500.jpeg" alt="Steelhead on the Klickitat River" class="w-full h-[240px] object-cover rounded-xl">
+                </div>
+                <div>
+                    <img src="https://zollersoutfitting.com/wp-content/uploads/2016/10/FEATURED-Zolleroutfitting-BlackTailDeer.jpg" alt="Blacktail deer in Washington" class="w-full h-[240px] object-cover rounded-xl">
+                </div>
+                <div class="col-span-2">
+                    <img src="https://zollersoutfitting.com/wp-content/uploads/2017/11/Levi-Zoller-2017-Salmon-Coho-Klickitat-Columbia-River-800x500.jpg" alt="Coho salmon on the Columbia River" class="w-full h-[250px] object-cover rounded-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Credibility -->
+    <section class="py-24 bg-slate-custom">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="block text-steel font-semibold text-xs uppercase tracking-[0.2em] mb-4">What Clients Get</span>
+            <h2 class="font-display text-4xl font-bold text-bone mb-8">Peace and Scenic Trips</h2>
+            <blockquote class="text-2xl md:text-3xl font-display text-mist leading-relaxed mb-8 italic">
+                "You won't be disappointed with your peaceful and scenic trip."
+            </blockquote>
+            <div class="grid grid-cols-3 gap-8 mt-16">
+                <div>
+                    <span class="font-display text-5xl text-steel font-bold">3rd</span>
+                    <p class="text-mist mt-2">Generation Guide</p>
+                </div>
+                <div>
+                    <span class="font-display text-5xl text-steel font-bold">12+</span>
+                    <p class="text-mist mt-2">Years Guiding</p>
+                </div>
+                <div>
+                    <span class="font-display text-5xl text-steel font-bold">1</span>
+                    <p class="text-mist mt-2">Klickitat River</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="py-20 bg-steel">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-slate-custom mb-4">Book Your Klickitat Trip</h2>
+            <p class="text-slate-custom/80 text-lg mb-8 max-w-2xl mx-auto">Summer salmon and steelhead are running. Spots fill fast. Let Levi know when you want to fish.</p>
+            <a href="mailto:huntfish@zolleroutfitting.com" class="inline-block px-10 py-4 bg-slate-custom text-bone font-semibold text-lg rounded-xl hover:bg-slate-lighter transition-colors">Email Levi</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-slate-custom border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="font-display text-xl font-bold text-bone mb-4">ZOLLER'S OUTFITTING</h3>
+                <p class="text-mist text-sm leading-relaxed">Third-generation guide service on the Klickitat River. Salmon, steelhead, and turkey hunts in South Central Washington.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-bone mb-4">Navigate</h4>
+                <ul class="space-y-2 text-sm text-mist">
+                    <li><a href="#" class="hover:text-steel transition-colors">Home</a></li>
+                    <li><a href="#" class="hover:text-steel transition-colors">Fishing</a></li>
+                    <li><a href="#" class="hover:text-steel transition-colors">Hunting</a></li>
+                    <li><a href="#" class="hover:text-steel transition-colors">Reports</a></li>
+                    <li><a href="#" class="hover:text-steel transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-bone mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm text-mist">
+                    <li><a href="mailto:huntfish@zolleroutfitting.com" class="hover:text-steel transition-colors">huntfish@zolleroutfitting.com</a></li>
+                    <li>Klickitat County, Washington</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-xs text-mist/60">
+            <p>&copy; 2026 Zoller's Outfitting. Guide service on the Klickitat River.</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
