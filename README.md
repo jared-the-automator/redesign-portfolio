@@ -11,6 +11,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | Business | Niche | Location |
 | [David's Custom Gun Stocks](https://jared-the-automator.github.io/redesign-portfolio/davidscustomgunstocks.com/) | Custom gun stock restoration | Atlanta, GA |
 | [Dakota Decoy Company](https://jared-the-automator.github.io/redesign-portfolio/dakotadecoy.com/) | Waterfowl decoys & blindsaggle blinds | Central Flyway, USA |
+| [Kaatz Bros. Lures](https://jared-the-automator.github.io/redesign-portfolio/kaatzbros.com/) | Trapping supplies & animal attractors | USA |
 | [Kyle Tack](https://jared-the-automator.github.io/redesign-portfolio/kyletack.com/) | Custom saddles & tack | Whitesboro, TX |
 | [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
 
