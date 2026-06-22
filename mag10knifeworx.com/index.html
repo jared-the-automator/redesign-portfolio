@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mag 10 Knifeworx — Fine Hand-Forged Cutlery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, .display { font-family: 'Oswald', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .no-radius { border-radius: 0 !important; }
+  </style>
+</head>
+<body class="bg-neutral-950 text-white antialiased">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 bg-neutral-950/90 backdrop-blur-sm no-radius">
+    <a href="#" class="text-xl font-bold tracking-tight uppercase display text-white">Mag 10 Knifeworx</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-300">
+      <a href="#" class="hover:text-white transition-colors duration-300">Work</a>
+      <a href="#" class="hover:text-white transition-colors duration-300">Process</a>
+      <a href="#" class="hover:text-white transition-colors duration-300">About</a>
+      <a href="#" class="hover:text-white transition-colors duration-300">Contact</a>
+    </div>
+    <a href="#" class="px-5 py-2 bg-blue-500 text-neutral-950 font-bold text-sm hover:bg-blue-400 transition-colors duration-300 no-radius">
+      Order Custom
+    </a>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 md:pb-20">
+    <div class="absolute inset-0">
+      <img src="https://www.mag10knifeworx.com/wp-content/uploads/2016/04/forge_ebony_shop.jpg"
+           alt="Forge" class="w-full h-full object-cover object-center">
+      <div class="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/75 to-transparent"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 md:px-10 w-full">
+      <p class="text-xs font-semibold tracking-[0.3em] text-blue-400 mb-4 uppercase">Hand-Forged in the USA</p>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 max-w-4xl display">
+        Steel That Outlasts<br>Mass Production
+      </h1>
+      <p class="text-base md:text-lg text-neutral-300 mb-8 max-w-xl leading-relaxed">
+        Every blade is hammered, shaped, and finished by hand. No two knives are ever the same.
+      </p>
+      <a href="#" class="inline-block px-8 py-3 bg-blue-500 text-neutral-950 font-bold text-base hover:bg-blue-400 transition-colors duration-300 no-radius">
+        See the Collection
+      </a>
+    </div>
+  </section>
+
+  <!-- 3. Primary Product -->
+  <section class="max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-32">
+    <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div class="reveal">
+        <img src="https://www.mag10knifeworx.com/wp-content/uploads/2016/04/dam_burl_shop.jpg"
+             alt="Damascus steel burl knife" class="w-full h-80 md:h-[28rem] object-cover object-center no-radius">
+      </div>
+      <div class="reveal">
+        <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight display">
+          One Blade.<br>One Craftsman.
+        </h2>
+        <div class="space-y-8">
+          <div class="flex gap-5">
+            <span class="text-2xl md:text-3xl font-bold text-blue-500 display mt-0.5">01</span>
+            <div>
+              <h3 class="text-lg font-bold mb-1">Damascus Steel</h3>
+              <p class="text-neutral-400 leading-relaxed">
+                Layered, folded, and forged to create patterns unique to each blade. No acid etching shortcuts.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="text-2xl md:text-3xl font-bold text-blue-500 display mt-0.5">02</span>
+            <div>
+              <h3 class="text-lg font-bold mb-1">Hand-Shaped Handles</h3>
+              <p class="text-neutral-400 leading-relaxed">
+                Burl, ebony, and exotic hardwoods are shaped to fit the hand. Each handle is a one-off piece of functional art.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="text-2xl md:text-3xl font-bold text-blue-500 display mt-0.5">03</span>
+            <div>
+              <h3 class="text-lg font-bold mb-1">Custom Sheaths</h3>
+              <p class="text-neutral-400 leading-relaxed">
+                Leather wet-molded to the blade for a perfect fit. No friction, no rattle, no factory pressings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary: Process -->
+  <section class="max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-32">
+    <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div class="md:order-2 reveal">
+        <img src="https://www.mag10knifeworx.com/wp-content/uploads/2016/04/dam_para_shop.jpg"
+             alt="Forge work" class="w-full h-80 md:h-[28rem] object-cover object-center no-radius">
+      </div>
+      <div class="md:order-1 reveal">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight display">
+          Built in Fire.<br>Not a Factory.
+        </h2>
+        <p class="text-base md:text-lg text-neutral-300 mb-6 leading-relaxed">
+          Every knife starts as raw steel and a design in the head of the maker. There is no assembly line. There is no inventory. Each piece is forged, heat-treated, ground, and finished by one person from start to end.
+        </p>
+        <a href="#" class="inline-block px-8 py-3 border-2 border-blue-500 text-blue-500 font-bold hover:bg-blue-500 hover:text-neutral-950 transition-colors duration-300 no-radius">
+          See the Full Process
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery -->
+  <section class="max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-32">
+    <h2 class="text-3xl md:text-5xl font-bold mb-12 display reveal">Current Work</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+      <div class="reveal">
+        <img src="https://www.mag10knifeworx.com/wp-content/uploads/2016/04/dam_burl_shop.jpg"
+             alt="Damascus burl knife" class="w-full h-56 md:h-72 object-cover object-center no-radius">
+      </div>
+      <div class="reveal">
+        <img src="https://www.mag10knifeworx.com/wp-content/uploads/2016/04/forge_ebony_shop.jpg"
+             alt="Forge and ebony work" class="w-full h-56 md:h-72 object-cover object-center no-radius">
+      </div>
+      <div class="reveal">
+        <img src="https://www.mag10knifeworx.com/wp-content/uploads/2016/04/IMG_0118.jpg"
+             alt="Knife on workbench" class="w-full h-56 md:h-72 object-cover object-center no-radius">
+      </div>
+      <div class="reveal">
+        <img src="https://www.mag10knifeworx.com/wp-content/uploads/2016/04/15078923_721854344636952_6181424712795889518_n.jpg"
+             alt="Finished knife" class="w-full h-56 md:h-72 object-cover object-center no-radius">
+      </div>
+      <div class="reveal">
+        <img src="https://www.mag10knifeworx.com/wp-content/uploads/2016/04/14962626_721854354636951_7016714002946276692_n.jpg"
+             alt="Knife close-up" class="w-full h-56 md:h-72 object-cover object-center no-radius">
+      </div>
+      <div class="reveal">
+        <img src="https://www.mag10knifeworx.com/wp-content/uploads/2016/04/14753817_715548981934155_1937032808873875594_o.jpg"
+             alt="Previous work" class="w-full h-56 md:h-72 object-cover object-center no-radius">
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Credibility -->
+  <section class="bg-neutral-900 py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12 display reveal">Built to Outlast</h2>
+      <div class="grid md:grid-cols-3 gap-10 md:gap-12">
+        <div class="reveal">
+          <h3 class="text-xl font-bold mb-3 text-blue-500">Hand-Forged</h3>
+          <p class="text-neutral-300 leading-relaxed">
+            Every blade is shaped under a hammer. No automated grinders, no factory blanks.
+          </p>
+        </div>
+        <div class="reveal">
+          <h3 class="text-xl font-bold mb-3 text-blue-500">Custom Fit</h3>
+          <p class="text-neutral-300 leading-relaxed">
+            Handles are carved to match the hand. Materials are chosen for the job, not the price point.
+          </p>
+        </div>
+        <div class="reveal">
+          <h3 class="text-xl font-bold mb-3 text-blue-500">Made to Order</h3>
+          <p class="text-neutral-300 leading-relaxed">
+            There is no warehouse. Each knife starts as raw steel and a conversation about what you need it to do.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA Strip -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-3xl mx-auto px-6 md:px-10 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6 display reveal">Ready for a Blade That Lasts?</h2>
+      <p class="text-base md:text-lg text-neutral-300 mb-8 leading-relaxed reveal">
+        Custom orders are accepted directly. Tell us what you need and we will forge it.
+      </p>
+      <a href="mailto:hemifrk@gmail.com" class="inline-block px-10 py-3 bg-blue-500 text-neutral-950 font-bold text-lg hover:bg-blue-400 transition-colors duration-300 no-radius reveal">
+        Request a Custom Knife
+      </a>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="border-t border-neutral-800 py-12">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <h3 class="font-bold text-lg mb-2 display">Mag 10 Knifeworx</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Fine hand-forged cutlery. Every blade shaped by hand in a working forge.</p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wide text-neutral-500">Navigate</h4>
+          <ul class="space-y-2 text-sm text-neutral-400">
+            <li><a href="#" class="hover:text-white transition-colors duration-300">Home</a></li>
+            <li><a href="#" class="hover:text-white transition-colors duration-300">Work</a></li>
+            <li><a href="#" class="hover:text-white transition-colors duration-300">Process</a></li>
+            <li><a href="#" class="hover:text-white transition-colors duration-300">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-3 text-sm uppercase tracking-wide text-neutral-500">Connect</h4>
+          <ul class="space-y-2 text-sm text-neutral-400">
+            <li><a href="https://www.facebook.com/Mag-10-Knifeworx-674224646066589/" target="_blank" class="hover:text-white transition-colors duration-300">Facebook</a></li>
+            <li><a href="mailto:hemifrk@gmail.com" class="hover:text-white transition-colors duration-300">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-10 pt-6 border-t border-neutral-800 text-center text-xs text-neutral-500">
+        Copyright 2026 Mag 10 Knifeworx. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
