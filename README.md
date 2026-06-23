@@ -120,3 +120,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Yellowstone Llamas](https://jared-the-automator.github.io/redesign-portfolio/yellowstonellamas.com/) | Llama outfitter & guided treks | Livingston, MT |
 | [Indian Creek Leather Co](https://jared-the-automator.github.io/redesign-portfolio/indiancreekleatherco.com/) | Handmade leather holsters & belts | Rural Ohio |
 | [Rio Salado Sportsman's Club](https://jared-the-automator.github.io/redesign-portfolio/rsscaz.com/) | Sporting clays & shooting range | Mesa, AZ |
+| [Montana Angling Co.](https://jared-the-automator.github.io/redesign-portfolio/montanaanglingco.com/) | Fly fishing guides | Bozeman, MT |

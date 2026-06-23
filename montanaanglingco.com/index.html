@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montana Angling Co. -- Guided Fly Fishing</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"DM Serif Display"', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            cream: '#F9F7F0',
+            'cream-dark': '#F0EDDE',
+            olive: '#6B7F5E',
+            'olive-light': '#8BA073',
+            'olive-dark': '#4A5C42',
+            espresso: '#2C1F16',
+            'espresso-light': '#4A3B32',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .corner-radius { border-radius: 12px; }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero-gradient {
+      background: linear-gradient(to right, rgba(44,31,22,0.85) 0%, rgba(44,31,22,0.5) 50%, rgba(44,31,22,0.2) 100%);
+    }
+    .text-no-ems {
+      font-feature-settings: "kern" 1;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body class="bg-cream text-espresso font-body text-base antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-cream/95 backdrop-blur-sm border-b border-cream-dark/30">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-xl text-espresso tracking-tight">Montana Angling Co.</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-espresso-light">
+        <a href="#trips" class="hover:text-olive transition-colors">Trips</a>
+        <a href="#rivers" class="hover:text-olive transition-colors">Rivers</a>
+        <a href="#about" class="hover:text-olive transition-colors">About</a>
+        <a href="#contact" class="hover:text-olive transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="bg-olive text-white px-5 py-2.5 text-sm font-semibold corner-radius hover:bg-olive-dark transition-colors">Book a Trip</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <div class="absolute inset-0">
+      <img src="https://www.montanaanglingco.com/wp-content/uploads/float-fly-fishing-montana.jpg" alt="Fly fishing on Montana rivers" class="w-full h-full object-cover">
+      <div class="absolute inset-0 hero-gradient"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-32">
+      <div class="max-w-2xl">
+        <p class="text-olive-light text-sm font-semibold tracking-[0.15em] uppercase mb-4">Bozeman, Montana</p>
+        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6">Guided Fly Fishing on Montana's Finest Rivers</h1>
+        <p class="text-white/90 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">Expert guides, legendary waters, and the kind of day you will talk about for years.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="bg-olive text-white px-7 py-3.5 text-sm font-semibold corner-radius hover:bg-olive-dark transition-colors inline-block">Book Your Trip</a>
+          <a href="#rivers" class="border border-white/40 text-white px-7 py-3.5 text-sm font-semibold corner-radius hover:bg-white/10 transition-colors inline-block">Explore the Rivers</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="trips" class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <img src="https://www.montanaanglingco.com/wp-content/uploads/women-fishing-montana-angling-rainbow-trout.jpg" alt="Angler with a rainbow trout" class="w-full corner-radius shadow-lg">
+        </div>
+        <div class="reveal">
+          <p class="text-olive text-sm font-semibold tracking-[0.1em] uppercase mb-3">What to Expect</p>
+          <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight mb-8">A Day on the Water</h2>
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <span class="font-display text-4xl text-olive-light leading-none">01</span>
+              <div>
+                <h3 class="font-semibold text-lg text-espresso mb-1">Expert Montana Guides</h3>
+                <p class="text-espresso-light leading-relaxed">Our guides live on these rivers. They know where the fish hold, what they eat, and how the seasons shift.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-4xl text-olive-light leading-none">02</span>
+              <div>
+                <h3 class="font-semibold text-lg text-espresso mb-1">Prime River Access</h3>
+                <p class="text-espresso-light leading-relaxed">Float and wade trips on the Madison, Stillwater, and Boulder. Private water options available.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-4xl text-olive-light leading-none">03</span>
+              <div>
+                <h3 class="font-semibold text-lg text-espresso mb-1">All-Inclusive Trips</h3>
+                <p class="text-espresso-light leading-relaxed">Gear, lunch, and local knowledge included. You show up ready to fish. We handle the rest.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story (layout break after two splits) -->
+  <section id="about" class="py-24 lg:py-32 bg-cream-dark/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal order-2 lg:order-1">
+          <p class="text-olive text-sm font-semibold tracking-[0.1em] uppercase mb-3">Our Story</p>
+          <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight mb-6">Born on the Banks of the Madison</h2>
+          <p class="text-espresso-light leading-relaxed mb-5">Montana Angling Company was built by people who would rather be on the water than anywhere else. Owner and guide Max Yzaguirre started this company because he believed fly fishing in Montana should be led by locals who know the river the way a rancher knows his land.</p>
+          <p class="text-espresso-light leading-relaxed mb-5">Today, that same principle guides every trip we run. We do not chase crowds. We chase the right drift, the right hatch, and the right moment on Montana water.</p>
+          <p class="text-espresso-light leading-relaxed">A Montana Outfitters & Guides Association member and featured in Trout Unlimited.</p>
+        </div>
+        <div class="reveal order-1 lg:order-2">
+          <img src="https://www.montanaanglingco.com/wp-content/uploads/Madison-River-Fly-Fishing-Summer.jpg" alt="Madison River fly fishing" class="w-full corner-radius shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="rivers" class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <p class="text-olive text-sm font-semibold tracking-[0.1em] uppercase mb-3">The Rivers</p>
+        <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight">Montana Water</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="reveal md:col-span-2 lg:col-span-2">
+          <div class="relative overflow-hidden corner-radius h-80 lg:h-96">
+            <img src="https://www.montanaanglingco.com/wp-content/uploads/stillwater-river-raft-fly-fishing.jpg" alt="Stillwater River" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+              <p class="text-white font-semibold text-lg">Stillwater River</p>
+              <p class="text-white/80 text-sm">Float trips through winding canyon water</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="relative overflow-hidden corner-radius h-80 lg:h-96">
+            <img src="https://www.montanaanglingco.com/wp-content/uploads/Montana-fly-fishing-trout.jpg" alt="Rainbow trout" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+              <p class="text-white font-semibold text-lg">Rainbow Trout</p>
+              <p class="text-white/80 text-sm">Native and wild fish on the fly</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="relative overflow-hidden corner-radius h-72">
+            <img src="https://www.montanaanglingco.com/wp-content/uploads/boulder-river-web-modified.jpg" alt="Boulder River" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+              <p class="text-white font-semibold text-lg">Boulder River</p>
+              <p class="text-white/80 text-sm">Tight casting and technical water</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal md:col-span-2 lg:col-span-2">
+          <div class="relative overflow-hidden corner-radius h-72">
+            <img src="https://www.montanaanglingco.com/wp-content/uploads/gear-guide-home-900x600-web-optimized.jpg" alt="Guide gear" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+              <p class="text-white font-semibold text-lg">Guided Gear</p>
+              <p class="text-white/80 text-sm">Quality equipment included on every trip</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility -->
+  <section class="py-24 lg:py-32 bg-cream-dark/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <p class="text-olive text-sm font-semibold tracking-[0.1em] uppercase mb-3">Why Anglers Choose Us</p>
+        <h2 class="font-display text-4xl md:text-5xl text-espresso leading-tight">A Reputation Built on the Water</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="reveal text-center p-8 corner-radius bg-cream shadow-sm">
+          <p class="font-display text-5xl text-olive mb-3">12+</p>
+          <p class="font-semibold text-espresso mb-1">Years Guiding</p>
+          <p class="text-espresso-light text-sm">Decades of combined river experience on Montana's best water.</p>
+        </div>
+        <div class="reveal text-center p-8 corner-radius bg-cream shadow-sm">
+          <p class="font-display text-5xl text-olive mb-3">MOGA</p>
+          <p class="font-semibold text-espresso mb-1">Member</p>
+          <p class="text-espresso-light text-sm">Montana Outfitters & Guides Association member since 2015.</p>
+        </div>
+        <div class="reveal text-center p-8 corner-radius bg-cream shadow-sm">
+          <p class="font-display text-5xl text-olive mb-3">5.0</p>
+          <p class="font-semibold text-espresso mb-1">Tripadvisor Rating</p>
+          <p class="text-espresso-light text-sm">Consistently rated among the top fly fishing guides in Bozeman.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-24 lg:py-32 bg-olive relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <img src="https://www.montanaanglingco.com/wp-content/uploads/private_water_fly_fishing_2.jpg" alt="" class="w-full h-full object-cover">
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl text-white leading-tight mb-6">Plan Your Montana Fishing Trip</h2>
+      <p class="text-white/90 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Summer bookings are live, and the best dates on the Madison go fast. Reserve your day on the water before the season fills.</p>
+      <a href="#" class="bg-white text-espresso px-8 py-4 text-sm font-semibold corner-radius hover:bg-cream transition-colors inline-block">Book Your Trip</a>
+      <p class="text-white/70 text-sm mt-6">Based in Bozeman, Montana</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-espresso text-cream-dark/70 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <p class="font-display text-xl text-cream mb-4">Montana Angling Co.</p>
+          <p class="text-sm leading-relaxed">Guided fly fishing on the Madison, Stillwater, and Boulder Rivers. Based in Bozeman, Montana.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-cream mb-3">Explore</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#trips" class="hover:text-white transition-colors">Trips</a></li>
+            <li><a href="#rivers" class="hover:text-white transition-colors">Rivers</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-cream mb-3">Contact</p>
+          <p class="text-sm mb-1">Bozeman, Montana</p>
+          <p class="text-sm">Montana Angling Co.</p>
+        </div>
+      </div>
+      <div class="border-t border-cream-dark/20 mt-12 pt-8 text-center text-xs">
+        <p>Thanks for visiting, and see you on the water.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
