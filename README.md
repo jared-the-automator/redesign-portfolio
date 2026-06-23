@@ -122,3 +122,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Rio Salado Sportsman's Club](https://jared-the-automator.github.io/redesign-portfolio/rsscaz.com/) | Sporting clays & shooting range | Mesa, AZ |
 | [Montana Angling Co.](https://jared-the-automator.github.io/redesign-portfolio/montanaanglingco.com/) | Fly fishing guides | Bozeman, MT |
 | [Alamosa Building Supply](https://jared-the-automator.github.io/redesign-portfolio/alamosabuildingsupply.com/) | Lumber & building supply | La Jara & Alamosa, CO |
+| [Stewart River Boatworks](https://jared-the-automator.github.io/redesign-portfolio/stewartriver.com/) | Custom wooden canoes & rowboats | North Shore, MN |
