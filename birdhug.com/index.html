@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Birdhug Studio — Hand Crafted Wooden Birds Since 1989</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lodge: {
+              dark: '#0a1f15',
+              green: '#1b4332',
+              gold: '#c9a227',
+              bone: '#f5f5dc',
+              sage: '#4a7c59',
+              muted: '#8a9a8b'
+            }
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0a1f15; }
+    ::-webkit-scrollbar-thumb { background: #1b4332; border-radius: 2px; }
+  </style>
+</head>
+<body class="bg-lodge-dark text-lodge-bone antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-lodge-dark/90 backdrop-blur border-b border-lodge-green/30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-display font-bold text-lodge-bone tracking-wide">Birdhug Studio</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-lodge-bone/80">
+        <a href="#gallery" class="hover:text-lodge-gold transition">Gallery</a>
+        <a href="#process" class="hover:text-lodge-gold transition">Process</a>
+        <a href="#about" class="hover:text-lodge-gold transition">About</a>
+        <a href="#contact" class="px-5 py-2 bg-lodge-gold text-lodge-dark font-semibold text-sm hover:bg-lodge-bone transition">Shop Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20 pt-32 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://birdhug.com/wp-content/uploads/2018/01/photo1.jpg" alt="Hand carved wooden bird detail" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-lodge-dark/70"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, #0a1f15 0%, transparent 60%);"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-3xl">
+        <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-4">Rosendale, New York — Since 1989</p>
+        <h1 class="text-5xl md:text-7xl font-display font-bold text-lodge-bone leading-tight mb-6">Hand Crafted<br/>Wooden Birds</h1>
+        <p class="text-lg md:text-xl text-lodge-bone/80 leading-relaxed max-w-xl mb-8">World-class wildlife carvings, each one original. Over 600 pieces across birds of prey, songbirds, owls, and more.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#gallery" class="px-8 py-3 bg-lodge-gold text-lodge-dark font-semibold text-sm hover:bg-lodge-bone transition">Browse Gallery</a>
+          <a href="#process" class="px-8 py-3 border border-lodge-bone/30 text-lodge-bone font-semibold text-sm hover:bg-lodge-bone/10 transition">See the Process</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="gallery" class="py-24 bg-lodge-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <img src="https://birdhug.com/wp-content/uploads/2018/05/kingbird1.jpg" alt="Eastern Kingbird carving" class="w-full h-[500px] object-cover rounded-sm" />
+        </div>
+        <div class="order-1 lg:order-2">
+          <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-3">Original Design</p>
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-lodge-bone leading-tight mb-6">Every Piece Tells<br/>a Story</h2>
+          <p class="text-lodge-bone/70 text-lg leading-relaxed mb-10">Self-representing and original, each carving is one of a kind. From detailed songbirds to powerful birds of prey, Jenny Zhi brings decades of skill and passion to every piece.</p>
+          <div class="space-y-6">
+            <div class="flex gap-5">
+              <span class="text-lodge-gold font-display font-bold text-2xl">01</span>
+              <div>
+                <h4 class="text-lodge-bone font-semibold text-lg mb-1">Hand Carved in Basswood</h4>
+                <p class="text-lodge-bone/60 text-sm">Each bird begins as a sketch on rough-cut basswood, shaped by hand with chisels and power tools.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="text-lodge-gold font-display font-bold text-2xl">02</span>
+              <div>
+                <h4 class="text-lodge-bone font-semibold text-lg mb-1">Burned Feather Detail</h4>
+                <p class="text-lodge-bone/60 text-sm">Every feather is defined with a burning pen, layer by layer, for lifelike texture and depth.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="text-lodge-gold font-display font-bold text-2xl">03</span>
+              <div>
+                <h4 class="text-lodge-bone font-semibold text-lg mb-1">Glass Eyes, Bronze Feet</h4>
+                <p class="text-lodge-bone/60 text-sm">Finished with acrylic paints, hand-set glass eyes, and cast bronze feet for a museum-quality result.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section — Process -->
+  <section id="process" class="py-24 bg-lodge-green/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-3">The Craft</p>
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-lodge-bone leading-tight mb-6">Seven Steps<br/>to Perfection</h2>
+          <p class="text-lodge-bone/70 text-lg leading-relaxed mb-6">From a rough sketch on basswood to the final mounted piece, each stage of the process is done by hand in the Birdhug Studio workshop in Rosendale, New York.</p>
+          <p class="text-lodge-bone/70 text-lg leading-relaxed mb-8">The carving process takes patience, skill, and an intimate knowledge of bird anatomy. Each feather is burned in with a pyrography pen. Every color is hand-mixed and applied in layers until the bird almost seems ready to take flight.</p>
+          <a href="https://birdhug.com/shop/" class="inline-flex items-center gap-2 px-8 py-3 bg-lodge-gold text-lodge-dark font-semibold text-sm hover:bg-lodge-bone transition">Explore the Shop</a>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <img src="https://birdhug.com/wp-content/uploads/2018/01/photo2.jpg" alt="Carving in progress" class="w-full h-64 object-cover rounded-sm" />
+          <img src="https://birdhug.com/wp-content/uploads/2018/01/photo4.jpg" alt="Detailed bird carving" class="w-full h-64 object-cover rounded-sm" />
+          <img src="https://birdhug.com/wp-content/uploads/2018/01/photo7.jpg" alt="Finished carving" class="w-full h-64 object-cover rounded-sm col-span-2" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="about" class="py-24 bg-lodge-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-3">Collections</p>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-lodge-bone">600+ Original Carvings</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="relative group overflow-hidden rounded-sm h-72">
+          <img src="https://birdhug.com/wp-content/uploads/2018/01/Budgerigar3.jpg" alt="Budgerigar carving" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-lodge-dark/40 group-hover:bg-lodge-dark/20 transition"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h4 class="text-xl font-display font-bold text-lodge-bone">Songbirds</h4>
+            <p class="text-lodge-bone/70 text-sm">Cardinals, goldfinches, and more</p>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-sm h-72 md:h-72 md:row-span-2">
+          <img src="https://birdhug.com/wp-content/uploads/2018/01/commonloneactual.jpg" alt="Bird of prey carving" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-lodge-dark/40 group-hover:bg-lodge-dark/20 transition"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h4 class="text-xl font-display font-bold text-lodge-bone">Birds of Prey</h4>
+            <p class="text-lodge-bone/70 text-sm">Eagles, hawks, owls</p>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-sm h-72">
+          <img src="https://birdhug.com/wp-content/uploads/2018/01/cooper2.jpg" alt="Cooper carving" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-lodge-dark/40 group-hover:bg-lodge-dark/20 transition"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h4 class="text-xl font-display font-bold text-lodge-bone">Pet Birds</h4>
+            <p class="text-lodge-bone/70 text-sm">Budgies, parrots, cockatoos</p>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-sm h-72 md:col-span-2">
+          <img src="https://birdhug.com/wp-content/uploads/2018/01/cropped-longear1.jpg" alt="Wildlife carving collection" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-lodge-dark/40 group-hover:bg-lodge-dark/20 transition"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h4 class="text-xl font-display font-bold text-lodge-bone">Waterfowl & Ducks</h4>
+            <p class="text-lodge-bone/70 text-sm">Mallards, wood ducks, mergansers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 bg-lodge-green/10">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-6">Testimonials</p>
+      <blockquote class="text-2xl md:text-3xl font-display text-lodge-bone leading-relaxed mb-8 max-w-3xl mx-auto">
+        "I'd like to thank you for your business, and if you're not already a customer, I invite you to shop with us. We offer hundreds of bird carvings and we stand behind every carving purchase. Your satisfaction is our pleasure!"
+      </blockquote>
+      <p class="text-lodge-bone/70 font-medium">Jenny Zhi, Owner</p>
+      <p class="text-lodge-muted text-sm mt-1">Birdhug Studio, Rosendale NY</p>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-lodge-gold">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-display font-bold text-lodge-dark mb-6">Own an Original</h2>
+      <p class="text-lodge-dark/80 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Browse over 600 original bird carvings, each one hand-crafted in the Hudson Valley. From songbirds to birds of prey, there is a piece waiting for your collection.</p>
+      <a href="https://birdhug.com/shop/" class="inline-flex items-center gap-2 px-10 py-4 bg-lodge-dark text-lodge-bone font-semibold text-sm hover:bg-lodge-green transition">Visit the Gallery Shop</a>
+      <p class="mt-6 text-lodge-dark/60 text-sm">Questions? Call Jenny at 845-943-8111</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-lodge-dark border-t border-lodge-green/20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <h3 class="text-xl font-display font-bold text-lodge-bone mb-4">Birdhug Studio</h3>
+          <p class="text-lodge-bone/60 text-sm leading-relaxed max-w-sm">Hand crafted wooden birds since 1989. Original wildlife carvings by self-representing artist Jenny Zhi. Every piece is unique.</p>
+        </div>
+        <div>
+          <h4 class="text-lodge-bone font-semibold text-sm uppercase tracking-wider mb-4">Navigate</h4>
+          <ul class="space-y-2 text-sm text-lodge-bone/60">
+            <li><a href="#gallery" class="hover:text-lodge-gold transition">Gallery</a></li>
+            <li><a href="#process" class="hover:text-lodge-gold transition">Process</a></li>
+            <li><a href="https://birdhug.com/shop/" class="hover:text-lodge-gold transition">Shop</a></li>
+            <li><a href="https://birdhug.com/contact-us/" class="hover:text-lodge-gold transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lodge-bone font-semibold text-sm uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-lodge-bone/60">
+            <li>Rosendale, New York</li>
+            <li><a href="mailto:birdhug@hvc.rr.com" class="hover:text-lodge-gold transition">birdhug@hvc.rr.com</a></li>
+            <li>845-943-8111</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-lodge-green/20 text-center text-lodge-bone/40 text-xs">
+        <p>&copy; 2026 Birdhug Studio. Hand crafted with care since 1989.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const revealers = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+        });
+      }, { threshold: 0.1 });
+      revealers.forEach(r => observer.observe(r));
+    } else { revealers.forEach(r => r.classList.add('visible')); }
+  </script>
+</body>
+</html>
