@@ -118,3 +118,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Nighthawk Canoes](https://jared-the-automator.github.io/redesign-portfolio/nighthawkcanoes.com/) | Custom lightweight Kevlar canoes | Madison, WI |
 | [Tim's Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/timstaxidermy.pro/) | Taxidermy studio | Cherry Hill, NJ |
 | [Yellowstone Llamas](https://jared-the-automator.github.io/redesign-portfolio/yellowstonellamas.com/) | Llama outfitter & guided treks | Livingston, MT |
+| [Indian Creek Leather Co](https://jared-the-automator.github.io/redesign-portfolio/indiancreekleatherco.com/) | Handmade leather holsters & belts | Rural Ohio |
