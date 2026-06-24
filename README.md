@@ -126,3 +126,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Birdhug Studio](https://jared-the-automator.github.io/redesign-portfolio/birdhug.com/) | Hand carved wooden birds | Rosendale, NY |
 | [Winthrop Tackle](https://jared-the-automator.github.io/redesign-portfolio/winthroptackle.com/) | Custom fishing tackle components | Connecticut |
 | [Sage Creek Stock Saddle Co.](https://jared-the-automator.github.io/redesign-portfolio/sagecreeksaddles.com/) | Custom saddles & silver | Coalville, UT |
+| [Shrew Bows](https://jared-the-automator.github.io/redesign-portfolio/shrewbows.com/) | Handmade traditional bows | Northwest Indiana |

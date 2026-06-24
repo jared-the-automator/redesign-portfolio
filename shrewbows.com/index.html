@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shrew Bows - Handmade Traditional Bows by Ron LaClair</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#2D5A27',
+            bone: '#F5F1EB',
+            warm: '#1A1A18',
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Open Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .hero-gradient { background: linear-gradient(to right, rgba(26,26,24,0.85) 0%, rgba(26,26,24,0.4) 50%, transparent 100%); }
+  </style>
+</head>
+<body class="font-body text-warm bg-bone antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-forest/95 transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#" class="font-display text-2xl tracking-tight text-white uppercase">Shrew Bows</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-white/80 hover:text-white transition font-semibold text-sm">Home</a>
+        <a href="#bows" class="text-white/80 hover:text-white transition font-semibold text-sm">Bows</a>
+        <a href="#about" class="text-white/80 hover:text-white transition font-semibold text-sm">About</a>
+        <a href="#testimonials" class="text-white/80 hover:text-white transition font-semibold text-sm">Testimonials</a>
+        <a href="#contact" class="text-white/80 hover:text-white transition font-semibold text-sm">Contact</a>
+        <a href="#" class="bg-white text-forest font-body font-bold px-5 py-2 rounded-sm hover:bg-bone transition text-sm">Shop Bows</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <div class="absolute inset-0">
+      <img src="https://shrewbows.com/wp-content/uploads/2020/12/Ron-and-Nancy-fire.jpg" alt="Ron and Nancy LaClair by a campfire in the woods" class="w-full h-full object-cover">
+      <div class="hero-gradient absolute inset-0"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 md:py-32 w-full">
+      <div class="max-w-2xl">
+        <p class="text-white/80 text-sm font-body mb-4">Handmade in Northwest Indiana</p>
+        <h1 class="font-display text-5xl md:text-7xl text-white leading-tight mb-6">A Bow Worth Hunting For</h1>
+        <p class="text-white/90 text-lg md:text-xl mb-8 max-w-lg">Traditional bows built by Ron LaClair, a bow hunter since 1936.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="bg-forest text-white font-body font-bold px-8 py-3 text-lg rounded-sm hover:opacity-90 transition">Shop Bows</a>
+          <a href="#about" class="text-white border-2 border-white font-body font-bold px-8 py-3 text-lg rounded-sm hover:bg-white hover:text-forest transition">Read Ron's Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="bows" class="py-24 bg-bone">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <img src="https://shrewbows.com/wp-content/uploads/2020/10/019.jpg" alt="Traditional wooden Shrew Bow" class="w-full h-[500px] object-cover rounded-sm shadow-xl">
+        </div>
+        <div class="reveal">
+          <p class="text-forest text-sm font-body font-semibold mb-2 uppercase tracking-wider">The Shrew Bow</p>
+          <h2 class="font-display text-4xl md:text-5xl mb-8 leading-tight">Built for the Hunt</h2>
+          <div class="space-y-8">
+            <div class="flex gap-4">
+              <div class="shrink-0">
+                <span class="font-display text-3xl text-forest">01</span>
+              </div>
+              <div>
+                <h3 class="font-body font-bold text-lg mb-1">Short and Smooth</h3>
+                <p class="text-warm/70">The shorter design of the Shrew Bow allows for quick handling in thick cover where game can disappear in seconds.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="shrink-0">
+                <span class="font-display text-3xl text-forest">02</span>
+              </div>
+              <div>
+                <h3 class="font-body font-bold text-lg mb-1">Power When It Counts</h3>
+                <p class="text-warm/70">Handcrafted from real wood, not fiberglass. Every bow delivers serious power with a smooth draw hunters trust.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="shrink-0">
+                <span class="font-display text-3xl text-forest">03</span>
+              </div>
+              <div>
+                <h3 class="font-body font-bold text-lg mb-1">Traditional as It Gets</h3>
+                <p class="text-warm/70">No gadgets, no gimmicks. Just the same kind of bow your great grandfather would have hunted with, made by a mountain man who still hunts at ninety.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (Reversed Split - Story) -->
+  <section id="about" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 reveal">
+          <h2 class="font-display text-4xl md:text-5xl mb-6 leading-tight">The Mountain Man Behind the Bow</h2>
+          <p class="text-warm/80 text-lg mb-4">Ron LaClair was born in 1936. At six years old he took his first bow and started hunting along the creek behind his parents' house.</p>
+          <p class="text-warm/80 text-lg mb-4">His first rabbit in 1959 was only the beginning. Today Ron still hunts, still tests every bow he builds, and still believes a handmade wooden bow is the only way to take game with honor.</p>
+          <p class="text-warm/80 text-lg mb-6">"By God, I are a mountain man, and I'll live 'til an arrow or a bullet finds me."</p>
+          <a href="https://shrewbows.com/about-ron-laclair/" class="inline-block bg-forest text-white font-body font-bold px-8 py-3 rounded-sm hover:opacity-90 transition">Read the Full Story</a>
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <img src="https://shrewbows.com/wp-content/uploads/2020/09/First-rabbit-1959.jpg" alt="Ron LaClair with his first rabbit, 1959" class="w-full h-[500px] object-cover rounded-sm shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story Section -->
+  <section class="py-24 bg-bone">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-display text-4xl md:text-5xl mb-4">Built for the Woods</h2>
+        <p class="text-warm/70 max-w-2xl mx-auto">Every Shrew Bow carries decades of hunting wisdom and the kind of craftsmanship that only comes from a lifetime in the field.</p>
+      </div>
+      <div class="grid grid-cols-3 gap-4 reveal">
+        <img src="https://shrewbows.com/wp-content/uploads/2020/09/winterkill.jpg" alt="Ron LaClair on a winter hunting trip" class="w-full h-64 object-cover rounded-sm shadow-md">
+        <img src="https://shrewbows.com/wp-content/uploads/2020/11/ron-henry-tim-2.jpg" alt="Ron LaClair with fellow bow makers" class="w-full h-64 object-cover rounded-sm shadow-md">
+        <img src="https://shrewbows.com/wp-content/uploads/2020/09/home-about-ron.jpg" alt="Ron LaClair holding his handmade Shrew Bow" class="w-full h-64 object-cover rounded-sm shadow-md">
+      </div>
+      <div class="mt-4 reveal">
+        <img src="https://shrewbows.com/wp-content/uploads/2020/10/020.jpg" alt="Close-up detail of a traditional Shrew Bow" class="w-full h-80 object-cover rounded-sm shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-display text-4xl md:text-5xl mb-4">Words from the Field</h2>
+        <p class="text-warm/70">Credible words from hunters who trust their Shrew Bow.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-bone p-8 rounded-sm reveal">
+          <p class="text-warm/80 text-lg italic mb-4">"Just saying thanks for a wonderful hunting bow."</p>
+          <p class="font-bold text-warm">Gene</p>
+          <p class="text-warm/60 text-sm">2022</p>
+        </div>
+        <div class="bg-bone p-8 rounded-sm reveal">
+          <p class="text-warm/80 text-lg italic mb-4">"First buck ever and first harvest with a trad bow. I got this guy on public land with my Shrew Classic Hunter."</p>
+          <p class="font-bold text-warm">Tyler Basch</p>
+          <p class="text-warm/60 text-sm">2021</p>
+        </div>
+        <div class="bg-bone p-8 rounded-sm reveal">
+          <p class="text-warm/80 text-lg italic mb-4">"The best bows I've ever shot. Shrew bows are pure craftsmanship."</p>
+          <p class="font-bold text-warm">Shrew Bow Owner</p>
+          <p class="text-warm/60 text-sm">2020</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="bg-forest py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display text-4xl md:text-5xl text-white mb-4">Ready to Hunt?</h2>
+      <p class="text-white/90 text-lg mb-8">Call (219) 828-5003 or email info@shrewbows.com</p>
+      <a href="#" class="inline-block bg-white text-forest font-body font-bold px-8 py-3 text-lg rounded-sm hover:bg-bone transition">Shop Bows</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-warm text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-display text-xl mb-4">Shrew Bows</h3>
+        <p class="text-white/70 text-sm">Handmade traditional bows since 1936.</p>
+      </div>
+      <div>
+        <h4 class="font-body font-bold mb-4">Shop</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="text-white/70 hover:text-white">Bows</a></li>
+          <li><a href="#" class="text-white/70 hover:text-white">Arrows</a></li>
+          <li><a href="#" class="text-white/70 hover:text-white">Accessories</a></li>
+          <li><a href="#" class="text-white/70 hover:text-white">Leather Goods</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-body font-bold mb-4">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="text-white/70 hover:text-white">About</a></li>
+          <li><a href="#" class="text-white/70 hover:text-white">Testimonials</a></li>
+          <li><a href="#" class="text-white/70 hover:text-white">Warranty</a></li>
+          <li><a href="#" class="text-white/70 hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-body font-bold mb-4">Contact</h4>
+        <p class="text-white/70 text-sm">(219) 828-5003</p>
+        <p class="text-white/70 text-sm">info@shrewbows.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
