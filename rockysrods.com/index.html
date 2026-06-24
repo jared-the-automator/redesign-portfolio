@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rocky&apos;s Rods | Custom Fishing Rods | Hopatcong, New Jersey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+    @theme {
+      --font-display: 'Playfair Display', serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+  </style>
+  <style>
+    :root {
+      --color-bg: #0a111c;
+      --color-bg-elev: #111827;
+      --color-text: #e2e8f0;
+      --color-text-dim: #94a3b8;
+      --color-accent: #60a5fa;
+      --color-accent-dark: #3b82f6;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(2rem);
+      transition: opacity 700ms ease, transform 700ms ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+    }
+    .font-display {
+      font-family: 'Playfair Display', serif;
+    }
+    .bg-navy { background-color: #0a111c; }
+    .bg-navy-light { background-color: #111827; }
+    .text-steel { color: #60a5fa; }
+    .border-steel { border-color: #60a5fa; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-navy/90 backdrop-blur-sm border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl font-bold text-white tracking-tight">Rocky&apos;s Rods</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#rods" class="text-sm text-slate-300 hover:text-steel transition-colors">Rods</a>
+        <a href="#about" class="text-sm text-slate-300 hover:text-steel transition-colors">About</a>
+        <a href="#classes" class="text-sm text-slate-300 hover:text-steel transition-colors">Classes</a>
+        <a href="#contact" class="text-sm text-slate-300 hover:text-steel transition-colors">Contact</a>
+      </div>
+      <a href="#quote" class="text-sm font-semibold text-navy bg-steel px-5 py-2.5 rounded-sm hover:bg-blue-400 transition-colors">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://rockysrods.com/wp-content/uploads/2013/04/Slide_01.jpg" alt="Custom fishing rod on the water" class="w-full h-full object-cover" loading="eager">
+      <div class="absolute inset-0 bg-slate-900/70"></div>
+      <div class="absolute inset-0 bg-slate-900/30" style="background: linear-gradient(to right, rgba(10,17,28,0.9) 0%, rgba(10,17,28,0.4) 60%, rgba(10,17,28,0.1) 100%);"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
+      <div class="max-w-2xl">
+        <p class="text-steel text-sm font-semibold tracking-widest uppercase mb-6">Hopatcong, New Jersey</p>
+        <h1 class="font-display text-5xl md:text-7xl font-bold text-white leading-tight mb-6">A rod built for the fish you chase</h1>
+        <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-10 max-w-lg">Dennis &quot;Rocky&quot; Dikowski handcrafts custom rods on the shores of Lake Hopatcong. Fifty years on the water. Thirty years building. One blank at a time.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#rods" class="text-sm font-semibold text-white bg-steel px-8 py-3.5 rounded-sm hover:bg-blue-400 transition-colors">Browse Rods</a>
+          <a href="tel:5704971790" class="text-sm font-semibold text-slate-200 border border-slate-600 px-8 py-3.5 rounded-sm hover:border-steel hover:text-steel transition-colors">Call (570) 497-1790</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product: Asymmetric Split -->
+  <section id="rods" class="py-24 bg-navy">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal relative rounded-sm overflow-hidden">
+          <img src="https://rockysrods.com/wp-content/uploads/2013/04/Slide_02.jpg" alt="Custom rod with snakeskin wrap detail" class="w-full h-[500px] object-cover">
+        </div>
+        <div class="reveal">
+          <p class="text-steel text-sm font-semibold tracking-widest uppercase mb-4">How We Build</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">Every rod starts with a blank and a purpose</h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="font-display text-3xl font-bold text-steel leading-none mt-1">01</span>
+              <div>
+                <h3 class="text-lg font-semibold text-white mb-2">Premium blanks for your target species</h3>
+                <p class="text-slate-400 leading-relaxed">We hand-select graphite and fiberglass blanks matched to the fish you chase, whether it is bass on Hopatcong or trout in the local streams.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-3xl font-bold text-steel leading-none mt-1">02</span>
+              <div>
+                <h3 class="text-lg font-semibold text-white mb-2">Custom snakeskin wraps</h3>
+                <p class="text-slate-400 leading-relaxed">Rocky&apos;s signature snakeskin decorations do not just look striking. They protect the joint and add balance you feel on every cast.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-3xl font-bold text-steel leading-none mt-1">03</span>
+              <div>
+                <h3 class="text-lg font-semibold text-white mb-2">Built by a craftsman who fishes what he builds</h3>
+                <p class="text-slate-400 leading-relaxed">Every rod is assembled, wrapped, and finished by Rocky himself. If it does not cast true, it does not leave the bench.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: Reversed Split -->
+  <section id="about" class="py-24 bg-navy-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal order-2 lg:order-1">
+          <p class="text-steel text-sm font-semibold tracking-widest uppercase mb-4">The Craftsman</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">A carpenter's hands. An angler's eye.</h2>
+          <p class="text-slate-300 leading-relaxed mb-6">Rocky started building rods in the late 70s as a hobby for himself and friends. Word spread. Before long, anglers from across New Jersey were asking for rods wrapped in his signature snakeskin.</p>
+          <p class="text-slate-300 leading-relaxed mb-6">A retired carpenter and Vietnam War veteran, Rocky brings the same precision he once applied to timber and trim to every rod he builds. Over fifty years on the water. Over three decades at the bench.</p>
+          <p class="text-slate-300 leading-relaxed mb-8">He prefers freshwater fishing, chasing trout, walleye, muskie, and bass on Lake Hopatcong and the local streams. He makes every type of rod, and he uses every type of rod he makes.</p>
+          <div class="flex items-center gap-6">
+            <div class="text-center">
+              <p class="font-display text-4xl font-bold text-steel">50+</p>
+              <p class="text-sm text-slate-400 mt-1">Years Fishing</p>
+            </div>
+            <div class="w-px h-12 bg-slate-700"></div>
+            <div class="text-center">
+              <p class="font-display text-4xl font-bold text-steel">30+</p>
+              <p class="text-sm text-slate-400 mt-1">Years Building</p>
+            </div>
+            <div class="w-px h-12 bg-slate-700"></div>
+            <div class="text-center">
+              <p class="font-display text-4xl font-bold text-steel">1</p>
+              <p class="text-sm text-slate-400 mt-1">Builder</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal order-1 lg:order-2 relative rounded-sm overflow-hidden">
+          <img src="https://rockysrods.com/wp-content/uploads/2013/04/Slide_03.jpg" alt="Rocky working in his shop" class="w-full h-[550px] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section id="gallery" class="py-24 bg-navy">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal text-center mb-16">
+        <p class="text-steel text-sm font-semibold tracking-widest uppercase mb-4">Gallery</p>
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-white">Rods that earn their place on the water</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="reveal relative rounded-sm overflow-hidden aspect-[4/5] md:aspect-square">
+          <img src="https://rockysrods.com/wp-content/uploads/2013/04/Slide_02.jpg" alt="Custom rod detail" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="reveal relative rounded-sm overflow-hidden aspect-[4/5] md:aspect-square">
+          <img src="https://rockysrods.com/wp-content/uploads/2013/04/Slide_03.jpg" alt="Rod components on display" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="reveal relative rounded-sm overflow-hidden aspect-[4/5] md:aspect-square">
+          <img src="https://rockysrods.com/wp-content/uploads/2013/04/Slide_04.jpg" alt="Finished rod close-up" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="reveal relative rounded-sm overflow-hidden aspect-[4/5] md:aspect-square">
+          <img src="https://rockysrods.com/wp-content/uploads/2013/04/DSCN0296-300x225.jpg" alt="Rocky with a rod in his workshop" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section id="classes" class="py-24 bg-navy-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal grid lg:grid-cols-2 gap-16 items-start">
+        <div>
+          <p class="text-steel text-sm font-semibold tracking-widest uppercase mb-4">What Anglers Say</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">"He's been fishing since his teen years, and doesn't plan on stopping any time soon."</h2>
+          <p class="text-slate-400 leading-relaxed">That dedication shows in every blank he selects and every guide he wraps. Anglers who fish Rocky rods talk about the balance first. Then the accuracy. Then the snakeskin.</p>
+        </div>
+        <div class="space-y-6">
+          <div class="bg-navy p-8 rounded-sm border border-slate-800">
+            <p class="text-slate-300 leading-relaxed mb-4">&quot;Rocky&apos;s rods are not just efficient on the water. The custom snakeskin decorations make them visually striking. Every cast feels like the rod was made for my hand.&quot;</p>
+            <p class="text-steel font-semibold">A longtime customer from northern New Jersey</p>
+          </div>
+          <div class="bg-navy p-8 rounded-sm border border-slate-800">
+            <p class="text-slate-300 leading-relaxed mb-4">&quot;I took the rod building class and walked away with a rod I actually use. Rocky teaches the way he builds: patient, precise, and with zero shortcuts.&quot;</p>
+            <p class="text-steel font-semibold">A student from Hopatcong</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="quote" class="py-20 bg-steel">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-navy mb-6 leading-tight">Ready for a rod that fits your hand and your fish?</h2>
+      <p class="text-navy/80 text-lg mb-8">Call Rocky to talk blanks, species, and wraps. No forms. Just a conversation about the water.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:5704971790" class="text-sm font-semibold text-steel bg-navy px-10 py-4 rounded-sm hover:bg-slate-900 transition-colors">Call (570) 497-1790</a>
+        <a href="mailto:info@rockysrods.com" class="text-sm font-semibold text-navy border-2 border-navy px-10 py-4 rounded-sm hover:bg-navy hover:text-steel transition-colors">Email info@rockysrods.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="py-16 bg-navy border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="md:col-span-1">
+          <a href="#" class="font-display text-2xl font-bold text-white tracking-tight block mb-4">Rocky&apos;s Rods</a>
+          <p class="text-slate-400 text-sm leading-relaxed">Custom fishing rods hand-built in Hopatcong, New Jersey by Dennis Rocky Dikowski.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Navigate</h4>
+          <ul class="space-y-2">
+            <li><a href="#rods" class="text-slate-400 text-sm hover:text-steel transition-colors">Rods</a></li>
+            <li><a href="#about" class="text-slate-400 text-sm hover:text-steel transition-colors">About</a></li>
+            <li><a href="#classes" class="text-slate-400 text-sm hover:text-steel transition-colors">Classes</a></li>
+            <li><a href="#quote" class="text-slate-400 text-sm hover:text-steel transition-colors">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-slate-400 text-sm hover:text-steel transition-colors">Custom Rods</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-steel transition-colors">Rod Repairs</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-steel transition-colors">Rod Building Classes</a></li>
+            <li><a href="#" class="text-slate-400 text-sm hover:text-steel transition-colors">Fly Fishing Classes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2">
+            <li><a href="tel:5704971790" class="text-slate-400 text-sm hover:text-steel transition-colors">(570) 497-1790</a></li>
+            <li><a href="mailto:info@rockysrods.com" class="text-slate-400 text-sm hover:text-steel transition-colors">info@rockysrods.com</a></li>
+            <li><span class="text-slate-400 text-sm">Hopatcong, New Jersey</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-slate-500 text-sm">&copy; 2024 Rocky&apos;s Rods. All rights reserved.</p>
+        <p class="text-slate-600 text-xs">Handmade in Hopatcong, NJ</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
