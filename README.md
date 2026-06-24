@@ -127,3 +127,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Winthrop Tackle](https://jared-the-automator.github.io/redesign-portfolio/winthroptackle.com/) | Custom fishing tackle components | Connecticut |
 | [Sage Creek Stock Saddle Co.](https://jared-the-automator.github.io/redesign-portfolio/sagecreeksaddles.com/) | Custom saddles & silver | Coalville, UT |
 | [Shrew Bows](https://jared-the-automator.github.io/redesign-portfolio/shrewbows.com/) | Handmade traditional bows | Northwest Indiana |
+| [Cody Carr's Hunting Adventures](https://jared-the-automator.github.io/redesign-portfolio/huntwithcody.com/) | Montana hunting outfitter | Montana, USA |
