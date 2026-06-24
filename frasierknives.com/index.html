@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frasier Knives | Custom Knives Forged in NW Montana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'near-black': '#0a0a0a',
+            'steel': '#b0b0b0',
+            'accent': '#c87533',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { border-radius: 2px; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .hero-bg {
+      background-image: linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.25) 100%),
+        url('https://frasierknives.com/wp-content/uploads/2021/09/20201030_135110.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-near-black text-white font-body">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-near-black/90 backdrop-blur-sm border-b border-steel/20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-2xl tracking-wider text-white">Frasier Knives</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#models" class="text-steel hover:text-accent transition">Models</a>
+        <a href="#about" class="text-steel hover:text-accent transition">About</a>
+        <a href="#gallery" class="text-steel hover:text-accent transition">Gallery</a>
+        <a href="#contact" class="text-steel hover:text-accent transition">Contact</a>
+      </div>
+      <a href="#contact" class="bg-accent text-near-black px-6 py-2 font-semibold text-sm hover:bg-accent/90 transition">Order a Knife</a>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="hero-bg min-h-[100dvh] flex items-center relative">
+    <div class="max-w-7xl mx-auto px-6 pt-24 pb-16 w-full">
+      <div class="max-w-2xl">
+        <p class="text-accent font-semibold text-sm tracking-wider uppercase mb-4">Northwest Montana</p>
+        <h1 class="font-display text-5xl md:text-7xl leading-tight mb-6">Heirloom Tools<br/>Forged to Purpose</h1>
+        <p class="text-steel text-lg md:text-xl max-w-lg mb-8">Custom knives that bridge timeless tradition with modern precision. Built in the Bitterroot Range since 2013.</p>
+        <a href="#models" class="bg-accent text-near-black px-8 py-4 font-semibold text-sm inline-block hover:bg-accent/90 transition">Explore the Models</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary Product Section (asymmetric split) -->
+  <section id="models" class="py-24 bg-near-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="font-display text-4xl md:text-5xl mb-8">Models Shaped by Use, Not Trend</h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="text-accent font-display text-3xl leading-none">01</span>
+              <div>
+                <h3 class="font-semibold text-white text-lg mb-1">Feral Chef</h3>
+                <p class="text-steel">A cleaver built for the kitchen, balanced for control, forged for a lifetime of daily use.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="text-accent font-display text-3xl leading-none">02</span>
+              <div>
+                <h3 class="font-semibold text-white text-lg mb-1">Yaak Mountain Hunter</h3>
+                <p class="text-steel">Field-ready profile for dressing game in the backcountry. Handles blood, cold, and hard use.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="text-accent font-display text-3xl leading-none">03</span>
+              <div>
+                <h3 class="font-semibold text-white text-lg mb-1">Camp Creek EDC</h3>
+                <p class="text-steel">Compact enough for a pocket, capable enough for camp tasks. Your daily companion in steel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <img src="https://frasierknives.com/wp-content/uploads/2021/09/20210521_165658.jpg" alt="Handmade custom knife with leather sheath" class="w-full h-[500px] object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary Section (reversed split, story/process) -->
+  <section id="about" class="py-24 bg-near-black border-t border-steel/20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://frasierknives.com/wp-content/uploads/2021/09/20210131_141420.jpg" alt="Forge work on red-hot steel" class="w-full h-[500px] object-cover" />
+        </div>
+        <div>
+          <h2 class="font-display text-4xl md:text-5xl mb-6">Since 2013, One Maker, One Forge</h2>
+          <p class="text-steel text-lg mb-6">In the rugged landscape of NW Montana, a blade is more than steel. It is a tool shaped by hand, heat, and purpose. Every knife begins as raw stock, is heated to forging temperature, and is worked with deliberate, practiced strokes until the form matches the function.</p>
+          <p class="text-steel mb-6">No two knives leave the forge identical. Each is built for a specific hand, a specific task, a specific life. That is the promise of a custom knife: not perfect symmetry, but perfect fit.</p>
+          <div class="flex gap-8 mt-8">
+            <div>
+              <p class="font-display text-4xl text-accent">12</p>
+              <p class="text-steel text-sm">Years Forging</p>
+            </div>
+            <div>
+              <p class="font-display text-4xl text-accent">100%</p>
+              <p class="text-steel text-sm">Handmade</p>
+            </div>
+            <div>
+              <p class="font-display text-4xl text-accent">NW MT</p>
+              <p class="text-steel text-sm">Bitterroot Range</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery / Brand Story (breaks the zigzag) -->
+  <section id="gallery" class="py-24 bg-near-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="font-display text-4xl md:text-5xl mb-12 text-center">Steel in Every Form</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="col-span-2 row-span-2">
+          <img src="https://frasierknives.com/wp-content/uploads/2025/10/Frasier-251018A-JF.jpg" alt="Featured bowie knife by Frasier Knives" class="w-full h-full object-cover min-h-[300px]" />
+        </div>
+        <div>
+          <img src="https://frasierknives.com/wp-content/uploads/2021/09/IMG_20200806_122431_042.jpg" alt="Detailed knife handle work" class="w-full h-[200px] object-cover" />
+        </div>
+        <div>
+          <img src="https://frasierknives.com/wp-content/uploads/2021/09/IMG_20210123_091632_851.jpg" alt="Finished blade close up" class="w-full h-[200px] object-cover" />
+        </div>
+        <div>
+          <img src="https://frasierknives.com/wp-content/uploads/2021/09/IMG_20200126_142007_014.jpg" alt="Knife with antler handle" class="w-full h-[200px] object-cover" />
+        </div>
+        <div>
+          <img src="https://frasierknives.com/wp-content/uploads/2024/10/frasier-copy.jpg" alt="Custom knife collection" class="w-full h-[200px] object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / Credibility -->
+  <section class="py-24 bg-steel/5 border-y border-steel/20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-4xl md:text-5xl mb-4">Recognized on the National Stage</h2>
+        <p class="text-steel max-w-2xl mx-auto">Frasier Knives has earned recognition from Blade Magazine, the Idaho Knife Show, and Blade Show West for design, form, and function.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-near-black p-8 reveal">
+          <p class="text-accent font-display text-2xl mb-2">Blade Show West</p>
+          <p class="text-white font-semibold mb-2">Best Custom Kitchen Knife</p>
+          <p class="text-steel text-sm">October 2025</p>
+        </div>
+        <div class="bg-near-black p-8 reveal">
+          <p class="text-accent font-display text-2xl mb-2">Blade Show West</p>
+          <p class="text-white font-semibold mb-2">Best of the Rest</p>
+          <p class="text-steel text-sm">October 2025</p>
+        </div>
+        <div class="bg-near-black p-8 reveal">
+          <p class="text-accent font-display text-2xl mb-2">Idaho Knife Show</p>
+          <p class="text-white font-semibold mb-2">Best of Show and Best Other</p>
+          <p class="text-steel text-sm">August 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA Strip -->
+  <section id="contact" class="py-16 bg-accent">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h2 class="font-display text-3xl md:text-4xl text-near-black mb-2">Ready for a Knife Built for Your Hand?</h2>
+        <p class="text-near-black/80">Every order starts with a conversation. Tell me what you need, and I will tell you if I改制 it by hand.</p>
+      </div>
+      <a href="mailto:jonkellydesigns@gmail.com" class="bg-near-black text-white px-8 py-4 font-semibold text-sm hover:bg-near-black/90 transition whitespace-nowrap">Start a Conversation</a>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="bg-near-black border-t border-steel/20 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <p class="font-display text-xl mb-4">Frasier Knives</p>
+          <p class="text-steel text-sm">Custom knives forged in the Bitterroot Range of Northwest Montana since 2013.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-white mb-4">Knives</p>
+          <ul class="space-y-2 text-steel text-sm">
+            <li><a href="#" class="hover:text-accent transition">Feral Chef</a></li>
+            <li><a href="#" class="hover:text-accent transition">Yaak Mountain Hunter</a></li>
+            <li><a href="#" class="hover:text-accent transition">Camp Creek EDC</a></li>
+            <li><a href="#" class="hover:text-accent transition">Lookout Hunter</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-white mb-4">Company</p>
+          <ul class="space-y-2 text-steel text-sm">
+            <li><a href="#" class="hover:text-accent transition">About the Maker</a></li>
+            <li><a href="#" class="hover:text-accent transition">Gallery</a></li>
+            <li><a href="#" class="hover:text-accent transition">Articles & Press</a></li>
+            <li><a href="#" class="hover:text-accent transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-white mb-4">Contact</p>
+          <ul class="space-y-2 text-steel text-sm">
+            <li><a href="mailto:jonkellydesigns@gmail.com" class="hover:text-accent transition">jonkellydesigns@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/jon_kelly_designs/" target="_blank" class="hover:text-accent transition">Instagram</a></li>
+            <li><a href="https://www.facebook.com/jonkellydesigns" target="_blank" class="hover:text-accent transition">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-steel/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-steel text-sm">&copy; 2026 Frasier Knives. All rights reserved.</p>
+        <p class="text-steel text-sm">Handmade in NW Montana.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
