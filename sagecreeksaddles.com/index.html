@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sage Creek Stock Saddle Co.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { display: ['Oswald','sans-serif'], body: ['Inter','sans-serif'] }, colors: { bone:'#faf9f6', forest:'#2d4a3e', 'forest-dark':'#1f352b', } } } }
+  </script>
+</head>
+<body class="font-body text-stone-800 bg-bone antialiased">
+
+<nav class="fixed top-0 w-full bg-bone/95 backdrop-blur-sm z-50 border-b border-stone-200/60">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="font-display text-xl tracking-tight text-forest">Sage Creek Stock Saddle Co.</a>
+    <div class="hidden md:flex items-center gap-10">
+      <a href="#saddles" class="text-sm font-medium text-stone-600 hover:text-forest transition-colors">Saddles</a>
+      <a href="#services" class="text-sm font-medium text-stone-600 hover:text-forest transition-colors">Services</a>
+      <a href="#silver" class="text-sm font-medium text-stone-600 hover:text-forest transition-colors">Silver</a>
+      <a href="#contact" class="text-sm font-medium text-stone-600 hover:text-forest transition-colors">Contact</a>
+    </div>
+    <a href="tel:307-272-8585" class="hidden md:inline-flex px-5 py-2.5 bg-forest text-bone text-sm font-semibold rounded hover:bg-forest-dark">Call Gordon</a>
+  </div>
+</nav>
+
+<section class="relative min-h-[100dvh] flex items-center">
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('https://sagecreeksaddles.com/wp-content/gallery/gordon-andrus-saddles/3-qtr-view.jpg')"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-forest/80 via-forest-dark/60 to-black/30"></div>
+  <div class="relative max-w-7xl mx-auto px-6 py-32">
+    <div class="max-w-2xl">
+      <span class="inline-block px-3 py-1 bg-bone/20 text-bone text-xs font-semibold tracking-widest uppercase rounded mb-6">Coalville, Utah</span>
+      <h1 class="font-display text-5xl md:text-7xl text-bone leading-tight mb-6">Custom Saddles Built to Last</h1>
+      <p class="text-lg md:text-xl text-stone-200 leading-relaxed mb-10 max-w-xl">Fine leather and silver goods by Gordon Andrus. Every piece starts with a consultation and ends with something built to your exact needs.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="inline-flex px-8 py-3.5 bg-forest text-bone font-semibold rounded hover:bg-forest-dark transition-colors">Get a Quote</a>
+        <a href="#gallery" class="inline-flex px-8 py-3.5 border-2 border-bone/40 text-bone font-semibold rounded hover:bg-bone/10">View the Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="saddles" class="py-24 bg-bone">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="relative"><img src="https://sagecreeksaddles.com/wp-content/gallery/gordon-andrus-saddles/Blakely-profile.jpg" alt="Handmade western saddle profile" class="w-full rounded shadow-lg object-cover aspect-[4/5]"></div>
+      <div class="space-y-8">
+        <h2 class="font-display text-4xl md:text-5xl text-forest leading-tight">Built for the Rider Who Demands Quality</h2>
+        <p class="text-stone-600 leading-relaxed text-lg">Our design and fabrication process is developed with the customer in mind. It starts with a consultation to better understand the needs and wants of each client.</p>
+        <div class="space-y-6 pt-4">
+          <div class="flex gap-6"><span class="font-display text-3xl text-forest/30">01</span><div><h3 class="font-semibold text-stone-800 mb-1">Consultation First</h3><p class="text-stone-600 text-sm">We meet to understand your riding style, horse, and preferences before a single stitch is made.</p></div></div>
+          <div class="flex gap-6"><span class="font-display text-3xl text-forest/30">02</span><div><h3 class="font-semibold text-stone-800 mb-1">Precision Fit</h3><p class="text-stone-600 text-sm">Every saddle is built to your exact measurements for comfort and performance on long rides.</p></div></div>
+          <div class="flex gap-6"><span class="font-display text-3xl text-forest/30">03</span><div><h3 class="font-semibold text-stone-800 mb-1">Lasting Craftsmanship</h3><p class="text-stone-600 text-sm">We only consider a job well-done if it is completed at the highest quality and exceeds your expectations.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-24 bg-stone-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="order-2 lg:order-1 space-y-6">
+        <h2 class="font-display text-4xl md:text-5xl text-forest leading-tight">From First Sketch to Finished Silver</h2>
+        <p class="text-stone-600 leading-relaxed text-lg">Gordon Andrus has spent decades perfecting the art of saddle making. Each piece combines traditional techniques with modern understanding of what a rider needs in the field.</p>
+        <p class="text-stone-600 leading-relaxed">From hand-carved trees and selected leather hides to custom silver conchos and hand-tooled patterns, every detail is built to serve the rider and the horse.</p>
+      </div>
+      <div class="order-1 lg:order-2"><img src="https://sagecreeksaddles.com/wp-content/gallery/gordon-andrus-saddles/Cantle-Silver.jpg" alt="Silverwork detail on a custom saddle" class="w-full rounded shadow-lg object-cover aspect-[4/3]"></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="py-24 bg-bone">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="font-display text-4xl md:text-5xl text-forest mb-12 text-center">The Work</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="overflow-hidden rounded"><img src="https://sagecreeksaddles.com/wp-content/gallery/gordon-andrus-saddles/11x14-overhead.jpg" alt="Overhead view of a finished saddle" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"></div>
+      <div class="overflow-hidden rounded"><img src="https://sagecreeksaddles.com/wp-content/gallery/gordon-andrus-saddles/Andrus16.jpg" alt="Custom saddle from the side view" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"></div>
+      <div class="overflow-hidden rounded"><img src="https://sagecreeksaddles.com/wp-content/gallery/gordon-andrus-saddles/Cantle-and-skirt-backs-copy.jpg" alt="Cantle and skirt back detail" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"></div>
+      <div class="overflow-hidden rounded"><img src="https://sagecreeksaddles.com/wp-content/gallery/gordon-andrus-saddles/Andrus22.jpg" alt="Custom saddle with tooling detail" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"></div>
+      <div class="overflow-hidden rounded"><img src="https://sagecreeksaddles.com/wp-content/gallery/gordon-andrus-saddles/Andrus18.jpg" alt="Leather tooling on a saddle fender" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"></div>
+      <div class="overflow-hidden rounded"><img src="https://sagecreeksaddles.com/wp-content/gallery/gordon-andrus-saddles/12-x-18-.jpg" alt="Full view of a custom western saddle" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-stone-100">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="font-display text-4xl md:text-5xl text-forest mb-8">Why Riders Choose Gordon</h2>
+    <blockquote class="text-2xl md:text-3xl text-stone-700 font-light leading-relaxed italic mb-8">"A well-made saddle is the difference between a good ride and a great one. Every piece that leaves this shop is built to perform and built to last."</blockquote>
+    <p class="text-stone-600 font-medium">Gordon Andrus, Sage Creek Stock Saddle Co.</p>
+    <div class="mt-12 flex flex-wrap justify-center gap-8">
+      <div class="text-center"><span class="block font-display text-4xl text-forest">8+</span><span class="text-sm text-stone-600 uppercase tracking-wider">Years in Business</span></div>
+      <div class="text-center"><span class="block font-display text-4xl text-forest">Utah</span><span class="text-sm text-stone-600 uppercase tracking-wider">Located in Coalville</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-20 bg-forest text-bone">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="font-display text-4xl md:text-5xl mb-6">Ready to Build Your Saddle?</h2>
+    <p class="text-lg text-stone-200 mb-8 max-w-2xl mx-auto">Call to schedule a consultation. Gordon will walk you through the process and answer any questions.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="tel:307-272-8585" class="inline-flex px-8 py-4 bg-bone text-forest font-semibold rounded hover:bg-white transition-colors">Call 307-272-8585</a>
+      <a href="mailto:scsaddle@yahoo.com" class="inline-flex px-8 py-4 border-2 border-bone/40 text-bone font-semibold rounded hover:bg-bone/10">Email scsaddle@yahoo.com</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-forest-dark text-stone-400 py-12">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div>
+      <h3 class="font-display text-lg text-bone mb-2">Sage Creek Stock Saddle Co.</h3>
+      <p class="text-sm">Fine Leather and Silver Goods by Gordon Andrus</p>
+      <p class="text-sm mt-2">1590 S West Hoytsville Road<br>Coalville, Utah 84017</p>
+    </div>
+    <div>
+      <h3 class="font-display text-lg text-bone mb-2">Contact</h3>
+      <p class="text-sm">Phone: 307-272-8585</p>
+      <p class="text-sm">Email: scsaddle@yahoo.com</p>
+    </div>
+    <div>
+      <h3 class="font-display text-lg text-bone mb-2">Navigate</h3>
+      <a href="#saddles" class="block text-sm hover:text-bone transition-colors mb-1">Saddles</a>
+      <a href="#services" class="block text-sm hover:text-bone transition-colors mb-1">Services</a>
+      <a href="#silver" class="block text-sm hover:text-bone transition-colors mb-1">Silver</a>
+      <a href="#contact" class="block text-sm hover:text-bone transition-colors">Contact</a>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 mt-8 pt-8 border-t border-stone-700/50 text-center text-sm">
+    &copy; 2018 Sage Creek Stock Saddle Co. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>

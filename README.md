@@ -125,3 +125,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Stewart River Boatworks](https://jared-the-automator.github.io/redesign-portfolio/stewartriver.com/) | Custom wooden canoes & rowboats | North Shore, MN |
 | [Birdhug Studio](https://jared-the-automator.github.io/redesign-portfolio/birdhug.com/) | Hand carved wooden birds | Rosendale, NY |
 | [Winthrop Tackle](https://jared-the-automator.github.io/redesign-portfolio/winthroptackle.com/) | Custom fishing tackle components | Connecticut |
+| [Sage Creek Stock Saddle Co.](https://jared-the-automator.github.io/redesign-portfolio/sagecreeksaddles.com/) | Custom saddles & silver | Coalville, UT |
