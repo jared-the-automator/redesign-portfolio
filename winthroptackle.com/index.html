@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winthrop Tackle | Designed by Fishermen, Made in the USA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0A1929; color: #E6EDF2; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-[#0A1929]/90 backdrop-blur-sm border-b border-[#142B40]">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <span class="font-display text-xl font-bold text-white">Winthrop Tackle</span>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[#8FA8B8]">
+        <a href="#" class="hover:text-[#4A90A4] transition-colors">Components</a>
+        <a href="#" class="hover:text-[#4A90A4] transition-colors">Our Story</a>
+        <a href="#" class="hover:text-[#4A90A4] transition-colors">Dealers</a>
+      </div>
+      <a href="#" class="bg-[#4A90A4] text-white px-5 py-2 text-sm font-semibold rounded-sm hover:bg-[#3A7A8A] transition-colors">Find a Dealer</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <div class="absolute inset-0">
+      <img src="https://www.winthroptackle.com/wp-content/uploads/2022/07/rods-on-back-of-boat2-1-scaled.jpg" alt="Fishing rods on a boat" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0A1929]/95 via-[#0A1929]/60 to-transparent"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 py-32">
+      <div class="max-w-2xl">
+        <p class="text-[#4A90A4] text-sm font-semibold tracking-widest uppercase mb-4">Made in the USA</p>
+        <h1 class="font-display text-5xl md:text-7xl font-bold leading-tight mb-6">
+          Built by Fishermen.<br>Engineered for the Extreme.
+        </h1>
+        <p class="text-[#8FA8B8] text-lg md:text-xl leading-relaxed max-w-lg mb-8">
+          Custom rod components engineered by a New England captain. Stainless steel guides, adjustable butts, and tip-tops for extreme offshore fishing.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="bg-[#4A90A4] text-white px-8 py-3 font-semibold rounded-sm hover:bg-[#3A7A8A] transition-colors">Explore Components</a>
+          <a href="#" class="border border-[#E6EDF2]/30 text-[#E6EDF2] px-8 py-3 font-semibold rounded-sm hover:border-[#4A90A4] hover:text-[#4A90A4] transition-colors">Find a Dealer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section (asymmetric split) -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <img src="https://www.winthroptackle.com/wp-content/uploads/2023/04/butt-assembly-scaled.jpg" alt="Rod butt assembly" class="w-full rounded-sm">
+      </div>
+      <div class="reveal">
+        <h2 class="font-display text-4xl font-bold mb-8">Built to Withstand the Extreme</h2>
+        <div class="space-y-8">
+          <div>
+            <span class="text-[#4A90A4] font-bold text-4xl font-display block mb-2">01</span>
+            <h3 class="text-xl font-semibold mb-2">Custom Rod Butts</h3>
+            <p class="text-[#8FA8B8] leading-relaxed">Premium adjustable rod butts engineered for maximum power transfer and comfort under offshore loads.</p>
+          </div>
+          <div>
+            <span class="text-[#4A90A4] font-bold text-4xl font-display block mb-2">02</span>
+            <h3 class="text-xl font-semibold mb-2">Stainless Roller Guides</h3>
+            <p class="text-[#8FA8B8] leading-relaxed">Ball-bearing and bushing cartridge assemblies built to survive the corrosive saltwater environment.</p>
+          </div>
+          <div>
+            <span class="text-[#4A90A4] font-bold text-4xl font-display block mb-2">03</span>
+            <h3 class="text-xl font-semibold mb-2">Precision Tip-Tops</h3>
+            <p class="text-[#8FA8B8] leading-relaxed">Lightweight and durable tip guides designed to maximize casting distance while protecting your line.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (reversed split) -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal md:order-2">
+        <img src="https://www.winthroptackle.com/wp-content/uploads/2023/04/web-fred-tournament-900x900-1.jpg" alt="Capt. Fred Malcarne" class="w-full rounded-sm">
+      </div>
+      <div class="reveal md:order-1">
+        <h2 class="font-display text-4xl font-bold mb-6">Born on the Water in New England</h2>
+        <p class="text-[#8FA8B8] leading-relaxed mb-6">
+          Winthrop tackle was born when a New England fisherman and tool maker demanded higher quality components for his own fishing rods. Capt. Fred Malcarne started by designing better roller guides, then built a manufacturing operation that keeps every piece American-made.
+        </p>
+        <p class="text-[#E6EDF2] font-semibold">Capt. Fred Malcarne, Founder</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="reveal">
+        <img src="https://www.winthroptackle.com/wp-content/uploads/2022/07/monsterfish.jpg" alt="Monster fish catch" class="w-full h-80 object-cover rounded-sm">
+      </div>
+      <div class="reveal">
+        <img src="https://www.winthroptackle.com/wp-content/uploads/2022/07/woman-fishing1.jpg" alt="Woman fishing" class="w-full h-80 object-cover rounded-sm">
+      </div>
+      <div class="reveal">
+        <img src="https://www.winthroptackle.com/wp-content/uploads/2023/04/eurotechs-scaled.jpg" alt="Eurotechs product" class="w-full h-80 object-cover rounded-sm">
+      </div>
+      <div class="reveal">
+        <img src="https://www.winthroptackle.com/wp-content/uploads/2022/10/Roller-Guides-All-Sets-1.jpg" alt="Roller guides all sets" class="w-full h-80 object-cover rounded-sm">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <blockquote class="font-display text-3xl font-bold leading-relaxed mb-6">
+          "All Winthrop products are DESIGNED BY FISHERMEN FOR FISHERMEN."
+        </blockquote>
+        <p class="text-[#4A90A4] font-semibold">Capt. Fred Malcarne, Founder</p>
+      </div>
+      <div class="reveal flex gap-12 text-center justify-center md:justify-start">
+        <div>
+          <p class="font-display text-4xl font-bold text-[#4A90A4] mb-2">100%</p>
+          <p class="text-[#8FA8B8] text-sm uppercase tracking-wider">American Made</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl font-bold text-[#4A90A4] mb-2">CT</p>
+          <p class="text-[#8FA8B8] text-sm uppercase tracking-wider">Connecticut Based</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl font-bold text-[#4A90A4] mb-2">Capt.</p>
+          <p class="text-[#8FA8B8] text-sm uppercase tracking-wider">Fisherman Owned</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-20 bg-[#4A90A4]">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl md:text-5xl font-bold mb-6">Ready to Build Your Next Rod?</h2>
+      <p class="text-lg mb-8">Talk to a captain about your custom component needs.</p>
+      <a href="tel:8605269079" class="inline-block bg-[#0A1929] text-white px-8 py-4 font-semibold rounded-sm hover:bg-[#0F2133] transition-colors">Call (860) 526-9079</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0F2133] py-12 border-t border-[#142B40]">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="font-display font-bold text-lg mb-4">Winthrop Tackle</h4>
+        <p class="text-[#8FA8B8] text-sm">American-made custom sport-fishing components. Designed by fishermen, for fishermen.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-lg mb-4">Components</h4>
+        <ul class="text-[#8FA8B8] text-sm space-y-2">
+          <li><a href="#" class="hover:text-[#4A90A4]">Epic Butts</a></li>
+          <li><a href="#" class="hover:text-[#4A90A4]">Roller Guides</a></li>
+          <li><a href="#" class="hover:text-[#4A90A4]">Gaff Hooks</a></li>
+          <li><a href="#" class="hover:text-[#4A90A4]">Tip-Tops</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-lg mb-4">Company</h4>
+        <ul class="text-[#8FA8B8] text-sm space-y-2">
+          <li><a href="#" class="hover:text-[#4A90A4]">Our Story</a></li>
+          <li><a href="#" class="hover:text-[#4A90A4]">Contact</a></li>
+          <li><a href="#" class="hover:text-[#4A90A4]">Find a Dealer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-lg mb-4">Contact</h4>
+        <p class="text-[#8FA8B8] text-sm mb-2">Phone: <a href="tel:8605269079" class="hover:text-[#4A90A4]">(860) 526-9079</a></p>
+        <p class="text-[#8FA8B8] text-sm">Email: <a href="mailto:info@winthroptackle.com" class="hover:text-[#4A90A4]">info@winthroptackle.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
