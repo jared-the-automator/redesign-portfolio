@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simply Knives | Handmade Custom Knives from Germany</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            steel: {
+              50: '#f6f7f8',
+              100: '#e3e5e8',
+              200: '#c7ccd2',
+              300: '#a5adba',
+              400: '#7a8697',
+              500: '#5c6b7d',
+              600: '#3d4a5c',
+              700: '#262e39',
+              800: '#1a212b',
+              900: '#0f141a',
+              950: '#0a0d11',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-bg {
+      background-image: linear-gradient(105deg, rgba(10,13,17,0.92) 0%, rgba(10,13,17,0.7) 45%, rgba(10,13,17,0.2) 100%),
+                        url('https://www.simply-knives.com/wp-content/uploads/2019/02/IMG_20190203_105219-02-2000x1200.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-body bg-steel-950 text-steel-100">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-steel-950/90 backdropGreige backdrop-blur-md border-b border-steel-700/30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-2xl tracking-wider text-white">SIMPLY KNIVES</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-steel-300">
+        <a href="#" class="hover:text-white transition-colors">HOME</a>
+        <a href="#knives" class="hover:text-white transition-colors">KNIVES</a>
+        <a href="#about" class="hover:text-white transition-colors">ABOUT</a>
+        <a href="#gallery" class="hover:text-white transition-colors">GALLERY</a>
+        <a href="#contact" class="hover:text-white transition-colors">CONTACT</a>
+      </div>
+      <a href="mailto:sk.behringer@gmail.com" class="hidden md:inline-flex bg-white text-steel-950 px-5 py-2 text-sm font-semibold tracking-wider hover:bg-steel-200 transition-colors">
+        INQUIRE NOW
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-[100dvh] flex items-end relative">
+    <div class="max-w-7xl mx-auto px-6 pb-20 pt-32 w-full">
+      <div class="max-w-2xl">
+        <p class="text-steel-400 text-sm font-medium tracking-[0.2em] uppercase mb-4">Handmade in Erkrath, Germany</p>
+        <h1 class="font-display text-6xl md:text-7xl lg:text-8xl leading-[0.9] text-white mb-6">
+          EVERY KNIFE IS<br>UNIQUE
+        </h1>
+        <p class="text-steel-300 text-lg md:text-xl max-w-lg mb-8 leading-relaxed">
+          Custom knives forged from carbon steel and shaped by hand. Each blade carries the personality of the maker and the promise of a lifetime.
+        </p>
+        <a href="mailto:sk.behringer@gmail.com" class="inline-flex bg-white text-steel-950 px-8 py-4 text-sm font-semibold tracking-wider hover:bg-steel-200 transition-colors">
+          REQUEST A QUOTE
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section class="py-24 bg-steel-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <img src="https://www.simply-knives.com/wp-content/uploads/2019/02/IMG_20190203_105219-02-2000x1200.jpeg"
+               alt="Handmade custom knife by Simply Knives" class="w-full h-[500px] object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-steel-950/60 to-transparent"></div>
+        </div>
+        <div class="space-y-10">
+          <h2 class="font-display text-5xl md:text-6xl text-white leading-[0.95]">
+            BUILT FOR A<br>LIFETIME
+          </h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-steel-500">01</span>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-2">CARBON STEEL</h3>
+                <p class="text-steel-400 leading-relaxed">Currently addicted to carbon steel. Knives that develop character and a patina, a personality you build a relationship with.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-steel-500">02</span>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-2">HANDCRAFTED</h3>
+                <p class="text-steel-400 leading-relaxed">Every knife is made by hand in a small workshop in Germany. No two blades are ever the same.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-steel-500">03</span>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-2">UNIQUE DESIGN</h3>
+                <p class="text-steel-400 leading-relaxed">Crossover designs that combine well-known styles into something new. Old and modern styles come together.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section -->
+  <section id="about" class="py-24 bg-steel-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1 space-y-6">
+          <h2 class="font-display text-5xl md:text-6xl text-white leading-[0.95]">
+            THE MAKER'S<br>STORY
+          </h2>
+          <p class="text-steel-300 text-lg leading-relaxed">
+            Andreas Behringer works in a small workshop in Erkrath, Germany. He started knife making out of a creative urge to hold something in his hands. Before knives, he built wooden cabins, crafted motorcycle parts from carbon fiber, and wrote books.
+          </p>
+          <p class="text-steel-300 leading-relaxed">
+            Every knife he makes is unique and a part of him. He never rushes because he fears to lose the love for what he is doing. His goal is to craft something that lasts, something special and valuable enough for a father to pass to his sons.
+          </p>
+          <p class="text-steel-300 leading-relaxed">
+            A piece of art with a practical use. A companion that accompanies you on your adventures.
+          </p>
+        </div>
+        <div class="relative order-1 md:order-2">
+          <img src="https://www.simply-knives.com/wp-content/uploads/2021/07/cropped-PXL_20210630_131221965-01-scaled-1.jpeg"
+               alt="Simply Knives workshop" class="w-full h-[500px] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-24 bg-steel-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-16">
+        <h2 class="font-display text-5xl md:text-6xl text-white mb-4">THE WORK</h2>
+        <p class="text-steel-400 text-lg max-w-xl">A selection of finished knives from the workshop in Erkrath.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <img src="https://www.simply-knives.com/wp-content/uploads/2019/02/IMG_20190203_105219-02-2000x1200.jpeg"
+             alt="Custom knife" class="w-full h-[350px] object-cover">
+        <img src="https://www.simply-knives.com/wp-content/uploads/2025/02/PXL_20241231_155032712.jpg"
+             alt="EDC Signature knife" class="w-full h-[350px] object-cover">
+        <img src="https://www.simply-knives.com/wp-content/uploads/2025/02/PXL_20241231_155129097-1024x1024.jpg"
+             alt="Knife blade detail" class="w-full h-[350px] object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 bg-steel-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <svg class="w-12 h-12 text-steel-600 mx-auto mb-8" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M14.017 21L14.017 21C14.017 21.552 13.586 22 13.058 22L11.004 22L11.004 14L9 14L9 10C9 8.343 10.343 7 12 7L13 7L13 11L12 11C11.448 11 11 11.448 11 12L11 16L13 16L13 21L14.017 21ZM22 21L22 21C22 21.552 21.586 22 21.058 22L19.004 22L19.004 14L17 14L17 10C17 8.343 18.343 7 20 7L21 7L21 11L20 11C19.448 11 19 11.448 19 12L19 16L21 16L21 21L22 21Z"/>
+      </svg>
+      <blockquote class="font-display text-3xl md:text-4xl text-white leading-snug mb-8">
+        SIMPLY PERFECTION. DEFINITION OF METICULOUS, ANDREAS BEHRINGER.
+      </blockquote>
+      <p class="text-steel-400 text-sm tracking-wide uppercase">Joe Topiah, @JAMZT53</p>
+      <p class="text-steel-500 text-sm">Knife Collector, Ohio / USA</p>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-white text-steel-950">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-5xl md:text-6xl mb-6">READY TO GET YOUR OWN?</h2>
+      <p class="text-steel-600 text-lg mb-8 max-w-xl mx-auto">
+        Every knife is made to order. Get in touch to discuss your custom design.
+      </p>
+      <a href="mailto:sk.behringer@gmail.com" class="inline-flex bg-steel-950 text-white px-8 py-4 text-sm font-semibold tracking-wider hover:bg-steel-800 transition-colors">
+        GET IN TOUCH
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-steel-950 border-t border-steel-800">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+      <div>
+        <h3 class="font-display text-xl text-white mb-4">SIMPLY KNIVES</h3>
+        <p class="text-steel-400 text-sm leading-relaxed">Handmade custom knives from Germany. Every blade is unique, just like the hands that make it.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4 text-sm tracking-wider">NAVIGATION</h4>
+        <ul class="space-y-2 text-steel-400 text-sm">
+          <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="#knives" class="hover:text-white transition-colors">Knives</a></li>
+          <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+          <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4 text-sm tracking-wider">CONTACT</h4>
+        <ul class="space-y-2 text-steel-400 text-sm">
+          <li>Johannesberger Strae 21a</li>
+          <li>D-40699 Erkrath</li>
+          <li>Germany</li>
+          <li><a href="mailto:sk.behringer@gmail.com" class="hover:text-white transition-colors">sk.behringer@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4 text-sm tracking-wider">SOCIAL</h4>
+        <ul class="space-y-2 text-steel-400 text-sm">
+     <li><a href="https://www.instagram.com/simplyknives" class="hover:text-white transition-colors">Instagram</a></li>
+          <li><a href="https://www.facebook.com/Simply-Knives-616435282092695" class="hover:text-white transition-colors">Facebook</a></li>
+          <li><a href="https://www.youtube.com/channel/UC1AJkLaWw5QeW2Kz84B4JRw" class="hover:text-white transition-colors">YouTube</a></li>
+          <li><a href="https://t.me/simplyknives" class="hover:text-white transition-colors">Telegram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-steel-800 text-center text-steel-500 text-sm">
+      &copy; Simply Knives. Handmade custom knives from Germany.
+    </div>
+  </footer>
+
+</body>
+</html>
