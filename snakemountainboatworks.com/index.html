@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Mountain Boatworks – Vintage Wooden Boat Restoration, Vermont</title>
+  <meta name="description" content="Vintage wooden boat restoration and preservation in Weybridge, Vermont. Chris Craft, Century, and classic runabouts restored with traditional techniques.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Barlow Condensed"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --accent: #d97706; }
+    body { font-family: 'Inter', sans-serif; background: #0c0a09; color: #faf9f6; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0c0a09]/90 backdrop-blur-md border-b border-stone-800/50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-tight text-stone-100">Snake Mountain Boatworks</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-300">
+        <a href="#services" class="hover:text-amber-500 transition-colors">Services</a>
+        <a href="#story" class="hover:text-amber-500 transition-colors">Story</a>
+        <a href="#gallery" class="hover:text-amber-500 transition-colors">Gallery</a>
+        <a href="#contact" class="bg-amber-600 hover:bg-amber-500 text-stone-900 px-4 py-2 rounded-xl font-semibold transition-colors">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20 md:pb-32">
+    <div class="absolute inset-0">
+      <img src="https://snakemountainboatworks.com/wp-content/uploads/2018/05/1938-Chris-Craft-Runabout-Lake-Champlain-855x570.jpg" alt="1938 Chris Craft Runabout on Lake Champlain" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0c0a09] via-[#0c0a09]/70 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0c0a09]/80 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <p class="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-4">Weybridge, Vermont</p>
+        <h1 class="font-display text-5xl md:text-7xl leading-none text-white mb-6">Vintage Wooden<br>Boat Restoration</h1>
+        <p class="text-lg text-stone-300 mb-8 max-w-xl">Chris Craft, Century, and classic runabouts. Restored with the patience and skill they deserve.</p>
+        <a href="#contact" class="inline-block bg-amber-600 hover:bg-amber-500 text-stone-900 px-8 py-3 rounded-xl font-semibold transition-colors">Start Your Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section: Services -->
+  <section id="services" class="py-24 bg-[#0c0a09]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <img src="https://snakemountainboatworks.com/wp-content/uploads/2018/04/38-chris-craft-runabout-855x570.jpg" alt="Chris Craft runabout in the shop" class="w-full rounded-xl shadow-2xl">
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <p class="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-3">What We Do</p>
+          <h2 class="font-display text-4xl leading-tight text-white mb-6">Every Hull Deserves a Second Life</h2>
+          <div class="space-y-8 mt-8">
+            <div class="flex gap-4">
+              <span class="text-amber-500 font-display text-3xl leading-none">01</span>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-1">Full Preservation</h3>
+                <p class="text-stone-400 text-sm leading-relaxed">Complete strip, frame repair, and refinish from keel to varnish.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-amber-500 font-display text-3xl leading-none">02</span>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-1">5200 Bottom Program</h3>
+                <p class="text-stone-400 text-sm leading-relaxed">Fixed-price bottom replacement that keeps your hull dry and sound.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-amber-500 font-display text-3xl leading-none">03</span>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-1">Varnish & Paint</h3>
+                <p class="text-stone-400 text-sm leading-relaxed">Hand-rubbed varnish and period-correct paint that turns heads at every dock.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section: Story -->
+  <section id="story" class="py-24 bg-[#0c0a09]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <p class="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-3">Our Story</p>
+          <h2 class="font-display text-4xl leading-tight text-white mb-6">Built on Lake Champlain Time</h2>
+          <p class="text-stone-300 leading-relaxed mb-4">Snake Mountain Boatworks began with a 1938 Chris Craft and a belief that old boats deserve better than a barn. That hull is still on the water today.</p>
+          <p class="text-stone-300 leading-relaxed mb-6">Owner Michael Claudon brings decades of experience to every project, from engine rebuilds to planking and paint. If it floats and it is wood, we speak its language.</p>
+          <a href="#contact" class="inline-block border-amber-600 text-amber-500 hover:bg-amber-600 hover:text-stone-900 px-6 py-3 rounded-xl font-semibold transition-colors border">Read More</a>
+        </div>
+        <div>
+          <img src="https://snakemountainboatworks.com/wp-content/uploads/2018/04/1938-chris-craft-runabout-docked-855x570.jpg" alt="Restored Chris Craft runabout at the dock" class="w-full rounded-xl shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-24 bg-[#0c0a09]">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-3 text-center">The Work</p>
+      <h2 class="font-display text-4xl leading-tight text-white mb-12 text-center">Restoration Gallery</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <img src="https://snakemountainboatworks.com/wp-content/uploads/2018/04/1938-chris-craft-runabout-flyin-by-855x570.jpg" alt="Chris Craft Runabout taking flight" class="w-full h-64 object-cover rounded-xl">
+        <img src="https://snakemountainboatworks.com/wp-content/uploads/2018/05/1938-Chris-Craft-Runabout-Flyin-By-855x570.jpg" alt="1938 Chris Craft in flight" class="w-full h-64 object-cover rounded-xl">
+        <img src="https://snakemountainboatworks.com/wp-content/uploads/2018/04/flyin-by-1938-chris-craft-runabout-855x570.jpg" alt="Runabout flying past camera" class="w-full h-64 object-cover rounded-xl">
+        <img src="https://snakemountainboatworks.com/wp-content/uploads/2018/04/1938-chris-craft-runabout-855x570.jpg" alt="Chris Craft runabout portrait" class="w-full h-64 object-cover rounded-xl md:col-span-2">
+        <img src="https://snakemountainboatworks.com/wp-content/uploads/2011/11/CC-Engine.jpg" alt="Vintage boat engine" class="w-full h-64 object-cover rounded-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-24 bg-[#0c0a09]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2 reveal">
+          <p class="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-3">Reviews</p>
+          <blockquote class="font-display text-3xl text-white leading-tight mb-6">"Michael restored our 1956 Century to better-than-new condition. The quality of work is unmatched."</blockquote>
+          <cite class="text-stone-400 not-italic">rural Vermont boat owner</cite>
+        </div>
+        <div class="space-y-6">
+          <div class="border-l-4 border-amber-600 pl-6">
+            <p class="font-display text-4xl text-amber-500">2008</p>
+            <p class="text-stone-400 text-sm">Founded in Weybridge</p>
+          </div>
+          <div class="border-l-4 border-amber-600 pl-6">
+            <p class="font-display text-4xl text-amber-500">Vermont</p>
+            <p class="text-stone-400 text-sm">Lake Champlain Region</p>
+          </div>
+          <div class="border-l-4 border-amber-600 pl-6">
+            <p class="font-display text-4xl text-amber-500">Full</p>
+            <p class="text-stone-400 text-sm">Preservation Service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-amber-600">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl text-stone-900 mb-4">Ready to Restore Your Classic?</h2>
+      <p class="text-stone-800 mb-8 max-w-2xl mx-auto">Whether it is a century-old Chris Craft or a family heirloom that has not seen water in decades, we will bring it back to life.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="mailto:michael@snakemountainboatworks.com" class="bg-stone-900 text-amber-500 px-8 py-3 rounded-xl font-semibold hover:bg-stone-800 transition-colors">Email: michael@snakemountainboatworks.com</a>
+        <a href="#" class="border-stone-900 text-stone-900 px-8 py-3 rounded-xl font-semibold border hover:bg-stone-900/10 transition-colors">7076 Weybridge Rd, Weybridge, VT</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-[#0c0a09] border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <p class="font-display text-xl text-white mb-4">Snake Mountain Boatworks</p>
+        <p class="text-stone-400 text-sm">Vintage wooden boat restoration and preservation, Weybridge, Vermont.</p>
+      </div>
+      <div>
+        <p class="text-white font-semibold mb-4">Services</p>
+        <ul class="space-y-2 text-stone-400 text-sm">
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Full Preservation</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">5200 Bottoms</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Varnish & Paint</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Engine Rebuild</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-white font-semibold mb-4">Company</p>
+        <ul class="space-y-2 text-stone-400 text-sm">
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Our Story</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Gallery</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-white font-semibold mb-4">Contact</p>
+        <ul class="space-y-2 text-stone-400 text-sm">
+          <li><a href="mailto:michael@snakemountainboatworks.com" class="hover:text-amber-500 transition-colors">michael@snakemountainboatworks.com</a></li>
+          <li>7076 Weybridge Rd</li>
+          <li>Weybridge, VT 0575</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-stone-800 text-center">
+      <p class="text-stone-500 text-sm">&copy; Snake Mountain Boatworks. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal, .revel').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
