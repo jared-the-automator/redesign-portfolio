@@ -133,3 +133,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Laurel Ridge Rods](https://jared-the-automator.github.io/redesign-portfolio/laurelridgerods.com/) | Custom fishing rods | Export, PA |
 | [Snake Mountain Boatworks](https://jared-the-automator.github.io/redesign-portfolio/snakemountainboatworks.com/) | Vintage wooden boat restoration | Weybridge, VT |
 | [Dragon's Breath Forge](https://jared-the-automator.github.io/redesign-portfolio/dragonsbreathforge.com/) | Custom hand-forged knives & swords | USA |
+| [Laughing Bear Outfitters](https://jared-the-automator.github.io/redesign-portfolio/laughingbearoutfitters.com/) | Custom fly rods & game calls | Pinedale, WY |
