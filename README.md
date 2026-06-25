@@ -130,3 +130,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Cody Carr's Hunting Adventures](https://jared-the-automator.github.io/redesign-portfolio/huntwithcody.com/) | Montana hunting outfitter | Montana, USA |
 | [Frasier Knives](https://jared-the-automator.github.io/redesign-portfolio/frasierknives.com/) | Custom knives forged in NW Montana | NW Montana |
 | [Simply Knives](https://jared-the-automator.github.io/redesign-portfolio/simply-knives.com/) | Handmade custom knives | Erkrath, Germany |
+| [Laurel Ridge Rods](https://jared-the-automator.github.io/redesign-portfolio/laurelridgerods.com/) | Custom fishing rods | Export, PA |

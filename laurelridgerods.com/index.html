@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laurel Ridge Rods | Custom Fly, Float, Centerpin & Spin Rods | Export, PA</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F5F0E8',
+            espresso: '#2A1E18',
+            olive: '#6B7F5C',
+            sage: '#8B9D7E',
+            sand: '#EDE8DF'
+          },
+          fontFamily: {
+            display: ['"DM Serif Display"', 'serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .font-display { font-family: 'DM Serif Display', serif; }
+  </style>
+</head>
+<body class="bg-cream text-espresso font-body">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-espresso/10">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="#" class="font-display text-xl text-espresso tracking-tight">Laurel Ridge Rods</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#rods" class="hover:text-olive transition-colors">Rods</a>
+        <a href="#craft" class="hover:text-olive transition-colors">Craft</a>
+        <a href="#gallery" class="hover:text-olive transition-colors">Gallery</a>
+        <a href="#contact" class="hover:text-olive transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:inline-block bg-olive text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-[#5a6e4b] transition-colors">Get a Custom Rod</a>
+      <button id="menuBtn" class="md:hidden p-2" aria-label="Menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-cream border-t border-espresso/10 px-6 py-4 space-y-3">
+      <a href="#rods" class="block text-sm font-medium hover:text-olive">Rods</a>
+      <a href="#craft" class="block text-sm font-medium hover:text-olive">Craft</a>
+      <a href="#gallery" class="block text-sm font-medium hover:text-olive">Gallery</a>
+      <a href="#contact" class="block text-sm font-medium hover:text-olive">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <img src="https://www.laurelridgerods.com/wp-content/uploads/2016/08/NORTHFORKCOMPOSITES6.jpg" alt="Custom built fishing rod" class="absolute inset-0 w-full h-full object-cover z-0" />
+    <div class="absolute inset-0 bg-gradient-to-r from-cream via-cream/80 to-transparent z-10"></div>
+    <div class="relative z-20 max-w-7xl mx-auto px-6 py-20 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block text-xs font-semibold tracking-widest text-olive uppercase mb-4">Export, Pennsylvania</span>
+        <h1 class="font-display text-5xl md:text-7xl leading-tight text-espresso mb-6">Handcrafted Rods<br/>For Pennsylvania<br/>Waters</h1>
+        <p class="text-base md:text-lg text-espresso/80 max-w-md mb-8 leading-relaxed">Custom fly, float, centerpin, and spinning rods built to your specifications by a Pennsylvania rod builder.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#gallery" class="bg-olive text-white font-semibold px-6 py-3 rounded-xl hover:bg-[#5a6e4b] transition-colors text-sm">See the Rods</a>
+          <a href="#contact" class="border-2 border-espresso text-espresso font-semibold px-6 py-3 rounded-xl hover:bg-espresso hover:text-white transition-colors text-sm">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product -->
+  <section id="rods" class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="reveal">
+          <img src="https://www.laurelridgerods.com/wp-content/uploads/2016/09/CTS_FF1202_Centerpin10.jpg" alt="CTS custom centerpin rod" class="w-full h-[400px] md:h-[520px] object-cover rounded-xl" />
+        </div>
+        <div class="reveal">
+          <h2 class="font-display text-3xl md:text-4xl text-espresso mb-8">Built for the cast, not the shelf</h2>
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <span class="text-3xl font-display text-olive">01</span>
+              <div>
+                <h3 class="font-semibold text-espresso mb-1">Hand-selected blanks</h3>
+                <p class="text-sm text-espresso/70 leading-relaxed">Every rod starts with a blank chosen for the species and conditions you fish.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="text-3xl font-display text-olive">02</span>
+              <div>
+                <h3 class="font-semibold text-espresso mb-1">Species-specific tapers</h3>
+                <p class="text-sm text-espresso/70 leading-relaxed">Tapers tuned for steelhead, trout, bass, and panfish across Pennsylvania waters.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="text-3xl font-display text-olive">03</span>
+              <div>
+                <h3 class="font-semibold text-espresso mb-1">Finished to your specs</h3>
+                <p class="text-sm text-espresso/70 leading-relaxed">Guides, handle, and finish built around how you actually fish.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craft / Story -->
+  <section id="craft" class="py-20 md:py-28 bg-sand/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <h2 class="font-display text-3xl md:text-4xl text-espresso mb-6">A rod for the water you know</h2>
+          <p class="text-espresso/80 leading-relaxed mb-5">Having always been a fisherman and someone heavily involved in the outdoors, the builder started Laurel Ridge Rods to deliver a quality performance crafted species specific fishing tool to the hands of customers.</p>
+          <p class="text-espresso/80 leading-relaxed mb-5">Chasing trout in Western Pennsylvania since childhood and building rods since college in the early 2000s, the focus has always been on understanding exactly how rods behave in certain conditions and projecting those ideas onto the bench.</p>
+          <p class="text-espresso/80 leading-relaxed">Every rod is a collaboration between builder and angler, shaped by the species, the water, and the way you like to fish.</p>
+        </div>
+        <div class="order-1 lg:order-2 reveal">
+          <img src="https://www.laurelridgerods.com/wp-content/uploads/2017/03/IMG_5876-1.jpg" alt="Custom rod build in progress" class="w-full h-[400px] md:h-[520px] object-cover rounded-xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-display text-3xl md:text-4xl text-espresso mb-3">Previous Builds</h2>
+        <p class="text-espresso/70 max-w-xl mx-auto text-sm">A selection of completed rods built for Pennsylvania anglers and beyond.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="reveal">
+          <img src="https://www.laurelridgerods.com/wp-content/uploads/2017/02/Dan_Craft_GXT1004_Centerpin_010.jpg" alt="Dan Craft GXT-1004 centerpin rod" class="w-full h-72 object-cover rounded-xl" />
+        </div>
+        <div class="reveal">
+          <img src="https://www.laurelridgerods.com/wp-content/uploads/2016/12/15123273_1218193274912625_6278790844296497995_o.jpg" alt="Custom spinning rod build" class="w-full h-72 object-cover rounded-xl" />
+        </div>
+        <div class="reveal">
+          <img src="https://www.laurelridgerods.com/wp-content/uploads/2017/01/15776948_1271667339565218_7247110844738162182_o.jpg" alt="Completed fly rod on bench" class="w-full h-72 object-cover rounded-xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-20 md:py-28 bg-sand/30">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <blockquote class="font-display text-2xl md:text-3xl text-espresso leading-relaxed mb-8">"If you are looking to own a finely handcrafted rod built to perform to your needs with species specific capability, you have come to the right place."</blockquote>
+      <div class="flex flex-wrap justify-center gap-8 text-sm">
+        <div class="text-center">
+          <div class="font-display text-3xl text-olive mb-1">2000s</div>
+          <div class="text-espresso/70">Building rods since early 2000s</div>
+        </div>
+        <div class="text-center">
+          <div class="font-display text-3xl text-olive mb-1">PA</div>
+          <div class="text-espresso/70">Based in Export, Pennsylvania</div>
+        </div>
+        <div class="text-center">
+          <div class="font-display text-3xl text-olive mb-1">4</div>
+          <div class="text-espresso/70">Rod styles: fly, float, centerpin, spin</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-16 bg-olive">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display text-3xl md:text-4xl text-white mb-4">Ready for a new rod?</h2>
+      <p class="text-white/90 mb-8 max-w-lg mx-auto">Call or email to talk about your next build. Every rod is made to order.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="tel:724-858-6160" class="bg-white text-olive font-semibold px-6 py-3 rounded-xl hover:bg-cream transition-colors text-sm">Call 724-858-6160</a>
+        <a href="mailto:pasteelheader@gmail.com" class="border-2 border-white text-white font-semibold px-6 py-3 rounded-xl hover:bg-white hover:text-olive transition-colors text-sm">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-espresso text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-display text-xl mb-4">Laurel Ridge Rods</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Custom fly, float, centerpin, and spinning rods built to order in Export, Pennsylvania.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm uppercase tracking-wider mb-4">Navigate</h4>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li><a href="#rods" class="hover:text-white transition-colors">Rods</a></li>
+          <li><a href="#craft" class="hover:text-white transition-colors">Craft</a></li>
+          <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm uppercase tracking-wider mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm text-white/70">
+          <li>Export, Pennsylvania</li>
+          <li><a href="tel:724-858-6160" class="hover:text-white transition-colors">724-858-6160</a></li>
+          <li><a href="mailto:pasteelheader@gmail.com" class="hover:text-white transition-colors">pasteelheader@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 text-center text-xs text-white/50">
+      &copy; 2026 Laurel Ridge Rods. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Simple IntersectionObserver reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+  </script>
+</body>
+</html>
