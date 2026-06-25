@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon's Breath Forge | Custom Knives & Swords</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+    .font-display { font-family: 'Oswald', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .revealed { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="font-display text-2xl tracking-wide text-white">DRAGON'S BREATH FORGE</a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#work" class="text-sm font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Work</a>
+        <a href="#process" class="text-sm font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Process</a>
+        <a href="#classes" class="text-sm font-semibold uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Classes</a>
+        <a href="#contact" class="rounded-sm bg-slate-200 px-5 py-2 text-sm font-semibold uppercase tracking-widest text-slate-950 hover:bg-white transition-colors">Custom Order</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative min-h-[100dvh] flex items-center">
+    <div class="absolute inset-0">
+      <img src="https://dragonsbreathforge.com/wp-content/uploads/2019/11/Falling-Hammer-264-of-310.jpg" alt="Forge workshop" class="h-full w-full object-cover opacity-50" loading="eager"/>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
+    </div>
+    <div class="relative z-10 mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <span class="reveal mb-4 inline-block rounded-sm bg-slate-800 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-slate-300">Hand Forged in the USA</span>
+      <h1 class="reveal font-display text-5xl uppercase leading-tight text-white md:text-7xl" style="transition-delay: 100ms;">Custom Knives<br>&amp; Swords</h1>
+      <p class="reveal mt-6 max-w-xl text-lg text-slate-300 md:text-xl" style="transition-delay: 200ms;">Three Forged In Fire champions hand-forging functional art in a 6,000 sqft workshop.</p>
+      <div class="reveal mt-8 flex flex-wrap gap-4" style="transition-delay: 300ms;">
+        <a href="#work" class="rounded-sm bg-slate-200 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-slate-950 hover:bg-white transition-colors">Explore Blades</a>
+        <a href="#classes" class="rounded-sm border border-slate-400 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white hover:border-white hover:text-white transition-colors">Book a Class</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Primary Split: Image + Features -->
+  <section id="work" class="mx-auto max-w-7xl px-6 py-24">
+    <div class="grid items-center gap-12 lg:grid-cols-2">
+      <div class="reveal">
+        <img src="https://dragonsbreathforge.com/wp-content/uploads/2024/02/Parkinson_Damasteel_210323A-wweb.jpg" alt="Damasteel chef knife" class="w-full rounded-sm shadow-2xl shadow-slate-900/50" loading="lazy"/>
+      </div>
+      <div class="reveal" style="transition-delay: 150ms;">
+        <h2 class="font-display text-4xl text-white md:text-5xl">Forged to Perform</h2>
+        <p class="mt-4 text-slate-400">Every piece is hand hammered, heat treated, and refined to meet a high aesthetic and performance standard.</p>
+        <div class="mt-10 space-y-8">
+          <div class="flex gap-5">
+            <span class="font-display text-5xl text-slate-600">01</span>
+            <div>
+              <h3 class="font-display text-xl uppercase text-white">Hand Forged</h3>
+              <p class="mt-1 text-slate-400">Raw steel is shaped by hammer and heat, not cast or machined.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-5xl text-slate-600">02</span>
+            <div>
+              <h3 class="font-display text-xl uppercase text-white">One of a Kind</h3>
+              <p class="mt-1 text-slate-400">No two blades are the same. Each is a unique functional work of art.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-5xl text-slate-600">03</span>
+            <div>
+              <h3 class="font-display text-xl uppercase text-white">Champion Made</h3>
+              <p class="mt-1 text-slate-400">Three Forged In Fire champions bring world-class skill to every order.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Split: Story + Image (reversed) -->
+  <section id="process" class="mx-auto max-w-7xl px-6 py-24">
+    <div class="grid items-center gap-12 lg:grid-cols-2">
+      <div class="reveal order-2 lg:order-1" style="transition-delay: 150ms;">
+        <h2 class="font-display text-4xl text-white md:text-5xl">The Process</h2>
+        <p class="mt-4 text-slate-400">From raw billet to finished edge, each knife goes through a rigorous process: heating, hammering, grinding, and hand finishing. We use traditional forge techniques combined with modern metallurgy to create blades that perform as well as they look.</p>
+        <ul class="mt-8 space-y-4 text-slate-400">
+          <li class="flex items-center gap-3"><span class="inline-block h-1.5 w-1.5 rounded-full bg-slate-500"></span> Traditional fire welding and forge folding.</li>
+          <li class="flex items-center gap-3"><span class="inline-block h-1.5 w-1.5 rounded-full bg-slate-500"></span> Modern steels including Damasteel and high-carbon alloys.</li>
+          <li class="flex items-center gap-3"><span class="inline-block h-1.5 w-1.5 rounded-full bg-slate-500"></span> Hand-sharpened to a razor edge and polished by hand.</li>
+        </ul>
+      </div>
+      <div class="reveal order-1 lg:order-2">
+        <img src="https://dragonsbreathforge.com/wp-content/uploads/2019/11/Lundell_180415-web.jpg" alt="Hand forging a blade" class="w-full rounded-sm shadow-2xl shadow-slate-900/50" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section class="mx-auto max-w-7xl px-6 py-24">
+    <div class="reveal mb-12 text-center">
+      <h2 class="font-display text-4xl text-white md:text-5xl">Selected Work</h2>
+      <p class="mt-4 text-slate-400">A view into the shop: axes, kitchen knives, and custom swords.</p>
+    </div>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal">
+        <img src="https://dragonsbreathforge.com/wp-content/uploads/2019/11/carved-axe3.jpg" alt="Carved axe" class="h-64 w-full rounded-sm object-cover" loading="lazy"/>
+      </div>
+      <div class="reveal" style="transition-delay: 100ms;">
+        <img src="https://dragonsbreathforge.com/wp-content/uploads/2019/11/Parkinson_140516B-web.jpg" alt="Custom dagger" class="h-64 w-full rounded-sm object-cover" loading="lazy"/>
+      </div>
+      <div class="reveal" style="transition-delay: 200ms;">
+        <img src="https://dragonsbreathforge.com/wp-content/uploads/2024/02/Parkinson_200509-wweb.jpg" alt="Chef knife" class="h-64 w-full rounded-sm object-cover" loading="lazy"/>
+      </div>
+      <div class="reveal" style="transition-delay: 300ms;">
+        <img src="https://dragonsbreathforge.com/wp-content/uploads/2024/02/Parkinson_230920-1400w2.jpg" alt="Damasteel knife" class="h-64 w-full rounded-sm object-cover" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="mx-auto max-w-7xl px-6 py-24">
+    <div class="reveal mx-auto max-w-3xl text-center">
+      <p class="font-display text-3xl leading-snug text-white md:text-4xl">"We are proud of what we produce here at Dragon's Breath Forge and we know you will be proud to own it."</p>
+      <p class="mt-6 text-sm font-semibold uppercase tracking-widest text-slate-400">Dragon's Breath Forge</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-8 text-slate-300">
+        <div class="text-center">
+          <div class="font-display text-3xl text-white">3</div>
+          <div class="text-xs uppercase tracking-widest text-slate-500">Forged in Fire Champions</div>
+        </div>
+        <div class="text-center">
+          <div class="font-display text-3xl text-white">6,000</div>
+          <div class="text-xs uppercase tracking-widest text-slate-500">sqft Workshop</div>
+        </div>
+        <div class="text-center">
+          <div class="font-display text-3xl text-white">2019</div>
+          <div class="text-xs uppercase tracking-widest text-slate-500">Est. Year</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="bg-slate-200 py-20">
+    <div class="mx-auto max-w-7xl px-6 text-center">
+      <h2 class="font-display text-4xl uppercase text-slate-950 md:text-5xl">Ready for a Custom Blade?</h2>
+      <p class="mt-4 text-lg text-slate-700">Contact us to discuss your next custom knife, sword, or axe.</p>
+      <a href="mailto:info@dragonsbreathforge.com" class="mt-8 inline-block rounded-sm bg-slate-950 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-white hover:bg-slate-800 transition-colors">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-16">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <h3 class="font-display text-lg text-white">Dragon's Breath Forge</h3>
+          <p class="mt-4 text-sm text-slate-400">Custom blacksmith knives and swords hand forged by three Forged In Fire champions.</p>
+        </div>
+        <div>
+          <h4 class="mb-4 text-sm font-semibold uppercase tracking-widest text-slate-500">Explore</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#" class="hover:text-white transition-colors">Axes & Hafted Implements</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Kitchen Knives</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Modern Knives</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Classes & Tutorials</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mb-4 text-sm font-semibold uppercase tracking-widest text-slate-500">Contact</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>info@dragonsbreathforge.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mb-4 text-sm font-semibold uppercase tracking-widest text-slate-500">Social</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 border-t border-slate-800 pt-8 text-center text-xs uppercase tracking-widest text-slate-600">
+        Copyright 2026 Falling Hammer Productions. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
