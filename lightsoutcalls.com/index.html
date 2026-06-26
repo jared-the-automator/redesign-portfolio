@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lights Out Custom Calls — Handmade Hunting Calls Since 2003</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .font-display { font-family: 'Playfair Display', serif; }
+      .font-body { font-family: 'Inter', sans-serif; }
+    }
+  </style>
+</head>
+<body class="font-body bg-stone-950 text-stone-100 antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-stone-950/90 backdrop-blur-sm border-b border-stone-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://lightsoutcalls.com/wp-content/uploads/2021/03/logo-black-white-bkgd-1.png" alt="Lights Out Custom Calls" class="h-10 w-auto invert">
+        <span class="font-display text-xl font-bold text-amber-200 tracking-wide">Lights Out</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-sm font-semibold text-stone-300 hover:text-amber-300 transition-colors">Calls</a>
+        <a href="#" class="text-sm font-semibold text-stone-300 hover:text-amber-300 transition-colors">About</a>
+        <a href="#" class="text-sm font-semibold text-stone-300 hover:text-amber-300 transition-colors">Gallery</a>
+        <a href="#" class="text-sm font-semibold text-stone-300 hover:text-amber-300 transition-colors">Contact</a>
+      </div>
+      <a href="mailto:wendell@lightsoutcalls.com" class="bg-amber-700 hover:bg-amber-600 text-stone-100 px-5 py-2 rounded-lg text-sm font-semibold transition-colors">
+        Order a Call
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative min-h-[100dvh] flex items-center">
+    <img src="https://lightsoutcalls.com/wp-content/uploads/2021/03/header-kill-rob-wessels.jpg" alt="Hunting scene" class="absolute inset-0 w-full h-full object-cover opacity-40">
+    <div class="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/80 to-transparent"></div>
+    <div class="relative max-w-7xl mx-auto px-6 py-20">
+      <div class="max-w-2xl">
+        <span class="inline-block text-amber-400 text-xs font-bold tracking-[0.2em] uppercase mb-4">Barling, Arkansas — Since 2003</span>
+        <h1 class="font-display text-5xl md:text-7xl font-bold text-stone-100 leading-[1.1] mb-6">
+          Calls Worthy<br>of the Hunt
+        </h1>
+        <p class="text-stone-300 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
+          Handcrafted hunting calls built on a 1970s Craftsman lathe. Two-time first-place winner at the Midwest Callmakers Competition.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="mailto:wendell@lightsoutcalls.com" class="bg-amber-700 hover:bg-amber-600 text-stone-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+            Order Your Call
+          </a>
+          <a href="#craft" class="border border-stone-600 text-stone-300 hover:text-amber-300 hover:border-amber-400 px-8 py-3 rounded-lg font-semibold transition-colors">
+            See the Craft
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Primary: Product split -->
+  <section class="py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <img src="https://lightsoutcalls.com/wp-content/uploads/2021/03/bubinga-anodized-aluminum-1.jpg" alt="Custom anodized aluminum call" class="w-full aspect-square object-cover rounded-lg shadow-2xl">
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="font-display text-3xl md:text-5xl font-bold text-stone-100 mb-8">Built One at a Time</h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="font-display text-5xl font-bold text-amber-700/30 leading-none">01</span>
+              <div>
+                <h3 class="font-display text-xl font-bold text-amber-200 mb-2">Select the Material</h3>
+                <p class="text-stone-400 leading-relaxed">An accept anodized aluminum, brass, ceramic, copper, glass, laminate, or slate. Each surface produces a distinct tone.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl font-bold text-amber-700/30 leading-none">02</span>
+              <div>
+                <h3 class="font-display text-xl font-bold text-amber-200 mb-2">Turned on a Vintage Lathe</h3>
+                <p class="text-stone-400 leading-relaxed">Every call is shaped on the same 1970s Craftsman lathe that started this craft over two decades ago.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl font-bold text-amber-700/30 leading-none">03</span>
+              <div>
+                <h3 class="font-display text-xl font-bold text-amber-200 mb-2">Tuned by Ear</h3>
+                <p class="text-stone-400 leading-relaxed">Each call is tested against live recordings and adjusted until it produces the exact tone that brings turkeys in close.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: Story split (reversed) -->
+  <section id="craft" class="py-20 md:py-32 bg-stone-900/50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-display text-3xl md:text-5xl font-bold text-stone-100 mb-6">Started in a Garage in 2003</h2>
+          <p class="text-stone-300 text-lg leading-relaxed mb-6">
+            Wendell Rye stumbled across two flocks of wild turkeys near his home and the spark was ignited. What began with a few scratch box calls sold to friends has grown into a pursuit of the most natural sounding calls a hunter can carry.
+          </p>
+          <p class="text-stone-400 leading-relaxed mb-8">
+            After years of trial, prayer, and long hours at the lathe, three calls shipped to the Midwest Callmakers Competition in Wisconsin returned with two first-place awards. That was 2007. The calls have only gotten better since.
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="h-px flex-1 bg-stone-700"></div>
+            <span class="text-amber-400 text-sm font-bold tracking-wide uppercase">23 Years of Craft</span>
+            <div class="h-px flex-1 bg-stone-700"></div>
+          </div>
+        </div>
+        <div>
+          <img src="https://lightsoutcalls.com/wp-content/uploads/2021/03/cherry-burl.jpg" alt="Cherry burl call" class="w-full aspect-[4/5] object-cover rounded-lg shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section class="py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12">
+        <span class="text-amber-400 text-xs font-bold tracking-[0.2em] uppercase">In the Field</span>
+        <h2 class="font-display text-3xl md:text-5xl font-bold text-stone-100 mt-3">Built for Results</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        <img src="https://lightsoutcalls.com/wp-content/uploads/2021/03/2010_fla.jpg" alt="Hunting trophy" class="w-full aspect-square object-cover rounded-lg">
+        <img src="https://lightsoutcalls.com/wp-content/uploads/2021/03/brian_king.jpg" alt="Customer with turkey" class="w-full aspect-square object-cover rounded-lg">
+        <img src="https://lightsoutcalls.com/wp-content/uploads/2021/03/clint_roby.jpg" alt="Customer with turkey" class="w-full aspect-square object-cover rounded-lg">
+        <img src="https://lightsoutcalls.com/wp-content/uploads/2021/03/gene_branum12.jpg" alt="Customer with turkey" class="w-full aspect-square object-cover rounded-lg">
+      </div>
+      <p class="text-stone-400 text-sm mt-4 text-center">Real customers, real birds. Photos from the Lights Out Custom Calls gallery.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials & Credibility -->
+  <section class="py-20 md:py-32 bg-stone-900/50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <blockquote class="font-display text-2xl md:text-4xl font-bold text-stone-100 leading-snug mb-8">
+        "Their phone calls and emails are often the highlight of my day."
+      </blockquote>
+      <p class="text-stone-400 text-sm tracking-wide uppercase font-semibold mb-8">Wendell Rye, Owner</p>
+      <div class="flex items-center justify-center gap-8 text-stone-400 text-sm">
+        <div class="flex flex-col gap-1">
+          <span class="font-display text-3xl font-bold text-amber-400">2</span>
+          <span>First Place Awards</span>
+        </div>
+        <div class="w-px h-12 bg-stone-700"></div>
+        <div class="flex flex-col gap-1">
+          <span class="font-display text-3xl font-bold text-amber-400">23</span>
+          <span>Years in Craft</span>
+        </div>
+        <div class="w-px h-12 bg-stone-700"></div>
+        <div class="flex flex-col gap-1">
+          <span class="font-display text-3xl font-bold text-amber-400">7</span>
+          <span>Materials Offered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-20 md:py-28 bg-amber-900/20 border-y border-amber-900/30">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-stone-100 mb-4">Ready to Replace Your Factory Call?</h2>
+      <p class="text-stone-300 text-lg mb-8 max-w-2xl mx-auto">Handmade calls turned one at a time in Barling, Arkansas. Email Wendell to talk through what you need for your next hunt.</p>
+      <a href="mailto:wendell@lightsoutcalls.com" class="inline-block bg-amber-700 hover:bg-amber-600 text-stone-100 px-10 py-4 rounded-lg font-semibold text-lg transition-colors">
+        wendell@lightsoutcalls.com
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <img src="https://lightsoutcalls.com/wp-content/uploads/2021/03/logo-black-white-bkgd-1.png" alt="Lights Out Custom Calls" class="h-8 w-auto invert opacity-70 mb-4">
+          <p class="text-stone-400 text-sm">Handcrafted hunting calls from Barling, Arkansas.</p>
+        </div>
+        <div>
+          <h4 class="text-stone-200 font-semibold text-sm tracking-wide uppercase mb-3">Calls</h4>
+          <ul class="text-stone-400 text-sm space-y-2">
+            <li><a href="#" class="hover:text-amber-300 transition-colors">Turkey Calls</a></li>
+            <li><a href="#" class="hover:text-amber-300 transition-colors">Predator Calls</a></li>
+            <li><a href="#" class="hover:text-amber-300 transition-colors">Deer Grunt Calls</a></li>
+            <li><a href="#" class="hover:text-amber-300 transition-colors">Crow Calls</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-stone-200 font-semibold text-sm tracking-wide uppercase mb-3">Company</h4>
+          <ul class="text-stone-400 text-sm space-y-2">
+            <li><a href="#" class="hover:text-amber-300 transition-colors">About Wendell</a></li>
+            <li><a href="#" class="hover:text-amber-300 transition-colors">Gallery</a></li>
+            <li><a href="#" class="hover:text-amber-300 transition-colors">How to Order</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-stone-200 font-semibold text-sm tracking-wide uppercase mb-3">Contact</h4>
+          <p class="text-stone-400 text-sm mb-2">808 9th Street</p>
+          <p class="text-stone-400 text-sm mb-2">Barling, AR 72923</p>
+          <a href="mailto:wendell@lightsoutcalls.com" class="text-amber-300 text-sm hover:underline">wendell@lightsoutcalls.com</a>
+        </div>
+      </div>
+      <div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-stone-500 text-sm"> Lights Out Custom Calls. All rights reserved.</p>
+        <div class="flex gap-6 text-stone-500 text-sm">
+          <a href="#" class="hover:text-stone-300 transition-colors">Privacy</a>
+          <a href="#" class="hover:text-stone-300 transition-colors">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
