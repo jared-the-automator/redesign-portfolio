@@ -137,3 +137,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | [Rhea Knives](https://jared-the-automator.github.io/redesign-portfolio/rheaknives.com/) | Hand forged custom knives | Prattsville, AR |
 | [Evening Sun Fly Shop](https://jared-the-automator.github.io/redesign-portfolio/eveningsunflyshop.com/) | Fly fishing gear, classes & guided trips | Pepperell, MA |
+| [Evening Sun Fly Shop](https://jared-the-automator.github.io/redesign-portfolio/eveningsunflyshop.com/) | Fly fishing gear & guided trips | Pepperell, MA |
