@@ -136,3 +136,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Laughing Bear Outfitters](https://jared-the-automator.github.io/redesign-portfolio/laughingbearoutfitters.com/) | Custom fly rods & game calls | Pinedale, WY |
 
 | [Rhea Knives](https://jared-the-automator.github.io/redesign-portfolio/rheaknives.com/) | Hand forged custom knives | Prattsville, AR |
+| [Evening Sun Fly Shop](https://jared-the-automator.github.io/redesign-portfolio/eveningsunflyshop.com/) | Fly fishing gear, classes & guided trips | Pepperell, MA |
