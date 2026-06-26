@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhea Knives - Hand Forged Knives in Arkansas</title>
+  <meta name="description" content="Hand forged knives by Rhea, an American Bladesmith Society Mastersmith in Prattsville, Arkansas. Custom Bowie knives and Brute knives forged to last a lifetime.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Barlow Condensed', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            amber: {
+              450: '#d97706',
+              550: '#b45309',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --accent: #d97706;
+      --accent-dark: #b45309;
+    }
+    html { scroll-behavior: smooth; }
+    .corner { border-radius: 2px; }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white font-body antialiased">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-sm border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-wide uppercase text-white">Rhea Knives</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#knives" class="hover:text-white transition-colors">Knives</a>
+        <a href="#gallery" class="hover:text-white transition-colors">Gallery</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="corner bg-[#d97706] hover:bg-[#b45309] text-white text-sm font-semibold px-5 py-2.5 transition-colors">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="relative min-h-[100dvh] flex items-end overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://rheaknives.com/wp-content/uploads/2018/02/lin-fire.jpg" alt="Forge fire glowing in the workshop" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 to-transparent"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 pb-24 pt-40">
+      <div class="max-w-2xl">
+        <p class="text-[#d97706] text-sm font-semibold uppercase tracking-[0.15em] mb-4">Prattsville, Arkansas</p>
+        <h1 class="font-display text-5xl md:text-7xl leading-[0.95] uppercase mb-6">
+          Hand Forged<br>Knives That Last
+        </h1>
+        <p class="text-gray-300 text-lg md:text-xl max-w-lg mb-8 leading-relaxed">
+          American Bladesmith Society Mastersmith. Every blade is forged, ground, and finished by hand in our Arkansas workshop.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#knives" class="corner bg-[#d97706] hover:bg-[#b45309] text-white font-semibold px-8 py-3 transition-colors">See the Knives</a>
+          <a href="#about" class="corner border border-white/20 hover:border-white/40 text-white font-medium px-8 py-3 transition-colors">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary Product Section -->
+  <section id="knives" class="py-24 bg-[#0a0a0a]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <img src="https://rheaknives.com/wp-content/uploads/2018/01/Bristol-Bay-Bowie.jpg" alt="Bristol Bay Bowie knife on display" class="w-full h-[500px] object-cover corner">
+        </div>
+        <div class="reveal">
+          <p class="text-[#d97706] text-sm font-semibold uppercase tracking-[0.15em] mb-4">What Sets Us Apart</p>
+          <h2 class="font-display text-4xl uppercase mb-8">Built to Work, Not Just to Look At</h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-[#d97706] leading-none">01</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Hand Forged</h3>
+                <p class="text-gray-400 leading-relaxed">Every knife starts at the forge, not a factory line. The steel is heated, hammered, and shaped by hand.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-[#d97706] leading-none">02</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Custom Design</h3>
+                <p class="text-gray-400 leading-relaxed">From blade profile to handle material, every detail is built to your specifications and your hand.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-[#d97706] leading-none">03</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Mastersmith Rated</h3>
+                <p class="text-gray-400 leading-relaxed">Rhea holds a Mastersmith rating with the American Bladesmith Society, the highest standard in the craft.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary Section (Story) -->
+  <section id="about" class="py-24 bg-[#111111]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal order-2 md:order-1">
+          <p class="text-[#d97706] text-sm font-semibold uppercase tracking-[0.15em] mb-4">The Workshop</p>
+          <h2 class="font-display text-4xl uppercase mb-6">Where Steel Becomes a Tool</h2>
+          <p class="text-gray-300 leading-relaxed mb-6">
+            Our shop in Prattsville, Arkansas is where the work happens. There is no conveyor belt, no overseas assembly, no mass production. Just a forge, grinders, a workbench, and the experience that comes from years of forging blades.
+          </p>
+          <p class="text-gray-300 leading-relaxed mb-6">
+            Rhea has earned a Mastersmith rating from the American Bladesmith Society, a recognition held by a small number of smiths worldwide. That expertise shows in every knife that leaves the workshop.
+          </p>
+          <p class="text-gray-300 leading-relaxed">
+            Whether you need a field blade for hunting, a Bowie for the collection, or a custom piece you have sketched out, the process starts with a conversation and ends with a knife made to work.
+          </p>
+        </div>
+        <div class="reveal order-1 md:order-2">
+          <img src="https://rheaknives.com/wp-content/uploads/2018/02/rhea-shop.jpg" alt="Workshop bench with tools" class="w-full h-[500px] object-cover corner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery -->
+  <section id="gallery" class="py-24 bg-[#0a0a0a]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <p class="text-[#d97706] text-sm font-semibold uppercase tracking-[0.15em] mb-4">Recent Work</p>
+        <h2 class="font-display text-4xl uppercase">From the Forge</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="reveal md:col-span-2 md:row-span-2">
+          <img src="https://rheaknives.com/wp-content/uploads/2018/01/Bristol-Bay-Bowie.jpg" alt="Bristol Bay Bowie knife" class="w-full h-full min-h-[300px] object-cover corner">
+        </div>
+        <div class="reveal">
+          <img src="https://rheaknives.com/wp-content/uploads/2018/01/Ironwood-Brute-comp.jpg" alt="Ironwood Brute knife" class="w-full h-[300px] object-cover corner">
+        </div>
+        <div class="reveal">
+          <img src="https://rheaknives.com/wp-content/uploads/2018/01/Southland-D-Guard-comp.jpg" alt="Southland D Guard knife" class="w-full h-[300px] object-cover corner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Credibility -->
+  <section class="py-24 bg-[#111111]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <img src="https://rheaknives.com/wp-content/uploads/2018/02/Matt-and-I-square.jpg" alt="Rhea with Matt in the workshop" class="w-full h-[400px] object-cover corner">
+        </div>
+        <div class="reveal">
+          <p class="text-[#d97706] text-sm font-semibold uppercase tracking-[0.15em] mb-4">Credentials</p>
+          <h2 class="font-display text-4xl uppercase mb-8">Mastersmith. Arkansas Made.</h2>
+          <blockquote class="text-xl text-gray-300 leading-relaxed mb-8 italic border-l-4 border-[#d97706] pl-6">
+            "As a member of the American Bladesmith Society with a Mastersmith rating, my friends in the knife industry and techniques help advance my skills and set my knives apart."
+          </blockquote>
+          <p class="text-gray-400 mb-2 font-semibold">Rhea</p>
+          <p class="text-gray-500 text-sm">Mastersmith, American Bladesmith Society</p>
+          <div class="grid grid-cols-3 gap-8 mt-12">
+            <div>
+              <p class="font-display text-4xl text-[#d97706]">ABS</p>
+              <p class="text-gray-400 text-sm mt-1">Member Since</p>
+            </div>
+            <div>
+              <p class="font-display text-4xl text-[#d97706]">2018</p>
+              <p class="text-gray-400 text-sm mt-1">Shop Founded</p>
+            </div>
+            <div>
+              <p class="font-display text-4xl text-[#d97706]">AR</p>
+              <p class="text-gray-400 text-sm mt-1">Prattsville</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA -->
+  <section class="py-24 bg-[#d97706]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl uppercase text-[#0a0a0a] mb-6">Ready trims a Knife Built Just for You</h2>
+      <p class="text-[#0a0a0a]/80 text-lg mb-8 max-w-2xl mx-auto">Custom orders open. Tell us what you need and we will talk steel, handle material, and timeline.</p>
+      <a href="mailto:lwrhea2@windstream.net" class="corner bg-[#0a0a0a] text-[#d97706] font-semibold px-10 py-4 inline-block hover:bg-[#1c1c1c] transition-colors">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="bg-[#0a0a0a] border-t border-white/5 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-display text-lg uppercase mb-4">Rhea Knives</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Hand forged knives by an American Bladesmith Society Mastersmith in Prattsville, Arkansas.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-4">Navigate</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#knives" class="hover:text-white transition-colors">Knives</a></li>
+            <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="mailto:lwrhea2@windstream.net" class="hover:text-white transition-colors">lwrhea2@windstream.net</a></li>
+            <li>Prattsville, Arkansas</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-4">Credentials</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>American Bladesmith Society</li>
+            <li>Mastersmith Rated</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/5 text-center text-gray-500 text-sm">
+        <p>2026 Rhea Knives. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
