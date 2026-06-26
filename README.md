@@ -140,3 +140,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Alistair Phillips Folders](https://jared-the-automator.github.io/redesign-portfolio/alistairphillipsfolders.com/) | Custom folding knives & EDC tools | Canberra, Australia |
 | [Evening Sun Fly Shop](https://jared-the-automator.github.io/redesign-portfolio/eveningsunflyshop.com/) | Fly fishing gear & guided trips | Pepperell, MA |
 | [Alistair Phillips Folders](https://jared-the-automator.github.io/redesign-portfolio/alistairphillipsfolders.com/) | Custom folding knives & EDC tools | Canberra, Australia |
+| [Slone Saddles](https://jared-the-automator.github.io/redesign-portfolio/slonesaddles.com/) | Custom western saddles | Cuero, TX |
