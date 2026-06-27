@@ -142,3 +142,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Alistair Phillips Folders](https://jared-the-automator.github.io/redesign-portfolio/alistairphillipsfolders.com/) | Custom folding knives & EDC tools | Canberra, Australia |
 | [Slone Saddles](https://jared-the-automator.github.io/redesign-portfolio/slonesaddles.com/) | Custom western saddles | Cuero, TX |
 | [Lights Out Custom Calls](https://jared-the-automator.github.io/redesign-portfolio/lightsoutcalls.com/) | Handcrafted hunting calls | Barling, AR |
+| [Wilson Custom Knives](https://jared-the-automator.github.io/redesign-portfolio/wilsoncustomknives.com/) | Custom survival knives | Oregon, USA |
