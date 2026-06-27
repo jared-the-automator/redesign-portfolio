@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powder River Veterinary Hospital &amp; Supply P. C.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FAF8F5',
+            espresso: '#2C1F16',
+            olive: '#5A6B3D',
+            sage: '#8DA36D',
+            stone: '#E8E4DD',
+          },
+          fontFamily: {
+            display: ['"DM Serif Display"', 'serif'],
+            body: ['"Source Sans 3"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.15s; }
+    .reveal-delay-2 { transition-delay: 0.3s; }
+    .reveal-delay-3 { transition-delay: 0.45s; }
+  </style>
+</head>
+<body class="font-body text-espresso bg-cream">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-cream/95 backdrop-blur-sm border-b border-stone">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl tracking-tight text-espresso">
+        Powder River Veterinary Hospital &amp; Supply
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide uppercase">
+        <a href="#services" class="hover:text-olive transition-colors">Services</a>
+        <a href="#locations" class="hover:text-olive transition-colors">Locations</a>
+        <a href="#about" class="hover:text-olive transition-colors">About</a>
+        <a href="#contact" class="px-5 py-2.5 bg-olive text-cream rounded-xl hover:bg-espresso transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://www.prvhs.com/wp-content/uploads/2021/11/slider1.jpg" alt="Veterinary care in Wyoming" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-espresso/80 via-espresso/50 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
+      <div class="max-w-2xl">
+        <p class="text-sage text-sm font-semibold tracking-widest uppercase mb-4 reveal">Kaycee &amp; Sheridan, Wyoming</p>
+        <h1 class="font-display text-5xl md:text-7xl text-cream leading-tight mb-6 reveal reveal-delay-1">
+          Veterinary Care for<br>Horse, Dog, and Ranch
+        </h1>
+        <p class="text-cream/90 text-lg md:text-xl leading-relaxed mb-8 max-w-xl reveal reveal-delay-2">
+          High-quality veterinary services for central and northern Wyoming. From our small and large animal clinic in Kaycee to our full equine hospital in Sheridan.
+        </p>
+        <div class="flex flex-wrap gap-4 reveal reveal-delay-3">
+          <a href="#services" class="px-8 py-3.5 bg-olive text-cream font-semibold rounded-xl hover:bg-sage transition-colors">Our Services</a>
+          <a href="#contact" class="px-8 py-3.5 border-2 border-cream text-cream font-semibold rounded-xl hover:bg-cream hover:text-espresso transition-colors">Call 307-738-2413</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary: Services -->
+  <section id="services" class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <img src="https://www.prvhs.com/wp-content/uploads/2021/11/slider2.jpg" alt="Horse care at Powder River Veterinary" class="w-full rounded-2xl shadow-xl">
+        </div>
+        <div class="reveal reveal-delay-1">
+          <p class="text-olive text-sm font-semibold tracking-widest uppercase mb-3">What We Offer</p>
+          <h2 class="font-display text-4xl md:text-5xl text-espresso mb-6">Complete veterinary care for animals big and small</h2>
+          <p class="text-espresso/70 text-lg leading-relaxed mb-8">
+            We provide high-quality veterinary services to clients all over central and northern Wyoming and beyond, with modern equipment and experienced staff.
+          </p>
+          <div class="space-y-6">
+            <div class="flex gap-5">
+              <span class="text-olive font-display text-3xl mt-1">01</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Small &amp; Large Animal Medicine</h3>
+                <p class="text-espresso/60">Comprehensive care for pets and livestock at our Kaycee facility.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="text-olive font-display text-3xl mt-1">02</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Equine Hospital &amp; Surgery</h3>
+                <p class="text-espresso/60">Our Sheridan equine hospital features spacious, climate-controlled stalls and an immaculate surgery room.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="text-olive font-display text-3xl mt-1">03</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-1">Veterinary Acupuncture &amp; Shockwave</h3>
+                <p class="text-espresso/60">Advanced therapeutic options for recovery and pain management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: Facilities -->
+  <section id="locations" class="py-24 px-6 bg-stone/30">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <p class="text-olive text-sm font-semibold tracking-widest uppercase mb-3">Two Locations</p>
+          <h2 class="font-display text-4xl md:text-5xl text-espresso mb-6">Kaycee &amp; Sheridan for Wyoming ranchers, riders, and pet owners</h2>
+          <p class="text-espresso/70 text-lg leading-relaxed mb-8">
+            Whether you need routine care for your dog, emergency livestock treatment, or advanced equine surgery, we have the facilities and staff to serve you.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div class="bg-cream p-6 rounded-2xl">
+              <h3 class="font-display text-xl mb-2">Kaycee</h3>
+              <p class="text-espresso/60 text-sm leading-relaxed">537 Sussex Lane<br>Kaycee, WY 82639<br>307-738-2413</p>
+            </div>
+            <div class="bg-cream p-6 rounded-2xl">
+              <h3 class="font-display text-xl mb-2">Sheridan</h3>
+              <p class="text-espresso/60 text-sm leading-relaxed">Equine Hospital<br>Sheridan, Wyoming<br>New facility with advanced care</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 reveal reveal-delay-1">
+          <img src="https://www.prvhs.com/wp-content/uploads/2021/11/slider4.jpg" alt="Equine facilities at Powder River Veterinary" class="w-full rounded-2xl shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="about" class="py-24 px-6">
+    <div class="max-w-7xl mx-auto reveal">
+      <div class="text-center mb-16">
+        <p class="text-olive text-sm font-semibold tracking-widest uppercase mb-3">Our Practice</p>
+        <h2 class="font-display text-4xl md:text-5xl text-espresso">Equipment, care, and the people behind it</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 rounded-2xl overflow-hidden shadow-lg reveal">
+          <img src="https://www.prvhs.com/wp-content/uploads/2021/11/slider_cat.jpg" alt="Veterinary care" class="w-full h-80 object-cover">
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-lg reveal reveal-delay-1">
+          <img src="https://www.prvhs.com/wp-content/uploads/2021/11/sx_500.jpg" alt="Veterinary equipment" class="w-full h-80 object-cover">
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-lg reveal">
+          <img src="https://www.prvhs.com/wp-content/uploads/2021/11/shopnow-banner-horse-v4.jpg" alt="Horse care at Powder River" class="w-full h-48 object-cover">
+        </div>
+        <div class="md:col-span-2 rounded-2xl overflow-hidden shadow-lg reveal reveal-delay-1">
+          <img src="https://www.prvhs.com/wp-content/uploads/2021/11/acupuncture_news-1-270x206.jpg" alt="Veterinary acupuncture" class="w-full h-48 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-24 px-6 bg-espresso text-cream">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <img src="https://www.prvhs.com/wp-content/uploads/2021/10/VersaTron_PulseVet-270x202.jpg" alt="VersaTron shockwave technology" class="w-full rounded-2xl shadow-xl mb-8 lg:mb-0">
+        </div>
+        <div class="reveal reveal-delay-1">
+          <p class="text-sage text-sm font-semibold tracking-widest uppercase mb-4">Why Choose Us</p>
+          <h2 class="font-display text-4xl md:text-5xl mb-8">Trusted veterinary care across Wyoming</h2>
+          <blockquote class="text-cream/80 text-lg italic leading-relaxed mb-6 border-l-4 border-olive pl-6">
+            "With facilities for both small and large animals in Kaycee, Wyoming, and an equine hospital in Sheridan, Wyoming, Powder River Veterinary Hospital &amp; Supply, PC, provides high-quality veterinary services to clients all over central and northern Wyoming and beyond."
+          </blockquote>
+          <div class="grid grid-cols-3 gap-6 mt-10">
+            <div>
+              <p class="font-display text-4xl text-sage">2</p>
+              <p class="text-cream/60 text-sm mt-1">Locations</p>
+            </div>
+            <div>
+              <p class="font-display text-4xl text-sage">10+</p>
+              <p class="text-cream/60 text-sm mt-1"> <!-- verify --> Years Serving Wyoming</p>
+            </div>
+            <div>
+              <p class="font-display text-4xl text-sage">307</p>
+              <p class="text-cream/60 text-sm mt-1">Area Code Served</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 px-6 bg-olive">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <h2 class="font-display text-4xl md:text-5xl text-cream mb-4">Ready to schedule an appointment?</h2>
+      <p class="text-cream/80 text-lg mb-8">Call our Kaycee office or reach out by email. Same-day appointments often available for urgent cases.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:3077382413" class="px-8 py-4 bg-cream text-olive font-bold rounded-xl hover:bg-white transition-colors">Call 307-738-2413</a>
+        <a href="mailto:powderrivervet@gmail.com" class="px-8 py-4 border-2 border-cream text-cream font-bold rounded-xl hover:bg-cream hover:text-olive transition-colors">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 px-6 bg-espresso text-cream/60 border-t border-cream/10">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+      <div>
+       <strong class="font-display text-cream block mb-4">Powder River Veterinary Hospital &amp; Supply P. C.</strong>
+        <p class="text-sm leading-relaxed">High-quality veterinary services for central and northern Wyoming. Small and large animals, equine hospital, acupuncture, and more.</p>
+      </div>
+      <div>
+        <strong class="text-cream block mb-4 font-semibold">Quick Links</strong>
+        <ul class="text-sm space-y-2">
+          <li><a href="#services" class="hover:text-sage transition-colors">Services</a></li>
+          <li><a href="#locations" class="hover:text-sage transition-colors">Locations</a></li>
+          <li><a href="#about" class="hover:text-sage transition-colors">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong class="text-cream block mb-4 font-semibold">Services</strong>
+        <ul class="text-sm space-y-2">
+          <li>Small &amp; Large Animal Medicine</li>
+          <li>Equine Hospital &amp; Surgery</li>
+          <li>Veterinary Acupuncture</li>
+          <li>Shockwave Therapy</li>
+        </ul>
+      </div>
+      <div>
+        <strong class="text-cream block mb-4 font-semibold">Contact</strong>
+        <p class="text-sm leading-relaxed">537 Sussex Lane<br>Kaycee, WY 82639</p>
+        <p class="text-sm mt-2">Phone: 307-738-2413</p>
+        <p class="text-sm">Email: powderrivervet@gmail.com</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-cream/10 text-center text-sm">
+      <p class="mb-2">©2022 Powder River Veterinary Hospital &amp; Supply P. C.</p>
+      <p class="text-cream/40">This is a redesign concept. Not affiliated with the original site.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
