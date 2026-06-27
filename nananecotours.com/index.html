@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanan's Eco Tours | Caroni Bird Sanctuary, Trinidad</title>
+    <meta name="description" content="Nanan's Caroni Bird Sanctuary Tours. Generations of guiding visitors through Trinidad's most famous wetland to see the Scarlet Ibis and other wildlife.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://ENOT/googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['"Playfair Display"', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        forest: { base: '#0B1A0E', light: '#1A2E1E', mid: '#2D4A35' },
+                        gold: { DEFAULT: '#C5A96D', light: '#D4BC8A', muted: '#9A8A5A' },
+                        bone: { DEFAULT: '#F5F0E6', muted: '#A8B5A0', dim: '#6B7A6E' },
+                    },
+                    borderRadius: {
+                        'DEFAULT': '12px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0B1A0E; color: #F5F0E6; overflow-x: hidden; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .hero-bg { background-image: linear-gradient(135deg, rgba(11,26,14,0.85) 0%, rgba(11,26,14,0.4) 100%), url('https://www.nananecotours.com/wp-content/uploads/2022/10/caroni2.png'); background-size: cover; background-position: center; }
+        .split-bg { background-image: linear-gradient(90deg, rgba(11,26,14,0.92) 0%, rgba(11,26,14,0.6) 100%), url('https://www.nananecotours.com/wp-content/uploads/2022/10/caroni5.png'); background-size: cover; background-position: center; }
+        .gallery-img { aspect-ratio: 4/3; object-fit: cover; transition: transform 0.5s ease; }
+        .gallery-img:hover { transform: scale(1.03); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 1. Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-forest-base/90 backdrop-blur-md border-b border-forest-mid/30">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-display text-xl text-bone tracking-tight">Nanan's Eco Tours</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#tours" class="text-sm text-bone-muted hover:text-gold transition-colors">Tours</a>
+                <a href="#heritage" class="text-sm text-bone-muted hover:text-gold transition-colors">Heritage</a>
+                <a href="#gallery" class="text-sm text-bone-muted hover:text-gold transition-colors">Gallery</a>
+                <a href="#contact" class="text-sm text-bone-muted hover:text-gold transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="bg-gold text-forest-base px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-gold-light transition-colors">Book A Tour</a>
+        </div>
+    </nav>
+
+    <!-- 2. Hero -->
+    <section class="relative min-h-[100dvh] flex items-end pb-16 md:pb-24 hero-bg">
+        <div class="absolute inset-0 bg-gradient-to-t from-forest-base via-forest-base/60 to-transparent"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-2xl">
+                <span class="inline-block text-gold text-xs font-semibold tracking-[0.2em] uppercase mb-4">Caroni Bird Sanctuary, Trinidad</span>
+                <h1 class="font-display text-4xl md:text-6xl lg:text-7xl text-bone leading-tight mb-6">
+                    The Original Scarlet<br>Ibis Experience
+                </h1>
+                <p class="text-bone-muted text-base md:text-lg leading-relaxed max-w-lg mb-8">
+                    Three generations guiding visitors through Trinidad's most famous wetland. See thousands of Scarlet Ibis return to roost at golden hour. A National Treasure since 1930.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-gold text-forest-base px-8 py-3.5 rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors inline-block">Book Your Tour</a>
+                    <a href="#heritage" class="border border-bone/30 text-bone px-8 py-3.5 rounded-lg font-medium text-sm hover:bg-bone/5 transition-colors inline-block">Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Primary Product Section (Asymmetric Split) -->
+    <section id="tours" class="py-20 md:py-32 bg-forest-base">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+                <div class="reveal">
+                    <img src="https://www.nananecotours.com/wp-content/uploads/2022/10/Group-trip.png" alt="Group boat tour in Caroni Swamp" class="w-full rounded-lg shadow-2xl shadow-black/40">
+                </div>
+                <div class="reveal">
+                    <span class="text-gold text-xs font-semibold tracking-[0.2em] uppercase block mb-4">Our Tours</span>
+                    <h2 class="font-display text-3xl md:text-4xl text-bone leading-tight mb-6">Guided by the Family That Created the Sanctuary</h2>
+                    <p class="text-bone-muted leading-relaxed mb-8">
+                        Simon Oudit Nanan began taking visitors into the Caroni Swamp in the early 1930s. Today, his descendants continue the tradition, sharing intimate knowledge of the wetland's ecosystem, its birds, and its history. Every tour is led by a Nanan family member or their trained guides.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span class="text-gold font-display text-2xl leading-none mt-0.5">01</span>
+                            <div>
+                                <h3 class="text-bone font-medium mb-1">Signature Boat Tour</h3>
+                            <p class="text-bone-dim text-sm leading-relaxed">A guided journey through mangrove channels at the best hours for wildlife viewing. Binoculars recommended.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-gold font-display text-2xl leading-none mt-0.5">02</span>
+                            <div>
+                                <h3 class="text-bone font-medium mb-1">Specialised Birdwatching</h3>
+                                <p class="text-bone-dim text-sm leading-relaxed">Focus on the Scarlet Ibis, herons, kingfishers, and the 200+ species that call the swamp home.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-gold font-display text-2xl leading-none mt-0.5">03</span>
+                            <div>
+                                <h3 class="text-bone font-medium mb-1">Sunset Dinner Tours</h3>
+                                <p class="text-bone-dim text-sm leading-relaxed">Watch thousands of Scarlet Ibis return to roost against a Caribbean sunset, followed by local cuisine on the water.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Secondary Section (Reversed Split - Heritage) -->
+    <section id="heritage" class="py-20 md:py-32 bg-forest-light">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+                <div class="order-2 md:order-1 reveal">
+                    <span class="text-gold text-xs font-semibold tracking-[0.2em] uppercase block mb-4">A Living Legacy</span>
+                    <h2 class="font-display text-3xl md:text-4xl text-bone leading-tight mb-6">From Hunter to Guardian: The Nanan Story</h2>
+                    <p class="text-bone-muted leading-relaxed mb-4">
+                        Simon Oudit Nanan lived in Cunupia, close to the Caroni Swamp. He farmed part-time and worked the sugar cane plantation, but he also hunted and fished in the swamp. In the early 1930s, he began taking British aristocrats and French Creole families on tours into the mangroves.
+                    </p>
+                    <p class="text-bone-muted leading-relaxed mb-4">
+                        Simon and his son Winston grew concerned about the Scarlet Ibis. In 1948, they collected over 200 signatures and petitioned the Conservator of Forests. The Caroni Bird Sanctuary was created, and the Scarlet Ibis gained protection. When Trinidad and Tobago became independent in 1962, the ibis was named the national bird and given total protection.
+                    </p>
+                    <p class="text-bone-muted leading-relaxed mb-8">
+                        Under Winston Nanan's stewardship, the Caroni Swamp became a premier tourist attraction, known throughout the world. Today, the Nanan family continues to share this sanctuary with visitors from every continent.
+                    </p>
+                    <div class="flex items-center gap-4 border-t border-forest-mid/40 pt-6">
+                        <div class="text-center">
+                            <p class="font-display text-3xl text-gold">90+</p>
+                            <p class="text-bone-dim text-xs mt-1">Years Guiding</p>
+                        </div>
+                        <div class="w-px h-10 bg-forest-mid/40"></div>
+                        <div class="text-center">
+                            <p class="font-display text-3xl text-gold">3</p>
+                            <p class="text-bone-dim text-xs mt-1">Generations</p>
+                        </div>
+                        <div class="w-px h-10 bg-forest-mid/40"></div>
+                        <div class="text-center">
+                            <p class="font-display text-3xl text-gold">1948</p>
+                            <p class="text-bone-dim text-xs mt-1">Sanctuary Founded</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 reveal">
+                    <img src="https://www.nananecotours.com/wp-content/uploads/2022/10/Nanan.png" alt="Nanan family heritage - Caroni Bird Sanctuary founders" class="w-full rounded-lg shadow-2xl shadow-black/40">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Full-width Editorial / Featured Tours -->
+    <section class="relative py-24 md:py-40 split-bg">
+        <div class="absolute inset-0 bg-gradient-to-r from-forest-base via-forest-base/80 to-transparent"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl">
+                <span class="text-gold text-xs font-semibold tracking-[0.2em] uppercase block mb-4 reveal">More Than Birding</span>
+                <h2 class="font-display text-3xl md:text-5xl text-bone leading-tight mb-8 reveal">Kayaking, Fishing, Hiking & Cultural Tours</h2>
+                <p class="text-bone-muted text-lg leading-relaxed mb-8 reveal">
+                    Beyond the Scarlet Ibis, the Caroni Swamp and surrounding Trinidad landscape offer kayaking through mangrove tunnels, fishing with local guides, hiking to hidden waterfalls, and cultural tours that connect you with the island's diverse heritage.
+                </p>
+                <div class="grid sm:grid-cols-2 gap-6 reveal">
+                    <div class="bg-forest-base/60 backdrop-blur-sm rounded-lg p-6 border border-forest-mid/30">
+                        <h3 class="text-bone font-medium mb-2">Kayaking & Reef Tours</h3>
+                        <p class="text-bone-dim text-sm leading-relaxed">Paddle through narrow mangrove channels and out to coral reefs for snorkeling.</p>
+                    </div>
+                    <div class="bg-forest-base/60 backdrop-blur-sm rounded-lg p-6 border border-forest-mid/30">
+                        <h3 class="text-bone font-medium mb-2">Historic & Cultural Tours</h3>
+                        <p class="text-bone-dim text-sm leading-relaxed">Explore the plantation heritage, indentured labour history, and Indo-Trinidadian culture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Gallery Grid -->
+    <section id="gallery" class="py-20 md:py-32 bg-forest-base">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12 reveal">
+                <span class="text-gold text-xs font-semibold tracking-[0.2em] uppercase block mb-4">Gallery</span>
+                <h2 class="font-display text-3xl md:text-4xl text-bone leading-tight">Moments from the Swamp</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="https://www.nananecotours.com/wp-content/uploads/2022/10/caroni1.png" alt="Caroni Swamp wildlife and Scarlet Ibis" class="gallery-img rounded-lg w-full">
+                <img src="https://www.nananecotours.com/wp-content/uploads/2022/10/caroni3.png" alt="Bird watching in Trinidad's Caroni Swamp" class="gallery-img rounded-lg w-full">
+                <img src="https://www.nananecotours.com/wp-content/uploads/2022/10/caroni4.png" alt="Caroni Bird Sanctuary mangrove tour" class="gallery-img rounded-lg w-full md:row-span-2">
+                <img src="https://www.nananecotours.com/wp-content/uploads/2022/10/caroni6.png" alt="Scarlet Ibis in Caroni Swamp at sunset" class="gallery-img rounded-lg w-full">
+                <img src="https://www.nananecotours.com/wp-content/uploads/2022/10/caroni5.png" alt="Guided boat tour through Trinidad wetland" class="gallery-img rounded-lg w-full">
+                <img src="https://www.nananecotours.com/wp-content/uploads/2022/10/Nanan.png" alt="Nanan family tour guides at Caroni Bird Sanctuary" class="gallery-img rounded-lg w-full col-span-2 md:col-span-1">
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Testimonials / Credibility -->
+    <section class="py-20 md:py-32 bg-forest-light">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <div class="reveal">
+                    <p class="font-display text-7xl text-gold/20 leading-none mb-4">"</p>
+                    <p class="text-bone-muted leading-relaxed italic mb-6">
+                        An incredible experience. Seeing thousands of Scarlet Ibis fill the sky at sunset was the highlight of our trip to Trinidad.
+                    </p>
+                    <p class="text-bone text-sm font-medium">Guardian UK Featured</p>
+                </div>
+                <div class="reveal">
+                    <p class="font-display text-7xl text-gold/20 leading-none mb-4">"</p>
+                    <p class="text-bone-muted leading-relaxed italic mb-6">
+                        Winston Nanan's passion for the swamp and its birds is infectious. You leave with a deep appreciation for this fragile ecosystem.
+                    </p>
+                    <p class="text-bone text-sm font-medium">National Geographic Traveler</p>
+                </div>
+                <div class="reveal">
+                    <p class="font-display text-7xl text-gold/20 leading-none mb-4">"</p>
+                    <p class="text-bone-muted leading-relaxed italic mb-6">
+                        The Nanan family aren't just guides. They are the stewards of this sanctuary, and it shows in every detail of the tour.
+                    </p>
+                    <p class="text-bone text-sm font-medium">Birding World Magazine</p>
+                </div>
+            </div>
+            <div class="border-t border-forest-mid/40 pt-12">
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+                    <div class="text-center reveal">
+                        <p class="font-display text-4xl text-gold">RAMSAR</p>
+                        <p class="text-bone-dim text-xs mt-1">Wetland of International Importance</p>
+                    </div>
+                    <div class="text-center reveal">
+                        <p class="font-display text-4xl text-gold">5.0</p>
+                        <p class="text-bone-dim text-xs mt-1">Average Rating</p>
+                    </div>
+                    <div class="text-center reveal">
+                        <p class="font-display text-4xl text-gold">200+</p>
+                        <p class="text-bone-dim text-xs mt-1">Bird Species</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CTA Strip -->
+    <section id="contact" class="py-16 md:py-24 bg-gold">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-display text-3xl md:text-5xl text-forest-base leading-tight mb-6">Experience the Caroni Swamp</h2>
+            <p class="text-forest-base/80 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+                Tours run daily at the optimal hours for wildlife viewing. Advance booking recommended, especially during peak migration months.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+                <a href="tel:8686811671" class="bg-forest-base text-bone px-8 py-4 rounded-lg font-semibold text-sm hover:bg-forest-light transition-colors inline-block">Call/WhatsApp +868-681-1671</a>
+                <a href="tel:8686818274" class="bg-forest-base/10 text-forest-base px-8 py-4 rounded-lg font-semibold text-sm hover:bg-forest-base/20 transition-colors inline-block">+868-681-8274</a>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-forest-base/80">
+                <a href="mailto:caronibirdsanctuarytours@gmail.com" class="flex items-center gap-2 hover:text-forest-base transition-colors">
+                    <span>caronibirdsanctuarytours@gmail.com</span>
+                </a>
+                <a href="mailto:nananbirdsanctuarytours@yahoo.com" class="flex items-center gap-2 hover:text-forest-base transition-colors">
+                    <span>nananbirdsanctuarytours@yahoo.com</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer class="py-16 bg-forest-base border-t border-forest-mid/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <h3 class="font-display text-2xl text-bone mb-4">Nanan's Eco Tours</h3>
+                    <p class="text-bone-dim text-sm leading-relaxed max-w-md">
+                        Three generations of guiding visitors through the Caroni Bird Sanctuary. Founded by Simon Oudit Nanan in the 1930s, continued by Winston Nanan, and carried forward by the family today.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-bone font-medium text-sm uppercase tracking-wider mb-4">Tours</h4>
+                    <ul class="space-y-2 text-sm text-bone-dim">
+                        <li><a href="#" class="hover:text-gold transition-colors">Bird Watching</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Kayaking</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Sunset Dinner</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Fishing</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Hiking</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Cultural Tours</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-bone font-medium text-sm uppercase tracking-wider mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-bone-dim">
+                        <li>Call/WhatsApp: +868-681-1671</li>
+                        <li>Call/WhatsApp: +868-681-8274</li>
+                        <li><a href="mailto:caronibirdsanctuarytours@gmail.com" class="hover:text-gold transition-colors">caronibirdsanctuarytours@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-forest-mid/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-bone-dim text-xs"> 2024 Nanan's Eco Tours. Caroni Bird Sanctuary, Trinidad.</p>
+                <p class="text-bone-dim text-xs">A RAMSAR Wetland of International Importance</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // IntersectionObserver for reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
