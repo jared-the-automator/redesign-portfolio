@@ -145,3 +145,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Wilson Custom Knives](https://jared-the-automator.github.io/redesign-portfolio/wilsoncustomknives.com/) | Custom survival knives | Oregon, USA |
 | [Nanan's Eco Tours](https://jared-the-automator.github.io/redesign-portfolio/nananecotours.com/) | Bird watching & eco tours | Caroni Swamp, Trinidad |
 | [Powder River Veterinary Hospital & Supply](https://jared-the-automator.github.io/redesign-portfolio/prvhs.com/) | Veterinary hospital (equine & small/large animal) | Kaycee & Sheridan, WY |
+| [Bigelow Oil & Energy](https://jared-the-automator.github.io/redesign-portfolio/bigelowenergy.com/) | Heating oil delivery & HVAC | Newton, MA |
