@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Health Clinic | Trusted Veterinary Care in Bourne, MA</title>
+  <meta name="description" content="Animal Health Clinic is a locally owned veterinary practice on Cape Cod offering routine wellness, dental care, and digital diagnostics for dogs and cats.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #2D2A26;
+      background-color: #F5F1E8;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'DM Serif Display', serif;
+      line-height: 1.15;
+    }
+    .accent-text {
+      color: #6B7C5E;
+    }
+    .accent-bg {
+      background-color: #6B7C5E;
+    }
+    .accent-bg:hover {
+      background-color: #7D8F6E;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(1.5rem);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm px-6 md:px-12 lg:px-24 py-4 flex items-center justify-between">
+    <span class="text-white text-lg font-semibold tracking-wide">Animal Health Clinic</span>
+    <div class="hidden md:flex gap-8">
+      <a href="#services" class="text-white text-sm font-medium hover:text-[#6B7C5E] transition">Services</a>
+      <a href="#about" class="text-white text-sm font-medium hover:text-[#6B7C5E] transition">About</a>
+      <a href="#contact" class="text-white text-sm font-medium hover:text-[#6B7C5E] transition">Contact</a>
+    </div>
+    <a href="mailto:contactus.ahc@gmail.com" class="accent-bg text-white text-sm font-semibold px-5 py-2 rounded-xl transition">Email us</a>
+  </nav>
+
+  <section class="relative min-h-screen flex items-end pb-16 md:pb-24 px-6 md:px-12 lg:px-24">
+    <div class="absolute inset-0 z-0">
+      <img src="https://animalhealthclinicma.com/wp-content/uploads/2023/04/AHC-About-Us-1.jpg" class="w-full h-full object-cover" alt="Animal Health Clinic building exterior">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-2xl text-white reveal">
+      <span class="text-xs font-semibold tracking-[0.2em] uppercase opacity-80 mb-4 block">Bourne, MA</span>
+      <h1 class="text-4xl md:text-6xl mb-6">Trusted care for your family pets.</h1>
+      <p class="text-lg md:text-xl opacity-90 mb-8 max-w-lg">Full-service veterinary clinic serving Cape Cod with compassion and expertise.</p>
+      <a href="mailto:contactus.ahc@gmail.com" class="accent-bg inline-block px-8 py-4 rounded-xl text-white font-semibold text-lg transition">Email us</a>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 px-6 md:px-12 lg:px-24 bg-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2 reveal">
+        <h2 class="text-3xl md:text-4xl mb-10">Comprehensive care from diagnostics to recovery.</h2>
+        <div class="space-y-10">
+          <div class="flex gap-5">
+            <span class="text-5xl font-bold accent-text opacity-20 leading-none font-sans">01</span>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Routine Wellness</h3>
+              <p class="text-gray-600 leading-relaxed">Wellness exams, vaccinations, and preventive care plans tailored for each patient.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="text-5xl font-bold accent-text opacity-20 leading-none font-sans">02</span>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Dental Care</h3>
+              <p class="text-gray-600 leading-relaxed">Comprehensive dental exams and cleanings to keep pets healthy and comfortable.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="text-5xl font-bold accent-text opacity-20 leading-none font-sans">03</span>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Digital Diagnostics</h3>
+              <p class="text-gray-600 leading-relaxed">In-house laboratory and digital X-ray for fast, accurate results when minutes matter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2 reveal">
+        <img src="https://animalhealthclinicma.com/wp-content/uploads/2023/03/veterinarian-cat-.jpg" class="rounded-xl shadow-2xl w-full object-cover aspect-[4/3]" alt="Veterinarian caring for a cat at Animal Health Clinic">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 px-6 md:px-12 lg:px-24 bg-[#F5F1E8]">
+    <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+      <div class="md:w-1/2 reveal">
+        <img src="https://animalhealthclinicma.com/wp-content/uploads/2023/04/AHC-About-Us-1.jpg" class="rounded-xl shadow-2xl w-full object-cover aspect-[4/3]" alt="Animal Health Clinic team and facilities">
+      </div>
+      <div class="md:w-1/2 reveal">
+        <h2 class="text-3xl md:text-4xl mb-6">A partner in your pet's long-term health.</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">Animal Health Clinic is a locally owned veterinary practice on Cape Cod. We focus on preventive care that catches small issues before they become serious problems.</p>
+        <p class="text-gray-700 mb-8 leading-relaxed">From the first puppy visit to senior wellness plans, our team is with you and your pet every step of the way.</p>
+        <a href="#services" class="accent-text font-semibold inline-flex items-center gap-2 hover:underline">Explore our services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-6 md:px-12 lg:px-24 bg-white">
+    <div class="max-w-7xl mx-auto reveal">
+      <h2 class="text-3xl md:text-4xl mb-12 text-center">Modern facilities for every stage of care.</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-xl overflow-hidden aspect-square bg-[#F5F1E8] p-6 flex items-center justify-center">
+          <img src="https://animalhealthclinicma.com/wp-content/uploads/2023/03/routine-care-and-surgeries-icon.png" class="w-full h-full object-contain" alt="Routine care and surgery icon">
+        </div>
+        <div class="rounded-xl overflow-hidden aspect-square bg-[#F5F1E8] p-6 flex items-center justify-center">
+          <img src="https://animalhealthclinicma.com/wp-content/uploads/2023/03/Dentistry.png" class="w-full h-full object-contain" alt="Dental care services icon">
+        </div>
+        <div class="rounded-xl overflow-hidden aspect-square bg-[#F5F1E8] p-6 flex items-center justify-center">
+          <img src="https://animalhealthclinicma.com/wp-content/uploads/2023/03/Digital-Xray.png" class="w-full h-full object-contain" alt="Digital X-ray technology icon">
+        </div>
+        <div class="rounded-xl overflow-hidden aspect-square bg-[#F5F1E8] p-6 flex items-center justify-center">
+          <img src="https://animalhealthclinicma.com/wp-content/uploads/2023/03/in-house-lab.png" class="w-full h-full object-contain" alt="In-house laboratory icon">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#F5F1E8]">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center reveal">
+      <div>
+        <p class="text-4xl font-bold accent-text mb-2">Full-Service</p>
+        <p class="text-gray-600">Comprehensive veterinary care</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold accent-text mb-2">Digital</p>
+        <p class="text-gray-600">In-house diagnostics and X-ray</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold accent-text mb-2">Local</p>
+        <p class="text-gray-600">Cape Cod owned and operated</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 px-6 md:px-12 lg:px-24 accent-bg text-white text-center">
+    <h2 class="text-3xl md:text-4xl mb-6">Ready to schedule a visit?</h2>
+    <p class="text-lg md:text-xl opacity-90 mb-8 max-w-2xl mx-auto">New patients are always welcome. Call or email us to book your pet's next appointment.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="mailto:contactus.ahc@gmail.com" class="bg-white text-[#6B7C5E] px-8 py-4 rounded-xl font-semibold text-lg inline-block transition hover:bg-gray-100">Email us</a>
+      <a href="tel:508-759-5810" class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg inline-block transition hover:bg-white/10">Call 508-759-5810</a>
+    </div>
+  </section>
+
+  <footer class="py-16 px-6 md:px-12 lg:px-24 bg-[#2D2A26] text-[#F5F1E8]">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Animal Health Clinic</h3>
+        <p class="text-gray-400">82 Trowbridge Rd<br>Buzzards Bay, MA 02532</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold tracking-wider uppercase mb-4">Navigate</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#" class="hover:text-white transition">Home</a></li>
+          <li><a href="#services" class="hover:text-white transition">Services</a></li>
+          <li><a href="#about" class="hover:text-white transition">About</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold tracking-wider uppercase mb-4">Services</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#" class="hover:text-white transition">Wellness</a></li>
+          <li><a href="#" class="hover:text-white transition">Dentistry</a></li>
+          <li><a href="#" class="hover:text-white transition">Diagnostics</a></li>
+          <li><a href="#" class="hover:text-white transition">Surgery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold tracking-wider uppercase mb-4">Contact</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="mailto:contactus.ahc@gmail.com" class="hover:text-white transition">contactus.ahc@gmail.com</a></li>
+          <li><a href="tel:508-759-5810" class="hover:text-white transition">508-759-5810</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+      &copy; 2026 Animal Health Clinic, Bourne, MA. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
