@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maiden Skis | Custom Skis and Sit-Skis in Jackson Hole</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Cabinet Grotesk', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: '#1A1A1A',
+            secondary: '#666666',
+            accent: '#C45B2B',
+            'accent-hover': '#A3481F',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .sharp { border-radius: 2px; }
+    .no-emdash { }
+  </style>
+</head>
+<body class="bg-[#F5F5F0] text-primary antialiased">
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#F5F5F0]/90 backdrop-blur-sm border-b border-black/5">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-xl font-extrabold tracking-tight text-primary">Maiden Skis</a>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-secondary">
+        <a href="#custom-skis" class="hover:text-primary transition-colors">Custom Skis</a>
+        <a href="#sit-skis" class="hover:text-primary transition-colors">Sit-Skis</a>
+        <a href="#about" class="hover:text-primary transition-colors">About</a>
+        <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="bg-accent text-white px-5 py-2 text-sm font-semibold sharp hover:bg-accent-hover transition-colors">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 md:pb-24 pt-32 px-6">
+    <div class="absolute inset-0 z-0">
+      <img src="https://maidenskis.com/wp-content/uploads/Maiden_Skis_Jackson_Hole_Landscape.jpg" alt="Jackson Hole mountain landscape" class="w-full h-full object-cover sharp" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto w-full">
+      <div class="max-w-2xl">
+        <p class="text-white/80 text-sm font-medium tracking-widest uppercase mb-4">Jackson Hole, Wyoming</p>
+        <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+          Custom skis built for the mountain
+        </h1>
+        <p class="text-white/90 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
+          Handcrafted skis and sit-skis designed around your style. Shaped by hand in Jackson Hole.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#custom-skis" class="bg-accent text-white px-8 py-3 text-sm font-semibold sharp hover:bg-accent-hover transition-colors">Explore Custom Skis</a>
+          <a href="#sit-skis" class="bg-white/10 text-white backdrop-blur-sm px-8 py-3 text-sm font-semibold sharp hover:bg-white/20 transition-colors border border-white/20">View Sit-Skis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product -->
+  <section class="py-20 md:py-28 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <img src="https://maidenskis.com/wp-content/uploads/Maiden-Skis-for-Sisters.jpg" alt="Custom Maiden Skis" class="w-full h-[500px] object-cover sharp" />
+      </div>
+      <div class="reveal">
+        <p class="text-sm font-semibold tracking-widest uppercase text-accent mb-4">Custom Skis</p>
+        <h2 class="font-display text-3xl md:text-4xl font-extrabold text-primary leading-tight mb-6">
+          Built around how you ski
+        </h2>
+        <p class="text-secondary leading-relaxed mb-10">
+          Every pair of Maiden Skis is designed to match your style, your terrain, and your personality. From powder boards to groomer carvers, we shape each ski by hand in our Jackson Hole workshop.
+        </p>
+        <div class="space-y-8">
+          <div class="flex gap-4">
+            <span class="font-display text-3xl font-extrabold text-accent shrink-0">01</span>
+            <div>
+              <h3 class="font-semibold text-primary mb-1">Designed for your skiing style</h3>
+              <p class="text-secondary text-sm">We start by understanding where and how you ski, then design a profile that matches.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display text-3xl font-extrabold text-accent shrink-0">02</span>
+            <div>
+              <h3 class="font-semibold text-primary mb-1">Handcrafted in Jackson Hole</h3>
+              <p class="text-secondary text-sm">Every ski is shaped, pressed, and finished by hand in our Wyoming workshop.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display text-3xl font-extrabold text-accent shrink-0">03</span>
+            <div>
+              <h3 class="font-semibold text-primary mb-1">Graphics that tell your story</h3>
+              <p class="text-secondary text-sm">Custom topsheet art and graphics make each ski a reflection of its rider.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: Process (reversed split) -->
+  <section class="py-20 md:py-28 px-6 bg-[#EAE9E4]">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal order-2 md:order-1">
+        <p class="text-sm font-semibold tracking-widest uppercase text-accent mb-4">The Process</p>
+        <h2 class="font-display text-3xl md:text-4xl font-extrabold text-primary leading-tight mb-6">
+          From core to mountain in ten steps
+        </h2>
+        <p class="text-secondary leading-relaxed mb-8">
+          Founder Kelvin Wu designs and builds each ski using a ten-step process that combines traditional craftsmanship with modern materials. We lay each layer by hand, shape every edge to spec, and finish every base with exacting care.
+        </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="border border-black/10 p-4 sharp bg-[#F5F5F0]">
+            <p class="font-display text-2xl font-extrabold text-accent">10</p>
+            <p class="text-sm text-secondary">Steps in our build</p>
+          </div>
+          <div class="border border-black/10 p-4 sharp bg-[#F5F5F0]">
+            <p class="font-display text-2xl font-extrabold text-accent">JH, WY</p>
+            <p class="text-sm text-secondary">Workshop location</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal order-1 md:order-2">
+        <img src="https://maidenskis.com/wp-content/uploads/Maiden-Skis-Process-7-Layup.jpg" alt="Ski layup process in workshop" class="w-full h-[500px] object-cover sharp" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-20 md:py-28 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="reveal mb-12">
+        <p class="text-sm font-semibold tracking-widest uppercase text-accent mb-4">Gallery</p>
+        <h2 class="font-display text-3xl md:text-4xl font-extrabold text-primary leading-tight">
+          Every ski has a story
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="reveal">
+          <img src="https://maidenskis.com/wp-content/uploads/Maiden-Skis-Tear-Bear-Custom-Ski-Alaska.jpg" alt="Tear Bear custom ski on snow" class="w-full h-64 md:h-80 object-cover sharp" />
+        </div>
+        <div class="reveal md:col-span-2">
+          <img src="https://maidenskis.com/wp-content/uploads/Maiden-Skis-Sit-Ski-Teton-Adaptive-Sports-e1510085501524.jpg" alt="Teton Adaptive Sports sit-ski" class="w-full h-64 md:h-80 object-cover sharp" />
+        </div>
+        <div class="reveal md:col-span-2">
+          <img src="https://maidenskis.com/wp-content/uploads/Maiden-Skis-Process-3-Material-Selection.jpg" alt="Material selection for custom skis" class="w-full h-64 md:h-80 object-cover sharp" />
+        </div>
+        <div class="reveal">
+          <img src="https://maidenskis.com/wp-content/uploads/Kelvin_Wu_Maiden_Skis_Founder.jpg" alt="Kelvin Wu, Maiden Skis Founder" class="w-full h-64 md:h-80 object-cover sharp" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility --Icons */
+  <section class="py-20 md:py-28 px-6 bg-[#EAE9E4]">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <p class="font-display text-2xl md:text-3xl font-extrabold text-primary leading-tight mb-8">
+        "Each pair of custom skis and sit-skis that Maiden Skis creates fully reflects the preferences and personality of their riders."
+      </p>
+      <p class="text-secondary mb-2">Kelvin Wu, Founder</p>
+      <p class="text-sm text-secondary">Jackson Hole, Wyoming</p>
+    </div>
+    <div class="max-w-7xl mx-auto mt-16 grid md:grid-cols-3 gap-8 text-center">
+      <div class="reveal">
+        <p class="font-display text-4xl font-extrabold text-accent mb-2">Custom</p>
+        <p class="text-secondary text-sm">Every ski designed to your spec</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display text-4xl font-extrabold text-accent mb-2">Handmade</p>
+        <p class="text-secondary text-sm">Built start to finish in our workshop</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display text-4xl font-extrabold text-accent mb-2">Adaptive</p>
+        <p class="text-secondary text-sm">Sit-skis designed for every rider</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-20 px-6 bg-primary text-white">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <h2 class="font-display text-3xl md:text-4xl font-extrabold mb-4">Start your Maiden voyage</h2>
+      <p class="text-white/80 mb-8">Call or email to start a conversation about your next pair of custom skis.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+13072641640" class="bg-accent text-white px-8 py-3 text-sm font-semibold sharp hover:bg-accent-hover transition-colors">Call (307) 264-1640</a>
+        <a href="mailto:shop@maidenskis.com" class="bg-white/10 text-white backdrop-blur-sm px-8 py-3 text-sm font-semibold sharp hover:bg-white/20 transition-colors border border-white/20">Email shop@maidenskis.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 px-6 bg-[#F5F5F0] border-t border-black/5">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-display text-lg font-extrabold mb-4">Maiden Skis</h3>
+        <p class="text-secondary text-sm leading-relaxed">Custom skis and sit-skis, handcrafted in Jackson Hole, Wyoming.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-primary mb-4 text-sm uppercase tracking-wider">Skis</h4>
+        <ul class="space-y-2 text-sm text-secondary">
+          <li><a href="#" class="hover:text-primary transition-colors">Custom Skis</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Sit-Skis</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Ski Graphics</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">The Process</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-primary mb-4 text-sm uppercase tracking-wider">Company</h4>
+        <ul class="space-y-2 text-sm text-secondary">
+          <li><a href="#" class="hover:text-primary transition-colors">About</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Blog</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-primary mb-4 text-sm uppercase tracking-wider">Contact</h4>
+        <ul class="space-y-2 text-sm text-secondary">
+          <li>Jackson Hole, Wyoming</li>
+          <li><a href="tel:+13072641640" class="hover:text-primary transition-colors">(307) 264-1640</a></li>
+          <li><a href="mailto:shop@maidenskis.com" class="hover:text-primary transition-colors">shop@maidenskis.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-black/5 text-center text-sm text-secondary">
+      Our prototype demonstration. Original site: maidenskis.com
+    </div>
+  </footer>
+
+  <!-- Intersection Observer for scroll reveals -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
