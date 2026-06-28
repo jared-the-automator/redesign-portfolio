@@ -150,3 +150,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Animal Health Clinic](https://jared-the-automator.github.io/redesign-portfolio/animalhealthclinicma.com/) | Small animal veterinary care | Bourne, MA |
 | [Harperrig Fishery](https://jared-the-automator.github.io/redesign-portfolio/harperrig.com/) | Brown trout fly fishing | West Lothian, Scotland |
 | [Maiden Skis](https://jared-the-automator.github.io/redesign-portfolio/maidenskis.com/) | Custom skis and sit-skis | Jackson Hole, WY |
+| [Deershorn Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/deershorntaxidermy.com/) | Taxidermy, camo dipping & hide rugs | Lancaster, MA |
