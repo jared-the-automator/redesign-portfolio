@@ -153,3 +153,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Deershorn Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/deershorntaxidermy.com/) | Taxidermy, camo dipping & hide rugs | Lancaster, MA |
 
 | [S & D Oil Company Inc](https://jared-the-automator.github.io/redesign-portfolio/sdoilcoinc.com/) | Heating oil delivery & oil burner service | Woburn, MA |
+
+| [Howell Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/howellanimal.com/) | Mixed animal veterinary clinic | Howell, MI |

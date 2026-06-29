@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Howell Animal Hospital — Mixed Animal Veterinary Care in Howell, MI</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<style type="text/tailwindcss">
+@layer base {
+  body { font-family: 'Open Sans', sans-serif; background:#F7F9F5; color:#1A1A1A; }
+  h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.02em; }
+}
+@layer components {
+  .btn-primary { background:#1B5E3C; color:#fff; padding:0.875rem 2rem; border-radius:0.75rem; font-weight:600; display:inline-block; }
+  .btn-outline { border:2px solid #1B5E3C; color:#1B5E3C; padding:0.875rem 2rem; border-radius:0.75rem; font-weight:600; display:inline-block; }
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
+    <a href="#" class="flex items-center gap-3">
+      <img src="https://howellanimal.com/wp-content/uploads/2020/02/Howell-FinalColorLarge_4px_85t.png" alt="Howell Animal Hospital" class="h-10 w-auto">
+      <span class="font-bold text-lg text-gray-900 hidden sm:block">Howell Animal Hospital</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#services" class="text-sm font-semibold text-gray-700 hover:text-[#1B5E3C]">Services</a>
+      <a href="#team" class="text-sm font-semibold text-gray-700 hover:text-[#1B5E3C]">Team</a>
+      <a href="#about" class="text-sm font-semibold text-gray-700 hover:text-[#1B5E3C]">About</a>
+      <a href="#contact" class="btn-primary text-sm">Schedule Appointment</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative min-h-[100dvh] flex items-end pb-16 pt-32 lg:pt-0 lg:items-center">
+  <!-- Full-bleed image with strong dark overlay -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://howellanimal.com/wp-content/uploads/2020/01/howell_animal_building.png" alt="Howell Animal Hospital exterior" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl w-full mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <span class="inline-block text-white/90 text-sm font-semibold uppercase tracking-widest mb-4">Howell, Michigan</span>
+      <h1 class="text-5xl lg:text-7xl text-white leading-tight mb-6">Veterinary care for every member of your family</h1>
+      <p class="text-lg lg:text-xl text-white/90 leading-relaxed mb-10 max-w-xl">Comprehensive preventative and therapeutic medicine for your canine, feline, and equine companions. Serving Livingston County for over 30 years.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="tel:5175461340" class="btn-primary">Call (517) 546-1340</a>
+        <a href="#services" class="btn-outline border-white text-white hover:bg-white hover:text-[#1B5E3C]">Explore Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="order-2 lg:order-1">
+        <span class="text-[#1B5E3C] font-bold text-sm uppercase tracking-widest mb-2 block">What we do</span>
+        <h2 class="text-4xl lg:text-5xl mb-8">Complete care, from barnyard to backyard</h2>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <span class="text-5xl font-bold text-[#1B5E3C]/20 font-oswald leading-none">01</span>
+            <div>
+              <h3 class="text-xl mb-2">Small Animal Services</h3>
+              <p class="text-gray-600 leading-relaxed">Preventative medicine, dental care, surgery, and diagnostics for your dogs, cats, and other companion animals.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="text-5xl font-bold text-[#1B5E3C]/20 font-oswald leading-none">02</span>
+            <div>
+              <h3 class="text-xl mb-2">Equine Services</h3>
+              <p class="text-gray-600 leading-relaxed">Wellness exams, lameness evaluations, reproductive services, and equine dentistry from our veterinary team.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <span class="text-5xl font-bold text-[#1B5E3C]/20 font-oswald leading-none">03</span>
+            <div>
+              <h3 class="text-xl mb-2">Complementary Medicine</h3>
+              <p class="text-gray-600 leading-relaxed">Holistic options including acupuncture and nutritional counseling to support your animal companion's total well-being.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2 relative">
+        <img src="https://howellanimal.com/wp-content/uploads/2020/02/Howell-FinalColorLarge_4px_85t.png" alt="Howell Animal Hospital" class="rounded-xl shadow-2xl w-full">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet the Team (Reversed Split) -->
+<section id="team" class="py-24 bg-[#E8ECE6]">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="relative">
+        <img src="https://howellanimal.com/wp-content/uploads/2020/02/Renton-600x600.jpg" alt="Dr. Robert Renton" class="rounded-xl shadow-2xl w-full">
+      </div>
+      <div>
+        <h2 class="text-4xl lg:text-5xl mb-8">A team that cares like family</h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-8">Our experienced veterinarians and dedicated support staff work together to provide personalized, compassionate care for every patient who walks, hops, or trots through our doors.</p>
+        <p class="text-gray-600 leading-relaxed mb-8">With specialized expertise in both small and large animal medicine, our team brings a depth of knowledge that few practices can match. We understand that your animals are family, and we treat them that way.</p>
+        <a href="#gallery" class="btn-primary">Meet the Full Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl lg:text-5xl mb-6">Your care team</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">Dedicated professionals committed to the health and happiness of your animals.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="aspect-square rounded-xl overflow-hidden">
+        <img src="https://howellanimal.com/wp-content/uploads/2020/02/Renton-600x600.jpg" alt="Dr. Robert Renton" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="aspect-square rounded-xl overflow-hidden">
+        <img src="https://howellanimal.com/wp-content/uploads/2020/02/Lindamood-600x600.jpg" alt="Mary Lindamood" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="aspect-square rounded-xl overflow-hidden">
+        <img src="https://howellanimal.com/wp-content/uploads/2020/02/Sveller-600x600.jpg" alt="Connie Sveller" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="aspect-square rounded-xl overflow-hidden">
+        <img src="https://howellanimal.com/wp-content/uploads/2020/02/Kettel-600x600.jpg" alt="Dianne Kettel" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="aspect-square rounded-xl overflow-hidden">
+        <img src="https://howellanimal.com/wp-content/uploads/2021/03/Fisher-Profile2-600x503.png" alt="Lauren Fischer" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="aspect-square rounded-xl overflow-hidden">
+        <img src="https://howellanimal.com/wp-content/uploads/2020/02/Berglund-Fosdick-600x600.jpg" alt="Lee Ann Berglund-Fosdick" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="aspect-square rounded-xl overflow-hidden">
+        <img src="https://howellanimal.com/wp-content/uploads/2025/04/Kari-Smith-600x503.jpg" alt="Kari Smith" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="aspect-square rounded-xl overflow-hidden">
+        <img src="https://howellanimal.com/wp-content/uploads/2020/02/Kelly-1-600x600.jpg" alt="Kelly" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials / Credibility -->
+<section class="py-24 bg-[#E8ECE6]">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="text-4xl lg:text-5xl mb-8">Trusted by the Howell community</h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-8">For more than three decades, families in Howell and throughout Livingston County have trusted us with the health of their animals. Our long-standing relationships with clients reflect our commitment to providing consistent, high-quality care across every species we serve.</p>
+        <div class="flex flex-wrap gap-8 mt-8">
+          <div>
+            <div class="text-4xl font-bold text-[#1B5E3C] font-oswald">30+</div>
+            <div class="text-sm text-gray-600 mt-1">Years serving Howell</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-[#1B5E3C] font-oswald">3</div>
+            <div class="text-sm text-gray-600 mt-1">Species served</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-[#1B5E3C] font-oswald">100s</div>
+            <div class="text-sm text-gray-600 mt-1">Families served yearly</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-10 rounded-xl shadow-lg">
+        <p class="text-xl leading-relaxed text-gray-800 italic mb-6">"The team at Howell Animal Hospital has been caring for our family's horses and dogs for over 15 years. Their expertise with both large and small animals means everything to us. We would not trust anyone else."</p>
+        <p class="font-bold text-gray-900">Howell, Michigan Client</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="py-24 bg-[#1B5E3C] text-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <h2 class="text-4xl lg:text-5xl mb-6">Ready to schedule an appointment?</h2>
+    <p class="text-xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">New patients welcome. We offer regular hours Monday through Saturday, plus 24-hour emergency care for our established clients.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="tel:5175461340" class="bg-white text-[#1B5E3C] font-bold py-4 px-8 rounded-xl text-lg hover:bg-gray-100 transition-colors">Call (517) 546-1340</a>
+      <a href="mailto:howellanimalhosp@gmail.com" class="border-2 border-white text-white font-bold py-4 px-8 rounded-xl text-lg hover:bg-white/10 transition-colors">Email Us</a>
+    </div>
+    <p class="mt-8 text-white/70">215 E. Highland Rd., Howell, MI 48844</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#1A1A1A] text-white/80 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <img src="https://howellanimal.com/wp-content/uploads/2020/02/Howell-FinalColorLarge_4px_85t.png" alt="Howell Animal Hospital" class="h-10 w-auto mb-4 invert">
+        <p class="text-sm text-gray-400">Veterinary care for dogs, cats, and horses in Howell, Michigan.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-white">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-[#1B5E3C]">Small Animal</a></li>
+          <li><a href="#" class="hover:text-[#1B5E3C]">Equine</a></li>
+          <li><a href="#" class="hover:text-[#1B5E3C]">Complementary Medicine</a></li>
+          <li><a href="#" class="hover:text-[#1B5E3C]">Emergency Care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-white">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li>(517) 546-1340</li>
+          <li>howellanimalhosp@gmail.com</li>
+          <li>215 E. Highland Rd.</li>
+          <li>Howell, MI 48844</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 text-white">Hours</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Mon–Fri: 8am – 6pm</li>
+          <li>Saturday: 8am – 12pm</li>
+          <li>Sunday: Closed</li>
+          <li class="text-[#1B5E3C]">24hr Emergency for established clients</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-8 text-center text-sm text-gray-500">
+      <p>&copy; 2024 Howell Animal Hospital. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
