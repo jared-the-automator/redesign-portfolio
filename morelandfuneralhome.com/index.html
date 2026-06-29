@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moreland Funeral Home - Serving Columbus, Ohio Since 1948</title>
+  <meta name="description" content="Moreland Funeral Home has served Columbus, Ohio families with dignity and compassion since 1948. Funeral, cremation, and pre-planning services.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+    @theme {
+      --color-brand-black: #0a0908;
+      --color-brand-amber: #b45309;
+      --color-brand-cream: #faf7f2;
+      --font-display: 'Barlow Condensed', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    .font-display { font-family: 'Barlow Condensed', sans-serif; }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { black: '#0a0908', amber: '#b45309', cream: '#faf7f2' }
+          },
+          fontFamily: {
+            display: ['"Barlow Condensed"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-black text-brand-cream font-body">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-brand-black/90 backdrop-blur border-b border-stone-800">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://morelandfuneralhome.com/wp-content/uploads/2021/11/moreland-logo.png" alt="Moreland Funeral Home" class="h-10 w-auto">
+        <span class="font-display text-xl tracking-wide">MORELAND</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#hero" class="text-sm text-stone-400 hover:text-brand-cream transition-colors">Home</a>
+        <a href="#about" class="text-sm text-stone-400 hover:text-brand-cream transition-colors">About</a>
+        <a href="#services" class="text-sm text-stone-400 hover:text-brand-cream transition-colors">Services</a>
+        <a href="#obituaries" class="text-sm text-stone-400 hover:text-brand-cream transition-colors">Obituaries</a>
+        <a href="#contact" class="px-4 py-2 bg-brand-amber text-white text-sm font-medium hover:bg-amber-700 transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="min-h-[100dvh] flex items-end relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://morelandfuneralhome.com/wp-content/uploads/2026/06/Meyer-Pamela.jpg')] bg-cover bg-center opacity-30"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-black/90 via-brand-black/70 to-transparent"></div>
+    <div class="relative max-w-7xl mx-auto px-6 pb-24 pt-32">
+      <div class="max-w-2xl">
+        <span class="inline-block text-brand-amber text-xs tracking-[0.3em] uppercase font-medium mb-4">Columbus, Ohio</span>
+        <h1 class="font-display text-5xl md:text-7xl leading-[0.9] mb-6">Serving as we<br>would be served,<br>since 1948.</h1>
+        <p class="text-stone-400 text-lg mb-8 max-w-lg">Moreland Funeral Home provides compassionate care and guidance to families during their most difficult moments.</p>
+        <div class="flex gap-4">
+          <a href="#contact" class="px-6 py-3 bg-brand-amber text-white text-sm font-medium hover:bg-amber-700 transition-colors">Begin Arrangements</a>
+          <a href="#obituaries" class="px-6 py-3 border border-stone-600 text-sm text-stone-300 hover:border-stone-400 transition-colors">View Obituaries</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage -->
+  <section id="about" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="w-full md:w-1/2">
+          <img src="https://morelandfuneralhome.com/wp-content/uploads/2021/11/moreland-logo.png" alt="Moreland Funeral Home Logo" class="w-full max-w-md mx-auto opacity-80">
+        </div>
+        <div class="w-full md:w-1/2">
+          <span class="inline-block text-brand-amber text-xs tracking-[0.3em] uppercase font-medium mb-4">Our Heritage</span>
+          <h2 class="font-display text-4xl md:text-5xl leading-tight mb-6">A Columbus tradition<br>of dignified care.</h2>
+          <p class="text-stone-400 mb-8">For over 78 years, Moreland Funeral Home has served the greater Columbus area with compassion and professionalism. We believe every family deserves a service that truly honors their loved one.</p>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <span class="font-display text-3xl text-brand-amber leading-none">01</span>
+              <div>
+                <h3 class="font-medium text-brand-cream mb-1">Personalized Services</h3>
+                <p class="text-stone-400 text-sm">We work with families to create meaningful tributes that reflect each unique life lived.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="font-display text-3xl text-brand-amber leading-none">02</span>
+              <div>
+                <h3 class="font-medium text-brand-cream mb-1">Local Expertise</h3>
+                <p class="text-stone-400 text-sm">Our long history in Columbus means we understand the needs and traditions of this community.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="font-display text-3xl text-brand-amber leading-none">03</span>
+              <div>
+                <h3 class="font-medium text-brand-cream mb-1">Comprehensive Support</h3>
+                <p class="text-stone-400 text-sm">From traditional funerals to cremation and pre-planning, we ensure every detail is handled with care.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (Reversed Split) -->
+  <section id="services" class="py-24 bg-stone-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="w-full md:w-1/2 order-2 md:order-1">
+          <h2 class="font-display text-4xl md:text-5xl leading-tight mb-6">Guiding you through<br>every step of the way.</h2>
+          <p class="text-stone-400 mb-8">We offer a full range of services to meet the needs of every family we serve, always with respect and dignity.</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-4 border border-stone-800 rounded-sm">
+              <h3 class="font-medium text-brand-cream mb-1">Traditional Funerals</h3>
+              <p class="text-stone-400 text-sm">Full memorial and funeral services.</p>
+            </div>
+            <div class="p-4 border border-stone-800 rounded-sm">
+              <h3 class="font-medium text-brand-cream mb-1">Cremation</h3>
+              <p class="text-stone-400 text-sm">Flexible cremation options and urn selection.</p>
+            </div>
+            <div class="p-4 border border-stone-800 rounded-sm">
+              <h3 class="font-medium text-brand-cream mb-1">Pre-Planning</h3>
+              <p class="text-stone-400 text-sm">Plan ahead to ease the burden on your family.</p>
+            </div>
+            <div class="p-4 border border-stone-800 rounded-sm">
+              <h3 class="font-medium text-brand-cream mb-1">Grief Support</h3>
+              <p class="text-stone-400 text-sm">Resources and counseling for the bereaved.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 order-1 md:order-2">
+          <div class="grid grid-cols-2 gap-2">
+            <img src="https://morelandfuneralhome.com/wp-content/uploads/2026/06/Fonow-Mary.jpg" alt="Mary Ann Fonow" class="w-full aspect-square object-cover rounded-sm opacity-70">
+            <img src="https://morelandfuneralhome.com/wp-content/uploads/2026/06/Pangalangan-Donna.jpg" alt="Donna Pangalangan" class="w-full aspect-square object-cover rounded-sm opacity-70">
+            <img src="https://morelandfuneralhome.com/wp-content/uploads/2026/06/Frost-Robert.jpg" alt="Robert E. Frost" class="w-full aspect-square object-cover rounded-sm opacity-70">
+            <img src="https://morelandfuneralhome.com/wp-content/uploads/2026/06/Bisaro-rotated.jpg" alt="Mat Bisaro" class="w-full aspect-square object-cover rounded-sm opacity-70">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Obituaries -->
+  <section id="obituaries" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <span class="inline-block text-brand-amber text-xs tracking-[0.3em] uppercase font-medium mb-4">Recent Obituaries</span>
+      <h2 class="font-display text-4xl md:text-5xl leading-tight mb-12">Honoring lives well lived.</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="group relative overflow-hidden rounded-sm">
+          <img src="https://morelandfuneralhome.com/wp-content/uploads/2026/06/Meyer-Pamela.jpg" alt="Pamela A. Meyer" class="w-full aspect-[4/5] object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="font-display text-2xl">Pamela A. Meyer</h3>
+            <p class="text-stone-400 text-sm">June 2026</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-sm">
+          <img src="https://morelandfuneralhome.com/wp-content/uploads/2026/06/Fonow-Mary.jpg" alt="Mary Ann Fonow" class="w-full aspect-[4/5] object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="font-display text-2xl">Mary Ann Fonow</h3>
+            <p class="text-stone-400 text-sm">June 2026</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-sm">
+          <img src="https://morelandfuneralhome.com/wp-content/uploads/2026/06/Pangalangan-Donna.jpg" alt="Donna Pangalangan" class="w-full aspect-[4/5] object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="font-display text-2xl">Donna Pangalangan</h3>
+            <p class="text-stone-400 text-sm">June 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 bg-stone-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <blockquote class="font-display text-3xl md:text-4xl leading-tight mb-8">
+        &ldquo;Serving as we would be served.&rdquo;
+      </blockquote>
+      <p class="text-stone-400 mb-8 max-w-2xl mx-auto">This is not just our motto. It is the principle that has guided Moreland Funeral Home since 1948. Every family we serve receives the same care and dignity we would want for our own.</p>
+      <div class="flex flex-wrap justify-center gap-8 text-sm">
+        <div>
+          <span class="block font-display text-3xl text-brand-amber">78</span>
+          <span class="text-stone-400">Years of Service</span>
+        </div>
+        <div>
+          <span class="block font-display text-3xl text-brand-amber">1948</span>
+          <span class="text-stone-400">Founded</span>
+        </div>
+        <div>
+          <span class="block font-display text-3xl text-brand-amber">614</span>
+          <span class="text-stone-400">Serving Columbus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-16 bg-brand-amber">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl md:text-4xl text-white mb-4">We are here to help you, 24 hours a day.</h2>
+      <p class="text-amber-100 mb-8">Call us directly or reach out through our contact form to begin arrangements or learn more about our services.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="tel:+16148822197" class="px-8 py-3 bg-brand-black text-white font-medium text-sm hover:bg-stone-800 transition-colors">(614) 882-2197</a>
+        <a href="#" class="px-8 py-3 border-2 border-brand-black text-brand-black font-medium text-sm hover:bg-brand-black hover:text-white transition-colors">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-brand-black border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <img src="https://morelandfuneralhome.com/wp-content/uploads/2021/11/moreland-logo.png" alt="Moreland Funeral Home" class="h-8 w-auto mb-4 opacity-80">
+        <p class="text-stone-500 text-sm">Serving Columbus families with compassion and dignity since 1948.</p>
+      </div>
+      <div>
+        <h4 class="font-medium text-brand-cream mb-4">Navigation</h4>
+        <ul class="space-y-2 text-sm text-stone-400">
+          <li><a href="#hero" class="hover:text-brand-cream">Home</a></li>
+          <li><a href="#about" class="hover:text-brand-cream">About</a></li>
+          <li><a href="#services" class="hover:text-brand-cream">Services</a></li>
+          <li><a href="#obituaries" class="hover:text-brand-cream">Obituaries</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-medium text-brand-cream mb-4">Services</h4>
+        <ul class="space-y-2 text-sm text-stone-400">
+          <li><a href="#" class="hover:text-brand-cream">Traditional Funeral</a></li>
+          <li><a href="#" class="hover:text-brand-cream">Cremation</a></li>
+          <li><a href="#" class="hover:text-brand-cream">Pre-Planning</a></li>
+          <li><a href="#" class="hover:text-brand-cream">Grief Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-medium text-brand-cream mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm text-stone-400">
+          <li><a href="tel:+16148822197" class="hover:text-brand-cream">(614) 882-2197</a></li>
+          <li><a href="mailto:morelandfuneralhome@gmail.com" class="hover:text-brand-cream">morelandfuneralhome@gmail.com</a></li>
+          <li>Columbus, Ohio</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-8 pt-8 border-t border-stone-800 text-center text-stone-600 text-xs">
+      &copy; 2026 Moreland Funeral Home. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
