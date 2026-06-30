@@ -156,3 +156,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | [Howell Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/howellanimal.com/) | Mixed animal veterinary clinic | Howell, MI |
 | [Moreland Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/morelandfuneralhome.com/) | Family funeral home | Columbus, OH |
+| [Hartley Boats](https://jared-the-automator.github.io/redesign-portfolio/hartley-boats.com/) | Heritage boat plans & boatbuilding plans | Worldwide |
