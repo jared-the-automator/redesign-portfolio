@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scatter Creek Animal Hospital - 40+ Years of Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F7F5EE',
+            olive: '#5B7B5E',
+            espresso: '#2A1F1B',
+            sage: '#7B9E7D',
+            stone: '#E8E4DA',
+          },
+          fontFamily: {
+            display: ['"DM Serif Display"', 'serif'],
+            body: ['"Source Sans 3"', 'sans-serif'],
+          },
+          borderRadius: {
+            'soft': '8px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .hero-gradient { background: linear-gradient(90deg, rgba(42,31,27,0.82) 0%, rgba(42,31,27,0.45) 50%, rgba(42,31,27,0) 80%); }
+    ::selection { background: #5B7B5E; color: #fff; }
+  </style>
+</head>
+<body class="font-body bg-cream text-espresso antialiased overflow-x-hidden">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-stone/40">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-2">
+          <img src="https://www.scattercreekanimalclinic.com/wp-content/uploads/2021/11/Scatter_CreekLogo_180-1.png" alt="Scatter Creek Animal Hospital" class="h-10 w-auto" />
+          <div class="hidden sm:block">
+            <span class="font-display text-lg leading-tight text-espresso">Scatter Creek</span>
+            <span class="block -mt-1 text-xs uppercase tracking-widest text-olive font-semibold">Animal Hospital</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#" class="text-sm font-medium text-espresso/70 hover:text-olive transition-colors">Home</a>
+          <a href="#" class="text-sm font-medium text-espresso/70 hover:text-olive transition-colors">About Us</a>
+          <a href="#" class="text-sm font-medium text-espresso/70 hover:text-olive transition-colors">Services</a>
+          <a href="#" class="text-sm font-medium text-espresso/70 hover:text-olive transition-colors">Client Resources</a>
+          <a href="#" class="text-sm font-medium text-espresso/70 hover:text-olive transition-colors">Contact</a>
+        </div>
+        <a href="#" class="hidden sm:inline-flex items-center px-5 py-2 bg-olive text-white text-sm font-semibold rounded-soft hover:bg-espresso transition-colors">Make an Appointment</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <div class="absolute inset-0">
+      <img src="https://www.scattercreekanimalclinic.com/wp-content/uploads/2023/02/Scatter_Creek_Services_342.jpeg" alt="A happy retriever being examined by a veterinarian at Scatter Creek Animal Hospital" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 hero-gradient"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full py-32">
+      <div class="max-w-xl">
+        <p class="text-olive text-xs uppercase tracking-[0.2em] font-semibold mb-4">Serving Thurston County Since 1978</p>
+        <h1 class="font-display text-5xl lg:text-6xl text-white leading-tight mb-6">Caring for your family members since 1978</h1>
+        <p class="text-lg text-white/80 leading-relaxed mb-8">Locally owned and operated in Rochester, Washington. Full-service veterinary care for dogs and cats through medicine, surgery, and complementary therapy.</p>
+        <a href="#" class="inline-flex items-center px-6 py-3 bg-olive text-white font-semibold rounded-soft hover:bg-sage transition-colors">Make an Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal order-2 lg:order-1">
+          <img src="https://www.scattercreekanimalclinic.com/wp-content/uploads/2023/02/Scatter_Creek_Services_332.jpeg" alt="A veterinarian gently treating a cat at Scatter Creek Animal Hospital" class="w-full h-[480px] object-cover rounded-soft" />
+        </div>
+        <div class="reveal order-1 lg:order-2">
+          <h2 class="font-display text-3xl lg:text-4xl text-espresso mb-8">Comprehensive veterinary care, delivered with compassion</h2>
+          <div class="space-y-8">
+            <div class="flex gap-4">
+              <span class="font-display text-2xl text-olive mt-0.5">01</span>
+              <div>
+                <h3 class="font-semibold text-lg text-espresso mb-1">Preventive & General Medicine</h3>
+                <p class="text-espresso/70 leading-relaxed">Wellness exams, vaccinations, diagnostics, and ongoing health management to keep your pets healthy year after year.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-2xl text-olive mt-0.5">02</span>
+              <div>
+                <h3 class="font-semibold text-lg text-espresso mb-1">Surgery & Dental Care</h3>
+                <p class="text-espresso/70 leading-relaxed">From routine spay and neuter to complex soft tissue procedures, with full pre-surgical bloodwork and dedicated monitoring staff.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-2xl text-olive mt-0.5">03</span>
+              <div>
+                <h3 class="font-semibold text-lg text-espresso mb-1">Complementary Therapies</h3>
+                <p class="text-espresso/70 leading-relaxed">Cold laser therapy, chiropractic evaluations, and regenerative joint therapies including ProStride and Platelet Rich Plasma.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (Reversed Split -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <h2 class="font-display text-3xl lg:text-4xl text-espresso mb-6">A legacy of care in our community</h2>
+          <p class="text-espresso/70 leading-relaxed mb-6">Scatter Creek Animal Clinic was founded by Dr. Randy Thomas and Carol Thomas in 1978. Over the decades, the practice has evolved to meet the changing needs of Rochester, Grand Mound, and surrounding communities in southwest Washington.</p>
+          <p class="text-espresso/70 leading-relaxed mb-8">Today we see canine and feline patients, offering a full roster of general practice and preventive services. Our mission is simple: to keep your pets as healthy and pain free as possible for as long as possible.</p>
+          <div class="flex gap-6">
+            <div>
+              <p class="font-display text-4xl text-olive">47</p>
+              <p class="text-sm text-espresso/60 uppercase tracking-wider">Years in Practice</p>
+            </div>
+            <div>
+              <p class="font-display text-4xl text-olive">1978</p>
+              <p class="text-sm text-espresso/60 uppercase tracking-wider">Founded</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <img src="https://www.scattercreekanimalclinic.com/wp-content/uploads/2023/04/AdobeStock_195276899.jpeg" alt="American Staffordshire Terrier puppies sitting together in a veterinary care setting" class="w-full h-[480px] object-cover rounded-soft" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <h2 class="font-display text-3xl lg:text-4xl text-espresso mb-4">Where your pets are treated like family</h2>
+        <p class="text-espresso/60 max-w-2xl mx-auto leading-relaxed">Our team combines decades of experience with the latest in veterinary technology, all within a warm, welcoming environment designed to put both pets and owners at ease.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 reveal">
+        <div class="md:col-span-2">
+          <img src="https://www.scattercreekanimalclinic.com/wp-content/uploads/2023/02/Scatter_Creek_Services_336.jpeg" alt="Advanced heart rate monitoring equipment in use during a veterinary procedure" class="w-full h-80 object-cover rounded-soft" />
+        </div>
+        <div>
+          <img src="https://www.scattercreekanimalclinic.com/wp-content/uploads/2023/04/Scatter_Creek_Winter.jpeg" alt="Scatter Creek Animal Clinic during winter at Rochester, Washington" class="w-full h-80 object-cover rounded-soft" />
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 reveal">
+        <div class="bg-olive rounded-soft p-8 text-white flex flex-col justify-center">
+          <p class="font-display text-xl mb-2">Advanced Surgical Care</p>
+          <p class="text-white/80 text-sm leading-relaxed">Pre-surgical blood testing, dedicated monitoring staff, ECG, blood pressure, and full vital sign tracking during every procedure.</p>
+        </div>
+        <div class="bg-espresso rounded-soft p-8 text-white flex flex-col justify-center">
+          <p class="font-display text-xl mb-2">In-House Laboratory</p>
+          <p class="text-white/80 text-sm leading-relaxed">Same-day bloodwork and diagnostics so you get answers fast, not next week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <img src="https://www.scattercreekanimalclinic.com/wp-content/uploads/2021/11/Scatter_CreekLogo_180-1.png" alt="Scatter Creek Animal Hospital logo" class="w-32 h-auto mb-6 opacity-80" />
+          <p class="font-display text-2xl lg:text-3xl text-espresso leading-relaxed mb-8">"Our mission is to keep your pets as healthy and pain free as possible for as long as possible, through medicine, surgery, complementary therapy and education."</p>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-olive rounded-full flex items-center justify-center text-white font-display text-xl">S</div>
+            <div>
+              <p class="font-semibold text-espresso">The Team at Scatter Creek</p>
+              <p class="text-sm text-espresso/60">Rochester, WA</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6 reveal">
+          <div class="bg-white p-6 rounded-soft border border-stone/30 text-center">
+            <p class="font-display text-4xl text-olive mb-1">47+</p>
+            <p class="text-sm text-espresso/60 uppercase tracking-wider">Years of Service</p>
+          </div>
+          <div class="bg-white p-6 rounded-soft border border-stone/30 text-center">
+            <p class="font-display text-4xl text-olive mb-1">2</p>
+            <p class="text-sm text-espresso/60 uppercase tracking-wider">Experienced Veterinarians</p>
+          </div>
+          <div class="bg-white p-6 rounded-soft border border-stone/30 text-center">
+            <p class="font-display text-4xl text-olive mb-1">360</p>
+            <p class="text-sm text-espresso/60 uppercase tracking-wider">Area Code Served</p>
+          </div>
+          <div class="bg-white p-6 rounded-soft border border-stone/30 text-center">
+            <p class="font-display text-4xl text-olive mb-1">5+</p>
+            <p class="text-sm text-espresso/60 uppercase tracking-wider">Core Service Areas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-16 bg-olive">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center reveal">
+      <h2 class="font-display text-3xl lg:text-4xl text-white mb-4">Ready to give your pet the care they deserve?</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">Scatter Creek Animal Hospital has been a trusted partner for pet owners in Thurston County since 1978. Call or stop by today.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:3602735908" class="inline-flex items-center justify-center px-8 py-3 bg-white text-olive font-semibold rounded-soft hover:bg-cream transition-colors">Call (360) 273-5908</a>
+        <a href="#" class="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-white font-semibold rounded-soft hover:bg-white hover:text-olive transition-colors">Get Directions</a>
+      </div>
+      <p class="text-white/60 text-sm mt-6">7430 183rd Ave SW, Rochester, WA 98579</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-espresso text-white/60 py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div>
+          <img src="https://www.scattercreekanimalclinic.com/wp-content/uploads/2021/11/Scatter_CreekLogo_180-1.png" alt="Scatter Creek Animal Hospital" class="h-10 w-auto mb-4 brightness-200" />
+          <p class="text-sm leading-relaxed">Locally owned and operated in Rochester, Washington since 1978. Full-service veterinary care for dogs and cats.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition-colors">General Medicine</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Surgery</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Dental Care</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Laser Therapy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Reproductive Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Client Resources</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4 uppercase tracking-wider text-sm">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li>7430 183rd Ave SW</li>
+            <li>Rochester, WA 98579</li>
+            <li class="pt-2">(360) 273-5908</li>
+            <li>ScatterCreekAnimalClinic@gmail.com</li>
+            <li class="pt-2">Fax: (360) 273-0188</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+        <p>Scatter Creek Animal Clinic. All Rights Reserved.</p>
+        <p>Locally owned and operated since 1978.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for reveals only
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
