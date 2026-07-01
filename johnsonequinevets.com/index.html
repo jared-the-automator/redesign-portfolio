@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johnson Veterinary Clinic - Equine Veterinary Services, North Lewisburg OH</title>
+  <meta name="description" content="Johnson Veterinary Clinic provides comprehensive equine veterinary services in North Lewisburg, Ohio. Preventive care, emergency services, and equine reproduction.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Roboto Slab', 'serif'],
+            body: ['Open Sans', 'sans-serif'],
+          },
+          colors: {
+            tan: { 50: '#fbf7f0', 100: '#f5e6d3', 200: '#efd5b7' },
+            rust: { 500: '#c85a3d', 600: '#b54a2c' },
+            charcoal: { 800: '#2d2d2d', 900: '#1a1a1a' }
+          },
+          borderRadius: {
+            'xl': '12px',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-body text-charcoal-900 bg-tan-50" style="--tw-border-radius-xl: 12px;">
+
+  <!-- 1. Nav: sticky, logo left, nav links, single CTA -->
+  <nav class="sticky top-0 z-50 bg-tan-50/95 backdrop-blur-sm border-b border-tan-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://johnsonequinevets.com/wp-content/uploads/2025/11/Johnson-Veterinary-Clinic-LLC.png" alt="Johnson Veterinary Clinic" class="h-12 w-auto">
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-sm font-semibold hover:text-rust-500 transition">About</a>
+        <a href="#" class="text-sm font-semibold hover:text-rust-500 transition">Services</a>
+        <a href="#" class="text-sm font-semibold hover:text-rust-500 transition">Facilities</a>
+        <a href="#" class="text-sm font-semibold hover:text-rust-500 transition">Education</a>
+        <a href="#" class="text-sm font-semibold hover:text-rust-500 transition">Contact</a>
+      </div>
+      <a href="#cta" class="bg-rust-500 text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-rust-600 transition">The Plan</a>
+    </div>
+  </nav>
+
+  <!-- 2. Hero: min-h-[100dvh], full-bleed bg, left-aligned -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img src="https://johnsonequinevets.com/wp-content/uploads/2018/09/New-facility-2-e1544712666982-1030x773.jpg" alt="Johnson Veterinary Clinic facility in North Lewisburg, Ohio" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-charcoal-900/80 via-charcoal-900/50 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block bg-rust-500 text-white text-xs font-semibold px-3 py-1.5 rounded-xl mb-6 tracking-wider uppercase">North Lewisburg, Ohio</span>
+        <h1 class="font-display text-4xl md:text-6xl font-bold text-white leading-tight mb-6">Trusted Equine Care for Your Horse Family</h1>
+        <p class="text-lg md:text-xl text-tan-100 mb-8 leading-relaxed max-w-xl">Johnson Veterinary Clinic provides comprehensive equine veterinary services. From preventive care to emergency treatment, we treat your horses like our own.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#cta" class="bg-rust-500 text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-rust-600 transition">Get in Touch</a>
+          <a href="#plan" class="bg-white/10 text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-white/20 transition backdrop-blur-sm">Learn About The Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary product section: asymmetric split, numbered features -->
+  <section class="py-20 md:py-28 bg-tan-50">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div class="order-2 md:order-1">
+        <img src="https://johnsonequinevets.com/wp-content/uploads/2018/09/New-facility-2-e1544712666982-1030x773.jpg" alt="Johnson Veterinary Clinic facility" class="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg">
+      </div>
+      <div class="order-1 md:order-2">
+        <span class="text-rust-500 text-sm font-semibold tracking-wider uppercase mb-3 block">Our Services</span>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-charcoal-900 mb-8">Comprehensive care for every stage of your horse's life.</h2>
+        <div class="space-y-8">
+          <div class="flex gap-5">
+            <span class="font-display text-4xl font-bold text-rust-500 leading-none">01</span>
+            <div>
+              <h3 class="font-display text-xl font-bold text-charcoal-900 mb-2">Preventive Care &amp; The Plan</h3>
+              <p class="text-charcoal-700 leading-relaxed">Annual wellness exams, vaccinations, and preventive care programs designed specifically for your horses.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-4xl font-bold text-rust-500 leading-none">02</span>
+            <div>
+              <h3 class="font-display text-xl font-bold text-charcoal-900 mb-2">Emergency Services</h3>
+              <p class="text-charcoal-700 leading-relaxed">24/7 emergency care when your horse needs it most. We are here when it counts.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-4xl font-bold text-rust-500 leading-none">03</span>
+            <div>
+              <h3 class="font-display text-xl font-bold text-charcoal-900 mb-2">Equine Reproduction &amp; Foaling</h3>
+              <p class="text-charcoal-700 leading-relaxed">Expert equine reproduction services including breeding soundness exams, pregnancy checks, and foaling assistance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary section: reversed split (story/process) -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div>
+        <span class="text-rust-500 text-sm font-semibold tracking-wider uppercase mb-3 block">Our Story</span>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-charcoal-900 mb-6">From a mixed animal practice to a dedicated equine clinic.</h2>
+        <p class="text-charcoal-700 leading-relaxed mb-6">The Johnson family has been serving the North Lewisburg community and surrounding Ohio horse owners for years. What began as a mixed animal practice evolved into a focused equine veterinary clinic because we saw how much the horse community needed dedicated, knowledgeable care.</p>
+        <p class="text-charcoal-700 leading-relaxed mb-8">Today, Johnson Veterinary Clinic is a trusted partner for horse owners across Ohio. We combine decades of veterinary experience with a genuine passion for equine health.</p>
+        <a href="#" class="inline-flex items-center gap-2 bg-rust-500 text-white font-semibold px-6 py-3 rounded-xl hover:bg-rust-600 transition">Read More About Us</a>
+      </div>
+      <div>
+        <img src="https://johnsonequinevets.com/wp-content/uploads/2015/04/DSC_0007-300x242.jpg" alt="The Johnson Family at Johnson Veterinary Clinic" class="w-full h-80 md:h-96 object-cover object-top rounded-xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery / brand story: full-width editorial break -->
+  <section class="py-20 md:py-28 bg-charcoal-900 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 relative h-80 md:h-96 rounded-xl overflow-hidden">
+          <img src="https://johnsonequinevets.com/wp-content/uploads/2018/09/New-facility-2-e1544712666982-1030x773.jpg" alt="Johnson Veterinary Clinic facility in North Lewisburg" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900/80 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-8">
+            <p class="font-display text-2xl md:text-3xl font-bold leading-tight">Serving Ohio horse owners with integrity and expertise.</p>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="bg-tan-50/10 backdrop-blur-sm rounded-xl p-6 h-full flex flex-col justify-center">
+            <h3 class="font-display text-xl font-bold mb-3">The Plan 2026</h3>
+            <p class="text-tan-100 leading-relaxed mb-4">Our preventive maintenance program designed to keep your horses healthy year-round.</p>
+            <a href="#" class="text-rust-500 font-semibold hover:text-rust-600 transition">Learn More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / Credibility -->
+  <section class="py-20 md:py-28 bg-tan-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-charcoal-900 mb-12">Why horse owners trust Johnson Veterinary Clinic.</h2>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div>
+          <div class="text-5xl font-display font-bold text-rust-500 mb-3">24/7</div>
+          <p class="text-charcoal-700 font-semibold">Emergency Care Available</p>
+        </div>
+        <div>
+          <div class="text-5xl font-display font-bold text-rust-500 mb-3">OH</div>
+          <p class="text-charcoal-700 font-semibold">Serving Central Ohio</p>
+        </div>
+        <div>
+          <div class="text-5xl font-display font-bold text-rust-500 mb-3">Fam</div>
+          <p class="text-charcoal-700 font-semibold">Family Owned Practice</p>
+        </div>
+      </div>
+      <p class="text-charcoal-600 max-w-2xl mx-auto italic text-lg">"Originally a mixed animal practice, the Johnson family has dedicated itself to providing compassionate, knowledgeable equine veterinary care to horse owners across Ohio."</p>
+    </div>
+  </section>
+
+  <!-- 7. CTA strip -->
+  <section id="cta" class="py-16 md:py-20 bg-rust-500">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Ready to give your horse the best care?</h2>
+      <p class="text-tan-100 text-lg mb-8">Call 937-243-6204 or schedule a visit to learn about The Plan.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:9372436204" class="bg-white text-rust-600 font-semibold px-8 py-3.5 rounded-xl hover:bg-tan-50 transition">Call 937-243-6204</a>
+        <a href="#" class="bg-transparent border-2 border-white text-white font-semibold px-8 py-3.5 rounded-xl hover:bg-white/10 transition">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Footer: 3-4 columns -->
+  <footer class="bg-charcoal-900 text-tan-100 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <img src="https://johnsonequinevets.com/wp-content/uploads/2025/11/Johnson-Veterinary-Clinic-LLC.png" alt="Johnson Veterinary Clinic" class="h-10 w-auto mb-4">
+        <p class="text-tan-100/70 text-sm leading-relaxed">Comprehensive equine veterinary services in North Lewisburg, Ohio.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-white mb-4">Navigation</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-rust-500 transition">About</a></li>
+          <li><a href="#" class="hover:text-rust-500 transition">Services</a></li>
+          <li><a href="#" class="hover:text-rust-500 transition">Facilities</a></li>
+          <li><a href="#" class="hover:text-rust-500 transition">Education</a></li>
+          <li><a href="#" class="hover:text-rust-500 transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-white mb-4">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-rust-500 transition">Preventive Care</a></li>
+          <li><a href="#" class="hover:text-rust-500 transition">Emergency Services</a></li>
+          <li><a href="#" class="hover:text-rust-500 transition">Equine Reproduction</a></li>
+          <li><a href="#" class="hover:text-rust-500 transition">The Plan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-white mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li>4430 Corbett Rd</li>
+          <li>North Lewisburg, OH 43060</li>
+          <li><a href="tel:9372436204" class="hover:text-rust-500 transition">937-243-6204</a></li>
+          <li><a href="mailto:info@johnsonequinevets.com" class="hover:text-rust-500 transition">info@johnsonequinevets.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-charcoal-800 text-center text-sm text-tan-100/50">
+      &copy; 2024 Johnson Veterinary Clinic. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
