@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Dog Custom Rods | Hand-Built Fishing Rods Since 1997</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bone: '#F9F7F2',
+            forest: '#1A4120',
+            sand: '#E8E0D5',
+            charcoal: '#1A1A1A',
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-bone text-charcoal font-body antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-bone/95 backdrop-blur-sm border-b border-sand/50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-xl text-forest tracking-tight uppercase">Black Dog</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services" class="text-sm font-medium hover:text-forest transition">Services</a>
+        <a href="#about" class="text-sm font-medium hover:text-forest transition">Our Story</a>
+        <a href="#gallery" class="text-sm font-medium hover:text-forest transition">Gallery</a>
+        <a href="#contact" class="bg-forest text-bone px-5 py-2 text-sm font-medium hover:bg-forest/90 transition">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 md:pb-24">
+    <div class="absolute inset-0 z-0">
+      <img src="https://blackdogtackle.com/wp-content/uploads/2018/07/20180413_095710.jpg" alt="Custom rod building workshop" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block text-sand/80 text-xs font-medium tracking-[0.2em] uppercase mb-4">Otis Orchards, Washington</span>
+        <h1 class="font-display text-5xl md:text-7xl text-bone leading-[0.95] mb-6">Hand-Built Fishing Rods Since 1997</h1>
+        <p class="text-bone/80 text-base md:text-lg leading-relaxed max-w-xl mb-8">Joe and Charlene Douglas have been designing and building custom rods for serious anglers for nearly three decades. Steel, wood, bamboo, fiberglass, and graphite.</p>
+        <a href="#contact" class="inline-block bg-forest text-bone px-8 py-3 text-sm font-medium hover:bg-forest/90 transition">Start Your Build</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="services" class="py-20 md:py-28 bg-bone">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="reveal">
+          <img src="https://blackdogtackle.com/wp-content/uploads/2018/08/in2_rods-300x159.jpg" alt="Custom fishing rods in workshop" class="w-full h-[400px] md:h-[500px] object-cover rounded-sm">
+        </div>
+        <div class="reveal">
+          <span class="text-forest text-xs font-medium tracking-[0.2em] uppercase mb-3 block">What We Build</span>
+          <h2 class="font-display text-3xl md:text-4xl text-charcoal leading-tight mb-6">Rods Designed for the Water You Fish</h2>
+          <p class="text-charcoal/70 leading-relaxed mb-8">Every rod starts with a conversation. We design and build all types of fishing rods working in steel, wood, bamboo, fiberglass, and graphite. We specialize in fly rods, but regularly build spey, casting, spinning, and special purpose rods.</p>
+          <div class="space-y-5">
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-forest/30">01</span>
+              <div>
+                <h3 class="font-medium text-charcoal mb-1">Custom Rod Design</h3>
+                <p class="text-sm text-charcoal/60">Built to your specifications from blank selection to final wrap.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-forest/30">02</span>
+              <div>
+                <h3 class="font-medium text-charcoal mb-1">Pro Angler Rods</h3>
+                <p class="text-sm text-charcoal/60">Precision-built rods for tournament anglers and fishing guides.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-forest/30">03</span>
+              <div>
+                <h3 class="font-medium text-charcoal mb-1">Repair & Restoration</h3>
+                <p class="text-sm text-charcoal/60">Vintage rod restoration and repair for broken or damaged rods.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (Reversed Split) -->
+  <section id="about" class="py-20 md:py-28 bg-sand/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="order-2 md:order-1 reveal">
+          <span class="text-forest text-xs font-medium tracking-[0.2em] uppercase mb-3 block">The Makers</span>
+          <h2 class="font-display text-3xl md:text-4xl text-charcoal leading-tight mb-6">27 Years at the Bench in the Inland Northwest</h2>
+          <p class="text-charcoal/70 leading-relaxed mb-6">Joe and Charlene Douglas opened Black Dog Custom Rods in 1997, long before factory rods dominated the market. They believed then, as they do now, that a roditelier should build a rod the same way a luthier builds a guitar: by hand, with care, for a specific purpose.</p>
+          <p class="text-charcoal/70 leading-relaxed mb-8">Located in Otis Orchards, Washington, just east of Spokane, they have built rods for weekend anglers, professional tournament fishers, and commercial clients who sell private-label rods under their own brand.</p>
+          <div class="flex gap-8">
+            <div>
+              <span class="font-display text-4xl text-forest block">27+</span>
+              <span class="text-sm text-charcoal/60">Years Building</span>
+            </div>
+            <div>
+              <span class="font-display text-4xl text-forest block">5</span>
+              <span class="text-sm text-charcoal/60">Materials</span>
+            </div>
+            <div>
+              <span class="font-display text-4xl text-forest block">WA</span>
+              <span class="text-sm text-charcoal/60">Made in Spokane</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <img src="https://blackdogtackle.com/wp-content/uploads/2022/03/20200801_102533-300x169.jpg" alt="Finished custom rods display" class="w-full h-[400px] md:h-[500px] object-cover rounded-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section id="gallery" class="py-20 md:py-28 bg-charcoal text-bone">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12 reveal">
+        <span class="text-sand/60 text-xs font-medium tracking-[0.2em] uppercase mb-3 block">From the Workshop</span>
+        <h2 class="font-display text-3xl md:text-4xl leading-tight">The Details Matter When You Are Building Something to Last for Decades</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="reveal">
+          <img src="https://blackdogtackle.com/wp-content/uploads/2018/08/in2_glue-300x122.jpg" alt="Rod building glue and thread" class="w-full h-64 object-cover rounded-sm opacity-90 hover:opacity-100 transition">
+        </div>
+        <div class="reveal">
+          <img src="https://blackdogtackle.com/wp-content/uploads/2018/08/in2_pencil-300x98.jpg" alt="Rod layout and design work" class="w-full h-64 object-cover rounded-sm opacity-90 hover:opacity-100 transition">
+        </div>
+        <div class="reveal">
+          <img src="https://blackdogtackle.com/wp-content/uploads/2022/03/20201224_172441-300x169.jpg" alt="Recent custom rod builds" class="w-full h-64 object-cover rounded-sm opacity-90 hover:opacity-100 transition">
+        </div>
+      </div>
+      <div class="mt-8 max-w-2xl reveal">
+        <p class="text-bone/70 leading-relaxed">From measuring guides to wrapping cork handles, every step in our shop is done by hand. We do not keep a warehouse of prefabricated rods. What you see being built is yours, from the first turn of the lathe to the final coat of finish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-20 md:py-28 bg-bone">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12 reveal">
+        <span class="text-forest text-xs font-medium tracking-[0.2em] uppercase mb-3 block">Trusted by Anglers</span>
+        <h2 class="font-display text-3xl md:text-4xl text-charcoal leading-tight">Built for the Anglers Who Know the Difference</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-sand/30 p-8 reveal">
+          <p class="text-charcoal/80 leading-relaxed mb-6 italic">"Joe took the time to understand exactly what I needed for the rivers I fish. The rod he built me outperforms anything I have ever owned."</p>
+          <div>
+            <span class="font-medium text-charcoal block">Client, Inland Northwest</span>
+            <span class="text-sm text-charcoal/60">Custom fly rod customer</span>
+          </div>
+        </div>
+        <div class="bg-sand/30 p-8 reveal">
+          <p class="text-charcoal/80 leading-relaxed mb-6 italic">"We needed a reliable builder for our private-label brand. Joe and Charlene have been our partner for three years. The quality and consistency are why we keep coming back."</p>
+          <div>
+            <span class="font-medium text-charcoal block">Private Label Client</span>
+            <span class="text-sm text-charcoal/60">Commercial rod brand</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center gap-12 mt-12 reveal">
+        <div class="text-center">
+          <span class="font-display text-2xl text-forest">Custom Builds</span>
+        </div>
+        <div class="text-center">
+          <span class="font-display text-2xl text-forest">Private Label</span>
+        </div>
+        <div class="text-center">
+          <span class="font-display text-2xl text-forest">Repairs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-16 bg-forest text-bone">
+    <div class="max-w-7xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display text-3xl md:text-4xl mb-4">Ready for a Rod That Fits You?</h2>
+      <p class="text-bone/80 max-w-xl mx-auto mb-8">Call Joe at <a href="tel:208-699-5893" class="underline underline-offset-4 hover:text-bone/90">208-699-5893</a> or send a message through the form. We will talk through what you fish, how you fish, and what you want in a rod.</p>
+      <a href="mailto:joed2956@gmail.com" class="inline-block bg-bone text-forest px-8 py-3 text-sm font-medium hover:bg-bone/90 transition">Email Joe</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-bone/60 py-12 border-t border-bone/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <span class="font-display text-lg text-bone block mb-4">Black Dog Custom Rods</span>
+          <p class="text-sm leading-relaxed">Hand-built fishing rods from Otis Orchards, Washington. Custom design, professional builds, and vintage restoration since 1997.</p>
+        </div>
+        <div>
+          <span class="font-medium text-bone text-sm block mb-4">Services</span>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-bone transition">Custom Rod Building</a></li>
+            <li><a href="#" class="hover:text-bone transition">Pro Angler Rods</a></li>
+            <li><a href="#" class="hover:text-bone transition">Private Label</a></li>
+            <li><a href="#" class="hover:text-bone transition">Repair & Restoration</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="font-medium text-bone text-sm block mb-4">Contact</span>
+          <ul class="space-y-2 text-sm">
+            <li><a href="tel:208-699-5893" class="hover:text-bone transition">208-699-5893</a></li>
+            <li><a href="mailto:joed2956@gmail.com" class="hover:text-bone transition">joed2956@gmail.com</a></li>
+            <li>Otis Orchards, WA 99027</li>
+          </ul>
+        </div>
+        <div>
+          <span class="font-medium text-bone text-sm block mb-4">Hours</span>
+          <p class="text-sm">Monday - Friday</p>
+          <p class="text-sm">9:00 AM - 5:00 PM</p>
+          <p class="text-sm mt-2">By appointment</p>
+        </div>
+      </div>
+      <div class="border-t border-bone/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <span class="text-xs">(c) 2024 Black Dog Custom Rods. All rights reserved.</span>
+        <span class="text-xs">Built with care in the Pacific Northwest.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for reveals
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
