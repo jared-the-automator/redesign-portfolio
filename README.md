@@ -163,3 +163,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | [Arrington Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/arringtonfuneralhome.com/) | Funeral & cremation services | Birmingham, AL |
 | [Roberge Energy](https://jared-the-automator.github.io/redesign-portfolio/robergeenergy.com/) | Heating oil delivery | Maine |
+| [Waltz & Sons Propane](https://jared-the-automator.github.io/redesign-portfolio/waltzandsons.com/) | Propane delivery & service | Buxton, ME |
