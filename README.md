@@ -160,3 +160,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Johnson Veterinary Clinic](https://jared-the-automator.github.io/redesign-portfolio/johnsonequinevets.com/) | Equine veterinary services | North Lewisburg, OH |
 | [Scatter Creek Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/scattercreekanimalclinic.com/) | Small animal veterinary clinic | Rochester, WA |
 | [Propane People Inc.](https://jared-the-automator.github.io/redesign-portfolio/propanepeopleinc.com/) | Propane delivery (home, farm & commercial) | Northeast IN, OH & IL |
+
+| [Arrington Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/arringtonfuneralhome.com/) | Funeral & cremation services | Birmingham, AL |

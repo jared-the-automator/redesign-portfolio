@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrington Funeral Home - Birmingham, Alabama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+            --color-near-black: #0A0E17;
+            --color-deep-slate: #1B2838;
+            --color-steel: #5B8FA8;
+            --color-cream: #F5F5F0;
+            --color-muted-slate: #8393A7;
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+    </style>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-near-black text-white">
+
+    <!-- 1. Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-near-black/90 backdrop-blur-sm border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="font-display text-white text-lg tracking-wide">Arrington Funeral Home</a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#services" class="text-sm text-muted-slate hover:text-white transition-colors">Services</a>
+                    <a href="#about" class="text-sm text-muted-slate hover:text-white transition-colors">About</a>
+                    <a href="#gallery" class="text-sm text-muted-slate hover:text-white transition-colors">Facilities</a>
+                    <a href="#contact" class="text-sm text-muted-slate hover:text-white transition-colors">Contact</a>
+                </div>
+                <a href="tel:205-786-6288" class="hidden md:inline-flex items-center bg-steel text-near-black px-5 py-2 rounded text-sm font-medium hover:bg-white transition-colors">
+                    Call Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero -->
+    <section class="relative min-h-[100dvh] flex items-end">
+        <img
+            src="https://arringtonfuneralhome.com/wp-content/uploads/2019/07/Arrington-Chapel-1.jpg"
+            alt="Arrington Funeral Home chapel interior"
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+        <div class="absolute inset-0 bg-gradient-to-r from-near-black/80 via-near-black/60 to-transparent"></div>
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8 pb-20 pt-32">
+            <p class="text-steel text-sm tracking-[0.2em] uppercase mb-4">Birmingham, Alabama | Since 1990</p>
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl text-white leading-tight max-w-3xl mb-6">
+                Honoring Lives with Dignity and Compassion
+            </h1>
+            <p class="text-lg text-white/80 max-w-xl mb-8">
+                Professional and compassionate guidance in your time of sorrow. We believe a funeral is a time to honor the life of the deceased and celebrate the heritage of their Accessor family.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="tel:205-786-6288" class="inline-flex items-center bg-steel text-near-black px-6 py-3 rounded text-sm font-medium hover:bg-white transition-colors">
+                    Call Us: (205) 786-6288
+                </a>
+                <a href="#contact" class="inline-flex items-center border border-white/30 text-white px-6 py-3 rounded text-sm font-medium hover:bg-white/10 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Services (asymmetric split) -->
+    <section id="services" class="bg-deep-slate py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div>
+                    <img
+                        src="https://arringtonfuneralhome.com/wp-content/uploads/2019/06/facility2.jpg"
+                        alt="Arrington Funeral Home facility"
+                        class="w-full h-[500px] object-cover rounded"
+                    >
+                </div>
+                <div>
+                    <p class="text-steel text-sm tracking-[0.2em] uppercase mb-4">Our Services</p>
+                    <h2 class="font-display text-3xl md:text-4xl text-white mb-8">
+                        Comprehensive Care for Every Family
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <span class="font-display text-2xl text-steel shrink-0">01</span>
+                            <div>
+                                <h3 class="text-white font-medium mb-2">Traditional Funeral Services</h3>
+                                <p class="text-muted-slate text-sm">Complete funeral arrangements with viewing, memorial, and burial services tailored to honor your loved one.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="font-display text-2xl text-steel shrink-0">02</span>
+                            <div>
+                                <h3 class="text-white font-medium mb-2">Cremation Services</h3>
+                                <p class="text-muted-slate text-sm">Dignified cremation options with memorial services and urn selection to meet the wishes of your family.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="font-display text-2xl text-steel shrink-0">03</span>
+                            <div>
+                                <h3 class="text-white font-medium mb-2">Grief Support and Pre-Planning</h3>
+                                <p class="text-muted-slate text-sm">Ongoing grief support resources and pre-planning services to ease the burden on your family when the time comes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Story (reversed split) -->
+    <section id="about" class="bg-near-black py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="font-display text-3xl md:text-4xl text-white mb-6">
+                        A Legacy of Firsts in Birmingham
+                    </h2>
+                    <p class="text-muted-slate mb-4">
+                        In 1990, Rachel R. Arrington became the first African-American woman to build and operate a funeral home in Birmingham. What began as a long-held dream became a cornerstone of the community.
+                    </p>
+                    <p class="text-muted-slate mb-4">
+                        After earning her degree in Mortuary Science from Jefferson State Junior College, Mrs. Arrington designed and constructed a new facility on Cotton Avenue in southwest Birmingham. Her vision was clear: create a space where families feel supported, respected, and understood.
+                    </p>
+                    <p class="text-muted-slate mb-6">
+                        Today, Arrington Funeral Home continues that mission with a dedicated team of seven full-time and fifteen part-time employees, all committed to providing the highest level of service and care.
+                    </p>
+                    <div class="flex items-center gap-3 border-l-2 border-steel pl-4">
+                        <p class="text-white text-sm italic">
+                            "Strive every day to do some good, have a purpose for living and make a difference in everything you do."
+                        </p>
+                    </div>
+                    <p class="text-muted-slate text-sm mt-2">- Rachel R. Arrington, Founder</p>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img
+                        src="https://arringtonfuneralhome.com/wp-content/uploads/2019/07/outside3.jpg"
+                        alt="Arrington Funeral Home exterior"
+                        class="w-full h-[500px] object-cover rounded"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Gallery (photography grid) -->
+    <section id="gallery" class="bg-deep-slate py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="font-display text-3xl md:text-4xl text-white text-center mb-12">
+                A Peaceful Place for Families
+            </h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="md:col-span-2 md:row-span-2">
+                    <img
+                        src="https://arringtonfuneralhome.com/wp-content/uploads/2019/07/Arrington-Chapel-1.jpg"
+                        alt="Arrington Funeral Home chapel"
+                        class="w-full h-full min-h-[300px] md:min-h-full object-cover rounded"
+                    >
+                </div>
+                <div>
+                    <img
+                        src="https://arringtonfuneralhome.com/wp-content/uploads/2019/06/facility2.jpg"
+                        alt="Funeral home facility"
+                        class="w-full h-[250px] object-cover rounded"
+                    >
+                </div>
+                <div>
+                    <img
+                        src="https://arringtonfuneralhome.com/wp-content/uploads/2019/07/outside3.jpg"
+                        alt="Exterior of funeral home"
+                        class="w-full h-[250px] object-cover rounded"
+                    >
+                </div>
+                <div class="md:col-span-3">
+                    <img
+                        src="https://arringtonfuneralhome.com/wp-content/uploads/2019/07/Outside2.jpg"
+                        alt="Arrington Funeral Home building"
+                        class="w-full h-[300px] object-cover rounded"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Credibility (editorial full-width) -->
+    <section class="bg-near-black py-24">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <p class="text-steel text-sm tracking-[0.2em] uppercase mb-6">Trusted by Birmingham Families</p>
+            <h2 class="font-display text-3xl md:text-4xl text-white leading-tight mb-12">
+                Over Three Decades of Compassionate Service
+            </h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <p class="font-display text-4xl text-steel mb-2">1990</p>
+                    <p class="text-muted-slate text-sm">Founded in Birmingham</p>
+                </div>
+                <div>
+                    <p class="font-display text-4xl text-steel mb-2">22</p>
+                    <p class="text-muted-slate text-sm">Team Members</p>
+                </div>
+                <div>
+                    <p class="font-display text-4xl text-steel mb-2">35</p>
+                    <p class="text-muted-slate text-sm">Years of Service</p>
+                </div>
+            </div>
+            <p class="text-muted-slate mt-12 max-w-2xl mx-auto italic">
+                "Professional and Compassionate Guidance In your Time of Sorrow"
+            </p>
+            <p class="text-muted-slate text-sm mt-2">- Arrington Funeral Home Motto</p>
+        </div>
+    </section>
+
+    <!-- 7. CTA strip -->
+    <section id="contact" class="bg-steel py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h2 class="font-display text-2xl md:text-3xl text-near-black mb-2">
+                        We Are Here When You Need Us
+                    </h2>
+                    <p class="text-near-black/80">
+                        520 Cotton Avenue SW, Birmingham, AL 35211
+                    </p>
+                </div>
+                <a href="tel:205-786-6288" class="inline-flex items-center bg-near-black text-white px-8 py-4 rounded text-base font-medium hover:bg-deep-slate transition-colors shrink-0">
+                    Call (205) 786-6288
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="bg-near-black border-t border-white/10 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="font-display text-white text-lg mb-4">Arrington Funeral Home</h3>
+                    <p class="text-muted-slate text-sm leading-relaxed">
+                        Professional and compassionate guidance in your time of sorrow. Serving Birmingham families since 1990.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-muted-slate text-sm hover:text-steel transition-colors">Funeral Services</a></li>
+                        <li><a href="#" class="text-muted-slate text-sm hover:text-steel transition-colors">Cremation</a></li>
+                        <li><a href="#" class="text-muted-slate text-sm hover:text-steel transition-colors">Grief Support</a></li>
+                        <li><a href="#" class="text-muted-slate text-sm hover:text-steel transition-colors">Pre-Planning</a></li>
+                        <li><a href="#" class="text-muted-slate text-sm hover:text-steel transition-colors">Obituaries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">Contact</h4>
+                    <ul class="space-y-2 text-muted-slate text-sm">
+                        <li>520 Cotton Avenue SW</li>
+                        <li>Birmingham, AL 35211</li>
+                        <li class="pt-2">Phone: (205) 786-6288</li>
+                        <li>Fax: (205) 786-2050</li>
+                        <li class="pt-2"><a href="mailto:arringtonfuneralhome@gmail.com" class="text-steel hover:text-white transition-colors">arringtonfuneralhome@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium mb-4">Hours</h4>
+                    <ul class="space-y-2 text-muted-slate text-sm">
+                        <li>Available 24 Hours</li>
+                        <li>By Appointment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-12 pt-8 text-center">
+                <p class="text-muted-slate text-sm">
+                    Arrington Funeral Home. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // IntersectionObserver for fade-up reveals
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
