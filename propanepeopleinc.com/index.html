@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Propane People Inc. - Home, Farm, and Commercial Propane</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Barlow Condensed"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            amber: {
+              50: '#fdf8ef',
+              100: '#f9eed4',
+              200: '#f2dcab',
+              300: '#eac57d',
+              400: '#dfa847',
+              500: '#d4a853',
+              600: '#b88a2e',
+              700: '#9e7529',
+              800: '#7a5c26',
+              900: '#3d2e14',
+            },
+            nearblack: '#0a0a0a',
+            warmgrey: '#a0a0a0',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    :root { --accent: #d4a853; }
+    html { scroll-behavior: smooth; }
+    body { background: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif; }
+
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .corner-soft { border-radius: 12px; }
+
+    /* Hero directional gradient */
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.6) 50%, rgba(10,10,10,0.3) 100%);
+    }
+
+    /* Numbered features */
+    .feature-number {
+      width: 48px; height: 48px;
+      display: flex; align-items: center; justify-content: center;
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.25rem; font-weight: 800;
+      border-radius: 12px;
+    }
+
+    /* CTA glow */
+    .cta-glow { box-shadow: 0 0 20px rgba(212,168,83,0.3); }
+
+    /* Image hover */
+    .img-zoom { transition: transform 0.6s ease; }
+    .img-zoom:hover { transform: scale(1.03); }
+
+    /* No em-dashes in visible text */
+    * { -webkit-font-smoothing: antialiased; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-nearblack/90 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display font-800 text-2xl tracking-tight text-white uppercase">
+        Propane<span class="text-amber-500">People</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-warmgrey">
+        <a href="#services" class="hover:text-amber-500 transition-colors">Services</a>
+        <a href="#about" class="hover:text-amber-500 transition-colors">About</a>
+        <a href="#service-area" class="hover:text-amber-500 transition-colors">Service Area</a>
+        <a href="#contact" class="bg-amber-500 text-nearblack px-5 py-2.5 rounded-full hover:bg-amber-400 transition-colors font-semibold text-sm">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://propanepeopleinc.com/wp-content/uploads/2022/09/MSH_PROPANEPEOPLE-109.jpg" alt="Propane for Home" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+      <div class="hero-gradient absolute inset-0"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-nearblack to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20">
+      <div class="max-w-3xl">
+        <span class="inline-block bg-amber-500/10 text-amber-500 text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-6 border border-amber-500/20">
+          Family Owned - 10 Counties - 3 States
+        </span>
+        <h1 class="font-display font-800 text-5xl md:text-7xl lg:text-8xl leading-[0.95] text-white uppercase mb-6 tracking-tight">
+          Propane People Inc.
+        </h1>
+        <p class="text-lg md:text-xl text-warmgrey leading-relaxed max-w-2xl mb-10">
+          Reliable propane delivery for your home, farm, and business across the tri-state region since 2009.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="inline-block bg-amber-500 text-nearblack px-8 py-4 rounded-full font-semibold text-center hover:bg-amber-400 transition-colors cta-glow">
+            Get a Free Quote
+          </a>
+          <a href="#services" class="inline-block border border-white/20 text-white px-8 py-4 rounded-full font-medium text-center hover:border-amber-500 hover:text-amber-500 transition-colors">
+            Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary Product: Asymmetric split -->
+  <section id="services" class="py-24 md:py-32 border-t border-white/5 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="relative overflow-hidden corner-soft">
+          <img src="https://propanepeopleinc.com/wp-content/uploads/2022/10/Business-PropanePeople2.jpg" alt="Propane for Business" class="w-full h-auto object-cover img-zoom" />
+        </div>
+        <div>
+          <span class="text-amber-500 text-sm font-semibold tracking-wider uppercase mb-4 block">What We Do</span>
+          <h2 class="font-display font-800 text-4xl md:text-5xl text-white uppercase leading-tight mb-8">
+            Propane Services Built for Your Life
+          </h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <div class="feature-number flex-shrink-0">01</div>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-2">Residential Propane Delivery</h3>
+                <p class="text-warmgrey leading-relaxed">Keep your home warm, your water hot, and your family comfortable with reliable propane delivery across Indiana, Ohio and Illinois.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="feature-number flex-shrink-0">02</div>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-2">Commercial and Industrial</h3>
+                <p class="text-warmgrey leading-relaxed">From farms and construction sites to food service and fleet fueling, we deliver propane that keeps your business running.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="feature-number flex-shrink-0">03</div>
+              <div>
+                <h3 class="text-white font-semibold text-lg mb-2">Autogas and Cylinder Filling</h3>
+                <p class="text-warmgrey leading-relaxed">Take advantage of clean-burning propane for vehicle fleets and portable cylinders. On-site filling for bulk orders.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary: Reversed split -->
+  <section id="about" class="py-24 md:py-32 border-t border-white/5 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <span class="text-amber-500 text-sm font-semibold tracking-wider uppercase mb-4 block">Our Story</span>
+          <h2 class="font-display font-800 text-4xl md:text-5xl text-white uppercase leading-tight mb-8">
+            Family Owned Since 2009
+          </h2>
+          <p class="text-warmgrey leading-relaxed mb-6">
+            Propane People started as a single-truck operation serving Northeast Indiana. Today we cover ten counties across three states, delivering propane to homes, farms, and businesses with the same personal touch that built our reputation.
+          </p>
+          <p class="text-warmgrey leading-relaxed mb-10">
+            We believe in fair pricing, on-time delivery, and doing right by the people who depend on us. When you call, you talk to a real person who knows your account, not an automated system.
+          </p>
+          <a href="#contact" class="inline-block bg-amber-500 text-nearblack px-8 py-4 rounded-full font-semibold text-center hover:bg-amber-400 transition-colors">
+            Meet the Team
+          </a>
+        </div>
+        <div class="relative overflow-hidden corner-soft order-1 lg:order-2">
+          <img src="https://propanepeopleinc.com/wp-content/uploads/2022/10/Propane-People-Trucks.jpg" alt="Propane People Trucks" class="w-full h-auto object-cover img-zoom" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery / Brand Story (breaks zigzag) -->
+  <section class="py-24 md:py-32 border-t border-white/5 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-display font-800 text-4xl md:text-5xl text-white uppercase leading-tight">
+          Propane You Can Trust
+        </h2>
+        <p class="text-warmgrey mt-4 max-w-2xl mx-auto">
+          From heating rural homes to fueling commercial fleets, we deliver propane where it matters.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="relative overflow-hidden corner-soft aspect-[4/5]">
+          <img src="https://propanepeopleinc.com/wp-content/uploads/2022/10/Business-PropanePeople1.jpg" alt="Propane powered truck fleets" class="w-full h-full object-cover img-zoom" />
+        </div>
+        <div class="relative overflow-hidden corner-soft aspect-[4/5]">
+          <img src="https://propanepeopleinc.com/wp-content/uploads/2022/09/MSH_PROPANEPEOPLE-21-1.jpg" alt="Propane delivery" class="w-full h-full object-cover img-zoom" />
+        </div>
+        <div class="relative overflow-hidden corner-soft aspect-[4/5]">
+          <img src="https://propanepeopleinc.com/wp-content/uploads/2022/09/MSH_PROPANEPEOPLE-191.jpg" alt="Propane service" class="w-full h-full object-cover img-zoom" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / Credibility -->
+  <section class="py-24 md:py-32 bg-neutral-900/50 border-t border-white/5 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-amber-500 text-sm font-semibold tracking-wider uppercase mb-4 block">Why Customers Choose Us</span>
+          <h2 class="font-display font-800 text-4xl md:text-5xl text-white uppercase leading-tight mb-8">
+            Service You Can Count On
+          </h2>
+          <blockquote class="text-xl md:text-2xl text-warmgrey leading-relaxed italic border-l-4 border-amber-500 pl-6 mb-8">
+            &ldquo;Propane People has been our fuel partner for years. Their delivery is always on time, and the pricing is fair. I recommend them to every homeowner I know.&rdquo;
+          </blockquote>
+          <p class="text-white font-semibold">Satisfied Customer</p>
+          <p class="text-warmgrey text-sm">Residential Customer, Indiana</p>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-amber-500/10 border border-amber-500/20 p-8 corner-soft text-center">
+            <div class="font-display font-800 text-5xl text-amber-500 mb-2">10+</div>
+            <div class="text-warmgrey text-sm uppercase tracking-wider">Counties Served</div>
+          </div>
+          <div class="bg-amber-500/10 border border-amber-500/20 p-8 corner-soft text-center">
+            <div class="font-display font-800 text-5xl text-amber-500 mb-2">3</div>
+            <div class="text-warmgrey text-sm uppercase tracking-wider">States Covered</div>
+          </div>
+          <div class="bg-amber-500/10 border border-amber-500/20 p-8 corner-soft text-center">
+            <div class="font-display font-800 text-5xl text-amber-500 mb-2">16+</div>
+            <div class="text-warmgrey text-sm uppercase tracking-wider">Years in Business</div>
+          </div>
+          <div class="bg-amber-500/10 border border-amber-500/20 p-8 corner-soft text-center">
+            <div class="font-display font-800 text-5xl text-amber-500 mb-2">24/7</div>
+            <div class="text-warmgrey text-sm uppercase tracking-wider">Emergency Service</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA Strip -->
+  <section id="contact" class="py-24 md:py-32 border-t border-white/5 reveal">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="font-display font-800 text-4xl md:text-5xl lg:text-6xl text-white uppercase leading-tight mb-6">
+        Ready for Reliable Propane Delivery?
+      </h2>
+      <p class="text-warmgrey text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+        Get a free quote for your home, farm, or business. Serving 10 counties across Indiana, Ohio, and Illinois.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="tel:+12602324469" class="inline-block bg-amber-500 text-nearblack px-8 py-4 rounded-full font-semibold text-center hover:bg-amber-400 transition-colors cta-glow text-lg">
+          Call (260) 232-4469
+        </a>
+        <a href="mailto:PropanePeople@PropanePeopleInc.com" class="inline-block border border-white/20 text-white px-8 py-4 rounded-full font-medium text-center hover:border-amber-500 hover:text-amber-500 transition-colors">
+          Email Us
+        </a>
+      </div>
+      <p class="text-warmgrey text-sm mt-8">
+        PropanePeople@PropanePeopleInc.com
+      </p>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="bg-nearblack border-t border-white/5 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+      <div>
+        <a href="#" class="font-display font-800 text-2xl tracking-tight text-white uppercase block mb-4">
+          Propane<span class="text-amber-500">People</span>
+        </a>
+        <p class="text-warmgrey text-sm leading-relaxed">
+          Family owned and operated propane delivery across 10 counties in Indiana, Ohio, and Illinois.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Services</h4>
+        <ul class="space-y-2 text-warmgrey text-sm">
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Residential Delivery</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Commercial Propane</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Agricultural Services</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Autogas Refueling</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Company</h4>
+        <ul class="space-y-2 text-warmgrey text-sm">
+          <li><a href="#about" class="hover:text-amber-500 transition-colors">About Us</a></li>
+          <li><a href="#service-area" class="hover:text-amber-500 transition-colors">Service Area</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Safety & Training</a></li>
+          <li><a href="#" class="hover:text-amber-500 transition-colors">Payment Plans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4">Contact</h4>
+        <p class="text-warmgrey text-sm mb-2">Phone: (260) 232-4469</p>
+        <p class="text-warmgrey text-sm">Email: PropanePeople@PropanePeopleInc.com</p>
+        <div class="flex gap-3 mt-4">
+          <a href="#" class="w-10 h-10 bg-amber-500/10 text-amber-500 rounded-full flex items-center justify-center hover:bg-amber-500 hover:text-nearblack transition-all">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+          <a href="#" class="w-10 h-10 bg-amber-500/10 text-amber-500 rounded-full flex items-center justify-center hover:bg-amber-500 hover:text-nearblack transition-all">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-warmgrey text-sm">
+      &copy; 2026 Propane People Inc. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- IntersectionObserver for reveal -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var reveals = document.querySelectorAll('.reveal');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      reveals.forEach(function(el) { observer.observe(el); });
+    });
+  </script>
+</body>
+</html>
