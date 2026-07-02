@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.W. Sewall | Heating Oil & Propane Delivery | Midcoast Maine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            slate: { 900: '#0f172a', 800: '#1e293b', 700: '#334155', 600: '#475569' },
+            steel: '#4682B4',
+          },
+          borderRadius: { DEFAULT: '2px' },
+        },
+      },
+    }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-slate-900 text-white font-body antialiased">
+
+  <!-- 1. NAV -->
+  <nav class="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-700">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl font-bold tracking-tight text-white">M.W. Sewall</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-sm font-medium text-slate-200 hover:text-white transition">Home</a>
+        <a href="#about" class="text-sm font-medium text-slate-200 hover:text-white transition">About</a>
+        <a href="#services" class="text-sm font-medium text-slate-200 hover:text-white transition">Services</a>
+        <a href="#contact" class="text-sm font-medium text-slate-200 hover:text-white transition">Contact</a>
+      </div>
+      <a href="tel:207-442-7994" class="bg-steel text-white px-5 py-2 text-sm font-semibold rounded hover:bg-slate-700 transition">Call Now</a>
+    </div>
+  </nav>
+
+  <!-- 2. HERO -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <img src="https://mwsewall.com/wp-content/uploads/2025/10/DSC01038-2-scaled.jpg" alt="M.W. Sewall fuel delivery truck in Maine" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20">
+      <span class="inline-block bg-steel/20 text-steel text-xs font-semibold uppercase tracking-widest px-3 py-1 mb-4 rounded">Bath, Maine Since 1887</span>
+      <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-3xl mb-6">Heating Oil &amp; Propane Delivered When You Need It</h1>
+      <p class="text-lg md:text-xl text-slate-200 max-w-xl mb-8">Full-service fuel delivery and heating system installations for homes and businesses across Midcoast Maine. Family-owned for five generations.</p>
+      <a href="tel:207-442-7994" class="inline-block bg-steel text-white px-8 py-4 text-base font-semibold rounded hover:bg-slate-700 transition">Get a Quote: 207-442-7994</a>
+    </div>
+  </section>
+
+  <!-- 3. PRIMARY PRODUCT -->
+  <section id="services" class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <span class="text-steel text-xs font-semibold uppercase tracking-widest mb-3 block">What We Deliver</span>
+        <h2 class="font-display text-4xl font-bold mb-6">Full-Service Fuel Solutions for Maine Winters</h2>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <span class="text-steel font-display text-2xl font-bold">01</span>
+            <div>
+              <h3 class="text-lg font-semibold mb-1">Heating Oil &amp; Kerosene</h3>
+              <p class="text-slate-300 text-sm">Reliable delivery with auto-delivery and price protection plans to keep your home warm all season.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-steel font-display text-2xl font-bold">02</span>
+            <div>
+              <h3 class="text-lg font-semibold mb-1">Propane</h3>
+              <p class="text-slate-300 text-sm">Residential and commercial propane delivery with remote tank monitoring service available 24/7.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-steel font-display text-2xl font-bold">03</span>
+            <div>
+              <h3 class="text-lg font-semibold mb-1">Heating Systems</h3>
+              <p class="text-slate-300 text-sm">Installation, repair, and tune-ups for furnaces and boilers. Emergency service available around the clock.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 md:order-2">
+        <img src="https://mwsewall.com/wp-content/uploads/2025/10/DSC00393.jpg" alt="M.W. Sewall facility" class="rounded w-full h-96 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECONDARY (REVERSED) -->
+  <section id="about" class="py-24 bg-slate-800">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="https://mwsewall.com/wp-content/uploads/2026/06/DSC00417-1280x853.jpg" alt="M.W. Sewall team and facility" class="rounded w-full h-96 object-cover" />
+      </div>
+      <div>
+        <span class="text-steel text-xs font-semibold uppercase tracking-widest mb-3 block">Our Story</span>
+        <h2 class="font-display text-4xl font-bold mb-6">Five Generations of Keeping Maine Warm</h2>
+        <p class="text-slate-200 mb-4">M.W. Sewall has been a fixture in Midcoast Maine since 1887. What started as a small fuel operation in Bath has grown into a full-service energy company, but we have never lost the personal touch that comes from being family-owned.</p>
+        <p class="text-slate-200 mb-4">We are more than fuel delivery. We provide full-service heating installations, repairs, and tune-ups to meet all your home and business needs. Our technicians live here, raise families here, and understand what a Maine winter demands.</p>
+        <p class="text-slate-200">When you call M.W. Sewall, you talk to someone who knows your neighborhood. That is the difference 139 years makes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. GALLERY / BRAND STORY -->
+  <section class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="md:col-span-2 relative rounded overflow-hidden h-80">
+          <img src="https://mwsewall.com/wp-content/uploads/2025/10/DSC01038-2-scaled.jpg" alt="M.W. Sewall delivery fleet" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-8">
+            <div>
+              <p class="font-display text-2xl font-bold">Heating Oil &amp; Propane</p>
+              <p class="text-slate-200 text-sm"> txtMaine home heating, delivered on time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative rounded overflow-hidden h-80">
+          <img src="https://mwsewall.com/wp-content/uploads/2025/04/donna-mcl-oZmb1oYmcX8-unsplash.jpg" alt="Propane tank and equipment" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-6">
+            <div>
+              <p class="font-display text-xl font-bold">Remote Tank Monitoring</p>
+              <p class="text-slate-200 text-sm">Never run empty again.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4 mt-4">
+        <div class="relative rounded overflow-hidden h-64">
+          <img src="https://mwsewall.com/wp-content/uploads/2025/10/DSC00393.jpg" alt="Fuel facility" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-6">
+            <p class="font-display text-xl font-bold">24/7 Emergency Service</p>
+          </div>
+        </div>
+        <div class="md:col-span-2 bg-slate-800 rounded p-8 flex flex-col justify-center">
+          <p class="font-display text-3xl font-bold mb-2">We are more than fuel delivery</p>
+          <p class="text-slate-300">Our team installs, repairs, and maintains furnaces, boilers, and heating systems to keep your family safe through every Maine winter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. TESTIMONIALS / CREDIBILITY -->
+  <section class="py-24 bg-slate-800">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <span class="text-steel text-xs font-semibold uppercase tracking-widest mb-4 block">Trusted Since 1887</span>
+      <h2 class="font-display text-4xl font-bold mb-12">A Name Maine Families Have Relied On for Five Generations</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-900 p-6 rounded">
+          <p class="text-4xl font-display font-bold text-steel mb-2">1887</p>
+          <p class="text-slate-300 text-sm">Founded in Bath, Maine, and still family-owned today.</p>
+        </div>
+        <div class="bg-slate-900 p-6 rounded">
+          <p class="text-4xl font-display font-bold text-steel mb-2">24/7</p>
+          <p class="text-slate-300 text-sm">Emergency service and heating system repairs, day or night.</p>
+        </div>
+        <div class="bg-slate-900 p-6 rounded">
+          <p class="text-4xl font-display font-bold text-steel mb-2">Bath, ME</p>
+          <p class="text-slate-300 text-sm">Serving Midcoast Maine with honest pricing and reliable delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA STRIP -->
+  <section id="contact" class="py-20 bg-steel">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-4 text-white">Do Not Let Your Tank Run Low</h2>
+      <p class="text-lg text-slate-100 mb-8 max-w-2xl mx-auto">Call M.W. Sewall for heating oil, propane, and 24/7 emergency service across Midcoast Maine.</p>
+      <a href="tel:207-442-7994" class="inline-block bg-white text-slate-900 px-10 py-4 text-lg font-semibold rounded hover:bg-slate-100 transition">Call 207-442-7994</a>
+    </div>
+  </section>
+
+  <!-- 8. FOOTER -->
+  <footer class="bg-slate-900 border-t border-slate-700 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="font-display text-lg font-bold mb-4">M.W. Sewall</h4>
+        <p class="text-slate-400 text-sm">Heating oil, kerosene, propane, gasoline, and diesel delivery. Heating system installation, repair, and 24/7 emergency service.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4 text-white">Services</h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="#" class="hover:text-white transition">Heating Oil</a></li>
+          <li><a href="#" class="hover:text-white transition">Propane</a></li>
+          <li><a href="#" class="hover:text-white transition">Kerosene &amp; Diesel</a></li>
+          <li><a href="#" class="hover:text-white transition">Heating Systems</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4 text-white">Company</h4>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li><a href="#" class="hover:text-white transition">About Us</a></li>
+          <li><a href="#" class="hover:text-white transition">Our History</a></li>
+          <li><a href="#" class="hover:text-white transition">Careers</a></li>
+          <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4 text-white">Contact</h4>
+        <p class="text-slate-400 text-sm mb-2">Bath, Maine</p>
+        <p class="text-slate-400 text-sm mb-2"><a href="tel:207-442-7994" class="hover:text-white transition">207-442-7994</a></p>
+        <p class="text-slate-400 text-sm"><a href="mailto:info@mwsewall.com" class="hover:text-white transition">info@mwsewall.com</a></p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-slate-800 text-center text-slate-500 text-sm">
+      <p>&copy; 2025 M.W. Sewall | Heating Oil, Kerosene, Propane, Gasoline. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
