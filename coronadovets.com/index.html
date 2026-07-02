@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronado Animal Clinic | El Paso Veterinary Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Oswald', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        forest: '#2D5A3D',
+                        bone: '#F5F0EB',
+                        offwhite: '#FAFAF8',
+                        charcoal: '#1E1E1E',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-display { font-family: 'Oswald', sans-serif; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.7s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-offwhite text-charcoal">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-offwhite/95 backdrop-blur-sm border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-display text-xl tracking-tight text-forest">Coronado Animal Clinic</a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-charcoal/80">
+                <a href="#services" class="hover:text-forest transition-colors">Services</a>
+                <a href="#about" class="hover:text-forest transition-colors">About</a>
+                <a href="#contact" class="hover:text-forest transition-colors">Contact</a>
+            </div>
+            <a href="tel:9155813277" class="bg-forest text-white px-5 py-2 text-sm font-semibold hover:bg-forest/90 transition-colors">
+                (915) 581-3277
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-[100dvh] flex items-center">
+        <div class="absolute inset-0">
+            <img src="https://coronadovets.com/wp-content/uploads/2020/07/hostpital1.png" alt="Coronado Animal Clinic building" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/50 to-transparent"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6 py-32">
+            <div class="max-w-2xl">
+                <p class="text-forest font-medium text-sm tracking-widest uppercase mb-4">El Paso, Texas</p>
+                <h1 class="font-display text-5xl md:text-7xl text-white leading-[1.1] mb-6">
+                    Compassionate Care<br>for Your Best Friend
+                </h1>
+                <p class="text-white/80 text-lg md:text-xl max-w-lg mb-8 leading-relaxed">
+                    Quality veterinary care and professional service for dogs, cats, and the pets you love. Serving El Paso families since we opened our doors.
+                </p>
+                <a href="tel:9155813277" class="bg-forest text-white px-8 py-4 font-semibold hover:bg-forest/90 transition-colors inline-block">
+                    Schedule an Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-offwhite">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <img src="https://coronadovets.com/wp-content/uploads/2020/08/Webp.net-resizeimage-9.jpg" alt="Pet care at Coronado Animal Clinic" class="w-full h-[500px] object-cover shadow-lg">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-8">Complete Veterinary Services</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <span class="font-display text-5xl text-forest/20">01</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Wellness Exams</h3>
+                                <p class="text-charcoal/70 leading-relaxed">Comprehensive health checkups, vaccinations, and preventive care to keep your pet healthy for years to come.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="font-display text-5xl text-forest/20">02</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Surgical Services</h3>
+                                <p class="text-charcoal/70 leading-relaxed">Spay and neuter procedures, soft tissue surgery, and dental surgery performed with care and precision.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="font-display text-5xl text-forest/20">03</span>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Dental Care</h3>
+                                <p class="text-charcoal/70 leading-relaxed">Cleanings, extractions, and oral health management to prevent disease and keep your pet comfortable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Doctor -->
+    <section id="about" class="py-24 bg-bone">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-8">Meet Dr. Freund</h2>
+                    <p class="text-charcoal/70 text-lg leading-relaxed mb-6">
+                        Medical Director Kevin P. Freund, DVM brings years of experience and genuine compassion to every patient at Coronado Animal Clinic. Under his leadership, the clinic has built a reputation for quality care and professional service that El Paso families trust.
+                    </p>
+                    <p class="text-charcoal/70 text-lg leading-relaxed mb-8">
+                        The clinic combines modern veterinary medicine with a personal touch. Every pet that walks through the door receives individual attention, thorough diagnostics, and treatment plans tailored to their specific needs.
+                    </p>
+                    <div class="flex gap-4">
+                        <img src="https://coronadovets.com/wp-content/uploads/2020/07/dr_freund.jpg" alt="Dr. Kevin P. Freund" class="w-16 h-16 object-cover shadow-md">
+                        <div>
+                            <p class="font-semibold text-charcoal">Dr. Kevin P. Freund, DVM</p>
+                            <p class="text-sm text-charcoal/60">Medical Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-2">
+                    <img src="https://coronadovets.com/wp-content/uploads/2020/08/Webp.net-resizeimage-8.jpg" alt="Coronado Animal Clinic team" class="w-full h-[450px] object-cover shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Hospital -->
+    <section class="py-24 bg-offwhite">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12">
+                <h2 class="font-display text-4xl md:text-5xl text-charcoal">Inside the Clinic</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+                <img src="https://coronadovets.com/wp-content/uploads/2020/08/Webp.net-resizeimage-9.jpg" alt="Clinic interior" class="w-full h-[400px] object-cover shadow-md">
+                <img src="https://coronadovets.com/wp-content/uploads/2020/08/Webp.net-resizeimage-10.jpg" alt="Pet care area" class="w-full h-[400px] object-cover shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Credibility -->
+    <section class="py-24 bg-forest text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-display text-4xl md:text-5xl mb-12">Trusted by El Paso Families</h2>
+            <blockquote class="text-xl md:text-2xl leading-relaxed mb-8 italic font-light">
+                "Committed to Quality Care and Compassionate, Professional Service."
+            </blockquote>
+            <p class="text-white/80 font-medium">Coronado Animal Clinic Mission</p>
+            <div class="mt-16 grid grid-cols-3 gap-8 border-t border-white/20 pt-12">
+                <div>
+                    <p class="font-display text-4xl mb-2">5+</p>
+                    <p class="text-sm text-white/70">Years Serving El Paso</p>
+                </div>
+                <div>
+                    <p class="font-display text-4xl mb-2">2</p>
+                    <p class="text-sm text-white/70">Convenient Phone Lines</p>
+                </div>
+                <div>
+                    <p class="font-display text-4xl mb-2">El Paso</p>
+                    <p class="text-sm text-white/70">TX Location</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="py-24 bg-bone">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-display text-4xl md:text-5xl text-charcoal mb-6">Your Pet Deserves the Best</h2>
+            <p class="text-charcoal/70 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+                Schedule an appointment today and experience the difference compassionate, professional veterinary care makes for the pet you love.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="tel:9155813277" class="bg-forest text-white px-8 py-4 font-semibold hover:bg-forest/90 transition-colors">
+                    Call (915) 581-3277
+                </a>
+                <a href="mailto:coronadovets@hotmail.com" class="border-2 border-forest text-forest px-8 py-4 font-semibold hover:bg-forest hover:text-white transition-colors">
+                    Email Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div>
+                <h3 class="font-display text-xl mb-4">Coronado Animal Clinic</h3>
+                <p class="text-white/60 text-sm leading-relaxed">Quality veterinary care for dogs, cats, and small animals in El Paso, Texas.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-sm tracking-widest uppercase">Services</h4>
+                <ul class="space-y-2 text-white/60 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Wellness Exams</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Surgery</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Dental Care</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Vaccinations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-sm tracking-widest uppercase">Contact</h4>
+                <ul class="space-y-2 text-white/60 text-sm">
+                    <li>(915) 581-3277</li>
+                    <li>(915) 300-5654</li>
+                    <li>coronadovets@hotmail.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-sm tracking-widest uppercase">Hours</h4>
+                <ul class="space-y-2 text-white/60 text-sm">
+                    <li>Mon-Fri: 8:00 AM - 6:00 PM</li>
+                    <li>Sat: 8:00 AM - 12:00 PM</li>
+                    <li>Sun: Closed</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-white/10 text-center text-white/40 text-sm">
+            <p> Coronado Animal Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
