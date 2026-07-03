@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherrybend Pheasant Farm — Ohio Hunting Preserve</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            lodge: {
+              dark: '#0A150A',
+              deep: '#0D2810',
+              forest: '#1B3A1B',
+              gold: '#B8984A',
+              bone: '#F5F0E6',
+              muted: '#8B9177',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --accent: #B8984A; }
+    html { scroll-behavior: smooth; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Inter', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="font-body bg-lodge-dark text-lodge-bone antialiased" style="font-family: 'Inter', sans-serif;">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-lodge-dark/90 backdrop-blur-md border-b border-lodge-forest/40">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="text-lodge-bone font-display text-xl font-bold tracking-tight" style="font-family: 'Playfair Display', serif;">Cherrybend</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#about" class="text-sm text-lodge-muted hover:text-lodge-bone transition-colors">About</a>
+          <a href="#hunting" class="text-sm text-lodge-muted hover:text-lodge-bone transition-colors">Hunting</a>
+          <a href="#gallery" class="text-sm text-lodge-muted hover:text-lodge-bone transition-colors">The Farm</a>
+          <a href="#contact" class="text-sm text-lodge-muted hover:text-lodge-bone transition-colors">Contact</a>
+          <a href="tel:937-584-4269" class="inline-flex items-center bg-lodge-gold text-lodge-dark px-5 py-2 text-sm font-medium hover:bg-lodge-bone transition-colors">Book a Hunt</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 lg:pb-24 pt-32" style="font-family: 'Inter', sans-serif;">
+    <div class="absolute inset-0 z-0">
+      <img src="https://www.cherrybendhunting.com/wp-content/uploads/Cherry-Bend-above.jpg" alt="Aerial view of Cherrybend Pheasant Farm" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-lodge-dark/50"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, #0A150A 10%, transparent 60%);"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div class="max-w-2xl">
+        <p class="text-lodge-gold text-xs font-medium tracking-[0.2em] uppercase mb-4 reveal">Wilmington, Ohio</p>
+        <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] mb-6 text-balance reveal" style="font-family: 'Playfair Display', serif;">
+          Ohio's Premier<br>Pheasant Hunting<br>Destination
+        </h1>
+        <p class="text-lg md:text-xl text-lodge-bone/80 max-w-lg mb-8 leading-relaxed reveal">
+          640 acres of guided hunts on a working farm, family run since 1954.
+        </p>
+        <a href="tel:937-584-4269" class="inline-flex items-center bg-lodge-gold text-lodge-dark px-8 py-4 text-sm font-semibold tracking-wide hover:bg-lodge-bone transition-colors reveal">Book Your Hunt</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary: Asymmetric split, product (image left, numbered features right) -->
+  <section id="hunting" class="py-20 lg:py-32 bg-lodge-dark">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="relative reveal">
+          <img src="https://www.cherrybendhunting.com/wp-content/uploads/cache_3013831604.jpg" alt="Pheasant hunting field at Cherrybend" class="w-full h-[400px] lg:h-[560px] object-cover">
+        </div>
+        <div class="reveal">
+          <p class="text-lodge-gold text-xs font-medium tracking-[0.2em] uppercase mb-4">The Experience</p>
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-8" style="font-family: 'Playfair Display', serif;">
+            A Hunt to Remember
+          </h2>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-lodge-gold/20 font-bold leading-none" style="font-family: 'Playfair Display', serif;">01</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Guided Pheasant Hunts</h3>
+                <p class="text-lodge-muted leading-relaxed">Experienced guides and well-trained dogs lead you across 640 acres of managed cover, food plots, and field edges.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-lodge-gold/20 font-bold leading-none" style="font-family: 'Playfair Display', serif;">02</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Sporting Clays Course</h3>
+                <p class="text-lodge-muted leading-relaxed">Practice your shot on our on-site sporting clays course before heading to the field. Open during hunting season and by appointment.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-lodge-gold/20 font-bold leading-none" style="font-family: 'Playfair Display', serif;">03</span>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Quail & Chukar Available</h3>
+                <p class="text-lodge-muted leading-relaxed">In addition to pheasant, we offer guided quail and chukar hunts. Mixed-species hunts are available by request.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary: Reversed split, story/process (text left, image right) -->
+  <section id="about" class="py-20 lg:py-32 bg-lodge-deep border-t border-lodge-forest/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <p class="text-lodge-gold text-xs font-medium tracking-[0.2em] uppercase mb-4">Our Story</p>
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+            Family, Tradition, Land
+          </h2>
+          <p class="text-lodge-bone/90 leading-relaxed mb-6">
+            Cherrybend is family owned and operated by Matt and Beth Ellis and Scott and Melissa Ellis. The Ellis family has a long history farming on Cherrybend Road since the mid-1800's, and is dedicated to keeping the farm an Ohio pheasant hunting destination.
+          </p>
+          <p class="text-lodge-bone/90 leading-relaxed mb-8">
+            Our farm is fully operational and includes corn, soybeans, wheat, and the cover crops of sorghum and sunflowers. Beth Ellis serves as Manager for the Farm, with Ariane Sias handling daily operations and gamekeeping.
+          </p>
+          <div class="grid grid-cols-3 gap-6 pt-6 border-t border-lodge-forest/40">
+            <div>
+              <p class="font-display text-3xl text-lodge-gold" style="font-family: 'Playfair Display', serif;">70+</p>
+              <p class="text-l80 text-lodge-muted text-sm mt-1">Years running</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl text-lodge-gold" style="font-family: 'Playfair Display', serif;">640</p>
+              <p class="text-lodge-muted text-sm mt-1">Acres</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl text-lodge-gold" style="font-family: 'Playfair Display', serif;">4</p>
+              <p class="text-lodge-muted text-sm mt-1">Generations</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 relative reveal">
+          <img src="https://www.cherrybendhunting.com/wp-content/uploads/442399224_952373120226505_8150383682302263030_n-1024x684.jpg" alt="Hunters at Cherrybend Pheasant Farm" class="w-full h-[400px] lg:h-[560px] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery / brand story: breaks the zigzag -->
+  <section id="gallery" class="py-20 lg:py-32 bg-lodge-dark">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl mb-12 reveal">
+        <p class="text-lodge-gold text-xs font-medium tracking-[0.2em] uppercase mb-4">The Farm</p>
+        <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold" style="font-family: 'Playfair Display', serif;">
+          640 Acres of Rolling Ohio Farmland
+        </h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4">
+        <div class="col-span-2 row-span-2 reveal">
+          <img src="https://www.cherrybendhunting.com/wp-content/uploads/Cherry-Bend-above.jpg" alt="Aerial view of Cherrybend Farm" class="w-full h-full min-h-[300px] object-cover">
+        </div>
+        <div class="reveal">
+          <img src="https://www.cherrybendhunting.com/wp-content/uploads/clay-shooting.jpg" alt="Sporting clays at Cherrybend" class="w-full h-[200px] object-cover">
+        </div>
+        <div class="reveal">
+          <img src="https://www.cherrybendhunting.com/wp-content/uploads/dog-winter.jpg" alt="Hunting dog at Cherrybend" class="w-full h-[200px] object-cover">
+        </div>
+        <div class="reveal">
+          <img src="https://www.cherrybendhunting.com/wp-content/uploads/operation-cherrybend.jpg" alt="Operation Cherrybend veterans event" class="w-full h-[200px] object-cover">
+        </div>
+        <div class="reveal">
+          <img src="https://www.cherrybendhunting.com/wp-content/uploads/cache_3013831404.jpg" alt="Hunting field at Cherrybend" class="w-full h-[200px] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / credibility -->
+  <section class="py-20 lg:py-32 bg-lodge-deep border-t border-lodge-forest/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <p class="text-lodge-gold text-xs font-medium tracking-[0.2em] uppercase mb-4">What Hunters Say</p>
+          <blockquote class="font-display text-2xl md:text-3xl lg:text-4xl font-bold leading-snug mb-6" style="font-family: 'Playfair Display', serif;">
+            "The best guided pheasant hunt in Ohio. The Ellis family treats you like one of their own."
+          </blockquote>
+          <p class="text-lodge-muted">A regular guest from Cincinnati</p>
+        </div>
+        <div class="grid grid-cols-2 gap-6 reveal">
+          <div class="bg-lodge-dark border border-lodge-forest/40 p-6">
+            <p class="font-display text-4xl text-lodge-gold mb-2" style="font-family: 'Playfair Display', serif;">1954</p>
+            <p class="text-lodge-muted text-sm">Pheasant preserve established</p>
+          </div>
+          <div class="bg-lodge-dark border border-lodge-forest/40 p-6">
+            <p class="font-display text-4xl text-lodge-gold mb-2" style="font-family: 'Playfair Display', serif;">Tue-Sun</p>
+            <p class="text-lodge-muted text-sm">Open during hunting season</p>
+          </div>
+          <div class="bg-lodge-dark border border-lodge-forest/40 p-6">
+            <p class="font-display text-4xl text-lodge-gold mb-2" style="font-family: 'Playfair Display', serif;">Oct-Mar</p>
+            <p class="text-lodge-muted text-sm">Hunting season dates</p>
+          </div>
+          <div class="bg-lodge-dark border border-lodge-forest/40 p-6">
+            <p class="font-display text-4xl text-lodge-gold mb-2" style="font-family: 'Playfair Display', serif;">Reserve</p>
+            <p class="text-lodge-muted text-sm">Reservations required</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA strip -->
+  <section id="contact" class="relative py-20 lg:py-24">
+    <div class="absolute inset-0 z-0">
+      <img src="https://www.cherrybendhunting.com/wp-content/uploads/cache_3013831004.jpg" alt="Hunting field" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-lodge-dark/70"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+      <h2 class="font-display text-3xl md:text-5xl font-bold mb-4" style="font-family: 'Playfair Display', serif;">
+        Ready to Book Your Hunt?
+      </h2>
+      <p class="text-lg text-lodge-bone/80 mb-8 max-w-xl mx-auto">
+        Hunting season runs October 1st through March 31st. Reservations are required.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="tel:937-584-4269" class="inline-flex items-center bg-lodge-gold text-lodge-dark px-8 py-4 text-sm font-semibold tracking-wide hover:bg-lodge-bone transition-colors">
+          Call (937) 584-4269
+        </a>
+        <a href="mailto:info@cherrybendhunting.com" class="inline-flex items-center border border-lodge-bone/30 text-lodge-bone px-8 py-4 text-sm font-medium hover:border-lodge-gold hover:text-lodge-gold transition-colors">
+          info@cherrybendhunting.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="bg-lodge-dark border-t border-lodge-forest/30 pt-16 pb-8" style="font-family: 'Inter', sans-serif;">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <p class="font-display text-2xl text-lodge-bone mb-4" style="font-family: 'Playfair Display', serif;">Cherrybend Pheasant Farm</p>
+          <p class="text-lodge-muted leading-relaxed max-w-sm">
+            2326 Cherrybend Rd.<br>
+            Wilmington, OH 45177<br>
+            (937) 584-4269
+          </p>
+        </div>
+        <div>
+          <p class="text-sm font-semibold text-lodge-bone mb-4">Quick Links</p>
+          <ul class="space-y-2 text-sm text-lodge-muted">
+            <li><a href="#about" class="hover:text-lodge-gold transition-colors">About</a></li>
+            <li><a href="#hunting" class="hover:text-lodge-gold transition-colors">Hunting</a></li>
+            <li><a href="#gallery" class="hover:text-lodge-gold transition-colors">The Farm</a></li>
+            <li><a href="#contact" class="hover:text-lodge-gold transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-sm font-semibold text-lodge-bone mb-4">Follow</p>
+          <ul class="space-y-2 text-sm text-lodge-muted">
+            <li><a href="https://www.facebook.com/cherrybendhunting/" target="_blank" rel="noopener" class="hover:text-lodge-gold transition-colors">Facebook</a></li>
+            <li><a href="https://x.com/Cherrybend" target="_blank" rel="noopener" class="hover:text-lodge-gold transition-colors">X / Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-lodge-forest/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-lodge-muted">
+        <p>&copy; 2026 Cherrybend Pheasant Farm. All rights reserved.</p>
+        <p>Redesign concept by Bigger Fish Intelligent Automation</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver reveal on scroll (no scroll events)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

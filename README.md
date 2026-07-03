@@ -167,3 +167,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [M.W. Sewall](https://jared-the-automator.github.io/redesign-portfolio/mwsewall.com/) | Heating oil & propane delivery | Bath, ME |
 |[Black Dog Custom Rods](https://jared-the-automator.github.io/redesign-portfolio/blackdogtackle.com/)|Custom fishing rods|Otis Orchards, WA|
 |[Coronado Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/coronadovets.com/)|Veterinary clinic|El Paso, TX|
+|[TEXAVET](https://jared-the-automator.github.io/redesign-portfolio/texavet.com/)|Mobile veterinary clinic|Houston, TX|
