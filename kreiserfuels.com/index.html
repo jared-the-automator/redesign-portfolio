@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kreiser Fuels | Heating Oil & Propane Delivery</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style type="text/tailwindcss">
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, .font-display {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  ::selection {
+    background-color: #d97706;
+    color: #0a0a0a;
+  }
+}
+@layer components {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+<body class="bg-[#0a0a0a] text-[#f8fafc] antialiased">
+
+<nav id="nav" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 py-5"
+     style="background: rgba(10,10,10,0); backdrop-filter: blur(0px);">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="text-2xl font-display tracking-[0.08em] text-[#f8fafc]">KREISER FUELS</span>
+      <span class="hidden md:inline text-xs text-[#d97706] font-medium uppercase tracking-widest">Heating Oil & Propane</span>
+    </div>
+    <div class="hidden lg:flex items-center gap-10 text-sm font-medium tracking-wide">
+      <a href="#services" class="text-[#9ca3af] hover:text-[#d97706] transition-colors">Services</a>
+      <a href="#about" class="text-[#9ca3af] hover:text-[#d97706] transition-colors">About</a>
+      <a href="#area" class="text-[#9ca3af] hover:text-[#d97706] transition-colors">Service Area</a>
+      <a href="#contact" class="text-[#9ca3af] hover:text-[#d97706] transition-colors">Contact</a>
+    </div>
+    <a href="#contact" class="hidden md:inline-block bg-[#d97706] text-[#0a0a0a] px-6 py-3 text-sm font-bold uppercase tracking-widest hover:bg-[#b45309] transition-colors rounded-sm">
+      Order Fuel
+    </a>
+  </div>
+</nav>
+
+<section id="hero" class="relative min-h-[100dvh] flex items-center overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="https://kreiserfuels.com/wp-content/themes/twenty-twenty-one-child/images/services/main-truck.jpg"
+         alt="Kreiser Fuels delivery truck on the road" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]/30"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20">
+    <p class="reveal text-[#d97706] text-sm font-bold uppercase tracking-[0.2em] mb-6">
+      South-Central Pennsylvania
+    </p>
+    <h1 class="reveal text-5xl md:text-7xl lg:text-8xl font-display leading-[0.95] tracking-wide max-w-4xl text-[#f8fafc] mb-8" style="transition-delay: 100ms;">
+      Reliable Fuel<br>Delivery You<br>Can Count On
+    </h1>
+    <p class="reveal text-lg md:text-xl text-[#9ca3af] max-w-xl leading-relaxed mb-10" style="transition-delay: 200ms;">
+      Heating oil and propane delivered on time, every time, by a local family-run company since the early 1900s.
+    </p>
+    <div class="reveal flex flex-wrap gap-4" style="transition-delay: 300ms;">
+      <a href="#contact" class="bg-[#d97706] text-[#0a0a0a] px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[#b45309] transition-colors rounded-sm">
+        Get a Quote
+      </a>
+      <a href="#services" class="border border-[#9ca3af] text-[#f8fafc] px-8 py-4 text-sm font-bold uppercase tracking-widest hover:border-[#d97706] hover:text-[#d97706] transition-colors rounded-sm">
+        Our Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-24 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal relative">
+        <div class="relative">
+          <img src="https://kreiserfuels.com/wp-content/themes/twenty-twenty-one-child/images/slider/swiper/1.jpg"
+               alt="Kreiser Fuels facility and equipment" class="w-full h-[500px] object-cover rounded-sm">
+          <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-[#d97706]/10 rounded-sm -z-10"></div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay: 150ms;">
+        <p class="text-[#d97706] text-sm font-bold uppercase tracking-[0.2em] mb-4">About Kreiser Fuels</p>
+        <h2 class="text-4xl md:text-5xl font-display tracking-wide text-[#f8fafc] mb-6">
+          Keeping Pennsylvania<br>Warm for Generations
+        </h2>
+        <p class="text-[#9ca3af] leading-relaxed text-lg mb-8">
+          Kreiser Fuels has been a trusted name in fuel delivery across south-central Pennsylvania. From our dispatch office to the trucks on your road, every gallon is backed by people who live here and understand what a cold snap means for your family.
+        </p>
+        <div class="flex flex-wrap gap-8">
+          <div class="flex items-center gap-3">
+            <span class="text-[#d97706] text-3xl font-display">01</span>
+            <span class="text-[#9ca3af] text-sm uppercase tracking-widest">On-Time<br>Delivery</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-[#d97706] text-3xl font-display">02</span>
+            <span class="text-[#9ca3af] text-sm uppercase tracking-widest">Local<br>Family Team</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-[#d97706] text-3xl font-display">03</span>
+            <span class="text-[#9ca3af] text-sm uppercase tracking-widest">24/7<br>Emergency</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-24 bg-[#111111] relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <p class="text-[#d97706] text-sm font-bold uppercase tracking-[0.2em] mb-4">What We Provide</p>
+        <h2 class="text-4xl md:text-5xl font-display tracking-wide text-[#f8fafc] mb-6">
+          Full-Service Heating<br>Oil & Propane
+        </h2>
+        <p class="text-[#9ca3af] leading-relaxed text-lg mb-8">
+          Whether you need a scheduled fill-up or an emergency delivery, Kreiser Fuels has the trucks, the fuel, and the local knowledge to keep your home or business running through the deepest freeze.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-6 mb-10">
+          <div class="border-l-4 border-[#d97706] pl-6">
+            <h4 class="font-display text-xl text-[#f8fafc] mb-2">Heating Oil</h4>
+            <p class="text-[#9ca3af] text-sm">Reliable residential and commercial heating oil delivery tailored to your usage.</p>
+          </div>
+          <div class="border-l-4 border-[#d97706] pl-6">
+            <h4 class="font-display text-xl text-[#f8fafc] mb-2">Propane</h4>
+            <p class="text-[#9ca3af] text-sm">Full propane delivery and tank service for homes and businesses.</p>
+          </div>
+          <div class="border-l-4 border-[#9ca3af] pl-6">
+            <h4 class="font-display text-xl text-[#f8fafc] mb-2">Fuel Tanks</h4>
+            <p class="text-[#9ca3af] text-sm">Tank installation, monitoring, and maintenance for peace of mind.</p>
+          </div>
+          <div class="border-l-4 border-[#9ca3af] pl-6">
+            <h4 class="font-display text-xl text-[#f8fafc] mb-2">HVAC & Tune-Ups</h4>
+            <p class="text-[#9ca3af] text-sm">Heating system tune-ups, cleaning, and repair to keep systems efficient.</p>
+          </div>
+        </div>
+        <a href="#contact" class="inline-block border border-[#d97706]光鲜text-[#d97706] px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[#d97706] hover:text-[#0a0a0a] transition-colors rounded-sm">
+          View All Services
+        </a>
+      </div>
+      <div class="reveal order-1 lg:order-2 relative" style="transition-delay: 150ms;">
+        <img src="https://kreiserfuels.com/wp-content/themes/twenty-twenty-one-child/images/slider/swiper/2.jpg"
+             alt="Heating oil delivery in action" class="w-full h-[500px] object-cover rounded-sm">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="reveal relative">
+      <div class="aspect-[21/9] rounded-sm overflow-hidden relative">
+        <img src="https://kreiserfuels.com/wp-content/themes/twenty-twenty-one-child/images/slider/swiper/3.jpg"
+             alt="Kreiser Fuels service area and operations" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-3 gap-8">
+        <div class="text-center">
+          <p class="text-5xl font-display text-[#d97706 charters-licious-[#d97706] mb-2">100+</p>
+          <p class="text-[#9ca3af] text-sm uppercase tracking-widest">Years of Service</p>
+        </div>
+        <div class="text-center">
+          <p class="text-5xl font-display text-[#d97706] mb-2">717</p>
+          <p class="text-[#9ca3af] text-sm uppercase tracking-widest">Local Area Code</p>
+        </div>
+        <div class="text-center">
+          <p class="text-5xl font-display text-[#d97706] mb-2">24/7</p>
+          <p class="text-[#9ca3af] text-sm uppercase tracking-widest">Emergency Service</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-[#111111]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="reveal grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-[#d97706] text-sm font-bold uppercase tracking-[0.2em] mb-4">Customer Reviews</p>
+        <h2 class="text-4xl md:text-5xl font-display tracking-wide text-[#f8fafc] mb-10">
+          What Our<br>Customers Say
+        </h2>
+        <div class="relative">
+          <div class="text-[#d97706] text-6xl font-display leading-none opacity-30" style="font-size: 5rem;">"</div>
+          <p class="text-xl text-[#f8fafc] leading-relaxed -mt-8 pl-4">
+            Kreiser Fuels has been keeping our family warm for years. They always show up when they say they will, and the drivers are polite and careful on our property.
+          </p>
+          <p class="text-[#9ca3af] mt-6 pl-4 text-sm font-medium">— A Satisfied Kreiser Fuels Customer</p>
+        </div>
+        <div class="mt-10 flex items-center gap-6">
+          <div class="flex -space-x-3">
+            <div class="w-12 h-12 rounded-full bg-[#2d2d2d] border-2 border-[#111111] flex items-center justify-center">
+              <span class="text-[#9ca3af] text-lg font-bold">★</span>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-[#2d2d2d] border-2 border-[#111111] flex items-center justify-center">
+              <span class="text-[#9ca3af] text-lg font-bold">★</span>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-[#2d2d2d] border-2 border-[#111111] flex items-center justify-center">
+              <span class="text-[#9ca3af] text-lg font-bold">★</span>
+            </div>
+          </div>
+          <div>
+            <p class="text-[#f8fafc] font-bold">4.8 / 5</p>
+            <p class="text-[#9ca3af] text-xs uppercase tracking-widest">Based on Verified Reviews</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay: 200ms;">
+        <img src="https://kreiserfuels.com/wp-content/themes/twenty-twenty-one-child/images/services/2.jpg"
+             alt="Heating oil service and maintenance" class="w-full h-[450px] object-cover rounded-sm">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-20 bg-[#d97706]">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-display text-[#0a0a0a] mb-6 tracking-wide">
+      Ready When You Are
+    </h2>
+    <p class="text-[#0a0a0a] text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+      Get a fast heating oil or propane quote. Our dispatch team is standing by for Pennsylvania homes and businesses.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="tel:7178652105" class="bg-[#0a0a0a] text-[#f8fafc] px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[#1a1a1a] transition-colors rounded-sm">
+        Call (717) 865-2105
+      </a>
+      <a href="#" class="border-2 border-[#0a0a0a] text-[#0a0a0a] px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-[#0a0a0a] hover:text-[#d97706] transition-colors rounded-sm">
+        Request a Quote
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#0a0a0a] border-t border-[#1a1a1a] pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+    <div>
+      <h3 class="font-display text-2xl text-[#f8fafc] tracking-wide mb-4">KREISER FUELS</h3>
+      <p class="text-[#9ca3af] text-sm leading-relaxed">
+        Family-run heating oil and propane delivery serving south-central Pennsylvania since the early 1900s.
+      </p>
+    </div>
+    <div>
+      <h4 class="font-display text-lg text-[#d97706] mb-4 tracking-wide">Services</h4>
+      <ul class="space-y-2 text-sm text-[#9ca3af]">
+        <li><a href="#" class="hover:text-[#d97706] transition-colors">Heating Oil</a></li>
+        <li><a href="#" class="hover:text-[#d97706] transition-colors">Propane</a></li>
+        <li><a href="#" class="hover:text-[#d97706] transition-colors">Fuel Tanks</a></li>
+        <li><a href="#" class="hover:text-[#d97706] transition-colors">HVAC Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display text-lg text-[#d97706] mb-4 tracking-wide">Company</h4>
+      <ul class="space-y-2 text-sm text-[#9ca3af]">
+        <li><a href="#" class="hover:text-[#d97706] transition-colors">About Us</a></li>
+        <li><a href="#" class="hover:text-[#d97706] transition-colors">Service Area</a></li>
+        <li><a href="#" class="hover:text-[#d97706] transition-colors">Careers</a></li>
+        <li><a href="#" class="hover:text-[#d97706] transition-colors">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display text-lg text-[#d97706] mb-4 tracking-wide">Contact</h4>
+      <ul class="space-y-2 text-sm text-[#9ca3af]">
+        <li><a href="tel:7178652105" class="hover:text-[#d97706] transition-colors">(717) 865-2105</a></li>
+        <li><a href="mailto:jrollman@kreiserfuels.com" class="hover:text-[#d97706] transition-colors">jrollman@kreiserfuels.com</a></li>
+        <li><span class="text-[#9ca3af]">South-Central PA</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#6b7280]">
+    <p>&copy; 2026 Kreiser Fuels, Inc. All rights reserved.</p>
+    <nav class="flex gap-6">
+      <a href="#" class="hover:text-[#d97706] transition-colors">Privacy Policy</a>
+      <a href="#" class="hover:text-[#d97706] transition-colors">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="text/javascript">
+// Intersection Observer reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Nav background on scroll
+const nav = document.getElementById('nav');
+const heroEl = document.getElementById('hero');
+new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      nav.style.background = 'rgba(10,10,10,0)';
+      nav.style.backdropFilter = 'blur(0px)';
+    } else {
+      nav.style.background = 'rgba(10,10,10,0.9)';
+      nav.style.backdropFilter = 'blur(12px)';
+    }
+  });
+}, { threshold: 0 }).observe(heroEl);
+</script>
+</body>
+</html>
