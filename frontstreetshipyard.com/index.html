@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Street Shipyard / Custom Boat Builder, Belfast Maine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .font-bebas { font-family: 'Bebas Neue', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-neutral-950 text-slate-300 font-inter antialiased">
+    <nav class="fixed top-0 w-full bg-neutral-950/90 backdrop-blur border-b border-slate-800 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-bebas text-2xl text-white tracking-wider">FRONT STREET SHIPYARD</div>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="#building" class="hover:text-white transition">Boat Building</a>
+                <a href="#service" class="hover:text-white transition">Service & Refits</a>
+                <a href="#marina" class="hover:text-white transition">Marina</a>
+                <a href="#manufacturing" class="hover:text-white transition">Manufacturing</a>
+                <a href="#contact" class="bg-white text-neutral-950 px-5 py-2 font-medium hover:bg-slate-200 transition">Request a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-[100dvh] flex items-center">
+        <img src="https://frontstreetshipyard.com/wp-content/uploads/2020/03/FSSY-East-3.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Front Street Shipyard facility along the water in Belfast Maine">
+        <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/80 via-neutral-950/60 to-transparent"></div>
+        <div class="relative max-w-7xl mx-auto px-6 py-32">
+            <p class="text-slate-400 text-sm tracking-[0.2em] uppercase mb-4">Belfast, Maine / Penobscot Bay</p>
+            <h1 class="font-bebas text-6xl md:text-8xl text-white leading-none mb-6">THE SKY IS<br>NO LIMIT</h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-xl mb-8 font-light leading-relaxed">Custom boat builder, service yard, and marina with one of the only indoor facilities on the East Coast for vessels up to 200 feet.</p>
+            <div class="flex gap-4">
+                <a href="#projects" class="bg-white text-neutral-950 px-8 py-3 font-medium hover:bg-slate-200 transition">View Projects</a>
+                <a href="#contact" class="border border-slate-500 text-white px-8 py-3 font-medium hover:bg-white/10 transition">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="building" class="py-24 reveal">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <img src="https://frontstreetshipyard.com/wp-content/uploads/2020/03/berilda.jpg" class="w-full" alt="Custom yacht at Front Street Shipyard in Belfast Maine" style="border-radius:2px">
+                <div>
+                    <h2 class="font-bebas text-5xl text-white mb-6">CUSTOM BUILDING</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <span class="text-slate-500 text-sm font-mono">01</span>
+                            <div>
+                                <h3 class="text-white font-medium mb-1">New Construction</h3>
+                                <p class="text-slate-400 text-sm">From 20 to 200 feet using advanced composite and traditional boatbuilding techniques.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="text-slate-500 text-sm font-mono">02</span>
+                            <div>
+                                <h3 class="text-white font-medium mb-1">Semi-Custom Production</h3>
+                                <p class="text-slate-400 text-sm">The New Harbor 28: turnkey vessels or hull-and-deck kits for buyers to fit out themselves.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="text-slate-500 text-sm font-mono">03</span>
+                            <div>
+                                <h3 class="text-white font-medium mb-1">Refit & Service</h3>
+                                <p class="text-slate-400 text-sm">Indoor year-round work with 485-ton lifting capacity on Penobscot Bay.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="py-24 bg-neutral-900/50 reveal">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-bebas text-5xl text-white mb-6">NEW ENGLAND'S REFIT CAPITAL</h2>
+                    <p class="text-slate-300 mb-6 leading-relaxed">More than 100 experienced boat service professionals at Front Street use technologies that range from advanced composite construction to traditional boatbuilding. Our modern facility in downtown Belfast, Maine, is one of the only facilities on the East Coast where boat building and service work on oversized yachts can be performed indoors year-round.</p>
+                    <p class="text-slate-400 text-sm">Founded in 2011 on Penobscot Bay.</p>
+                </div>
+                <img src="https://frontstreetshipyard.com/wp-content/uploads/2020/03/FSSpaintbay.jpg" class="w-full" alt="Indoor paint bay at Front Street Shipyard" style="border-radius:2px">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 reveal">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-slate-500 text-sm tracking-[0.2em] uppercase mb-3">Recent Projects</p>
+            <h2 class="font-bebas text-5xl text-white mb-12">BUILDS & REFITS</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <img src="https://frontstreetshipyard.com/wp-content/uploads/2023/09/NH28_07.jpg" class="w-full h-64 object-cover" alt="New Harbor 28 boat build at Front Street Shipyard" style="border-radius:2px">
+                <img src="https://frontstreetshipyard.com/wp-content/uploads/2023/05/bluechip1.jpg" class="w-full h-64 object-cover" alt="BLUE CHIP 41 foot powerboat built by Front Street Shipyard" style="border-radius:2px">
+                <img src="https://frontstreetshipyard.com/wp-content/uploads/2026/06/nightwatch.jpg" class="w-full h-64 object-cover" alt="Nightwatch vessel at Front Street Shipyard" style="border-radius:2px">
+                <img src="https://frontstreetshipyard.com/wp-content/uploads/2020/03/Belfast-Harbor-3.jpg" class="w-full h-64 object-cover" alt="Belfast Harbor Maine at Front Street Shipyard" style="border-radius:2px">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-neutral-900/50 reveal">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="font-bebas text-5xl text-white mb-2">2011</p>
+                    <p class="text-slate-400 text-sm uppercase tracking-wider">Founded</p>
+                </div>
+                <div>
+                    <p class="font-bebas text-5xl text-white mb-2">100+</p>
+                    <p class="text-slate-400 text-sm uppercase tracking-wider">Professionals</p>
+                </div>
+                <div>
+                    <p class="font-bebas text-5xl text-white mb-2">485</p>
+                    <p class="text-slate-400 text-sm uppercase tracking-wider">Ton Lift</p>
+                </div>
+                <div>
+                    <p class="font-bebas text-5xl text-white mb-2">200</p>
+                    <p class="text-slate-400 text-sm uppercase tracking-wider">Foot Max</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 reveal">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-bebas text-5xl text-white mb-6">READY TO BUILD OR REFIT YOUR NEXT VESSEL?</h2>
+            <p class="text-slate-300 mb-8">Call 207-930-3740 or request a quote for new construction, refit, or marina services.</p>
+            <a href="#" class="bg-white text-neutral-950 px-10 py-4 font-medium hover:bg-slate-200 transition inline-block">Request a Quote</a>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <p class="font-bebas text-xl text-white mb-4">FRONT STREET SHIPYARD</p>
+                    <p class="text-slate-400 text-sm">Belfast, Maine<br>Penobscot Bay</p>
+                </div>
+                <div>
+                    <p class="text-white font-medium mb-3">Services</p>
+                    <ul class="text-slate-400 text-sm space-y-2">
+                        <li>Custom Boat Building</li>
+                        <li>Yacht Refits</li>
+                        <li>Vessel Service</li>
+                        <li>Marina</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-white font-medium mb-3">Contact</p>
+                    <ul class="text-slate-400 text-sm space-y-2">
+                        <li>207-930-3740</li>
+                        <li>fss@shmarinas.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-white font-medium mb-3">Follow</p>
+                    <ul class="text-slate-400 text-sm space-y-2">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>X</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-slate-600 text-xs mt-12">Custom boat builder, service yard, and marina. Belfast, Maine.</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

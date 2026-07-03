@@ -170,3 +170,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 |[TEXAVET](https://jared-the-automator.github.io/redesign-portfolio/texavet.com/)|Mobile veterinary clinic|Houston, TX|
 |[Kreiser Fuels](https://jared-the-automator.github.io/redesign-portfolio/kreiserfuels.com/)|Heating oil & propane delivery|South-Central PA|
 |[Welch Heating Oil](https://jared-the-automator.github.io/redesign-portfolio/welchheatingoil.com/)|Heating oil, diesel & kerosene delivery|Saco, ME|
+|[Front Street Shipyard](https://jared-the-automator.github.io/redesign-portfolio/frontstreetshipyard.com/)|Custom boat builder & marina|Belfast, ME|
