@@ -179,3 +179,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Will Bowmaker](https://jared-the-automator.github.io/redesign-portfolio/willbowmaker.com/) | Handcrafted traditional bows | Poland |
 
 | [Grau Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/graufuneralhomes.com/) | Funeral Homes | Monona, IA |
+| [2Hawks](https://jared-the-automator.github.io/redesign-portfolio/2hawks.net/) | Precision forged tomahawks | Missouri, USA |
