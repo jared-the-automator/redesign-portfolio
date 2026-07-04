@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly Fisher Guy — Custom Fly Rods & Full Wing Burners | Albuquerque, NM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'DM Serif Display', serif; }
+
+        /* Fade-in on scroll via IntersectionObserver */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-[#F5F1EB] text-[#1A1412]">
+
+    <!-- Nav -->
+    <nav class="fixed w-full bg-[#F5F1EB]/95 backdrop-blur-sm z-50 border-b border-[#1A1412]/10">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-display text-xl tracking-tight text-[#1A1412] hover:text-[#5B6E3E] transition-colors">Fly Fisher Guy</a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+                <a href="#rods" class="hover:text-[#5B6E3E] transition-colors">Rods</a>
+                <a href="#burners" class="hover:text-[#5B6E3E] transition-colors">Burners</a>
+                <a href="#gallery" class="hover:text-[#5B6E3E] transition-colors">Gallery</a>
+                <a href="#about" class="hover:text-[#5B6E3E] transition-colors">About</a>
+            </div>
+            <a href="#contact" class="bg-[#5B6E3E] text-[#F5F1EB] px-5 py-2 text-sm font-semibold tracking-wide hover:bg-[#3D4A2E] transition-colors">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="relative min-h-[100dvh] bg-cover bg-center" style="background-image: url('https://www.flyfisherguy.com/wp-content/uploads/2017/01/Salmon-Fly-Wing-MVC-117F.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#1A1412]/90 via-[#1A1412]/50 to-transparent"></div>
+        <div class="relative z-10 flex items-center min-h-[100dvh]">
+            <div class="max-w-4xl px-6 md:px-12 py-24">
+                <p class="text-[#5B6E3E] text-xs tracking-[0.25em] uppercase font-bold mb-4">Albuquerque, New Mexico</p>
+                <h1 class="font-display text-5xl md:text-7xl text-[#F5F1EB] mb-6 leading-tight">Custom Rods Built<br>for Your Water</h1>
+                <p class="text-[#F5F1EB]/90 text-lg md:text-xl max-w-xl mb-8 leading-relaxed">Handmade fly rods and precision wing burners from the heart of New Mexico.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#gallery" class="inline-block bg-[#5B6E3E] text-[#F5F1EB] px-8 py-3 text-sm font-semibold tracking-wide hover:bg-[#3D4A2E] transition-colors">View the Gallery</a>
+                    <a href="#about" class="inline-block border-2 border-[#F5F1EB] text-[#F5F1EB] px-8 py-3 text-sm font-semibold tracking-wide hover:bg-[#F5F1EB] hover:text-[#1A1412] transition-colors">About the Builder</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Primary Product: Full Wing Burners (asymmetric split) -->
+    <section id="burners" class="bg-[#F5F1EB] py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <p class="text-[#5B6E3E] text-xs tracking-[0.25em] uppercase font-bold mb-3">01 — THE PRODUCT</p>
+                    <h2 class="font-display text-4xl md:text-5xl text-[#1A1412] mb-6 leading-tight">Full Wing Burners</h2>
+                    <p class="text-[#1A1412]/80 text-lg mb-10 leading-relaxed">Precision stainless steel EDM cut patterns for realistic fly wing formation.</p>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <span class="font-display text-3xl text-[#5B6E3E] leading-none">01</span>
+                            <div>
+                                <h3 class="font-semibold text-[#1A1412] mb-1">Surgical Grade Patterns</h3>
+                                <p class="text-[#1A1412]/70">Stainless steel EDM cut patterns designed to closely imitate the size and silhouette of aquatic insects.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="font-display text-3xl text-[#5B6E3E] leading-none">02</span>
+                            <div>
+                                <h3 class="font-semibold text-[#1A1412] mb-1">Precision Clamps</h3>
+                                <p class="text-[#1A1412]/70">Surgical stainless clamps engineered to accommodate even the smallest fly patterns with stability.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="font-display text-3xl text-[#5B6E3E] leading-none">03</span>
+                            <div>
+                                <h3 class="font-semibold text-[#1A1412] mb-1">One-Step Formation</h3>
+                                <p class="text-[#1A1412]/70">Ergonomically angled dies form the entire wing at once, with a small tie down tab for easy attachment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="https://www.flyfisherguy.com/wp-content/uploads/2017/01/Stone-Nymph-Body-MVC-101F.jpg" alt="Stone Nymph fly pattern on a Full Wing Burner" class="w-full object-cover shadow-xl" style="aspect-ratio: 4/3;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secondary: Custom Rods (reversed split) -->
+    <section id="rods" class="bg-[#F5F1EB] py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="https://flyfisherguy.com/wp-content/uploads/2017/01/Blackline-Spalted-Magnolia.jpg" alt="Blackline Spalted Magnolia custom rod handle" class="w-full object-cover shadow-xl" style="aspect-ratio: 4/3;">
+                </div>
+                <div>
+                    <p class="text-[#5B6E3E] text-xs tracking-[0.25em] uppercase font-bold mb-3">02 — THE BUILD</p>
+                    <h2 class="font-display text-4xl md:text-5xl text-[#1A1412] mb-6 leading-tight">PTM Custom Rod Design</h2>
+                    <p class="text-[#1A1412]/80 text-lg mb-8 leading-relaxed">Each blank is built to the manufacturer's exact specification, then paired with exotic wood inlays that reflect your style on the water.</p>
+                    <blockquote class="border-l-4 border-[#5B6E3E] pl-6 mb-8 italic text-[#1A1412]/70 text-lg">
+                        My primary concern when building a new blank is to ensure that the rod functions as the manufacturer intended. Particular attention is paid to the building of the blank, then to the inlay design.
+                    </blockquote>
+                    <a href="#contact" class="inline-block border-2 border-[#1A1412] text-[#1A1412] px-8 py-3 text-sm font-semibold tracking-wide hover:bg-[#1A1412] hover:text-[#F5F1EB] transition-colors">Learn About the Builder</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="bg-[#F5F1EB] py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-[#5B6E3E] text-xs tracking-[0.25em] uppercase font-bold mb-3">THE GALLERY</p>
+                <h2 class="font-display text-4xl md:text-5xl text-[#1A1412] leading-tight">Exotic Wood Handles</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="aspect-[4/3] overflow-hidden shadow-lg">
+                    <img src="https://flyfisherguy.com/wp-content/uploads/2017/01/Red-Flame-Box-Elder.jpg" alt="Red Flame Box Elder rod handle" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="aspect-[4/3] overflow-hidden shadow-lg">
+                    <img src="https://flyfisherguy.com/wp-content/uploads/2017/01/two-tone-red-amboyna-001.jpg" alt="Two-tone Red Amboyna rod handle" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="aspect-[4/3] overflow-hidden shadow-lg">
+                    <img src="https://flyfisherguy.com/wp-content/uploads/2017/01/Spalted-Maple.jpg" alt="Spalted Maple rod handle" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="aspect-[4/3] overflow-hidden shadow-lg">
+                    <img src="https://flyfisherguy.com/wp-content/uploads/2017/01/Golden-Amboyna.jpg" alt="Golden Amboyna rod handle" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial / Credibility -->
+    <section id="about" class="bg-[#F5F1EB] py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-[#5B6E3E] text-xs tracking-[0.25em] uppercase font-bold mb-6">THE PHILOSOPHY</p>
+            <blockquote class="font-display text-2xl md:text-3xl text-[#1A1412] leading-relaxed mb-8 italic">
+                &ldquo;These designs work very well on non-glare fly rods also.&rdquo;
+            </blockquote>
+            <p class="text-[#1A1412]/60 text-sm mb-12">Custom Rod Builder, Albuquerque, NM</p>
+            <div class="grid md:grid-cols-3 gap-12 text-left">
+                <div>
+                    <h3 class="font-semibold text-[#1A1412] mb-2">Based in Albuquerque</h3>
+                    <p class="text-[#1A1412]/70 text-sm">Building custom rods and precision wing burners from 10650 Eagle Rock NE.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-[#1A1412] mb-2">Two Product Lines</h3>
+                    <p class="text-[#1A1412]/70 text-sm">PTM Custom Rod Design for handmade blanks, and Full Wing Burners for precision patterns.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-[#1A1412] mb-2">Exotic Wood Inlays</h3>
+                    <p class="text-[#1A1412]/70 text-sm">Amboyna burl, spalted maple, box elder, and other rare woods available for custom handles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section id="contact" class="bg-[#1A1412] py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-display text-3xl md:text-4xl text-[#F5F1EB] mb-6 leading-tight">Ready for a rod that feels like it was made just for you?</h2>
+            <p class="text-[#F5F1EB]/80 text-lg mb-10">Start a conversation about your next custom build or wing burner set.</p>
+            <a href="mailto:ptmrods@aol.com" class="inline-block bg-[#5B6E3E] text-[#F5F1EB] px-10 py-4 text-sm font-semibold tracking-wide hover:bg-[#3D4A2E] transition-colors">Start the Conversation</a>
+            <p class="text-[#F5F1EB]/60 text-sm mt-6">Or call (505) 856-8388</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1412] border-t border-[#F5F1EB]/10 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="font-display text-lg text-[#F5F1EB] mb-4">Fly Fisher Guy</h3>
+                <p class="text-[#F5F1EB]/60 text-sm leading-relaxed">Custom fly rods and Full Wing Burners, handmade in Albuquerque, New Mexico.</p>
+            </div>
+            <div>
+                <h4 class="text-[#F5F1EB] font-semibold text-sm tracking-wide uppercase mb-4">Navigate</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#rods" class="text-[#F5F1EB]/60 hover:text-[#F5F1EB] transition-colors">Rods</a></li>
+                    <li><a href="#burners" class="text-[#F5F1EB]/60 hover:text-[#F5F1EB] transition-colors">Burners</a></li>
+                    <li><a href="#gallery" class="text-[#F5F1EB]/60 hover:text-[#F5F1EB] transition-colors">Gallery</a></li>
+                    <li><a href="#about" class="text-[#F5F1EB]/60 hover:text-[#F5F1EB] transition-colors">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#F5F1EB] font-semibold text-sm tracking-wide uppercase mb-4">Contact</h4>
+                <p class="text-[#F5F1EB]/60 text-sm mb-2">10650 Eagle Rock NE</p>
+                <p class="text-[#F5F1EB]/60 text-sm mb-2">Albuquerque, NM 87122</p>
+                <p class="text-[#F5F1EB]/60 text-sm mb-2">(505) 856-8388</p>
+                <p class="text-[#F5F1EB]/60 text-sm">ptmrods@aol.com</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-[#F5F1EB]/10">
+            <p class="text-[#F5F1EB]/40 text-xs text-center"> Fly Fisher Guy. Prototype created for outreach purposes.</p>
+        </div>
+    </footer>
+
+    <script>
+        // IntersectionObserver for fade-in reveals
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
