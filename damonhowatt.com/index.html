@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damon Howatt — Handcrafted Traditional Bows & Longbows</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nearBlack: '#0a0a0a',
+            warmAmber: '#c4852b',
+            bone: '#e8e0d5',
+            slate: '#1c1c1c',
+          },
+          fontFamily: {
+            display: ['"Barlow Condensed"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          borderRadius: {
+            'standard': '12px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Barlow Condensed', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-nearBlack text-bone antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-nearBlack/90 backdrop-blur-sm border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-2xl tracking-wide text-white uppercase">Damon Howatt</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-bone/80">
+        <a href="#" class="hover:text-white transition-colors">Bows</a>
+        <a href="#" class="hover:text-white transition-colors">About</a>
+        <a href="#" class="hover:text-white transition-colors">Dealers</a>
+        <a href="#" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <a href="#" class="bg-warmAmber text-nearBlack px-5 py-2 rounded-standard text-sm font-semibold hover:bg-warmAmber/90 transition-colors">Find a Dealer</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://damonhowatt.com/wp-content/uploads/2020/08/damon-howatt-diablo-super-elite-traditional-bow-1536x1536.jpg" alt="Damon Howatt Diablo Super Elite traditional bow" class="w-full h-full object-cover opacity-40">
+      <div class="absolute inset-0 bg-gradient-to-r from-nearBlack via-nearBlack/80 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-16 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block text-warmAmber text-xs font-semibold tracking-widest uppercase mb-4">Lebanon, Oregon — Est. 1939</span>
+        <h1 class="font-display text-5xl md:text-7xl text-white leading-none mb-6 uppercase tracking-tight">
+          The Finest<br>Traditional Bow
+        </h1>
+        <p class="text-lg md:text-xl text-bone/70 font-light mb-8 max-w-lg leading-relaxed">
+          For 85 years, one name has stood above the rest in traditional archery. Handcrafted American bows, 100% USA made.
+        </p>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="#" class="bg-warmAmber text-nearBlack px-8 py-3.5 rounded-standard font-semibold hover:bg-warmAmber/90 transition-colors inline-block">View the Collection</a>
+          <a href="#" class="border border-warmAmber/40 text-warmAmber px-8 py-3.5 rounded-standard font-medium hover:bg-warmAmber/10 transition-colors inline-block">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section: Asymmetric Split -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="relative reveal">
+          <img src="https://damonhowatt.com/wp-content/uploads/2020/08/damon-howeatt-x200-bow.jpg" alt="Damon Howatt X200 traditional bow" class="w-full aspect-[4/5] object-cover rounded-standard">
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-warmAmber/10 rounded-standard -z-10"></div>
+        </div>
+        <div class="reveal">
+          <span class="text-warmAmber text-xs font-semibold tracking-widest uppercase mb-4 block">The Maker</span>
+          <h2 class="font-display text-4xl md:text-5xl text-white uppercase tracking-tight mb-6 leading-tight">Built by Hand. Proven in the Field.</h2>
+          <p class="text-bone/60 text-lg leading-relaxed mb-10">
+            Every Damon Howatt bow starts with seasoned hardwood and ends with a shooter who knows the difference between a product and a legacy. These are not factory bows. They are built one at a time, by people who still believe a bow should feel alive in your hand.
+          </p>
+          <div class="space-y-6">
+            <div class="flex gap-5">
+              <span class="font-display text-4xl text-warmAmber/60 leading-none">01</span>
+              <div>
+                <h3 class="text-white font-medium text-lg mb-1">Seasoned Wood, Zero Compromise</h3>
+                <p class="text-bone/50 text-sm">Only the finest seasoned hardwoods touch a Howatt bow. Each piece is selected for grain, density, and resilience before it ever reaches the bench.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-4xl text-warmAmber/60 leading-none">02</span>
+              <div>
+                <h3 class="text-white font-medium text-lg mb-1">100% USA Crafted</h3>
+                <p class="text-bone/50 text-sm">From Oregon timber to finished limb, every step of the build happens under one roof in Lebanon. No outsourcing, no shortcuts.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-4xl text-warmAmber/60 leading-none">03</span>
+              <div>
+                <h3 class="text-white font-medium text-lg mb-1">Backed by 85 Years</h3>
+                <p class="text-bone/50 text-sm">Since 1939, the name Damon Howatt has has been synonymous with the finest traditional bows in America. One bow at a time, one shooter at a time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section: Reversed Split -->
+  <section class="py-24 md:py-32 bg-slate">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 md:order-1 reveal">
+          <span class="text-warmAmber text-xs font-semibold tracking-widest uppercase mb-4 block">The Craft</span>
+          <h2 class="font-display text-4xl md:text-5xl text-white uppercase tracking-tight mb-6 leading-tight">One Bow. One Craftsman. One Purpose.</h2>
+          <p class="text-bone/60 text-lg leading-relaxed mb-6">
+            In a world of factory lines, we still build one bow at a time. Each Damon Howatt bow is shaped, tillered, and finished by hand. The result is not a SKU; it is a tool that becomes an extension of the archer who draws it.
+          </p>
+          <p class="text-bone/60 text-lg leading-relaxed mb-8">
+            Our workshop in Lebanon, Oregon, is not a showroom. It is a working space where sawdust covers the floor and the smell of linseed oil greets you at the door. This is where tradition lives.
+          </p>
+          <div class="flex items-center gap-4 text-sm text-bone/50">
+            <span class="w-12 h-px bg-warmAmber/40"></span>
+            <span>Lebanon, Oregon — Since 1939</span>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 relative reveal">
+          <img src="https://damonhowatt.com/wp-content/uploads/2020/08/damon-howatt-hunter-bow.jpg" alt="Damon Howatt Hunter traditional bow" class="w-full aspect-[4/5] object-cover rounded-standard">
+          <div class="absolute -top-4 -left-4 w-24 h-24 border border-warmAmber/20 rounded-standard -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12 reveal">
+        <span class="text-warmAmber text-xs font-semibold tracking-widest uppercase mb-4 block">The Collection</span>
+        <h2 class="font-display text-4xl md:text-5xl text-white uppercase tracking-tight leading-tight">Icons of the Sport</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="md:col-span-2 reveal">
+          <img src="https://damonhowatt.com/wp-content/uploads/2020/08/Mel-Johnson-damon-howatt-traditional-bow-whitetail-deer-world-record.jpg" alt="Mel Johnson world record whitetail with Damon Howatt bow" class="w-full h-80 md:h-96 object-cover rounded-standard">
+        </div>
+        <div class="space-y-4 reveal">
+          <img src="https://damonhowatt.com/wp-content/uploads/2020/08/damon-howeatt-x200-bow.jpg" alt="Damon Howatt X200 bow detail" class="w-full h-40 md:h-48 object-cover rounded-standard">
+          <img src="https://damonhowatt.com/wp-content/uploads/2020/08/damon-howatt-hunter-bow.jpg" alt="Damon Howatt Hunter bow" class="w-full h-40 md:h-48 object-cover rounded-standard">
+        </div>
+      </div>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 reveal">
+        <div class="bg-slate rounded-standard p-6 text-center">
+          <span class="font-display text-3xl text-white block mb-1">1939</span>
+          <span class="text-bone/50 text-xs uppercase tracking-wider">Founded</span>
+        </div>
+        <div class="bg-slate rounded-standard p-6 text-center">
+          <span class="font-display text-3xl text-white block mb-1">85+</span>
+          <span class="text-bone/50 text-xs uppercase tracking-wider">Years</span>
+        </div>
+        <div class="bg-slate rounded-standard p-6 text-center">
+          <span class="font-display text-3xl text-white block mb-1">100%</span>
+          <span class="text-bone/50 text-xs uppercase tracking-wider">USA Made</span>
+        </div>
+        <div class="bg-slate rounded-standard p-6 text-center">
+          <span class="font-display text-3xl text-white block mb-1">1</span>
+          <span class="text-bone/50 text-xs uppercase tracking-wider">Family</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 md:py-32 bg-slate">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <span class="text-warmAmber text-xs font-semibold tracking-widest uppercase mb-6 block">From the Field</span>
+      <p class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight leading-tight mb-8">
+        There is nothing like a Howatt bow.
+      </p>
+      <p class="text-bone/60 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+        "For over 85 years, we've held our place as one of the finest traditional bow companies in the world. The epitome of traditional archery lives on in each hand-crafted bow produced. We stand for excellence in all that we do."
+      </p>
+      <p class="text-bone/40 text-sm">The Howatt Family, Lebanon, Oregon</p>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-20 bg-warmAmber">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display text-4xl md:text-6xl text-nearBlack uppercase tracking-tight leading-tight mb-6">Ready to Draw Your Next Chapter?</h2>
+      <p class="text-nearBlack/70 text-lg mb-8 max-w-xl mx-auto">
+        Join the tradition. Find a Damon Howatt dealer near you or contact us directly to learn about our handcrafted bows.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#" class="bg-nearBlack text-warmAmber px-8 py-3.5 rounded-standard font-semibold hover:bg-nearBlack/80 transition-colors inline-block">Find a Dealer</a>
+        <a href="#" class="border-2 border-nearBlack text-nearBlack px-8 py-3.5 rounded-standard font-medium hover:bg-nearBlack hover:text-warmAmber transition-colors inline-block">Contact Us</a>
+      </div>
+      <p class="text-nearBlack/50 text-sm mt-6">541-870-4661 | HowattArchery@Gmail.com | Lebanon, Oregon</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-nearBlack border-t border-white/5 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="md:col-span-1">
+          <span class="font-display text-2xl text-white uppercase tracking-wide block mb-4">Damon Howatt</span>
+          <p class="text-bone/40 text-sm leading-relaxed">
+            The #1 traditional-only focused archery brand in the world. Handcrafted in Lebanon, Oregon since 1939.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-medium text-sm mb-4 uppercase tracking-wider">Shop</h4>
+          <ul class="space-y-2.5 text-sm text-bone/40">
+            <li><a href="#" class="hover:text-white transition-colors">Recurve Bows</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Longbows</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Open Box</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Strings & Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-medium text-sm mb-4 uppercase tracking-wider">Company</h4>
+          <ul class="space-y-2.5 text-sm text-bone/40">
+            <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Dealers</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">How to Know</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-medium text-sm mb-4 uppercase tracking-wider">Connect</h4>
+          <ul class="space-y-2.5 text-sm text-bone/40">
+            <li><a href="#" class="hover:text-white transition-colors">Facebook</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">YouTube</a></li>
+          </ul>
+          <p class="text-bone/30 text-xs mt-6">Damon Howatt Productions LLC<br>1940 River Dr, Lebanon, OR 97355<br>541-870-4661</p>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-bone/30 text-xs">2026 Damon Howatt. All rights reserved.</p>
+        <p class="text-bone/30 text-xs">Handcrafted with tradition since 1939.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver reveal only (no scroll listeners)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
