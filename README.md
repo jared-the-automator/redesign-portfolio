@@ -177,3 +177,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Dave's School of Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/tonnesonstaxidermy.com/) | Taxidermy school & custom wildlife mounting | North Dakota |
 | [Shepard Hunting Company](https://jared-the-automator.github.io/redesign-portfolio/shepardhuntingcompany.com/) | Hunting outfitter & guide | Stacyville, ME |
 | [Will Bowmaker](https://jared-the-automator.github.io/redesign-portfolio/willbowmaker.com/) | Handcrafted traditional bows | Poland |
+
+| [Grau Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/graufuneralhomes.com/) | Funeral Homes | Monona, IA |
