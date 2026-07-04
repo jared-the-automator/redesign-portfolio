@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shepard Hunting Company — Northern Maine Guide & Outfitter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['"Source Sans 3"', 'sans-serif'],
+          },
+          colors: {
+            lodge: { green: '#1a2e1a', gold: '#c9a84c', bone: '#f4f0e8', forest: '#0f1f0f' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gold-accent { color: #c9a84c; }
+    .gold-bg { background-color: #c9a84c; }
+    .gold-border { border-color: #c9a84c; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.8s ease-out forwards; }
+  </style>
+</head>
+<body class="font-body text-bone bg-forest">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-forest/95 backdrop-blur border-b border-lodge-gold/20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-display text-xl text-bone tracking-wide">Shepard Hunting Co.</a>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide uppercase">
+        <a href="#hunts" class="hover:text-lodge-gold transition">Hunts</a>
+        <a href="#about" class="hover:text-lodge-gold transition">About</a>
+        <a href="#lodging" class="hover:text-lodge-gold transition">Lodging</a>
+        <a href="#contact" class="gold-bg text-forest px-5 py-2 hover:opacity-90 transition">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-20">
+    <img src="https://www.shepardhuntingcompany.com/wp-content/uploads/2013/01/100_03401.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Northern Maine hunting camp">
+    <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/60 to-transparent"></div>
+    <div class="relative max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-4">Stacyville, Maine</p>
+        <h1 class="font-display text-5xl md:text-7xl text-bone leading-tight mb-6">Guided Hunts in<br>the Heart of Maine</h1>
+        <p class="text-lg text-bone/80 mb-8 max-w-lg">Bear, moose, deer, and turkey hunts with seasoned guides who know every ridge and marsh in Northern Maine.</p>
+        <div class="flex gap-4">
+          <a href="#contact" class="gold-bg text-forest px-8 py-3 font-semibold hover:opacity-90 transition">Book Your Hunt</a>
+          <a href="#about" class="border border-bone/30 text-bone px-8 py-3 hover:border-lodge-gold hover:text-lodge-gold transition">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary: Hunts (asymmetric split) -->
+  <section id="hunts" class="py-24 bg-lodge-green">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <img src="https://www.shepardhuntingcompany.com/wp-content/uploads/2025/01/20220828_183522.jpg" class="w-full h-96 object-cover rounded-sm" alt="Maine hunting lodge">
+        </div>
+        <div class="order-1 md:order-2">
+          <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-3">Hunt Types</p>
+          <h2 class="font-display text-4xl text-bone mb-8">The Hunt You Are After</h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-lodge-gold/40">01</span>
+              <div>
+                <h3 class="font-semibold text-bone text-lg">Bear Hunts</h3>
+                <p class="text-bone/60 text-sm mt-1">Spring and fall bear hunts over bait or with hounds — book early for limited slots.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-lodge-gold/40">02</span>
+              <div>
+                <h3 class="font-semibold text-bone text-lg">Moose Hunts</h3>
+                <p class="text-bone/60 text-sm mt-1">Tag-required moose hunts in Zone 6. We handle the logistics so you focus on the shot.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="font-display text-3xl text-lodge-gold/40">03</span>
+              <div>
+                <h3 class="font-semibold text-bone text-lg">Deer & Turkey</h3>
+                <p class="text-bone/60 text-sm mt-1">Whitetail deer in the rut and turkey in spring. Decades of local knowledge applied.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: About (reversed split) -->
+  <section id="about" class="py-24 bg-forest">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-3">Our Story</p>
+          <h2 class="font-display text-4xl text-bone mb-6">Born and Raised in the Maine Woods</h2>
+          <p class="text-bone/70 mb-6 leading-relaxed">Shepard Hunting Company has been guiding hunters through the Stacyville woods for over a decade. We are not a booking agency — we live here, we hunt here, and we know the land because it is where we grew up.</p>
+          <p class="text-bone/70 mb-8 leading-relaxed">Ryan Shepard and his team of registered Maine guides bring the kind of local knowledge that only comes from decades spent in the field. Our hunts are small, personal, and built around your goals — whether that is a bear over bait or a moose in Zone 6.</p>
+          <div class="flex gap-8">
+            <div>
+              <p class="font-display text-3xl text-lodge-gold">10+</p>
+              <p class="text-bone/60 text-sm">Years Guiding</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl text-lodge-gold">5</p>
+              <p class="text-bone/60 text-sm">Licensed Guides</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl text-lodge-gold">100%</p>
+              <p class="text-bone/60 text-sm">Local Knowledge</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="https://www.shepardhuntingcompany.com/wp-content/uploads/2022/01/picture_AboutUs.jpeg" class="w-full h-96 object-cover rounded-sm" alt="Guide Ryan Shepard">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery: Brand Story -->
+  <section id="lodging" class="py-24 bg-lodge-green">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-3">The Experience</p>
+        <h2 class="font-display text-4xl text-bone">More Than a Hunt</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 md:row-span-2">
+          <img src="https://www.shepardhuntingcompany.com/wp-content/uploads/2025/01/20220828_183549.jpg" class="w-full h-full object-cover rounded-sm min-h-80" alt="Lodge and camp">
+        </div>
+        <div>
+          <img src="https://www.shepardhuntingcompany.com/wp-content/uploads/2025/01/FB_IMG_1579100171538.jpg" class="w-full h-64 object-cover rounded-sm" alt="Hunt in the field">
+        </div>
+        <div class="bg-forest p-8 flex flex-col justify-center rounded-sm">
+          <h3 class="font-display text-2xl text-bone mb-3">On-Site Lodging</h3>
+          <p betting-oddsclass="text-bone/70 text-sm">Stay in our Stacyville lodge — minutes from prime bear and moose territory. No driving to the stand at 4 AM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Credibility -->
+  <section class="py-24 bg-forest">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-lodge-gold text-sm font-semibold tracking-widest uppercase mb-3">What Hunters Say</p>
+        <h2 class="font-display text-4xl text-bone">Trophy Room Testimonials</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="bg-lodge-green p-8 rounded-sm">
+          <p class="text-bone/80 italic mb-6">"Ryan put me on a bear on the second evening. His knowledge of the local bait sites is unmatched."</p>
+          <p class="text-lodge-gold font-semibold">Mark T.</p>
+          <p class="text-bone/50 text-sm">Pennsylvania</p>
+        </div>
+        <div class="bg-lodge-green p-8 rounded-sm">
+          <p class="text-bone/80 italic mb-6">"Been coming here for three years running. The lodging is clean, the food is great, and the hunting is even better."</p>
+          <p class="text-lodge-gold font-semibold">Dave R.</p>
+          <p class="text-bone/50 text-sm">New York</p>
+        </div>
+        <div class="bg-lodge-green p-8 rounded-sm">
+          <p class="text-bone/80italic mb-6">"Got my first moose with Ryan. He made the whole process simple — from the tag draw to the field dressing."</p>
+          <p class="text-lodge-gold font-semibold">Tom H.</p>
+          <p class="text-bone/50 text-sm">Massachusetts</p>
+        </div>
+      </div>
+      <div class="border-t border-lodge-gold/20 pt-12 flex flex-wrap justify-center gap-12 text-center">
+        <div>
+          <p class="font-display text-4xl text-lodge-gold">2013</p>
+          <p class="text-bone/60 text-sm mt-1">First Guided Hunts</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl text-lodge-gold">ME</p>
+          <p class="text-bone/60 text-sm mt-1">Licensed & Insured</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl text-lodge-gold">100%</p>
+          <p class="text-bone/60 text-sm mt-1">Fair Chase</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-lodge-green border-y border-lodge-gold/20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="font-display text-4xl md:text-5xl text-bone mb-6">Ready to Fill Your Tag?</h2>
+      <p class="text-bone/70 text-lg mb-8 max-w-2xl mx-auto">Spots fill fast for spring bear and fall moose. Contact Ryan directly to check availability and book your Northern Maine hunt.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="mailto:ryanshepard4570@gmail.com" class="gold-bg text-forest px-10 py-4 font-semibold tracking-wide hover:opacity-90 transition">Email Ryan</a>
+        <a href="tel:207-XXX-XXXX" class="border border-lodge-gold/40 text-bone px-10 py-4 font-semibold hover:border-lodge-gold hover:text-lodge-gold transition">Call for Availability</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-forest">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div>
+          <h3 class="font-display text-xl text-bone mb-4">Shepard Hunting Co.</h3>
+          <p class="text-bone/60 text-sm">Professional guiding and outfitting services in Northern Maine. Bear, moose, deer, turkey, and trapping.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-bone mb-4">Hunts</h4>
+          <ul class="space-y-2 text-bone/60 text-sm">
+            <li><a href="#" class="hover:text-lodge-gold">Bear Hunts</a></li>
+            <li><a href="#" class="hover:text-lodge-gold">Moose Hunts</a></li>
+            <li><a href="#" class="hover:text-lodge-gold">Deer Hunts</a></li>
+            <li><a href="#" class="hover:text-lodge-gold">Turkey Hunts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-bone mb-4">Company</h4>
+          <ul class="space-y-2 text-bone/60 text-sm">
+            <li><a href="#" class="hover:text-lodge-gold">About Us</a></li>
+            <li><a href="#" class="hover:text-lodge-gold">Trophy Room</a></li>
+            <li><a href="#" class="hover:text-lodge-gold">Lodging</a></li>
+            <li><a href="#" class="hover:text-lodge-gold">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-bone mb-4">Contact</h4>
+          <p class="text-bone/60 text-sm mb-2">Stacyville, Maine</p>
+          <p class="text-bone/60 text-sm mb-2">ryanshepard4570@gmail.com</p>
+          <p class="text-bone/60 text-sm">Facebook: @ryandshepard1</p>
+        </div>
+      </div>
+      <div class="border-t border-bone/10 mt-12 pt-8 text-center text-bone/40 text-sm">
+        <p> Shepard Hunting Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

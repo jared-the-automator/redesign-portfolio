@@ -175,3 +175,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | [Fly Fisher Guy](https://jared-the-automator.github.io/redesign-portfolio/flyfisherguy.com/) | Custom fly rods & precision wing burners | Albuquerque, NM |
 | [Dave's School of Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/tonnesonstaxidermy.com/) | Taxidermy school & custom wildlife mounting | North Dakota |
+| [Shepard Hunting Company](https://jared-the-automator.github.io/redesign-portfolio/shepardhuntingcompany.com/) | Hunting outfitter & guide | Stacyville, ME |
