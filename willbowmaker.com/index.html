@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will Bowmaker - Handcrafted Traditional Bows Since 2007</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forest: { DEFAULT: '#1b3a2f', dark: '#0a1f16', light: '#2d5a48' },
+            gold: { DEFAULT: '#c9a44a', light: '#d4b86a' },
+            bone: { DEFAULT: '#f2ede4', muted: '#e8e2d6' },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-bone text-forest-dark antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-forest-dark/90 backdrop-blur-sm transition-all">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="font-display text-bone text-xl font-bold tracking-wide">Will Bowmaker</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#work" class="text-bone/80 hover:text-bone text-sm font-medium transition-colors">Collection</a>
+          <a href="#story" class="text-bone/80 hover:text-bone text-sm font-medium transition-colors">Story</a>
+          <a href="#contact" class="text-bone/80 hover:text-bone text-sm font-medium transition-colors">Contact</a>
+        </div>
+        <a href="#contact" class="bg-gold text-forest-dark px-5 py-2 text-sm font-semibold rounded-sm hover:bg-gold-light transition-colors">Order a Bow</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 lg:items-center lg:pb-0">
+    <div class="absolute inset-0">
+      <img src="https://willbowmaker.com/wp-content/uploads/2024/11/Swallow-1.jpg" alt="Handcrafted traditional longbow displayed against natural wood background" class="w-full h-full object-cover">
+      <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(10,31,22,0.92) 0%, rgba(10,31,22,0.5) 50%, rgba(10,31,22,0.2) 100%);"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div class="max-w-2xl">
+        <p class="text-gold uppercase tracking-widest text-xs font-semibold mb-4">Handmade in Poland</p>
+        <h1 class="font-display text-bone text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">Traditional Bows<br>Forged by Hand</h1>
+        <p class="text-bone/80 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">Over 19 years of bowmaking. Each bow is shaped from the highest quality materials, inspired by the bows of antiquity and the Middle Ages.</p>
+        <a href="#work" class="inline-block bg-gold text-forest-dark px-8 py-3.5 text-sm font-semibold rounded-sm hover:bg-gold-light transition-colors">Explore the Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="work" class="py-24 bg-bone">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <img src="https://willbowmaker.com/wp-content/uploads/2024/11/Odys-2.jpg" alt="Close-up detail of a handcrafted Odys bow showing wood grain and craftsmanship" class="w-full h-96 lg:h-[500px] object-cover rounded-sm shadow-lg">
+        </div>
+        <div class="reveal">
+          <p class="text-gold uppercase tracking-widest text-xs font-semibold mb-3">01 / The Craft</p>
+          <h2 class="font-display text-forest-dark text-3xl md:text-4xl font-bold mb-6">Every Bow Tells a Story</h2>
+          <p class="text-forest-dark/70 text-base leading-relaxed mb-10">We do not manufacture bows. We reveal them from carefully selected wood. Each model draws on centuries of archery tradition, from English longbows to Assyrian horse bows.</p>
+          <div class="space-y-8">
+            <div class="flex items-start space-x-5">
+              <span class="font-display text-gold text-2xl font-bold">01</span>
+              <div>
+                <h3 class="font-display text-forest-dark font-bold text-lg mb-1">Select Materials</h3>
+                <p class="text-forest-dark/60 text-sm">Only the finest woods and laminates touch our workshop. No shortcuts, no fillers.</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-5">
+              <span class="font-display text-gold text-2xl font-bold">02</span>
+              <div>
+                <h3 class="font-display text-forest-dark font-bold text-lg mb-1">Hand Shaping</h3>
+                <p class="text-forest-dark/60 text-sm">Each bow is worked by hand, tillered to precise draw weight, and tested for performance.</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-5">
+              <span class="font-display text-gold text-2xl font-bold">03</span>
+              <div>
+                <h3 class="font-display text-forest-dark font-bold text-lg mb-1">Finish & Seal</h3>
+                <p class="text-forest-dark/60 text-sm">Natural oils and protective finishes that age with the bow, not against it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section (Reversed Split) -->
+  <section id="story" class="py-24 bg-bone-muted">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <p class="text-gold uppercase tracking-widest text-xs font-semibold mb-3">02 / The Bowyer</p>
+          <h2 class="font-display text-forest-dark text-3xl md:text-4xl font-bold mb-6">A Dream Since Childhood</h2>
+          <p class="text-forest-dark/70 text-base leading-relaxed mb-6">The wooden bow has been my dream since I can remember. This dream turned into a passion that continues to this day.</p>
+          <p class="text-forest-dark/70 text-base leading-relaxed mb-6">In 2018, I founded the official Will Bowmaker workshop. Each bow is created by hand from the highest quality materials. Some are dedicated for historical reenactors. Others, such as fantasy bows, are for a wider circle of archery enthusiasts.</p>
+          <p class="text-forest-dark/70 text-base leading-relaxed mb-8">What unites them is the desire to create a well-shooting bow.</p>
+          <div class="flex items-center space-x-4">
+            <img src="https://willbowmaker.com/wp-content/uploads/2019/02/logo-header4_small.png" alt="Will Bowmaker brand logo" class="h-10 w-auto opacity-70">
+            <span class="text-forest-dark/50 text-sm italic">Founded in 2018, making bows since 2007.</span>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 reveal">
+          <img src="https://willbowmaker.com/wp-content/uploads/2021/06/Odys4.jpg" alt="Bowyer at work crafting a traditional wooden bow in the workshop" class="w-full h-96 lg:h-[500px] object-cover rounded-sm shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery (Breaks the zigzag) -->
+  <section class="py-24 bg-forest-dark text-bone">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <p class="text-gold uppercase tracking-widest text-xs font-semibold mb-3">03 / Gallery</p>
+        <h2 class="font-display text-bone text-3xl md:text-4xl font-bold">The Collection</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="reveal"><img src="https://willbowmaker.com/wp-content/uploads/2024/11/Swallow-1.jpg" alt="Swallow traditional reflex-deflex bow photographed in profile" class="w-full h-64 object-cover rounded-sm hover:scale-[1.02] transition-transform duration-500"></div>
+        <div class="reveal"><img src="https://willbowmaker.com/wp-content/uploads/2024/11/Swallow-2.jpg" alt="Swallow bow showing laminated wood layers and craftsmanship detail" class="w-full h-64 object-cover rounded-sm hover:scale-[1.02] transition-transform duration-500"></div>
+        <div class="reveal"><img src="https://willbowmaker.com/wp-content/uploads/2024/11/Swallow-3.jpg" alt="Close-up of bow limb showing tillered curve" class="w-full h-64 object-cover rounded-sm hover:scale-[1.02] transition-transform duration-500"></div>
+        <div class="reveal"><img src="https://willbowmaker.com/wp-content/uploads/2024/11/Odys-3.jpg" alt="Odys bow displayed against stone background" class="w-full h-64 object-cover rounded-sm hover:scale-[1.02] transition-transform duration-500"></div>
+        <div class="reveal"><img src="https://willbowmaker.com/wp-content/uploads/2024/11/Odys-4.jpg" alt="Odys bow string and nock detail" class="w-full h-64 object-cover rounded-sm hover:scale-[1.02] transition-transform duration-500"></div>
+        <div class="reveal"><img src="https://willbowmaker.com/wp-content/uploads/2024/11/Odys-5.jpg" alt="Odys bow full length showing elegant tiller" class="w-full h-64 object-cover rounded-sm hover:scale-[1.02] transition-transform duration-500"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility -->
+  <section class="py-24 bg-bone">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 text-center mb-16">
+        <div class="reveal">
+          <p class="font-display text-gold text-5xl font-bold mb-2">19+</p>
+          <p class="text-forest-dark/70 text-sm uppercase tracking-wider">Years Making Bows</p>
+        </div>
+        <div class="reveal">
+          <p class="font-display text-gold text-5xl font-bold mb-2">24K+</p>
+          <p class="text-forest-dark/70 text-sm uppercase tracking-wider">YouTube Subscribers</p>
+        </div>
+        <div class="reveal">
+          <p class="font-display text-gold text-5xl font-bold mb-2">11</p>
+          <p class="text-forest-dark/70 text-sm uppercase tracking-wider">Models Available</p>
+        </div>
+      </div>
+      <div class="max-w-3xl mx-auto text-center reveal">
+        <blockquote class="font-display text-forest-dark text-2xl md:text-3xl font-bold italic leading-tight mb-4">"What unites them is the desire to create a well-shooting bow."</blockquote>
+        <p class="text-forest-dark/60 text-sm">Radoslaw Ksiazek, bowyer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 bg-forest-dark text-bone text-center">
+    <div class="max-w-3xl mx-auto px-6 lg:px-8 reveal">
+      <h2 class="font-display text-3xl md:text-5xl font-bold mb-6">Ready to find your bow?</h2>
+      <p class="text-bone/70 text-lg mb-8 max-w-xl mx-auto">Each bow is made to order. Browse the collection and find the model that matches your draw length and shooting style.</p>
+      <a href="#work" class="inline-block bg-gold text-forest-dark px-10 py-4 text-sm font-semibold rounded-sm hover:bg-gold-light transition-colors">Shop the Collection</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest text-bone/80 py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="md:col-span-2">
+          <h3 class="font-display text-bone text-xl font-bold mb-4">Will Bowmaker</h3>
+          <p class="text-bone/60 text-sm leading-relaxed max-w-sm">Handcrafted traditional bows inspired by the bows of antiquity and the Middle Ages. Each bow is created by hand from the highest quality materials in Poland.</p>
+        </div>
+        <div>
+          <h4 class="font-display text-bone font-semibold mb-4">Collection</h4>
+          <ul class="space-y-2 text-bone/60 text-sm">
+            <li>Diego</li>
+            <li>Swallow</li>
+            <li>Zephyr</li>
+            <li>Odys</li>
+            <li>View All</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display text-bone font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-bone/60 text-sm">
+            <li>About</li>
+            <li>Warranty</li>
+            <li>Contact Form</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-bone/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-bone/40 text-xs"> Will Bowmaker. All rights reserved.</p>
+        <p class="text-bone/40 text-xs">Handmade in Poland.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for reveal animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
