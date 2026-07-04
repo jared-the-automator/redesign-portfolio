@@ -174,3 +174,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 |[Conroy's Oil Service](https://jared-the-automator.github.io/redesign-portfolio/conroysoil.com/)|Heating oil & kerosene delivery|Saco, ME|
 
 | [Fly Fisher Guy](https://jared-the-automator.github.io/redesign-portfolio/flyfisherguy.com/) | Custom fly rods & precision wing burners | Albuquerque, NM |
+| [Dave's School of Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/tonnesonstaxidermy.com/) | Taxidermy school & custom wildlife mounting | North Dakota |

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dave's School of Taxidermy | Custom Taxidermy & Lessons in North Dakota</title>
+  <meta name="description" content="Dave's School of Taxidermy offers custom wildlife mounting, taxidermy lessons, and professional instruction for hunters and outdoorsmen in North Dakota.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Open Sans', 'sans-serif'],
+          },
+          colors: {
+            forest: { DEFAULT: '#1a3320', dark: '#0d1a12', light: '#2a4a32' },
+            gold: { DEFAULT: '#b8860b', light: '#d4a017', dark: '#8B6914' },
+            bone: { DEFAULT: '#e8dcc8', dark: '#d4c4ac', light: '#f2ebe0' },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .corner-sm {
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body class="font-body text-bone bg-forest min-h-screen">
+
+<!-- Nav -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-forest/95 backdrop-blur-sm border-b border-forest-light/30">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/logo.png" alt="Dave's School of Taxidermy" class="h-10 w-auto">
+      <span class="font-display font-bold text-bone text-lg tracking-wide hidden sm:block">Dave's School of Taxidermy</span>
+    </div>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#services" class="text-bone/80 hover:text-gold transition-colors text-sm tracking-wide">Services</a>
+      <a href="#story" class="text-bone/80 hover:text-gold transition-colors text-sm tracking-wide">Our Story</a>
+      <a href="#gallery" class="text-bone/80 hover:text-gold transition-colors text-sm tracking-wide">Galleries</a>
+      <a href="#contact" class="bg-gold text-forest-dark px-5 py-2 text-sm font-semibold tracking-wide corner-sm hover:bg-gold-light transition-colors">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero: left-aligned, min-h-[100dvh] -->
+<section class="min-h-[100dvh] relative flex items-end pb-20">
+  <div class="absolute inset-0 z-0">
+    <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/P1010463.jpg" alt="Three generations and a morning hunt" class="w-full h-full object-cover" loading="eager">
+    <div class="absolute inset-0 bg-gradient-to-r from-forest/90 via-forest/60 to-transparent"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-2xl">
+      <p class="text-bone/80 text-sm tracking-[0.25em] uppercase mb-4 font-semibold">Est. North Dakota, U.S.A.</p>
+      <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-bone leading-tight mb-4">
+        Preserving the Hunt.<br>Honoring the Craft.
+      </h1>
+      <p class="text-bone/90 text-lg max-w-lg mb-8 leading-relaxed">
+        Custom wildlife taxidermy and hands-on instruction for hunters who believe a mount deserves the same care as the hunt itself.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="bg-gold text-forest-dark px-8 py-3 text-sm font-semibold tracking-wide corner-sm hover:bg-gold-light transition-colors inline-block">Start a Project</a>
+        <a href="#services" class="border border-bone/40 text-bone px-8 py-3 text-sm font-semibold tracking-wide corner-sm hover:bg-bone/10 transition-colors inline-block">View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Primary Product Section: asymmetric split -->
+<section id="services" class="py-20 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="reveal">
+        <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/Jeffrey-Johnson-1.jpg" alt="Jeffrey Johnson Slide" class="w-full aspect-[4/5] object-cover corner-sm">
+      </div>
+      <div class="reveal space-y-8">
+        <div>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-bone mb-6">From Field to Finish</h2>
+          <p class="text-bone/70 text-lg leading-relaxed">
+            Every mount tells a story. We handle custom wildlife taxidermy with precision, patience, and respect for the animal. Whether it is a shoulder mount, lifesize, or habitat scene, your trophy receives museum-quality attention.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <div class="flex gap-5">
+            <span class="text-gold font-display font-bold text-2xl mt-1">01</span>
+            <div>
+              <h3 class="font-semibold text-bone text-lg mb-1">Custom Mounting</h3>
+              <p class="text-bone/60">Shoulder mounts, lifesize pieces, and habitat scenes built to last generations.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="text-gold font-display font-bold text-2xl mt-1">02</span>
+            <div>
+              <h3 class="font-semibold text-bone text-lg mb-1">Taxidermy School</h3>
+              <p class="text-bone/60">Hands-on instruction for beginners and advanced students ready to learn the trade.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="text-gold font-display font-bold text-2xl mt-1">03</span>
+            <div>
+              <h3 class="font-semibold text-bone text-lg mb-1">Professional Tuition</h3>
+              <p class="text-bone/60">Structured courses covering skinning, fleshing, tanning, and finishing techniques.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Secondary Section: reversed split -->
+<section id="story" class="py-20 lg:py-32 bg-forest-dark">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="reveal order-2 lg:order-1 space-y-6">
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-bone mb-2">Three Generations in the Field</h2>
+        <p class="text-bone/70 text-lg leading-relaxed">
+          Dave's School of Taxidermy was built by hunters, for hunters. What started as a passion for preserving memories has grown into a trusted North Dakota institution serving sportsmen across the region.
+        </p>
+        <p class="text-bone/70 text-lg leading-relaxed">
+          We believe taxidermy is not just a trade. It is an art form that honors the animal, the hunt, and the tradition of conservation. Our students leave with more than a certificate. They carry the skills to build a livelihood.
+        </p>
+        <div class="flex gap-8 pt-4">
+          <div>
+            <p class="text-gold font-display font-bold text-3xl">3</p>
+            <p class="text-bone/60 text-sm">Generations</p>
+          </div>
+          <div>
+            <p class="text-gold font-display font-bold text-3xl">ND</p>
+            <p class="text-bone/60 text-sm">North Dakota</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal order-1 lg:order-2">
+        <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/P1010522.jpg" alt="Three generations and a morning hunt" class="w-full aspect-[3/4] object-cover corner-sm">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery / Brand Story: photography grid -->
+<section id="gallery" class="py-20 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-2xl mb-12 reveal">
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-bone mb-4">The Work Speaks</h2>
+      <p class="text-bone/70 text-lg">A selection of mounts, memories, and moments from the workshop and the field.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="reveal md:col-span-2 md:row-span-2">
+        <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/P1010463.jpg" alt="Three generations and a morning hunt" class="w-full h-full min-h-[300px] object-cover corner-sm">
+      </div>
+      <div class="reveal">
+        <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/Darren-Engesser-1.jpg" alt="Darren Engesser Slide" class="w-full h-full min-h-[160px] object-cover corner-sm">
+      </div>
+      <div class="reveal">
+        <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/P1010384.jpg" alt="Hunt memories" class="w-full h-full min-h-[160px] object-cover corner-sm">
+      </div>
+      <div class="reveal">
+        <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/P1020086.jpg" alt="Hunt memories" class="w-full h-full min-h-[160px] object-cover corner-sm">
+      </div>
+      <div class="reveal">
+        <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/P1010522.jpg" alt="Hunt memories" class="w-full h-full min-h-[160px] object-cover corner-sm">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials / Credibility -->
+<section class="py-20 lg:py-32 bg-forest-dark">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-3xl mx-auto text-center mb-16 reveal">
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-bone mb-4">Trusted by Hunters Across the Region</h2>
+      <p class="text-bone/70 text-lg">Students, clients, and fellow sportsmen who trust Dave's with their most prized trophies.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div class="reveal bg-forest border border-forest-light/30 p-8 corner-sm">
+        <p class="text-bone/90 text-lg leading-relaxed mb-6 italic">"The attention to detail on my buck was incredible. You can tell this is not just a job for Dave. It is a passion."</p>
+        <div>
+          <p class="font-semibold text-bone">Jeffrey Johnson</p>
+          <p class="text-bone/60 text-sm">Repeat Client</p>
+        </div>
+      </div>
+      <div class="reveal bg-forest border border-forest-light/30 p-8 corner-sm">
+        <p class="text-bone/90 text-lg leading-relaxed mb-6 italic">"I completed the taxidermy school course and left with the skills and confidence to start my own shop."</p>
+        <div>
+          <p class="font-semibold text-bone">Darren Engesser</p>
+          <p class="text-bone/60 text-sm">Graduate, Taxidermy School</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center">
+      <div class="reveal">
+        <p class="text-gold font-display font-bold text-3xl">3</p>
+        <p class="text-bone/60 text-sm">Generations</p>
+      </div>
+      <div class="reveal">
+        <p class="text-gold font-display font-bold text-3xl">ND</p>
+        <p class="text-bone/60 text-sm">North Dakota</p>
+      </div>
+      <div class="reveal">
+        <p class="text-gold font-display font-bold text-3xl">100%</p>
+        <p class="text-bone/60 text-sm">Handcrafted</p>
+      </div>
+      <div class="reveal">
+        <p class="text-gold font-display font-bold text-3xl">100%</p>
+        <p class="text-bone/60 text-sm">Custom Work</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Strip -->
+<section id="contact" class="py-20 bg-gold">
+  <div class="max-w-4xl mx-auto px-6 text-center reveal">
+    <h2 class="font-display font-bold text-3xl sm:text-4xl text-forest-dark mb-4">Ready to Preserve Your Trophy?</h2>
+    <p class="text-forest-dark/80 text-lg mb-8 max-w-2xl mx-auto">Whether you need a custom mount or want to enroll in our taxidermy school, we are here to help. Every project starts with a conversation.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="mailto:tonnesonthunder@gmail.com" class="bg-forest text-bone px-8 py-3 text-sm font-semibold tracking-wide corner-sm hover:bg-forest-light transition-colors inline-block">Email Dave</a>
+      <a href="http://www.facebook.com/DavesSchoolOfTaxidermy" target="_blank" class="border border-forest/40 text-forest-dark px-8 py-3 text-sm font-semibold tracking-wide corner-sm hover:bg-forest/10 transition-colors inline-block">Visit Facebook</a>
+    </div>
+    <p class="text-forest-dark/60 text-sm mt-6">tonnesonthunder@gmail.com</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-12 bg-forest border-t border-forest-light/20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <img src="https://www.tonnesonstaxidermy.com/wp-content/uploads/2022/07/logo.png" alt="Dave's School of Taxidermy" class="h-8 w-auto mb-4">
+        <p class="text-bone/60 text-sm">Custom taxidermy and education for serious sportsmen in North Dakota and beyond.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-bone mb-4">Services</h4>
+        <ul class="space-y-2 text-sm text-bone/60">
+          <li>Custom Mounting</li>
+          <li>Taxidermy School</li>
+          <li>Professional Tuition</li>
+          <li>Taxidermy Store</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-bone mb-4">Explore</h4>
+        <ul class="space-y-2 text-sm text-bone/60">
+          <li>About Us</li>
+          <li>Galleries</li>
+          <li>Testimonials</li>
+          <li>Tuition & Fees</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-bone mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm text-bone/60">
+          <li>tonnesonthunder@gmail.com</li>
+          <li><a href="http://www.facebook.com/DavesSchoolOfTaxidermy" target="_blank" class="hover:text-gold transition-colors">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-forest-light/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-bone/40 text-sm"> Dave's School of Taxidermy. All rights reserved.</p>
+      <p class="text-bone/40 text-sm">Handcrafted in North Dakota</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Intersection Observer for reveals
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
