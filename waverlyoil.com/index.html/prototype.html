@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waverly Oil — Full Service Home Heating Oil, Milford & Manomet MA</title>
+  <meta name="description" content="Reliable heating oil delivery, installation and 24/7 emergency service for Milford, Manomet and the greater South Shore. Family-run since 1965.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Cabinet Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            stone: { 50: '#fafaf9', 100: '#f5f5f4', 200: '#e7e5e4', 300: '#d6d3d1', 400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c', 800: '#292524', 900: '#1c1917' },
+            chalk: '#f7f6f3',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-display { font-family: 'Cabinet Grotesk', sans-serif; }
+    .font-body { font-family: 'Inter', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="font-body bg-chalk text-stone-800">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full bg-chalk/95 backdrop-blur-sm z-50 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://supremeenergy.com/wp-content/uploads/sites/20/2018/01/logo-1.png" alt="Waverly Oil" class="h-10">
+        <span class="font-display font-bold text-xl text-stone-900 tracking-tight">WAVERLY OIL</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">Services</a>
+        <a href="#about" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">About</a>
+        <a href="#area" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">Service Area</a>
+        <a href="#contact" class="bg-stone-900 text-white px-5 py-2.5 text-sm font-semibold hover:bg-stone-800 transition">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-dvh flex items-end pb-20 pt-32 bg-stone-900">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://supremeenergy.com/wp-content/uploads/sites/20/2017/12/emergency.jpg');">
+      <div class="absolute inset-0 bg-stone-900/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-stone-900/80 to-transparent"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <p class="text-stone-300 text-sm font-medium tracking-widest uppercase mb-4">Milford and Manomet, MA</p>
+      <h1 class="font-display font-800 text-5xl md:text-7xl text-white leading-none max-w-3xl">Reliable heating. Every single winter.</h1>
+      <p class="text-stone-300 text-lg mt-6 max-w-xl leading-relaxed">Full service home heating oil, installation and emergency repairs for the South Shore. Family-run since 1965.</p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="tel:508-586-8459" class="bg-white text-stone-900 px-8 py-4 font-bold text-sm tracking-wide hover:bg-stone-100 transition">Call: 508-586-8459</a>
+        <a href="#contact" class="border-2 border-white text-white px-8 py-4 font-bold text-sm tracking-wide hover:bg-white hover:text-stone-900 transition">Request Delivery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section id="services" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <img src="https://supremeenergy.com/wp-content/uploads/sites/20/2018/07/repair1.jpg" alt="Heating oil technician at work" class="w-full h-[500px] object-cover">
+        </div>
+        <div class="reveal">
+          <p class="text-stone-500 text-sm font-medium tracking-widest uppercase mb-4">What We Do</p>
+          <h2 class="font-display font-800 text-4xl md:text-5xl text-stone-900 leading-tight mb-6">Full service for your home heating system.</h2>
+          <p class="text-stone-600 text-lg leading-relaxed mb-10">From automatic delivery to emergency repairs, we keep your family warm. Licensed technicians, honest pricing, and no surprises.</p>
+          <div class="grid gap-6">
+            <div class="flex items-start gap-4">
+              <span class="font-display font-800 text-2xl text-stone-400">01</span>
+              <div>
+                <h3 class="font-bold text-stone-900 mb-1">Automatic Delivery</h3>
+                <p class="text-stone-600 text-sm">Degree-day tracking means your tank never runs low.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="font-display font-800 text-2xl text-stone-400">02</span>
+              <div>
+                <h3 class="font-bold text-stone-900 mb-1">Installation & Repair</h3>
+                <p class="text-stone-600 text-sm">New boilers, furnaces and emergency service calls.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="font-display font-800 text-2xl text-stone-400">03</span>
+              <div>
+                <h3 class="font-bold text-stone-900 mb-1">Budget Plans</h3>
+                <p class="text-stone-600 text-sm">Spread costs across the year with predictable monthly payments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section: About -->
+  <section id="about" class="py-24 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal order-2 lg:order-1">
+          <p class="text-stone-500 text-sm font-medium tracking-widest uppercase mb-4">About Waverly Oil</p>
+          <h2 class="font-display font-800 text-4xl md:text-5xl text-stone-900 leading-tight mb-6">A South Shore name since 1965.</h2>
+          <p class="text-stone-600 text-lg leading-relaxed mb-8">We started with one truck and a promise: show up on time, charge fair rates, and treat every customer like a neighbor. That is still how we operate today.</p>
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <p class="font-display font-800 text-4xl text-stone-900">60+</p>
+              <p class="text-stone-600 text-sm mt-1">Years Serving MA</p>
+            </div>
+            <div>
+              <p class="font-display font-800 text-4xl text-stone-900">24/7</p>
+              <p class="text-stone-600 text-sm mt-1">Emergency Service</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal order-1 lg:order-2 relative">
+          <img src="https://supremeenergy.com/wp-content/uploads/sites/20/2017/12/emergency.jpg" alt="Waverly Oil service truck" class="w-full h-[500px] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area Section -->
+  <section id="area" class="py-24 bg-stone-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-stone-400 text-sm font-medium tracking-widest uppercase mb-4">Service Area</p>
+      <h2 class="font-display font-800 text-4xl md:text-5xl mb-6">Milford, Manomet and the South Shore.</h2>
+      <p class="text-stone-300 text-lg max-w-2xl mx-auto mb-12">We deliver heating oil and provide emergency service throughout the region. If you are on the South Shore, we have you covered.</p>
+      <a href="tel:508-586-8459" class="inline-block bg-white text-stone-900 px-10 py-4 font-bold text-sm tracking-wide hover:bg-stone-100 transition">Call 508-586-8459</a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center reveal">
+        <p class="text-stone-500 text-sm font-medium tracking-widest uppercase mb-4">Customer Trust</p>
+        <blockquote class="font-display font-700 text-3xl md:text-4xl text-stone-900 leading-tight italic mb-8">"They were here within an hour when our furnace went out. Professional, friendly, and fair. We would not call anyone else."</blockquote>
+        <cite class="text-stone-600 text-sm not-italic">Sarah M., Milford, MA</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-16 bg-stone-100">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display font-800 text-3xl md:text-4xl text-stone-900 mb-6">Ready for predictable heating costs?</h2>
+      <p class="text-stone-600 text-lg mb-8">Call now for a free quote. No contracts, no hidden fees.</p>
+      <a href="tel:508-586-8459" class="inline-block bg-stone-900 text-white px-10 py-4 font-bold text-sm tracking-wide hover:bg-stone-800 transition">Call 508-586-8459</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-stone-900 text-stone-400 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+      <div>
+        <h3 class="text-white font-display font-bold text-lg mb-4">Waverly Oil</h3>
+        <p class="text-sm leading-relaxed">Reliable heating oil delivery and service for Milford, Manomet and the South Shore. Family-run since 1965.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4 tracking-widest uppercase">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition">Heating Oil Delivery</a></li>
+          <li><a href="#" class="hover:text-white transition">Installation</a></li>
+          <li><a href="#" class="hover:text-white transition">Emergency Repairs</a></li>
+          <li><a href="#" class="hover:text-white transition">Budget Plans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4 tracking-widest uppercase">Service Area</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Milford, MA</li>
+          <li>Manomet, MA</li>
+          <li>South Shore</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4 tracking-widest uppercase">Contact</h4>
+        <p class="text-sm mb-2">508-586-8459</p>
+        <p class="text-sm">Serving the South Shore since 1965.</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-stone-800 text-xs text-stone-500">
+      &copy; 2026 Waverly Oil. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for scroll reveals
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    revealElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
