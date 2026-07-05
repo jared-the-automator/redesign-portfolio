@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linnemann Funeral Home - Serving Northern Kentucky Since 1882</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'forest': '#1a3c28',
+            'forest-light': '#234a33',
+            'forest-dark': '#132f21',
+            'gold': '#c9a84c',
+            'gold-light': '#d4b86a',
+            'bone': '#f5f0e8',
+            'bone-dark': '#e8e0d0',
+          },
+          fontFamily: {
+            'display': ['"Playfair Display"', 'serif'],
+            'body': ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .radius { border-radius: 2px; }
+    .gold-underline {
+      background-image: linear-gradient(to right, #c9a84c, #c9a84c);
+      background-size: 60px 2px;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+      padding-bottom: 12px;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-bone text-forest antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 bg-forest/95 backdrop-blur-sm border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="font-display text-xl font-bold text-bone tracking-tight">Linnemann Funeral Home</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#" class="text-sm font-medium text-bone/80 hover:text-gold transition-colors">Obituaries</a>
+          <a href="#" class="text-sm font-medium text-bone/80 hover:text-gold transition-colors">Services</a>
+          <a href="#" class="text-sm font-medium text-bone/80 hover:text-gold transition-colors">About</a>
+          <a href="#" class="text-sm font-medium text-bone/80 hover:text-gold transition-colors">Contact</a>
+          <a href="tel:8597271250" class="text-sm font-semibold text-forest bg-gold px-4 py-2 hover:bg-gold-light transition-colors radius">Call 859-727-1250</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 lg:pb-24" style="background: linear-gradient(to top, rgba(19,47,33,0.9) 0%, rgba(19,47,33,0.4) 50%, rgba(19,47,33,0.2) 100%), url('https://linnemannfuneralhomes.com/wp-content/uploads/2025/12/funeral-service-honoring-ernest-.jpg') center/cover no-repeat;">
+    <div class="absolute inset-0" style="background: linear-gradient(45deg, rgba(26,60,40,0.85) 0%, rgba(26,60,40,0.3) 100%);"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block text-gold text-sm font-semibold tracking-widest uppercase mb-4">Boone & Kenton County</span>
+        <h1 class="font-display text-5xl lg:text-7xl font-bold text-bone leading-tight mb-6">Six Generations<br>of Trusted Service</h1>
+        <p class="text-lg lg:text-xl text-bone/80 leading-relaxed mb-8 max-w-lg">Serving Northern Kentucky families with care, compassion, and respect since 1882.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="tel:8597271250" class="inline-flex items-center text-sm font-semibold text-forest bg-gold px-6 py-3 hover:bg-gold-light transition-colors radius">Call 859-727-1250</a>
+          <a href="#" class="inline-flex items-center text-sm font-semibold text-bone border border-bone/30 px-6 py-3 hover:bg-bone/10 transition-colors radius">View Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product Section -->
+  <section class="py-20 lg:py-28 bg-bone">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="reveal">
+          <img src="https://linnemannfuneralhomes.com/wp-content/uploads/2024/03/Frame-89-1.jpg" alt="Heritage chapel interior" class="w-full h-96 object-cover radius" loading="lazy">
+        </div>
+        <div class="reveal">
+          <h2 class="font-display text-3xl lg:text-4xl font-bold text-forest mb-6">How we care for your family</h2>
+          <p class="text-forest/70 leading-relaxed mb-10">From the moment you contact us, our team is dedicated to helping you honor your loved one with dignity and meaningful tradition.</p>
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <span class="font-display text-3xl font-bold text-gold flex-shrink-0 leading-none">01</span>
+              <div>
+                <h3 class="font-display text-lg font-bold text-forest mb-1">Traditional Funeral Services</h3>
+                <p class="text-forest/60 text-sm leading-relaxed">Customized services that reflect your loved one&rsquo;s life, values, and faith.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-3xl font-bold text-gold flex-shrink-0 leading-none">02</span>
+              <div>
+                <h3 class="font-display text-lg font-bold text-forest mb-1">On-Site Cremation</h3>
+                <p class="text-forest/60 text-sm leading-relaxed">Northern Kentucky&rsquo;s only on-site crematory, ensuring your loved one never leaves our care.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-3xl font-bold text-gold flex-shrink-0 leading-none">03</span>
+              <div>
+                <h3 class="font-display text-lg font-bold text-forest mb-1">Pre-Planning &amp; Grief Support</h3>
+                <p class="text-forest/60 text-sm leading-relaxed">Peace-of-mind planning and compassionate aftercare for your family.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Section (Reversed Split) -->
+  <section class="py-20 lg:py-28 bg-forest">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <span class="text-gold text-sm font-semibold tracking-widest uppercase mb-3 block">Since 1882</span>
+          <h2 class="font-display text-3xl lg:text-4xl font-bold text-bone mb-6">A family tradition<br>of care</h2>
+          <p class="text-bone/80 leading-relaxed mb-6">In 1882, Henry Linnemann entered the funeral business with Edward Moore in Covington. Over six generations, the Linnemann family has served Northern Kentucky with unwavering compassion.</p>
+          <p class="text-bone/80 leading-relaxed mb-6">On July 4, 1955, Bud and Alice Linnemann opened the Erlanger funeral home in the historic mansion that still serves families today. In 2009, we built Northern Kentucky&rsquo;s only on-site crematory.</p>
+          <p class="text-bone/80 leading-relaxed mb-8">In January 2017, Louis Linnemann purchased the business from his parents, making Linnemann Funeral Homes officially a 6th generation family business with over 140 years of continuous service.</p>
+          <div class="flex items-center gap-8">
+            <div class="text-center">
+              <span class="font-display text-4xl font-bold text-gold block">1882</span>
+              <span class="text-bone/60 text-sm">Founded</span>
+            </div>
+            <div class="text-center">
+              <span class="font-display text-4xl font-bold text-gold block">6th</span>
+              <span class="text-bone/60 text-sm">Generation</span>
+            </div>
+            <div class="text-center">
+              <span class="font-display text-4xl font-bold text-gold block">140+</span>
+              <span class="text-bone/60 text-sm">Years of Service</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 reveal">
+          <img src="https://linnemannfuneralhomes.com/wp-content/uploads/2024/03/Group-5.jpg" alt="Linnemann family team" class="w-full h-96 object-cover radius" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Brand Story -->
+  <section class="py-20 lg:py-28 bg-bone">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-display text-3xl lg:text-4xl font-bold text-forest mb-4">Our Locations</h2>
+        <p class="text-forest/70 max-w-2xl mx-auto">Conveniently serving families throughout Boone and Kenton counties with two beautiful facilities.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4 reveal">
+        <div class="md:col-span-2 md:row-span-2">
+          <img src="https://linnemannfuneralhomes.com/wp-content/uploads/2024/03/Frame-88-1-1.jpg" alt="Linnemann Funeral Home exterior" class="w-full h-full object-cover radius min-h-80" loading="lazy">
+        </div>
+        <div>
+          <img src="https://linnemannfuneralhomes.com/wp-content/uploads/2024/03/Frame-93-1.jpg" alt="Chapel interior" class="w-full h-48 object-cover radius" loading="lazy">
+        </div>
+        <div>
+          <img src="https://linnemannfuneralhomes.com/wp-content/uploads/2024/03/Frame-119-1-e1710333288871.jpg" alt="Funeral home gathering space" class="w-full h-48 object-cover radius" loading="lazy">
+        </div>
+      </div>
+      <div class="mt-8 grid md:grid-cols-2 gap-6 reveal">
+        <div class="bg-white p-8 radius shadow-sm">
+          <h3 class="font-display text-xl font-bold text-forest mb-2">Linnemann Funeral Home of Boone County</h3>
+          <p class="text-forest/70 text-sm">Central location in Boone County serving families with the warmth of a historic home.</p>
+        </div>
+        <div class="bg-white p-8 radius shadow-sm">
+          <h3 class="font-display text-xl font-bold text-forest mb-2">Linnemann Funeral Home of Kenton County</h3>
+          <p class="text-forest/70 text-sm">Located in the Historic District of Covington with elegant spaces designed for dignified memorials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Credibility -->
+  <section class="py-20 lg:py-28 bg-forest-light">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center reveal">
+      <h2 class="font-display text-3xl lg:text-4xl font-bold text-bone mb-4">Trusted by Northern Kentucky families</h2>
+      <p class="text-bone/70 max-w-2xl mx-auto mb-12">For six generations, we have walked alongside families during their most difficult moments. Our commitment to compassionate care remains unchanged since 1882.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-forest p-8 radius">
+          <span class="font-display text-5xl font-bold text-gold block mb-2">140+</span>
+          <span class="text-bone/80 text-sm font-medium">Years of continuous family service</span>
+        </div>
+        <div class="bg-forest p-8 radius">
+          <span class="font-display text-5xl font-bold text-gold block mb-2">2</span>
+          <span class="text-bone/80 text-sm font-medium">Beautiful locations in Boone and Kenton County</span>
+        </div>
+        <div class="bg-forest p-8 radius">
+          <span class="font-display text-5xl font-bold text-gold block mb-2">1882</span>
+          <span class="text-bone/80 text-sm font-medium">Founded with a commitment to dignity</span>
+        </div>
+      </div>
+      <!-- verify -->
+      <p class="text-bone/40 text-xs mt-8">Years calculated from founding date.</p>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-16 bg-gold">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div>
+          <h2 class="font-display text-3xl font-bold text-forest mb-2">We are here when you need us</h2>
+          <p class="text-forest/80">Available 24 hours a day, 365 days a year.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:8597271250" class="text-center text-sm font-bold text-gold bg-forest px-8 py-4 hover:bg-forest-dark transition-colors radius">Call 859-727-1250</a>
+          <a href="#" class="text-center text-sm font-bold text-forest border-2 border-forest px-8 py-4 hover:bg-forest hover:text-gold transition-colors radius">Send a Message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest-dark py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-1">
+          <span class="font-display text-lg font-bold text-bone block mb-4">Linnemann Funeral Home</span>
+          <p class="text-bone/60 text-sm leading-relaxed">Serving families in Boone and Kenton County since 1882.</p>
+        </div>
+        <div>
+          <h4 class="text-bone font-semibold text-sm mb-4">Services</h4>
+          <ul class="space-y-2 text-sm text-bone/60">
+            <li><a href="#" class="hover:text-gold transition-colors">Traditional Funerals</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Cremation Services</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Pre-Planning</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Grief Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-bone font-semibold text-sm mb-4">About</h4>
+          <ul class="space-y-2 text-sm text-bone/60">
+            <li><a href="#" class="hover:text-gold transition-colors">Our Heritage</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Our Staff</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Locations</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Testimonials</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-bone font-semibold text-sm mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-bone/60">
+            <li><a href="tel:8597271250" class="hover:text-gold transition-colors">859-727-1250</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Contact Form</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Current Obituaries</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-bone/10 pt-8 text-center">
+        <p class="text-bone/40 text-sm">&copy; 2026 Linnemann Funeral Home. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
