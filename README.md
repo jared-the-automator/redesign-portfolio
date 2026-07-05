@@ -185,3 +185,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Portland Veterinary Emergency \& Specialty Care](https://jared-the-automator.github.io/redesign-portfolio/pvesc.com/) | Veterinary emergency \& specialty care | Portland, ME |
 | [Tebo Custom Bamboo Fly Rods](https://jared-the-automator.github.io/redesign-portfolio/tebobambooflyrods.com/) | Custom bamboo fly rods | FL |
 | [Rural Propane Services](https://jared-the-automator.github.io/redesign-portfolio/ruralpropane.net/) | Propane delivery & services | Eureka, MT |
+| [Quality Fuels LLC](https://jared-the-automator.github.io/redesign-portfolio/myqualityfuels.com/) | Heating oil delivery | Lebanon, ME |
