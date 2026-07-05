@@ -181,3 +181,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Grau Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/graufuneralhomes.com/) | Funeral Homes | Monona, IA |
 | [2Hawks](https://jared-the-automator.github.io/redesign-portfolio/2hawks.net/) | Precision forged tomahawks | Missouri, USA |
 | [Damon Howatt](https://jared-the-automator.github.io/redesign-portfolio/damonhowatt.com/) | Traditional bows & longbows | Lebanon, OR |
+| [Waverly Oil](https://jared-the-automator.github.io/redesign-portfolio/waverlyoil.com/) | Heating oil delivery | Milford & Manomet, MA |
