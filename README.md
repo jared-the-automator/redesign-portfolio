@@ -182,3 +182,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [2Hawks](https://jared-the-automator.github.io/redesign-portfolio/2hawks.net/) | Precision forged tomahawks | Missouri, USA |
 | [Damon Howatt](https://jared-the-automator.github.io/redesign-portfolio/damonhowatt.com/) | Traditional bows & longbows | Lebanon, OR |
 | [Waverly Oil](https://jared-the-automator.github.io/redesign-portfolio/waverlyoil.com/) | Heating oil delivery | Milford & Manomet, MA |
+| [Portland Veterinary Emergency \& Specialty Care](https://jared-the-automator.github.io/redesign-portfolio/pvesc.com/) | Veterinary emergency \& specialty care | Portland, ME |
