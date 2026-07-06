@@ -191,3 +191,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Bonaire Veterinary Center](https://jared-the-automator.github.io/redesign-portfolio/bonaireveterinarycenter.com/) | Veterinary clinic | Bonaire, Dutch Caribbean |
 | [Estes Saddlery](https://jared-the-automator.github.io/redesign-portfolio/estessaddlery.com/) | Custom western saddles | Ball Ground, GA |
 |[Crum Equine Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/crumequine.com/) | Equine veterinary care | Columbus & Lancaster, OH |
+|[Countryside Veterinary Services](https://jared-the-automator.github.io/redesign-portfolio/countrysidevetservices.com/) | Small animal & equine veterinary | Louisville, TN |
