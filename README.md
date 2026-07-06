@@ -190,3 +190,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Linnemann Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/linnemannfuneralhomes.com/) | Funeral home services | Boone & Kenton County, KY |
 | [Bonaire Veterinary Center](https://jared-the-automator.github.io/redesign-portfolio/bonaireveterinarycenter.com/) | Veterinary clinic | Bonaire, Dutch Caribbean |
 | [Estes Saddlery](https://jared-the-automator.github.io/redesign-portfolio/estessaddlery.com/) | Custom western saddles | Ball Ground, GA |
+|[Crum Equine Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/crumequine.com/) | Equine veterinary care | Columbus & Lancaster, OH |
