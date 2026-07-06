@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estes Saddlery — Custom Handmade Western Saddles</title>
+  <meta name="description" content="Custom handmade western saddles by Ted Estes. Built on Warren Wright trees with Hermann Oak leather. Ball Ground, Georgia.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+    @theme {
+      --font-display: 'Roboto Slab', serif;
+      --font-body: 'Inter', sans-serif;
+      --color-cream: #f5efe8;
+      --color-terra: #b85c3e;
+      --color-charcoal: #2a2a2a;
+      --color-stone: #8a8178;
+      --color-linen: #ece4d9;
+    }
+  </style>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Roboto Slab', serif; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-bg {
+      background-image: url('https://i0.wp.com/www.estessaddlery.com/wp-content/uploads/2023/04/saddle.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    .radius-sm { border-radius: 2px; }
+
+    .btn-primary {
+      background-color: #b85c3e;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 0.875rem;
+      letter-spacing: 0.02em;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+    .btn-primary:hover { background-color: #9e4f33; }
+
+    .btn-outline {
+      border: 1px solid #2a2a2a;
+      color: #2a2a2a;
+      padding: 14px 32px;
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 0.875rem;
+      letter-spacing: 0.02em;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    .btn-outline:hover {
+      background-color: #2a2a2a;
+      color: #f5efe8;
+    }
+
+    .accent-line {
+      width: 48px;
+      height: 3px;
+      background-color: #b85c3e;
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-[#f5efe8] text-[#2a2a2a]">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#f5efe8]/95 backdrop-blur-sm border-b border-[#ece4d9]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-lg font-bold tracking-tight text-[#2a2a2a]">Estes Saddlery</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#saddles" class="text-sm font-medium text-[#8a8178] hover:text-[#2a2a2a] transition">Saddles</a>
+        <a href="#story" class="text-sm font-medium text-[#8a8178] hover:text-[#2a2a2a] transition">Story</a>
+        <a href="#gallery" class="text-sm font-medium text-[#8a8178] hover:text-[#2a2a2a] transition">Gallery</a>
+        <a href="#contact" class="text-sm font-medium text-[#8a8178] hover:text-[#2a2a2a] transition">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:inline-block btn-primary text-sm">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] hero-bg flex items-end pb-16 md:pb-24">
+    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(42,42,42,0.85) 0%, rgba(42,42,42,0.4) 40%, rgba(42,42,42,0.1) 100%);"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(42,42,42,0.7) 0%, transparent 60%);"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div class="max-w-2xl">
+        <span class="text-[#b85c3e] text-xs font-semibold tracking-[0.15em] uppercase mb-4 block">Ball Ground, Georgia</span>
+        <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6">
+          Custom Handmade<br>Western Saddles
+        </h1>
+        <p class="text-[#ece4d9] text-base md:text-lg leading-relaxed max-w-xl mb-8">
+          Each saddle built on a Warren Wright tree with Hermann Oak or Wickett and Craig leather. Where quality meets comfort.
+        </p>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="#contact" class="btn-primary">Get a Quote</a>
+          <a href="#saddles" class="text-white text-sm font-medium border-b border-white/30 hover:border-white transition pb-0.5">View Saddles</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary Product: Asymmetric Split -->
+  <section id="saddles" class="py-20 md:py-32 reveal">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 md:order-1">
+          <span class="accent-line mb-6"></span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-[#2a2a2a] mb-6 leading-tight">
+            Built by Hand,<br>Worn for a Lifetime
+          </h2>
+          <p class="text-[#8a8178] leading-relaxed mb-10">
+            A true custom saddle should have a top quality tree. Ted uses top-tier tree makers like Warren Wright and Rick Reed. For skirting leather, only Hermann Oak or Wickett and Craig need apply. No exceptions.
+          </p>
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <span class="font-display text-2xl font-bold text-[#b85c3e]">01</span>
+              <div>
+                <h3 class="font-semibold text-[#2a2a2a] mb-1">Tree Selection</h3>
+                <p class="text-sm text-[#8a8178] leading-relaxed">Warren Wright and Rick Reed trees, the most respected names in saddle tree construction.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-2xl font-bold text-[#b85c3e]">02</span>
+              <div>
+                <h3 class="font-semibold text-[#2a2a2a] mb-1">Premium Leather</h3>
+                <p class="text-sm text-[#8a8178] leading-relaxed">Hermann Oak or Wickett and Craig skirting leather only. The best there is.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-2xl font-bold text-[#b85c3e]">03</span>
+              <div>
+                <h3 class="font-semibold text-[#2a2a2a] mb-1">Expert Rigging</h3>
+                <p class="text-sm text-[#8a8178] leading-relaxed">Harwood stainless and HorseShoe Brand hardware. Time-proven construction methods.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <img src="https://i0.wp.com/www.estessaddlery.com/wp-content/uploads/2025/03/IMG_4247.jpg" alt="Custom floral carved western saddle" class="w-full h-[500px] md:h-[600px] object-cover radius-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: Reversed Split -->
+  <section id="story" class="py-20 md:py-32 bg-[#ece4d9] reveal">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <img src="https://i0.wp.com/www.estessaddlery.com/wp-content/uploads/2024/02/IMG_1587-scaled.jpg" alt="Wade style western saddle" class="w-full h-[450px] md:h-[550px] object-cover radius-sm">
+        </div>
+        <div>
+          <span class="accent-line mb-6"></span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-[#2a2a2a] mb-6 leading-tight">
+            A Decade of<br>Learning the Craft
+          </h2>
+          <p class="text-[#8a8178] leading-relaxed mb-6">
+            Ted has always had an appreciation for a comfortable, working saddle since childhood. After learning the art of proper repair by restoring innumerable saddles, he began the pursuit of saddle making.
+          </p>
+          <p class="text-[#8a8178] leading-relaxed mb-8">
+            In 2006, Ted applied for and received a TCAA (Traditional Cowboy Arts Association) scholarship and spent a week with Steve Mecum in Crowheart, Wyoming. A vast amount of knowledge was obtained and still appreciated and utilized in the shop today.
+          </p>
+          <div class="flex items-center gap-4 p-5 bg-[#f5efe8] radius-sm">
+            <img src="https://i0.wp.com/www.estessaddlery.com/wp-content/uploads/2016/12/Ted-1.jpg" alt="Ted Estes saddle maker" class="w-16 h-16 object-cover radius-sm">
+            <div>
+              <p class="font-semibold text-[#2a2a2a] text-sm">Ted Estes</p>
+              <p class="text-[#8a8178] text-xs">Featured in Western Horseman, November 2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery: Photography Grid -->
+  <section id="gallery" class="py-20 md:py-32 reveal">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-12">
+        <div>
+          <span class="accent-line mb-6"></span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-[#2a2a2a]">Saddle Photos</h2>
+        </div>
+        <p class="text-[#8a8178] text-sm hidden md:block">Each piece is one of a kind.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        <div class="col-span-2 row-span-2">
+          <img src="https://i0.wp.com/www.estessaddlery.com/wp-content/uploads/2025/03/IMG_4248.jpg" alt="Floral carved saddle detail" class="w-full h-full min-h-[300px] md:min-h-[500px] object-cover radius-sm">
+        </div>
+        <div class="col-span-1">
+          <img src="https://i0.wp.com/www.estessaddlery.com/wp-content/uploads/2024/02/IMG_1592-scaled.jpg" alt="Saddle detail with tooling" class="w-full h-full min-h-[150px] md:min-h-[240px] object-cover radius-sm">
+        </div>
+        <div class="col-span-1">
+          <img src="https://i0.wp.com/www.estessaddlery.com/wp-content/uploads/2024/02/IMG_1593-scaled.jpg" alt="Wade saddle with tooling" class="w-full h-full min-h-[150px] md:min-h-[240px] object-cover radius-sm">
+        </div>
+        <div class="col-span-2">
+          <img src="https://i0.wp.com/www.estessaddlery.com/wp-content/uploads/2025/11/Saddle-64.jpg" alt="Spec saddle ready to ship" class="w-full h-full min-h-[200px] md:min-h-[250px] object-cover radius-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 md:py-32 bg-[#ece4d9] reveal">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="accent-line mx-auto mb-6"></span>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-[#2a2a2a]">From the Riders</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-[#f5efe8] p-8 md:p-10 radius-sm">
+          <p class="text-[#2a2a2a] leading-relaxed mb-6 text-lg">"Eventually after a very long and painful process my saddle has arrived in Mozambique Africa! It is absolutely stunning! The workmanship is some of best I have seen. Thank you very much. I am over the moon."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-[#b85c3e] rounded-full flex items-center justify-center text-white font-semibold text-sm">S</div>
+            <div>
+              <p class="font-semibold text-[#2a2a2a] text-sm">Steve</p>
+              <p class="text-[#8a8178] text-xs">Mozambique, Africa</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#f5efe8] p-8 md:p-10 radius-sm">
+          <p class="text-[#2a2a2a] leading-relaxed mb-6 text-lg">"Thanks for building my dream saddle! I will keep this one for a lifetime!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-[#b85c3e] rounded-full flex items-center justify-center text-white font-semibold text-sm">J</div>
+            <div>
+              <p class="font-semibold text-[#2a2a2a] text-sm">Jonathan</p>
+              <p class="text-[#8a8178] text-xs">Georgia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <p class="text-[#8a8178] text-sm">Featured in Western Horseman magazine, November 2015 issue.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section id="contact" class="py-20 md:py-24 reveal">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="bg-[#2a2a2a] text-[#f5efe8] p-10 md:p-16 text-center radius-sm">
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+          Ready for Your Custom Saddle?
+        </h2>
+        <p class="text-[#8a8178] max-w-2xl mx-auto mb-8">
+          Call or text to discuss your build. Ted can do a live FaceTime chat showing and describing all the details.
+        </p>
+        <a href="tel:6786777332" class="inline-block bg-[#b85c3e] text-white px-8 py-4 radius-sm text-lg font-medium hover:bg-[#9e4f33] transition">
+          (678) 677-7332
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#ece4d9] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-1">
+          <h3 class="font-display text-lg font-bold text-[#2a2a2a] mb-4">Estes Saddlery</h3>
+          <p class="text-[#8a8178] text-sm leading-relaxed">
+            Custom handmade western saddles by Ted Estes. Ball Ground, Georgia.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-[#2a2a2a] text-sm mb-4 tracking-wide uppercase">Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="#saddles" class="text-[#8a8178] text-sm hover:text-[#2a2a2a] transition">Saddles</a></li>
+            <li><a href="#story" class="text-[#8a8178] text-sm hover:text-[#2a2a2a] transition">Story</a></li>
+            <li><a href="#gallery" class="text-[#8a8178] text-sm hover:text-[#2a2a2a] transition">Gallery</a></li>
+            <li><a href="#contact" class="text-[#8a8178] text-sm hover:text-[#2a2a2a] transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-[#2a2a2a] text-sm mb-4 tracking-wide uppercase">Contact</h4>
+          <ul class="space-y-2 text-sm text-[#8a8178]">
+            <li>Ball Ground, GA</li>
+            <li><a href="tel:6786777332" class="hover:text-[#2a2a2a] transition">(678) 677-7332</a></li>
+            <li><a href="mailto:tnestes@yahoo.com" class="hover:text-[#2a2a2a] transition">tnestes@yahoo.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-[#2a2a2a] text-sm mb-4 tracking-wide uppercase">Credentials</h4>
+          <ul class="space-y-2 text-sm text-[#8a8178]">
+            <li>TCAA Scholarship, 2006</li>
+            <li>Western Horseman, 2015</li>
+            <li>Ball Ground, Georgia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-[#d5cdc2] pt-8 text-center">
+        <p class="text-[#8a8178] text-xs"> Estes Saddlery. Custom Handmade Western Saddles.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // IntersectionObserver for scroll reveals
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
