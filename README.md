@@ -27,6 +27,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Viking Log Furniture](https://jared-the-automator.github.io/redesign-portfolio/vikinglogfurniture.com/) | Handmade log and rustic furniture | St. Joseph, MN |
 | [Rose Creek Lumber](https://jared-the-automator.github.io/redesign-portfolio/rosecreeklumber.com/) | Custom hardwood flooring & slabs | Raleigh, IL |
 | [Vintage Millwork](https://jared-the-automator.github.io/redesign-portfolio/vintagemillworkga.com/) | Custom hardwood mouldings & architectural trim | Atlanta, GA |
+| [Stephenson Knives](https://jared-the-automator.github.io/redesign-portfolio/stephensonknives.com/) | Handcrafted custom knives | USA |
 | [Eagle Hardware Farm & Ranch](https://jared-the-automator.github.io/redesign-portfolio/eaglehardwarefarmandranch.com/) | Hardware & farm supply | Royse City, TX |
 | [Secor Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/secorfuneralhomes.com/) | Family funeral home | Willard, OH |
 | [Richardson Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/richardsonfuneralhomes.com/) | Family funeral home & cremation services | Perry, GA |
