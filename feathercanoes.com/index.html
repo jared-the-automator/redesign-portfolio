@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feather Canoes | Build Your Own Wee Lassie</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#1a3a2a',
+            gold: '#c8a855',
+            bone: '#f5f0e6',
+            ink: '#0a0a0a',
+            goldlight: '#d4b86a'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['Lato', 'sans-serif']
+          },
+          borderRadius: {
+            'sm': '2px'
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      body { @apply font-body bg-ink text-bone antialiased; }
+      h1, h2, h3, h4 { @apply font-display; }
+      a { @apply transition-colors duration-300; }
+    }
+    @layer components {
+      .gold-underline { position: relative; }
+      .gold-underline::after {
+        content: ''; position: absolute; left: 0; bottom: -4px;
+        width: 60px; height: 2px; background: #c8a855;
+      }
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <!-- 1. Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-forest/95 backdrop-blur-sm border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="font-display text-xl text-bone tracking-wide">Feather Canoes</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#about" class="text-bone/80 hover:text-gold text-sm tracking-wide">About</a>
+        <a href="#plans" class="text-bone/80 hover:text-gold text-sm tracking-wide">Plans</a>
+        <a href="#build" class="text-bone/80 hover:text-gold text-sm tracking-wide">The Build</a>
+        <a href="#contact" class="text-bone/80 hover:text-gold text-sm tracking-wide">Contact</a>
+      </div>
+      <a href="#plans" class="bg-gold text-ink px-5 py-2 text-sm font-bold tracking-wide hover:bg-goldlight transition-colors">
+        Get Plans
+      </a>
+    </div>
+  </nav>
+
+  <!-- 2. Hero: min-h-[100dvh], left-aligned, directional gradient, max 4 text elements -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <img
+      src="https://eadn-wc05-12619929.nxedge.io/wp-content/uploads/2024/02/1920x800HomeSlider-mike_c.jpg"
+      alt="Cedar strip canoe on calm water at sunrise"
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+    <div class="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/60 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
+      <div class="max-w-2xl">
+        <span class="inline-block bg-gold/20 text-gold px-3 py-1 text-xs font-bold tracking-widest uppercase mb-6 rounded-sm">
+          Family-Run Since 1984
+        </span>
+        <h1 class="text-5xl md:text-7xl font-display text-bone leading-tight mb-6">
+          Build Your Own<br>Wee Lassie
+        </h1>
+        <p class="text-lg md:text-xl text-bone/80 mb-8 max-w-lg leading-relaxed">
+          Hand-drawn canoe plans by master woodworker Henry A. "Mac" McCarthy. The classic cedar strip solo canoe you build yourself.
+        </p>
+        <a href="#plans" class="inline-block bg-gold text-ink px-8 py-4 text-sm font-bold tracking-wide hover:bg-goldlight transition-colors rounded-sm">
+          Shop Canoe Plans
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Primary product section: asymmetric split, numbered features -->
+  <section id="plans" class="py-24 bg-ink">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <span class="inline-block bg-gold/20 text-gold px-3 py-1 text-xs font-bold tracking-widest uppercase mb-6 rounded-sm">
+            The Plans
+          </span>
+          <h2 class="text-4xl md:text-5xl font-display text-bone mb-6">
+            Everything You Need to Build a Real Canoe
+          </h2>
+          <p class="text-bone/70 mb-10 leading-relaxed">
+            Each plan set includes full-size patterns, material lists, and step-by-step instructions trusted by builders since 1984.
+          </p>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <span class="text-gold font-display text-5xl leading-none">01</span>
+              <div>
+                <h3 class="text-bone font-bold text-lg mb-1">Hand-Drawn Patterns</h3>
+                <p class="text-bone/60 text-sm leading-relaxed">Full-size layout drawn from the original Wee Lassie design by Henry A. McCarthy.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="text-gold font-display text-5xl leading-none">02</span>
+              <div>
+                <h3 class="text-bone font-bold text-lg mb-1">Material Lists</h3>
+                <p class="text-bone/60 text-sm leading-relaxed">Complete sourcing guide for cedar, epoxy, and fiberglass so you know exactly what to buy.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="text-gold font-display text-5xl leading-none">03</span>
+              <div>
+                <h3 class="text-bone font-bold text-lg mb-1">Step-by-Step Video Support</h3>
+                <p class="text-bone/60 text-sm leading-relaxed">Access to how-to videos that walk you through every stage of the build.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <img
+            src="https://eadn-wc05-12619929.nxedge.io/wp-content/uploads/2015/07/1920x600mac2.jpg"
+            alt="Wooden canoe build process with cedar strips"
+            class="w-full h-[500px] object-cover rounded-sm"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Secondary section: reversed split (story/process) -->
+  <section id="about" class="py-24 bg-forest">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <img
+            src="https://eadn-wc05-12619929.nxedge.io/wp-content/uploads/2024/02/1920x800HomeSlider-Mac_c.jpg"
+            alt="Master woodworker Mac McCarthy with a canoe"
+            class="w-full h-[500px] object-cover rounded-sm"
+          >
+        </div>
+        <div>
+          <span class="inline-block bg-gold/20 text-gold px-3 py-1 text-xs font-bold tracking-widest uppercase mb-6 rounded-sm">
+            The Story
+          </span>
+          <h2 class="text-4xl md:text-5xl font-display text-bone mb-6">
+            A Lifetime of Craft on the Water
+          </h2>
+          <p class="text-bone/70 mb-6 leading-relaxed">
+            Henry A. "Mac" McCarthy spent decades refining the art of lightweight cedar strip construction. His Wee Lassie design has become a benchmark for solo canoe builders around the world.
+          </p>
+          <p class="text-bone/70 mb-8 leading-relaxed">
+            Feather Canoes carries that legacy forward today, with the same hand-drawn patterns and the same commitment to craftsmanship that started in 1984.
+          </p>
+          <a href="#contact" class="inline-block border border-gold text-gold px-6 py-3 text-sm font-bold tracking-wide hover:bg-gold hover:text-ink transition-colors rounded-sm">
+            Read More About Mac
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery / Brand Story: breaks the zigzag -->
+  <section id="build" class="py-24 bg-ink">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-display text-bone mb-4">The Build Process</h2>
+        <p class="text-bone/70 max-w-2xl mx-auto">From raw cedar to finished craft, every step is designed for the home workshop.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="md:col-span-2 md:row-span-2">
+          <img
+            src="https://eadn-wc05-12619929.nxedge.io/wp-content/uploads/2024/02/1920x800HomeSlider_c.jpg"
+            alt="Welcome to Feather Canoes"
+            class="w-full h-full min-h-[400px] object-cover rounded-sm"
+          >
+        </div>
+        <div>
+          <img
+            src="https://eadn-wc05-12619929.nxedge.io/wp-content/uploads/2015/07/1920x600mac2.jpg"
+            alt="Canoe building process with cedar strips"
+            class="w-full h-full min-h-[200px] object-cover rounded-sm"
+          >
+        </div>
+        <div>
+          <img
+            src="https://eadn-wc05-12619929.nxedge.io/wp-content/uploads/2015/07/1920x600BigJim.jpg"
+            alt="Finished canoe on the water"
+            class="w-full h-full min-h-[200px] object-cover rounded-sm"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials / Credibility -->
+  <section class="py-24 bg-forest">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-display text-bone mb-10">Trusted by Builders Since 1984</h2>
+        <blockquote class="text-xl md:text-2xl text-bone/90 leading-relaxed mb-8 italic font-display">
+          "The Wee Lassie plans are detailed, accurate, and build a beautiful little boat."<br>
+        </blockquote>
+        <p class="text-bone/70 text-sm tracking-wide">
+          Henry A. "Mac" McCarthy, Master Woodworker & Designer of the Wee Lassie
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 mt-16 text-center">
+        <div class="border-t border-gold/30 pt-8">
+          <span class="block text-gold font-display text-5xl mb-2">42</span>
+          <span class="text-bone/70 text-sm tracking-wide">Years in Business</span>
+        </div>
+        <div class="border-t border-gold/30 pt-8">
+          <span class="block text-gold font-display text-5xl mb-2">1000s</span>
+          <span class="text-bone/70 text-sm tracking-wide">Canoes Built Worldwide</span>
+        </div>
+        <div class="border-t border-gold/30 pt-8">
+          <span class="block text-gold font-display text-5xl mb-2">1984</span>
+          <span class="text-bone/70 text-sm tracking-wide">Founded</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA Strip -->
+  <section id="contact" class="py-24 bg-ink relative overflow-hidden">
+    <div class="absolute inset-0 bg-gold/5"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-display text-bone mb-4">
+        Ready to Build Your Own Canoe?
+      </h2>
+      <p class="text-bone/70 mb-10 text-lg max-w-2xl mx-auto">
+        Order your plans today and start a build that will become a family heirloom.
+      </p>
+      <a href="mailto:tom@feathercanoes.com" class="inline-block bg-gold text-ink px-10 py-4 text-sm font-bold tracking-wide hover:bg-goldlight transition-colors rounded-sm">
+        Email Tom to Get Started
+      </a>
+    </div>
+  </section>
+
+  <!-- 8. Footer: 3-4 columns -->
+  <footer class="bg-forest border-t border-white/10 py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="md:col-span-1">
+          <h3 class="font-display text-xl text-bone mb-4">Feather Canoes</h3>
+          <p class="text-bone/60 text-sm leading-relaxed">Hand-drawn plans for the classic Wee Lassie cedar strip solo canoe.</p>
+        </div>
+        <div>
+          <h4 class="text-bone font-bold text-sm tracking-wide uppercase mb-4">Navigate</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="text-bone/60 hover:text-gold text-sm">About</a></li>
+            <li><a href="#plans" class="text-bone/60 hover:text-gold text-sm">Plans</a></li>
+            <li><a href="#build" class="text-bone/60 hover:text-gold text-sm">The Build</a></li>
+            <li><a href="#contact" class="text-bone/60 hover:text-gold text-sm">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-bone font-bold text-sm tracking-wide uppercase mb-4">Contact</h4>
+          <ul class="space-y-2">
+            <li><a href="mailto:tom@feathercanoes.com" class="text-bone/60 hover:text-gold text-sm">tom@feathercanoes.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-bone font-bold text-sm tracking-wide uppercase mb-4">Follow</h4>
+          <ul class="space-y-2">
+            <li><a href="https://www.instagram.com/feathercanoes/" class="text-bone/60 hover:text-gold text-sm">Instagram</a></li>
+            <li><a href="http://www.facebook.com/FeatherCanoes/" class="text-bone/60 hover:text-gold text-sm">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/10 text-center">
+        <p class="text-bone/40 text-sm">Copyright 1984 - 2026 Feather Canoes. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IntersectionObserver reveal animation -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-8');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section > div').forEach((el) => {
+      el.classList.add('opacity-0', 'translate-y-8', 'transition', 'duration-700', 'ease-out');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
