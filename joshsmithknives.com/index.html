@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josh Smith Knives | Hand-Forged Blades from Montana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://www.joshsmithknives.com/wp-content/uploads/cropped-JSK1clrLogo-32x32.jpg">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'steel': '#111113',
+            'gunmetal': '#1A1A1C',
+            'lead': '#2A2A2D',
+            'ash': '#9898A0',
+            'bone': '#F2F2F4',
+            'ember': '#C9652C',
+          },
+          fontFamily: {
+            'display': ['Oswald', 'sans-serif'],
+            'body': ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(2.5rem);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    html { scroll-behavior: smooth; }
+    .section-img { object-fit: cover; }
+  </style>
+</head>
+<body class="bg-steel text-bone font-body antialiased">
+
+  <!-- 1. Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-steel/90 backdrop-blur-sm border-b border-lead/50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="font-display text-xl uppercase tracking-widest text-bone hover:text-ember transition">Josh Smith Knives</a>
+      <div class="hidden md:flex items-center gap-8 text-xs uppercase tracking-widest text-ash">
+        <a href="#about" class="hover:text-bone transition">About</a>
+        <a href="#gallery" class="hover:text-bone transition">Gallery</a>
+        <a href="#shop" class="hover:text-bone transition">Shop</a>
+        <a href="#contact" class="px-5 py-2.5 bg-ember text-steel font-semibold hover:bg-white transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero -->
+  <section class="relative min-h-[100dvh] flex items-end pb-16 lg:pb-24">
+    <div class="absolute inset-0">
+      <img src="https://www.joshsmithknives.com/wp-content/uploads/MG_7700-1024x683.jpeg" alt="Josh Smith workshop" class="w-full h-full object-cover" onerror="this.src='https://www.joshsmithknives.com/wp-content/uploads/DSC6412.jpg'">
+      <div class="absolute inset-0 bg-gradient-to-t from-steel via-steel/60 to-transparent"></div>
+      <div class="absolute inset-0 bg-steel/30"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div class="max-w-3xl">
+        <span class="inline-block text-xs uppercase tracking-[0.3em] text-ember font-semibold mb-4">Frenchtown, Montana</span>
+        <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.9] uppercase text-bone mb-6">Hand-Forged<br>Blades</h1>
+        <p class="text-lg md:text-xl text-ash max-w-xl leading-relaxed mb-8">Fine handmade knives, daggers, and swords, forged on 21 acres in the Montana backcountry. ABS Master Smith since 2000.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#gallery" class="inline-block px-8 py-4 bg-ember text-steel font-semibold text-sm uppercase tracking-widest hover:bg-white transition">View Gallery</a>
+          <a href="#contact" class="inline-block px-8 py-4 border border-bone/30 text-bone font-semibold text-sm uppercase tracking-widest hover:bg-bone hover:text-steel transition">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. About / Story -->
+  <section id="about" class="py-20 lg:py-32 bg-gunmetal">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <img src="https://www.joshsmithknives.com/wp-content/uploads/Josh_KL01.jpg" alt="Josh Smith" class="w-full h-[400px] lg:h-[600px] object-cover" style="border-radius: 2px">
+        </div>
+        <div class="reveal">
+          <span class="text-xs uppercase tracking-[0.3em] text-ember font-semibold mb-4 block">The Story</span>
+          <h2 class="font-display text-4xl lg:text-5xl uppercase leading-[0.95] mb-8">Fifth-Generation<br>Montanan</h2>
+          <p class="text-ash leading-relaxed mb-6">Raised in Lincoln, Montana just outside the Bob Marshall Wilderness. Forged a knife from chainsaw chain at age 11. Became the youngest Journeyman Smith in American Bladesmith Society history at age 15, and the youngest Master Smith at 19.</p>
+          <p class="text-ash leading-relaxed mb-8">Thirty years later, every blade still comes out of the same_pf_quep shop on 21 acres in Frenchtown, tested against the grain of a Montana pine log.</p>
+          <a href="#process" class="inline-block text-sm uppercase tracking-widest text-ember font-semibold hover:text-bone transition">The Process</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Primary Product -->
+  <section id="gallery" class="py-20 lg:py-32 bg-steel">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-20">
+        <div class="lg:col-span-5 reveal">
+          <img src="https://www.joshsmithknives.com/wp-content/uploads/Dog-Bone-11.jpg" alt="Dog Bone folder" class="w-full h-[400px] lg:h-[550px] object-cover" style="border-radius: 2px">
+        </div>
+        <div class="lg:col-span-7 flex flex-col justify-center reveal">
+          <span class="text-xs uppercase tracking-[0.3em] text-ember font-semibold mb-4 block">The Work</span>
+          <h2 class="font-display text-4xl lg:text-5xl uppercase leading-[0.95] mb-10">What Gets<br>Made</h2>
+          <div class="space-y-10">
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-ash/30 leading-none">01</span>
+              <div>
+                <h3 class="font-display text-xl uppercase tracking-wide mb-2">Fixed Blades</h3>
+                <p class="text-ash text-sm leading-relaxed">Hunting knives, camp knives, and bowies forged from high-carbon steel and Damascus, with handles selected from natural materials horn, antler, and stabilized wood.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-ash/30 leading-none">02</span>
+              <div>
+                <h3 class="font-display text-xl uppercase tracking-wide mb-2">Folders and Automatics</h3>
+                <p class="text-ash text-sm leading-relaxed">Handcrafted liners, custom-ground blades, and mechanisms tuned by feel. Every folder is tested for lockup, centering, and snap before it leaves the shop.</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <span class="font-display text-5xl text-ash/30 leading-none">03</span>
+              <div>
+                <h3 class="font-display text-xl uppercase tracking-wide mb-2">Swords and Spears</h3>
+                <p class="text-ash text-sm leading-relaxed">One-off commissions and museum-grade reproductions. Historical patterns brought to life with period-appropriate steels and construction methods.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Gallery Grid (breaks the zigzag) -->
+  <section class="py-20 lg:py-32 bg-gunmetal">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-12 reveal">
+        <div>
+          <span class="text-xs uppercase tracking-[0.3em] text-ember font-semibold mb-4 block">Selected Works</span>
+          <h2 class="font font-display text-4xl lg:text-5xl uppercase leading-[0.95]">From the Bench</h2>
+        </div>
+        <a href="#shop" class="hidden md:inline-block text-sm uppercase tracking-widest text-ember font-semibold hover:text-bone transition">View All</a>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div class="reveal">
+          <img src="https://www.joshsmithknives.com/wp-content/uploads/ABS-Searles-Bowie.jpg" alt="ABS Searles Bowie" class="w-full h-64 lg:h-80 object-cover" style="border-radius: 2px">
+        </div>
+        <div class="reveal">
+          <img src="https://www.joshsmithknives.com/wp-content/uploads/Push-Dagger-2010-Big-Sky.jpg" alt="Push Dagger, Big Sky" class="w-full h-64 lg:h-80 object-cover" style="border-radius: 2px">
+        </div>
+        <div class="reveal">
+          <img src="https://www.joshsmithknives.com/wp-content/uploads/2008-Searles-ABS-2.jpg" alt="Searles ABS 2008" class="w-full h-64 lg:h-80 object-cover" style="border-radius: 2px">
+        </div>
+        <div class="reveal">
+          <img src="https://www.joshsmithknives.com/wp-content/uploads/Boston-Spear-600x800.jpg" alt="Boston Spear" class="w-full h-64 lg:h-80 object-cover" style="border-radius: 2px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Process / Workshop (reversed split, the 2nd and last split before break) -->
+  <section id="process" class="py-20 lg:py-32 bg-steel">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 lg:order-1 reveal">
+          <span class="text-xs uppercase tracking-[0.3em] text-ember font-semibold mb-4 block">The Shop</span>
+          <h2 class="font-display text-4xl lg:text-5xl uppercase leading-[0.95] mb-8">Frenchtown,<br>Montana</h2>
+          <p class="text-ash leading-rel leading-relaxed mb-6">A 21-acre shop on the outskirts of Missoula County. The forge runs year-round, burning natural gas and coal to reach the temperatures needed for forge-welding Damascus and heat-treating high-alloy steels. Every blade that leaves the shop has been in my hands from raw stock to finished edge.</p>
+          <p class="text-ash leading-relaxed mb-8">The work is backed by a lifetime of training, starting with Rick Dunkerley in Lincoln and extending through the ABS journeyman and master smith programs.</p>
+          <div class="flex gap-8 text-center">
+            <div>
+              <div class="font-display text-3xl text-ember">1996</div>
+              <div class="text-xs uppercase tracking-widest text-ash mt-1">Journeyman</div>
+            </div>
+            <div class="w-px bg-lead"></div>
+            <div>
+              <div class="font-display text-3xl text-ember">2000</div>
+              <div class="text-xs uppercase tracking-widest text-ash mt-1">Master Smith</div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 reveal">
+          <img src="https://www.joshsmithknives.com/wp-content/uploads/DSC6412.jpg" alt="Knife making process" class="w-full h-[400px] lg:h-[600px] object-cover" style="border-radius: 2px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Testimonials / Credibility -->
+  <section class="py-20 lg:py-32 bg-gunmetal">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center reveal">
+      <span class="text-xs uppercase tracking-[0.3em] text-ember font-semibold mb-8 block">American Bladesmith Society</span>
+      <blockquote class="font-display text-3xl lg:text-5xl uppercase leading-[1.1] mb-8">"I am a fifth-generation Montanan. At age 11 I met Rick Dunkerley, who was making hunting knives. By age 19 I had passed the ABS Master Smith test, the youngest ever to do so."</blockquote>
+      <div class="flex items-center justify-center gap-3 text-sm text-ash">
+        <span>Josh Smith</span>
+        <span class="text-lead">|</span>
+        <span>Master Smith</span>
+      </div>
+      <div class="mt-12 flex flex-wrap justify-center gap-6">
+        <div class="px-6 py-4 border border-lead/50">
+          kini <span class="block font-display text-2xl text-ember">26</span>
+          <span class="text-xs uppercase tracking-widest text-ash">Years as Master</span>
+        </div>
+        <div class="px-6 py-4 border border-lead/50">
+          <span class="block font-display text-2xl text-ember">2</span>
+          <span class="text-xs uppercase tracking-widest text-ash">ABS Certifications</span>
+        </div>
+        <div class="px-6 py-4 border border-lead/50">
+          <span class="block font-display text-2xl text-ember">21</span>
+          <span class="text-xs uppercase tracking-widest text-ash">Acres in Montana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CTA Strip -->
+  <section id="contact" class="py-20 lg:py-28 bg-steel border-t border-lead/50">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+      <h2 class="font-display text-4xl lg:text-6xl uppercase leading-[0.95] mb-6">Ready for a<br>Commission?</h2>
+      <p class="text-ash text-lg mb-10 max-w-2xl mx-auto">Custom orders start with a conversation about steel, handle material, and intended use. Most commissions are fulfilled within 8 to 12 months.</p>
+      <a href="mailto:joshsmithknives@gmail.com" class="inline-block px-10 py-4 bg-ember text-steel font-semibold text-sm uppercase tracking-widest hover:bg-white transition" style="border-radius: 2px">joshsmithknives@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- 9. Footer -->
+  <footer class="bg-steel border-t border-lead/50 py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <div class="font-display text-lg uppercase tracking-widest mb-4">Josh Smith Knives</div>
+          <p class="text-sm text-ash leading-relaxed">Fine handmade knives, daggers, and swords from Frenchtown, Montana.</p>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-widest text-ash mb-4">Navigate</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#about" class="text-ash hover:text-bone transition">About</a></li>
+            <li><a href="#gallery" class="text-ash hover:text-bone transition">Gallery</a></li>
+            <li><a href="#shop" class="text-ash hover:text-bone transition">Shop</a></li>
+            <li><a href="#contact" class="text-ash hover:text-bone transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-widest text-ash mb-4">Contact</div>
+          <p class="text-sm text-ash mb-2">Frenchtown, Montana</p>
+          <p class="text-sm text-ash">joshsmithknives@gmail.com</p>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-lead/50 flex flex-col md:flex-row items-center justify-between text-xs uppercase tracking-widest text-ash">
+        <span>Josh Smith Knives</span>
+        <span class="mt-2 md:mt-0">All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(function (el) {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+</body>
+</html>
