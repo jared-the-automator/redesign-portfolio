@@ -198,3 +198,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Van Dam Custom Boats](https://jared-the-automator.github.io/redesign-portfolio/vandamboats.com/) | Custom wooden boats and yachts | Boyne City, MI |
 | [Nelson Family Mortuary](https://jared-the-automator.github.io/redesign-portfolio/nelsonmortuary.com/) | Funeral home & cremation services | Provo, UT |
 | [Feather Canoes](https://jared-the-automator.github.io/redesign-portfolio/feathercanoes.com/) | Cedar strip canoe plans | USA |
+| [Maritime Energy](https://jared-the-automator.github.io/redesign-portfolio/maritimeenergy.com/) | Heating oil & propane delivery | Maine |
