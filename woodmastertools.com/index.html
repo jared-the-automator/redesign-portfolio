@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woodmaster Tools | American-Made Woodworking Equipment</title>
+<meta name="description" content="American-made planers, molders, and drum sanders built for professional woodworkers and serious hobbyists. Made in the USA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['Barlow Condensed', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+        colors: {
+          ink: '#0c0b09',
+          amber: '#c8943a',
+          amberlight: '#d4a855',
+          bone: '#f0ece4',
+          stone: '#8c8778',
+          metal: '#2a2825',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #0c0b09; color: #f0ece4; }
+  .animate-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .animate-in.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body class="bg-ink text-bone">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-ink/90 backdrop-blur-sm border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="font-display font-bold text-xl text-bone tracking-wide">WOODMASTER</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#machines" class="text-stone hover:text-bone transition">Machines</a>
+      <a href="#story" class="text-stone hover:text-bone transition">Story</a>
+      <a href="#testimonials" class="text-stone hover:text-bone transition">Testimonials</a>
+      <a href="#contact" class="bg-amber text-ink px-5 py-2.5 font-display font-bold tracking-wide hover:bg-amberlight transition" style="border-radius:2px;">GET A QUOTE</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative min-h-[100dvh] flex items-end pb-16 md:pb-24 overflow-hidden">
+  <img src="https://woodmastertools.com/wp-content/uploads/2025/04/Woodmaster_James-Meierotto_11.05.24_41598-slider-crop.jpg" alt="Woodmaster planer in a working shop" class="absolute inset-0 w-full h-full object-cover object-center" style="filter: brightness(0.55);">
+  <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" style="background: linear-gradient(to top, rgba(12,11,9,0.95) 0%, rgba(12,11,9,0.4) 50%, rgba(12,11,9,0.2) 100%);"></div>
+  <div class="relative max-w-7xl mx-auto px-6 w-full">
+    <p class="text-amber font-display font-bold tracking-widest text-sm mb-4 uppercase">Kansas City, Missouri</p>
+    <h1 class="font-display font-extrabold text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-6 max-w-4xl" style="text-transform: uppercase;">American Made<br>Muscle</h1>
+    <p class="text-lg md:text-xl text-stone max-w-xl mb-8 leading-relaxed">Planers, molders, and drum sanders built in the USA for woodworkers who feed their machines every single day.</p>
+    <a href="#machines" class="inline-block bg-amber text-ink px-8 py-4 font-display font-bold text-lg tracking-wide hover:bg-amberlight transition" style="border-radius:2px;">SEE THE MACHINES</a>
+  </div>
+</section>
+
+<!-- Primary Product Section -->
+<section id="machines" class="py-20 md:py-32 bg-ink">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div class="order-2 md:order-1 animate-in">
+        <img src="https://woodmastertools.com/wp-content/uploads/2025/03/Woodmaster_James-Meierotto_11.05.24_41409.jpg" alt="Woodmaster planer cutting hardwood in a professional workshop" class="w-full object-cover" style="border-radius:2px;" loading="lazy">
+      </div>
+      <div class="order-1 md:order-2 animate-in">
+        <p class="text-amber font-display font-bold tracking-widest text-sm mb-4 uppercase">Built to Work</p>
+        <h2 class="font-display font-extrabold text-4xl md:text-5xl mb-6 leading-tight" style="text-transform: uppercase;">Machines That<br>Outlast You</h2>
+        <p class="text-stone mb-10 leading-relaxed">Every Woodmaster starts as solid steel in Kansas City. We cut, weld, machine, and assemble each unit for owners who judge a tool by how it performs on Monday morning and what it looks like ten years later.</p>
+        <div class="space-y-6">
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-amber text-2xl mt-0.5" style="font-variant-numeric: tabular-nums;">01</span>
+            <div>
+              <h3 class="font-display font-bold text-lg mb-1">Planer / Molder</h3>
+              <p class="text-stone text-sm">Twin spiral cutterhead, 18-inch capacity, motorized bed rollers</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-amber text-2xl mt-0.5" style="font-variant-numeric: tabular-nums;">02</span>
+            <div>
+              <h3 class="font-display font-bold text-lg mb-1">Drum Sander</h3>
+              <p class="text-stone text-sm">Parallel drum lift, 22-inch width, powered conveyor for finish sanding</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-amber text-2xl mt-0.5" style="font-variant-numeric: tabular-nums;">03</span>
+            <div>
+              <h3 class="font-display font-bold text-lg mb-1">4-Side Molder</h3>
+              <p class="text-stone text-sm">Profile, finish, and dimension four sides in a single pass</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Secondary Section (Story) -->
+<section id="story" class="py-20 md:py-32 bg-ink">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+      <div class="animate-in">
+        <img src="https://woodmastertools.com/wp-content/uploads/2025/03/Ricky-Jones.png" alt="Ricky Jones with 9 Woodmaster planers in his commercial shop" class="w-full object-cover" style="border-radius:2px;" loading="lazy">
+      </div>
+      <div class="animate-in">
+        <p class="text-amber font-display font-bold tracking-widest text-sm mb-4 uppercase">One Shop, Nine Machines</p>
+        <h2 class="font-display font-extrabold text-4xl md:text-5xl mb-6 leading-tight" style="text-transform: uppercase;">One Business.<br>2 Woodworkers.<br>9 Planer / Molders.</h2>
+        <p class="text-stone leading-relaxed mb-6">Ricky Jones runs a production shop where Woodmaster is not a preference, it is infrastructure. One business, two woodworkers, and nine planer/molders running daily.</p>
+        <p class="text-bone leading-relaxed mb-8">When your livelihood depends on consistency, you buy the machine that starts on the first pull of the switch and stays sharp through the tenth board.</p>
+        <a href="#contact" class="inline-block border border-amber text-amber px-6 py-3 font-display font-bold tracking-wide hover:bg-amber hover:text-ink transition" style="border-radius:2px;">READ THE FULL STORY</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="py-20 md:py-32 bg-metal">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+      <div>
+        <p class="text-amber font-display font-bold tracking-widest text-sm mb-3 uppercase">In the Shop</p>
+        <h2 class="font-display font-extrabold text-4xl md:text-5xl" style="text-transform: uppercase;">Where the Work Happens</h2>
+      </div>
+      <p class="text-stone max-w-md mt-4 md:mt-0">Real machines, real wood, real sawdust. This is what American manufacturing looks like from the shop floor.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+      <div class="animate-in col-span-2 row-span-2">
+        <img src="https://woodmastertools.com/wp-content/uploads/2025/04/Woodmaster_James-Meierotto_11.05.24_41598.jpg" alt="Woodmaster planer processing hardwood" class="w-full h-full object-cover" style="border-radius:2px;" loading="lazy">
+      </div>
+      <div class="animate-in">
+        <img src="https://woodmastertools.com/wp-content/uploads/2025/04/Woodmaster_James-Meierotto_11.05.24_41409.jpg" alt="Planer in commercial operation" class="w-full h-full object-cover" style="border-radius:2px;" loading="lazy">
+      </div>
+      <div class="animate-in">
+        <img src="https://woodmastertools.com/wp-content/uploads/2025/04/Woodmaster_James-Meierotto_11.05.24_41130.jpg" alt="Woodmaster in active workshop" class="w-full h-full object-cover" style="border-radius:2px;" loading="lazy">
+      </div>
+      <div class="animate-in col-span-2 md:col-span-1">
+        <img src="https://woodmastertools.com/wp-content/uploads/2025/08/Screenshot-2025-08-04-at-9.49.07-AM.png" alt="Tim Heming operating his Woodmaster planer" class="w-full h-full object-cover" style="border-radius:2px;" loading="lazy">
+      </div>
+      <div class="animate-in col-span-2 md:col-span-2">
+        <img src="https://woodmastertools.com/wp-content/uploads/2025/06/Screenshot-2025-06-10-at-10.39.04 AM.png" alt="Woodmaster woodworkers at work" class="w-full h-full object-cover" style="border-radius:2px;" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials / Credibility -->
+<section id="testimonials" class="py-20 md:py-32 bg-ink">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <p class="text-amber font-display font-bold tracking-widest text-sm mb-4 uppercase">Trusted by Shops Nationwide</p>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl" style="text-transform: uppercase;">Built for Owners<br>Who Wear Sawdust</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6 mb-16">
+      <div class="bg-metal p-8 animate-in" style="border-radius:2px;">
+        <p class="text-bone leading-relaxed mb-6 text-lg">"When your livelihood depends on consistency, you buy the machine that starts on the first pull of the switch and stays sharp through the tenth board."</p>
+        <p class="text-stone text-sm">Ricky Jones, Production Woodworker</p>
+      </div>
+      <div class="bg-metal p-8 animate-in" style="border-radius:2px;">
+        <p class="text-bone leading-relaxed mb-6 text-lg">"I have run my Woodmaster hard for years. It is the one machine in my shop that never asks for a day off."</p>
+        <p class="text-stone text-sm">Tim Heming, Custom Furniture Maker</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="animate-in">
+        <p class="font-display font-extrabold text-4xl md:text-5xl text-amber mb-2">40+</p>
+        <p class="text-stone text-sm uppercase tracking-wider">Years Building</p>
+      </div>
+      <div class="animate-in">
+        <p class="font-display font-extrabold text-4xl md:text-5xl text-amber mb-2">USA</p>
+        <p class="text-stone text-sm uppercase tracking-wider">Manufactured</p>
+      </div>
+      <div class="animate-in">
+        <p class="font-display font-extrabold text-4xl md:text-5xl text-amber mb-2">5-Yr</p>
+        <p class="text-stone text-sm uppercase tracking-wider">Warranty</p>
+      </div>
+      <div class="animate-in">
+        <p class="font-display font-extrabold text-4xl md:text-5xl text-amber mb-2">100%</p>
+        <p class="text-stone text-sm uppercase tracking-wider">Satisfaction</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Strip -->
+<section id="contact" class="py-20 md:py-28 bg-amber">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="font-display font-extrabold text-4xl md:text-5xl lg:text-6xl text-ink mb-6" style="text-transform: uppercase;">Ready to Feed<br>a Real Machine?</h2>
+    <p class="text-ink/80 text-lg mb-8 max-w-xl mx-auto">Talk to a Woodmaster specialist. We will help you match the right machine to your shop and your budget.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="tel:1-800-821-6651" class="inline-block bg-ink text-bone px-8 py-4 font-display font-bold text-lg tracking-wide hover:bg-ink/80 transition" style="border-radius:2px;">Call 1-800-821-6651</a>
+      <a href="mailto:info@woodmastertools.com" class="inline-block border-2 border-ink text-ink px-8 py-4 font-display font-bold text-lg tracking-wide hover:bg-ink hover:text-bone transition" style="border-radius:2px;">Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-ink border-t border-white/10 py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-10">
+      <div>
+        <p class="font-display font-bold text-xl text-bone mb-4">WOODMASTER</p>
+        <p class="text-stone text-sm leading-relaxed">American-made planers, molders, and drum sanders built in Kansas City for woodworkers who measure in boards, not promises.</p>
+      </div>
+      <div>
+        <p class="font-display font-bold text-sm tracking-wider uppercase text-bone mb-4">Machines</p>
+        <ul class="space-y-2 text-stone text-sm">
+          <li><a href="#" class="hover:text-bone transition">Planer / Molders</a></li>
+          <li><a href="#" class="hover:text-bone transition">Drum Sanders</a></li>
+          <li><a href="#" class="hover:text-bone transition">4-Side Molders</a></li>
+          <li><a href="#" class="hover:text-bone transition">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display font-bold text-sm tracking-wider uppercase text-bone mb-4">Support</p>
+        <ul class="space-y-2 text-stone text-sm">
+          <li><a href="#" class="hover:text-bone transition">Financing</a></li>
+          <li><a href="#" class="hover:text-bone transition">Free Info Kit</a></li>
+          <li><a href="#" class="hover:text-bone transition">Demo Videos</a></li>
+          <li><a href="#" class="hover:text-bone transition">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display font-bold text-sm tracking-wider uppercase text-bone mb-4">Contact</p>
+        <ul class="space-y-2 text-stone text-sm">
+          <li><a href="tel:1-800-821-6651" class="hover:text-bone transition">1-800-821-6651</a></li>
+          <li><a href="mailto:info@woodmastertools.com" class="hover:text-bone transition">info@woodmastertools.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-stone text-xs">Copyright 2016-2026 Woodmastertools.com. All rights reserved.</p>
+      <p class="text-stone text-xs">Privacy Policy | Promise of Satisfaction</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
