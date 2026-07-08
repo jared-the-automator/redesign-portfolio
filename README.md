@@ -200,3 +200,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Feather Canoes](https://jared-the-automator.github.io/redesign-portfolio/feathercanoes.com/) | Cedar strip canoe plans | USA |
 | [Maritime Energy](https://jared-the-automator.github.io/redesign-portfolio/maritimeenergy.com/) | Heating oil & propane delivery | Maine |
 | [Woodmaster Tools](https://jared-the-automator.github.io/redesign-portfolio/woodmastertools.com/) | American-made woodworking equipment | Kansas City, MO |
+
+| [First Fuel Oil](https://jared-the-automator.github.io/redesign-portfolio/firstfueloil.com/) | Heating oil delivery | North Haven, CT |
