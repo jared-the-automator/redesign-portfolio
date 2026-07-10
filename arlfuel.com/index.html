@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arlington Fuel Oil Co. | Greater Boston Heating Oil & Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --near-black: #1a1a1a;
+            --steel: #2d3748;
+            --white: #f8f9fa;
+            --flame: #e87722;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--near-black); color: var(--white); }
+        .display-font { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
+        .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .num-marker { font-family: 'Bebas Neue', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'near-black': '#1a1a1a',
+                        'steel': '#2d3748',
+                        'flame': '#e87722',
+                        'electric-white': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        'display': ['Bebas Neue', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-near-black text-electric-white font-body">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-near-black/90 backdrop-blur-sm border-b border-steel/30">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+            <img src="https://arlfuel.com/wp-content/uploads/2021/09/logo.png" alt="Arlington Fuel" class="h-8 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm tracking-widest uppercase font-medium">
+            <a href="#" class="text-electric-white/60 hover:text-flame transition-colors">About</a>
+            <a href="#" class="text-electric-white/60 hover:text-flame transition-colors">Services</a>
+            <a href="#" class="text-electric-white/60 hover:text-flame transition-colors">Areas</a>
+            <a href="#" class="text-electric-white/60 hover:text-flame transition-colors">Contact</a>
+            <a href="tel:7816434630" class="px-5 py-2 bg-flame text-white rounded-sm text-sm font-semibold hover:bg-flame/90 transition-colors tracking-wide">(781) 643-4630</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative min-h-[100dvh] flex items-center">
+    <div class="absolute inset-0">
+        <img src="https://arlfuel.com/wp-content/uploads/2021/09/hometop-2.jpg" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-near-black/90 via-near-black/55 to-near-black/25"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 pt-20 w-full">
+        <span class="text-flame text-sm tracking-widest uppercase font-semibold">Arlington, Massachusetts</span>
+        <h1 class="display-font text-6xl md:text-7xl lg:text-8xl text-electric-white leading-[0.92] mt-4 max-w-3xl">
+            Keeping Greater Boston Warm for Nearly a Century
+        </h1>
+        <p class="text-electric-white/70 text-lg md:text-xl mt-6 max-w-xl leading-relaxed">
+            Oil and gas heating, hot water systems, and emergency service from a family-owned company your neighbors have relied on for generations.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-8">
+            <a href="#" class="px-8 py-3 bg-flame text-white rounded-sm font-semibold text-sm tracking-wide uppercase hover:bg-flame/90 transition-colors">Request Service</a>
+            <a href="#" class="px-8 py-3 border border-electric-white/25 text-electric-white rounded-sm font-semibold text-sm tracking-wide uppercase hover:bg-electric-white/10 transition-colors">Pay Online</a>
+        </div>
+    </div>
+</section><!-- Primary Product Section: asymmetric split, numbered features -->
+<section class="relative py-24 md:py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
+            <div class="lg:col-span-7 reveal">
+                <img src="https://arlfuel.com/wp-content/uploads/2021/09/NACHO-WARM.jpg" alt="" class="w-full h-auto rounded-sm shadow-2xl">
+            </div>
+            <div class="lg:col-span-5 reveal">
+                <h2 class="display-font text-5xl md:text-6xl text-electric-white leading-[0.95] mb-12">
+                    What You Get With a Century-Old Heating Company
+                </h2>
+                <div class="space-y-10">
+                    <div class="flex gap-5">
+                        <span class="num-marker text-flame text-4xl leading-none flex-shrink-0">01</span>
+                        <div>
+                            <h3 class="text-lg font-semibold text-electric-white mb-1">Automatic Oil Delivery</h3>
+                            <p class="text-electric-white/60 text-sm leading-relaxed">We track your usage and the weather, not a fixed calendar. You never check a tank gauge. You never run out.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5">
+                        <span class="num-marker text-flame text-4xl leading-none flex-shrink-0">02</span>
+                        <div>
+                            <h3 class="text-lg font-semibold text-electric-white mb-1">Boiler & System Service by Master Plumbers</h3>
+                            <p class="text-electric-white/60 text-sm leading-relaxed">Installation, repair, and annual tune-ups on every make and model. Master Plumber #15738 leads a team trained in-house.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5">
+                        <span class="num-marker text-flame text-4xl leading-none flex-shrink-0">03</span>
+                        <div>
+                            <h3 class="text-lg font-semibold text-electric-white mb-1">Total Comfort Protection Plan</h3>
+                            <p class="text-electric-white/60 text-sm leading-relaxed">Annual inspections, priority response, and budget billing that spreads your heating cost across 10 months.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secondary Section: reversed split, story/process angle -->
+<section class="relative py-24 md:py-32 bg-steel/20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
+            <div class="lg:col-span-5 reveal lg:order-1 order-2">
+                <span class="text-flame text-sm tracking-widest uppercase font-semibold">Nearly a Century</span>
+                <h2 class="display-font text-5xl md:text-6xl text-electric-white leading-[0.95] mt-3 mb-8">
+                    Family-Owned, Arlington-Rooted
+                </h2>
+                <p class="text-electric-white/70 leading-relaxed mb-5">
+                    Arlington Fuel has served Greater Boston from the same Broadway location since the 1920s. We are not a franchise, not a private-equity rollup, not a call center that dispatches a subcontractor. The person who answers the phone works here. The technician who shows up was trained here.
+                </p>
+                <p class="text-electric-white/70 leading-relaxed mb-5">
+                    We supply and service boilers of every make and model, counsel customers on fuel-efficient replacements, and stand behind every installation with a Total Protection Plan that includes preventative maintenance.
+                </p>
+                <div class="flex items-center gap-6 mt-8 text-sm">
+                    <div>
+                        <span class="block text-flame font-bold text-xl">Master Plumber</span>
+                        <span class="text-electric-white/50">License #15738</span>
+                    </div>
+                    <div>
+                        <span class="block text-flame font-bold text-xl">Angie's List</span>
+                        <span class="text-electric-white/50">Super Service Award</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-7 reveal lg:order-2 order-1">
+                <img src="https://arlfuel.com/wp-content/uploads/2021/09/backpage-tops-1.jpg" alt="" class="w-full h-auto rounded-sm shadow-2xl">
+            </div>
+        </div>
+    </div>
+</section><!-- Gallery / Brand Story: full-width editorial, breaks the zigzag -->
+<section class="relative py-24 md:py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-4xl reveal">
+            <span class="text-flame text-sm tracking-widest uppercase font-semibold">Service Area</span>
+            <h2 class="display-font text-5xl md:text-6xl text-electric-white leading-[0.95] mt-3 mb-10">
+                Arlington Fuel Delivers Across Greater Boston
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-steel/20 rounded-sm p-6">
+                    <h3 class="text-lg font-semibold text-electric-white mb-2">Oil Delivery</h3>
+                    <p class="text-electric-white/50 text-sm leading-relaxed">Arlington, Belmont, Cambridge, Lexington, Medford, Somerville, Watertown, Winchester, Woburn</p>
+                </div>
+                <div class="bg-steel/20 rounded-sm p-6">
+                    <h3 class="text-lg font-semibold text-electric-white mb-2">Gas Heating Systems</h3>
+                    <p class="text-electric-white/50 text-sm leading-relaxed">Installation, conversion, and service on natural gas and propane systems across the same service area</p>
+                </div>
+                <div class="bg-steel/20 rounded-sm p-6">
+                    <h3 class="text-lg font-semibold text-electric-white mb-2">Hot Water Systems</h3>
+                    <p class="text-electric-white/50 text-sm leading-relaxed">Indirect-fired, tankless coil, and standalone water heaters for residential and light commercial</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials / Credibility -->
+<section class="relative py-24 md:py-32 bg-steel/20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 reveal">
+            <div>
+                <p class="text-electric-white/80 text-lg leading-relaxed italic">
+                    "We have been with Arlington Fuel for almost 50 years. They have always been there for us whenever we needed them. Great service, fair pricing, and the technicians are genuinely good people."
+                </p>
+                <p class="text-flame text-sm font-semibold mt-4">Lifelong Customer, Arlington</p>
+                <p class="text-electric-white/40 text-xs mt-1">50 years with Arlington Fuel</p>
+            </div>
+            <div>
+                <p class="text-electric-white/80 text-lg leading-relaxed italic">
+                    "Our boiler flooded the basement at 10pm on a Saturday. Arlington Fuel had a technician at our door by 11:15 and the system running before midnight. No upcharge, no panic, just a neighbor who showed up."
+                </p>
+                <p class="text-flame text-sm font-semibold mt-4">Homeowner, Winchester</p>
+                <p class="text-electric-white/40 text-xs mt-1">Emergency service call, 2023</p>
+            </div>
+            <div>
+                <p class="text-electric-white/80 text-lg leading-relaxed italic">
+                    "We converted from oil to gas last winter. The crew handled everything: the tank removal, the boiler swap, the permits. No subcontractors, no scheduling headaches. One company, start to finish."
+                </p>
+                <p class="text-flame text-sm font-semibold mt-4">Homeowner, Medford</p>
+                <p class="text-electric-white/40 text-xs mt-1">Oil-to-gas conversion project</p>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-10 mt-16 reveal">
+            <div class="text-center">
+                <span class="display-font text-5xl text-flame block">1920s</span>
+                <span class="text-electric-white/40 text-sm mt-1">Founded in Arlington</span>
+            </div>
+            <div class="text-center">
+                <span class="display-font text-5xl text-flame block">#15738</span>
+                <span class="text-electric-white/40 text-sm mt-1">Master Plumber License</span>
+            </div>
+            <div class="text-center">
+                <span class="display-font text-5xl text-flame block">10</span>
+                <span class="text-electric-white/40 text-sm mt-1">Month Budget Billing</span>
+            </div>
+            <div class="text-center">
+                <span class="display-font text-5xl text-flame block">24/7</span>
+                <span class="text-electric-white/40 text-sm mt-1">Emergency Service</span>
+            </div>
+        </div>
+    </div>
+</section><!-- CTA Strip -->
+<section class="relative py-20 md:py-24 bg-gradient-to-r from-near-black via-steel to-near-black overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+        <img src="https://arlfuel.com/wp-content/uploads/2021/09/hometop-2.jpg" alt="" class="w-full h-full object-cover">
+    </div>
+    <div class="relative max-w-4xl mx-auto px-6 text-center reveal">
+        <h2 class="display-font text-4xl md:text-5xl text-electric-white leading-[0.95] mb-4">
+            Winter Is Coming. Is Your Heating System Ready?
+        </h2>
+        <p class="text-electric-white/60 text-lg mb-8 max-w-xl mx-auto">
+            Call us today to schedule a tune-up, request a fuel quote, or ask about converting to gas.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="tel:7816434630" class="px-8 py-3 bg-flame text-white rounded-sm font-semibold text-sm tracking-wide uppercase hover:bg-flame/90 transition-colors">(781) 643-4630</a>
+            <a href="mailto:info@arlfuel.com" class="px-8 py-3 border border-electric-white/25 text-electric-white rounded-sm font-semibold text-sm tracking-wide uppercase hover:bg-electric-white/10 transition-colors">Request a Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-near-black border-t border-steel/30 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-sm font-semibold text-electric-white mb-4 tracking-widest uppercase">Company</h4>
+                <ul class="space-y-2 text-sm text-electric-white/50">
+                    <li><a href="#" class="hover:text-flame transition-colors">About</a></li>
+                    <li><a href="#" class="hover:text-flame transition-colors">Services</a></li>
+                    <li><a href="#" class="hover:text-flame transition-colors">Service Area</a></li>
+                    <li><a href="#" class="hover:text-flame transition-colors">Total Protection Plan</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-electric-white mb-4 tracking-widest uppercase">Resources</h4>
+                <ul class="space-y-2 text-sm text-electric-white/50">
+                    <li><a href="#" class="hover:text-flame transition-colors">Order Oil</a></li>
+                    <li><a href="#" class="hover:text-flame transition-colors">Pay Online</a></li>
+                    <li><a href="#" class="hover:text-flame transition-colors">Energy Savings Tips</a></li>
+                    <li><a href="#" class="hover:text-flame transition-colors">Request Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-electric-white mb-4 tracking-widest uppercase">Contact</h4>
+                <ul class="space-y-2 text-sm text-electric-white/50">
+                    <li><a href="tel:7816434630" class="hover:text-flame transition-colors">(781) 643-4630</a></li>
+                    <li><a href="mailto:info@arlfuel.com" class="hover:text-flame transition-colors">info@arlfuel.com</a></li>
+                    <li class="text-electric-white/40">Arlington, Massachusetts</li>
+                    <li class="text-electric-white/40">Master Plumber #15738</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-electric-white mb-4 tracking-widest uppercase">Service</h4>
+                <ul class="space-y-2 text-sm text-electric-white/50">
+                    <li>Oil Heat Systems</li>
+                    <li>Gas Heating Systems</li>
+                    <li>Hot Water Systems</li>
+                    <li>24-Hour Emergency</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-steel/20 mt-12 pt-6 text-center text-xs text-electric-white/30">
+            Arlington Fuel Oil Co., keeping Greater Boston warm for nearly a century.
+        </div>
+    </div>
+</footer>
+
+<script>
+(function() {
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function(el) {
+        observer.observe(el);
+    });
+})();
+</script>
+
+</body>
+</html>

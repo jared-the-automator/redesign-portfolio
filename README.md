@@ -202,3 +202,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Woodmaster Tools](https://jared-the-automator.github.io/redesign-portfolio/woodmastertools.com/) | American-made woodworking equipment | Kansas City, MO |
 
 | [First Fuel Oil](https://jared-the-automator.github.io/redesign-portfolio/firstfueloil.com/) | Heating oil delivery | North Haven, CT |
+| [Arlington Fuel Oil Co.](https://jared-the-automator.github.io/redesign-portfolio/arlfuel.com/) | Heating oil delivery | Arlington, MA |
