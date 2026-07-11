@@ -204,3 +204,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [First Fuel Oil](https://jared-the-automator.github.io/redesign-portfolio/firstfueloil.com/) | Heating oil delivery | North Haven, CT |
 | [Arlington Fuel Oil Co.](https://jared-the-automator.github.io/redesign-portfolio/arlfuel.com/) | Heating oil delivery | Arlington, MA |
 | [Carey's Oil](https://jared-the-automator.github.io/redesign-portfolio/careysoil.com/) | Heating oil delivery | Whitman, MA |
+| [Stonefly Outfitters](https://jared-the-automator.github.io/redesign-portfolio/stoneflyoutfitters.com/) | Guided fly fishing outfitter | Montana, USA |
