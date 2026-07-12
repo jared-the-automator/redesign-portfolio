@@ -206,3 +206,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Carey's Oil](https://jared-the-automator.github.io/redesign-portfolio/careysoil.com/) | Heating oil delivery | Whitman, MA |
 | [Stonefly Outfitters](https://jared-the-automator.github.io/redesign-portfolio/stoneflyoutfitters.com/) | Guided fly fishing outfitter | Montana, USA |
 | [Kauffman Gas](https://jared-the-automator.github.io/redesign-portfolio/kauffmangas.com/) | Propane delivery & HVAC | Cochranville, PA |
+| [Northwood Vet](https://jared-the-automator.github.io/redesign-portfolio/northwoodvet.com/) | Mixed practice veterinary clinic | Northwood area |
