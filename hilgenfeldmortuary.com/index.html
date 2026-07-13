@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hilgenfeld Mortuary | Anaheim Funeral Home &amp; Cremation</title>
+  <meta name="description" content="An independent, family owned and operated mortuary serving Anaheim and Greater Orange County for four generations. Burial, cremation, and pre-planning with a 24 hour phone line." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#0a0f1a', 900: '#0f1626', 800: '#16213c' },
+            steel: { DEFAULT: '#5e8bb0', light: '#84a9c6' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+  </style>
+</head>
+<body class="bg-navy-950 text-slate-100 font-body antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-navy-950/90 backdrop-blur border-b border-white/10">
+    <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center">
+        <span class="bg-white rounded-md px-2 py-1.5 inline-flex items-center">
+          <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/hilgenfeldlogo.png" alt="Hilgenfeld Mortuary logo" class="h-7 w-auto" />
+        </span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+        <a href="#history" class="hover:text-white transition">Our History</a>
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#gallery" class="hover:text-white transition">Gallery</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </div>
+      <a href="#contact" class="bg-steel hover:bg-steel-light text-navy-950 font-semibold text-sm px-5 py-2.5 rounded-xl transition">Plan Ahead</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative min-h-[100dvh] flex items-end">
+    <img src="https://hilgenfeldmortuary.com/wp-content/uploads/slide1.jpg" alt="Front entrance of Hilgenfeld Mortuary in Anaheim" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-navy-950/85"></div>
+    <div class="relative max-w-6xl mx-auto px-5 pb-24 pt-32 w-full">
+      <p class="text-steel-light tracking-[0.25em] uppercase text-xs font-semibold mb-5">Anaheim, California</p>
+      <h1 class="font-display font-bold text-5xl md:text-7xl leading-[1.05] max-w-3xl">
+        Four generations of care.<br />One Anaheim family.
+      </h1>
+      <p class="mt-6 text-lg text-slate-200 max-w-xl">
+        An independent, family owned mortuary serving Anaheim and Greater Orange County, with a 24 hour phone line.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#contact" class="bg-steel hover:bg-steel-light text-navy-950 font-semibold px-7 py-3.5 rounded-xl transition">Plan Ahead</a>
+        <a href="tel:7145354105" class="border border-white/30 hover:border-white text-white font-semibold px-7 py-3.5 rounded-xl transition">(714) 535-4105</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY PRODUCT SECTION (asymmetric split) -->
+  <section id="services" class="py-24 bg-navy-950">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/slide2.jpg" alt="The Hilgenfeld Mortuary chapel" class="w-full h-[34rem] object-cover rounded-xl" />
+      </div>
+      <div class="reveal">
+        <h2 class="font-display font-bold text-4xl md:text-5xl leading-tight">Care for every step</h2>
+        <p class="mt-4 text-slate-300 max-w-md">An independent mortuary that helps Anaheim families with the full range of arrangements, clearly and without pressure.</p>
+        <div class="mt-10 space-y-8">
+          <div class="flex gap-5">
+            <span class="font-display text-2xl text-steel-light font-semibold">01</span>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Burial</h3>
+              <p class="mt-1 text-slate-300">Traditional burial at our Anaheim chapel, with arrangements shaped around your family's wishes.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-2xl text-steel-light font-semibold">02</span>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Cremation</h3>
+              <p class="mt-1 text-slate-300">Simple, dignified cremation and urn options, explained clearly before anything is decided.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-2xl text-steel-light font-semibold">03</span>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Pre-planning</h3>
+              <p class="mt-1 text-slate-300">Choose today and spare your family the decisions later. A general price list is always available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split, heritage angle) -->
+  <section id="history" class="py-24 bg-navy-900">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal md:order-2">
+        <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/welcome_img.jpg" alt="A woman stands beneath the Hilgenfeld Mortuary neon sign" class="w-full h-[34rem] object-cover rounded-xl" />
+      </div>
+      <div class="reveal md:order-1">
+        <h2 class="font-display font-bold text-4xl md:text-5xl leading-tight">Four generations, one Anaheim family</h2>
+        <p class="mt-5 text-slate-300 max-w-md leading-relaxed">
+          Hilgenfeld Mortuary is independent and family owned, serving Anaheim and Greater Orange County for four generations. We answer in English, Spanish, and German, and our 24 hour line is always open.
+        </p>
+        <a href="#contact" class="inline-block mt-8 text-steel-light font-semibold hover:text-white transition">Talk with our staff &rarr;</a>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY (photography grid, breaks the zigzag) -->
+  <section id="gallery" class="py-24 bg-navy-950">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="reveal max-w-2xl">
+        <h2 class="font-display font-bold text-4xl md:text-5xl leading-tight">Inside Hilgenfeld Mortuary</h2>
+        <p class="mt-4 text-slate-300">A quiet Anaheim chapel, lobby, and care spaces built around families, not funerals.</p>
+      </div>
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://hilgenfeldmortuary.com/wp-content/uploads/slide1.jpg" alt="Front entrance of Hilgenfeld Mortuary" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/slide2.jpg" alt="The Hilgenfeld Mortuary chapel" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/slide3.jpg" alt="The Hilgenfeld Mortuary lobby with two chairs" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/hilgenfeld_veterans.jpg" alt="Flag urns and urn keepsakes displayed on a table" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/hilgenfeld_cremations.jpg" alt="One person passing an urn to another person" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/hilgenfeld_burial.jpg" alt="A set of white gloves resting on flowers on a car hood" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/hilgenfeld_preplanning1.jpg" alt="A staff member showing a casket catalog to a family" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/welcome_img.jpg" alt="A woman stands beneath the Hilgenfeld Mortuary neon sign" class="w-full h-56 object-cover rounded-xl reveal" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY (facts, no invented quote) -->
+  <section class="py-20 bg-navy-900 border-y border-white/10">
+    <div class="max-w-6xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+      <div class="reveal">
+        <p class="font-display font-bold text-3xl text-steel-light">4 generations</p>
+        <p class="mt-2 text-sm text-slate-400">Serving Anaheim families</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display font-bold text-3xl text-steel-light">Family owned</p>
+        <p class="mt-2 text-sm text-slate-400">Independent, not a chain</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display font-bold text-3xl text-steel-light">24 hour</p>
+        <p class="mt-2 text-sm text-slate-400">Phone line, always open</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display font-bold text-3xl text-steel-light">Se habla espanol</p>
+        <p class="mt-2 text-sm text-slate-400">Wir sprechen Deutsch</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="contact" class="bg-steel text-navy-950">
+    <div class="max-w-6xl mx-auto px-5 py-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+      <div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl">When you need us, we answer.</h2>
+        <p class="mt-3 text-navy-900/80 max-w-lg">Call our 24 hour line, or visit us at 120 E Broadway in Anaheim. Pre-planning and arrangements are explained clearly, with no pressure.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="tel:7145354105" class="bg-navy-950 text-white font-semibold px-7 py-3.5 rounded-xl transition hover:bg-navy-900">(714) 535-4105</a>
+        <a href="mailto:office@hilgenfeldmortuary.com" class="bg-white/90 text-navy-950 font-semibold px-7 py-3.5 rounded-xl transition hover:bg-white">Email our staff</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid md:grid-cols-4 gap-10 text-sm">
+      <div>
+        <span class="bg-white rounded-md px-2 py-1.5 inline-flex items-center mb-4">
+          <img src="https://www.hilgenfeldmortuary.com/wp-content/uploads/hilgenfeldlogo.png" alt="Hilgenfeld Mortuary logo" class="h-7 w-auto" />
+        </span>
+        <p class="text-slate-400 leading-relaxed">Independent and family owned, serving Anaheim and Greater Orange County.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Visit</h4>
+        <p class="text-slate-400 leading-relaxed">120 E Broadway<br />Anaheim, CA 92805</p>
+        <p class="mt-3 text-slate-400"><a href="tel:7145354105" class="hover:text-white transition">(714) 535-4105</a></p>
+        <p class="text-slate-400"><a href="mailto:office@hilgenfeldmortuary.com" class="hover:text-white transition">office@hilgenfeldmortuary.com</a></p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Services</h4>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="#services" class="hover:text-white transition">Burial</a></li>
+          <li><a href="#services" class="hover:text-white transition">Cremation</a></li>
+          <li><a href="#services" class="hover:text-white transition">Pre-planning</a></li>
+          <li><a href="#contact" class="hover:text-white transition">General Price List</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Hours &amp; Languages</h4>
+        <p class="text-slate-400 leading-relaxed">Mon to Fri: 8am to 5pm</p>
+        <p class="mt-3 text-slate-400">Se habla espanol<br />Wir sprechen Deutsch</p>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-5 py-6 text-xs text-slate-500">&copy; 2026 Hilgenfeld Mortuary. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
