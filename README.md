@@ -13,6 +13,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Fowler-Kennedy Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/fowlerkennedyfuneralhome.com/) | Funeral home & cremation | Maynard, MA |
 | [NW Equine Performance](https://jared-the-automator.github.io/redesign-portfolio/equinepi.com/) | Equine veterinary and sports medicine | Mulino, OR |
 | [Dierna Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/diernafuneralhome.com/) | Funeral home | Rochester, NY |
+| [Cameron, Brady & Steuber Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/leroyfuneralhome.com/) | Funeral home & mortuary | Rochester, NY |
 | [Fremont Memorial Chapel](https://jared-the-automator.github.io/redesign-portfolio/fremontmemorialchapel.com/) | Funeral home & mortuary | Fremont, CA |
 | [Hilgenfeld Mortuary](https://jared-the-automator.github.io/redesign-portfolio/hilgenfeldmortuary.com/) | Funeral home & mortuary | Anaheim, CA |
 | [Lincoln Family Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/lincolnffc.com/) | Funeral home | Lincoln, NE |
