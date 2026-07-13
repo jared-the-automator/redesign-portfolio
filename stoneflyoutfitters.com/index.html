@@ -1,242 +1,206 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stonefly Outfitters — Guided Fly Fishing in Montana</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --cream: #FEFBF6;
-    --olive: #7C8C5E;
-    --espresso: #3C2A1E;
-    --olive-dark: #5E6B44;
-    --stone: #D4CFC4;
-  }
-  .font-display { font-family: 'DM Serif Display', Georgia, serif; }
-  .font-body { font-family: 'Inter', system-ui, sans-serif; }
-  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-  .corner { border-radius: 12px; }
-  .accent-bg { background-color: var(--olive); }
-  .accent-text { color: var(--olive); }
-  .accent-border { border-color: var(--olive); }
-</style>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          cream: '#FEFBF6',
-          olive: '#7C8C5E',
-          'olive-dark': '#5E6B44',
-          espresso: '#3C2A1E',
-          stone: '#D4CFC4'
-        },
-        fontFamily: {
-          display: ['DM Serif Display', 'Georgia', 'serif'],
-          body: ['Inter', 'system-ui', 'sans-serif']
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stonefly Outfitters | Guided Fly Fishing in Twin Bridges, Montana</title>
+  <meta name="description" content="Stonefly Outfitters guides fly fishing trips on Montana's Blue Ribbon trout rivers, the Beaverhead, Big Hole, and Ruby, from Twin Bridges. Cabins, a fly shop, and a 95% return rate since 2003.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { forest: '#15291e', forest2: '#1d3528', gold: '#c4a05a', bone: '#f3ede1' },
+          fontFamily: { display: ['"Playfair Display"', 'serif'], body: ['Inter', 'sans-serif'] }
         }
       }
     }
-  }
-</script>
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+  </style>
 </head>
-<body class="font-body bg-cream text-espresso antialiased">
+<body class="font-body bg-bone text-forest antialiased">
 
-<!-- Nav -->
-<nav class="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-stone/30">
-  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a href="#" class="flex items-center gap-3">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/rooster-master-160.svg" alt="Stonefly Outfitters" class="h-9 w-auto">
-      <span class="font-display text-xl text-espresso hidden sm:block">Stonefly Outfitters</span>
-    </a>
-    <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide uppercase">
-      <a href="#rivers" class="text-espresso/70 hover:text-espresso transition-colors">Rivers</a>
-      <a href="#guides" class="text-espresso/70 hover:text-espresso transition-colors">Guides</a>
-      <a href="#cabins" class="text-espresso/70 hover:text-espresso transition-colors">Cabins</a>
-      <a href="#contact" class="accent-bg text-white px-5 py-2.5 corner text-xs tracking-wider hover:bg-olive-dark transition-colors">Book a Trip</a>
-    </div>
-    <button class="md:hidden text-espresso p-2" aria-label="Menu">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
-    </button>
-  </div>
-</nav>
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-forest/95 backdrop-blur border-b border-white/5">
+    <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3" aria-label="Stonefly Outfitters home">
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/logo.svg" alt="Stonefly Outfitters" class="h-9 w-auto brightness-0 invert">
+        <span class="sr-only">Stonefly Outfitters</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-bone/80 font-medium">
+        <a href="#why" class="hover:text-gold transition">Why Us</a>
+        <a href="#rivers" class="hover:text-gold transition">The Rivers</a>
+        <a href="#voices" class="hover:text-gold transition">Anglers</a>
+      </div>
+      <a href="#book" class="bg-gold text-forest font-semibold px-5 py-2.5 rounded-xl text-sm hover:bg-gold/90 transition">Plan your trip</a>
+    </nav>
+  </header>
 
-<!-- Hero -->
-<section class="relative min-h-[100dvh] flex items-center overflow-hidden">
-  <div class="absolute inset-0 z-0">
-    <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/SFI0860.jpg" alt="Fly fishing on a Montana river" class="w-full h-full object-cover">
-  </div>
-  <div class="absolute inset-0 z-10 bg-gradient-to-r from-espresso/85 via-espresso/45 to-transparent"></div>
-  <div class="relative z-20 max-w-7xl mx-auto px-6 w-full">
-    <div class="max-w-xl">
-      <p class="text-olive/90 text-xs tracking-[0.2em] uppercase font-medium mb-6 reveal">Montana Fly Fishing</p>
-      <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl text-white leading-[1.05] mb-6 reveal">Guided fly fishing<br>on five legendary rivers</h1>
-      <p class="text-stone/80 text-lg leading-relaxed max-w-lg mb-10 reveal">Drift boat days, riverside cabins, and a guide team that has been bringing you to Montana since 2003.</p>
-      <div class="flex flex-wrap gap-4 reveal">
-        <a href="#rivers" class="accent-bg text-white px-8 py-3.5 corner text-sm font-semibold tracking-wide hover:bg-olive-dark transition-colors">View Our Rivers</a>
-        <a href="#contact" class="border-2 border-white/30 text-white px-8 py-3.5 corner text-sm font-semibold tracking-wide hover:bg-white/10 transition-colors">Book a Trip</a>
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/06/lake-fishing-Montana-1024x820.jpeg" alt="An angler wading a Montana trout river at first light" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0" style="background:linear-gradient(105deg, rgba(8,20,14,0.93) 0%, rgba(8,20,14,0.74) 45%, rgba(8,20,14,0.48) 100%)"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full pt-24 pb-16">
+      <p class="text-gold font-semibold tracking-[0.25em] uppercase text-sm mb-5">Twin Bridges, Montana</p>
+      <h1 class="font-display font-bold text-white text-5xl md:text-7xl leading-[1.05] max-w-4xl">Montana's finest trout water, guided like family.</h1>
+      <p class="text-bone/85 text-lg md:text-xl mt-6 max-w-2xl">Since 2003, Stonefly Outfitters has put anglers on the Beaverhead, Big Hole, and Ruby. Most come back year after year.</p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#book" class="bg-gold text-forest font-semibold px-7 py-3.5 rounded-xl hover:bg-gold/90 transition">Plan your trip</a>
+        <a href="#rivers" class="border border-bone/40 text-bone font-semibold px-7 py-3.5 rounded-xl hover:bg-white/10 transition">See the rivers</a>
       </div>
     </div>
-  </div>
-</section><!-- Primary: Rivers (asymmetric split, image right, features left) -->
-<section id="rivers" class="py-24 lg:py-32">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+  </section>
+  <!-- WHY / PRIMARY SPLIT -->
+  <section id="why" class="py-20 md:py-28 bg-bone">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       <div class="reveal">
-        <p class="text-olive text-xs tracking-[0.2em] uppercase font-medium mb-4">Five Rivers</p>
-        <h2 class="font-display text-4xl sm:text-5xl text-espresso leading-[1.1] mb-8">Each river is a different conversation</h2>
-        <div class="space-y-10">
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/05/SimmsStonefly2017-6989-1024x683.jpg" alt="A Stonefly guide holding a freshly landed trout for a happy angler" class="w-full h-[28rem] object-cover rounded-xl shadow-xl">
+      </div>
+      <div class="reveal">
+        <p class="text-gold font-semibold tracking-[0.2em] uppercase text-sm mb-4">Why anglers return</p>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-forest leading-tight">Three reasons the same faces show up each season.</h2>
+        <div class="mt-10 space-y-8">
           <div class="flex gap-5">
-            <span class="accent-text font-display text-3xl leading-none flex-shrink-0">01</span>
+            <span class="font-display text-3xl text-gold font-bold leading-none">01</span>
             <div>
-              <h3 class="font-display text-xl text-espresso mb-1">The Beaverhead</h3>
-              <p class="text-espresso/60 leading-relaxed">A technical tailwater with deep pools and steady hatches. The browns here are smart and worth every cast.</p>
+              <h3 class="font-semibold text-lg text-forest">The water</h3>
+              <p class="text-forest/70 mt-1">Over 300 miles of Blue Ribbon trout water sits within an hour of your cabin door, from the Beaverhead to the Ruby.</p>
             </div>
           </div>
           <div class="flex gap-5">
-            <span class="accent-text font-display text-3xl leading-none flex-shrink-0">02</span>
+            <span class="font-display text-3xl text-gold font-bold leading-none">02</span>
             <div>
-              <h3 class="font-display text-xl text-espresso mb-1">The Big Hole</h3>
-              <p class="text-espresso/60 leading-relaxed">Legendary dry fly water. Wide meadows, long runs, and a salmonfly hatch that brings the whole river to the surface.</p>
+              <h3 class="font-semibold text-lg text-forest">The guides</h3>
+              <p class="text-forest/70 mt-1">A dedicated crew built around Dan "Rooster" Leavens. Many guests call their guide a friend for life.</p>
             </div>
           </div>
           <div class="flex gap-5">
-            <span class="accent-text font-display text-3xl leading-none flex-shrink-0">03</span>
+            <span class="font-display text-3xl text-gold font-bold leading-none">03</span>
             <div>
-              <h3 class="font-display text-xl text-espresso mb-1">The Madison</h3>
-              <p class="text-espresso/60 leading-relaxed">Classic Montana freestone. Pocket water, riffles, and miles of wadeable access framed by the Madison Range.</p>
+              <h3 class="font-semibold text-lg text-forest">The stay</h3>
+              <p class="text-forest/70 mt-1">Rustic cabins and a well-stocked fly shop in the heart of Twin Bridges, with no stop lights and no tourist traps.</p>
             </div>
           </div>
         </div>
-        <a href="#contact" class="inline-block mt-10 text-olive font-semibold text-sm tracking-wide hover:text-olive-dark transition-colors">Plus the Jefferson and Ruby — ask about both</a>
-      </div>
-      <div class="reveal">
-        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/07/SFP9150.jpg" alt="Fly fishing on a Montana river" class="w-full h-auto corner shadow-lg">
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <!-- STORY / REVERSED SPLIT -->
+  <section class="py-20 md:py-28 bg-forest text-bone">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal md:order-2">
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/06/Rooster-GT-1024x739.jpeg" alt="Owner Dan Rooster Leavens holding a trophy trout" class="w-full h-[28rem] object-cover rounded-xl shadow-xl">
+      </div>
+      <div class="reveal md:order-1">
+        <p class="text-gold font-semibold text-sm mb-4">Since 2003</p>
+        <h2 class="font-display font-bold text-4xl md:text-5xl leading-tight">A 95% return rate says more than any ad could.</h2>
+        <p class="text-bone/80 mt-6 text-lg">Rooster and his crew in Twin Bridges have built something rare in guided fishing: anglers who plan next year's trip before they leave this one. That kind of loyalty is the real proof of the experience.</p>
+        <a href="#book" class="inline-block mt-8 border border-gold text-gold font-semibold px-7 py-3.5 rounded-xl hover:bg-gold hover:text-forest transition">Read the story</a>
+      </div>
+    </div>
+  </section>
 
-<!-- Secondary: Guides (reversed split, image left, content right — story angle) -->
-<section id="guides" class="py-24 lg:py-32 bg-espresso text-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-      <div class="reveal order-last lg:order-first">
-        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/05/guide-school-2655.jpg" alt="Stonefly Outfitters guides on the water" class="w-full h-auto corner shadow-lg">
+  <!-- GALLERY / BRAND STORY -->
+  <section id="rivers" class="py-20 md:py-28 bg-bone">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal max-w-2xl">
+        <p class="text-gold font-semibold text-sm mb-4">On the water</p>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-forest">The rivers that built the reputation.</h2>
       </div>
-      <div class="reveal">
-        <h2 class="font-display text-4xl sm:text-5xl leading-[1.1] mb-8">Seven guides who know every bend and hatch</h2>
-        <p class="text-stone/70 text-lg leading-relaxed mb-5">Brad Heine, David Blanton, Eric Shores, Garey Avis, Hadley Snortland, Holly Phipps, and John Hudgens. Between them, decades on these rivers.</p>
-        <p class="text-stone/70 text-lg leading-relaxed mb-5">They rig the boats at dawn, tie on what the river is asking for, and know when to move and when to wait. Some days are about the fishing. Some are about the water and the light.</p>
-        <p class="text-stone/70 text-lg leading-relaxed">Every guide rows their own drift boat. No trainee trips, no group shuttles. One boat, one guide, one or two anglers.</p>
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/Beaverhead-1024x416.jpg" alt="The Beaverhead River winding through Montana" class="h-64 object-cover rounded-xl">
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/07/Stonefly-Outfitters-cabin-1-1024x683.png" alt="A Stonefly cabin in Twin Bridges" class="h-64 object-cover rounded-xl">
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/GREGSON_BRYAN_Stonefly-Inn-10.jpg" alt="The Stonefly fly shop" class="h-64 object-cover rounded-xl">
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/05/SimmsStonefly2017-6955-683x1024.jpg" alt="An angler and guide high fiving after a catch" class="h-64 object-cover rounded-xl">
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/07/Stonefly-Outfitters-cabin-7-1024x680.png" alt="Cabin interior at the Stonefly Inn" class="h-64 object-cover rounded-xl">
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/05/SimmsStonefly2017-9153-1024x682.jpg" alt="A guide holding a trout for an angler on a Montana river" class="h-64 object-cover rounded-xl">
+      </div>
+      <p class="mt-6 text-forest/70">Five Blue Ribbon rivers, a fly shop, and cabins built for the long days on the water.</p>
+    </div>
+  </section>
+  <!-- TESTIMONIALS -->
+  <section id="voices" class="py-20 md:py-28 bg-forest2 text-bone">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="reveal text-center max-w-3xl mx-auto">
+        <p class="text-gold font-semibold tracking-[0.2em] uppercase text-sm mb-4">From the water</p>
+        <blockquote class="font-display font-bold text-2xl md:text-4xl leading-snug">"We've worked with Rooster and the Stonefly Inn from the moment they opened their doors. If you want a fantastic Montana experience in the heart of the greatest trout fishing country in the country, then Stonefly Inn is the perfect base camp."</blockquote>
+        <p class="mt-6 text-bone/70">Jim Klug, Yellow Dog Flyfishing Adventures</p>
+      </div>
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <div class="border border-white/10 rounded-xl p-6">
+          <p class="text-bone/85">"The Stonefly is one of the great lodges of Montana. This might have been our first trip, but it will not be the last."</p>
+          <p class="mt-4 text-gold text-sm font-semibold">Carter Andrews</p>
+        </div>
+        <div class="border border-white/10 rounded-xl p-6">
+          <p class="text-bone/85">"After 18 years of guiding in Montana I am convinced the Stonefly Inn provides the best fly fishing experience in the State. Period."</p>
+          <p class="mt-4 text-gold text-sm font-semibold">Brian Grossenbacher</p>
+        </div>
+        <div class="border border-white/10 rounded-xl p-6">
+          <p class="text-bone/85">"Most anglers come back year after year. That is the kind of loyalty you cannot buy with an ad."</p>
+          <p class="mt-4 text-gold text-sm font-semibold">Stonefly Outfitters</p>
+        </div>
       </div>
     </div>
-  </div>
-</section><!-- Gallery + Brand Story (full-width, breaks the zigzag) -->
-<section id="cabins" class="py-24 lg:py-32">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="max-w-xl mb-16 reveal">
-      <h2 class="font-display text-4xl sm:text-5xl text-espresso leading-[1.1] mb-4">Riverside cabins at the Stonefly Inn</h2>
-      <p class="text-espresso/60 text-lg leading-relaxed">Stay where you fish. Six cabins on the property, each a short walk from the boat ramp. Coffee on the porch while the fog lifts off the river.</p>
-    </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6 reveal">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/07/Stonefly-Outfitters-cabin-10.png" alt="Cabin exterior at Stonefly Outfitters" class="w-full h-64 object-cover corner row-span-2">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/07/Stonefly-Outfitters-cabin-2.png" alt="Cabin interior" class="w-full h-64 object-cover corner">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/07/Stonefly-Outfitters-cabin-1.png" alt="Cabin at Stonefly Outfitters" class="w-full h-64 object-cover corner">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/GREGSON_BRYAN_Stonefly-Inn-10.jpg" alt="Stonefly Inn exterior" class="w-full h-64 object-cover corner md:col-span-2">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/07/Stonefly-Outfitters-cabin-3.png" alt="Cabin interior detail" class="w-full h-64 object-cover corner">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/07/Stonefly-Outfitters-cabin-4.png" alt="Cabin living area" class="w-full h-64 object-cover corner">
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Credibility: Real facts from the site -->
-<section class="py-24 lg:py-32 bg-[#F4F0E8]">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-3 gap-12 md:gap-16 reveal">
+  <!-- CTA STRIP -->
+  <section id="book" class="bg-gold">
+    <div class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
       <div>
-        <p class="font-display text-6xl text-olive mb-3">2003</p>
-        <p class="text-espresso/60 text-lg leading-relaxed">Bringing anglers to Montana rivers for over two decades. The water changes, the commitment to a good day on the river does not.</p>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-forest">Ready to plan the trip of your life?</h2>
+        <p class="text-forest/80 mt-2">Call Twin Bridges or send a note. Rooster's crew is standing by.</p>
       </div>
-      <div>
-        <p class="font-display text-6xl text-olive mb-3">5</p>
-        <p class="text-espresso/60 text-lg leading-relaxed">Rivers served: the Beaverhead, Big Hole, Jefferson, Madison, and Ruby. Each one a distinct fishery with its own character.</p>
-      </div>
-      <div>
-        <p class="font-display text-6xl text-olive mb-3">7</p>
-        <p class="text-espresso/60 text-lg leading-relaxed">Guides on the team. Every one rows their own drift boat. No group shuttles, no trainee trips. One boat, one guide, your day.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="tel:4066845648" class="bg-forest text-bone font-semibold px-7 py-3.5 rounded-xl hover:bg-forest/90 transition">406.684.5648</a>
+        <a href="mailto:holly@stoneflyoutfitters.com" class="border border-forest text-forest font-semibold px-7 py-3.5 rounded-xl hover:bg-forest hover:text-bone transition">Email Holly</a>
       </div>
     </div>
-    <div class="mt-20 flex flex-wrap justify-center gap-8 lg:gap-16 items-center opacity-50 reveal">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/scott-logo-lg-1.png" alt="Scott Fly Rods" class="h-8 w-auto">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/simmspro-1.png" alt="Simms" class="h-8 w-auto">
-      <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/costa-e1650572985361.png" alt="Costa Sunglasses" class="h-8 w-auto">
-    </div>
-  </div>
-</section><!-- CTA Strip -->
-<section id="contact" class="py-20 lg:py-28 bg-espresso text-white">
-  <div class="max-w-7xl mx-auto px-6 text-center reveal">
-    <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.1] mb-6">Ready to fish Montana?</h2>
-    <p class="text-stone/60 text-lg max-w-xl mx-auto mb-10">Call or email to book a day on the river. Cabins fill early for salmonfly season, so the sooner the better.</p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="tel:4066845648" class="accent-bg text-white px-8 py-3.5 corner text-sm font-semibold tracking-wide hover:bg-olive-dark transition-colors">Call 406-684-5648</a>
-      <a href="mailto:holly@stoneflyoutfitters.com" class="border-2 border-white/20 text-white px-8 py-3.5 corner text-sm font-semibold tracking-wide hover:bg-white/10 transition-colors">Email Holly</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="bg-[#2D1F14] text-stone/50 py-16 lg:py-20">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+  <!-- FOOTER -->
+  <footer class="bg-forest text-bone/80">
+    <div class="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-4 gap-10">
       <div>
-        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/rooster-master-160.svg" alt="Stonefly Outfitters" class="h-8 w-auto mb-5 opacity-80">
-        <p class="text-sm leading-relaxed">Guided fly fishing on five Montana rivers since 2003. Drift boats, riverside cabins, and a guide team that knows every bend.</p>
+        <img src="https://stoneflyoutfitters.com/wp-content/uploads/2022/04/logo.svg" alt="Stonefly Outfitters" class="h-9 w-auto brightness-0 invert mb-4">
+        <p class="text-sm text-bone/60 max-w-xs">Guided fly fishing and cabins in the heart of Montana's Blue Ribbon trout country. Since 2003.</p>
       </div>
       <div>
-        <h4 class="text-white/60 text-xs tracking-[0.15em] uppercase font-semibold mb-5">Rivers</h4>
-        <ul class="space-y-3 text-sm">
-          <li><a href="#" class="hover:text-white/50 transition-colors">The Beaverhead</a></li>
-          <li><a href="#" class="hover:text-white/50 transition-colors">The Big Hole</a></li>
-          <li><a href="#" class="hover:text-white/50 transition-colors">The Madison</a></li>
-          <li><a href="#" class="hover:text-white/50 transition-colors">The Jefferson</a></li>
-          <li><a href="#" class="hover:text-white/50 transition-colors">The Ruby</a></li>
+        <h4 class="text-bone font-semibold mb-4">Explore</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#rivers" class="hover:text-gold">The Rivers</a></li>
+          <li><a href="#why" class="hover:text-gold">Why Us</a></li>
+          <li><a href="#voices" class="hover:text-gold">Anglers</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-white/60 text-xs tracking-[0.15em] uppercase font-semibold mb-5">Contact</h4>
-        <ul class="space-y-3 text-sm">
-          <li>406-684-5648</li>
-          <li>holly@stoneflyoutfitters.com</li>
-          <li class="text-stone/40">Montana</li>
+        <h4 class="text-bone font-semibold mb-4">Visit</h4>
+        <ul class="space-y-2 text-sm">
+          <li>409 N Main Street</li>
+          <li>Twin Bridges, MT 59754</li>
+          <li><a href="tel:4066845648" class="hover:text-gold">406.684.5648</a></li>
+          <li><a href="mailto:holly@stoneflyoutfitters.com" class="hover:text-gold">holly@stoneflyoutfitters.com</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-white/60 text-xs tracking-[0.15em] uppercase font-semibold mb-5">Plan Your Trip</h4>
-        <p class="text-sm leading-relaxed mb-5">Day trips start at first light. Multi-day packages include the cabin. Call to check dates.</p>
-        <a href="tel:4066845648" class="accent-bg text-white px-6 py-2.5 corner text-xs tracking-wider font-semibold hover:bg-olive-dark transition-colors inline-block">Book Now</a>
+        <h4 class="text-bone font-semibold mb-4">Endorsed by</h4>
+        <p class="text-sm text-bone/60">Simms, Scott, Costa, Abel Reels, Trout Unlimited.</p>
       </div>
     </div>
-    <div class="border-t border-white/10 mt-14 pt-8 text-xs text-stone/30 flex flex-wrap justify-between gap-4">
-      <span>Stonefly Outfitters. Bringing you to Montana since 2003.</span>
-      <span>Site design by Bigger Fish Web Design</span>
-    </div>
-  </div>
-</footer>
+    <div class="border-t border-white/10 py-6 text-center text-xs text-bone/50">© 2026 Stonefly Outfitters. All rights reserved.</div>
+  </footer>
 
-<script>
-(function() {
-  var els = document.querySelectorAll('.reveal');
-  var obs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.15 });
-  els.forEach(function(el) { obs.observe(el); });
-})();
-</script>
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 </body>
 </html>

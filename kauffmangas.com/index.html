@@ -1,266 +1,218 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kauffman Gas — Propane Delivery & HVAC | PA & DE</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    .font-display { font-family: 'Playfair Display', serif; }
-    .font-body { font-family: 'Inter', sans-serif; }
-  </style>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: '#1a2332',
-            slate: '#2c3a4a',
-            steel: '#6b8ba4',
-            white: '#f4f6f8',
-          }
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kauffman Gas | Propane Delivery &amp; HVAC Service in PA &amp; DE</title>
+<meta name="description" content="Family-owned propane delivery and HVAC service across Southeastern Pennsylvania and Northern Delaware. Automatic delivery, tank installation, and 24-hour emergency repair.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { display: ['Oswald','sans-serif'], body: ['Inter','sans-serif'] },
+      colors: {
+        ink: '#0b0f14', steel: '#161c26', steel2: '#1f2733',
+        bone: '#e9eef5', muted: '#9aa6b6', flame: '#38bdf8'
       }
     }
-  </script>
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Oswald', sans-serif; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.is-visible { opacity: 1; transform: none; }
+  .hero-scrim { background: linear-gradient(180deg, rgba(11,15,20,.74), rgba(11,15,20,.88)); }
+  .eyebrow { letter-spacing: .22em; }
+  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1!important;transform:none!important;} }
+</style>
 </head>
-<body class="font-body bg-navy text-white">
+<body class="bg-ink text-bone font-body antialiased">
 
-<!-- Nav -->
-<nav class="fixed top-0 w-full z-50 bg-navy/90 backdrop-blur border-b border-slate/30">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <div class="flex items-center gap-3">
-      <img src="https://www.kauffmangas.com/wp-content/uploads/2018/02/kauffman-gas-logo.svg" alt="Kauffman Gas" class="h-10 w-auto brightness-0 invert">
-      <span class="font-display text-white text-lg tracking-wide">Kauffman Gas</span>
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-50 bg-ink/85 backdrop-blur border-b border-white/10">
+  <nav class="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="https://www.kauffmangas.com/wp-content/uploads/2018/02/kauffman-gas-logo.svg" alt="Kauffman Gas" class="h-9 w-auto" onerror="this.style.display='none'">
+      <span class="font-display font-bold text-xl tracking-wide text-bone">Kauffman Gas</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-bone/80">
+      <a href="#propane" class="hover:text-flame transition">Propane</a>
+      <a href="#hvac" class="hover:text-flame transition">HVAC</a>
+      <a href="#story" class="hover:text-flame transition">Our Story</a>
+      <a href="#contact" class="hover:text-flame transition">Contact</a>
     </div>
-    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/80">
-      <a href="#" class="hover:text-white transition">Propane Delivery</a>
-      <a href="#" class="hover:text-white transition">HVAC Service</a>
-      <a href="#" class="hover:text-white transition">About</a>
-      <a href="#" class="hover:text-white transition">Contact</a>
-    </div>
-    <a href="#" class="hidden md:inline-block bg-steel text-navy font-semibold px-5 py-2 rounded text-sm hover:bg-steel/80 transition">Get a Quote</a>
-  </div>
-</nav>
+    <a href="tel:6105935063" class="bg-flame text-ink font-display font-bold px-5 py-2 rounded-md text-sm tracking-wide hover:brightness-110 transition">Call (610) 593-5063</a>
+  </nav>
+</header>
 
-<!-- Hero -->
-<section class="relative min-h-[100dvh] flex items-center overflow-hidden">
-  <div class="absolute inset-0">
-    <img src="https://www.kauffmangas.com/wp-content/uploads/2018/03/kauffman_truck.png" alt="kauffman gas propane delivery truck" class="w-full h-full object-cover object-center">
-    <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/40"></div>
-  </div>
-  <div class="relative z-10 max-w-7xl mx-auto px-6 py-24">
-    <p class="text-steel text-sm font-medium tracking-widest uppercase mb-4">Southeastern PA &amp; Northern Delaware</p>
-    <h1 class="font-display text-5xl md:text-7xl text-white leading-tight max-w-2xl mb-6">
-      Kauffman Heats,<br>Cools, Delivers
-    </h1>
-    <p class="text-white/70 text-lg max-w-xl mb-10">
-      Propane delivery and HVAC service from a family that has kept homes warm and cool across Pennsylvania and Delaware for 75 years.
-    </p>
-    <div class="flex flex-col sm:flex-row gap-4">
-      <a href="#" class="bg-steel text-navy font-semibold px-8 py-3 rounded text-center hover:bg-steel/80 transition">Become a Customer</a>
-      <a href="#" class="border border-white/30 text-white font-medium px-8 py-3 rounded text-center hover:bg-white/10 transition">610-593-5063</a>
+<!-- HERO -->
+<section class="relative min-h-[100dvh] flex items-end">
+  <img src="https://www.kauffmangas.com/wp-content/uploads/2018/03/kauffman_hero_background.png" alt="Kauffman Gas propane delivery truck on a Pennsylvania road" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 hero-scrim"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-5 pb-20 md:pb-28 w-full">
+    <p class="eyebrow font-semibold text-flame text-xs mb-4">SERVING SOUTHEASTERN PA &amp; NORTHERN DELAWARE</p>
+    <h1 class="font-display font-bold uppercase leading-[0.95] text-bone text-5xl md:text-7xl lg:text-8xl max-w-4xl">Kauffman Heats,<br>Cools, Delivers</h1>
+    <p class="mt-6 text-lg md:text-xl text-bone/85 max-w-xl">Family-owned propane delivery and HVAC service, keeping homes warm and running for 75 years.</p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="#propane" class="bg-flame text-ink font-display font-bold px-7 py-3 rounded-md tracking-wide hover:brightness-110 transition">Get a Quote</a>
+      <a href="tel:6105935063" class="border border-bone/40 text-bone font-semibold px-7 py-3 rounded-md hover:border-flame hover:text-flame transition">24-Hour Emergency</a>
     </div>
   </div>
-</section><!-- Primary: Propane Delivery -->
-<section class="py-24 bg-slate">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      <div class="order-2 lg:order-1">
-        <p class="text-steel text-sm font-medium tracking-widest uppercase mb-4">01 / Propane Delivery</p>
-        <h2 class="font-display text-4xl md:text-5xl text-white leading-tight mb-8">
-          Fuel delivered on your schedule, not ours
-        </h2>
-        <div class="space-y-8">
-          <div>
-            <p class="text-steel font-semibold text-lg">02 / Automatic Delivery</p>
-            <p class="text-white/70 mt-2">Tank monitoring that schedules fills before you run low. No watching gauges, no emergency calls.</p>
-          </div>
-          <div>
-            <p class="text-steel font-semibold text-lg">03 / Budget That Works</p>
-            <p class="text-white/70 mt-2">Spread your cost across 11 months with our budget plan, or lock in a rate with the pre-buy program before winter starts.</p>
-          </div>
+</section>
+<!-- PROPANE -->
+<section id="propane" class="py-20 md:py-28 bg-ink">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <img src="https://www.kauffmangas.com/wp-content/uploads/2018/03/DSC_0016.jpg" alt="A Kauffman Gas technician on a propane delivery route" class="w-full h-[420px] object-cover rounded-md">
+    </div>
+    <div class="reveal">
+      <h2 class="font-display font-bold uppercase text-4xl md:text-5xl leading-tight">Never Run Out of Propane</h2>
+      <p class="mt-4 text-muted text-lg">We watch your usage and deliver before the tank runs low. No phone calls, no cold mornings, no guesswork.</p>
+      <div class="mt-8 space-y-6">
+        <div class="flex gap-4">
+          <span class="font-display font-bold text-flame text-2xl leading-none">01</span>
+          <div><h3 class="font-display font-semibold text-xl">Automatic Delivery</h3><p class="text-muted mt-1">We track your history and the weather, then schedule the drop. You stay full without lifting a finger.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-bold text-flame text-2xl leading-none">02</span>
+          <div><h3 class="font-display font-semibold text-xl">Tank Installation</h3><p class="text-muted mt-1">Aboveground and underground propane tanks set and piped to code by our own crew.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-bold text-flame text-2xl leading-none">03</span>
+          <div><h3 class="font-display font-semibold text-xl">Budget &amp; Pre-Buy Plans</h3><p class="text-muted mt-1">Lock in pricing through the budget plan and pre-buy program, so winter bills stay predictable.</p></div>
         </div>
       </div>
-      <div class="order-1 lg:order-2">
-        <img src="https://www.kauffmangas.com/wp-content/uploads/2018/03/kauffman_truck.png" alt="kauffman gas propane delivery truck" class="w-full h-auto rounded">
-      </div>
+      <a href="#contact" class="inline-block mt-8 bg-flame text-ink font-display font-bold px-7 py-3 rounded-md tracking-wide hover:brightness-110 transition">Start Delivery</a>
     </div>
   </div>
 </section>
 
-<!-- Secondary: HVAC -->
-<section class="py-24 bg-navy">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      <div>
-        <img src="https://www.kauffmangas.com/wp-content/uploads/2024/09/whiter-hvac-unit.png" alt="outdoor ac unit" class="w-full h-auto rounded">
-      </div>
-      <div>
-        <p class="text-steel text-sm font-medium tracking-widest uppercase mb-4">HVAC Services</p>
-        <h2 class="font-display text-4xl md:text-5xl text-white leading-tight mb-6">
-          The other half of keeping a home comfortable
-        </h2>
-        <p class="text-white/70 text-lg mb-6">
-          Summer or winter, your system needs to work. Kauffman installs, maintains, and replaces residential HVAC equipment across Southeastern PA and Northern Delaware — the same crew that delivers your propane.
-        </p>
-        <div class="space-y-4">
-          <div class="flex items-start gap-3">
-            <span class="text-steel mt-0.5 flex-shrink-0">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-            </span>
-            <p class="text-white/80">System replacements and new installations</p>
-          </div>
-          <div class="flex items-start gap-3">
-            <span class="text-steel mt-0.5 flex-shrink-0">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-            </span>
-            <p class="text-white/80">Annual maintenance plans to prevent mid-season failures</p>
-          </div>
-          <div class="flex items-start gap-3">
-            <span class="text-steel mt-0.5 flex-shrink-0">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-            </span>
-            <p class="text-white/80">Emergency repair — same team, same phone number</p>
-          </div>
+<!-- HVAC (reversed split) -->
+<section id="hvac" class="py-20 md:py-28 bg-steel">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal md:order-2">
+      <img src="https://www.kauffmangas.com/wp-content/uploads/2024/08/outdoor-ac-service.png" alt="An outdoor air conditioning unit serviced by Kauffman Gas" class="w-full h-[420px] object-cover rounded-md">
+    </div>
+    <div class="reveal md:order-1">
+      <h2 class="font-display font-bold uppercase text-4xl md:text-5xl leading-tight">HVAC That Shows Up</h2>
+      <p class="mt-4 text-muted text-lg">Installation, service, and repairs from a family crew that has kept this county comfortable for 75 years.</p>
+      <div class="mt-8 space-y-6">
+        <div class="flex gap-4">
+          <span class="font-display font-bold text-flame text-2xl leading-none">01</span>
+          <div><h3 class="font-display font-semibold text-xl">System Replacement</h3><p class="text-muted mt-1">We size and install furnaces and air conditioners for your home, not a catalog guess.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-bold text-flame text-2xl leading-none">02</span>
+          <div><h3 class="font-display font-semibold text-xl">Maintenance Plans</h3><p class="text-muted mt-1">Seasonal tune-ups that stretch equipment life and keep your monthly bills down.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-bold text-flame text-2xl leading-none">03</span>
+          <div><h3 class="font-display font-semibold text-xl">24-Hour Emergency</h3><p class="text-muted mt-1">Heat out at 2 a.m.? Call (610) 593-5063 and a real person answers.</p></div>
         </div>
       </div>
+      <a href="tel:6105935063" class="inline-block mt-8 border border-flame text-flame font-semibold px-7 py-3 rounded-md hover:bg-flame hover:text-ink transition">Call for Service</a>
     </div>
   </div>
-</section><!-- Brand Story -->
-<section class="py-24 bg-navy">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <p class="text-steel text-sm font-medium tracking-widest uppercase mb-4">75 Years Strong</p>
-      <h2 class="font-display text-4xl md:text-6xl text-white leading-tight max-w-3xl mx-auto">
-        Third generation. Same family. Same promise.
-      </h2>
+</section>
+<!-- STORY / GALLERY (layout break) -->
+<section id="story" class="py-20 md:py-28 bg-ink">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="reveal max-w-3xl">
+      <p class="eyebrow font-semibold text-flame text-xs mb-3">OUR STORY</p>
+      <h2 class="font-display font-bold uppercase text-4xl md:text-6xl leading-tight">Three Generations, One Truck</h2>
+      <p class="mt-5 text-muted text-lg">Kauffman Gas is family-owned and operated, serving happy customers for 75 years. Generations of Kauffmans still work the daily routes, and the company is shared today by siblings who grew up on those same deliveries.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <div class="bg-slate/50 p-8 rounded">
-        <p class="font-display text-steel text-4xl mb-2">1949</p>
-        <p class="text-white/80">The year Charles Kauffman started delivering propane to neighbors in Chester County, Pennsylvania. One truck, one route, one family.</p>
-      </div>
-      <div class="bg-slate/50 p-8 rounded">
-        <p class="font-display text-steel text-4xl mb-2">Third</p>
-        <p class="text-white/80">Generation running the business now. The trucks are newer, but the way decisions get made hasn't changed: do right by the customer.</p>
-      </div>
-      <div class="bg-slate/50 p-8 rounded">
-        <p class="font-display text-steel text-4xl mb-2">Two</p>
-        <p class="text-white/80">Services under one roof. Propane delivery and HVAC installation and repair. One call, one company, one crew you know.</p>
-      </div>
+    <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="https://www.kauffmangas.com/wp-content/uploads/2018/03/kaffman-family.jpg" alt="The Kauffman family" class="w-full h-56 object-cover rounded-md reveal">
+      <img src="https://www.kauffmangas.com/wp-content/uploads/2018/03/Elwood_Barbara_Kauffman.jpg" alt="Elwood and Barbara Kauffman" class="w-full h-56 object-cover rounded-md reveal">
+      <img src="https://www.kauffmangas.com/wp-content/uploads/2018/03/Elmer_Kauffman0001.jpg" alt="Elmer Kauffman, founder" class="w-full h-56 object-cover rounded-md reveal">
+      <img src="https://www.kauffmangas.com/wp-content/uploads/2018/03/DSC_0018.jpg" alt="A Kauffman Gas delivery in the field" class="w-full h-56 object-cover rounded-md reveal">
     </div>
   </div>
 </section>
 
-<!-- Credibility -->
-<section class="py-24 bg-slate">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      <div>
-        <p class="text-steel text-sm font-medium tracking-widest uppercase mb-4">Serving PA &amp; DE</p>
-        <h2 class="font-display text-4xl md:text-5xl text-white leading-tight mb-8">
-          A propane company that answers its own phone
-        </h2>
-        <p class="text-white/70 text-lg mb-8">
-          Kauffman Gas serves thousands of residential and commercial customers across Southeastern Pennsylvania and Northern Delaware. The office is in Cochranville. The people who answer the phone are the same people who dispatch your delivery.
-        </p>
-        <div class="grid grid-cols-2 gap-6">
-          <div>
-            <p class="text-steel font-semibold">Service Area</p>
-            <p class="text-white/70 text-sm mt-1">Southeastern PA, Northern DE</p>
-          </div>
-          <div>
-            <p class="text-steel font-semibold">Phone</p>
-            <p class="text-white/70 text-sm mt-1">610-593-5063</p>
-          </div>
-          <div>
-            <p class="text-steel font-semibold">Email</p>
-            <p class="text-white/70 text-sm mt-1">info@kauffmangas.com</p>
-          </div>
-          <div>
-            <p class="text-steel font-semibold">Customer Portal</p>
-            <p class="text-white/70 text-sm mt-1">my.kauffmangas.com</p>
-          </div>
-        </div>
-      </div>
-      <div class="relative">
-        <img src="https://www.kauffmangas.com/wp-content/uploads/2018/03/kauffman_truck.png" alt="kauffman gas propane delivery truck" class="w-full h-auto rounded">
-        <div class="absolute -bottom-4 -left-4 bg-navy p-6 rounded max-w-xs">
-          <p class="text-white text-sm italic">"We have been a family-owned propane company serving South Eastern PA and Northern Delaware for 75 years."</p>
-          <p class="text-steel text-xs mt-2">Kauffman Gas</p>
-        </div>
-      </div>
+<!-- CREDIBILITY / PULL QUOTE -->
+<section class="py-20 md:py-28 bg-steel">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-3 gap-10 items-center">
+    <div class="reveal md:col-span-2">
+      <p class="text-flame font-display font-bold text-3xl md:text-4xl leading-snug">"Family owned and operated, serving happy customers for 75 years."</p>
+      <p class="mt-4 text-muted">Kauffman Gas</p>
+    </div>
+    <div class="reveal grid grid-cols-2 gap-6">
+      <div><p class="font-display font-bold text-4xl text-flame">75</p><p class="text-muted text-sm mt-1">Years in business</p></div>
+      <div><p class="font-display font-bold text-4xl text-flame">24/7</p><p class="text-muted text-sm mt-1">Emergency service</p></div>
+      <div><p class="font-display font-bold text-4xl text-flame">2</p><p class="text-muted text-sm mt-1">States served</p></div>
+      <div><p class="font-display font-bold text-4xl text-flame">100%</p><p class="text-muted text-sm mt-1">Family owned</p></div>
     </div>
   </div>
-</section><!-- CTA Strip -->
-<section class="py-24 bg-slate">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="bg-steel rounded py-16 px-8 md:px-16 text-center">
-      <h2 class="font-display text-4xl md:text-5xl text-navy leading-tight mb-4">
-        Ready to switch propane providers?
-      </h2>
-      <p class="text-navy/80 text-lg max-w-xl mx-auto mb-10">
-        Call Kauffman Gas at 610-593-5063 or visit my.kauffmangas.com to become a customer today. Delivery, installation, maintenance — one company, one call.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#" class="bg-navy text-white font-semibold px-8 py-3 rounded hover:bg-navy/90 transition">Become a Customer</a>
-        <a href="#" class="border border-navy/30 text-navy font-medium px-8 py-3 rounded hover:bg-navy/10 transition">610-593-5063</a>
-      </div>
+</section>
+<!-- CTA STRIP -->
+<section id="contact" class="py-16 md:py-20 bg-flame">
+  <div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-8">
+    <div>
+      <h2 class="font-display font-bold uppercase text-3xl md:text-5xl text-ink leading-tight">Ready for a Warmer Winter?</h2>
+      <p class="mt-3 text-ink/80 text-lg">Set up propane delivery or book HVAC service today.</p>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      <a href="tel:6105935063" class="bg-ink text-bone font-display font-bold px-8 py-4 rounded-md tracking-wide hover:brightness-125 transition">Call (610) 593-5063</a>
+      <a href="mailto:info@kauffmangas.com" class="border-2 border-ink text-ink font-display font-bold px-8 py-4 rounded-md tracking-wide hover:bg-ink hover:text-bone transition">Email Us</a>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="py-16 bg-navy border-t border-slate/30">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-      <div class="col-span-2 md:col-span-1">
-        <img src="https://www.kauffmangas.com/wp-content/uploads/2018/02/kauffman-gas-logo.svg" alt="Kauffman Gas" class="h-8 w-auto brightness-0 invert mb-4">
-        <p class="text-white/50 text-sm">
-          Propane delivery and HVAC service for homes in Southeastern Pennsylvania and Northern Delaware since 1949.
-        </p>
-      </div>
-      <div>
-        <p class="text-white font-semibold text-sm mb-4">Services</p>
-        <ul class="space-y-2 text-sm text-white/50">
-          <li><a href="#" class="hover:text-steel transition">Propane Delivery</a></li>
-          <li><a href="#" class="hover:text-steel transition">HVAC Service</a></li>
-          <li><a href="#" class="hover:text-steel transition">Installation</a></li>
-          <li><a href="#" class="hover:text-steel transition">Budget Plan</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="text-white font-semibold text-sm mb-4">Company</p>
-        <ul class="space-y-2 text-sm text-white/50">
-          <li><a href="#" class="hover:text-steel transition">About Us</a></li>
-          <li><a href="#" class="hover:text-steel transition">Our History</a></li>
-          <li><a href="#" class="hover:text-steel transition">Careers</a></li>
-          <li><a href="#" class="hover:text-steel transition">Blog</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="text-white font-semibold text-sm mb-4">Contact</p>
-        <ul class="space-y-2 text-sm text-white/50">
-          <li>610-593-5063</li>
-          <li>info@kauffmangas.com</li>
-          <li>Cochranville, PA</li>
-          <li><a href="#" class="hover:text-steel transition">Customer Portal</a></li>
-        </ul>
-      </div>
+<!-- FOOTER -->
+<footer class="bg-ink border-t border-white/10 pt-16 pb-10">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-10">
+    <div>
+      <img src="https://www.kauffmangas.com/wp-content/uploads/2018/02/kauffman-gas-logo.svg" alt="Kauffman Gas" class="h-10 w-auto mb-4" onerror="this.style.display='none'">
+      <p class="text-muted text-sm">Family-owned propane delivery and HVAC service across Southeastern PA and Northern Delaware for 75 years.</p>
     </div>
-    <div class="border-t border-slate/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-white/40 text-sm">
-        A family-owned business serving homes across Pennsylvania and Delaware for three generations. <!-- verify -->
-      </p>
-      <div class="flex gap-6 text-sm text-white/40">
-        <span>Kauffman Gas</span>
-        <span>Southeastern PA &amp; Northern DE</span>
-      </div>
+    <div>
+      <h3 class="font-display font-semibold uppercase text-sm tracking-wide text-bone mb-4">Services</h3>
+      <ul class="space-y-2 text-muted text-sm">
+        <li><a href="#propane" class="hover:text-flame transition">Propane Delivery</a></li>
+        <li><a href="#propane" class="hover:text-flame transition">Tank Installation</a></li>
+        <li><a href="#hvac" class="hover:text-flame transition">HVAC Service</a></li>
+        <li><a href="#hvac" class="hover:text-flame transition">System Replacement</a></li>
+      </ul>
     </div>
+    <div>
+      <h3 class="font-display font-semibold uppercase text-sm tracking-wide text-bone mb-4">Company</h3>
+      <ul class="space-y-2 text-muted text-sm">
+        <li><a href="#story" class="hover:text-flame transition">Our Story</a></li>
+        <li><a href="#story" class="hover:text-flame transition">75 Years</a></li>
+        <li><a href="#contact" class="hover:text-flame transition">Contact</a></li>
+        <li><a href="tel:6105935063" class="hover:text-flame transition">Emergency Service</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold uppercase text-sm tracking-wide text-bone mb-4">Contact</h3>
+      <ul class="space-y-2 text-muted text-sm">
+        <li><a href="tel:6105935063" class="hover:text-flame transition">(610) 593-5063</a></li>
+        <li><a href="mailto:info@kauffmangas.com" class="hover:text-flame transition">info@kauffmangas.com</a></li>
+        <li>Southeastern PA &amp; Northern DE</li>
+        <li>24-Hour Emergency Assistance</li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 mt-12 pt-6 border-t border-white/10 text-muted text-xs flex flex-col md:flex-row justify-between gap-2">
+    <p>&copy; 2026 Kauffman Gas. All rights reserved.</p>
+    <p>Propane Delivery &amp; HVAC Service</p>
   </div>
 </footer>
 
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 </body>
 </html>

@@ -1,229 +1,189 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Williams Energy — Heating Oil, Propane &amp; HVAC | South Shore MA</title>
+<title>Williams Energy | Heating Oil, Propane &amp; Home Services on the South Shore</title>
+<meta name="description" content="Family-owned South Shore MA fuel and home services since 1919. Heating oil, propane, HVAC, plumbing, and electrical, with 24/7 emergency service.">
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          display: ['"Playfair Display"', 'serif'],
-          body: ['"Inter"', 'sans-serif'],
-        },
-        colors: {
-          navy: '#0a1628',
-          slate: '#152040',
-          steel: '#4a8fe7',
-          foam: '#f1f5f9',
-          mist: '#94a3b8',
-        },
-        borderRadius: {
-          page: '2px',
-        },
-      },
-    },
-  };
-</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#121110',
+        surface: '#1B1916',
+        bone: '#EDE9E0',
+        amber: '#F59E0B',
+        muted: '#A8A29E'
+      },
+      fontFamily: {
+        display: ['"Barlow Condensed"', 'sans-serif'],
+        body: ['Inter', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
 <style>
-  .observer-reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
-  .observer-reveal.visible { opacity: 1; transform: translateY(0); }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Barlow Condensed', sans-serif; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .hero-scrim { background: linear-gradient(105deg, rgba(12,11,9,.88) 0%, rgba(12,11,9,.74) 44%, rgba(12,11,9,.42) 100%); }
+  .radius { border-radius: 12px; }
 </style>
 </head>
-<body class="bg-navy text-foam font-body antialiased">
-
-<!-- Nav -->
-<nav class="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-white/5">
-  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3">
-      <img src="https://mywilliamsenergy.com/wp-content/uploads/2026/06/logo.png" alt="Williams Energy" class="h-10 w-auto">
+<body class="bg-ink text-bone font-body antialiased">
+<header class="fixed top-0 inset-x-0 z-50 bg-ink/90 backdrop-blur border-b border-white/5">
+  <nav class="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+      <img src="https://web.archive.org/web/20260625182545im_/https://www.mywilliamsenergy.com/wp-content/uploads/2026/06/logo.png" alt="Williams Energy" class="h-9 w-auto">
     </a>
-    <div class="hidden lg:flex items-center gap-8 text-sm tracking-wide text-mist">
-      <a href="#services" class="hover:text-steel transition-colors">Services</a>
-      <a href="#story" class="hover:text-steel transition-colors">Our Story</a>
-      <a href="#coverage" class="hover:text-steel transition-colors">Service Area</a>
-      <a href="tel:+17818430415" class="px-5 py-2 rounded-page border border-steel text-steel hover:bg-steel hover:text-white transition-colors text-sm font-semibold tracking-wide">(781) 843-0415</a>
+    <div class="hidden lg:flex items-center gap-6 text-sm text-bone/80">
+      <a href="#services" class="hover:text-amber transition">Heating Oil</a>
+      <a href="#services" class="hover:text-amber transition">Propane</a>
+      <a href="#services" class="hover:text-amber transition">Heating &amp; AC</a>
+      <a href="#services" class="hover:text-amber transition">Plumbing</a>
+      <a href="#services" class="hover:text-amber transition">Electrical</a>
+      <a href="#areas" class="hover:text-amber transition">Service Areas</a>
+      <a href="#story" class="hover:text-amber transition">About</a>
     </div>
-  </div>
-</nav>
-
-<!-- Hero -->
+    <a href="#contact" class="radius bg-amber text-ink font-display font-bold text-lg px-5 py-2 hover:bg-amber/90 transition">Get a Quote</a>
+  </nav>
+</header>
 <section class="relative min-h-[100dvh] flex items-center">
-  <div class="absolute inset-0">
-    <img src="https://mywilliamsenergy.com/wp-content/uploads/2020/08/banner-about.jpg" alt="Williams Energy delivery truck" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/70 to-navy/30"></div>
-  </div>
-  <div class="relative max-w-7xl mx-auto px-6 py-24">
-    <div class="max-w-xl">
-      <p class="text-steel text-sm tracking-[0.2em] uppercase mb-6">South Shore, Massachusetts</p>
-      <h1 class="font-display text-5xl lg:text-6xl leading-tight mb-6">Heating the South Shore<br>Since 1919</h1>
-      <p class="text-mist text-lg leading-relaxed mb-10 max-w-lg">Heating oil, propane, HVAC, plumbing, and electrical — one family, four generations, 24/7 emergency service.</p>
-      <div class="flex flex-wrap gap-4">
-        <a href="#services" class="px-8 py-3 rounded-page bg-steel text-white font-semibold text-sm tracking-wide hover:bg-steel/90 transition-colors">Our Services</a>
-        <a href="tel:+17818430415" class="px-8 py-3 rounded-page border border-white/20 text-foam font-semibold text-sm tracking-wide hover:bg-white/10 transition-colors">Call (781) 843-0415</a>
+  <img src="https://web.archive.org/web/20260625182545im_/https://www.mywilliamsenergy.com/wp-content/uploads/2026/06/HP-hero.jpg" alt="Williams Energy team serving the South Shore" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 hero-scrim"></div>
+  <div class="relative max-w-7xl mx-auto px-5 w-full pt-24 pb-16">
+    <div class="max-w-2xl">
+      <p class="radius inline-block bg-amber/15 text-amber font-display uppercase tracking-[0.2em] text-sm px-3 py-1 mb-5">South Shore, MA · Since 1919</p>
+      <h1 class="font-display font-extrabold text-bone leading-[0.95] text-6xl sm:text-7xl lg:text-8xl">Trusted on the South Shore<br>since 1919</h1>
+      <p class="mt-6 text-lg sm:text-xl text-bone/85 max-w-xl">One family-owned company for heating oil, propane, HVAC, plumbing, and electrical, with 24/7 emergency service when you need it most.</p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#contact" class="radius bg-amber text-ink font-display font-bold text-xl px-7 py-3 hover:bg-amber/90 transition">Get a Quote</a>
+        <a href="#services" class="radius border border-bone/30 text-bone font-display font-bold text-xl px-7 py-3 hover:border-amber hover:text-amber transition">Become a Customer</a>
       </div>
-    </div>
-  </div>
-</section><!-- Primary Product Section -->
-<section id="services" class="observer-reveal py-24">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-16 items-center">
-      <div class="order-2 lg:order-1 space-y-10">
-        <div class="border-t border-white/10 pt-8">
-          <span class="text-steel text-xs tracking-[0.2em] uppercase">01</span>
-          <h3 class="font-display text-2xl mt-3 mb-2">Heating Oil &amp; Propane Delivery</h3>
-          <p class="text-mist leading-relaxed">Automatic delivery and will-call service across the South Shore. Family-owned means you know the voice on the phone and the driver at your door.</p>
-        </div>
-        <div class="border-t border-white/10 pt-8">
-          <span class="text-steel text-xs tracking-[0.2em] uppercase">02</span>
-          <h3 class="font-display text-2xl mt-3 mb-2">HVAC Installation &amp; Repair</h3>
-          <p class="text-mist leading-relaxed">Full-service heating and cooling — from emergency furnace repair in February to central air installs in June. Licensed technicians, same-day response.</p>
-        </div>
-        <div class="border-t border-white/10 pt-8">
-          <span class="text-steel text-xs tracking-[0.2em] uppercase">03</span>
-          <h3 class="font-display text-2xl mt-3 mb-2">Plumbing &amp; Electrical</h3>
-          <p class="text-mist leading-relaxed">Whole-home service under one roof. Generators, water heaters, panel upgrades, and every pipe between. One call covers it.</p>
-        </div>
-      </div>
-      <div class="order-1 lg:order-2">
-        <img src="https://mywilliamsenergy.com/wp-content/uploads/2020/08/img-why-williams-energy.jpg" alt="Williams Energy technician at a customer home" class="w-full h-auto rounded-page shadow-2xl">
-      </div>
+      <p class="mt-6 text-bone/70 text-sm">Call <a href="tel:7818430415" class="text-amber font-semibold">(781) 843-0415</a> · 24/7 emergency: (781) 394-9680</p>
     </div>
   </div>
 </section>
-
-<!-- Secondary Section: Story -->
-<section id="story" class="observer-reveal py-24 bg-slate">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-16 items-center">
-      <div>
-        <img src="https://mywilliamsenergy.com/wp-content/uploads/2020/08/img-community-conservation.jpg" alt="Vintage Williams Energy truck in a community parade" class="w-full h-auto rounded-page shadow-2xl">
+<section id="services" class="py-20 sm:py-28 bg-ink">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <img src="https://web.archive.org/web/20250408035946im_/https://www.mywilliamsenergy.com/wp-content/uploads/2024/05/img-why-williams-energy-team.jpg" alt="Williams Energy technicians serving South Shore homes" class="radius w-full h-[460px] object-cover">
       </div>
-      <div class="space-y-6">
-        <p class="text-steel text-xs tracking-[0.2em] uppercase">Our Story</p>
-        <h2 class="font-display text-4xl leading-tight">Four generations.<br>One family. One promise.</h2>
-        <p class="text-mist leading-relaxed">Williams Energy started with a single truck and a handshake in 1919. Four generations later, we still answer the phone ourselves. We still know our customers by name. And we still show up — day or night, holiday or blizzard — because that is what a family business does.</p>
-        <p class="text-mist leading-relaxed">Today we serve thousands of homes across the South Shore from our locations in Braintree and Marshfield. Heating oil, propane, HVAC, plumbing, and electrical — all under one roof, all backed by 24/7 emergency service.</p>
-        <div class="flex gap-8 pt-4">
-          <div>
-            <span class="font-display text-3xl text-steel"><!-- verify -->107</span>
-            <p class="text-mist text-sm mt-1">Years in business</p>
+      <div class="reveal">
+        <h2 class="font-display font-extrabold text-4xl sm:text-5xl leading-tight">Everything your home needs, under one name</h2>
+        <p class="mt-4 text-muted text-lg">Williams Energy has delivered fuel and full home services across the South Shore since 1919, from the tank in the basement to the panel on the wall.</p>
+        <div class="mt-8 space-y-6">
+          <div class="flex gap-4">
+            <span class="font-display font-extrabold text-amber text-2xl leading-none">01</span>
+            <div><h3 class="font-display font-bold text-2xl">Heating oil &amp; propane</h3><p class="text-muted">Automatic delivery before the tank runs low, plus tank service and payment options.</p></div>
           </div>
-          <div>
-            <span class="font-display text-3xl text-steel">24/7</span>
-            <p class="text-mist text-sm mt-1">Emergency service</p>
+          <div class="flex gap-4">
+            <span class="font-display font-extrabold text-amber text-2xl leading-none">02</span>
+            <div><h3 class="font-display font-bold text-2xl">Heating, cooling &amp; heat pumps</h3><p class="text-muted">Install, repair, and service plans for furnaces, boilers, AC, and heat pumps.</p></div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display font-extrabold text-amber text-2xl leading-none">03</span>
+            <div><h3 class="font-display font-bold text-2xl">Plumbing &amp; electrical</h3><p class="text-muted">Water heaters, drain cleaning, generator installation, and 24/7 emergency repairs.</p></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section><!-- Service Area -->
-<section id="coverage" class="observer-reveal py-24">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-5 gap-16 items-center">
-      <div class="lg:col-span-2 space-y-6">
-        <p class="text-steel text-xs tracking-[0.2em] uppercase">Service Area</p>
-        <h2 class="font-display text-4xl leading-tight">South Shore, covered.</h2>
-        <p class="text-mist leading-relaxed">From Quincy to Plymouth, we deliver heating oil and propane to homes and businesses across the South Shore. Our trucks run out of Braintree and Marshfield — which means same-day response for most of the region.</p>
-        <ul class="space-y-3 text-mist">
-          <li class="flex items-start gap-3"><span class="text-steel mt-0.5">&#10003;</span> Braintree, Marshfield, and surrounding towns</li>
-          <li class="flex items-start gap-3"><span class="text-steel mt-0.5">&#10003;</span> Automatic delivery with degree-day tracking</li>
-          <li class="flex items-start gap-3"><span class="text-steel mt-0.5">&#10003;</span> 24/7 emergency response across the full service area</li>
-          <li class="flex items-start gap-3"><span class="text-steel mt-0.5">&#10003;</span> Will-call and on-demand delivery available</li>
-        </ul>
+</section>
+<section class="py-20 sm:py-28 bg-surface">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal lg:order-2">
+        <img src="https://web.archive.org/web/20260625182545im_/https://www.mywilliamsenergy.com/wp-content/uploads/2020/08/img-history.jpg" alt="Williams Energy's South Shore history since 1919" class="radius w-full h-[460px] object-cover">
       </div>
-      <div class="lg:col-span-3">
-        <img src="https://mywilliamsenergy.com/wp-content/uploads/2020/08/img-service-area-map.jpg" alt="Williams Energy South Shore service area map" class="w-full h-auto rounded-page shadow-2xl">
+      <div class="reveal lg:order-1">
+        <h2 class="font-display font-extrabold text-4xl sm:text-5xl leading-tight">A century of taking care of South Shore homes</h2>
+        <p class="mt-4 text-muted text-lg">George Arthur Williams started the Williams Coal &amp; Oil Company in 1919. What began as a local fuel and construction business grew into one trusted name for keeping South Shore homes warm, comfortable, and running.</p>
+        <p class="mt-4 text-muted text-lg">Generations of South Shore families have stayed with us for the same reasons: fuel that shows up before the tank runs low, a real person who answers the phone, and technicians who handle heating, cooling, plumbing, and electrical.</p>
+        <a href="#contact" class="radius inline-block mt-6 bg-amber text-ink font-display font-bold text-lg px-6 py-3 hover:bg-amber/90 transition">Talk to our team</a>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Credibility -->
-<section class="observer-reveal py-24 bg-slate">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-3 gap-12">
-      <div class="space-y-4">
-        <p class="text-steel text-xs tracking-[0.2em] uppercase">Heritage</p>
-        <p class="font-display text-3xl">107 years and counting.</p>
-        <p class="text-mist leading-relaxed">Founded in 1919, Williams Energy has heated South Shore homes through the Depression, three wars, and every nor'easter since. The name on the truck is the name on the deed.</p>
-      </div>
-      <div class="space-y-4">
-        <p class="text-steel text-xs tracking-[0.2em] uppercase">Reliability</p>
-        <p class="font-display text-3xl">We answer the phone.</p>
-        <p class="text-mist leading-relaxed">No answering service. No national call center. When you call Williams Energy at 2am with no heat, a person who knows your account picks up — and a truck rolls within the hour.</p>
-      </div>
-      <div class="space-y-4">
-        <p class="text-steel text-xs tracking-[0.2em] uppercase">Coverage</p>
-        <p class="font-display text-3xl">One call, every trade.</p>
-        <p class="text-mist leading-relaxed">Heating oil. Propane. HVAC. Plumbing. Electrical. Five trades under one roof means one phone number, one bill, and no finger-pointing between contractors.</p>
-      </div>
+<section id="story" class="py-20 sm:py-28 bg-ink">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="reveal max-w-2xl">
+      <h2 class="font-display font-extrabold text-4xl sm:text-5xl leading-tight">Solid service on the South Shore since 1919</h2>
+      <p class="mt-4 text-muted text-lg">One family-owned company for dependable heating oil and propane delivery, HVAC, plumbing, and electrical work, with 24/7 emergency service when you need it most.</p>
     </div>
-  </div>
-</section><!-- CTA Strip -->
-<section class="observer-reveal py-20 bg-steel">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="font-display text-4xl text-white mb-4">No heat at 2am? We answer.</h2>
-    <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">One call covers heating oil delivery, propane, HVAC repair, plumbing, and electrical — all from a family that has served the South Shore since 1919.</p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="tel:+17818430415" class="px-10 py-4 rounded-page bg-white text-steel font-semibold text-lg tracking-wide hover:bg-white/90 transition-colors">Call (781) 843-0415</a>
-      <a href="mailto:info@mywilliamsenergy.com" class="px-10 py-4 rounded-page border-2 border-white/30 text-white font-semibold text-lg tracking-wide hover:bg-white/10 transition-colors">Email Us</a>
+    <div class="mt-10 grid sm:grid-cols-3 gap-4">
+      <img src="https://web.archive.org/web/20260625182545im_/https://www.mywilliamsenergy.com/wp-content/uploads/2026/06/HP-hero.jpg" alt="Williams Energy serving South Shore homes" class="radius w-full h-64 object-cover reveal">
+      <img src="https://web.archive.org/web/20250408035946im_/https://www.mywilliamsenergy.com/wp-content/uploads/2024/05/img-why-williams-energy-team.jpg" alt="Williams Energy team" class="radius w-full h-64 object-cover reveal">
+      <img src="https://web.archive.org/web/20260625182545im_/https://www.mywilliamsenergy.com/wp-content/uploads/2020/08/img-history.jpg" alt="Williams Energy South Shore history" class="radius w-full h-64 object-cover reveal">
     </div>
   </div>
 </section>
-
-<!-- Footer -->
-<footer class="py-16 bg-navy border-t border-white/5">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-4 gap-12">
-      <div class="md:col-span-1">
-        <img src="https://mywilliamsenergy.com/wp-content/uploads/2026/06/logo.png" alt="Williams Energy" class="h-10 w-auto mb-4">
-        <p class="text-mist text-sm leading-relaxed">Family-owned heating oil, propane, HVAC, plumbing, and electrical — serving the South Shore since 1919.</p>
-      </div>
-      <div>
-        <h4 class="text-foam font-semibold text-sm tracking-wide mb-4">Services</h4>
-        <ul class="space-y-2 text-mist text-sm">
-          <li><a href="#services" class="hover:text-steel transition-colors">Heating Oil Delivery</a></li>
-          <li><a href="#services" class="hover:text-steel transition-colors">Propane</a></li>
-          <li><a href="#services" class="hover:text-steel transition-colors">HVAC</a></li>
-          <li><a href="#services" class="hover:text-steel transition-colors">Plumbing &amp; Electrical</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-foam font-semibold text-sm tracking-wide mb-4">Locations</h4>
-        <ul class="space-y-2 text-mist text-sm">
-          <li>Braintree, MA</li>
-          <li>Marshfield, MA</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-foam font-semibold text-sm tracking-wide mb-4">Contact</h4>
-        <ul class="space-y-2 text-mist text-sm">
-          <li><a href="tel:+17818430415" class="hover:text-steel transition-colors">(781) 843-0415</a></li>
-          <li><a href="mailto:info@mywilliamsenergy.com" class="hover:text-steel transition-colors">info@mywilliamsenergy.com</a></li>
-        </ul>
-      </div>
+<section class="py-16 bg-surface">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <div class="reveal"><p class="font-display font-extrabold text-5xl text-amber">1919</p><p class="mt-2 text-muted">Family-owned on the South Shore</p></div>
+      <div class="reveal"><p class="font-display font-extrabold text-5xl text-amber">4.8&#9733;</p><p class="mt-2 text-muted">Across 318 Google reviews</p></div>
+      <div class="reveal"><p class="font-display font-extrabold text-5xl text-amber">24/7</p><p class="mt-2 text-muted">Emergency service, every day</p></div>
+      <div class="reveal"><p class="font-display font-extrabold text-5xl text-amber">10</p><p class="mt-2 text-muted">South Shore towns served</p></div>
     </div>
-    <div class="border-t border-white/5 mt-12 pt-6 text-mist text-xs">
-      Williams Energy &mdash; Est. 1919. South Shore, Massachusetts.
+  </div>
+</section>
+<section id="contact" class="bg-amber">
+  <div class="max-w-7xl mx-auto px-5 py-14 flex flex-col lg:flex-row items-center justify-between gap-6">
+    <div>
+      <h2 class="font-display font-extrabold text-ink text-4xl sm:text-5xl leading-tight">Need heat, fuel, or a repair? We answer 24/7.</h2>
+      <p class="mt-2 text-ink/80 text-lg font-medium">Call (781) 843-0415 or (781) 394-9680 for emergencies.</p>
     </div>
+    <a href="mailto:info@mywilliamsenergy.com" class="radius bg-ink text-bone font-display font-bold text-xl px-8 py-4 hover:bg-ink/90 transition">Get a Quote</a>
+  </div>
+</section>
+<footer class="bg-ink border-t border-white/5 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+    <div>
+      <img src="https://web.archive.org/web/20260625182545im_/https://www.mywilliamsenergy.com/wp-content/uploads/2021/11/williams-logo.png" alt="Williams Energy" class="h-10 w-auto mb-4">
+      <p class="text-muted text-sm">Family-owned South Shore fuel and home services since 1919.</p>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-lg text-bone mb-3">Services</h3>
+      <ul class="space-y-2 text-muted text-sm">
+        <li>Heating Oil</li><li>Propane</li><li>Heating &amp; AC</li><li>Plumbing</li><li>Electrical</li>
+      </ul>
+    </div>
+    <div id="areas">
+      <h3 class="font-display font-bold text-lg text-bone mb-3">Service Areas</h3>
+      <ul class="space-y-2 text-muted text-sm">
+        <li>Braintree · Marshfield</li><li>Norwell · Plymouth</li><li>Hingham · Duxbury</li><li>Kingston · Cohasset</li><li>Carver · Middleboro</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-lg text-bone mb-3">Contact</h3>
+      <ul class="space-y-2 text-muted text-sm">
+        <li>39 Adams Street, Braintree, MA 02185</li>
+        <li>717 Plain Street, Marshfield, MA 02050</li>
+        <li><a href="mailto:info@mywilliamsenergy.com" class="text-amber">info@mywilliamsenergy.com</a></li>
+        <li><a href="tel:7818430415" class="text-amber">(781) 843-0415</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 mt-10 pt-6 border-t border-white/5 text-muted text-sm flex flex-col sm:flex-row justify-between gap-2">
+    <p>&copy; 2026 Williams Energy. All rights reserved.</p>
+    <p>Licensed &amp; insured · South Shore, Massachusetts</p>
   </div>
 </footer>
-
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.observer-reveal').forEach(el => observer.observe(el));
-});
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 </body>
 </html>

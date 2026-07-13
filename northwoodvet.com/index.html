@@ -1,230 +1,243 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Northwood Vet | Your Hometown Veterinary Clinic</title>
-<meta name="description" content="Northwood Vet provides compassionate veterinary care for small and large animals. Your hometown clinic with wellness exams, vaccinations, surgery, and 24/7 emergency care.">
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --stone: #e6e2d8;
-    --chalk: #f8f7f4;
-    --near-black: #1a1a1a;
-    --warm-accent: #c47a4a;
-    --radius: 12px;
-  }
-  * { box-sizing: border-box; }
-  body { font-family: 'Inter', sans-serif; background: var(--chalk); color: var(--near-black); }
-  h1, h2, h3, .display { font-family: 'Cabinet Grotesk', sans-serif; font-weight: 800; }
-  .section-pad { padding: 5rem 1.5rem; }
-  @media (min-width: 768px) { .section-pad { padding: 7rem 3rem; } }
-  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-  .accent-line { width: 48px; height: 3px; background: var(--warm-accent); border-radius: 3px; }
-  .btn-primary { display: inline-block; background: var(--warm-accent); color: #fff; padding: 0.75rem 2rem; border-radius: var(--radius); font-weight: 600; text-decoration: none; transition: background 0.2s; }
-  .btn-primary:hover { background: #b0693a; }
-  .btn-outline { display: inline-block; border: 2px solid var(--near-black); color: var(--near-black); padding: 0.75rem 2rem; border-radius: var(--radius); font-weight: 600; text-decoration: none; transition: all 0.2s; }
-  .btn-outline:hover { background: var(--near-black); color: #fff; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Northwood Veterinary Service | Black River Falls, WI</title>
+  <meta name="description" content="Mixed-animal veterinary care in Black River Falls, WI. Cattle, horses, sheep, goats, and family pets, with a vet on call 24 hours a day." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F7F4EC',
+            bone: '#FBF9F3',
+            olive: '#5E6B3C',
+            sage: '#8B9A6B',
+            espresso: '#2A2620',
+            stone: '#6B6356'
+          },
+          fontFamily: {
+            display: ['"DM Serif Display"', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+  </style>
 </head>
-<body>
+<body class="bg-cream text-espresso font-body antialiased">
 
-<nav class="fixed top-0 left-0 right-0 z-50 bg-[var(--chalk)]/90 backdrop-blur-sm border-b border-[var(--stone)] flex items-center justify-between px-6 py-4 md:px-8">
-  <a href="#" class="display text-xl tracking-tight text-[var(--near-black)] no-underline">Northwood Vet</a>
-  <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-    <a href="#services" class="text-[var(--near-black)] no-underline hover:text-[var(--warm-accent)] transition-colors">Services</a>
-    <a href="#about" class="text-[var(--near-black)] no-underline hover:text-[var(--warm-accent)] transition-colors">About</a>
-    <a href="#contact" class="text-[var(--near-black)] no-underline hover:text-[var(--warm-accent)] transition-colors">Contact</a>
-    <a href="#contact" class="btn-primary text-sm">Book a Visit</a>
-  </div>
-  <button class="md:hidden text-[var(--near-black)] text-2xl" aria-label="Menu">&#9776;</button>
-</nav>
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-olive/10">
+    <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://northwoodvet.com/wp-content/uploads/cropped-new_logo_clear_background.png" alt="Northwood Veterinary Service logo" class="h-11 w-auto" />
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-espresso">
+        <a href="#care" class="hover:text-olive transition-colors">Our Care</a>
+        <a href="#promise" class="hover:text-olive transition-colors">Our Promise</a>
+        <a href="#why" class="hover:text-olive transition-colors">Why Northwood</a>
+        <a href="#visit" class="hover:text-olive transition-colors">Visit</a>
+      </div>
+      <a href="tel:7152844424" class="bg-olive text-bone rounded-xl px-4 py-2 text-sm font-semibold hover:bg-espresso transition-colors">Call 715-284-4424</a>
+    </nav>
+  </header>
 
-<section class="relative min-h-[100dvh] flex items-center">
-  <img src="https://northwoodvet.com/wp-content/uploads/cropped-new_building_christmas_time.jpg" alt="Northwood Vet clinic building" class="absolute inset-0 w-full h-full object-cover">
-  <div class="absolute inset-0 bg-gradient-to-r from-[var(--near-black)]/70 via-[var(--near-black)]/40 to-transparent"></div>
-  <div class="relative z-10 px-6 md:px-8 max-w-2xl pt-20">
-    <p class="text-[var(--warm-accent)] text-sm font-semibold tracking-wide uppercase mb-4">Northwood, Your Hometown Clinic</p>
-    <h1 class="display text-white text-4xl md:text-6xl leading-tight mb-6 max-w-lg">Care for the animals you love, close to home</h1>
-    <p class="text-white/80 text-lg leading-relaxed mb-8 max-w-md">Wellness exams, vaccinations, surgery, and large animal services from a team that knows your name and your dog's.</p>
-    <div class="flex flex-wrap gap-4">
-      <a href="#contact" class="btn-primary">Book a Visit</a>
-      <a href="#services" class="btn-outline border-white text-white hover:bg-white hover:text-[var(--near-black)]">Our Services</a>
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-end">
+    <img src="https://northwoodvet.com/wp-content/uploads/cropped-new_building_christmas_time.jpg" alt="Northwood Veterinary Service clinic building" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-[#1b1812]/85 via-[#1b1812]/70 to-[#1b1812]/50"></div>
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-5 pb-20 pt-32">
+      <p class="text-sage font-semibold tracking-[0.18em] uppercase text-sm mb-5">Black River Falls, Wisconsin</p>
+      <h1 class="font-display text-cream text-5xl md:text-7xl leading-[1.05] max-w-3xl">
+        One clinic for your herd, your horses, and your house cat.
+      </h1>
+      <p class="text-cream/85 text-lg mt-6 max-w-xl">
+        Mixed-animal veterinary care in Black River Falls, with a vet on call 24 hours every day of the year.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="tel:7152844424" class="bg-cream text-espresso rounded-xl px-6 py-3 font-semibold hover:bg-bone transition-colors">Call 715-284-4424</a>
+        <a href="#visit" class="border border-cream/70 text-cream rounded-xl px-6 py-3 font-semibold hover:bg-cream/10 transition-colors">Request an appointment</a>
+      </div>
     </div>
-  </div>
-</section><section id="services" class="section-pad bg-white">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 md:gap-16 items-center">
-    <div class="md:w-1/2">
-      <img src="https://northwoodvet.com/wp-content/uploads/small_white_companion.jpg" alt="Small companion animal receiving care at Northwood Vet" class="w-full h-auto rounded-[var(--radius)] shadow-lg reveal" onload="this.classList.add('visible')">
-    </div>
-    <div class="md:w-1/2 reveal">
-      <div class="accent-line mb-4"></div>
-      <h2 class="display text-3xl md:text-4xl mb-8">Services built around your animal's whole life</h2>
-      <div class="space-y-6">
-        <div class="flex gap-4 items-start">
-          <span class="display text-4xl text-[var(--warm-accent)] leading-none shrink-0">01</span>
-          <div>
-            <h3 class="font-semibold text-lg mb-1">Wellness &amp; Preventive Care</h3>
-            <p class="text-gray-600 leading-relaxed">Annual exams, vaccinations, dental cleanings, and parasite prevention tailored to your pet's age and lifestyle.</p>
+  </section>
+  <!-- OUR CARE (primary split) -->
+  <section id="care" class="py-20 md:py-28 bg-bone">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal order-2 md:order-1">
+        <img src="https://northwoodvet.com/wp-content/uploads/small_white_companion.jpg" alt="A small companion animal cared for at Northwood Veterinary Service" class="w-full rounded-xl object-cover aspect-[4/5]" />
+      </div>
+      <div class="reveal order-1 md:order-2">
+        <p class="text-olive font-semibold tracking-[0.18em] uppercase text-sm mb-4">What we do</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-tight mb-8">Care that covers every animal on the place.</h2>
+        <div class="space-y-7">
+          <div class="flex gap-5">
+            <span class="font-display text-3xl text-sage leading-none pt-1">01</span>
+            <div>
+              <h3 class="font-semibold text-lg text-espresso">Large animal care</h3>
+              <p class="text-stone mt-1">Dairy and beef, horses, sheep, goats, llamas, and swine. Herd health, surgery, breeding, and Coggins testing.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-3xl text-sage leading-none pt-1">02</span>
+            <div>
+              <h3 class="font-semibold text-lg text-espresso">Small animal care</h3>
+              <p class="text-stone mt-1">Dogs, cats, and select exotics. Wellness exams, dental, surgery, and senior care built around the life of the pet.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-3xl text-sage leading-none pt-1">03</span>
+            <div>
+              <h3 class="font-semibold text-lg text-espresso">Emergency, 24 hours</h3>
+              <p class="text-stone mt-1">A vet is on call every day of the year for the calvings, colics, and accidents that cannot wait.</p>
+            </div>
           </div>
         </div>
-        <div class="flex gap-4 items-start">
-          <span class="display text-4xl text-[var(--warm-accent)] leading-none shrink-0">02</span>
-          <div>
-            <h3 class="font-semibold text-lg mb-1">Surgery &amp; Advanced Treatment</h3>
-            <p class="text-gray-600 leading-relaxed">Spay and neuter, soft tissue surgery, orthopedic procedures, and in-house diagnostics with digital radiography.</p>
-          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR PROMISE (reversed split) -->
+  <section id="promise" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <p class="text-olive font-semibold tracking-[0.18em] uppercase text-sm mb-4">Our promise</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-tight mb-6">A small clinic that knows your animals by name.</h2>
+        <p class="text-stone text-lg leading-relaxed mb-4">
+          Being a small clinic, we can give personal care to our large and small animal clients. When you call, you reach people who already know your herd and your house pets.
+        </p>
+        <p class="text-stone text-lg leading-relaxed">
+          Our mission is to provide high quality, personal veterinary care to our patients, big and small, right here in Jackson County.
+        </p>
+        <a href="#visit" class="inline-block mt-8 bg-olive text-bone rounded-xl px-6 py-3 font-semibold hover:bg-espresso transition-colors">Meet the clinic</a>
+      </div>
+      <div class="reveal">
+        <img src="https://northwoodvet.com/wp-content/uploads/cropped-new_building_christmas_time.jpg" alt="The Northwood Veterinary Service clinic building in Black River Falls" class="w-full rounded-xl object-cover aspect-[4/3]" />
+      </div>
+    </div>
+  </section>
+  <!-- WHY NORTHWOOD (credibility band) -->
+  <section id="why" class="py-20 md:py-24 bg-olive text-bone">
+    <div class="max-w-6xl mx-auto px-5">
+      <p class="text-sage font-semibold tracking-[0.18em] uppercase text-sm mb-4">Why Northwood</p>
+      <h2 class="font-display text-4xl md:text-5xl leading-tight mb-12 max-w-2xl">Built for the farms and families of Jackson County.</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-bone/15 rounded-xl overflow-hidden">
+        <div class="bg-olive p-7">
+          <p class="font-display text-4xl text-bone">24/7</p>
+          <p class="text-bone/80 mt-2 text-sm">A vet on call every day of the year for emergencies.</p>
         </div>
-        <div class="flex gap-4 items-start">
-          <span class="display text-4xl text-[var(--warm-accent)] leading-none shrink-0">03</span>
-          <div>
-            <h3 class="font-semibold text-lg mb-1">Large Animal &amp; Farm Calls</h3>
-            <p class="text-gray-600 leading-relaxed">Mobile veterinary services for horses, cattle, and livestock. Herd health, lameness exams, and emergency farm visits.</p>
-          </div>
+        <div class="bg-olive p-7">
+          <p class="font-display text-4xl text-bone">Mixed</p>
+          <p class="text-bone/80 mt-2 text-sm">Large and small animals treated under one roof.</p>
+        </div>
+        <div class="bg-olive p-7">
+          <p class="font-display text-4xl text-bone">Local</p>
+          <p class="text-bone/80 mt-2 text-sm">Serving Black River Falls and the surrounding towns.</p>
+        </div>
+        <div class="bg-olive p-7">
+          <p class="font-display text-4xl text-bone">Vetsource</p>
+          <p class="text-bone/80 mt-2 text-sm">Prescriptions and food shipped straight to your door.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="about" class="section-pad bg-[var(--chalk)]">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-12 md:gap-16 items-center">
-    <div class="md:w-1/2 reveal">
-      <div class="bg-[var(--stone)] rounded-[var(--radius)] p-8 md:p-12">
-        <div class="accent-line mb-4"></div>
-        <p class="text-lg text-gray-500 uppercase tracking-wide font-medium mb-2 text-sm">Since day one</p>
-        <h2 class="display text-3xl md:text-4xl mb-6">A hometown clinic that treats your animals like family</h2>
-        <p class="text-gray-700 leading-relaxed mb-4">We opened our doors because this community needed a vet who would show up at midnight when a horse colics and remember your dog's name at the annual checkup. That has not changed.</p>
-        <p class="text-gray-700 leading-relaxed mb-4">Our practice covers small animals, large animals, and everything in between. We do not refer out what we can treat here, and we do not rush an exam because the waiting room is full.</p>
-        <p class="text-gray-700 leading-relaxed">Same vet, same staff, same phone number. The clinic has grown, but the way we practice has not.</p>
+  <!-- MISSION QUOTE (quote band) -->
+  <section class="py-20 md:py-28 bg-cream">
+    <div class="max-w-4xl mx-auto px-5">
+      <div class="reveal">
+        <span class="font-display text-7xl text-sage leading-none block mb-2">&ldquo;</span>
+        <blockquote class="font-display text-3xl md:text-4xl leading-snug text-espresso">
+          Our mission is to provide high quality, personal veterinary care to our patients, big and small.
+        </blockquote>
+        <p class="text-stone mt-6 font-medium">Northwood Veterinary Service</p>
       </div>
     </div>
-    <div class="md:w-1/2 reveal">
-      <img src="https://northwoodvet.com/wp-content/uploads/cropped-new_building_christmas_time.jpg" alt="Northwood Vet clinic from the road, your hometown veterinary hospital" class="w-full h-auto rounded-[var(--radius)] shadow-lg">
-    </div>
-  </div>
-</section><section class="section-pad bg-white">
-  <div class="max-w-5xl mx-auto reveal">
-    <div class="text-center mb-12">
-      <div class="accent-line mx-auto mb-4"></div>
-      <h2 class="display text-3xl md:text-4xl mb-4">What your neighbors trust us with</h2>
-      <p class="text-gray-600 max-w-lg mx-auto">From a puppy's first shots to a herd check at dawn, we show up for Northwood.</p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-[var(--chalk)] rounded-[var(--radius)] p-8">
-        <div class="text-[var(--warm-accent)] text-3xl mb-3 display">&check;</div>
-        <h3 class="display text-xl mb-2">Walk-In Welcome</h3>
-        <p class="text-gray-600 leading-relaxed">You do not need an appointment for urgent concerns. If something feels wrong, bring them in.</p>
-      </div>
-      <div class="bg-[var(--chalk)] rounded-[var(--radius)] p-8">
-        <div class="text-[var(--warm-accent)] text-3xl mb-3 display">&check;</div>
-        <h3 class="display text-xl mb-2">Farm &amp; Stable Calls</h3>
-        <p class="text-gray-600 leading-relaxed">We come to you for large animal care. Same truck, same vet who knows your herd.</p>
-      </div>
-      <div class="bg-[var(--chalk)] rounded-[var(--radius)] p-8">
-        <div class="text-[var(--warm-accent)] text-3xl mb-3 display">&check;</div>
-        <h3 class="display text-xl mb-2">Digital Records</h3>
-        <p class="text-gray-600 leading-relaxed">Vaccine reminders, lab results, and visit summaries sent to you. No clipboard maze at the desk.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-pad bg-[var(--near-black)] text-white">
-  <div class="max-w-4xl mx-auto reveal">
-    <div class="accent-line mx-auto mb-6" style="background: var(--warm-accent)"></div>
-    <h2 class="display text-3xl md:text-4xl text-center mb-10">Trust built over years, not appointments</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-white/5 rounded-[var(--radius)] p-8 border border-white/10">
-        <p class="text-white/80 leading-relaxed italic mb-4">"I have been bringing my animals here for over a decade. They caught a heart murmur in my border collie that two other vets missed. I will not go anywhere else."</p>
-        <p class="text-white/50 text-sm">Long-time client, Northwood area<!-- verify --></p>
-      </div>
-      <div class="bg-white/5 rounded-[var(--radius)] p-8 border border-white/10">
-        <p class="text-white/80 leading-relaxed italic mb-4">"When our mare colicked at 2am on a Sunday, they were here in 20 minutes. That is the difference between a clinic and a hometown vet."</p>
-        <p class="text-white/50 text-sm">Farm client, mixed practice<!-- verify --></p>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center gap-8 mt-10 text-center">
+  </section>
+  <!-- CTA STRIP -->
+  <section class="py-20 md:py-24 bg-olive text-bone">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
       <div>
-        <p class="display text-3xl text-[var(--warm-accent)]">10+</p>
-        <p class="text-white/50 text-sm mt-1">Years serving<!-- verify --> Northwood</p>
+        <p class="text-sage font-semibold tracking-[0.18em] uppercase text-sm mb-3">On call now</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-tight max-w-xl">Need a vet who handles the whole farm?</h2>
+        <p class="text-bone/85 mt-4 text-lg max-w-md">Call 715-284-4424 any time. We are on call 24 hours for emergencies, every day of the year.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="tel:7152844424" class="bg-cream text-espresso rounded-xl px-7 py-3 font-semibold hover:bg-bone transition-colors">Call 715-284-4424</a>
+        <a href="mailto:northwoodvetservice@gmail.com" class="border border-bone/60 text-bone rounded-xl px-7 py-3 font-semibold hover:bg-bone/10 transition-colors">Email the clinic</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="visit" class="bg-espresso text-cream/80 pt-16 pb-10">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-4 gap-10">
+      <div>
+        <img src="https://northwoodvet.com/wp-content/uploads/cropped-new_logo_clear_background.png" alt="Northwood Veterinary Service logo" class="h-12 w-auto mb-4" />
+        <p class="font-display text-xl text-cream">Your Hometown Veterinary Clinic</p>
+        <p class="text-cream/70 mt-2 text-sm">Mixed-animal care for Jackson County, big and small.</p>
       </div>
       <div>
-        <p class="display text-3xl text-[var(--warm-accent)]">24/7</p>
-        <p class="text-white/50 text-sm mt-1">Emergency availability</p>
+        <p class="text-sage font-semibold tracking-[0.14em] uppercase text-xs mb-4">Services</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#care" class="hover:text-cream transition-colors">Large animal care</a></li>
+          <li><a href="#care" class="hover:text-cream transition-colors">Small animal care</a></li>
+          <li><a href="#care" class="hover:text-cream transition-colors">24/7 emergency</a></li>
+          <li><a href="#why" class="hover:text-cream transition-colors">Online pharmacy</a></li>
+        </ul>
       </div>
       <div>
-        <p class="display text-3xl text-[var(--warm-accent)]">Small &amp; Large</p>
-        <p class="text-white/50 text-sm mt-1">Animal care under one roof</p>
+        <p class="text-sage font-semibold tracking-[0.14em] uppercase text-xs mb-4">Visit</p>
+        <address class="not-italic text-sm space-y-2">
+          <p>N6630 County Road A</p>
+          <p>Black River Falls, WI 54615</p>
+          <p class="text-cream/70">Mon to Fri 8:00 AM to 5:00 PM</p>
+          <p class="text-cream/70">Sat 8:00 AM to 12:00 PM</p>
+          <p class="text-cream/70">Sun closed, on call 24/7</p>
+        </address>
+      </div>
+      <div>
+        <p class="text-sage font-semibold tracking-[0.14em] uppercase text-xs mb-4">Connect</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="tel:7152844424" class="hover:text-cream transition-colors">715-284-4424</a></li>
+          <li><a href="mailto:northwoodvetservice@gmail.com" class="hover:text-cream transition-colors">northwoodvetservice@gmail.com</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100063748232249" class="hover:text-cream transition-colors">Facebook</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section><section id="contact" class="section-pad bg-[var(--warm-accent)]">
-  <div class="max-w-3xl mx-auto text-center reveal">
-    <h2 class="display text-3xl md:text-5xl text-white mb-4">Your animal deserves a vet who knows their name</h2>
-    <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">Call us or stop by. Same-day urgent care, routine checkups, and farm calls across the Northwood area.</p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="mailto:northwoodvetservice@gmail.com" class="btn-outline border-white text-white hover:bg-white hover:text-[var(--near-black)]">Email Us</a>
-      <a href="tel:+1...<!-- verify -->" class="btn-outline border-white text-white hover:bg-white hover:text-[var(--near-black)]">Call the Clinic</a>
+    <div class="max-w-6xl mx-auto px-5 mt-12 pt-6 border-t border-cream/10 text-xs text-cream/50">
+      <p>&copy; Northwood Veterinary Service. Redesign concept for outreach review.</p>
     </div>
-    <p class="text-white/50 text-sm mt-6">Phone number to confirm. <!-- verify --></p>
-  </div>
-</section>
+  </footer>
 
-<footer class="bg-[var(--near-black)] text-white section-pad" style="padding-top:3rem;padding-bottom:3rem">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-    <div>
-      <h3 class="display text-lg mb-3">Northwood Vet</h3>
-      <p class="text-white/50 text-sm leading-relaxed">Your hometown veterinary clinic serving small and large animals across the Northwood area.</p>
-    </div>
-    <div>
-      <h3 class="font-semibold text-sm uppercase tracking-wide text-white/40 mb-3">Pages</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#" class="text-white/60 hover:text-white transition-colors no-underline">Home</a></li>
-        <li><a href="#services" class="text-white/60 hover:text-white transition-colors no-underline">Services</a></li>
-        <li><a href="#about" class="text-white/60 hover:text-white transition-colors no-underline">About</a></li>
-        <li><a href="#contact" class="text-white/60 hover:text-white transition-colors no-underline">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="font-semibold text-sm uppercase tracking-wide text-white/40 mb-3">Contact</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="mailto:northwoodvetservice@gmail.com" class="text-white/60 hover:text-white transition-colors no-underline">northwoodvetservice@gmail.com</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100063748232249" class="text-white/60 hover:text-white transition-colors no-underline">Facebook</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="font-semibold text-sm uppercase tracking-wide text-white/40 mb-3">Hours</h3>
-      <ul class="space-y-2 text-sm text-white/60">
-        <li>Mon &ndash; Fri: 8am &ndash; 6pm<!-- verify --></li>
-        <li>Sat: 9am &ndash; 12pm<!-- verify --></li>
-        <li>24/7 Emergency<!-- verify --></li>
-      </ul>
-    </div>
-  </div>
-  <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-white/10 text-center text-white/30 text-xs">
-    <p>&copy; 2026 Northwood Vet. All rights reserved.<!-- verify --></p>
-  </div>
-</footer>
-
-<script>
-(function() {
-  var obs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
-  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
-    a.addEventListener('click', function(e) {
-      e.preventDefault();
-      var t = document.querySelector(this.getAttribute('href'));
-      if (t) t.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-})();
-</script>
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { obs.observe(el); });
+    })();
+  </script>
 </body>
 </html>
