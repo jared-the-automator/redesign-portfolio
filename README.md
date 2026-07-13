@@ -208,3 +208,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Kauffman Gas](https://jared-the-automator.github.io/redesign-portfolio/kauffmangas.com/) | Propane delivery & HVAC | Cochranville, PA |
 | [Northwood Vet](https://jared-the-automator.github.io/redesign-portfolio/northwoodvet.com/) | Mixed practice veterinary clinic | Northwood area |
 | [Williams Energy](https://jared-the-automator.github.io/redesign-portfolio/mywilliamsenergy.com/) | Heating oil, propane &amp; HVAC | South Shore, MA |
+
+| [Wood Wildlife Studio](https://jared-the-automator.github.io/redesign-portfolio/woodwildlifestudio.com/) | Taxidermy & trophy mounts | San Angelo, TX |
