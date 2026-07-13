@@ -9,6 +9,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Fremont Memorial Chapel](https://jared-the-automator.github.io/redesign-portfolio/fremontmemorialchapel.com/) | Funeral home & mortuary | Fremont, CA |
 | [Hilgenfeld Mortuary](https://jared-the-automator.github.io/redesign-portfolio/hilgenfeldmortuary.com/) | Funeral home & mortuary | Anaheim, CA |
 | [Lincoln Family Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/lincolnffc.com/) | Funeral home | Lincoln, NE |
 | [Weymouth Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/weymouthfuneralhome.com/) | Funeral home & crematory | Hampton Roads, VA |
