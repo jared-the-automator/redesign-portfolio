@@ -210,3 +210,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Williams Energy](https://jared-the-automator.github.io/redesign-portfolio/mywilliamsenergy.com/) | Heating oil, propane &amp; HVAC | South Shore, MA |
 
 | [Wood Wildlife Studio](https://jared-the-automator.github.io/redesign-portfolio/woodwildlifestudio.com/) | Taxidermy & trophy mounts | San Angelo, TX |
+| [Grace Memorial Chapel and Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/gracemortuary.com/) | Funeral home & mortuary | Inglewood, CA |
