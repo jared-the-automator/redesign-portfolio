@@ -211,3 +211,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | [Wood Wildlife Studio](https://jared-the-automator.github.io/redesign-portfolio/woodwildlifestudio.com/) | Taxidermy & trophy mounts | San Angelo, TX |
 | [Grace Memorial Chapel and Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/gracemortuary.com/) | Funeral home & mortuary | Inglewood, CA |
+| [Marotti Burns Funeral & Cremation Services](https://jared-the-automator.github.io/redesign-portfolio/marottiburnsfuneralhome.com/) | Funeral & cremation services | New Jersey |
