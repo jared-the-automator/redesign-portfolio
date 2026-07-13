@@ -10,6 +10,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [Greybull River Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/greybullrivervet.com/) | Mixed-animal veterinary clinic | Meeteetse, WY |
 | [Fowler-Kennedy Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/fowlerkennedyfuneralhome.com/) | Funeral home & cremation | Maynard, MA |
 | [NW Equine Performance](https://jared-the-automator.github.io/redesign-portfolio/equinepi.com/) | Equine veterinary and sports medicine | Mulino, OR |
 | [Dierna Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/diernafuneralhome.com/) | Funeral home | Rochester, NY |
