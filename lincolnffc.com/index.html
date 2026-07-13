@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lincoln Family Funeral Home | Lincoln, NE</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          forest: { DEFAULT: '#1e4634', light: '#2f6b4f', dark: '#163526' },
+          bone: '#f1ece1',
+          offwhite: '#f6f4ef',
+        },
+        fontFamily: {
+          display: ['Oswald', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+        borderRadius: { xl: '12px' },
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Oswald', sans-serif; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+</style>
+</head>
+<body class="bg-offwhite text-[#1a1a1a]">
+
+<header class="fixed top-0 inset-x-0 z-50 bg-offwhite/95 backdrop-blur border-b border-forest/10">
+  <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <img src="https://lincolnffc.com/wp-content/uploads/sites/18/lincoln.svg" alt="Lincoln Family Funeral Home" class="h-10 w-auto">
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[#1a1a1a]">
+      <a href="#services" class="hover:text-forest transition-colors">Services</a>
+      <a href="#story" class="hover:text-forest transition-colors">Our Story</a>
+      <a href="#care" class="hover:text-forest transition-colors">Care</a>
+      <a href="#contact" class="hover:text-forest transition-colors">Contact</a>
+    </div>
+    <a href="#contact" class="bg-forest text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-forest-light transition-colors">Plan Ahead</a>
+  </nav>
+</header>
+
+<section id="top" class="relative min-h-[100dvh] flex items-end">
+  <img src="https://lincolnffc.com/wp-content/uploads/sites/18/lincoln-family-staff.webp" alt="The Lincoln Family Funeral Home team" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-forest-dark/80"></div>
+  <div class="relative z-10 max-w-6xl mx-auto w-full px-6 pb-24 pt-32">
+    <p class="text-bone/90 font-display tracking-[0.2em] uppercase text-sm mb-5">Lincoln, Nebraska</p>
+    <h1 class="font-display text-white font-bold text-5xl md:text-7xl leading-[1.05] max-w-3xl">Let us tell your story honorably</h1>
+    <p class="text-bone/85 text-lg md:text-xl mt-6 max-w-xl">A locally owned, neighborhood funeral home helping Lincoln families with burial, cremation, and memorial care.</p>
+    <div class="mt-9 flex flex-wrap gap-4">
+      <a href="#contact" class="bg-forest text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-forest-light transition-colors">Plan Ahead</a>
+      <a href="#services" class="border border-bone/60 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-white/10 transition-colors">See Our Services</a>
+    </div>
+  </div>
+</section>
+<section id="services" class="py-24 px-6 bg-offwhite">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+    <div class="reveal">
+      <img src="https://lincolnffc.com/wp-content/uploads/sites/18/why-choose-us.jpg" alt="Inside Lincoln Family Funeral Home" class="rounded-xl w-full h-[480px] object-cover shadow-sm">
+    </div>
+    <div class="reveal">
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-forest leading-tight">Care shaped around your family</h2>
+      <p class="mt-5 text-lg text-[#3a3a3a] max-w-md">Every family arrives with a different story. We build the service around the person you lost, never a template.</p>
+      <div class="mt-10 space-y-7">
+        <div class="flex gap-5">
+          <span class="font-display text-2xl font-bold text-forest/40">01</span>
+          <div><h3 class="font-display text-xl font-semibold">Burial Services</h3><p class="text-[#3a3a3a] mt-1">Traditional burial with a service shaped to your wishes and your faith.</p></div>
+        </div>
+        <div class="flex gap-5">
+          <span class="font-display text-2xl font-bold text-forest/40">02</span>
+          <div><h3 class="font-display text-xl font-semibold">Cremation Services</h3><p class="text-[#3a3a3a] mt-1">Simple, dignified cremation with memorial options that fit your family.</p></div>
+        </div>
+        <div class="flex gap-5">
+          <span class="font-display text-2xl font-bold text-forest/40">03</span>
+          <div><h3 class="font-display text-xl font-semibold">Memorial Services</h3><p class="text-[#3a3a3a] mt-1">A gathering that tells their story, right here in the neighborhood they knew.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="py-24 px-6 bg-bone">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+    <div class="reveal order-2 md:order-1">
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-forest leading-tight">Locally owned, right in the neighborhood</h2>
+      <p class="mt-5 text-lg text-[#3a3a3a] max-w-md">We are a local funeral home, not a national chain. When you call, you reach people who live and work in Lincoln.</p>
+      <a href="#contact" class="inline-block mt-7 bg-forest text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-forest-light transition-colors">Talk with our team</a>
+    </div>
+    <div class="reveal order-1 md:order-2">
+      <img src="https://lincolnffc.com/wp-content/uploads/sites/18/lincoln-family-staff.webp" alt="The Lincoln Family Funeral Home staff" class="rounded-xl w-full h-[480px] object-cover shadow-sm">
+    </div>
+  </div>
+</section>
+<section id="care" class="py-24 px-6 bg-offwhite">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="font-display text-4xl md:text-5xl font-bold text-forest">Support that carries past the service</h2>
+    <p class="mt-4 text-lg text-[#3a3a3a] max-w-2xl">From the first call to the months that follow, these are the ways we stand with your family.</p>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal bg-white rounded-xl p-7 border border-forest/10">
+        <img src="https://lincolnffc.com/wp-content/uploads/sites/18/after-care.png" alt="After care" class="h-12 w-12 object-contain mb-4">
+        <h3 class="font-display text-xl font-semibold text-forest">After Care</h3>
+        <p class="text-[#3a3a3a] mt-2 text-sm">Ongoing support for your family in the weeks after the service.</p>
+      </div>
+      <div class="reveal bg-white rounded-xl p-7 border border-forest/10">
+        <img src="https://lincolnffc.com/wp-content/uploads/sites/18/digital-obituaries.png" alt="Digital obituaries" class="h-12 w-12 object-contain mb-4">
+        <h3 class="font-display text-xl font-semibold text-forest">Digital Obituaries</h3>
+        <p class="text-[#3a3a3a] mt-2 text-sm">A lasting online tribute your family and friends can visit.</p>
+      </div>
+      <div class="reveal bg-white rounded-xl p-7 border border-forest/10">
+        <img src="https://lincolnffc.com/wp-content/uploads/sites/18/flowers-card.png" alt="Flowers and cards" class="h-12 w-12 object-contain mb-4">
+        <h3 class="font-display text-xl font-semibold text-forest">Flowers and Cards</h3>
+        <p class="text-[#3a3a3a] mt-2 text-sm">Coordinated condolences and arrangements from one place.</p>
+      </div>
+      <div class="reveal bg-white rounded-xl p-7 border border-forest/10">
+        <img src="https://lincolnffc.com/wp-content/uploads/sites/18/live-stream.png" alt="Live stream" class="h-12 w-12 object-contain mb-4">
+        <h3 class="font-display text-xl font-semibold text-forest">Live Stream</h3>
+        <p class="text-[#3a3a3a] mt-2 text-sm">Family who cannot travel can still be present for the service.</p>
+      </div>
+      <div class="reveal bg-white rounded-xl p-7 border border-forest/10">
+        <img src="https://lincolnffc.com/wp-content/uploads/sites/18/memorial-video.png" alt="Memorial video" class="h-12 w-12 object-contain mb-4">
+        <h3 class="font-display text-xl font-semibold text-forest">Memorial Video</h3>
+        <p class="text-[#3a3a3a] mt-2 text-sm">A short film of their life to share at the gathering.</p>
+      </div>
+      <div class="reveal bg-white rounded-xl p-7 border border-forest/10">
+        <img src="https://lincolnffc.com/wp-content/uploads/sites/18/photo-memory.png" alt="Photo memory" class="h-12 w-12 object-contain mb-4">
+        <h3 class="font-display text-xl font-semibold text-forest">Photo Memory</h3>
+        <p class="text-[#3a3a3a] mt-2 text-sm">Their pictures, gathered into a tribute everyone can add to.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-forest text-white py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="font-display text-3xl md:text-4xl font-bold leading-snug">Let us tell your story honorably.</p>
+    <p class="mt-4 text-bone/80 max-w-xl mx-auto">That is the promise we keep for every Lincoln family we serve.</p>
+  </div>
+</section>
+<section id="contact" class="py-20 px-6 bg-bone">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+    <div>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-forest">When you are ready, we are here</h2>
+      <p class="mt-3 text-lg text-[#3a3a3a] max-w-md">Call or email us any time. Pre-planning today brings peace of mind for tomorrow.</p>
+    </div>
+    <div class="flex flex-col gap-3">
+      <a href="tel:+14024646400" class="bg-forest text-white px-7 py-3.5 rounded-xl font-semibold text-center hover:bg-forest-light transition-colors">(402) 464-6400</a>
+      <a href="mailto:paul@lincolnffc.com" class="border border-forest text-forest px-7 py-3.5 rounded-xl font-semibold text-center hover:bg-forest/5 transition-colors">paul@lincolnffc.com</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-forest-dark text-bone py-14 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+    <div>
+      <img src="https://lincolnffc.com/wp-content/uploads/sites/18/Footer-Logo.svg" alt="Lincoln Family Funeral Home" class="h-10 w-auto mb-4">
+      <p class="text-bone/70 text-sm">A locally owned, neighborhood funeral home serving Lincoln, Nebraska.</p>
+    </div>
+    <div>
+      <h4 class="font-display text-lg font-semibold mb-4">Services</h4>
+      <ul class="space-y-2 text-sm text-bone/70">
+        <li><a href="#services" class="hover:text-white">Burial</a></li>
+        <li><a href="#services" class="hover:text-white">Cremation</a></li>
+        <li><a href="#services" class="hover:text-white">Memorial</a></li>
+        <li><a href="#services" class="hover:text-white">Pre-planning</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display text-lg font-semibold mb-4">Visit</h4>
+      <ul class="space-y-2 text-sm text-bone/70">
+        <li>Lincoln, Nebraska</li>
+        <li><a href="tel:+14024646400" class="hover:text-white">(402) 464-6400</a></li>
+        <li><a href="mailto:paul@lincolnffc.com" class="hover:text-white">paul@lincolnffc.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display text-lg font-semibold mb-4">Care</h4>
+      <ul class="space-y-2 text-sm text-bone/70">
+        <li><a href="#care" class="hover:text-white">Grief Support</a></li>
+        <li><a href="#care" class="hover:text-white">After Care</a></li>
+        <li><a href="#care" class="hover:text-white">Resources</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-bone/15 text-sm text-bone/60">Lincoln Family Funeral Home, Lincoln, NE</div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+</script>
+</body>
+</html>

@@ -10,6 +10,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | [Hilgenfeld Mortuary](https://jared-the-automator.github.io/redesign-portfolio/hilgenfeldmortuary.com/) | Funeral home & mortuary | Anaheim, CA |
+| [Lincoln Family Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/lincolnffc.com/) | Funeral home | Lincoln, NE |
 | [David's Custom Gun Stocks](https://jared-the-automator.github.io/redesign-portfolio/davidscustomgunstocks.com/) | Custom gun stock restoration | Atlanta, GA |
 | [Dakota Decoy Company](https://jared-the-automator.github.io/redesign-portfolio/dakotadecoy.com/) | Waterfowl decoys & blindsaggle blinds | Central Flyway, USA |
 | [Kaatz Bros. Lures](https://jared-the-automator.github.io/redesign-portfolio/kaatzbros.com/) | Trapping supplies & animal attractors | USA |
