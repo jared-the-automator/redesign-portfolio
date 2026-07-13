@@ -9,6 +9,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [NW Equine Performance](https://jared-the-automator.github.io/redesign-portfolio/equinepi.com/) | Equine veterinary and sports medicine | Mulino, OR |
 | [Dierna Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/diernafuneralhome.com/) | Funeral home | Rochester, NY |
 | [Fremont Memorial Chapel](https://jared-the-automator.github.io/redesign-portfolio/fremontmemorialchapel.com/) | Funeral home & mortuary | Fremont, CA |
 | [Hilgenfeld Mortuary](https://jared-the-automator.github.io/redesign-portfolio/hilgenfeldmortuary.com/) | Funeral home & mortuary | Anaheim, CA |
