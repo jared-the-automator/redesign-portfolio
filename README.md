@@ -252,3 +252,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Richard's Heating & Cooling](https://jared-the-automator.github.io/redesign-portfolio/richhvac.com/) | Family-owned heating, cooling & oil burner service | Lindenhurst, NY |
 | [Hometown Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/hometownvetservice.com/) | Mixed-animal veterinary clinic (companion and livestock) | Media, IL |
 | --- | --- | --- |
+| [Harms Oil Company](https://jared-the-automator.github.io/redesign-portfolio/harmsoil.com/) | Fuel, propane and lubricant delivery, family-owned since 1976 | Aberdeen, SD |
+| --- | --- | --- |
