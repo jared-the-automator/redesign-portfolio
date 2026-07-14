@@ -10,6 +10,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [Rocky Knoll Large Animal Veterinary](https://jared-the-automator.github.io/redesign-portfolio/rockyknollvet.com/) | Large-animal ambulatory veterinary | Dublin, OH |
 | [Bronx Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/bronxfuneralhome.com/) | Funeral home & cremation | Bronx, NY |
 | [Greybull River Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/greybullrivervet.com/) | Mixed-animal veterinary clinic | Meeteetse, WY |
 | [Fowler-Kennedy Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/fowlerkennedyfuneralhome.com/) | Funeral home & cremation | Maynard, MA |
