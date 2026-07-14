@@ -242,3 +242,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Albertson's Mortuary](https://jared-the-automator.github.io/redesign-portfolio/albertsonsmortuary.com/) | Funeral home & mortuary | Indianapolis, IN |
 | [Amesbury Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/amesburyah.com/) | Mixed-animal veterinary hospital | Amesbury, MA |
 | [Equine Medical Service](https://jared-the-automator.github.io/redesign-portfolio/emsvet.com/) | Equine veterinary (ambulatory, reproduction, diagnostics) | Laporte, CO |
+| [Williamsburg Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/williamsburgfuneralhome.com/) | Funeral home & cremation services | Kingstree, SC |
