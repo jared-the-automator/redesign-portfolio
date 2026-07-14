@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brandon Equine Medical Center | Equine Veterinary Hospital in Brandon, FL</title>
+  <meta name="description" content="Brandon Equine Medical Center is a full service equine veterinary practice in Brandon, Florida, offering emergency, ambulatory, and diagnostic care for horses across the Tampa Bay area." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --green:#16231c; --green-2:#1f3127; --bone:#f2ede2; --muted:#c9c3b4;
+      --gold:#c2a06b; --gold-2:#a9863f; --ink:#0e1712; --radius:12px;
+    }
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--green);color:var(--bone);}
+    h1,h2,h3,.display{font-family:'Playfair Display',Georgia,serif;}
+    .accent{color:var(--gold);}
+    .bg-accent{background:var(--gold);}
+    .border-accent{border-color:var(--gold);}
+    .eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;font-weight:600;}
+    .radius{border-radius:var(--radius);}
+    .btn{display:inline-block;border-radius:var(--radius);font-weight:600;transition:transform .2s ease,background .2s ease;}
+    .btn:hover{transform:translateY(-2px);}
+    .scrim{background:linear-gradient(90deg, rgba(10,16,12,.92) 0%, rgba(10,16,12,.74) 45%, rgba(10,16,12,.52) 100%), linear-gradient(rgba(10,16,12,.55),rgba(10,16,12,.7));}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
+    .reveal.in{opacity:1;transform:none;}
+    .nav-blur{background:rgba(14,23,18,.82);backdrop-filter:blur(10px);}
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-blur fixed top-0 inset-x-0 z-50 border-b border-white/10">
+    <nav class="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="https://brandonequine.com/wp-content/uploads/2020/06/BrandonLogo.png" alt="Brandon Equine Medical Center" class="h-12 w-auto" />
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-bone/90">
+        <a href="#services" class="hover:text-[var(--gold)] transition">Services</a>
+        <a href="#approach" class="hover:text-[var(--gold)] transition">Our Approach</a>
+        <a href="#team" class="hover:text-[var(--gold)] transition">The Team</a>
+        <a href="#voices" class="hover:text-[var(--gold)] transition">Client Voices</a>
+      </div>
+      <a href="#contact" class="btn bg-accent text-[var(--ink)] px-5 py-2.5 text-sm">Book Care</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative min-h-[100dvh] flex items-center">
+    <img src="https://brandonequine.com/wp-content/uploads/2020/05/Brandon-Equine-Medical-Center-Services.jpg" alt="Brandon Equine Medical Center equine care" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="scrim absolute inset-0"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-5 w-full">
+      <div class="max-w-2xl reveal">
+        <p class="eyebrow text-[var(--gold)] mb-5">Brandon, Florida</p>
+        <h1 class="display text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.05] text-bone">
+          Equine care, on call<br/>when your horse needs it
+        </h1>
+        <p class="mt-6 text-lg text-bone/85 max-w-xl">
+          A full service equine hospital with board-certified surgeons and internists, and emergency care available 24 hours a day, every day of the year.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a href="#contact" class="btn bg-accent text-[var(--ink)] px-7 py-3.5 text-base">Book an appointment</a>
+          <a href="tel:8136437177" class="btn border border-bone/40 text-bone px-7 py-3.5 text-base hover:border-[var(--gold)]">Call 813-643-7177</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY PRODUCT SECTION -->
+  <section id="services" class="bg-[var(--green)] py-24 px-5">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal">
+        <p class="eyebrow text-[var(--gold)] mb-4">What we do</p>
+        <h2 class="display text-4xl sm:text-5xl font-bold leading-tight text-bone">
+          One practice for the full life of your horse
+        </h2>
+        <div class="mt-10 space-y-8">
+          <div class="flex gap-5">
+            <span class="display text-2xl accent font-bold pt-1">01</span>
+            <div>
+              <h3 class="text-xl font-semibold text-bone">Ambulatory &amp; farm calls</h3>
+              <p class="mt-2 text-bone/75 leading-relaxed">Care that comes to your barn, from routine wellness to lameness and reproductive work, across the Tampa Bay area.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="display text-2xl accent font-bold pt-1">02</span>
+            <div>
+              <h3 class="text-xl font-semibold text-bone">Emergency &amp; critical care</h3>
+              <p class="mt-2 text-bone/75 leading-relaxed">Available 24 hours a day, every day of the year. Colic, lacerations, and foalings do not wait for office hours.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="display text-2xl accent font-bold pt-1">03</span>
+            <div>
+              <h3 class="text-xl font-semibold text-bone">Diagnostics &amp; surgery</h3>
+              <p class="mt-2 text-bone/75 leading-relaxed">Imaging, in-house laboratory work, and board-certified surgeons and internists under one roof.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="https://brandonequine.com/wp-content/uploads/2020/05/Brandon-Equine-Medical-Center-Emergency-Care.jpg" alt="Equine emergency and critical care at Brandon Equine Medical Center" class="radius w-full h-[34rem] object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split) -->
+  <section id="approach" class="bg-[var(--green-2)] py-24 px-5">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal lg:order-2">
+        <p class="eyebrow text-[var(--gold)] mb-4">Our approach</p>
+        <h2 class="display text-4xl sm:text-5xl font-bold leading-tight text-bone">
+          We treat every horse like our own
+        </h2>
+        <p class="mt-6 text-bone/80 leading-relaxed text-lg">
+          From our board-certified surgeons and internists to our courteous support staff, Brandon Equine is built around the health and well-being of all breeds and sizes of horses. In the field, as an outpatient, or admitted to the hospital, the standard stays the same.
+        </p>
+        <p class="mt-4 text-bone/80 leading-relaxed">
+          Clients are part of the plan. Questions get answered, post-op instructions get explained, and no one is made to feel rushed.
+        </p>
+        <a href="#team" class="btn inline-block mt-8 border border-[var(--gold)] text-[var(--gold)] px-6 py-3 text-sm">Meet the veterinarians</a>
+      </div>
+      <div class="reveal lg:order-1">
+        <img src="https://brandonequine.com/wp-content/uploads/2020/05/Contact-Brandon-Equine.jpg" alt="The Brandon Equine Medical Center facility and team" class="radius w-full h-[34rem] object-cover" />
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY -->
+  <section class="bg-[var(--green)] py-24 px-5">
+    <div class="max-w-6xl mx-auto">
+      <div class="reveal max-w-2xl">
+        <p class="eyebrow text-[var(--gold)] mb-4">The people and the place</p>
+        <h2 class="display text-4xl sm:text-5xl font-bold leading-tight text-bone">
+          The team behind the care
+        </h2>
+        <p class="mt-5 text-bone/80 leading-relaxed text-lg">
+          Surgeons, internists, and support staff who know your horse by name. This is the work that rarely makes the homepage, and the reason clients stay for decades.
+        </p>
+      </div>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <figure class="reveal">
+          <img src="https://brandonequine.com/wp-content/uploads/2020/06/leann_kuebelbeck.jpg" alt="Dr. Leann Kuebelbeck, veterinarian at Brandon Equine Medical Center" class="radius w-full h-72 object-cover" />
+          <figcaption class="mt-3 text-bone/70 text-sm">Dr. Leann Kuebelbeck</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://brandonequine.com/wp-content/uploads/2020/06/ruthanne_richter.jpeg" alt="Dr. Ruthanne Richter, veterinarian at Brandon Equine Medical Center" class="radius w-full h-72 object-cover" />
+          <figcaption class="mt-3 text-bone/70 text-sm">Dr. Ruthanne Richter</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://brandonequine.com/wp-content/uploads/2020/06/melissa_restifo_2.jpeg" alt="Dr. Melissa Restifo, veterinarian at Brandon Equine Medical Center" class="radius w-full h-72 object-cover" />
+          <figcaption class="mt-3 text-bone/70 text-sm">Dr. Melissa Restifo</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://brandonequine.com/wp-content/uploads/2025/06/Jane-Woodrow-DVM.png" alt="Dr. Jane Woodrow, veterinarian at Brandon Equine Medical Center" class="radius w-full h-72 object-cover" />
+          <figcaption class="mt-3 text-bone/70 text-sm">Dr. Jane Woodrow</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://brandonequine.com/wp-content/uploads/2025/10/Dr.-Natalie-Khouzam.png" alt="Dr. Natalie Khouzam, veterinarian at Brandon Equine Medical Center" class="radius w-full h-72 object-cover" />
+          <figcaption class="mt-3 text-bone/70 text-sm">Dr. Natalie Khouzam</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://brandonequine.com/wp-content/uploads/2020/05/Brandon-Equine-Medical-Center-Dental-Care.jpg" alt="Equine dental care at Brandon Equine Medical Center" class="radius w-full h-72 object-cover" />
+          <figcaption class="mt-3 text-bone/70 text-sm">The hospital</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS / CREDIBILITY -->
+  <section id="voices" class="bg-[var(--green-2)] py-24 px-5">
+    <div class="max-w-5xl mx-auto grid lg:grid-cols-5 gap-12 items-center">
+      <div class="lg:col-span-3 reveal">
+        <p class="eyebrow text-[var(--gold)] mb-4">Client voices</p>
+        <blockquote class="display text-2xl sm:text-3xl leading-snug text-bone">
+          Every experience we have had with Brandon Equine has been exceptional. From the routine check ups to our most recent colic emergency, the service, dedication, and loving care is without compare.
+        </blockquote>
+        <p class="mt-5 text-bone/60 text-sm">A Brandon Equine client, Tampa Bay</p>
+        <p class="mt-6 text-bone/80 leading-relaxed">
+          "I would recommend her every time." <span class="accent font-medium">Leah M.</span>
+        </p>
+      </div>
+      <div class="lg:col-span-2 reveal">
+        <div class="radius border border-white/10 p-8 bg-[var(--green)]">
+          <h3 class="display text-2xl font-bold text-bone mb-6">Why owners trust us</h3>
+          <ul class="space-y-5 text-bone/80">
+            <li class="flex gap-3"><span class="accent font-bold">&#10003;</span><span>Board-certified surgeons and internists on staff</span></li>
+            <li class="flex gap-3"><span class="accent font-bold">&#10003;</span><span>Emergency care, 24 hours a day, every day of the year</span></li>
+            <li class="flex gap-3"><span class="accent font-bold">&#10003;</span><span>Serving Brandon and the Tampa Bay horse community</span></li>
+            <li class="flex gap-3"><span class="accent font-bold">&#10003;</span><span>Families who first came to us in 2003 are still with us</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="contact" class="bg-accent py-20 px-5">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+      <div>
+        <h2 class="display text-3xl sm:text-4xl font-bold text-[var(--ink)]">
+          When your horse needs a vet, reach us anytime
+        </h2>
+        <p class="mt-3 text-[var(--ink]/80] text-lg max-w-xl">
+          Emergency or routine, call the hospital or send a note and the team will get back to you.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="tel:8136437177" class="btn bg-[var(--ink)] text-bone px-7 py-3.5 text-base">Call 813-643-7177</a>
+        <a href="mailto:info@brandonequine.com" class="btn bg-transparent border border-[var(--ink)] text-[var(--ink)] px-7 py-3.5 text-base">Email the clinic</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[var(--ink)] text-bone/70 py-16 px-5">
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <img src="https://brandonequine.com/wp-content/uploads/2020/06/BrandonLogo.png" alt="Brandon Equine Medical Center" class="h-12 w-auto mb-4" />
+        <p class="text-sm leading-relaxed">A full service equine veterinary practice in Brandon, Florida, caring for horses across the Tampa Bay area.</p>
+      </div>
+      <div>
+        <h3 class="text-bone font-semibold mb-4">Services</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="hover:text-[var(--gold)] transition">Ambulatory care</a></li>
+          <li><a href="#services" class="hover:text-[var(--gold)] transition">Emergency &amp; critical care</a></li>
+          <li><a href="#services" class="hover:text-[var(--gold)] transition">Diagnostics &amp; surgery</a></li>
+          <li><a href="#services" class="hover:text-[var(--gold)] transition">Wellness plans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-bone font-semibold mb-4">The practice</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#team" class="hover:text-[var(--gold)] transition">Our veterinarians</a></li>
+          <li><a href="#approach" class="hover:text-[var(--gold)] transition">Our approach</a></li>
+          <li><a href="#voices" class="hover:text-[var(--gold)] transition">Client voices</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-bone font-semibold mb-4">Visit &amp; contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li>605 E Bloomingdale Ave</li>
+          <li>Brandon, FL 33511</li>
+          <li><a href="tel:8136437177" class="hover:text-[var(--gold)] transition">813-643-7177</a></li>
+          <li><a href="mailto:info@brandonequine.com" class="hover:text-[var(--gold)] transition">info@brandonequine.com</a></li>
+          <li class="flex gap-4 pt-1">
+            <a href="https://www.facebook.com/BrandonEquine/" class="hover:text-[var(--gold)] transition">Facebook</a>
+            <a href="https://www.instagram.com/brandonequine/" class="hover:text-[var(--gold)] transition">Instagram</a>
+            <a href="https://twitter.com/brandonequine" class="hover:text-[var(--gold)] transition">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-white/10 text-sm text-bone/50">
+      &copy; 2026 Brandon Equine Medical Center. Redesign concept.
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
