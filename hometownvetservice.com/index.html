@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hometown Veterinary Service | Mixed-Animal Vet in Media, IL</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --cream:#f7f4ec; --sage:#6f7a4f; --sage-deep:#565f3a; --espresso:#2b2620; }
+  body{ font-family:'Inter',system-ui,sans-serif; color:var(--espresso); background:var(--cream); }
+  .display{ font-family:'DM Serif Display',serif; }
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+  .r12{ border-radius:12px; }
+</style>
+</head>
+<body class="bg-[#f7f4ec]">
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-[#f7f4ec]/95 backdrop-blur border-b border-[#e4dfd2]">
+  <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="display text-xl text-[#2b2620] tracking-tight">Hometown Veterinary Service</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[#4a443b]">
+      <a href="#services" class="hover:text-[#6f7a4f]">Services</a>
+      <a href="#story" class="hover:text-[#6f7a4f]">Our Story</a>
+      <a href="#visit" class="hover:text-[#6f7a4f]">Visit</a>
+    </div>
+    <a href="#visit" class="bg-[#6f7a4f] hover:bg-[#565f3a] text-white text-sm font-semibold px-5 py-2.5 r12 transition">Book a Visit</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="relative min-h-[100dvh] flex items-end">
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('https://hometownvetservice.com/wp-content/uploads/2025/06/Sydney.jpg')"></div>
+  <div class="absolute inset-0 bg-[#1b1712]/70"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6 pb-20 w-full">
+    <p class="text-[#e9e4d4] uppercase tracking-[0.25em] text-xs font-semibold mb-5">Media, Illinois</p>
+    <h1 class="display text-white text-5xl md:text-7xl leading-[1.05] max-w-3xl">Care for the family dog and the back forty, under one roof</h1>
+    <p class="text-[#f1ede0] text-lg md:text-xl mt-6 max-w-xl">Hometown Veterinary Service is a mixed-animal clinic in Media, Illinois, where clients are treated like family.</p>
+    <div class="mt-8 flex flex-wrap items-center gap-4">
+      <a href="#visit" class="bg-[#6f7a4f] hover:bg-[#565f3a] text-white font-semibold px-6 py-3 r12 transition">Book a Visit</a>
+      <a href="tel:3093208749" class="text-white font-semibold underline decoration-[#9aa377] underline-offset-4">Call 309-320-8749</a>
+    </div>
+  </div>
+</section>
+<!-- PRIMARY PRODUCT -->
+<section id="services" class="max-w-6xl mx-auto px-6 py-24">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/SH.jpg" alt="Inside Hometown Veterinary Service's clinic in Media, Illinois" class="w-full h-[420px] object-cover r12">
+    </div>
+    <div class="reveal">
+      <h2 class="display text-3xl md:text-4xl text-[#2b2620] mb-8">One clinic for every animal in your care</h2>
+      <div class="space-y-7">
+        <div class="flex gap-4">
+          <span class="display text-[#6f7a4f] text-2xl leading-none">01</span>
+          <div><h3 class="font-semibold text-lg text-[#2b2620]">Companion animal care</h3><p class="text-[#4a443b] mt-1">Wellness exams, vaccines, and sick visits for the dogs and cats that share your home.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="display text-[#6f7a4f] text-2xl leading-none">02</span>
+          <div><h3 class="font-semibold text-lg text-[#2b2620]">Livestock and herd health</h3><p class="text-[#4a443b] mt-1">Routine care, herd checks, and farm calls for the animals that work your land.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="display text-[#6f7a4f] text-2xl leading-none">03</span>
+          <div><h3 class="font-semibold text-lg text-[#2b2620]">A clinic that knows your animals</h3><p class="text-[#4a443b] mt-1">Dr. Sydney Hennenfent opened Hometown Veterinary Service in April 2025 to treat clients like family.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECONDARY (reversed split) -->
+<section class="bg-[#efeadd]">
+  <div class="max-w-6xl mx-auto px-6 py-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal md:order-2">
+        <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/Lynne.jpg" alt="A member of the Hometown Veterinary Service team in Media, Illinois" class="w-full h-[420px] object-cover r12">
+      </div>
+      <div class="reveal md:order-1">
+        <h2 class="display text-3xl md:text-4xl text-[#2b2620] mb-6">Built small, on purpose</h2>
+        <p class="text-[#4a443b] text-lg leading-relaxed">A mixed-animal practice works best when the same people see your animals year after year. Our team handles the everyday and the urgent, from a puppy's first exam to a herd health plan, without the rush of a big box clinic.</p>
+        <p class="text-[#4a443b] text-lg leading-relaxed mt-4">That is the whole idea behind the name. In a small town, your vet is a neighbor, and your animals are part of the family.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- GALLERY / BRAND STORY -->
+<section id="story" class="max-w-6xl mx-auto px-6 py-24">
+  <div class="max-w-2xl reveal">
+    <p class="text-[#6f7a4f] uppercase tracking-[0.2em] text-xs font-semibold mb-4">Our Story</p>
+    <h2 class="display text-3xl md:text-4xl text-[#2b2620]">A new clinic with a hometown idea</h2>
+    <p class="text-[#4a443b] text-lg mt-5">Hometown Veterinary Service opened its doors in April 2025, owned and operated by Dr. Sydney Hennenfent, a 2022 graduate of the Kansas State University College of Veterinary Medicine.</p>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+    <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/SH2.jpg" alt="Dr. Sydney Hennenfent caring for an animal" class="reveal w-full h-52 object-cover r12">
+    <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/SH3.jpg" alt="Hometown Veterinary Service clinic day" class="reveal w-full h-52 object-cover r12">
+    <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/SH4.jpg" alt="Animal care at Hometown Veterinary Service" class="reveal w-full h-52 object-cover r12">
+    <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/SH5.jpg" alt="A patient at Hometown Veterinary Service in Media, Illinois" class="reveal w-full h-52 object-cover r12">
+    <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/Sydney-2.jpg" alt="Dr. Sydney Hennenfent, owner of Hometown Veterinary Service" class="reveal w-full h-52 object-cover r12">
+    <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/Sydney-3.jpg" alt="Dr. Sydney with a patient" class="reveal w-full h-52 object-cover r12">
+    <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/Sydney-4.jpg" alt="A visit at Hometown Veterinary Service" class="reveal w-full h-52 object-cover r12">
+    <img src="https://hometownvetservice.com/wp-content/uploads/2025/06/Lynne-2.jpg" alt="Hometown Veterinary Service team member with an animal" class="reveal w-full h-52 object-cover r12">
+  </div>
+</section>
+
+<!-- CREDIBILITY -->
+<section class="bg-[#2b2620] text-[#f7f4ec]">
+  <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-10 items-center">
+    <div class="md:col-span-2 reveal">
+      <p class="display text-2xl md:text-3xl leading-snug">Clients are treated like family, and family comes first.</p>
+      <p class="mt-4 text-[#c9c3b2]">Hometown Veterinary Service</p>
+    </div>
+    <div class="reveal grid grid-cols-2 gap-6">
+      <div><p class="display text-4xl text-[#a7b083]">2025</p><p class="text-sm text-[#c9c3b2] mt-1">Opened in Media, IL</p></div>
+      <div><p class="display text-4xl text-[#a7b083]">Mixed</p><p class="text-sm text-[#c9c3b2] mt-1">Animal practice</p></div>
+    </div>
+  </div>
+</section>
+<!-- CTA STRIP -->
+<section id="visit" class="bg-[#6f7a4f] text-white">
+  <div class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+    <div>
+      <h2 class="display text-3xl md:text-4xl">Bring your animals in</h2>
+      <p class="text-[#e7ead9] mt-3 text-lg">Call to schedule a visit or a farm call in Media, Illinois.</p>
+    </div>
+    <div class="flex flex-wrap items-center gap-4">
+      <a href="tel:3093208749" class="bg-white text-[#565f3a] font-semibold px-7 py-3.5 r12 hover:bg-[#f1ede0] transition">Call 309-320-8749</a>
+      <a href="mailto:hometownvetservice@gmail.com" class="border border-white/70 text-white font-semibold px-7 py-3.5 r12 hover:bg-white/10 transition">Email the clinic</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#211d18] text-[#c9c3b2]">
+  <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+    <div>
+      <p class="display text-lg text-white">Hometown Veterinary Service</p>
+      <p class="mt-3 text-sm">A mixed-animal veterinary clinic where clients are treated like family.</p>
+    </div>
+    <div>
+      <p class="text-white font-semibold text-sm mb-3">Visit</p>
+      <p class="text-sm">207 S First St, Unit<br>Media, IL</p>
+    </div>
+    <div>
+      <p class="text-white font-semibold text-sm mb-3">Contact</p>
+      <p class="text-sm">Ph: 309-320-8749<br>Fax: 309-322-2035<br><a href="mailto:hometownvetservice@gmail.com" class="hover:text-white">hometownvetservice@gmail.com</a></p>
+    </div>
+    <div>
+      <p class="text-white font-semibold text-sm mb-3">Hours</p>
+      <p class="text-sm">Mon to Wed 7:30 to 5:00<br>Thu 7:30 to 12:00<br>Fri 7:30 to 5:00<br>1st and 3rd Sat 7:30 to 12:00</p>
+    </div>
+  </div>
+  <div class="border-t border-[#3a342c]">
+    <p class="max-w-6xl mx-auto px-6 py-5 text-xs text-[#8a8474]">Copyright 2026 Hometown Veterinary Service, LLC. Media, Illinois.</p>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

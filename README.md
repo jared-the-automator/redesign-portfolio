@@ -250,4 +250,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Equine Medical Service](https://jared-the-automator.github.io/redesign-portfolio/emsvet.com/) | Equine veterinary (ambulatory, reproduction, diagnostics) | Laporte, CO |
 | [Williamsburg Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/williamsburgfuneralhome.com/) | Funeral home & cremation services | Kingstree, SC |
 | [Richard's Heating & Cooling](https://jared-the-automator.github.io/redesign-portfolio/richhvac.com/) | Family-owned heating, cooling & oil burner service | Lindenhurst, NY |
+| [Hometown Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/hometownvetservice.com/) | Mixed-animal veterinary clinic (companion and livestock) | Media, IL |
 | --- | --- | --- |
