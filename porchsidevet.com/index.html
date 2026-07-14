@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Porchside Veterinary Care - Dresden Mills, ME Veterinarian</title>
+  <meta name="description" content="Porchside Veterinary Care is a small-animal, appointment-based veterinary clinic in the village of Dresden Mills, Maine, led by Susan Bailey, DVM." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#1e5631',
+            'forest-deep': '#163f24',
+            bone: '#f0ece1',
+            cream: '#faf8f3',
+            ink: '#1a201a'
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, .font-display { font-family: 'Oswald', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .hero-scrim { background: linear-gradient(90deg, rgba(11,22,14,.82) 0%, rgba(11,22,14,.62) 45%, rgba(11,22,14,.30) 100%); }
+    @media (max-width: 768px){ .hero-scrim { background: rgba(11,22,14,.66); } }
+  </style>
+</head>
+<body class="bg-cream text-ink font-body antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-bone">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="https://porchsidevet.com/wp-content/uploads/2019/09/porchside-vererinary-care.png" alt="Porchside Veterinary Care" class="h-9 w-auto" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-ink/80">
+        <a href="#practice" class="hover:text-forest transition">Our Practice</a>
+        <a href="#place" class="hover:text-forest transition">Our Place</a>
+        <a href="#people" class="hover:text-forest transition">Our People</a>
+        <a href="#visit" class="hover:text-forest transition">Visit</a>
+      </nav>
+      <a href="tel:2076563500" class="rounded-2xl bg-forest text-white px-5 py-2.5 text-sm font-semibold tracking-wide hover:bg-forest-deep transition">Call 207-656-3500</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative min-h-[100dvh] flex items-center">
+    <img src="https://porchsidevet.com/wp-content/uploads/2017/08/Porchside-ext.png" alt="Porchside Veterinary Care clinic building in Dresden Mills, Maine" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="hero-scrim absolute inset-0"></div>
+    <div class="relative max-w-6xl mx-auto px-5 w-full pt-24 pb-16">
+      <div class="max-w-2xl">
+        <p class="text-bone/90 uppercase tracking-[0.25em] text-xs font-semibold mb-5">Dresden Mills, Maine</p>
+        <h1 class="font-display font-bold text-white leading-[1.02] text-5xl sm:text-6xl lg:text-7xl mb-6">
+          Care for your animals, from a clinic that knows them.
+        </h1>
+        <p class="text-bone/95 text-lg sm:text-xl max-w-xl mb-9">
+          Porchside Veterinary Care is a small-animal, appointment-based clinic in Dresden Mills, Maine, led by Susan Bailey, DVM.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="tel:2076563500" class="rounded-2xl bg-forest text-white px-7 py-3.5 font-semibold tracking-wide hover:bg-forest-deep transition">Call 207-656-3500</a>
+          <a href="#people" class="rounded-2xl bg-white/15 text-white ring-1 ring-white/40 px-7 py-3.5 font-semibold tracking-wide hover:bg-white/25 transition">Meet the team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY PRODUCT SECTION -->
+  <section id="practice" class="bg-cream py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="reveal">
+        <img src="https://porchsidevet.com/wp-content/uploads/2018/04/Anna-and-Stihl-e1524622231357.jpg" alt="Anna with her dog Stihl at Porchside Veterinary Care" class="rounded-2xl w-full h-[420px] object-cover shadow-sm" />
+      </div>
+      <div class="reveal">
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-forest leading-tight mb-5">
+          Small-animal medicine, done the way a village clinic should.
+        </h2>
+        <p class="text-ink/70 text-lg mb-10 max-w-lg">
+          Porchside is a small-animal, appointment-based practice. That means your visit is unhurried, and the same team sees your dog or cat each time.
+        </p>
+        <div class="space-y-7">
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-forest text-2xl leading-none">01</span>
+            <div>
+              <h3 class="font-display font-semibold text-xl mb-1">Wellness and preventive care</h3>
+              <p class="text-ink/65">Routine exams, vaccines, and dental work that keep healthy pets healthy.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-forest text-2xl leading-none">02</span>
+            <div>
+              <h3 class="font-display font-semibold text-xl mb-1">Sick-animal and urgent visits</h3>
+              <p class="text-ink/65">Same-clinic appointments when your pet is off, with room to act quickly.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-forest text-2xl leading-none">03</span>
+            <div>
+              <h3 class="font-display font-semibold text-xl mb-1">Diagnostics and surgery</h3>
+              <p class="text-ink/65">In-house lab work and surgical care, handled by people you already know.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split) -->
+  <section id="place" class="bg-bone py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="reveal lg:order-2">
+        <img src="https://porchsidevet.com/wp-content/uploads/2018/04/Kim-and-Romac.jpg" alt="Kim with her dog Romac at Porchside Veterinary Care" class="rounded-2xl w-full h-[420px] object-cover shadow-sm" />
+      </div>
+      <div class="reveal lg:order-1">
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-forest leading-tight mb-5">
+          A quaint village clinic, by appointment.
+        </h2>
+        <p class="text-ink/70 text-lg mb-6 max-w-lg">
+          Porchside Veterinary Care sits in the village of Dresden Mills, Maine. Being appointment-based keeps the day calm for the animals and gives you real time with the people caring for them.
+        </p>
+        <p class="text-ink/70 text-lg max-w-lg">
+          Susan Bailey, DVM leads the practice, and the same familiar faces are here whether you are in for a checkup or something more serious.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY -->
+  <section class="bg-cream py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="reveal max-w-2xl mb-12">
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-forest leading-tight mb-4">
+          A clinic built around its people and their pets.
+        </h2>
+        <p class="text-ink/70 text-lg">
+          The photos say what a homepage line cannot. This is the team, the building, and the village that Porchside calls home.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 reveal">
+        <img src="https://porchsidevet.com/wp-content/uploads/2017/08/Porchside-ext.png" alt="Porchside Veterinary Care clinic building in Dresden Mills, Maine" class="rounded-2xl w-full h-56 object-cover" />
+        <img src="https://porchsidevet.com/wp-content/uploads/2018/04/Anna-and-Stihl-e1524622231357.jpg" alt="Anna with her dog Stihl at Porchside Veterinary Care" class="rounded-2xl w-full h-56 object-cover" />
+        <img src="https://porchsidevet.com/wp-content/uploads/2018/04/Kim-and-Romac.jpg" alt="Kim with her dog Romac at Porchside Veterinary Care" class="rounded-2xl w-full h-56 object-cover" />
+        <img src="https://porchsidevet.com/wp-content/uploads/2019/05/Katie.jpg" alt="Katie, a member of the Porchside Veterinary Care team" class="rounded-2xl w-full h-56 object-cover" />
+        <img src="https://porchsidevet.com/wp-content/uploads/2017/10/Kindergarten1-3.jpg" alt="The Porchside team visiting a local kindergarten in Dresden Mills" class="rounded-2xl w-full h-56 object-cover" />
+        <img src="https://porchsidevet.com/wp-content/uploads/2019/09/porchside-vererinary-care.png" alt="Porchside Veterinary Care logo" class="rounded-2xl w-full h-56 object-contain bg-bone p-6" />
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM / CREDIBILITY -->
+  <section id="people" class="bg-forest text-cream py-20 lg:py-28">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="reveal max-w-2xl mb-12">
+        <h2 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+          The people behind the name.
+        </h2>
+        <p class="text-cream/85 text-lg">
+          Porchside Veterinary Care is led by Susan Bailey, DVM, and run by a small team you see every visit. No rotating faces, no call center.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-6 reveal">
+        <div class="bg-forest-deep rounded-2xl p-7">
+          <p class="font-display font-bold text-2xl mb-2">Susan Bailey, DVM</p>
+          <p class="text-cream/80">Lead veterinarian and owner of the practice in Dresden Mills.</p>
+        </div>
+        <div class="bg-forest-deep rounded-2xl p-7">
+          <p class="font-display font-bold text-2xl mb-2">Dresden Mills, Maine</p>
+          <p class="text-cream/80">A small-animal, appointment-based clinic in a quaint Mid-Coast village.</p>
+        </div>
+        <div class="bg-forest-deep rounded-2xl p-7">
+          <p class="font-display font-bold text-2xl mb-2">By appointment</p>
+          <p class="text-cream/80">Calm days for the animals, and real time with the people who care for them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="visit" class="bg-forest-deep text-cream py-16 lg:py-20">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 reveal">
+      <div>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl leading-tight mb-2">Ready to bring your pet in?</h2>
+        <p class="text-cream/85 text-lg">Call the clinic or send a note. Appointments keep the day calm for everyone.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="tel:2076563500" class="rounded-2xl bg-cream text-forest px-7 py-3.5 font-semibold tracking-wide hover:bg-white transition">Call 207-656-3500</a>
+        <a href="mailto:porchsidevet@gmail.com" class="rounded-2xl bg-transparent text-cream ring-1 ring-cream/50 px-7 py-3.5 font-semibold tracking-wide hover:bg-cream/10 transition">Email the clinic</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink text-cream/80 py-14">
+    <div class="max-w-6xl mx-auto px-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <img src="https://porchsidevet.com/wp-content/uploads/2019/09/porchside-vererinary-care.png" alt="Porchside Veterinary Care" class="h-9 w-auto mb-4 brightness-0 invert" />
+        <p class="text-sm text-cream/70 max-w-xs">Small-animal veterinary care in the village of Dresden Mills, Maine.</p>
+      </div>
+      <div>
+        <p class="font-display font-semibold text-cream tracking-wide mb-4">Visit</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#practice" class="hover:text-cream transition">Our Practice</a></li>
+          <li><a href="#place" class="hover:text-cream transition">Our Place</a></li>
+          <li><a href="#people" class="hover:text-cream transition">Our People</a></li>
+          <li class="text-cream/70">Dresden Mills, Maine</li>
+          <li class="text-cream/70">By appointment</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display font-semibold text-cream tracking-wide mb-4">Contact</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="tel:2076563500" class="hover:text-cream transition">207-656-3500</a></li>
+          <li><a href="mailto:porchsidevet@gmail.com" class="hover:text-cream transition">porchsidevet@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display font-semibold text-cream tracking-wide mb-4">Follow</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="https://www.facebook.com/Porchside-Veterinary-Care-1047025772111795/" class="hover:text-cream transition" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-5 mt-10 pt-6 border-t border-cream/15 text-sm text-cream/60">
+      &copy; 2026 Porchside Veterinary Care. Dresden Mills, Maine.
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>

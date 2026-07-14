@@ -9,6 +9,9 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| --- | --- | --- |
+| [Porchside Veterinary Care](https://jared-the-automator.github.io/redesign-portfolio/porchsidevet.com/) | Small-animal veterinary clinic | Dresden Mills, ME |
+| --- | --- | --- |
 | [Friendly Vet Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/friendly-vet.com/) | Small-animal veterinary hospital | Lisle, IL |
 | --- | --- | --- |
 | [Berico Fuels](https://jared-the-automator.github.io/redesign-portfolio/berico.com/) | Propane delivery, heating oil, and HVAC | Greensboro, Burlington & Eden, NC |
