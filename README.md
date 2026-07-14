@@ -9,6 +9,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Hodroff-Epstein Memorial Chapels](https://jared-the-automator.github.io/redesign-portfolio/hodroffepsteinmemorialchapels.com/) | Family-owned memorial chapel | Minneapolis & St. Paul, MN |
 | --- | --- | --- |
 | [Equine Discovery Center](https://jared-the-automator.github.io/redesign-portfolio/equinediscoverycenter.com/) | Equine education, riding camps & lessons | New Hampshire |
 | [Family's Choice Cremation](https://jared-the-automator.github.io/redesign-portfolio/familyschoicecremation.com/) | Direct cremation, on-site crematory | Warren, RI |
