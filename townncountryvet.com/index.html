@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Town &amp; Country Animal Hospital | Veterinary Care in Portland, OR</title>
+  <meta name="description" content="Town &amp; Country Animal Hospital is a full-service veterinary hospital for dogs and cats in Southeast Portland, Oregon, serving the community since 1985." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#1f4d34', light: '#2f6b46', dark: '#163a26' },
+            bone: '#efe9da',
+            cream: '#f7f5ef',
+            ink: '#1c1f1a'
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Oswald', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body class="bg-cream text-ink font-body antialiased">
+
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-cream/95 backdrop-blur border-b border-bone">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="https://townncountryvet.com/wp-content/uploads/2022/04/cropped-town-and-country-animal-hospital-round-logo-3.png" alt="Town &amp; Country Animal Hospital logo" class="h-10 w-10 rounded-xl" />
+        <span class="font-display font-700 tracking-tight text-lg leading-none text-forest">Town &amp; Country<br><span class="text-sm font-500 text-ink/70">Animal Hospital</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-500 text-ink/80">
+        <a href="#services" class="hover:text-forest transition">Services</a>
+        <a href="#story" class="hover:text-forest transition">Our Story</a>
+        <a href="#gallery" class="hover:text-forest transition">Clinic</a>
+        <a href="#contact" class="hover:text-forest transition">Contact</a>
+      </div>
+      <a href="#contact" class="bg-forest text-white text-sm font-600 px-5 py-2.5 rounded-xl hover:bg-forest-light transition">Book an appointment</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative min-h-[100dvh] flex items-end">
+    <img src="https://townncountryvet.com/wp-content/uploads/2020/12/town-and-country-building.jpg" alt="Town &amp; Country Animal Hospital building on SE Division Street in Portland, Oregon" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-6 pb-20 md:pb-28">
+      <p class="text-bone/90 font-display font-600 uppercase tracking-[0.25em] text-sm mb-5">Southeast Portland, Oregon</p>
+      <h1 class="font-display font-700 text-white text-5xl md:text-7xl leading-[1.02] max-w-3xl">
+        Southeast Portland's animal hospital since 1985
+      </h1>
+      <p class="text-bone/90 text-lg md:text-xl max-w-xl mt-6">
+        A full-service hospital for dogs and cats, right on SE Division, with the same family feel for over forty years.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-8">
+        <a href="#contact" class="bg-forest text-white font-600 px-7 py-3.5 rounded-xl hover:bg-forest-light transition">Book an appointment</a>
+        <a href="#services" class="bg-white/10 text-white border border-white/40 font-600 px-7 py-3.5 rounded-xl hover:bg-white/20 transition">See our services</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY PRODUCT SECTION -->
+  <section id="services" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <img src="https://townncountryvet.com/wp-content/uploads/2021/08/town-and-country-animal-hospital-2-1.png" alt="Inside the Town &amp; Country Animal Hospital exam and treatment area" class="w-full h-[420px] object-cover rounded-xl" />
+      </div>
+      <div class="reveal">
+        <h2 class="font-display font-700 text-3xl md:text-4xl text-forest leading-tight">Care for every stage of your pet's life</h2>
+        <p class="text-ink/70 mt-4 max-w-md">From a puppy's first visit to a senior cat's ongoing care, our team handles the full range of veterinary medicine under one roof.</p>
+        <div class="mt-8 space-y-6">
+          <div class="flex gap-5">
+            <span class="font-display font-700 text-2xl text-forest/40 leading-none">01</span>
+            <div>
+              <h3 class="font-display font-600 text-xl text-ink">Wellness &amp; vaccines</h3>
+              <p class="text-ink/70 mt-1">Routine check-ups, vaccinations, and preventive care to keep your pet healthy year round.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-700 text-2xl text-forest/40 leading-none">02</span>
+            <div>
+              <h3 class="font-display font-600 text-xl text-ink">Dental care</h3>
+              <p class="text-ink/70 mt-1">Professional cleanings and oral exams, because dental disease is one of the most common problems we treat.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-700 text-2xl text-forest/40 leading-none">03</span>
+            <div>
+              <h3 class="font-display font-600 text-xl text-ink">Surgery &amp; illness care</h3>
+              <p class="text-ink/70 mt-1">Soft-tissue surgery and diagnosis for sick pets, using current equipment right here in Portland.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split) -->
+  <section id="story" class="py-20 md:py-28 bg-bone">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal order-2 md:order-1">
+        <h2 class="font-display font-700 text-3xl md:text-4xl text-forest leading-tight">A small family practice since 1985</h2>
+        <p class="text-ink/70 mt-4 max-w-md">We have served the Southeast Portland community since 1985 and still run the practice with the feel and comfort of a small family veterinary clinic.</p>
+        <p class="text-ink/70 mt-4 max-w-md">That means the same faces, the same phone number, and the same personal attention your pet has counted on for four decades.</p>
+        <a href="#contact" class="inline-block mt-6 bg-forest text-white font-600 px-6 py-3 rounded-xl hover:bg-forest-light transition">Meet the team</a>
+      </div>
+      <div class="reveal order-1 md:order-2">
+        <img src="https://townncountryvet.com/wp-content/uploads/2021/08/157B9141-1.jpg" alt="A veterinarian and pet at Town &amp; Country Animal Hospital" class="w-full h-[420px] object-cover rounded-xl" />
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY -->
+  <section id="gallery" class="py-20 md:py-28 bg-cream">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="reveal max-w-2xl">
+        <h2 class="font-display font-700 text-3xl md:text-4xl text-forest leading-tight">Take a look around the clinic</h2>
+        <p class="text-ink/70 mt-4">The same building on SE Division that Southeast Portland pet owners have walked into for forty years.</p>
+      </div>
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://townncountryvet.com/wp-content/uploads/2020/12/town-and-country-building.jpg" alt="The Town &amp; Country Animal Hospital building on SE Division Street" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://townncountryvet.com/wp-content/uploads/2021/08/town-and-country-animal-hospital-2-1.png" alt="Treatment area inside the hospital" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://townncountryvet.com/wp-content/uploads/2021/08/157B9141-1.jpg" alt="A pet receiving care from the veterinary team" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://townncountryvet.com/wp-content/uploads/2021/06/About-Us.png" alt="The Town &amp; Country Animal Hospital team" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://townncountryvet.com/wp-content/uploads/2026/06/A_1.jpg" alt="A patient visiting the clinic" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://townncountryvet.com/wp-content/uploads/2021/06/Building-1.png" alt="Exterior view of the animal hospital" class="w-full h-56 object-cover rounded-xl reveal" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY / TESTIMONIALS -->
+  <section class="py-20 md:py-28 bg-bone">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <h2 class="font-display font-700 text-3xl md:text-4xl text-forest leading-tight">Why Portland families trust us</h2>
+        <p class="text-ink/70 mt-4 text-lg italic">"My favorite activity is snuggling with my family, and the weirdest thing I do is purring when getting shots."</p>
+        <p class="text-ink/60 mt-2 text-sm">Rocky, patient</p>
+        <div class="mt-8 grid grid-cols-3 gap-4 max-w-md">
+          <div class="bg-cream rounded-xl p-5 text-center">
+            <p class="font-display font-700 text-3xl text-forest">41</p>
+            <p class="text-ink/60 text-sm mt-1">Years in Portland</p>
+          </div>
+          <div class="bg-cream rounded-xl p-5 text-center">
+            <p class="font-display font-700 text-3xl text-forest">1</p>
+            <p class="text-ink/60 text-sm mt-1">Local family practice</p>
+          </div>
+          <div class="bg-cream rounded-xl p-5 text-center">
+            <p class="font-display font-700 text-3xl text-forest">SE</p>
+            <p class="text-ink/60 text-sm mt-1">Division Street</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="text-ink/70 mb-6">Town &amp; Country Animal Hospital is accredited by the leading veterinary organizations:</p>
+        <div class="flex flex-wrap gap-5 items-center">
+          <img src="https://townncountryvet.com/wp-content/uploads/2022/04/aaha__logo.svg" alt="AAHA accredited" class="h-14 bg-white rounded-xl p-2" />
+          <img src="https://townncountryvet.com/wp-content/uploads/2022/04/avma_logo.svg" alt="AVMA member" class="h-14 bg-white rounded-xl p-2" />
+          <img src="https://townncountryvet.com/wp-content/uploads/2022/04/abvp_logo_vertical.svg" alt="ABVP" class="h-14 bg-white rounded-xl p-2" />
+          <img src="https://townncountryvet.com/wp-content/uploads/2022/04/aavmc_logo.svg" alt="AAVMC" class="h-14 bg-white rounded-xl p-2" />
+        </div>
+        <p class="text-ink/60 text-sm mt-6">12515 SE Division St, Portland, OR 97236<br>Open Mon-Fri 7am to 6pm, Sat 8am to 4:30pm</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section class="bg-forest text-white py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div>
+        <h2 class="font-display font-700 text-3xl md:text-4xl leading-tight">Ready to bring your pet in?</h2>
+        <p class="text-bone/90 mt-2 text-lg">Call the front desk or book online. Same Portland team, same phone number since 1985.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="tel:5037612330" class="bg-white text-forest font-600 px-7 py-3.5 rounded-xl hover:bg-bone transition">(503) 761-2330</a>
+        <a href="#contact" class="bg-forest-light text-white border border-white/40 font-600 px-7 py-3.5 rounded-xl hover:bg-white/10 transition">Book an appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-ink text-bone/80 py-14">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="https://townncountryvet.com/wp-content/uploads/2022/04/cropped-town-and-country-animal-hospital-round-logo-3.png" alt="Town &amp; Country Animal Hospital logo" class="h-10 w-10 rounded-xl" />
+          <span class="font-display font-600 text-white text-lg leading-none">Town &amp; Country<br><span class="text-sm font-500 text-bone/60">Animal Hospital</span></span>
+        </div>
+        <p class="text-bone/70 text-sm max-w-xs">A full-service animal hospital for dogs and cats, serving Southeast Portland since 1985.</p>
+      </div>
+      <div>
+        <h3 class="font-display font-600 text-white text-sm uppercase tracking-wider mb-4">Practice</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#top" class="hover:text-white transition">Home</a></li>
+          <li><a href="#services" class="hover:text-white transition">Services</a></li>
+          <li><a href="#story" class="hover:text-white transition">Our Story</a></li>
+          <li><a href="#gallery" class="hover:text-white transition">Clinic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-display font-600 text-white text-sm uppercase tracking-wider mb-4">Services</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="hover:text-white transition">Wellness &amp; vaccines</a></li>
+          <li><a href="#services" class="hover:text-white transition">Dental care</a></li>
+          <li><a href="#services" class="hover:text-white transition">Surgery &amp; illness care</a></li>
+          <li><a href="#contact" class="hover:text-white transition">New clients</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-display font-600 text-white text-sm uppercase tracking-wider mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm text-bone/70">
+          <li>12515 SE Division St</li>
+          <li>Portland, OR 97236</li>
+          <li><a href="tel:5037612330" class="hover:text-white transition">(503) 761-2330</a></li>
+          <li><a href="mailto:tnc@lakefieldvet.com" class="hover:text-white transition">tnc@lakefieldvet.com</a></li>
+          <li class="pt-2"><a href="https://www.facebook.com" class="hover:text-white transition">Facebook</a> &middot; <a href="https://www.instagram.com" class="hover:text-white transition">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-bone/15 text-xs text-bone/50">
+      &copy; 2025 Town &amp; Country Animal Hospital. Redesign concept for demonstration.
+    </div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => obs.observe(el));
+  </script>
+</body>
+</html>

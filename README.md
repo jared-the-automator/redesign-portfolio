@@ -9,6 +9,8 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Town & Country Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/townncountryvet.com/) | Full-service small-animal veterinary hospital | Portland, OR |
+| --- | --- | --- |
 | [Hodroff-Epstein Memorial Chapels](https://jared-the-automator.github.io/redesign-portfolio/hodroffepsteinmemorialchapels.com/) | Family-owned memorial chapel | Minneapolis & St. Paul, MN |
 | --- | --- | --- |
 | [Equine Discovery Center](https://jared-the-automator.github.io/redesign-portfolio/equinediscoverycenter.com/) | Equine education, riding camps & lessons | New Hampshire |
