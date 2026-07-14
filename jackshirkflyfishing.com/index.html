@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jack Shirk Fly Fishing | Guided Trips, Fly Tying and Classes in TN, NC and FL</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { forest:'#1d4d32', bone:'#f4f1ea', ink:'#16201a', mist:'#e9e3d6', clay:'#b9772f' },
+    fontFamily: { display:['Oswald','sans-serif'], body:['Inter','sans-serif'] }
+  } }
+}
+</script>
+<style>
+  :root{ --r:12px; }
+  html{scroll-behavior:smooth;}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  img{height:auto;}
+  .r{ border-radius: var(--r); }
+</style>
+</head>
+<body class="font-body bg-bone text-ink antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-bone/90 backdrop-blur border-b border-mist">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center">
+      <img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2025/10/FINAL-Cream-Shirk-Fly-Fishing-v1-Vectoirzed.png" alt="Jack Shirk Fly Fishing logo" class="h-10 w-auto">
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink/80">
+      <a href="#trips" class="hover:text-forest transition">Trips</a>
+      <a href="#flies" class="hover:text-forest transition">Flies</a>
+      <a href="#classes" class="hover:text-forest transition">Classes</a>
+      <a href="#gallery" class="hover:text-forest transition">Gallery</a>
+    </nav>
+    <a href="#contact" class="bg-forest text-bone px-5 py-2.5 text-sm font-semibold r hover:bg-forest/90 transition">Book a Trip</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative min-h-[100dvh] flex items-end overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2025/10/Jack-Shirk-Shirk-Fly-Fishing-57-scaled.webp" alt="Jack Shirk wading a Tennessee tailwater with a bent rod" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30"></div>
+  </div>
+  <div class="relative z-10 max-w-6xl mx-auto px-5 pb-20 w-full">
+    <p class="text-bone/80 text-sm font-semibold tracking-[0.25em] uppercase mb-4">Tri-Cities, TN &middot; TN, NC and FL</p>
+    <h1 class="font-display font-bold text-bone text-5xl md:text-7xl leading-[1.02] max-w-3xl">
+      Guided fly fishing across Tennessee, Carolina and Florida.
+    </h1>
+    <p class="text-bone/90 text-lg md:text-xl max-w-xl mt-6">
+      Jack Shirk puts you on trout, bass and bonefish, then shows you how to tie the fly that caught them.
+    </p>
+    <div class="flex flex-wrap gap-4 mt-8">
+      <a href="#trips" class="bg-forest text-bone px-7 py-3.5 font-semibold r hover:bg-forest/90 transition">See Upcoming Trips</a>
+      <a href="#flies" class="border border-bone text-bone px-7 py-3.5 font-semibold r hover:bg-bone/10 transition">Shop Flies</a>
+    </div>
+  </div>
+</section>
+<!-- PRIMARY PRODUCT SECTION -->
+<section id="trips" class="py-20 md:py-28 bg-bone">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div class="r overflow-hidden">
+      <img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2025/10/Jack-Shirk-Shirk-Fly-Fishing-51-scaled.webp" alt="A client fighting a fish on a guided Jack Shirk trip" class="w-full h-full object-cover">
+    </div>
+    <div>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-ink mb-3">What you get on the water</h2>
+      <p class="text-ink/70 max-w-md mb-10">Three ways to fish with Jack, from a single afternoon to a week on the flats.</p>
+
+      <div class="space-y-8">
+        <div class="flex gap-5">
+          <span class="font-display font-bold text-3xl text-forest leading-none">01</span>
+          <div>
+            <h3 class="font-display font-semibold text-xl text-ink">Guided trips</h3>
+            <p class="text-ink/70 mt-1">Wade the tailwaters of East Tennessee for trout, or chase bass and bonefish across Florida and Puerto Rico.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="font-display font-bold text-3xl text-forest leading-none">02</span>
+          <div>
+            <h3 class="font-display font-semibold text-xl text-ink">Flies tied to order</h3>
+            <p class="text-ink/70 mt-1">Streamers, crabs and the patterns Jack is known for, tied by hand and shipped to your door.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="font-display font-bold text-3xl text-forest leading-none">03</span>
+          <div>
+            <h3 class="font-display font-semibold text-xl text-ink">Classes and hosted trips</h3>
+            <p class="text-ink/70 mt-1">Learn to tie your own flies, or join a hosted trip like Permitopia in Puerto Rico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECONDARY REVERSED SPLIT (story / process) -->
+<section id="flies" class="py-20 md:py-28 bg-mist">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-ink mb-3">Every fly starts at the vise</h2>
+      <p class="text-ink/70 max-w-md mb-6">Jack ties the flies he guides with. The Coyote Shrimp variant and the Jack Knife streamer are built to match the water you will fish, not a catalog.</p>
+      <p class="text-ink/70 max-w-md mb-8">Book a tying class and you leave with the pattern in your box and the know-how to tie it again at home.</p>
+      <a href="#contact" class="inline-block bg-forest text-bone px-7 py-3.5 font-semibold r hover:bg-forest/90 transition">Ask about flies and classes</a>
+    </div>
+    <div class="r overflow-hidden">
+      <img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2025/10/Vise-Club-15.jpg" alt="Jack Shirk at the fly tying vise with a finished streamer" class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY / BRAND STORY -->
+<section id="gallery" class="py-20 md:py-28 bg-bone">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="font-display font-bold text-4xl md:text-5xl text-ink mb-3 text-center">On the water</h2>
+    <p class="text-ink/70 text-center max-w-xl mx-auto mb-12">From East Tennessee tailwaters to the flats of Puerto Rico, the fish are the point.</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="r overflow-hidden"><img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2025/10/Jack-Shirk-Shirk-Fly-Fishing-03-scaled.webp" alt="Jack Shirk netting a trout on a Tennessee stream" class="w-full h-64 object-cover"></div>
+      <div class="r overflow-hidden"><img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2025/10/Jack-Shirk-Shirk-Fly-Fishing-14-scaled.webp" alt="A guided client landing a fish" class="w-full h-64 object-cover"></div>
+      <div class="r overflow-hidden"><img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2025/12/Ep-Coyote-Shrimp-Tying-Thumbnail.webp" alt="The EP Spawning Shrimp Coyote variant fly" class="w-full h-64 object-cover"></div>
+      <div class="r overflow-hidden"><img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2025/07/Jack-Knife-TN.webp" alt="The Jack Knife streamer fly pattern" class="w-full h-64 object-cover"></div>
+      <div class="r overflow-hidden"><img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2020/06/JackShirkFlyFishingWebsitePhoto-08-min-scaled.jpg" alt="Jack Shirk wading a river at sunrise" class="w-full h-64 object-cover"></div>
+      <div class="r overflow-hidden"><img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2020/06/JackShirkFlyFishingWebsitePhoto-14-min-scaled.jpg" alt="A tailwater run in East Tennessee" class="w-full h-64 object-cover"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY / TESTIMONIAL -->
+<section class="py-20 md:py-28 bg-forest text-bone">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <p class="font-display font-semibold text-3xl md:text-4xl leading-snug">"Let's go have a good time."</p>
+    <p class="text-bone/70 mt-4">Jack Shirk, founder and guide</p>
+    <div class="grid md:grid-cols-3 gap-8 mt-12 text-left">
+      <div>
+        <h3 class="font-display font-semibold text-xl mb-2">TN, NC and FL</h3>
+        <p class="text-bone/70 text-sm">Guided trips and tying across three states, plus hosted trips abroad.</p>
+      </div>
+      <div>
+        <h3 class="font-display font-semibold text-xl mb-2">Hosted trips</h3>
+        <p class="text-bone/70 text-sm">Permitopia in Puerto Rico, Aug 30 to Sep 5 2026, at No Name Lodge in Boqueron.</p>
+      </div>
+      <div>
+        <h3 class="font-display font-semibold text-xl mb-2">Tying classes</h3>
+        <p class="text-bone/70 text-sm">Fly tying courses and classes for first-timers through seasoned anglers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA STRIP -->
+<section id="contact" class="py-20 md:py-28 bg-ink text-bone">
+  <div class="max-w-4xl mx-auto px-5 text-center reveal">
+    <h2 class="font-display font-bold text-4xl md:text-6xl leading-tight">Ready to get on the water?</h2>
+    <p class="text-bone/70 text-lg mt-4 max-w-xl mx-auto">Summer fishing is in full swing across Tennessee and the Carolinas. Reach out and let's plan a trip or a tying class.</p>
+    <a href="mailto:jack@jackshirkflyfishing.com" class="inline-block bg-forest text-bone px-8 py-4 font-semibold text-lg r hover:bg-forest/90 transition mt-8">Email Jack</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-bone/70 border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-5 py-14 grid md:grid-cols-4 gap-10">
+    <div>
+      <img src="https://www.jackshirkflyfishing.com/wp-content/uploads/2025/10/FINAL-Cream-Shirk-Fly-Fishing-v1-Vectoirzed.png" alt="Jack Shirk Fly Fishing logo" class="h-10 w-auto mb-4">
+      <p class="text-sm">Fly fishing, fly tying, and a good time on the water.</p>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold text-bone text-lg mb-4">Explore</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#trips" class="hover:text-forest transition">Trips</a></li>
+        <li><a href="#flies" class="hover:text-forest transition">Flies</a></li>
+        <li><a href="#classes" class="hover:text-forest transition">Classes</a></li>
+        <li><a href="#gallery" class="hover:text-forest transition">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold text-bone text-lg mb-4">Contact</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="mailto:jack@jackshirkflyfishing.com" class="hover:text-forest transition">jack@jackshirkflyfishing.com</a></li>
+        <li>Tri-Cities, TN</li>
+        <li>TN, NC and FL</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold text-bone text-lg mb-4">Follow</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="https://instagram.com/jackshirkflyfishing" class="hover:text-forest transition">Instagram</a></li>
+        <li><a href="https://facebook.com/jackshirkflyfishing" class="hover:text-forest transition">Facebook</a></li>
+        <li><a href="https://youtube.com" class="hover:text-forest transition">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-6 text-center text-xs text-bone/50">
+    &copy; 2026 Jack Shirk Fly Fishing. Redesign concept.
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>
+</body>
+</html>
