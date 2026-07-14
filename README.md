@@ -9,6 +9,8 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Friendly Vet Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/friendly-vet.com/) | Small-animal veterinary hospital | Lisle, IL |
+| --- | --- | --- |
 | [Berico Fuels](https://jared-the-automator.github.io/redesign-portfolio/berico.com/) | Propane delivery, heating oil, and HVAC | Greensboro, Burlington & Eden, NC |
 | --- | --- | --- |
 | [Dolan Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/dolanfuneral.com/) | Family-owned funeral home and cremation, serving since 1885 | Dorchester & East Milton, MA |
