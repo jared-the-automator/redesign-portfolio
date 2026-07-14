@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dolan Funeral Homes and Cremation Services | Dorchester & East Milton, MA</title>
+  <meta name="description" content="Dolan Funeral Homes and Cremation Services has served Dorchester, Lower Mills, and East Milton, Massachusetts since 1885. Funeral, cremation, and advance planning with a family that has cared for Boston for generations." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#122019',
+            forest: '#1a2e22',
+            pine: '#21382b',
+            gold: '#c8a24c',
+            bone: '#efe9dc',
+            sage: '#aab4a6'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          },
+          borderRadius: { lg: '12px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #122019; }
+    .r { border-radius: 12px; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s ease, transform .9s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .hero-scrim { background:
+      linear-gradient(180deg, rgba(18,32,25,.55) 0%, rgba(18,32,25,.74) 55%, rgba(18,32,25,.92) 100%);
+    }
+    .nav-scrim { background: rgba(18,32,25,.82); backdrop-filter: blur(8px); }
+  </style>
+</head>
+<body class="font-body text-bone antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 inset-x-0 z-50 nav-scrim border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/09/DolanLogo.png" alt="Dolan Funeral Homes logo" class="h-12 w-auto" />
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm tracking-wide text-bone/80">
+        <a href="#services" class="hover:text-gold transition">Services</a>
+        <a href="#story" class="hover:text-gold transition">Our Story</a>
+        <a href="#team" class="hover:text-gold transition">Our Family</a>
+        <a href="#contact" class="hover:text-gold transition">Contact</a>
+      </div>
+      <a href="#contact" class="r bg-gold text-ink px-5 py-2.5 text-sm font-semibold hover:bg-bone transition">Call Us</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative min-h-[100dvh] flex items-end">
+    <img src="https://dolanfuneral.com/wp-content/uploads/2022/05/01-Front-4-1024x683.jpg" alt="The front of Dolan Funeral Home" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-scrim"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pb-24 w-full">
+      <p class="text-gold text-sm tracking-[0.35em] uppercase mb-5 reveal">Dorchester &middot; East Milton, Massachusetts</p>
+      <h1 class="font-display font-bold text-bone leading-[1.04] text-5xl md:text-7xl max-w-3xl reveal">
+        Caring for our community since 1885.
+      </h1>
+      <p class="mt-6 text-bone/85 text-lg md:text-xl max-w-xl reveal">
+        Four generations of the Dolan family have helped Boston families through their hardest days, with funeral, cremation, and pre-planning done the right way.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4 reveal">
+        <a href="#contact" class="r bg-gold text-ink px-7 py-3.5 font-semibold hover:bg-bone transition">Speak with us</a>
+        <a href="#services" class="r border border-bone/40 px-7 py-3.5 hover:border-gold hover:text-gold transition">Our services</a>
+      </div>
+    </div>
+  </header>
+  <!-- PRIMARY PRODUCT SECTION -->
+  <section id="services" class="bg-ink py-24 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+      <div class="reveal">
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/05/01-Front-04-1024x683.jpg" alt="Dolan Funeral Home building in Dorchester" class="r w-full h-[460px] object-cover" />
+      </div>
+      <div class="reveal">
+        <p class="text-gold text-sm tracking-[0.3em] uppercase mb-4">What we provide</p>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-bone leading-tight">
+          One family, every service you may need.
+        </h2>
+        <div class="mt-10 space-y-8">
+          <div class="flex gap-5">
+            <span class="font-display text-gold text-2xl pt-1">01</span>
+            <div>
+              <h3 class="text-bone font-semibold text-lg">Funeral services</h3>
+              <p class="text-sage mt-1">Traditional and memorial services shaped around your family, at either of our two Greater Boston locations.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-gold text-2xl pt-1">02</span>
+            <div>
+              <h3 class="text-bone font-semibold text-lg">Cremation care</h3>
+              <p class="text-sage mt-1">Simple, dignified cremation options with the same attention we give every family we serve.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-gold text-2xl pt-1">03</span>
+            <div>
+              <h3 class="text-bone font-semibold text-lg">Advance planning</h3>
+              <p class="text-sage mt-1">Plan ahead with confidence and spare your loved ones hard decisions during a difficult time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split) -->
+  <section class="bg-forest py-24 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+      <div class="reveal md:order-2">
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/06/DolanFH_18-0044edit-1024x869.jpg" alt="Inside Dolan Funeral Home" class="r w-full h-[460px] object-cover" />
+      </div>
+      <div class="reveal md:order-1">
+        <p class="text-gold text-sm tracking-[0.3em] uppercase mb-4">Here when you need us</p>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-bone leading-tight">
+          Help at the moment it matters most.
+        </h2>
+        <p class="text-sage mt-6 text-lg leading-relaxed">
+          When a loss is sudden, the first call is the hardest. Our staff answers day or night, walks you through what comes next, and handles the arrangements with calm and care.
+        </p>
+        <a href="#contact" class="inline-block mt-8 r border border-gold text-gold px-7 py-3.5 font-semibold hover:bg-gold hover:text-ink transition">Reach us now</a>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY -->
+  <section id="story" class="bg-ink py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl reveal">
+        <p class="text-gold text-sm tracking-[0.3em] uppercase mb-4">Our story</p>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-bone leading-tight">
+          A Boston name families have trusted for generations.
+        </h2>
+        <p class="text-sage mt-6 text-lg leading-relaxed">
+          Dolan Funeral Homes began in 1885 and has stayed in the family ever since. We serve Dorchester, Lower Mills, East Milton, and the wider Greater Boston community with the same steady hand our great-grandparents brought to the work.
+        </p>
+      </div>
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 reveal">
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/05/01-Front-4-1024x683.jpg" alt="Dolan Funeral Home exterior" class="r w-full h-56 object-cover" />
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/06/DolanFH_18-0015-768x960-1.jpeg" alt="Dolan Funeral Home interior" class="r w-full h-56 object-cover" />
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/06/Jed-Dolan.jpeg" alt="Jed Dolan of Dolan Funeral Homes" class="r w-full h-56 object-cover" />
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/06/Courtney-Dolan-Dorsey.jpeg" alt="Courtney Dolan Dorsey of Dolan Funeral Homes" class="r w-full h-56 object-cover" />
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/06/Ricardo-Jean-Charles.jpeg" alt="Ricardo Jean Charles of Dolan Funeral Homes" class="r w-full h-56 object-cover" />
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/06/Andrea-James.jpeg" alt="Andrea James of Dolan Funeral Homes" class="r w-full h-56 object-cover" />
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/06/Bill-Coughlin.jpeg" alt="Bill Coughlin of Dolan Funeral Homes" class="r w-full h-56 object-cover" />
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/06/Barbara-Foulsham.jpeg" alt="Barbara Foulsham of Dolan Funeral Homes" class="r w-full h-56 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY -->
+  <section id="team" class="bg-forest py-24 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center reveal">
+      <div class="r bg-ink/60 border border-white/5 p-10">
+        <p class="font-display text-gold text-5xl font-bold">1885</p>
+        <p class="text-bone mt-3">Founded and family owned ever since</p>
+      </div>
+      <div class="r bg-ink/60 border border-white/5 p-10">
+        <p class="font-display text-gold text-5xl font-bold">2</p>
+        <p class="text-bone mt-3">Greater Boston locations, Dorchester and East Milton</p>
+      </div>
+      <div class="r bg-ink/60 border border-white/5 p-10">
+        <p class="font-display text-gold text-5xl font-bold">24/7</p>
+        <p class="text-bone mt-3">Here the moment a family needs us</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="contact" class="bg-gold py-20 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-8 reveal">
+      <div>
+        <h2 class="font-display font-bold text-ink text-3xl md:text-4xl leading-tight">
+          When you are ready, we are here.
+        </h2>
+        <p class="text-ink/80 mt-3 text-lg">Call any time, day or night, and a member of our staff will help.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="tel:6172988011" class="r bg-ink text-bone px-7 py-4 font-semibold text-center hover:bg-forest transition">617-298-8011</a>
+        <a href="tel:6176986264" class="r bg-ink text-bone px-7 py-4 font-semibold text-center hover:bg-forest transition">617-698-6264</a>
+        <a href="mailto:info@dolanfuneral.com" class="r border border-ink text-ink px-7 py-4 font-semibold text-center hover:bg-ink hover:text-bone transition">Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink border-t border-white/5 py-16 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10 text-sm">
+      <div>
+        <img src="https://dolanfuneral.com/wp-content/uploads/2022/09/DolanLogo.png" alt="Dolan Funeral Homes logo" class="h-12 w-auto mb-4" />
+        <p class="text-sage">Caring for our community since 1885. Funeral, cremation, and advance planning across Greater Boston.</p>
+      </div>
+      <div>
+        <p class="text-gold tracking-[0.25em] uppercase text-xs mb-4">Visit</p>
+        <p class="text-bone/85">Dorchester &middot; Lower Mills</p>
+        <p class="text-bone/85">East Milton, Massachusetts</p>
+      </div>
+      <div>
+        <p class="text-gold tracking-[0.25em] uppercase text-xs mb-4">Contact</p>
+        <p class="text-bone/85">617-298-8011</p>
+        <p class="text-bone/85">617-698-6264</p>
+        <p class="text-bone/85">info@dolanfuneral.com</p>
+      </div>
+      <div>
+        <p class="text-gold tracking-[0.25em] uppercase text-xs mb-4">Explore</p>
+        <a href="#services" class="block text-bone/85 hover:text-gold transition">Services</a>
+        <a href="#story" class="block text-bone/85 hover:text-gold transition">Our Story</a>
+        <a href="#team" class="block text-bone/85 hover:text-gold transition">Our Family</a>
+      </div>
+    </div>
+    <p class="max-w-6xl mx-auto mt-12 text-xs text-sage/70 px-0">Prototype redesign concept for Dolan Funeral Homes. Photography and brand assets belong to the original site.</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>

@@ -9,6 +9,8 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Dolan Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/dolanfuneral.com/) | Family-owned funeral home and cremation, serving since 1885 | Dorchester & East Milton, MA |
+| --- | --- | --- |
 | [Elizabeth Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/elizabethanimalhospital.com/) | Family-owned small-animal veterinary hospital | Elizabeth, CO |
 | --- | --- | --- |
 | [Mel and Sons Oil](https://jared-the-automator.github.io/redesign-portfolio/melandsonsoil.com/) | Heating oil delivery and burner service | Wakefield, MA |
