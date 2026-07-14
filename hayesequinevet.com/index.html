@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hayes Equine Veterinary Services | Equine Vet in Denison, TX</title>
+<meta name="description" content="Full-service equine veterinary care in Denison, Texas. Dentistry, digital x-rays, emergency and mobile vet services for the Texoma horse community.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        forest: '#12261c',
+        forestdeep: '#0c1a13',
+        moss: '#1f4030',
+        gold: '#c39a4d',
+        goldlight: '#d8b56a',
+        bone: '#f3efe4'
+      },
+      fontFamily: {
+        display: ['"Playfair Display"', 'serif'],
+        body: ['Inter', 'sans-serif']
+      },
+      borderRadius: {
+        DEFAULT: '2px'
+      }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #0c1a13; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .rule-gold { height: 2px; width: 64px; background: #c39a4d; }
+</style>
+</head>
+<body class="font-body text-bone antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-forestdeep/95 backdrop-blur border-b border-white/10">
+  <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-6">
+    <a href="#top" class="flex items-center gap-3 shrink-0">
+      <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/HayesEquineLogo.png" alt="Hayes Equine Veterinary Services" class="h-12 w-auto">
+      <span class="hidden sm:block font-display text-lg leading-tight text-bone">Hayes Equine<br><span class="text-gold text-xs tracking-[0.25em] uppercase font-body">Veterinary Services</span></span>
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-bone/85">
+      <a href="#services" class="hover:text-gold transition">Services</a>
+      <a href="#care" class="hover:text-gold transition">Our Care</a>
+      <a href="#gallery" class="hover:text-gold transition">Gallery</a>
+      <a href="#community" class="hover:text-gold transition">Community</a>
+      <a href="#contact" class="hover:text-gold transition">Contact</a>
+    </div>
+    <a href="tel:9034650777" class="shrink-0 bg-gold text-forestdeep font-semibold text-sm px-5 py-2.5 hover:bg-goldlight transition">Call (903) 465-0777</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-[100dvh] flex items-center">
+  <div class="absolute inset-0">
+    <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/Horse-Loving-Vet.jpeg" alt="Veterinarian working with a horse in North Texas" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-forestdeep/85"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-forestdeep via-forestdeep/70 to-forestdeep/40"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-6 py-28 w-full">
+    <div class="max-w-2xl">
+      <p class="text-gold tracking-[0.3em] uppercase text-xs font-semibold mb-6">Denison, Texas &middot; Serving Texoma</p>
+      <h1 class="font-display font-extrabold text-5xl sm:text-6xl lg:text-7xl leading-[1.02] text-bone">
+        Equine care for horses that<br class="hidden sm:block"> work as hard as you do
+      </h1>
+      <p class="mt-7 text-lg text-bone/85 max-w-xl">Dentistry, digital x-rays, emergency and mobile services from a practice built around your horse, not a chain.</p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#contact" class="bg-gold text-forestdeep font-semibold px-7 py-3.5 hover:bg-goldlight transition">Schedule an appointment</a>
+        <a href="#services" class="border border-bone/40 text-bone font-semibold px-7 py-3.5 hover:border-gold hover:text-gold transition">See our services</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- PRIMARY PRODUCT SECTION (asymmetric split, numbered features) -->
+<section id="services" class="bg-forest py-24 reveal">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="order-2 lg:order-1">
+      <h2 class="font-display font-bold text-4xl sm:text-5xl text-bone leading-tight">What we do, hands-on</h2>
+      <div class="rule-gold my-6"></div>
+      <div class="space-y-10">
+        <div class="flex gap-5">
+          <span class="font-display font-extrabold text-3xl text-gold leading-none pt-1">01</span>
+          <div>
+            <h3 class="font-display text-2xl text-bone">Dentistry</h3>
+            <p class="mt-2 text-bone/75 leading-relaxed">Real dental floats and exams that keep your horse eating, performing, and comfortable through the season.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="font-display font-extrabold text-3xl text-gold leading-none pt-1">02</span>
+          <div>
+            <h3 class="font-display text-2xl text-bone">Digital x-rays</h3>
+            <p class="mt-2 text-bone/75 leading-relaxed">On-site imaging means a diagnosis the same visit, not a referral and a wait that costs you time.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="font-display font-extrabold text-3xl text-gold leading-none pt-1">03</span>
+          <div>
+            <h3 class="font-display text-2xl text-bone">Mobile vet services</h3>
+            <p class="mt-2 text-bone/75 leading-relaxed">We bring the exam to the barn for horses that travel hard, recover from surgery, or simply shouldn't move.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2">
+      <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/Horse-Exam.jpeg" alt="Veterinarian performing a hands-on exam on a horse" class="w-full h-[520px] object-cover rounded">
+    </div>
+  </div>
+</section>
+
+<!-- SECONDARY SECTION (reversed split, story angle) -->
+<section id="care" class="bg-forestdeep py-24 reveal">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+    <div>
+      <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/Lady-Godiva.jpeg" alt="A horse portrait from the Hayes Equine barn" class="w-full h-[520px] object-cover rounded">
+    </div>
+    <div>
+      <p class="text-gold tracking-[0.25em] uppercase text-xs font-semibold mb-5">The Gold Standard in Total Equine Care</p>
+      <h2 class="font-display font-bold text-4xl sm:text-5xl text-bone leading-tight">Great care, because we care about the horse</h2>
+      <div class="rule-gold my-6"></div>
+      <p class="text-bone/80 text-lg leading-relaxed">You could take your horse anywhere. Our clients bring theirs here because we don't just treat the animal in front of us, we look out for the partner you ride, rope, and trust.</p>
+      <p class="mt-4 text-bone/70 leading-relaxed">From the first exam to the late-night emergency call, the same hands stay on the case. That continuity is the difference between a clinic and a practice.</p>
+    </div>
+  </div>
+</section>
+<!-- GALLERY (breaks the zigzag) -->
+<section id="gallery" class="bg-forest py-24 reveal">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-2xl">
+      <p class="text-gold tracking-[0.25em] uppercase text-xs font-semibold mb-4">From the barn</p>
+      <h2 class="font-display font-bold text-4xl sm:text-5xl text-bone leading-tight">Our work, up close</h2>
+      <p class="mt-5 text-bone/75 text-lg">The care is in the details. A few frames from real visits around Denison and the Texoma horse country.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <figure class="overflow-hidden rounded">
+        <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/meg-teeth-2.jpg" alt="Equine dentistry in progress" class="w-full h-72 object-cover hover:scale-105 transition duration-700">
+        <figcaption class="text-bone/60 text-sm mt-3">Equine dentistry</figcaption>
+      </figure>
+      <figure class="overflow-hidden rounded">
+        <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/Horse-Xrays.jpeg" alt="Digital x-ray of a horse" class="w-full h-72 object-cover hover:scale-105 transition duration-700">
+        <figcaption class="text-bone/60 text-sm mt-3">Digital x-rays</figcaption>
+      </figure>
+      <figure class="overflow-hidden rounded">
+        <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/Horse-Vet-Lab.jpeg" alt="On-site laboratory work" class="w-full h-72 object-cover hover:scale-105 transition duration-700">
+        <figcaption class="text-bone/60 text-sm mt-3">On-site lab</figcaption>
+      </figure>
+      <figure class="overflow-hidden rounded">
+        <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/Hayes-Equine-Veterinary-Services-185-2-2.jpg" alt="Hands-on equine care" class="w-full h-72 object-cover hover:scale-105 transition duration-700">
+        <figcaption class="text-bone/60 text-sm mt-3">Hands-on care</figcaption>
+      </figure>
+      <figure class="overflow-hidden rounded">
+        <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/20140919_142809-2-1.jpg" alt="A horse in the field" class="w-full h-72 object-cover hover:scale-105 transition duration-700">
+        <figcaption class="text-bone/60 text-sm mt-3">Out in the field</figcaption>
+      </figure>
+      <figure class="overflow-hidden rounded">
+        <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/Horse-Exam.jpeg" alt="Veterinarian examining a horse" class="w-full h-72 object-cover hover:scale-105 transition duration-700">
+        <figcaption class="text-bone/60 text-sm mt-3">Wellness exams</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY / QUOTE (community angle) -->
+<section id="community" class="bg-forestdeep py-24 reveal">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <blockquote class="font-display font-medium text-3xl sm:text-4xl text-bone leading-snug">
+      You could take your horse anywhere. Our clients bring their horses here because we genuinely care about your friend.
+    </blockquote>
+    <p class="mt-6 text-gold tracking-[0.2em] uppercase text-xs font-semibold">Our promise, Hayes Equine Veterinary Services</p>
+    <div class="rule-gold mx-auto my-12"></div>
+    <div class="grid sm:grid-cols-3 gap-10 text-left">
+      <div>
+        <h3 class="font-display text-xl text-gold">Equine-only practice</h3>
+        <p class="mt-2 text-bone/75 leading-relaxed">Dentistry, emergency, mobile vet, x-rays, exams, and an on-site lab, all focused on the horse.</p>
+      </div>
+      <div>
+        <h3 class="font-display text-xl text-gold">Rooted in Texoma</h3>
+        <p class="mt-2 text-bone/75 leading-relaxed">Based in Denison, Texas, serving the local horse community through its shows, events, fairs, and rodeos.</p>
+      </div>
+      <div>
+        <h3 class="font-display text-xl text-gold">There when it counts</h3>
+        <p class="mt-2 text-bone/75 leading-relaxed">Emergency and mobile coverage so the care comes to the barn, not the other way around.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA STRIP -->
+<section class="bg-gold text-forestdeep py-16 reveal">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+    <div>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl">Ready to bring us out to the barn?</h2>
+      <p class="mt-2 font-medium">Call, email, or book your horse's next exam today.</p>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      <a href="tel:9034650777" class="bg-forestdeep text-bone font-semibold px-7 py-3.5 hover:bg-forest transition">Call (903) 465-0777</a>
+      <a href="mailto:hayesequinevet@gmail.com" class="border border-forestdeep text-forestdeep font-semibold px-7 py-3.5 hover:bg-forestdeep hover:text-bone transition">Email the clinic</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="bg-forestdeep border-t border-white/10 pt-16 pb-10">
+  <div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <img src="https://hayesequinevet.com/wp-content/uploads/2019/01/HayesEquineLogo.png" alt="Hayes Equine Veterinary Services" class="h-12 w-auto">
+      <p class="mt-4 font-display text-lg text-bone">Healthy. Happy. Horses.</p>
+      <p class="mt-2 text-bone/60 text-sm leading-relaxed">The Gold Standard in Total Equine Veterinary Care, serving Denison and the Texoma horse community.</p>
+    </div>
+    <div>
+      <h3 class="text-gold text-sm tracking-[0.2em] uppercase font-semibold mb-4">Services</h3>
+      <ul class="space-y-2 text-bone/75 text-sm">
+        <li><a href="#services" class="hover:text-gold transition">Dentistry</a></li>
+        <li><a href="#services" class="hover:text-gold transition">Emergency services</a></li>
+        <li><a href="#services" class="hover:text-gold transition">Mobile vet services</a></li>
+        <li><a href="#services" class="hover:text-gold transition">Digital x-rays</a></li>
+        <li><a href="#services" class="hover:text-gold transition">Exams and checkups</a></li>
+        <li><a href="#services" class="hover:text-gold transition">On-site lab</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-gold text-sm tracking-[0.2em] uppercase font-semibold mb-4">Visit us</h3>
+      <ul class="space-y-2 text-bone/75 text-sm">
+        <li>6544 FM 1753</li>
+        <li>Denison, TX 75021</li>
+        <li><a href="tel:9034650777" class="hover:text-gold transition">(903) 465-0777</a></li>
+        <li><a href="mailto:hayesequinevet@gmail.com" class="hover:text-gold transition">hayesequinevet@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-gold text-sm tracking-[0.2em] uppercase font-semibold mb-4">Follow</h3>
+      <ul class="space-y-2 text-bone/75 text-sm">
+        <li><a href="https://www.facebook.com/" class="hover:text-gold transition">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-bone/45 text-xs">
+    <p>Hayes Equine Veterinary Services, Denison, Texas.</p>
+    <p>Prototype redesign for review.</p>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
