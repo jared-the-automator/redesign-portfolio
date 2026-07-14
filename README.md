@@ -262,4 +262,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Hometown Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/hometownvetservice.com/) | Mixed-animal veterinary clinic (companion and livestock) | Media, IL |
 | --- | --- | --- |
 | [Harms Oil Company](https://jared-the-automator.github.io/redesign-portfolio/harmsoil.com/) | Fuel, propane and lubricant delivery, family-owned since 1976 | Aberdeen, SD |
+| [Eastern Propane & Oil](https://jared-the-automator.github.io/redesign-portfolio/eastern.com/) | Propane and heating oil delivery, family-owned since 1932 | NH, ME, MA, VT & RI |
 | --- | --- | --- |
