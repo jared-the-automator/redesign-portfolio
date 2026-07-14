@@ -14,6 +14,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Donahue Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/donahuefuneral.com/) | Family-owned funeral home, four generations of care | Flourtown, PA |
 | [Meyer & Depew](https://jared-the-automator.github.io/redesign-portfolio/meyer-depew.com/) | Heating, cooling & HVAC service, family-run since 1953 | Kenilworth, NJ |
 | [Robinson Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/robinsonfuneralhomes.com/) | Family-owned funeral home & cremation, serving since 1875 | Easley, SC |
+| [Goldsteins Rosenberg's Funeral Directors](https://jared-the-automator.github.io/redesign-portfolio/goldsteinsfuneral.com/) | Family-owned Jewish funeral home, Philadelphia's oldest | Philadelphia, PA |
 | [Porchside Veterinary Care](https://jared-the-automator.github.io/redesign-portfolio/porchsidevet.com/) | Small-animal veterinary clinic | Dresden Mills, ME |
 | --- | --- | --- |
 | [Friendly Vet Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/friendly-vet.com/) | Small-animal veterinary hospital | Lisle, IL |
