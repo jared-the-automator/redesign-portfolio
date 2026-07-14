@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Copper Country Veterinary Clinic | Vet Care in Houghton, MI</title>
+  <meta name="description" content="Copper Country Veterinary Clinic is a mixed-animal practice in Atlantic Mine, Michigan, serving Houghton and the Upper Peninsula with dog, cat, and equine care." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@500;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FAF5EC',
+            tan: '#ECE0CE',
+            rust: '#B5532A',
+            ink: '#2A2521',
+            bark: '#3C342C'
+          },
+          fontFamily: {
+            slab: ['"Roboto Slab"', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          },
+          borderRadius: { xl: '12px' }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in-view { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-tan">
+    <div class="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://ccvc.cc/wp-content/uploads/2019/02/ccvc-logo-big.png" alt="Copper Country Veterinary Clinic logo" class="h-12 w-auto" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-bark">
+        <a href="#services" class="hover:text-rust transition-colors">Services</a>
+        <a href="#equine" class="hover:text-rust transition-colors">Equine</a>
+        <a href="#clinic" class="hover:text-rust transition-colors">Our Clinic</a>
+        <a href="#visit" class="hover:text-rust transition-colors">Visit</a>
+      </nav>
+      <a href="tel:9064821771" class="inline-flex items-center gap-2 bg-rust text-white text-sm font-semibold px-5 py-3 rounded-xl hover:bg-[#9c4524] transition-colors">
+        Call 906-482-1771
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-center">
+    <img src="https://ccvc.cc/wp-content/uploads/2021/04/puppy-on-grass-field-1322182.jpg" alt="A young puppy resting on a grass field outside the clinic" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(20,15,10,0.88), rgba(20,15,10,0.52));"></div>
+    <div class="relative max-w-6xl mx-auto px-5 w-full py-24">
+      <p class="text-rust font-semibold tracking-[0.2em] uppercase text-xs mb-5">Houghton, Michigan</p>
+      <h1 class="font-slab font-extrabold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.05] max-w-3xl">
+        Veterinary care for the animals of Michigan's Upper Peninsula
+      </h1>
+      <p class="text-white/90 text-lg mt-6 max-w-xl">
+        Copper Country Veterinary Clinic is a mixed-animal practice in Atlantic Mine, serving Houghton and the surrounding communities for more than 20 years.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#services" class="bg-rust text-white font-semibold px-7 py-4 rounded-xl hover:bg-[#9c4524] transition-colors">Meet the team</a>
+        <a href="tel:9064821771" class="bg-white/95 text-ink font-semibold px-7 py-4 rounded-xl hover:bg-white transition-colors">Call 906-482-1771</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY: SERVICES (asymmetric split) -->
+  <section id="services" class="py-20 lg:py-28 bg-cream">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal">
+        <img src="https://ccvc.cc/wp-content/uploads/2021/10/ccvcsign.jpg" alt="The Copper Country Veterinary Clinic building and sign in Atlantic Mine, Michigan" class="w-full h-[420px] object-cover rounded-xl" />
+      </div>
+      <div class="reveal">
+        <p class="text-rust font-semibold tracking-[0.18em] uppercase text-xs mb-4">What we do</p>
+        <h2 class="font-slab font-extrabold text-3xl sm:text-4xl leading-tight">Care for every patient that walks, trots, or is carried through the door</h2>
+        <div class="mt-8 space-y-7">
+          <div class="flex gap-5">
+            <span class="font-slab font-extrabold text-rust text-2xl leading-none pt-1">01</span>
+            <div>
+              <h3 class="font-slab font-bold text-xl">Preventive and wellness care</h3>
+              <p class="text-bark mt-1">Yearly exams, parasite prevention, and vaccinations that keep dogs and cats healthy from kittenhood to their senior years.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-slab font-extrabold text-rust text-2xl leading-none pt-1">02</span>
+            <div>
+              <h3 class="font-slab font-bold text-xl">Surgery and diagnostics</h3>
+              <p class="text-bark mt-1">Spay and neuter, in-house laboratory, digital radiography, and ultrasound for fast, careful answers.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-slab font-extrabold text-rust text-2xl leading-none pt-1">03</span>
+            <div>
+              <h3 class="font-slab font-bold text-xl">Equine services</h3>
+              <p class="text-bark mt-1">Wellness exams, dentistry, lameness work, and reproductive care for the horses of the Upper Peninsula.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY: EQUINE (reversed split) -->
+  <section id="equine" class="py-20 lg:py-28 bg-tan">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <p class="text-rust font-semibold tracking-[0.18em] uppercase text-xs mb-4">Horses, too</p>
+        <h2 class="font-slab font-extrabold text-3xl sm:text-4xl leading-tight">A clinic that makes house calls to the barn</h2>
+        <p class="text-bark mt-5">
+          Dr. Rebecca Vollrath Severn began equine work in 2016, with experience in sports medicine on an elite hunter-jumper circuit and externships at equine hospitals in Florida and Wisconsin. Today she serves horses within a 40-mile radius of Houghton, with monthly trips to Marquette.
+        </p>
+        <p class="text-bark mt-4">
+          That means wellness exams, vaccinations, dentistry, lameness diagnosis, emergency care, and reproductive services, including artificial insemination, all brought to your property.
+        </p>
+        <a href="tel:9064821771" class="inline-flex items-center gap-2 mt-7 bg-ink text-white font-semibold px-6 py-3 rounded-xl hover:bg-bark transition-colors">Ask about equine visits</a>
+      </div>
+      <div class="reveal order-1 lg:order-2">
+        <img src="https://ccvc.cc/wp-content/gallery/ccvc-photos-1/thumbs/thumbs_ccvc-ultrasound1.jpg" alt="Dr. Rebecca Vollrath performing an equine ultrasound at Copper Country Veterinary Clinic" class="w-full h-[420px] object-cover rounded-xl" />
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY (breaks the zigzag) -->
+  <section id="clinic" class="py-20 lg:py-28 bg-cream">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="reveal max-w-2xl">
+        <p class="text-rust font-semibold tracking-[0.18em] uppercase text-xs mb-4">Our clinic</p>
+        <h2 class="font-slab font-extrabold text-3xl sm:text-4xl leading-tight">A new facility, built on more than twenty years of care</h2>
+        <p class="text-bark mt-5">
+          Dr. Rebecca Vollrath Severn started at Copper Country Veterinary Clinic as a high-school assistant and purchased the practice in 2019. The team moved into a brand-new building three miles outside Houghton in June of 2021, with room for kennels, treatment, surgery, and equine work under one roof.
+        </p>
+      </div>
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://ccvc.cc/wp-content/uploads/2021/12/IMG_2578-scaled-e1639520063112.jpg" alt="Inside the Copper Country Veterinary Clinic treatment area" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://ccvc.cc/wp-content/gallery/ccvc-photos-1/thumbs/thumbs_ccvc-entrance.jpg" alt="Entrance to the Copper Country Veterinary Clinic" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://ccvc.cc/wp-content/gallery/ccvc-photos-1/thumbs/thumbs_ccvc-dogkennels1.jpg" alt="Dog kennels at the clinic" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://ccvc.cc/wp-content/gallery/ccvc-photos-1/thumbs/thumbs_ccvc-treatmentarea1.jpg" alt="Clinic treatment area" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://ccvc.cc/wp-content/gallery/ccvc-photos-1/thumbs/thumbs_ccvc-surgery1.jpg" alt="Surgery suite at the clinic" class="w-full h-56 object-cover rounded-xl reveal" />
+        <img src="https://ccvc.cc/wp-content/uploads/2021/10/ccvcgus.jpg" alt="Gus, a clinic dog at Copper Country Veterinary Clinic" class="w-full h-56 object-cover rounded-xl reveal" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY -->
+  <section class="py-20 lg:py-24 bg-tan">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-5 gap-12 items-center">
+      <div class="lg:col-span-3 reveal">
+        <p class="text-rust font-semibold tracking-[0.18em] uppercase text-xs mb-4">Why locals trust us</p>
+        <blockquote class="font-slab font-bold text-2xl sm:text-3xl leading-snug text-ink">
+          "Copper Country Veterinary Clinic has been serving pets and pet owners in Houghton, Michigan and the surrounding area for more than twenty years."
+        </blockquote>
+        <p class="text-bark mt-4">Copper Country Veterinary Clinic</p>
+      </div>
+      <div class="lg:col-span-2 grid grid-cols-2 gap-6 reveal">
+        <div class="bg-cream rounded-xl p-6">
+          <p class="font-slab font-extrabold text-3xl text-rust">20+</p>
+          <p class="text-bark text-sm mt-1">Years serving Houghton and the UP</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6">
+          <p class="font-slab font-extrabold text-3xl text-rust">2-in-1</p>
+          <p class="text-bark text-sm mt-1">Small animal and equine care</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6">
+          <p class="font-slab font-extrabold text-3xl text-rust">40 mi</p>
+          <p class="text-bark text-sm mt-1">Equine service radius around Houghton</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6">
+          <p class="font-slab font-extrabold text-3xl text-rust">2021</p>
+          <p class="text-bark text-sm mt-1">New clinic facility opened</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="visit" class="bg-rust">
+    <div class="max-w-6xl mx-auto px-5 py-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div>
+        <h2 class="font-slab font-extrabold text-white text-2xl sm:text-3xl">Ready to bring in your animal?</h2>
+        <p class="text-white/90 mt-2">Call the clinic or stop by three miles outside Houghton on M-26.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="tel:9064821771" class="bg-white text-rust font-semibold px-7 py-4 rounded-xl hover:bg-cream transition-colors">Call 906-482-1771</a>
+        <a href="mailto:ccvc@pasty.net" class="border-2 border-white text-white font-semibold px-7 py-4 rounded-xl hover:bg-white/10 transition-colors">Email the clinic</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink text-cream">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <img src="https://ccvc.cc/wp-content/uploads/2019/02/ccvc-logo-big.png" alt="Copper Country Veterinary Clinic logo" class="h-12 w-auto mb-4 brightness-0 invert" />
+        <p class="text-cream/70 text-sm">Mixed-animal veterinary care in Michigan's Upper Peninsula.</p>
+      </div>
+      <div>
+        <h3 class="font-slab font-bold text-lg mb-4">Practice</h3>
+        <ul class="space-y-2 text-sm text-cream/80">
+          <li><a href="#services" class="hover:text-rust transition-colors">Services</a></li>
+          <li><a href="#equine" class="hover:text-rust transition-colors">Equine</a></li>
+          <li><a href="#clinic" class="hover:text-rust transition-colors">Our Clinic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-slab font-bold text-lg mb-4">Visit</h3>
+        <ul class="space-y-2 text-sm text-cream/80">
+          <li>45815 M-26, Atlantic Mine, MI 49905</li>
+          <li><a href="tel:9064821771" class="hover:text-rust transition-colors">906-482-1771</a></li>
+          <li><a href="mailto:ccvc@pasty.net" class="hover:text-rust transition-colors">ccvc@pasty.net</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-slab font-bold text-lg mb-4">Connect</h3>
+        <ul class="space-y-2 text-sm text-cream/80">
+          <li><a href="https://www.facebook.com/CCVetC/" class="hover:text-rust transition-colors">Facebook</a></li>
+          <li><a href="#visit" class="hover:text-rust transition-colors">CareCredit</a></li>
+          <li><a href="#visit" class="hover:text-rust transition-colors">Scratchpay</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/15">
+      <div class="max-w-6xl mx-auto px-5 py-6 text-sm text-cream/60">
+        © 2026 Copper Country Veterinary Clinic. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in-view'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
