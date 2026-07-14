@@ -9,6 +9,8 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Metz Mortuary](https://jared-the-automator.github.io/redesign-portfolio/metzmortuary.com/) | Family-owned mortuary, serving since 1891 | York & Henderson, NE |
+| --- | --- | --- |
 | [Town & Country Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/townncountryvet.com/) | Full-service small-animal veterinary hospital | Portland, OR |
 | --- | --- | --- |
 | [Jack Shirk Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/jackshirkflyfishing.com/) | Guided fly fishing, fly tying and classes | Tri-Cities, TN |
