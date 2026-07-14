@@ -10,6 +10,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [Equine Discovery Center](https://jared-the-automator.github.io/redesign-portfolio/equinediscoverycenter.com/) | Equine education, riding camps & lessons | New Hampshire |
 | [Family's Choice Cremation](https://jared-the-automator.github.io/redesign-portfolio/familyschoicecremation.com/) | Direct cremation, on-site crematory | Warren, RI |
 | --- | --- | --- |
 | [Rocky Knoll Large Animal Veterinary](https://jared-the-automator.github.io/redesign-portfolio/rockyknollvet.com/) | Large-animal ambulatory veterinary | Dublin, OH |
