@@ -225,3 +225,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Grace Memorial Chapel and Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/gracemortuary.com/) | Funeral home & mortuary | Inglewood, CA |
 | [Marotti Burns Funeral & Cremation Services](https://jared-the-automator.github.io/redesign-portfolio/marottiburnsfuneralhome.com/) | Funeral & cremation services | New Jersey |
 | [Owl Creek Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/owlcreekvet.com/) | Mixed animal veterinary clinic | Thermopolis & Meeteetse, WY |
+| [Joldersma & Klein Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/joldersma-klein.com/) | Family funeral home | Kalamazoo, MI |
