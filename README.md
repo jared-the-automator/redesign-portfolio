@@ -9,6 +9,8 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 ---
 
 | Business | Niche | Location |
+| [Elizabeth Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/elizabethanimalhospital.com/) | Family-owned small-animal veterinary hospital | Elizabeth, CO |
+| --- | --- | --- |
 | [Mel and Sons Oil](https://jared-the-automator.github.io/redesign-portfolio/melandsonsoil.com/) | Heating oil delivery and burner service | Wakefield, MA |
 | --- | --- | --- |
 | [Metz Mortuary](https://jared-the-automator.github.io/redesign-portfolio/metzmortuary.com/) | Family-owned mortuary, serving since 1891 | York & Henderson, NE |
