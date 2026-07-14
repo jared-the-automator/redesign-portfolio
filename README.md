@@ -267,5 +267,6 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Harms Oil Company](https://jared-the-automator.github.io/redesign-portfolio/harmsoil.com/) | Fuel, propane and lubricant delivery, family-owned since 1976 | Aberdeen, SD |
 | [Eastern Propane & Oil](https://jared-the-automator.github.io/redesign-portfolio/eastern.com/) | Propane and heating oil delivery, family-owned since 1932 | NH, ME, MA, VT & RI |
 | --- | --- |
-| [Copper Country Veterinary Clinic](https://jared-the-automator.github.io/redesign-portfolio/ccvc.cc/) | Mixed-animal veterinary clinic (companion and equine) | Atlantic Mine, MI |
+| [Copper Country Veterinary Clinic](https://jared-the-automator.github.io/redesign-portfolio/ccvc.cc/) | Mixed-animal veterinary clinic (companion and equine) | Atlantic Mine, MI || [Baldwin Brothers Funeral & Cremation Society](https://jared-the-automator.github.io/redesign-portfolio/baldwincremation.com/) | Family-owned cremation & funeral society, serving Central & Southwest Florida | Central & Southwest Florida |
+
 | --- | --- |
