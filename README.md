@@ -227,3 +227,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Owl Creek Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/owlcreekvet.com/) | Mixed animal veterinary clinic | Thermopolis & Meeteetse, WY |
 | [Joldersma & Klein Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/joldersma-klein.com/) | Family funeral home | Kalamazoo, MI |
 | [Hayes Equine Veterinary Services](https://jared-the-automator.github.io/redesign-portfolio/hayesequinevet.com/) | Equine veterinary (dentistry, mobile & x-rays) | Denison, TX |
+| [Albertson's Mortuary](https://jared-the-automator.github.io/redesign-portfolio/albertsonsmortuary.com/) | Funeral home & mortuary | Indianapolis, IN |
