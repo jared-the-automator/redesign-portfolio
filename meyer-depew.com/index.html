@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meyer &amp; Depew | NJ Heating, Cooling &amp; HVAC Service Since 1953</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#100d0a',
+        panel: '#1c1812',
+        amber: '#e0a23b',
+        amber2: '#f2c067',
+        cream: '#f3ede1',
+        muted: '#a99e8c'
+      },
+      fontFamily: {
+        display: ['"Barlow Condensed"','sans-serif'],
+        body: ['Inter','sans-serif']
+      },
+      borderRadius: { xl: '12px' }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, sans-serif; background:#100d0a; color:#f3ede1; }
+  .font-display { font-family:'Barlow Condensed', sans-serif; }
+  .reveal { opacity:0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity:1; transform:none; }
+  .hero-img { background-image:url('https://www.meyer-depew.com/wp-content/uploads/2024/08/Meyer-Depew_air-conditioning-heating-generator-ventilation-HVAC.webp'); }
+  ::selection { background:#e0a23b; color:#100d0a; }
+</style>
+</head>
+<body class="bg-ink text-cream font-body">
+<header class="fixed top-0 inset-x-0 z-50 bg-ink/90 backdrop-blur border-b border-white/5">
+  <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+      <img src="https://www.meyer-depew.com/wp-content/themes/mdp/images/mdp_logo.png" alt="Meyer and Depew" class="h-9 w-auto">
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-sm font-medium text-cream/80">
+      <a href="#services" class="hover:text-amber transition">Services</a>
+      <a href="#story" class="hover:text-amber transition">Our Story</a>
+      <a href="#gallery" class="hover:text-amber transition">Gallery</a>
+      <a href="#why" class="hover:text-amber transition">Why Us</a>
+    </div>
+    <a href="tel:9082722100" class="bg-amber text-ink font-display font-bold text-lg px-5 py-2 rounded-xl hover:bg-amber2 transition">908-272-2100</a>
+  </nav>
+</header>
+
+<section class="relative min-h-[100dvh] flex items-end">
+  <div class="absolute inset-0 hero-img bg-cover bg-center"></div>
+  <div class="absolute inset-0" style="background:linear-gradient(90deg, rgba(13,11,8,0.92) 0%, rgba(13,11,8,0.78) 45%, rgba(13,11,8,0.55) 100%);"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-5 w-full pb-20 pt-32">
+    <p class="font-display uppercase tracking-[0.2em] text-amber text-sm font-semibold mb-4">Kenilworth, NJ. Serving Greater NJ</p>
+    <h1 class="font-display font-extrabold leading-[0.95] text-cream text-6xl md:text-8xl max-w-3xl">Honest, Expert Heating &amp; Cooling for Over 70 Years.</h1>
+    <p class="mt-5 text-lg text-cream/85 max-w-xl">Family-run HVAC service in New Jersey since 1953. Heating, cooling, generators, and air quality, done right the first time.</p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="tel:9082722100" class="bg-amber text-ink font-display font-bold text-xl px-7 py-3 rounded-xl hover:bg-amber2 transition">Call 908-272-2100</a>
+      <a href="#services" class="border border-cream/30 text-cream font-display font-bold text-xl px-7 py-3 rounded-xl hover:border-amber hover:text-amber transition">See Services</a>
+    </div>
+  </div>
+</section>
+<section id="services" class="max-w-6xl mx-auto px-5 py-24">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl leading-tight">Full-Service HVAC, From One Trusted Crew</h2>
+      <p class="mt-5 text-muted text-lg">Install, repair, and maintenance for furnaces, boilers, central air, ductless systems, generators, and indoor air quality. One number for your whole building.</p>
+      <div class="mt-8 space-y-6">
+        <div class="flex gap-4">
+          <span class="font-display font-extrabold text-amber text-2xl">01</span>
+          <div><h3 class="font-display font-bold text-2xl">Heating</h3><p class="text-muted">Furnace and boiler repair, replacement, and seasonal tune-ups that keep homes warm through a NJ winter.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-extrabold text-amber text-2xl">02</span>
+          <div><h3 class="font-display font-bold text-2xl">Cooling</h3><p class="text-muted">Central air and ductless installation, plus fast AC repair when the summer heat hits.</p></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-extrabold text-amber text-2xl">03</span>
+          <div><h3 class="font-display font-bold text-2xl">Generators &amp; Air Quality</h3><p class="text-muted">Backup power and indoor air purification, so comfort and safety never depend on the grid.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <img src="https://www.meyer-depew.com/wp-content/uploads/2024/11/meyer-depew-furnaces-boilers-repair-installation-nj.webp" alt="Meyer and Depew technician servicing a furnace and boiler" class="rounded-xl w-full h-[520px] object-cover">
+    </div>
+  </div>
+</section>
+
+<section class="bg-panel">
+  <div class="max-w-6xl mx-auto px-5 py-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal order-2 md:order-1">
+        <img src="https://www.meyer-depew.com/wp-content/uploads/2024/05/meyer-depew-residential-hvac-nj.jpg" alt="Meyer and Depew residential HVAC installation in a New Jersey home" class="rounded-xl w-full h-[520px] object-cover">
+      </div>
+      <div class="reveal order-1 md:order-2">
+        <h2 class="font-display font-extrabold text-4xl md:text-5xl leading-tight">Local Techs Who Stand Behind the Work</h2>
+        <p class="mt-5 text-muted text-lg">Every job is done by Meyer &amp; Depew's own licensed technicians, not a subcontractor. From the first call to the final walkthrough, you deal with people who live and work in your community.</p>
+        <ul class="mt-6 space-y-3 text-cream/90">
+          <li class="flex gap-3"><span class="text-amber font-display font-bold">&#10003;</span> 24/7 emergency service, 365 days a year</li>
+          <li class="flex gap-3"><span class="text-amber font-display font-bold">&#10003;</span> Upfront pricing before any work begins</li>
+          <li class="flex gap-3"><span class="text-amber font-display font-bold">&#10003;</span> Service plans that catch problems early</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="story" class="max-w-6xl mx-auto px-5 py-24">
+  <div class="reveal max-w-2xl">
+    <p class="font-display uppercase tracking-[0.18em] text-amber text-sm font-semibold mb-3">Seven Decades in New Jersey</p>
+    <h2 class="font-display font-extrabold text-4xl md:text-5xl leading-tight">The Same Family Name Since 1953</h2>
+    <p class="mt-5 text-muted text-lg">G. Depew started the company in Hillside in 1953. Bob Ring came on as a sheet metal worker in 1961 and built his way up to technician and, eventually, owner. Today Robert C. Ring leads the crew as a Master HVACR Contractor, Lic. No. 485.</p>
+  </div>
+  <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
+    <img src="https://www.meyer-depew.com/wp-content/uploads/2024/04/commercial-rooftop-HVAC-replacement-experts-NJ_meyer-and-depew.jpg" alt="Commercial rooftop HVAC replacement in New Jersey" class="reveal rounded-xl w-full h-56 object-cover">
+    <img src="https://www.meyer-depew.com/wp-content/uploads/2024/04/commercial-indoor-air-quality-NJ_meyer-and-depew.jpg" alt="Commercial indoor air quality service" class="reveal rounded-xl w-full h-56 object-cover">
+    <img src="https://www.meyer-depew.com/wp-content/uploads/2024/05/meyer-depew-satisfaction-priority.jpg" alt="Meyer and Depew technician on a service call" class="reveal rounded-xl w-full h-56 object-cover">
+    <img src="https://www.meyer-depew.com/wp-content/uploads/2025/03/tom_hero-desktop-1024x618.png" alt="Meyer and Depew team member" class="reveal rounded-xl w-full h-56 object-cover">
+    <img src="https://www.meyer-depew.com/wp-content/uploads/2022/05/mm-help-save-a-life.jpg" alt="Meyer and Depew giving back to the community" class="reveal rounded-xl w-full h-56 object-cover">
+    <img src="https://www.meyer-depew.com/wp-content/uploads/2024/11/meyer-depew-furnaces-boilers-repair-installation-nj.webp" alt="Furnace and boiler repair and installation" class="reveal rounded-xl w-full h-56 object-cover">
+  </div>
+</section>
+
+<section id="why" class="bg-panel">
+  <div class="max-w-6xl mx-auto px-5 py-24">
+    <div class="reveal max-w-2xl">
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl">Why Homeowners Call Meyer &amp; Depew</h2>
+      <p class="mt-4 text-muted text-lg">Three generations of New Jersey homes and businesses have kept the same number on the fridge.</p>
+    </div>
+    <div class="mt-12 grid md:grid-cols-4 gap-6">
+      <div class="reveal bg-ink rounded-xl p-7 border border-white/5">
+        <p class="font-display font-extrabold text-amber text-5xl">70+</p>
+        <p class="mt-2 text-muted">Years serving Greater NJ, since 1953.</p>
+      </div>
+      <div class="reveal bg-ink rounded-xl p-7 border border-white/5">
+        <p class="font-display font-extrabold text-amber text-5xl">A+</p>
+        <p class="mt-2 text-muted">Rated A+ by the BBB for trusted service.</p>
+      </div>
+      <div class="reveal bg-ink rounded-xl p-7 border border-white/5">
+        <p class="font-display font-extrabold text-amber text-5xl">24/7</p>
+        <p class="mt-2 text-muted">Emergency heating and cooling, every day of the year.</p>
+      </div>
+      <div class="reveal bg-ink rounded-xl p-7 border border-white/5">
+        <p class="font-display font-extrabold text-amber text-5xl">485</p>
+        <p class="mt-2 text-muted">Master HVACR Contractor license number, on every job.</p>
+      </div>
+    </div>
+    <p class="reveal mt-10 text-cream/80 text-lg max-w-3xl">"Robert C. Ring, Master HVACR Contractor, Lic. No. 485. Meyer &amp; Depew, 309 Lafayette Avenue, Kenilworth, NJ." That line has stood at the bottom of the site for years. It is the kind of proof most contractors hide.</p>
+  </div>
+</section>
+<section class="bg-amber text-ink">
+  <div class="max-w-6xl mx-auto px-5 py-16 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl">Ready for Honest HVAC Service?</h2>
+      <p class="mt-2 text-ink/80 text-lg font-medium">Call today or schedule a service call. Same-day appointments available.</p>
+    </div>
+    <a href="tel:9082722100" class="bg-ink text-cream font-display font-bold text-2xl px-8 py-4 rounded-xl hover:bg-black transition whitespace-nowrap">908-272-2100</a>
+  </div>
+</section>
+
+<footer class="bg-ink border-t border-white/5">
+  <div class="max-w-6xl mx-auto px-5 py-14 grid md:grid-cols-4 gap-10">
+    <div>
+      <img src="https://www.meyer-depew.com/wp-content/themes/mdp/images/mdp_logo.png" alt="Meyer and Depew" class="h-10 w-auto mb-4">
+      <p class="text-muted text-sm">Family-run heating, cooling, and HVAC service in New Jersey since 1953.</p>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-lg text-cream mb-3">Services</h3>
+      <ul class="space-y-2 text-muted text-sm">
+        <li>Heating</li><li>Cooling</li><li>Generators</li><li>Indoor Air Quality</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-lg text-cream mb-3">Company</h3>
+      <ul class="space-y-2 text-muted text-sm">
+        <li>Our Story</li><li>Our People</li><li>Service Plans</li><li>Careers</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-lg text-cream mb-3">Contact</h3>
+      <ul class="space-y-2 text-muted text-sm">
+        <li>309 Lafayette Avenue, Kenilworth, NJ 07033</li>
+        <li><a href="tel:9082722100" class="hover:text-amber">908-272-2100</a></li>
+        <li><a href="mailto:ClientService@meyer-depew.com" class="hover:text-amber">ClientService@meyer-depew.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-5 py-5 text-muted text-xs flex flex-col md:flex-row justify-between gap-2">
+      <span>&copy; 2026 Meyer &amp; Depew. All Rights Reserved.</span>
+      <span>Robert C. Ring, Master HVACR Contractor, Lic. No. 485</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
