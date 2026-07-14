@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bailey Propane | Propane Delivery in Bailey, Colorado</title>
+  <meta name="description" content="Bailey Propane delivers residential and commercial propane across the Highway 285 corridor in Park County, Colorado. Family owned for more than 64 years. Call 303-838-5411." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#1e6091',
+            accent2: '#155e8a',
+            ink: '#0f172a',
+            chalk: '#f6f5f1',
+            stonebg: '#e9e6e0',
+            panel: '#111827'
+          },
+          fontFamily: {
+            display: ['"Cabinet Grotesk"', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Cabinet Grotesk', sans-serif; }
+    [data-reveal] { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+    [data-reveal].in { opacity: 1; transform: none; }
+    .hero-scrim {
+      background:
+        linear-gradient(90deg, rgba(15,23,42,0.82) 0%, rgba(15,23,42,0.62) 55%, rgba(15,23,42,0.40) 100%),
+        rgba(15,23,42,0.55);
+    }
+  </style>
+</head>
+<body class="bg-chalk text-ink font-body antialiased">
+
+  <!-- NAV -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-chalk/85 backdrop-blur border-b border-stonebg">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://baileypropane.com/wp-content/uploads/2018/03/cropped-small-logo-270x270.jpg" alt="Bailey Propane logo" class="h-10 w-10 rounded-2xl object-contain" />
+        <span class="font-display text-xl font-extrabold tracking-tight">Bailey<span class="text-accent"> Propane</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-ink/70">
+        <a href="#services" class="hover:text-accent transition">Services</a>
+        <a href="#story" class="hover:text-accent transition">Our Story</a>
+        <a href="#safety" class="hover:text-accent transition">Safety</a>
+        <a href="#reviews" class="hover:text-accent transition">Reviews</a>
+        <a href="#contact" class="hover:text-accent transition">Contact</a>
+      </nav>
+      <a href="mailto:info@baileypropane.com" class="hidden sm:inline-flex bg-accent hover:bg-accent2 text-white text-sm font-semibold px-5 py-2.5 rounded-2xl transition">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-end">
+    <img src="https://baileypropane.com/wp-content/uploads/2012/01/cropped-BP_truck.jpg" alt="Bailey Propane delivery truck on the Highway 285 corridor in Park County, Colorado" class="absolute inset-0 h-full w-full object-cover" />
+    <div class="absolute inset-0 hero-scrim"></div>
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-5 pb-20 md:pb-28">
+      <p class="text-accent font-semibold tracking-[0.22em] uppercase text-xs md:text-sm mb-5">Park County, Colorado</p>
+      <h1 class="font-display font-extrabold text-white leading-[0.95] text-5xl md:text-7xl max-w-3xl">
+        Propane delivered the Bailey way for more than 64 years
+      </h1>
+      <p class="text-white/85 text-lg md:text-xl mt-6 max-w-xl">
+        Locally owned and operated, serving the Highway 285 corridor from Bailey to Fairplay. Call 303-838-5411 and we will handle the rest.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="mailto:info@baileypropane.com" class="bg-accent hover:bg-accent2 text-white font-semibold px-7 py-3.5 rounded-2xl transition">Get a Quote</a>
+        <a href="tel:3038385411" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-7 py-3.5 rounded-2xl border border-white/30 transition">Call 303-838-5411</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY PRODUCT SECTION (asymmetric split, numbered features) -->
+  <section id="services" class="py-20 md:py-28 bg-chalk">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+      <div data-reveal class="order-2 md:order-1">
+        <p class="text-accent font-semibold tracking-[0.18em] uppercase text-xs mb-4">What we do</p>
+        <h2 class="font-display font-extrabold text-3xl md:text-5xl leading-[1.02] mb-7">
+          Propane that shows up before the cold does
+        </h2>
+        <div class="space-y-7">
+          <div class="flex gap-5">
+            <span class="font-display font-extrabold text-accent text-2xl shrink-0 w-12">01</span>
+            <div>
+              <h3 class="font-semibold text-lg">Residential delivery</h3>
+              <p class="text-ink/70 mt-1.5">Automatic and will-call fills across the Highway 285 corridor, from Bailey to Fairplay and the South Park valley.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-extrabold text-accent text-2xl shrink-0 w-12">02</span>
+            <div>
+              <h3 class="font-semibold text-lg">Tank rental and ownership</h3>
+              <p class="text-ink/70 mt-1.5">Whether you own your tank or lease one from us, we set it up and keep it running through the winter.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-extrabold text-accent text-2xl shrink-0 w-12">03</span>
+            <div>
+              <h3 class="font-semibold text-lg">New builds and switches</h3>
+              <p class="text-ink/70 mt-1.5">Building a new home or leaving another supplier. We make the change simple, with no gap in your heat.</p>
+            </div>
+          </div>
+        </div>
+        <a href="mailto:info@baileypropane.com" class="inline-flex mt-9 bg-accent hover:bg-accent2 text-white font-semibold px-7 py-3.5 rounded-2xl transition">Ask about your tank</a>
+      </div>
+      <div data-reveal class="order-1 md:order-2">
+        <img src="https://baileypropane.com/wp-content/uploads/2018/02/propane-service.jpg" alt="Bailey Propane technician servicing a residential propane tank" class="w-full rounded-2xl object-cover aspect-[4/5] shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split, different angle) -->
+  <section class="py-20 md:py-28 bg-stonebg">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+      <div data-reveal>
+        <img src="https://baileypropane.com/wp-content/uploads/2012/01/old-propane.jpg" alt="An older Bailey Propane tank and delivery setup from the company's early years" class="w-full rounded-2xl object-cover aspect-[4/5] shadow-xl" />
+      </div>
+      <div data-reveal>
+        <p class="text-accent font-semibold tracking-[0.18em] uppercase text-xs mb-4">Why families stay</p>
+        <h2 class="font-display font-extrabold text-3xl md:text-5xl leading-[1.02] mb-7">
+          The same crew, the same number, for decades
+        </h2>
+        <p class="text-ink/70 text-lg leading-relaxed mb-5">
+          Our customers tell us the difference is simple. When you call Bailey Propane, you reach people who know your name, your tank, and your driveway. No call centers, no two-week waits, no surprises on the bill.
+        </p>
+        <p class="text-ink/70 text-lg leading-relaxed">
+          That is why many of our accounts have been with us for fifteen, eighteen, even twenty years. We would rather earn the next delivery than the next complaint.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- BRAND STORY / GALLERY (full-width, breaks the zigzag) -->
+  <section id="story" class="py-20 md:py-28 bg-chalk">
+    <div class="max-w-6xl mx-auto px-5">
+      <div data-reveal class="max-w-2xl mb-12">
+        <p class="text-accent font-semibold tracking-[0.18em] uppercase text-xs mb-4">Our story</p>
+        <h2 class="font-display font-extrabold text-3xl md:text-5xl leading-[1.02]">
+          A Park County propane company, run by the Kingery family
+        </h2>
+        <p class="text-ink/70 text-lg leading-relaxed mt-6">
+          For more than 64 years the Kingery family has served the Park County area with propane service. We are the largest locally owned and operated propane company on the Highway 285 corridor, and we still believe customer service comes first.
+        </p>
+      </div>
+      <div data-reveal class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://baileypropane.com/wp-content/uploads/2012/01/cropped-BP_truck.jpg" alt="Bailey Propane delivery truck" class="w-full h-52 object-cover rounded-2xl" />
+        <img src="https://baileypropane.com/wp-content/uploads/2012/01/old-propane.jpg" alt="Vintage Bailey Propane tank" class="w-full h-52 object-cover rounded-2xl" />
+        <img src="https://baileypropane.com/wp-content/uploads/2018/02/propane-service.jpg" alt="Technician servicing a propane tank" class="w-full h-52 object-cover rounded-2xl" />
+        <img src="https://baileypropane.com/wp-content/uploads/2018/02/safety-first.jpg" alt="Propane safety first" class="w-full h-52 object-cover rounded-2xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS / CREDIBILITY -->
+  <section id="reviews" class="py-20 md:py-28 bg-panel text-white">
+    <div class="max-w-6xl mx-auto px-5">
+      <div data-reveal class="flex flex-wrap items-end justify-between gap-6 mb-12">
+        <h2 class="font-display font-extrabold text-3xl md:text-5xl max-w-2xl leading-[1.02]">
+          What 18-year customers say
+        </h2>
+        <div class="flex flex-wrap gap-3">
+          <span class="text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-2xl bg-white/10">A+ Better Business Bureau</span>
+          <span class="text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-2xl bg-white/10">South Park Chamber</span>
+          <span class="text-xs font-semibold tracking-wide uppercase px-4 py-2 rounded-2xl bg-white/10">Workplace Safety PCC Certified</span>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <figure data-reveal class="bg-white/5 border border-white/10 rounded-2xl p-7">
+          <blockquote class="text-white/90 leading-relaxed">"We had tried a couple others before Bailey Propane. Since switching eighteen years ago we have not experienced any of the nonsense. They are an honest company that simply provides great service."</blockquote>
+          <figcaption class="mt-5 font-semibold text-accent2">James, customer 18 years</figcaption>
+        </figure>
+        <figure data-reveal class="bg-white/5 border border-white/10 rounded-2xl p-7">
+          <blockquote class="text-white/90 leading-relaxed">"The team at Bailey Propane are the absolute best. The customer service is excellent and the delivery guys are great. It is wonderful doing business with such a good group of people."</blockquote>
+          <figcaption class="mt-5 font-semibold text-accent2">Susan L. Fairweather</figcaption>
+        </figure>
+        <figure data-reveal class="bg-white/5 border border-white/10 rounded-2xl p-7">
+          <blockquote class="text-white/90 leading-relaxed">"After calling a couple propane companies, Bailey by far has the best customer service and prices. Our delivery driver widened the path through the snow just to reach our tank."</blockquote>
+          <figcaption class="mt-5 font-semibold text-accent2">Emily</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="contact" class="bg-accent text-white py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+      <div data-reveal>
+        <h2 class="font-display font-extrabold text-3xl md:text-4xl leading-[1.05] max-w-xl">
+          Ready before the next cold snap?
+        </h2>
+        <p class="text-white/85 text-lg mt-3">Tell us about your tank and we will send a straight quote, no pressure.</p>
+      </div>
+      <div class="flex flex-wrap gap-4 shrink-0">
+        <a href="mailto:info@baileypropane.com" class="bg-white text-accent hover:bg-chalk font-semibold px-7 py-3.5 rounded-2xl transition">Get a Quote</a>
+        <a href="tel:3038385411" class="bg-white/15 hover:bg-white/25 text-white font-semibold px-7 py-3.5 rounded-2xl border border-white/30 transition">303-838-5411</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-panel text-white/70 py-14">
+    <div class="max-w-6xl mx-auto px-5 grid gap-10 md:grid-cols-4">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="https://baileypropane.com/wp-content/uploads/2018/03/cropped-small-logo-270x270.jpg" alt="Bailey Propane logo" class="h-11 w-11 rounded-2xl object-contain bg-white/10" />
+          <span class="font-display text-lg font-extrabold text-white">Bailey Propane</span>
+        </div>
+        <p class="text-sm leading-relaxed">Family owned propane service on the Highway 285 corridor, Park County, Colorado.</p>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wide mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li>PO Box 157, Bailey, CO 80421</li>
+          <li><a href="tel:3038385411" class="hover:text-accent2 transition">303-838-5411</a></li>
+          <li><a href="mailto:info@baileypropane.com" class="hover:text-accent2 transition">info@baileypropane.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wide mb-4">Explore</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="hover:text-accent2 transition">Services</a></li>
+          <li><a href="#story" class="hover:text-accent2 transition">Our Story</a></li>
+          <li><a href="#safety" class="hover:text-accent2 transition">Safety</a></li>
+          <li><a href="#reviews" class="hover:text-accent2 transition">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wide mb-4">Local members</h3>
+        <ul class="space-y-2 text-sm">
+          <li>South Park Chamber of Commerce</li>
+          <li>Platte Canyon Area Chamber</li>
+          <li>A+ Better Business Bureau</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-5 mt-12 pt-6 border-t border-white/10 text-xs text-white/50">
+      © 2026 Bailey Propane LLC. Family owned and serving Park County.
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('[data-reveal]').forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
