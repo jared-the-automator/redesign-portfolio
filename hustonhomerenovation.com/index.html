@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huston's Home Renovations | Kennebunk, Maine</title>
+<meta name="description" content="Kitchens, baths, and whole-home renovations for Southern Maine. Huston's Home Renovations, on Main Street in Kennebunk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Karla:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          pine: {
+            950: '#0E211D',
+            900: '#123028',
+            800: '#164A44',
+            700: '#1B5E56',
+            600: '#237268',
+          },
+          bone: '#F5F3EA',
+          coral: {
+            600: '#C6532F',
+            500: '#D2603F',
+            400: '#DE7B57',
+          },
+          ink: '#14201D',
+        },
+        fontFamily: {
+          display: ['"Big Shoulders Display"', 'sans-serif'],
+          body: ['Karla', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #F5F3EA; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  ::selection { background: #D2603F; color: #F5F3EA; }
+</style>
+</head>
+<body class="font-body text-ink antialiased">
+
+<!-- NAV -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-bone/90 backdrop-blur-sm border-b border-ink/10">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="#top" class="font-display font-bold text-xl md:text-2xl tracking-tight text-pine-900 leading-none">
+      HUSTON'S<span class="text-coral-500">.</span><br class="md:hidden">
+      <span class="text-sm md:text-base font-body font-normal tracking-wide text-ink/70">Home Renovations</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-10 text-sm font-medium tracking-wide">
+      <a href="#work" class="hover:text-coral-600 transition-colors">The Work</a>
+      <a href="#about" class="hover:text-coral-600 transition-colors">About</a>
+      <a href="#contact" class="hover:text-coral-600 transition-colors">Contact</a>
+    </nav>
+    <a href="tel:2072050219" class="hidden sm:inline-flex items-center gap-2 bg-pine-800 hover:bg-pine-700 text-bone px-5 py-2.5 rounded-sm text-sm font-semibold tracking-wide transition-colors">
+      (207) 205-0219
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="relative pt-20 bg-pine-950 overflow-hidden">
+    <div class="max-w-[1400px] mx-auto grid md:grid-cols-[1.05fr_1fr] min-h-[92dvh] md:min-h-[86dvh]">
+      <div class="relative z-10 flex flex-col justify-center px-6 md:px-10 py-16 md:py-0 order-2 md:order-1">
+        <p class="reveal text-coral-400 font-semibold tracking-[0.2em] text-xs uppercase mb-6">Kennebunk, Maine · Serving Southern Maine</p>
+        <h1 class="reveal reveal-delay-1 font-display font-extrabold text-bone text-[13vw] md:text-[4.6vw] leading-[0.92] tracking-tight mb-8">
+          Kitchens, baths,<br>and whole homes.<br><span class="text-coral-500">Renovated by hand.</span>
+        </h1>
+        <p class="reveal reveal-delay-2 text-bone/75 text-lg leading-relaxed max-w-md mb-10">
+          Huston's Home Renovations does the real work: gutting old bathrooms, framing new rooms, and building kitchens people actually want to cook in, for homes across Southern Maine.
+        </p>
+        <div class="reveal reveal-delay-3 flex flex-wrap items-center gap-4">
+          <a href="tel:2072050219" class="inline-flex items-center gap-2 bg-coral-500 hover:bg-coral-600 text-bone px-7 py-3.5 rounded-sm font-semibold tracking-wide transition-colors">
+            Call (207) 205-0219
+          </a>
+          <a href="#work" class="inline-flex items-center gap-2 text-bone/80 hover:text-bone px-2 py-3.5 font-medium tracking-wide border-b border-bone/30 hover:border-bone transition-colors">
+            See the work
+          </a>
+        </div>
+      </div>
+      <div class="relative order-1 md:order-2 h-[42vh] md:h-auto">
+        <img src="assets/web/living-room-finished.jpg" alt="Finished living room renovation by Huston's Home Renovations, with wood ceiling, exposed beam, and large windows" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-pine-950 via-pine-950/10 to-transparent md:from-pine-950/40 md:via-transparent md:to-transparent"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="bg-bone border-b border-ink/10">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-10 py-8 flex flex-wrap gap-x-12 gap-y-4 items-center justify-between text-sm">
+      <div class="flex items-center gap-2 text-ink/70">
+        <svg class="w-4 h-4 text-coral-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        19 Main Street, Kennebunk, ME
+      </div>
+      <div class="flex items-center gap-2 text-ink/70">
+        <svg class="w-4 h-4 text-coral-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Junehuston67@gmail.com
+      </div>
+      <div class="font-medium text-ink tracking-wide">Kitchens &nbsp;&middot;&nbsp; Baths &nbsp;&middot;&nbsp; Full Renovations</div>
+    </div>
+  </section>
+
+  <!-- KITCHEN BEFORE/AFTER : HERO FEATURE -->
+  <section id="work" class="bg-pine-950 py-24 md:py-32">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+      <div class="reveal max-w-2xl mb-14">
+        <p class="text-coral-400 font-semibold tracking-[0.2em] text-xs uppercase mb-4">See It For Yourself</p>
+        <h2 class="font-display font-bold text-bone text-4xl md:text-6xl leading-[0.95] tracking-tight mb-6">Same footprint.<br>Different room.</h2>
+        <p class="text-bone/70 text-lg leading-relaxed">A full kitchen renovation for a Southern Maine home: new cabinetry, a redesigned island, and a layout built around how the family actually cooks.</p>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <img src="assets/web/kitchen-before-after.jpg" alt="Before and after of a full kitchen renovation by Huston's Home Renovations, showing the original oak kitchen and the finished white kitchen with island" class="w-full h-auto rounded-sm shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]">
+      </div>
+    </div>
+  </section>
+
+  <!-- BATHROOM BEFORE/AFTER -->
+  <section class="bg-bone py-24 md:py-32">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+      <div class="reveal max-w-2xl mb-14">
+        <p class="text-coral-600 font-semibold tracking-[0.2em] text-xs uppercase mb-4">Down To The Studs</p>
+        <h2 class="font-display font-bold text-ink text-4xl md:text-6xl leading-[0.95] tracking-tight">Then built back better.</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+        <div class="reveal reveal-delay-1 relative">
+          <img src="assets/web/bathroom-before.jpg" alt="Bathroom renovation in progress, stripped down to the studs and subfloor" class="w-full h-[480px] object-cover rounded-sm">
+          <span class="absolute top-4 left-4 bg-ink/80 text-bone text-xs font-semibold tracking-[0.15em] uppercase px-3 py-1.5 rounded-sm">Before</span>
+        </div>
+        <div class="reveal reveal-delay-2 relative">
+          <img src="assets/web/bathroom-finished.jpg" alt="Finished bathroom renovation with tiled walls, hexagon tile floor, and new soaking tub" class="w-full h-[480px] object-cover rounded-sm">
+          <span class="absolute top-4 left-4 bg-coral-500 text-bone text-xs font-semibold tracking-[0.15em] uppercase px-3 py-1.5 rounded-sm">After</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE WORK / SUNROOM -->
+  <section class="bg-pine-900 py-24 md:py-32">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+      <div class="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-16 items-center">
+        <div class="reveal order-2 md:order-1">
+          <p class="text-coral-400 font-semibold tracking-[0.2em] text-xs uppercase mb-4">Structural Work</p>
+          <h2 class="font-display font-bold text-bone text-4xl md:text-5xl leading-[0.95] tracking-tight mb-6">Framed, insulated,<br>built to last.</h2>
+          <p class="text-bone/70 text-lg leading-relaxed">Not every job is a finished photo. A lot of renovation work happens in the framing, the insulation, and the details nobody sees once the walls close up. That work still has to be right.</p>
+        </div>
+        <div class="reveal reveal-delay-1 order-1 md:order-2">
+          <img src="assets/web/sunroom-framing.jpg" alt="Interior framing and spray foam insulation for a new sunroom addition" class="w-full h-[440px] md:h-[560px] object-cover rounded-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS / COMMUNITY -->
+  <section class="bg-bone py-24 md:py-28">
+    <div class="max-w-3xl mx-auto px-6 md:px-10 text-center">
+      <p class="reveal text-coral-600 font-semibold tracking-[0.2em] text-xs uppercase mb-8">Known Around Kennebunk</p>
+      <blockquote class="reveal reveal-delay-1 font-display text-2xl md:text-4xl leading-tight text-ink tracking-tight mb-8">
+        &ldquo;...Seamus is all wagging tail and cuddles, especially for June, our general contractor.&rdquo;
+      </blockquote>
+      <p class="reveal reveal-delay-2 text-ink/60 text-sm tracking-wide">
+        Laura Dolce, Director of the Kennebunk-Kennebunkport &amp; Arundel Chamber of Commerce, writing about her own renovation in a 2023 community column.
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-ink py-24 md:py-32">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+      <div class="grid md:grid-cols-[1fr_1.1fr] gap-10 md:gap-16 items-center">
+        <div class="reveal">
+          <img src="assets/web/storefront-cover.jpg" alt="Huston's Home Renovations storefront sign on Main Street in Kennebunk, Maine" class="w-full h-[440px] object-cover rounded-sm">
+        </div>
+        <div class="reveal reveal-delay-1">
+          <p class="text-coral-400 font-semibold tracking-[0.2em] text-xs uppercase mb-4">About</p>
+          <h2 class="font-display font-bold text-bone text-4xl md:text-5xl leading-[0.95] tracking-tight mb-6">Run out of a storefront<br>on Main Street.</h2>
+          <p class="text-bone/70 text-lg leading-relaxed mb-4">Huston's Home Renovations is owned and run by June Huston, based right on Main Street in Kennebunk. The work covers kitchens, bathrooms, and full home renovations for clients across Southern Maine.</p>
+          <p class="text-bone/70 text-lg leading-relaxed">No call center, no franchise. Just a local shop and the work it puts out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-coral-500 py-24 md:py-32">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-10 text-center">
+      <h2 class="reveal font-display font-extrabold text-ink text-5xl md:text-7xl leading-[0.9] tracking-tight mb-8">
+        Have a renovation<br>in mind?
+      </h2>
+      <p class="reveal reveal-delay-1 text-ink/80 text-lg mb-10 max-w-xl mx-auto">Call, text, or send an email. June answers directly.</p>
+      <div class="reveal reveal-delay-2 flex flex-wrap items-center justify-center gap-4">
+        <a href="tel:2072050219" class="inline-flex items-center gap-2 bg-ink hover:bg-pine-950 text-bone px-8 py-4 rounded-sm font-semibold tracking-wide text-lg transition-colors">
+          (207) 205-0219
+        </a>
+        <a href="mailto:Junehuston67@gmail.com" class="inline-flex items-center gap-2 bg-bone hover:bg-white text-ink px-8 py-4 rounded-sm font-semibold tracking-wide text-lg transition-colors">
+          Send an email
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-pine-950 py-12">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10 flex flex-col md:flex-row gap-6 md:gap-0 items-center justify-between text-bone/50 text-sm">
+    <div class="font-display font-bold text-bone/80 tracking-tight text-lg">HUSTON'S HOME RENOVATIONS</div>
+    <div class="flex flex-wrap items-center gap-x-8 gap-y-2 justify-center">
+      <span>19 Main Street, Kennebunk, ME</span>
+      <a href="https://www.facebook.com/HustonsHomeRenovations" target="_blank" rel="noopener" class="hover:text-bone transition-colors">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const revealEls = Array.from(document.querySelectorAll('.reveal'));
+  let ticking = false;
+  function sweep() {
+    ticking = false;
+    const vh = window.innerHeight;
+    revealEls.forEach(el => {
+      if (el.classList.contains('in')) return;
+      const rect = el.getBoundingClientRect();
+      if (rect.top < vh * 0.92 && rect.bottom > 0) el.classList.add('in');
+    });
+  }
+  function onScroll() {
+    if (!ticking) { requestAnimationFrame(sweep); ticking = true; }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('hashchange', () => setTimeout(sweep, 50));
+  sweep();
+  setTimeout(() => revealEls.forEach(el => el.classList.add('in')), 2000);
+</script>
+
+</body>
+</html>
