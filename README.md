@@ -278,3 +278,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Sperr's Fuel & Heating](https://jared-the-automator.github.io/redesign-portfolio/sperrs.com/) | Family-owned home heating oil delivery & HVAC service | Delaware County, PA & North Wilmington, DE |
 | [Diamond J Veterinary Services](https://jared-the-automator.github.io/redesign-portfolio/djvstexas.com/) | Mobile equine veterinary care (medicine, acupuncture & chiropractic) | North-Central Texas |
 | [Dutch Oil and Propane](https://jared-the-automator.github.io/redesign-portfolio/dutchoil.com/) | Family-owned heating oil, propane & HVAC service | Central Connecticut |
+| [Senid Plumbing and Heating](https://jared-the-automator.github.io/redesign-portfolio/senidplumbing.com/) | Licensed master plumber, residential and commercial plumbing and heating, 24/7 | Queens, Brooklyn, Manhattan and Bronx, NY |
