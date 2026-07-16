@@ -283,3 +283,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Anthony Eddy's Wildlife Studio](https://jared-the-automator.github.io/redesign-portfolio/pet-animalpreservation.com/) | Pet preservation (freeze-dry) & traditional taxidermy | Missouri |
 | [Fightmaster Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/fightmasterflyfishing.com/) | Guided fly fishing, Smoky Mountains & East Tennessee | Smoky Mountains, TN |
 | [Mountain Top Furniture & Design](https://jared-the-automator.github.io/redesign-portfolio/mtntopfurniture.com/) | Custom solid wood furniture, handcrafted in the North Georgia mountains | Blairsville, GA |
+| [Midtown Funerals](https://jared-the-automator.github.io/redesign-portfolio/midtownfunerals.com/) | Community-owned funeral home, cremation, green burial & grief support | Chicago, IL (Irving Park) |
