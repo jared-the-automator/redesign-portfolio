@@ -10,6 +10,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [Lin-Gas, Inc.](https://jared-the-automator.github.io/redesign-portfolio/lingas.com/) | Family-owned residential, commercial & industrial propane | Evansville, IN (serves IN, IL, KY, TN) |
 | [Thermo-Dynamics Boiler Sales](https://jared-the-automator.github.io/redesign-portfolio/thermodynamicsboiler.com/) | American-made residential steel boiler manufacturer, built in Pennsylvania since 1983 | Pennsylvania |
 | [Treasure Coast Cremations](https://jared-the-automator.github.io/redesign-portfolio/treasurecoastcremations.com/) | Family-owned cremation provider, serving the Treasure Coast | Fort Pierce, FL |
 | [Donahue Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/donahuefuneral.com/) | Family-owned funeral home, four generations of care | Flourtown, PA |

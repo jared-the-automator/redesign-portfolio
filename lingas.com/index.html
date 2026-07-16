@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lin-Gas, Inc. | Residential, Commercial &amp; Industrial Propane</title>
+  <meta name="description" content="Propane delivery and tank service for homes, farms, and industry across Indiana, Illinois, Kentucky, and Tennessee. Family owned, based in Evansville." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0a0b0d',
+            steel: '#6b7280',
+            steeldark: '#2c313a',
+            bone: '#eef1f4',
+            flame: '#2f9ce0'
+          },
+          fontFamily: {
+            head: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          borderRadius: {
+            DEFAULT: '2px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0a0b0d; }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .eyebrow { letter-spacing: .28em; }
+  </style>
+</head>
+<body class="bg-ink text-bone font-body antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-ink/95 backdrop-blur border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="https://lingas.com/wp-content/uploads/2022/02/lingas-logo.jpg" alt="Lin-Gas, Inc." class="h-9 w-auto bg-white/90 px-2 py-1" />
+        <span class="sr-only">Lin-Gas, Inc.</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-bone/80">
+        <a href="#services" class="hover:text-flame transition-colors">Services</a>
+        <a href="#coverage" class="hover:text-flame transition-colors">Service area</a>
+        <a href="#story" class="hover:text-flame transition-colors">Our story</a>
+        <a href="#contact" class="hover:text-flame transition-colors">Contact</a>
+      </div>
+      <a href="tel:+18008504380" class="bg-flame text-ink font-head font-600 text-sm uppercase tracking-wide px-5 py-2.5 hover:bg-white transition-colors">Request delivery</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[100dvh] flex items-end">
+    <div class="absolute inset-0">
+      <img src="https://lingas.com/wp-content/uploads/2022/02/propane_tank.jpg" alt="Lin-Gas propane tank" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-ink/80"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/40"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-5 pb-20 pt-32 w-full">
+      <p class="eyebrow uppercase text-flame text-xs font-600 mb-6">Indiana &middot; Illinois &middot; Kentucky &middot; Tennessee</p>
+      <h1 class="font-head font-700 uppercase leading-[0.92] text-bone text-6xl sm:text-7xl lg:text-8xl max-w-4xl">
+        Propane that shows up<br />when the cold does.
+      </h1>
+      <p class="mt-6 text-lg text-bone/85 max-w-xl">Delivery, tank installation, and service for homes, farms, and industry across four states.</p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#contact" class="bg-flame text-ink font-head font-600 uppercase tracking-wide px-8 py-4 hover:bg-white transition-colors">Get a delivery quote</a>
+        <a href="tel:+18008504380" class="border border-white/30 text-bone font-head font-600 uppercase tracking-wide px-8 py-4 hover:border-flame hover:text-flame transition-colors">1-800-850-4380</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary: services, asymmetric split with numbered features -->
+  <section id="services" class="py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-5 reveal">
+        <img src="https://lingas.com/wp-content/uploads/2022/02/propane_tank.jpg" alt="Lin-Gas propane tank on site" class="w-full h-[460px] object-cover grayscale-[.15]" />
+        <p class="mt-4 text-sm text-steel">One supplier. Homes, farms, and plants.</p>
+      </div>
+      <div class="lg:col-span-7 reveal">
+        <p class="eyebrow uppercase text-flame text-xs font-600 mb-4">What we deliver</p>
+        <h2 class="font-head font-700 uppercase text-4xl sm:text-5xl leading-[0.95] mb-10">Three kinds of customer, one number to call</h2>
+        <div class="divide-y divide-white/10 border-y border-white/10">
+          <div class="py-7 flex gap-6">
+            <span class="font-head font-700 text-flame text-2xl w-12 shrink-0">01</span>
+            <div>
+              <h3 class="font-head font-600 uppercase text-xl mb-1">Residential propane</h3>
+              <p class="text-bone/70 max-w-lg">Home heating, water heating, cooking, and backup. Scheduled delivery so the tank never runs low in January.</p>
+            </div>
+          </div>
+          <div class="py-7 flex gap-6">
+            <span class="font-head font-700 text-flame text-2xl w-12 shrink-0">02</span>
+            <div>
+              <h3 class="font-head font-600 uppercase text-xl mb-1">Commercial propane</h3>
+              <p class="text-bone/70 max-w-lg">Restaurants, greenhouses, contractors, and fleets. Supply sized to the job and kept on a route.</p>
+            </div>
+          </div>
+          <div class="py-7 flex gap-6">
+            <span class="font-head font-700 text-flame text-2xl w-12 shrink-0">03</span>
+            <div>
+              <h3 class="font-head font-600 uppercase text-xl mb-1">Industrial propane</h3>
+              <p class="text-bone/70 max-w-lg">Process heat, forklifts, and plant operations. Bulk volume with the tanks and monitoring to match.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary: reversed split, story/process on a steel panel -->
+  <section id="story" class="py-24 bg-steeldark border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6 order-2 lg:order-1 reveal">
+        <p class="eyebrow uppercase text-flame text-xs font-600 mb-4">How it started</p>
+        <h2 class="font-head font-700 uppercase text-4xl sm:text-5xl leading-[0.95] mb-6">A family business built on a cleaner fuel</h2>
+        <p class="text-bone/80 text-lg leading-relaxed mb-5">Lin-Gas started as a small, family owned business, meeting a customer demand for a cleaner, more efficient fuel for heating and cooking.</p>
+        <p class="text-bone/70 leading-relaxed">That is still the whole job. Fill the tank, service the equipment, answer when a customer calls, and do it across every county on the route.</p>
+      </div>
+      <div class="lg:col-span-6 order-1 lg:order-2 reveal">
+        <div class="grid grid-cols-2 gap-px bg-white/10 border border-white/10">
+          <div class="bg-ink p-8">
+            <p class="font-head font-700 text-flame text-5xl">4</p>
+            <p class="text-sm text-bone/70 mt-2 uppercase tracking-wide">States served</p>
+          </div>
+          <div class="bg-ink p-8">
+            <p class="font-head font-700 text-flame text-5xl">8</p>
+            <p class="text-sm text-bone/70 mt-2 uppercase tracking-wide">Service locations</p>
+          </div>
+          <div class="bg-ink p-8">
+            <p class="font-head font-700 text-flame text-5xl">3</p>
+            <p class="text-sm text-bone/70 mt-2 uppercase tracking-wide">Markets: home, business, industry</p>
+          </div>
+          <div class="bg-ink p-8">
+            <p class="font-head font-700 text-flame text-5xl">1</p>
+            <p class="text-sm text-bone/70 mt-2 uppercase tracking-wide">Number to reach a person</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage: editorial full-width, breaks the zigzag -->
+  <section id="coverage" class="py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12 reveal">
+        <div>
+          <p class="eyebrow uppercase text-flame text-xs font-600 mb-4">Where we run</p>
+          <h2 class="font-head font-700 uppercase text-4xl sm:text-6xl leading-[0.92] max-w-3xl">Delivery routes across four states</h2>
+        </div>
+        <p class="text-bone/70 max-w-sm">Southern Indiana and Illinois, western Kentucky, and northern Tennessee. Find the yard closest to your tank.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10 reveal">
+        <div class="bg-ink p-7 hover:bg-steeldark transition-colors">
+          <p class="font-head font-600 uppercase text-lg">Evansville</p>
+          <p class="text-sm text-steel mt-1">Indiana</p>
+        </div>
+        <div class="bg-ink p-7 hover:bg-steeldark transition-colors">
+          <p class="font-head font-600 uppercase text-lg">Jasper</p>
+          <p class="text-sm text-steel mt-1">Indiana</p>
+        </div>
+        <div class="bg-ink p-7 hover:bg-steeldark transition-colors">
+          <p class="font-head font-600 uppercase text-lg">Bicknell</p>
+          <p class="text-sm text-steel mt-1">Indiana</p>
+        </div>
+        <div class="bg-ink p-7 hover:bg-steeldark transition-colors">
+          <p class="font-head font-600 uppercase text-lg">Dale</p>
+          <p class="text-sm text-steel mt-1">Indiana</p>
+        </div>
+        <div class="bg-ink p-7 hover:bg-steeldark transition-colors">
+          <p class="font-head font-600 uppercase text-lg">Elkton</p>
+          <p class="text-sm text-steel mt-1">Indiana</p>
+        </div>
+        <div class="bg-ink p-7 hover:bg-steeldark transition-colors">
+          <p class="font-head font-600 uppercase text-lg">Clarksville</p>
+          <p class="text-sm text-steel mt-1">Tennessee</p>
+        </div>
+        <div class="bg-ink p-7 hover:bg-steeldark transition-colors">
+          <p class="font-head font-600 uppercase text-lg">Henderson</p>
+          <p class="text-sm text-steel mt-1">Kentucky</p>
+        </div>
+        <div class="bg-ink p-7 hover:bg-steeldark transition-colors">
+          <p class="font-head font-600 uppercase text-lg">Hopkinsville</p>
+          <p class="text-sm text-steel mt-1">Kentucky</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility: real quote pulled from the site's About page -->
+  <section class="py-24 bg-steeldark border-t border-white/10">
+    <div class="max-w-4xl mx-auto px-5 text-center reveal">
+      <p class="eyebrow uppercase text-flame text-xs font-600 mb-8">Why customers stay</p>
+      <blockquote class="font-head font-600 uppercase text-3xl sm:text-4xl leading-tight text-bone">
+        &ldquo;A cleaner, more efficient fuel for heating and cooking.&rdquo;
+      </blockquote>
+      <p class="mt-6 text-sm uppercase tracking-widest text-steel">Lin-Gas, from the customer demand the company was built to meet</p>
+      <div class="mt-12 grid sm:grid-cols-3 gap-8 text-left border-t border-white/10 pt-10">
+        <div>
+          <p class="font-head font-600 uppercase text-lg text-flame">Family owned</p>
+          <p class="text-sm text-bone/70 mt-1">Run as a small business from the start.</p>
+        </div>
+        <div>
+          <p class="font-head font-600 uppercase text-lg text-flame">Residential to industrial</p>
+          <p class="text-sm text-bone/70 mt-1">One supplier for the whole range of propane needs.</p>
+        </div>
+        <div>
+          <p class="font-head font-600 uppercase text-lg text-flame">Four-state routes</p>
+          <p class="text-sm text-bone/70 mt-1">Delivery across IN, IL, KY, and TN.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip -->
+  <section id="contact" class="py-20 bg-flame text-ink border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+      <div>
+        <h2 class="font-head font-700 uppercase text-4xl sm:text-5xl leading-[0.95]">Set up delivery or get a quote</h2>
+        <p class="mt-3 text-ink/80 text-lg max-w-xl">Tell us where the tank is. We will get you on a route.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+        <a href="tel:+18008504380" class="bg-ink text-bone font-head font-600 uppercase tracking-wide px-8 py-4 text-center hover:bg-steeldark transition-colors">Call 1-800-850-4380</a>
+        <a href="mailto:contact@lingas.com" class="border-2 border-ink text-ink font-head font-600 uppercase tracking-wide px-8 py-4 text-center hover:bg-ink hover:text-bone transition-colors">Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink border-t border-white/10 pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <img src="https://lingas.com/wp-content/uploads/2022/02/lingas-logo.jpg" alt="Lin-Gas, Inc." class="h-10 w-auto bg-white/90 px-2 py-1 mb-4" />
+        <p class="text-sm text-steel leading-relaxed">Residential, commercial, and industrial propane. Family owned, serving four states.</p>
+      </div>
+      <div>
+        <p class="font-head font-600 uppercase text-sm text-bone mb-4">Services</p>
+        <ul class="space-y-2 text-sm text-bone/70">
+          <li><a href="#services" class="hover:text-flame transition-colors">Residential propane</a></li>
+          <li><a href="#services" class="hover:text-flame transition-colors">Commercial propane</a></li>
+          <li><a href="#services" class="hover:text-flame transition-colors">Industrial propane</a></li>
+          <li><a href="#coverage" class="hover:text-flame transition-colors">Service area</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-head font-600 uppercase text-sm text-bone mb-4">Service area</p>
+        <ul class="space-y-2 text-sm text-bone/70">
+          <li>Indiana</li>
+          <li>Illinois</li>
+          <li>Kentucky</li>
+          <li>Tennessee</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-head font-600 uppercase text-sm text-bone mb-4">Contact</p>
+        <ul class="space-y-2 text-sm text-bone/70">
+          <li><a href="tel:+18008504380" class="hover:text-flame transition-colors">1-800-850-4380</a></li>
+          <li><a href="tel:+18124249021" class="hover:text-flame transition-colors">812-424-9021</a></li>
+          <li><a href="mailto:contact@lingas.com" class="hover:text-flame transition-colors">contact@lingas.com</a></li>
+          <li>Evansville, Indiana</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-5 mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-steel">
+      <p>Lin-Gas, Inc. Residential and commercial propane.</p>
+      <p>Redesign concept for review.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (e) { e.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
+</body>
+</html>
