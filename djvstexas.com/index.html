@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diamond J Veterinary Services | Mobile Equine Vet, North-Central Texas</title>
+<meta name="description" content="Dr. Jenn Boeche brings full equine care to your barn across North-Central Texas: medicine, dentistry, lameness, acupuncture, chiropractic, and in-home euthanasia.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          forest: '#2f5d3a',
+          forestdk: '#22452b',
+          bone: '#f6f3ea',
+          ink: '#20261f',
+          stone: '#6b7266'
+        },
+        fontFamily: {
+          display: ['Oswald', 'sans-serif'],
+          body: ['Inter', 'sans-serif']
+        },
+        borderRadius: {
+          card: '12px'
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Oswald', sans-serif; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+</style>
+</head>
+<body class="bg-bone text-ink font-body antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-ink/10">
+  <nav class="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between gap-4">
+    <a href="#top" class="flex items-center gap-3 shrink-0">
+      <img src="https://djvstexas.com/wp-content/uploads/2020/04/Diamond-J-Veterinary-Services-Logo.png" alt="Diamond J Veterinary Services" class="h-12 w-auto">
+    </a>
+    <div class="hidden md:flex items-center gap-8 font-display font-medium tracking-wide text-sm uppercase">
+      <a href="#services" class="hover:text-forest transition-colors">Services</a>
+      <a href="#story" class="hover:text-forest transition-colors">Dr. Boeche</a>
+      <a href="#how" class="hover:text-forest transition-colors">How It Works</a>
+      <a href="#contact" class="hover:text-forest transition-colors">Contact</a>
+    </div>
+    <a href="#contact" class="shrink-0 bg-forest text-bone font-display font-semibold uppercase tracking-wide text-sm px-5 py-2.5 rounded-card hover:bg-forestdk transition-colors">Book a visit</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-[100dvh] flex items-end">
+  <div class="absolute inset-0">
+    <img src="https://djvstexas.com/wp-content/uploads/2021/05/diamond-j-vet-mobile-services-texas-gallery.jpg" alt="Diamond J mobile equine care in North-Central Texas" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-ink/75"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/30"></div>
+  </div>
+  <div class="relative max-w-6xl mx-auto px-5 pb-20 pt-32 w-full">
+    <p class="font-display uppercase tracking-[0.25em] text-bone/80 text-sm mb-5">North-Central Texas</p>
+    <h1 class="font-display font-bold text-bone leading-[0.95] text-5xl sm:text-6xl lg:text-7xl max-w-3xl">
+      The horse vet who<br>comes to your barn
+    </h1>
+    <p class="mt-6 text-bone/85 text-lg max-w-xl">Dr. Jenn Boeche brings full equine medicine to your gate, from routine dentals to lameness, acupuncture, and hard goodbyes.</p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="#contact" class="bg-forest text-bone font-display font-semibold uppercase tracking-wide px-7 py-3.5 rounded-card hover:bg-forestdk transition-colors">Book a visit</a>
+      <a href="#services" class="border border-bone/50 text-bone font-display font-semibold uppercase tracking-wide px-7 py-3.5 rounded-card hover:bg-bone/10 transition-colors">See services</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRIMARY: SERVICES (asymmetric split, numbered) -->
+<section id="services" class="max-w-6xl mx-auto px-5 py-24">
+  <div class="grid lg:grid-cols-2 gap-14 items-start">
+    <div class="reveal">
+      <p class="font-display uppercase tracking-[0.25em] text-forest text-sm mb-4">What Dr. Boeche does</p>
+      <h2 class="font-display font-bold text-4xl sm:text-5xl leading-tight mb-6">Full equine care, delivered to the barn</h2>
+      <p class="text-stone text-lg leading-relaxed">One truck, one veterinarian, and the equipment to handle most of what your horse needs without a trailer ride. Care happens where your horse is calm: at home.</p>
+      <img src="https://djvstexas.com/wp-content/uploads/2019/12/vet-acupuncture-for-cats-dogs.jpg" alt="Dr. Boeche performing veterinary acupuncture on an animal" class="mt-10 w-full h-72 object-cover rounded-card">
+    </div>
+    <div class="reveal space-y-8">
+      <div class="flex gap-5">
+        <span class="font-display font-bold text-forest text-3xl leading-none w-12 shrink-0">01</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl mb-1">Mobile medicine and dentistry</h3>
+          <p class="text-stone leading-relaxed">Wellness exams, vaccinations, Coggins, and full floats done in your own barn aisle.</p>
+        </div>
+      </div>
+      <div class="flex gap-5">
+        <span class="font-display font-bold text-forest text-3xl leading-none w-12 shrink-0">02</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl mb-1">Acupuncture and chiropractic</h3>
+          <p class="text-stone leading-relaxed">As a Certified Veterinary Acupuncturist, Dr. Boeche treats horses, dogs, and cats with acupuncture, chiropractic, and Chinese medicine.</p>
+        </div>
+      </div>
+      <div class="flex gap-5">
+        <span class="font-display font-bold text-forest text-3xl leading-none w-12 shrink-0">03</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl mb-1">Lameness and herbal therapy</h3>
+          <p class="text-stone leading-relaxed">Practical workups for the performance horse, paired with herbal options when they fit the case.</p>
+        </div>
+      </div>
+      <div class="flex gap-5">
+        <span class="font-display font-bold text-forest text-3xl leading-none w-12 shrink-0">04</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl mb-1">In-home euthanasia</h3>
+          <p class="text-stone leading-relaxed">When it is time, a gentle goodbye at home, on familiar ground, without a final trailer ride.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECONDARY: STORY (reversed split, different angle) -->
+<section id="story" class="bg-forestdk text-bone">
+  <div class="max-w-6xl mx-auto px-5 py-24 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal order-2 lg:order-1">
+      <p class="font-display uppercase tracking-[0.25em] text-bone/70 text-sm mb-4">Meet the vet</p>
+      <h2 class="font-display font-bold text-4xl sm:text-5xl leading-tight mb-6">Dr. Jenn Boeche, DVM, CVA</h2>
+      <p class="text-bone/85 text-lg leading-relaxed mb-4">Jenn grew up in northern Nevada showing Ponies of the Americas from the local level all the way to nationals, so she knew horses long before she was a doctor.</p>
+      <p class="text-bone/85 text-lg leading-relaxed mb-4">She earned bachelor's degrees in Animal Science and Spanish from Colorado State University, then her doctorate in veterinary medicine, and added certification in veterinary acupuncture.</p>
+      <p class="text-bone/85 text-lg leading-relaxed">Today she runs Diamond J as a solo mobile practice, and raises working stock dogs on the side.</p>
+    </div>
+    <div class="reveal order-1 lg:order-2">
+      <img src="https://djvstexas.com/wp-content/uploads/2018/03/texas-equine-veterinary-services-mobile-horse-vet-contact.jpg" alt="Dr. Jenn Boeche of Diamond J Veterinary Services" class="w-full h-[30rem] object-cover rounded-card">
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS: editorial full-width band (breaks the zigzag) -->
+<section id="how" class="max-w-6xl mx-auto px-5 py-24">
+  <div class="reveal max-w-2xl mb-14">
+    <h2 class="font-display font-bold text-4xl sm:text-5xl leading-tight mb-5">How a barn call works</h2>
+    <p class="text-stone text-lg leading-relaxed">No waiting room, no trailer, no stress on the horse. Three steps from your first message to a treated horse.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="reveal bg-white rounded-card p-8 border border-ink/10">
+      <span class="font-display font-bold text-forest text-2xl">Step one</span>
+      <h3 class="font-display font-semibold text-xl mt-3 mb-2">Reach out</h3>
+      <p class="text-stone leading-relaxed">Send an email or request an appointment with your horse's issue and your location in North-Central Texas.</p>
+    </div>
+    <div class="reveal bg-white rounded-card p-8 border border-ink/10">
+      <span class="font-display font-bold text-forest text-2xl">Step two</span>
+      <h3 class="font-display font-semibold text-xl mt-3 mb-2">She comes to you</h3>
+      <p class="text-stone leading-relaxed">Dr. Boeche arrives with a fully stocked mobile rig and works your horse in its own barn or paddock.</p>
+    </div>
+    <div class="reveal bg-white rounded-card p-8 border border-ink/10">
+      <span class="font-display font-bold text-forest text-2xl">Step three</span>
+      <h3 class="font-display font-semibold text-xl mt-3 mb-2">Plan and follow up</h3>
+      <p class="text-stone leading-relaxed">You leave with a clear treatment plan and a direct line back to the vet who saw your horse.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY + QUOTE -->
+<section class="bg-white border-y border-ink/10">
+  <div class="max-w-6xl mx-auto px-5 py-24 grid lg:grid-cols-3 gap-12 items-center">
+    <div class="reveal lg:col-span-2">
+      <p class="font-display uppercase tracking-[0.25em] text-forest text-sm mb-5">Why owners call Diamond J</p>
+      <blockquote class="font-display font-medium text-2xl sm:text-3xl leading-snug">
+        &ldquo;Care happens where your horse is calm. That is the whole point of a mobile practice: the vet comes to the barn, not the other way around.&rdquo;
+      </blockquote>
+      <p class="mt-5 text-stone">Dr. Jenn Boeche, Diamond J Veterinary Services</p>
+    </div>
+    <div class="reveal grid grid-cols-2 gap-6">
+      <div>
+        <p class="font-display font-bold text-4xl text-forest">DVM</p>
+        <p class="text-stone mt-1">Colorado State University</p>
+      </div>
+      <div>
+        <p class="font-display font-bold text-4xl text-forest">CVA</p>
+        <p class="text-stone mt-1">Certified Veterinary Acupuncturist</p>
+      </div>
+      <div>
+        <p class="font-display font-bold text-4xl text-forest">Solo</p>
+        <p class="text-stone mt-1">One vet, start to finish</p>
+      </div>
+      <div>
+        <p class="font-display font-bold text-4xl text-forest">Mobile</p>
+        <p class="text-stone mt-1">North-Central Texas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section id="contact" class="bg-forest text-bone">
+  <div class="max-w-6xl mx-auto px-5 py-20 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+    <div class="reveal max-w-xl">
+      <h2 class="font-display font-bold text-4xl sm:text-5xl leading-tight mb-4">Need a vet at your barn?</h2>
+      <p class="text-bone/85 text-lg">Tell Dr. Boeche what your horse needs and where you are in North-Central Texas. She will get you on the schedule.</p>
+    </div>
+    <div class="reveal flex flex-col gap-4 w-full lg:w-auto">
+      <a href="mailto:djvstexas@gmail.com" class="bg-bone text-forestdk font-display font-semibold uppercase tracking-wide text-center px-8 py-4 rounded-card hover:bg-white transition-colors">Email djvstexas@gmail.com</a>
+      <a href="https://djvstexas.com/appointments-texas-horse-vet-mobile-equine-medical-services/" class="border border-bone/50 text-bone font-display font-semibold uppercase tracking-wide text-center px-8 py-4 rounded-card hover:bg-bone/10 transition-colors">Request an appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-bone/80">
+  <div class="max-w-6xl mx-auto px-5 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <img src="https://djvstexas.com/wp-content/uploads/2020/04/Diamond-J-Veterinary-Services-Logo.png" alt="Diamond J Veterinary Services" class="h-14 w-auto mb-4 bg-bone/95 rounded-card p-2">
+      <p class="text-sm leading-relaxed">Mobile equine veterinary care across North-Central Texas.</p>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold uppercase tracking-wide text-bone text-sm mb-4">Services</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#services" class="hover:text-bone transition-colors">Mobile medicine and dentistry</a></li>
+        <li><a href="#services" class="hover:text-bone transition-colors">Acupuncture and chiropractic</a></li>
+        <li><a href="#services" class="hover:text-bone transition-colors">Lameness and herbal therapy</a></li>
+        <li><a href="#services" class="hover:text-bone transition-colors">In-home euthanasia</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold uppercase tracking-wide text-bone text-sm mb-4">Explore</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#story" class="hover:text-bone transition-colors">Dr. Jenn Boeche</a></li>
+        <li><a href="#how" class="hover:text-bone transition-colors">How a barn call works</a></li>
+        <li><a href="#contact" class="hover:text-bone transition-colors">Book a visit</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-semibold uppercase tracking-wide text-bone text-sm mb-4">Contact</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="mailto:djvstexas@gmail.com" class="hover:text-bone transition-colors">djvstexas@gmail.com</a></li>
+        <li>North-Central Texas</li>
+        <li><a href="https://www.facebook.com/Diamond-J-Veterinary-Services-Texas-215570765498836/" class="hover:text-bone transition-colors">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-bone/15">
+    <div class="max-w-6xl mx-auto px-5 py-6 text-xs text-bone/50 flex flex-col sm:flex-row justify-between gap-2">
+      <p>Diamond J Veterinary Services, Dr. Jenn Boeche, DVM, CVA</p>
+      <p>Redesign concept prepared for review.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach((el) => obs.observe(el));
+</script>
+</body>
+</html>
