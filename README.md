@@ -25,6 +25,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | --- | --- | --- |
 | [Berico Fuels](https://jared-the-automator.github.io/redesign-portfolio/berico.com/) | Propane delivery, heating oil, and HVAC | Greensboro, Burlington & Eden, NC |
 | [Bailey Propane](https://jared-the-automator.github.io/redesign-portfolio/baileypropane.com/) | Family-owned propane delivery, serving the Highway 285 corridor | Bailey, CO (Park County) |
+| [Thermotane](https://jared-the-automator.github.io/redesign-portfolio/thermotane.com/) | Propane delivery and tank monitoring for homes and commercial sectors | Central Florida |
 | --- | --- | --- |
 | [Dolan Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/dolanfuneral.com/) | Family-owned funeral home and cremation, serving since 1885 | Dorchester & East Milton, MA |
 | --- | --- | --- |
