@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boyle Energy | HVAC, Oil &amp; Propane Services in Havertown, PA</title>
+  <meta name="description" content="Boyle Energy is a family-owned HVAC, oil, and propane company in Havertown PA, serving Delaware, Chester, and Montgomery County since 1937." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F6F3EA',
+            bone: '#FBF9F4',
+            espresso: '#2B2620',
+            muted: '#6B655A',
+            olive: '#5F6B3E',
+            olivedark: '#4A5431'
+          },
+          fontFamily: {
+            display: ['"DM Serif Display"', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-display { font-family: 'DM Serif Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body class="bg-cream text-espresso font-body antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-espresso/10">
+    <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center">
+        <img src="https://boylebrothersenergy.com/wp-content/uploads/2023/09/Boyle-Energy-Logo-1-1.png" alt="Boyle Energy logo" class="h-12 w-auto" />
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#services" class="hover:text-olive transition-colors">Services</a>
+        <a href="#heritage" class="hover:text-olive transition-colors">Our Story</a>
+        <a href="#contact" class="hover:text-olive transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="bg-olive hover:bg-olivedark text-bone text-sm font-semibold px-5 py-3 rounded-xl transition-colors">Get a Quote</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-end overflow-hidden">
+    <img src="https://boylebrothersenergy.com/wp-content/uploads/2012/03/boyle12.jpg" alt="Boyle Brothers Energy service history in Havertown, Pennsylvania" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-espresso/70"></div>
+    <div class="relative max-w-6xl mx-auto px-6 pb-24 pt-32 w-full">
+      <p class="text-bone/80 text-sm font-semibold tracking-[0.2em] uppercase mb-5">Havertown, PA &middot; Since 1937</p>
+      <h1 class="font-display text-bone text-5xl md:text-7xl leading-[1.05] max-w-3xl">Four generations of home comfort.</h1>
+      <p class="text-bone/85 text-lg md:text-xl mt-6 max-w-xl">A family HVAC, oil, and propane company that has kept Delaware County warm through every winter since 1937.</p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#contact" class="bg-olive hover:bg-olivedark text-bone font-semibold px-7 py-4 rounded-xl transition-colors">Get a Quote</a>
+        <a href="tel:6104462444" class="border border-bone/40 text-bone hover:bg-bone/10 font-semibold px-7 py-4 rounded-xl transition-colors">Call 610-446-2444</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY PRODUCT SECTION -->
+  <section id="services" class="max-w-6xl mx-auto px-6 py-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <img src="https://boylebrothersenergy.com/wp-content/uploads/2012/03/boyle12.jpg" alt="Boyle Brothers Energy technicians and equipment in Havertown" class="w-full h-[520px] object-cover rounded-xl" />
+      </div>
+      <div class="reveal">
+        <p class="text-olive text-sm font-semibold tracking-[0.18em] uppercase mb-4">What we do</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-tight">One call for heat, cooling, and fuel.</h2>
+        <p class="text-muted mt-5 text-lg">Boyle Energy handles the full home-comfort picture across Havertown and the surrounding counties, so you deal with one trusted local team instead of three.</p>
+        <div class="mt-8 space-y-6">
+          <div class="flex gap-5">
+            <span class="font-display text-2xl text-olive">01</span>
+            <div>
+              <h3 class="font-semibold text-xl">HVAC service and repair</h3>
+              <p class="text-muted mt-1">Air conditioning, heating, and maintenance for Delaware County homes, from tune-ups to full system replacement.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-2xl text-olive">02</span>
+            <div>
+              <h3 class="font-semibold text-xl">Oil heat delivery</h3>
+              <p class="text-muted mt-1">Automatic and will-call heating oil delivery, with dependable service when the temperature drops.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-2xl text-olive">03</span>
+            <div>
+              <h3 class="font-semibold text-xl">Propane services</h3>
+              <p class="text-muted mt-1">Propane delivery and installation for heat, hot water, and appliances throughout the region.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split) -->
+  <section class="bg-bone">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal md:order-2">
+          <img src="https://boylebrothersenergy.com/wp-content/uploads/2023/10/Group-272.png" alt="Boyle Energy service area across Pennsylvania" class="w-full h-[520px] object-cover rounded-xl" />
+        </div>
+        <div class="reveal md:order-1">
+          <p class="text-olive text-sm font-semibold tracking-[0.18em] uppercase mb-4">Local and accountable</p>
+          <h2 class="font-display text-4xl md:text-5xl leading-tight">The people who answer are your neighbors.</h2>
+          <p class="text-muted mt-5 text-lg">When you call Boyle Energy, you reach a Havertown team that lives and works in the same towns you do. No call center, no runaround, just the family that has done this since 1937.</p>
+          <p class="text-muted mt-4 text-lg">That continuity shows up in the small things: the tech who remembers your system, the driver who knows the street, the phone that gets answered.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY (breaks the zigzag) -->
+  <section id="heritage" class="max-w-6xl mx-auto px-6 py-24">
+    <div class="max-w-2xl mb-12 reveal">
+      <p class="text-olive text-sm font-semibold tracking-[0.18em] uppercase mb-4">Our story</p>
+      <h2 class="font-display text-4xl md:text-5xl leading-tight">A Havertown name since 1937.</h2>
+      <p class="text-muted mt-5 text-lg">Boyle Brothers Energy started as a family shop on the Main Line and never left. The same founding year that anchors the About page deserves a place on the homepage, where every new visitor lands first.</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-5 reveal">
+      <img src="https://boylebrothersenergy.com/wp-content/uploads/2012/03/boyle12.jpg" alt="Boyle Brothers Energy historical photo from the company archive" class="w-full h-72 object-cover rounded-xl" />
+      <img src="https://boylebrothersenergy.com/wp-content/uploads/2023/10/Group-272.png" alt="Boyle Energy service and coverage across Pennsylvania" class="w-full h-72 object-cover rounded-xl" />
+      <div class="bg-olive text-bone rounded-xl h-72 flex flex-col items-center justify-center text-center px-6">
+        <img src="https://boylebrothersenergy.com/wp-content/uploads/2023/09/Boyle-Energy-Logo-1-1.png" alt="Boyle Energy logo" class="h-14 w-auto mb-4 brightness-0 invert" />
+        <p class="font-display text-2xl">Family owned.</p>
+        <p class="text-bone/80 mt-1">Havertown, PA</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY BAND -->
+  <section class="bg-olive text-bone">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="grid sm:grid-cols-3 gap-10 text-center reveal">
+        <div>
+          <p class="font-display text-5xl">1937</p>
+          <p class="text-bone/80 mt-2">Founded in Havertown</p>
+        </div>
+        <div>
+          <p class="font-display text-5xl">4</p>
+          <p class="text-bone/80 mt-2">Generations of family service</p>
+        </div>
+        <div>
+          <p class="font-display text-5xl">3</p>
+          <p class="text-bone/80 mt-2">Counties served, PA</p>
+        </div>
+      </div>
+      <p class="text-center text-bone/85 text-lg mt-10 max-w-2xl mx-auto">HVAC, oil, and propane for Delaware, Chester, and Montgomery County, from a team your neighbors have trusted for nearly ninety years.</p>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="contact" class="bg-espresso text-bone">
+    <div class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row md:items-center md:justify-between gap-8 reveal">
+      <div>
+        <h2 class="font-display text-4xl md:text-5xl leading-tight">Ready for reliable heat this winter?</h2>
+        <p class="text-bone/80 mt-4 text-lg max-w-xl">Get a quote from the Havertown team that has kept the county warm since 1937.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="mailto:info@boyleenergy.net" class="bg-olive hover:bg-olivedark text-bone font-semibold px-7 py-4 rounded-xl transition-colors">Email us</a>
+        <a href="tel:6104462444" class="border border-bone/40 hover:bg-bone/10 font-semibold px-7 py-4 rounded-xl transition-colors">Call 610-446-2444</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-cream border-t border-espresso/10">
+    <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+      <div>
+        <img src="https://boylebrothersenergy.com/wp-content/uploads/2023/09/Boyle-Energy-Logo-1-1.png" alt="Boyle Energy logo" class="h-12 w-auto mb-4" />
+        <p class="text-muted text-sm">HVAC, oil, and propane service for Havertown and the surrounding Pennsylvania counties.</p>
+      </div>
+      <div>
+        <p class="font-semibold mb-4">Services</p>
+        <ul class="space-y-2 text-muted text-sm">
+          <li>HVAC repair and service</li>
+          <li>Oil heat delivery</li>
+          <li>Propane services</li>
+          <li>Financing and coupons</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-4">Company</p>
+        <ul class="space-y-2 text-muted text-sm">
+          <li><a href="#heritage" class="hover:text-olive transition-colors">Our story</a></li>
+          <li>Areas we serve</li>
+          <li>Careers</li>
+          <li>In the community</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold mb-4">Contact</p>
+        <ul class="space-y-2 text-muted text-sm">
+          <li><a href="mailto:info@boyleenergy.net" class="hover:text-olive transition-colors">info@boyleenergy.net</a></li>
+          <li><a href="tel:6104462444" class="hover:text-olive transition-colors">610-446-2444</a></li>
+          <li>Havertown, PA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-espresso/10">
+      <div class="max-w-6xl mx-auto px-6 py-6 text-sm text-muted flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+        <p>&copy; 2026 Boyle Brothers Energy. Serving Pennsylvania since 1937.</p>
+        <p>Havertown &middot; Delaware &middot; Chester &middot; Montgomery County</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
