@@ -288,3 +288,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Midtown Funerals](https://jared-the-automator.github.io/redesign-portfolio/midtownfunerals.com/) | Community-owned funeral home, cremation, green burial & grief support | Chicago, IL (Irving Park) |
 | [Schmidt's Meat Market](https://jared-the-automator.github.io/redesign-portfolio/schmidtsmeatmarket.com/) | Family meat market, custom beef & pork processing, beef quarters and hog sales | Nicollet, MN |
 | [Fishing Islamorada](https://jared-the-automator.github.io/redesign-portfolio/fishingislamorada.com/) | Tarpon, bonefish & permit flats and backcountry fishing charters | Islamorada, Florida Keys |
+| [Volta Oil](https://jared-the-automator.github.io/redesign-portfolio/voltaoil.com/) | Heating oil delivery, commercial fueling & Rapid Refill convenience stores, fueling New England since 1930 | Plymouth, MA (serves MA, RI, CT) |

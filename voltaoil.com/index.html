@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Volta Oil | Heating Oil &amp; Fuel Delivery | MA, RI, CT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#f4ede0',
+            bg: '#15120d',
+            surface: '#1f1b14',
+            amber: '#e8a33d',
+            muted: '#b8ad99'
+          },
+          fontFamily: {
+            display: ['"Barlow Condensed"', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          borderRadius: {
+            brand: '8px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background-color: #15120d; color: #f4ede0; font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Barlow Condensed', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body class="bg-bg text-ink font-body antialiased">
+
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-bg/90 backdrop-blur border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <img src="https://voltaoil.com/wp-content/uploads/2015/04/volta-logo.png" alt="Volta Oil" class="h-9 w-auto" />
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-sm text-ink/80">
+        <a href="#services" class="hover:text-amber transition">Services</a>
+        <a href="#story" class="hover:text-amber transition">Our story</a>
+        <a href="#gallery" class="hover:text-amber transition">Gallery</a>
+        <a href="#contact" class="hover:text-amber transition">Contact</a>
+      </nav>
+      <a href="#contact" class="rounded-brand bg-amber text-bg font-display font-bold uppercase tracking-wide text-sm px-4 py-2 hover:bg-amber/90 transition">Get a quote</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-end">
+    <img src="https://voltaoil.com/wp-content/uploads/2015/06/servicestations-dropdown.jpg" alt="Volta Oil service station" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-bg/80"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-bg/30"></div>
+    <div class="relative max-w-6xl mx-auto px-5 pb-24 w-full">
+      <p class="font-display uppercase tracking-[0.25em] text-amber text-sm mb-4">Serving MA · RI · CT</p>
+      <h1 class="font-display font-extrabold leading-[0.95] text-6xl md:text-8xl max-w-3xl">
+        Reliable fuel delivery,<br />built on 96 years.
+      </h1>
+      <p class="mt-6 text-lg text-ink/80 max-w-xl">
+        Volta Oil keeps homes and businesses across New England warm with heating oil, commercial fuel, and Rapid Refill convenience stores.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#contact" class="rounded-brand bg-amber text-bg font-display font-bold uppercase tracking-wide px-6 py-3 hover:bg-amber/90 transition">Get a quote</a>
+        <a href="tel:18008941300" class="rounded-brand border border-white/20 px-6 py-3 font-display font-bold uppercase tracking-wide hover:border-amber hover:text-amber transition">Call 1-800-894-1300</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY PRODUCT SECTION -->
+  <section id="services" class="py-24 px-5">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <img src="https://voltaoil.com/wp-content/uploads/2015/05/rapidrefill..jpg" alt="Rapid Refill convenience store" class="rounded-brand w-full h-[28rem] object-cover" />
+      </div>
+      <div class="reveal">
+        <h2 class="font-display font-extrabold text-4xl md:text-5xl leading-tight">What Volta Oil delivers</h2>
+        <div class="mt-8 space-y-6">
+          <div class="flex gap-4">
+            <span class="font-display font-extrabold text-amber text-2xl">01</span>
+            <div>
+              <h3 class="font-display font-bold text-xl">Heating oil delivery</h3>
+              <p class="text-ink/70 mt-1">Automatic and will-call heating oil for homes across Massachusetts, Rhode Island, and Connecticut.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display font-extrabold text-amber text-2xl">02</span>
+            <div>
+              <h3 class="font-display font-bold text-xl">Commercial &amp; fleet fueling</h3>
+              <p class="text-ink/70 mt-1">Bulk and on-site fueling for businesses, municipalities, and fleets that run on reliable supply.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display font-extrabold text-amber text-2xl">03</span>
+            <div>
+              <h3 class="font-display font-bold text-xl">Rapid Refill convenience</h3>
+              <p class="text-ink/70 mt-1">A network of local convenience stores and service stations under one New England name.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split) -->
+  <section id="story" class="py-24 px-5 bg-surface">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal md:order-2">
+        <img src="https://voltaoil.com/wp-content/uploads/2018/12/garretts-family-market-menu.png" alt="Garrett's Family Market, a Volta Oil location" class="rounded-brand w-full h-[28rem] object-cover" />
+      </div>
+      <div class="reveal md:order-1">
+        <h2 class="font-display font-extrabold text-4xl md:text-5xl leading-tight">A New England fuel name since 1930</h2>
+        <p class="text-ink/70 mt-6 text-lg">
+          Volta Oil has fueled homes and businesses across New England since 1930, from its base in Plymouth, Massachusetts. For nearly a century, customers across the region have counted on the same Volta Oil truck in the driveway when the cold sets in.
+        </p>
+        <p class="text-ink/70 mt-4">
+          That trust is built one delivery at a time, and it shows up in every part of the company, from heating oil routes to the Rapid Refill stores on the corner.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY -->
+  <section id="gallery" class="py-24 px-5">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl mb-3">On the road and in the neighborhood</h2>
+      <p class="text-ink/70 max-w-2xl mb-10">A look at the stations, stores, and people behind Volta Oil's fuel deliveries.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <img src="https://voltaoil.com/wp-content/uploads/2015/06/servicestations-dropdown.jpg" alt="Volta Oil service station" class="rounded-brand w-full h-64 object-cover reveal" />
+        <img src="https://voltaoil.com/wp-content/uploads/2015/05/rapidrefill..jpg" alt="Rapid Refill convenience store" class="rounded-brand w-full h-64 object-cover reveal" />
+        <img src="https://voltaoil.com/wp-content/uploads/2018/12/garretts-family-market-menu.png" alt="Garrett's Family Market" class="rounded-brand w-full h-64 object-cover reveal" />
+        <img src="https://voltaoil.com/wp-content/uploads/2015/05/volta-footer-logo.jpg" alt="Volta Oil logo" class="rounded-brand w-full h-64 object-cover reveal" />
+        <img src="https://voltaoil.com/wp-content/uploads/2015/09/volta-oil-logo-forms.png" alt="Volta Oil" class="rounded-brand w-full h-64 object-cover reveal" />
+        <img src="https://voltaoil.com/wp-content/uploads/2015/04/volta-logo.png" alt="Volta Oil logo mark" class="rounded-brand w-full h-64 object-cover reveal" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY -->
+  <section class="py-20 px-5 bg-surface">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="reveal">
+        <p class="font-display font-extrabold text-amber text-5xl">1930</p>
+        <p class="text-ink/60 mt-2 text-sm uppercase tracking-wide">Founded</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display font-extrabold text-amber text-5xl">96</p>
+        <p class="text-ink/60 mt-2 text-sm uppercase tracking-wide">Years fueling</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display font-extrabold text-amber text-5xl">3</p>
+        <p class="text-ink/60 mt-2 text-sm uppercase tracking-wide">States served</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display font-extrabold text-amber text-5xl">Plymouth</p>
+        <p class="text-ink/60 mt-2 text-sm uppercase tracking-wide">MA home base</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="contact" class="py-20 px-5">
+    <div class="max-w-6xl mx-auto bg-amber rounded-brand px-8 py-14 text-center">
+      <h2 class="font-display font-extrabold text-bg text-4xl md:text-6xl">Ready to talk fuel?</h2>
+      <p class="text-bg/80 mt-3 text-lg max-w-xl mx-auto">Get a heating oil or commercial fuel quote for your home or business today.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="tel:18008941300" class="rounded-brand bg-bg text-ink font-display font-bold uppercase tracking-wide px-6 py-3 hover:bg-bg/90 transition">Call 1-800-894-1300</a>
+        <a href="https://voltaoil.com/contact-us/" class="rounded-brand border border-bg/30 text-bg font-display font-bold uppercase tracking-wide px-6 py-3 hover:bg-bg/10 transition">Request a quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-14 px-5">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+      <div>
+        <img src="https://voltaoil.com/wp-content/uploads/2015/04/volta-logo.png" alt="Volta Oil" class="h-10 w-auto mb-4" />
+        <p class="text-ink/60 text-sm">Fueling New England since 1930.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold uppercase tracking-wide text-amber text-sm mb-4">Services</h4>
+        <ul class="space-y-2 text-ink/70 text-sm">
+          <li>Heating oil delivery</li>
+          <li>Commercial fueling</li>
+          <li>Rapid Refill stores</li>
+          <li>Service stations</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold uppercase tracking-wide text-amber text-sm mb-4">Company</h4>
+        <ul class="space-y-2 text-ink/70 text-sm">
+          <li>About Volta Oil</li>
+          <li>Company history</li>
+          <li>Community service</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold uppercase tracking-wide text-amber text-sm mb-4">Contact</h4>
+        <ul class="space-y-2 text-ink/70 text-sm">
+          <li>1-800-894-1300</li>
+          <li>1 Roberts Road, Plymouth, MA</li>
+          <li><a href="https://voltaoil.com/contact-us/" class="hover:text-amber">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="max-w-6xl mx-auto mt-10 text-ink/40 text-xs">© 2026 Volta Oil. Prototype redesign concept.</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
