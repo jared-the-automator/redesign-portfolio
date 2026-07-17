@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Schmidt's Meat Market | Custom Processing in Nicollet, MN</title>
+  <meta name="description" content="Schmidt's Meat Market is a family shop in Nicollet, Minnesota cutting beef and pork to order. Custom processing, beef quarters, and hog sales." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #100d0a;
+      --bg-2: #17130e;
+      --panel: #1d1812;
+      --ink: #f4ece0;
+      --muted: #b6a896;
+      --accent: #d4912a;
+      --accent-2: #e7a838;
+      --line: #2c241b;
+      --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .display {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      line-height: 0.98;
+      text-transform: uppercase;
+    }
+    .eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      color: var(--accent-2);
+    }
+    .accent { color: var(--accent-2); }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--accent); color: #1a1206;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      padding: 0.85rem 1.5rem; border-radius: var(--radius);
+      transition: transform .2s ease, background .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); background: var(--accent-2); }
+    .btn-ghost {
+      border: 1px solid var(--line); color: var(--ink);
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      padding: 0.85rem 1.5rem; border-radius: var(--radius);
+      transition: border-color .2s ease, color .2s ease;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent-2); }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+    .scrim {
+      background:
+        linear-gradient(90deg, rgba(8,6,4,0.86) 0%, rgba(8,6,4,0.72) 45%, rgba(8,6,4,0.55) 100%),
+        rgba(8,6,4,0.55);
+    }
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    img { max-width: 100%; }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#100d0a]/92 backdrop-blur border-b border-[#2c241b]">
+    <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="https://schmidtsmeatmarket.com/wp-content/uploads/2023/06/SMM-logo-with-colored-shadow-and-transparent-background.png" alt="Schmidt's Meat Market" class="h-9 w-auto" />
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm" style="font-family:'Barlow Condensed',sans-serif; font-weight:600; letter-spacing:0.05em; text-transform:uppercase;">
+        <a href="#products" class="text-[#b6a896] hover:text-[#e7a838]">Cuts</a>
+        <a href="#heritage" class="text-[#b6a896] hover:text-[#e7a838]">Heritage</a>
+        <a href="#gallery" class="text-[#b6a896] hover:text-[#e7a838]">Gallery</a>
+        <a href="#visit" class="text-[#b6a896] hover:text-[#e7a838]">Visit</a>
+      </div>
+      <a href="#visit" class="btn text-sm">Email the shop</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative min-h-[100dvh] flex items-center">
+    <img src="https://schmidtsmeatmarket.com/wp-content/uploads/2012/02/store2.png" alt="Schmidt's Meat Market storefront in Nicollet, Minnesota" class="absolute inset-0 h-full w-full object-cover" />
+    <div class="absolute inset-0 scrim"></div>
+    <div class="relative max-w-6xl mx-auto px-5 py-28 w-full">
+      <p class="eyebrow mb-5">Nicollet, Minnesota</p>
+      <h1 class="display text-[#f4ece0] text-6xl sm:text-7xl lg:text-8xl max-w-3xl">
+        Custom-cut meat,<br />the Nicollet way
+      </h1>
+      <p class="mt-6 text-lg text-[#e9ddcb] max-w-xl">
+        A family shop in Nicollet, Minnesota, cutting beef and pork to order the old way. Bring it in, we cut it, wrap it, and label it.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#products" class="btn">See our cuts</a>
+        <a href="#visit" class="btn-ghost">Email the shop</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY PRODUCT SECTION -->
+  <section id="products" class="reveal bg-[#17130e] py-24">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+      <div class="relative">
+        <img src="https://schmidtsmeatmarket.com/wp-content/uploads/2012/02/guy.png" alt="The butcher at Schmidt's Meat Market" class="w-full h-[460px] object-cover rounded-[12px] border border-[#2c241b]" />
+        <div class="absolute -bottom-5 -right-3 card px-5 py-4">
+          <p class="display text-3xl text-[#e7a838]">Cut to spec</p>
+          <p class="text-xs text-[#b6a896] uppercase tracking-wide">Wrapped and labeled</p>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow mb-4">What we do</p>
+        <h2 class="display text-5xl text-[#f4ece0] mb-8">Processed the way you want it</h2>
+        <div class="space-y-7">
+          <div class="flex gap-5">
+            <span class="display text-4xl text-[#d4912a] leading-none">01</span>
+            <div>
+              <h3 class="font-semibold text-xl text-[#f4ece0]">Custom Processing</h3>
+              <p class="text-[#b6a896] mt-1">Bring your animal in and we cut it to your specs. Every package wrapped, labeled, and ready for the freezer.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="display text-4xl text-[#d4912a] leading-none">02</span>
+            <div>
+              <h3 class="font-semibold text-xl text-[#f4ece0]">Beef Quarters</h3>
+              <p class="text-[#b6a896] mt-1">Whole and half beef, processed and packaged by the cut. Fill the freezer with local meat you chose yourself.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="display text-4xl text-[#d4912a] leading-none">03</span>
+            <div>
+              <h3 class="font-semibold text-xl text-[#f4ece0]">Hog Sales</h3>
+              <p class="text-[#b6a896] mt-1">Whole hogs processed for smoking, curing, and the table. Bundles and gift boxes built for the season.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECONDARY SECTION (reversed split) -->
+  <section id="heritage" class="reveal bg-[#100d0a] py-24">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="eyebrow mb-4">A shop with a story</p>
+        <h2 class="display text-5xl text-[#f4ece0] mb-6">A Nicollet name worth telling</h2>
+        <p class="text-[#b6a896] mb-4">
+          The shop keeps a history page that goes back to its early days on Main Street, and an awards page that lists the recognition it has earned in the community. That story should lead the homepage, not sit three clicks deep.
+        </p>
+        <p class="text-[#b6a896]">
+          A rebuild puts the heritage and the case of custom cuts side by side, so a first-time visitor understands who they are buying from before they scroll past the fold.
+        </p>
+        <div class="mt-8 flex gap-10">
+          <div>
+            <p class="display text-4xl text-[#e7a838]">Nicollet</p>
+            <p class="text-xs text-[#b6a896] uppercase tracking-wide">Minnesota, since the early days</p>
+          </div>
+          <div>
+            <p class="display text-4xl text-[#e7a838]">Family</p>
+            <p class="text-xs text-[#b6a896] uppercase tracking-wide">Owned and run local</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="https://schmidtsmeatmarket.com/wp-content/uploads/2012/02/store2.png" alt="Inside Schmidt's Meat Market" class="w-full h-[440px] object-cover rounded-[12px] border border-[#2c241b]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY / BRAND STORY -->
+  <section id="gallery" class="reveal bg-[#17130e] py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <p class="eyebrow mb-4">From the case</p>
+      <h2 class="display text-5xl text-[#f4ece0] mb-10 max-w-2xl">The kind of shop people drive to</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://schmidtsmeatmarket.com/wp-content/uploads/2012/02/store2.png" alt="Schmidt's Meat Market storefront" class="h-44 w-full object-cover rounded-[12px] border border-[#2c241b]" />
+        <img src="https://schmidtsmeatmarket.com/wp-content/uploads/2012/02/guy.png" alt="The butcher at work" class="h-44 w-full object-cover rounded-[12px] border border-[#2c241b]" />
+        <img src="https://schmidtsmeatmarket.com/wp-content/uploads/2023/06/SMM-logo-with-colored-shadow-and-transparent-background.png" alt="Schmidt's Meat Market logo" class="h-44 w-full object-contain bg-[#100d0a] rounded-[12px] border border-[#2c241b] p-4" />
+        <div class="h-44 w-full rounded-[12px] border border-[#2c241b] bg-[#100d0a] flex items-center justify-center p-5 text-center">
+          <p class="text-[#b6a896] text-sm">Custom beef quarters, hog sales, and gift boxes, cut and wrapped to order.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY -->
+  <section class="reveal bg-[#100d0a] py-20">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-3 gap-6">
+      <div class="card p-7">
+        <p class="display text-3xl text-[#e7a838] mb-2">Recognized</p>
+        <p class="text-[#b6a896] text-sm">The shop's awards page lists community recognition earned over the years in Nicollet.</p>
+      </div>
+      <div class="card p-7">
+        <p class="display text-3xl text-[#e7a838] mb-2">In the news</p>
+        <p class="text-[#b6a896] text-sm">Local press features have told the Schmidt's story. The rebuild surfaces that proof on the homepage.</p>
+      </div>
+      <div class="card p-7">
+        <p class="display text-3xl text-[#e7a838] mb-2">Local</p>
+        <p class="text-[#b6a896] text-sm">A family shop serving Nicollet and the surrounding towns, processing meat the way neighbors ask for it.</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="visit" class="reveal bg-[#d4912a] py-16">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div>
+        <p class="eyebrow text-[#3a2606] mb-2">Ready to fill the freezer?</p>
+        <h2 class="display text-4xl sm:text-5xl text-[#1a1206] max-w-xl">Bring it in. We cut it to your spec.</h2>
+      </div>
+      <a href="mailto:info@schmidtsmeatmarket.com" class="btn bg-[#1a1206] text-[#e7a838] text-lg">Email info@schmidtsmeatmarket.com</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#100d0a] border-t border-[#2c241b] pt-16 pb-10">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-4 gap-10">
+      <div>
+        <img src="https://schmidtsmeatmarket.com/wp-content/uploads/2023/06/SMM-logo-with-colored-shadow-and-transparent-background.png" alt="Schmidt's Meat Market" class="h-10 w-auto mb-4" />
+        <p class="text-[#b6a896] text-sm">A family meat market in Nicollet, Minnesota. Custom processing, beef quarters, and hog sales cut to order.</p>
+      </div>
+      <div>
+        <p class="display text-lg text-[#f4ece0] mb-4">Explore</p>
+        <ul class="space-y-2 text-sm text-[#b6a896]">
+          <li><a href="#heritage" class="hover:text-[#e7a838]">About</a></li>
+          <li><a href="#heritage" class="hover:text-[#e7a838]">History</a></li>
+          <li><a href="#heritage" class="hover:text-[#e7a838]">Awards</a></li>
+          <li><a href="#gallery" class="hover:text-[#e7a838]">In the News</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="display text-lg text-[#f4ece0] mb-4">Shop</p>
+        <ul class="space-y-2 text-sm text-[#b6a896]">
+          <li><a href="#products" class="hover:text-[#e7a838]">Custom Processing</a></li>
+          <li><a href="#products" class="hover:text-[#e7a838]">Beef Quarters</a></li>
+          <li><a href="#products" class="hover:text-[#e7a838]">Hog Sales</a></li>
+          <li><a href="#products" class="hover:text-[#e7a838]">Gift Boxes</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="display text-lg text-[#f4ece0] mb-4">Visit</p>
+        <ul class="space-y-2 text-sm text-[#b6a896]">
+          <li>Nicollet, Minnesota</li>
+          <li><a href="mailto:info@schmidtsmeatmarket.com" class="hover:text-[#e7a838]">info@schmidtsmeatmarket.com</a></li>
+          <li>Stop by the shop</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-5 mt-12 pt-6 border-t border-[#2c241b] text-xs text-[#7c6f5d]">
+      Prototype redesign concept for Schmidt's Meat Market. Photographs are referenced from the existing site.
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>

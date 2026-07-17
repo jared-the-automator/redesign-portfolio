@@ -284,3 +284,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Fightmaster Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/fightmasterflyfishing.com/) | Guided fly fishing, Smoky Mountains & East Tennessee | Smoky Mountains, TN |
 | [Mountain Top Furniture & Design](https://jared-the-automator.github.io/redesign-portfolio/mtntopfurniture.com/) | Custom solid wood furniture, handcrafted in the North Georgia mountains | Blairsville, GA |
 | [Midtown Funerals](https://jared-the-automator.github.io/redesign-portfolio/midtownfunerals.com/) | Community-owned funeral home, cremation, green burial & grief support | Chicago, IL (Irving Park) |
+| [Schmidt's Meat Market](https://jared-the-automator.github.io/redesign-portfolio/schmidtsmeatmarket.com/) | Family meat market, custom beef & pork processing, beef quarters and hog sales | Nicollet, MN |
