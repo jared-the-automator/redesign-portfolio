@@ -292,3 +292,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Moose Knuckle Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/mooseknucklefishing.com/) | Fly fishing blog and photography, tarpon, bass, and cane rods | Northeast US |
 | [EsoxOnly](https://jared-the-automator.github.io/redesign-portfolio/esoxonly.com/) | Pike and muskie fishing: techniques, tackle, books, and a Trophy List of giant esox | Vänern and Dalsland, Sweden |
 | [Arthur Melville Pearson](https://jared-the-automator.github.io/redesign-portfolio/arthurmelvillepearson.com/) | Birding guide, prairie walks, author talks & conservation work | Illinois (Midewin & Jo Daviess County) |
+| [Northeast Alpine Start](https://jared-the-automator.github.io/redesign-portfolio/northeastalpinestart.com/) | New England backcountry gear reviews, trip reports & SAR how-tos | White Mountains, NH |
