@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>East Valley Equine Practitioners | Mobile Equine Care in Gilbert, AZ</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@500;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: { extend: {
+    fontFamily: { display: ['"Roboto Slab"','serif'], body: ['Inter','sans-serif'] },
+    colors: { tan:'#f4ede2', sand:'#ece1d2', charcoal:'#2b2622', rust:'#b5502f', clay:'#6b5d4f' }
+  } }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.is-visible { opacity: 1; transform: none; }
+  .hero-scrim { background: rgba(20,16,12,.65); }
+</style>
+</head>
+<body class="font-body bg-tan text-charcoal antialiased">
+
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-50 bg-tan/95 backdrop-blur border-b border-sand">
+  <div class="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/east-valley-equine-practitioners.png1111.png" alt="East Valley Equine Practitioners, P.C." class="h-12 w-auto">
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-charcoal">
+      <a href="#services" class="hover:text-rust transition-colors">Services</a>
+      <a href="#team" class="hover:text-rust transition-colors">Our Team</a>
+      <a href="#gallery" class="hover:text-rust transition-colors">From the Field</a>
+      <a href="#contact" class="hover:text-rust transition-colors">Contact</a>
+    </nav>
+    <a href="#contact" class="bg-rust text-tan px-5 py-2.5 rounded-[12px] text-sm font-semibold hover:bg-[#9c4427] transition-colors">Request an Appointment</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-[100dvh] flex items-end">
+  <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/3horses_1920-1.jpg" alt="Three horses in a Gilbert, Arizona corral" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 hero-scrim"></div>
+  <div class="relative z-10 w-full max-w-6xl mx-auto px-5 pb-20 md:pb-28">
+    <p class="text-tan/90 uppercase tracking-[0.25em] text-xs font-semibold mb-5">Gilbert, Arizona</p>
+    <h1 class="font-display font-extrabold text-tan text-5xl md:text-7xl leading-[1.05] max-w-3xl">
+      Mobile Equine Care<br>For The East Valley
+    </h1>
+    <p class="text-tan/90 text-lg md:text-xl max-w-xl mt-6">
+      Dr. Hufnagel and her team bring lameness exams, dentistry, and surgery to your ranch across the East Valley. Accepting new appointments.
+    </p>
+    <div class="flex flex-wrap gap-4 mt-8">
+      <a href="#contact" class="bg-rust text-tan px-7 py-3.5 rounded-[12px] font-semibold hover:bg-[#9c4427] transition-colors">Request an Appointment</a>
+      <a href="tel:4808485240" class="border border-tan/60 text-tan px-7 py-3.5 rounded-[12px] font-semibold hover:bg-tan/10 transition-colors">Call (480) 848-5240</a>
+    </div>
+  </div>
+</section>
+<!-- PRIMARY PRODUCT SECTION -->
+<section id="services" class="py-20 md:py-28 bg-tan">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/horse-run.jpg" alt="A horse undergoing a surgical procedure" class="w-full h-[420px] object-cover rounded-[12px]">
+    </div>
+    <div class="reveal">
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-charcoal">Care for the whole horse</h2>
+      <p class="text-clay mt-4 max-w-md">From the first lameness exam to surgery and recovery, the work happens where your horse stands.</p>
+      <div class="mt-8 space-y-6">
+        <div class="flex gap-4">
+          <span class="font-display font-bold text-rust text-2xl leading-none">01</span>
+          <div>
+            <h3 class="font-display font-bold text-lg text-charcoal">Lameness Exams</h3>
+            <p class="text-clay mt-1">Hands-on evaluation and gait analysis to find the source of unsoundness before it becomes a layoff.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-bold text-rust text-2xl leading-none">02</span>
+          <div>
+            <h3 class="font-display font-bold text-lg text-charcoal">Dentistry</h3>
+            <p class="text-clay mt-1">Routine floating and oral surgery performed in your barn, no trailer and no haul required.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-bold text-rust text-2xl leading-none">03</span>
+          <div>
+            <h3 class="font-display font-bold text-lg text-charcoal">Digital Radiography</h3>
+            <p class="text-clay mt-1">On-site X-ray and ultrasound for same-visit answers on injuries and soundness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECONDARY SECTION (reversed) -->
+<section class="py-20 md:py-28 bg-sand">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal md:order-2">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/mare-foal.jpg" alt="A mare and foal during a video endoscopy exam" class="w-full h-[420px] object-cover rounded-[12px]">
+    </div>
+    <div class="reveal md:order-1">
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-charcoal">A practice built around the horse</h2>
+      <p class="text-clay mt-4 max-w-md">East Valley Equine Practitioners is a mobile practice. The truck is the clinic, so your horse is examined where it lives, away from the stress of a strange barn.</p>
+      <p class="text-clay mt-4 max-w-md">From Coggins testing and health certificates to chiropractic care and emergency call-outs, the full range of care comes to you.</p>
+      <ul class="mt-6 space-y-2 text-charcoal font-medium">
+        <li class="flex gap-2"><span class="text-rust">+</span> Chiropractic and video endoscopy</li>
+        <li class="flex gap-2"><span class="text-rust">+</span> Ophthalmic care and IRAP joint injection</li>
+        <li class="flex gap-2"><span class="text-rust">+</span> Farrier consultations and emergency services</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- GALLERY / BRAND STORY -->
+<section id="gallery" class="py-20 md:py-28 bg-tan">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="reveal max-w-2xl">
+      <p class="text-rust uppercase tracking-[0.2em] text-xs font-semibold mb-3">From the field</p>
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-charcoal">The work, photographed where it happens</h2>
+    </div>
+    <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2021/10/IMG_4103-scaled-1.jpg" alt="Lameness examination in progress" class="w-full h-48 object-cover rounded-[12px] reveal">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/3horses_1920-1.jpg" alt="Three horses in a corral" class="w-full h-48 object-cover rounded-[12px] reveal">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/horse-run.jpg" alt="Surgical procedure" class="w-full h-48 object-cover rounded-[12px] reveal">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/equine01.jpg" alt="Digital radiography" class="w-full h-48 object-cover rounded-[12px] reveal">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/equine03.jpg" alt="Chiropractic care" class="w-full h-48 object-cover rounded-[12px] reveal">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/mare-foal.jpg" alt="Mare and foal during endoscopy" class="w-full h-48 object-cover rounded-[12px] reveal">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/horse04.jpg" alt="Health certificate exam" class="w-full h-48 object-cover rounded-[12px] reveal">
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2021/10/IMG_4092-scaled-1.jpg" alt="Ophthalmic care" class="w-full h-48 object-cover rounded-[12px] reveal">
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY -->
+<section id="team" class="py-20 md:py-28 bg-charcoal text-tan">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <h2 class="font-display font-bold text-3xl md:text-4xl">Why horse owners in the Valley call us</h2>
+      <p class="text-tan/70 mt-4 max-w-md">East Valley Equine Practitioners, P.C. is a mobile equine practice serving Gilbert and the East Valley. The clinic comes to the horse.</p>
+    </div>
+    <div class="reveal grid grid-cols-2 gap-6">
+      <div class="border-t border-tan/20 pt-4">
+        <p class="font-display font-bold text-2xl text-rust">Mobile</p>
+        <p class="text-tan/70 text-sm mt-1">Care delivered at your ranch</p>
+      </div>
+      <div class="border-t border-tan/20 pt-4">
+        <p class="font-display font-bold text-2xl text-rust">Full service</p>
+        <p class="text-tan/70 text-sm mt-1">Medicine, surgery, and dentistry</p>
+      </div>
+      <div class="border-t border-tan/20 pt-4">
+        <p class="font-display font-bold text-2xl text-rust">Local</p>
+        <p class="text-tan/70 text-sm mt-1">Gilbert and the East Valley</p>
+      </div>
+      <div class="border-t border-tan/20 pt-4">
+        <p class="font-display font-bold text-2xl text-rust">Open</p>
+        <p class="text-tan/70 text-sm mt-1">Accepting new appointments</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA STRIP -->
+<section id="contact" class="bg-rust text-tan py-16 md:py-20">
+  <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+    <div>
+      <h2 class="font-display font-bold text-3xl md:text-4xl max-w-xl">Your horse should not wait for the clinic to come to it.</h2>
+      <p class="text-tan/90 mt-3">Call today or request an appointment online. We are accepting new appointments.</p>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      <a href="tel:4808485240" class="bg-tan text-rust px-7 py-3.5 rounded-[12px] font-semibold hover:bg-white transition-colors">Call (480) 848-5240</a>
+      <a href="mailto:office@eastvalleyequine.com" class="border border-tan/60 px-7 py-3.5 rounded-[12px] font-semibold hover:bg-tan/10 transition-colors">Email the practice</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-charcoal text-tan/70 py-14">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-4 gap-10">
+    <div>
+      <img src="https://eastvalleyequine.com/wp-content/uploads/2020/01/east-valley-equine-practitioners.png1111.png" alt="East Valley Equine Practitioners, P.C." class="h-12 w-auto mb-4">
+      <p class="text-sm">Mobile equine veterinary care for Gilbert and the East Valley.</p>
+    </div>
+    <div>
+      <p class="text-tan font-semibold mb-3">Practice</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#services" class="hover:text-tan">Services</a></li>
+        <li><a href="#team" class="hover:text-tan">Our Team</a></li>
+        <li><a href="#gallery" class="hover:text-tan">From the Field</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-tan font-semibold mb-3">Care</p>
+      <ul class="space-y-2 text-sm">
+        <li>Lameness and dentistry</li>
+        <li>Surgery and radiography</li>
+        <li>Coggins and health certificates</li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-tan font-semibold mb-3">Contact</p>
+      <ul class="space-y-2 text-sm">
+        <li>14469 E. Pecos Road, Gilbert, AZ</li>
+        <li><a href="tel:4808485240" class="hover:text-tan">(480) 848-5240</a></li>
+        <li><a href="mailto:office@eastvalleyequine.com" class="hover:text-tan">office@eastvalleyequine.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-5 mt-10 pt-6 border-t border-tan/15 text-xs text-tan/50">
+    East Valley Equine Practitioners, P.C. | Prototype redesign concept.
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>
+</body>
+</html>

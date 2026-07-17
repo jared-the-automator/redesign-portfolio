@@ -294,3 +294,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Arthur Melville Pearson](https://jared-the-automator.github.io/redesign-portfolio/arthurmelvillepearson.com/) | Birding guide, prairie walks, author talks & conservation work | Illinois (Midewin & Jo Daviess County) |
 | [Northeast Alpine Start](https://jared-the-automator.github.io/redesign-portfolio/northeastalpinestart.com/) | New England backcountry gear reviews, trip reports & SAR how-tos | White Mountains, NH |
 | [Lyndale Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/lyndaleanimalhospital.com/) | Small-animal veterinary hospital | Minneapolis, MN |
+| [East Valley Equine Practitioners](https://jared-the-automator.github.io/redesign-portfolio/eastvalleyequine.com/) | Mobile equine veterinary care | Gilbert, AZ |
