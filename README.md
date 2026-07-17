@@ -38,6 +38,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Metz Mortuary](https://jared-the-automator.github.io/redesign-portfolio/metzmortuary.com/) | Family-owned mortuary, serving since 1891 | York & Henderson, NE |
 | --- | --- | --- |
 | [Town & Country Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/townncountryvet.com/) | Full-service small-animal veterinary hospital | Portland, OR |
+| [Idaho Falls Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/idahofallsveterinaryhospital.com/) | Small-animal veterinary hospital, sees cats, dogs, rabbits, birds and backyard chickens | Ammon, ID |
 | --- | --- | --- |
 | [Jack Shirk Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/jackshirkflyfishing.com/) | Guided fly fishing, fly tying and classes | Tri-Cities, TN |
 | [Buck Horn Outfitters](https://jared-the-automator.github.io/redesign-portfolio/buckhornoutfittersidaho.com/) | Idaho guided elk, mule deer and predator hunts, trout fly fishing and backcountry horseback trips | Yellow Pine, ID |

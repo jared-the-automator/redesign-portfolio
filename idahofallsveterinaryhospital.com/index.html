@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Idaho Falls Veterinary Hospital | Small-Animal Care in Ammon, ID</title>
+  <meta name="description" content="Idaho Falls Veterinary Hospital is a small-animal clinic in Ammon, ID. Dr. Kelleen Parnell cares for cats, dogs, rabbits, pocket pets, birds, and chickens." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            chalk: "#f6f5f1",
+            stone: "#6f6b63",
+            ink: "#18181a",
+            pine: "#2f6f5e"
+          },
+          fontFamily: {
+            display: ["'Space Grotesk'", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          },
+          borderRadius: { soft: "14px" }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body class="bg-chalk text-ink font-body antialiased">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-chalk/90 backdrop-blur border-b border-ink/10">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-display font-bold text-lg tracking-tight text-ink">Idaho Falls<span class="text-pine"> Veterinary</span></a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone">
+        <a href="#services" class="hover:text-ink transition">Services</a>
+        <a href="#about" class="hover:text-ink transition">About</a>
+        <a href="#team" class="hover:text-ink transition">Our Team</a>
+        <a href="#contact" class="hover:text-ink transition">Contact</a>
+      </div>
+      <a href="tel:2083985938" class="bg-pine text-white text-sm font-semibold px-4 py-2 rounded-soft hover:bg-ink transition">Call 208-398-5938</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative min-h-[100dvh] flex items-end overflow-hidden">
+    <img src="https://idahofallsveterinaryhospital.com/wp-content/uploads/2020/11/idahofalls-01-1.png" alt="Idaho Falls Veterinary Hospital" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-ink/65"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pb-20 md:pb-28 w-full">
+      <p class="text-white/80 text-sm font-semibold tracking-[0.2em] uppercase mb-5">Ammon, Idaho</p>
+      <h1 class="font-display font-bold text-white text-5xl md:text-7xl leading-[1.02] max-w-3xl">
+        Care for every patient, from puppies to backyard chickens.
+      </h1>
+      <p class="text-white/90 text-lg md:text-xl max-w-xl mt-6">
+        A small-animal hospital in Ammon, ID, where Dr. Kelleen Parnell sees cats, dogs, rabbits, birds, and more.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-8">
+        <a href="#services" class="bg-pine text-white font-semibold px-6 py-3 rounded-soft hover:bg-white hover:text-ink transition">See the rebuild</a>
+        <a href="tel:2083985938" class="border border-white/70 text-white font-semibold px-6 py-3 rounded-soft hover:bg-white hover:text-ink transition">Book a visit</a>
+      </div>
+    </div>
+  </header>
+  <!-- PRIMARY PRODUCT SECTION: services, asymmetric split with numbered features -->
+  <section id="services" class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <h2 class="font-display font-bold text-4xl md:text-5xl leading-tight">
+          A full small-animal practice, built around the patients you actually see.
+        </h2>
+        <p class="text-stone text-lg mt-5 max-w-md">
+          Most clinics near Ammon stop at cats and dogs. This one opens its doors to the whole household, feathers and all.
+        </p>
+      </div>
+      <div class="space-y-6">
+        <div class="reveal flex gap-5 items-start border-t border-ink/10 pt-6">
+          <span class="font-display font-bold text-2xl text-pine">01</span>
+          <div>
+            <h3 class="font-display font-semibold text-xl">Cats and dogs</h3>
+            <p class="text-stone mt-1">Wellness exams, sick visits, and senior care from a team that learns your pet by name.</p>
+          </div>
+        </div>
+        <div class="reveal flex gap-5 items-start border-t border-ink/10 pt-6">
+          <span class="font-display font-bold text-2xl text-pine">02</span>
+          <div>
+            <h3 class="font-display font-semibold text-xl">Rabbits, pocket pets, and birds</h3>
+            <p class="text-stone mt-1">Species-specific care that many small-town clinics simply do not offer.</p>
+          </div>
+        </div>
+        <div class="reveal flex gap-5 items-start border-t border-ink/10 pt-6">
+          <span class="font-display font-bold text-2xl text-pine">03</span>
+          <div>
+            <h3 class="font-display font-semibold text-xl">Backyard chickens and flock health</h3>
+            <p class="text-stone mt-1">From single hens to a backyard flock, care most owners have to drive an hour to find.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION: about / story, reversed split -->
+  <section id="about" class="bg-ink text-chalk">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal order-2 md:order-1">
+        <img src="https://idahofallsveterinaryhospital.com/wp-content/uploads/2020/11/idahofalls-01-1.png" alt="Idaho Falls Veterinary Hospital" class="w-full h-[420px] object-cover rounded-soft" />
+      </div>
+      <div class="reveal order-1 md:order-2">
+        <h2 class="font-display font-bold text-4xl md:text-5xl leading-tight">
+          Local care, from a vet who knows your animals.
+        </h2>
+        <p class="text-chalk/70 text-lg mt-5">
+          Dr. Kelleen Parnell is committed to the health and welfare of all small animals. That commitment shows up in the exam room, not just the homepage.
+        </p>
+        <p class="text-chalk/70 text-lg mt-4">
+          Idaho Falls Veterinary Hospital is a state-of-the-art clinic serving Ammon and the wider Idaho Falls area, with the calm, personal feel of a practice that plans to be here for the long run.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY: full-width band, breaks the zigzag -->
+  <section class="relative min-h-[60vh] flex items-center overflow-hidden">
+    <img src="https://idahofallsveterinaryhospital.com/wp-content/uploads/2020/11/idahofalls-01-1.png" alt="Idaho Falls Veterinary Hospital" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-ink/70"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <p class="font-display font-semibold text-2xl md:text-3xl text-white leading-snug">
+        A state-of-the-art clinic with the feel of a practice that knows your pet by name.
+      </p>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY / TRUST -->
+  <section id="team" class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="reveal max-w-2xl">
+      <h2 class="font-display font-bold text-4xl md:text-5xl leading-tight">
+        The care your animals get, stated plainly.
+      </h2>
+    </div>
+    <blockquote class="reveal mt-10 border-l-0 pl-0 max-w-3xl">
+      <p class="font-display font-medium text-2xl md:text-3xl text-ink leading-snug">
+        Dr. Kelleen Parnell is committed to the health and welfare of all small animals.
+      </p>
+      <footer class="text-stone mt-3">Idaho Falls Veterinary Hospital, Ammon ID</footer>
+    </blockquote>
+    <div class="grid sm:grid-cols-3 gap-6 mt-12">
+      <div class="reveal bg-white rounded-soft p-6 border border-ink/10">
+        <h3 class="font-display font-semibold text-lg">Where we are</h3>
+        <p class="text-stone mt-2">Ammon, ID 83406, serving Idaho Falls and the surrounding communities.</p>
+      </div>
+      <div class="reveal bg-white rounded-soft p-6 border border-ink/10">
+        <h3 class="font-display font-semibold text-lg">Who we see</h3>
+        <p class="text-stone mt-2">Cats, dogs, rabbits, pocket pets, birds, and backyard chickens.</p>
+      </div>
+      <div class="reveal bg-white rounded-soft p-6 border border-ink/10">
+        <h3 class="font-display font-semibold text-lg">How to reach us</h3>
+        <p class="text-stone mt-2">Call 208-398-5938 or 208-552-0662. Appointments and walk-ins welcome.</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="contact" class="bg-pine text-white">
+    <div class="max-w-6xl mx-auto px-6 py-16 md:py-20 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+      <div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl leading-tight max-w-xl">
+          Ready to see your clinic at its best?
+        </h2>
+        <p class="text-white/85 mt-3 max-w-md">
+          Call the front desk or stop by in Ammon. We are happy to walk you through care for any small animal.
+        </p>
+      </div>
+      <a href="tel:2083985938" class="bg-white text-ink font-semibold px-7 py-3 rounded-soft hover:bg-ink hover:text-white transition whitespace-nowrap">
+        Call 208-398-5938
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink text-chalk/70">
+    <div class="max-w-6xl mx-auto px-6 py-14 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div>
+        <p class="font-display font-bold text-chalk text-lg">Idaho Falls<span class="text-pine"> Veterinary</span></p>
+        <p class="mt-3 text-sm">Small-animal hospital in Ammon, ID 83406.</p>
+      </div>
+      <div>
+        <p class="font-display font-semibold text-chalk text-sm tracking-wide">Visit</p>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="#services" class="hover:text-chalk transition">Services</a></li>
+          <li><a href="#about" class="hover:text-chalk transition">About</a></li>
+          <li><a href="#team" class="hover:text-chalk transition">Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display font-semibold text-chalk text-sm tracking-wide">Contact</p>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="tel:2083985938" class="hover:text-chalk transition">208-398-5938</a></li>
+          <li><a href="tel:2085520662" class="hover:text-chalk transition">208-552-0662</a></li>
+          <li><a href="mailto:idahofallsveterinaryhospital@gmail.com" class="hover:text-chalk transition">Email us</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display font-semibold text-chalk text-sm tracking-wide">Follow</p>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="https://www.facebook.com/idahofallsveterinaryhospital" class="hover:text-chalk transition">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-chalk/10">
+      <p class="max-w-6xl mx-auto px-6 py-6 text-xs text-chalk/50">
+        Idaho Falls Veterinary Hospital, Ammon, ID. Prototype redesign concept.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => obs.observe(el));
+  </script>
+</body>
+</html>
