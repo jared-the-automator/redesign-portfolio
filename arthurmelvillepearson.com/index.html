@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arthur Melville Pearson | Birding and Prairie Conservation in Illinois</title>
+  <meta name="description" content="Arthur Melville Pearson leads guided birding and prairie walks, author talks, and conservation work across Illinois, from Midewin to Jo Daviess County." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --cream:#f3f0e6;
+      --cream-2:#eae5d6;
+      --olive:#6c7a4c;
+      --olive-deep:#4f5c38;
+      --espresso:#2a2620;
+      --ink:#1b1813;
+      --muted:#6b655a;
+      --line:rgba(42,38,32,0.12);
+      --radius:12px;
+      --display:'DM Serif Display',Georgia,serif;
+      --body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0;
+      font-family:var(--body);
+      color:var(--espresso);
+      background:var(--cream);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;margin:0;letter-spacing:-0.01em;}
+    p{margin:0;}
+    a{color:inherit;text-decoration:none;}
+    img{display:block;max-width:100%;}
+    .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+    .eyebrow{
+      font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;
+      color:var(--olive-deep);
+    }
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      background:var(--olive);color:#fbfaf4;
+      padding:13px 22px;border-radius:var(--radius);
+      font-weight:600;font-size:15px;letter-spacing:0.01em;
+      transition:background .25s ease, transform .25s ease;
+    }
+    .btn:hover{background:var(--olive-deep);transform:translateY(-1px);}
+    .btn-ghost{
+      display:inline-flex;align-items:center;gap:8px;
+      border:1px solid rgba(251,250,244,0.5);color:#fbfaf4;
+      padding:13px 22px;border-radius:var(--radius);
+      font-weight:600;font-size:15px;
+      transition:border-color .25s ease, background .25s ease;
+    }
+    .btn-ghost:hover{border-color:#fbfaf4;background:rgba(251,250,244,0.08);}
+
+    /* nav */
+    nav{
+      position:sticky;top:0;z-index:50;
+      background:rgba(243,240,230,0.86);
+      backdrop-filter:saturate(140%) blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;}
+    .wordmark{font-family:var(--display);font-size:20px;color:var(--espresso);}
+    .nav-links{display:flex;align-items:center;gap:26px;}
+    .nav-links a{font-size:14px;font-weight:500;color:var(--muted);transition:color .2s ease;}
+    .nav-links a:hover{color:var(--espresso);}
+    .nav-cta{background:var(--olive);color:#fbfaf4;padding:9px 16px;border-radius:var(--radius);font-weight:600;font-size:14px;}
+    .nav-cta:hover{background:var(--olive-deep);}
+    @media(max-width:720px){.nav-links a:not(.nav-cta){display:none;}}
+
+    /* hero */
+    .hero{
+      position:relative;min-height:100dvh;
+      display:flex;align-items:flex-end;
+      background-image:url('https://arthurmelvillepearson.com/wp-content/uploads/2018/12/lorin-as-private-2.jpg');
+      background-size:cover;background-position:center 30%;
+    }
+    .hero::before{
+      content:"";position:absolute;inset:0;
+      background:rgba(18,16,11,0.62);
+    }
+    .hero-inner{position:relative;z-index:2;width:100%;padding:0 24px 9vh;}
+    .hero .eyebrow{color:#d9e0c4;}
+    .hero h1{
+      color:#fbfaf4;font-size:clamp(40px,7vw,82px);
+      max-width:14ch;margin:18px 0 0;
+    }
+    .hero p.lede{
+      color:rgba(251,250,244,0.88);font-size:clamp(16px,2vw,20px);
+      max-width:54ch;margin:22px 0 30px;
+    }
+    .hero-cta{display:flex;flex-wrap:wrap;gap:14px;}
+
+    .section{padding:96px 0;}
+    .section-head{max-width:60ch;margin-bottom:46px;}
+    .section-head h2{font-size:clamp(30px,4.4vw,48px);margin:14px 0 0;color:var(--espresso);}
+    .section-head p{color:var(--muted);margin-top:14px;font-size:17px;}
+
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+    @media(max-width:860px){.split{grid-template-columns:1fr;gap:32px;}}
+    .split.reverse{direction:rtl;}
+    .split.reverse>*{direction:ltr;}
+    .split img{border-radius:var(--radius);width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--cream-2);}
+    .book-img{border-radius:var(--radius);width:100%;max-width:380px;margin:0 auto;box-shadow:0 18px 44px rgba(27,24,19,0.20);}
+
+    .features{list-style:none;margin:0;padding:0;}
+    .feature{padding:22px 0;border-top:1px solid var(--line);}
+    .feature:first-child{border-top:none;}
+    .feature .num{font-family:var(--display);font-size:18px;color:var(--olive);}
+    .feature h3{font-size:22px;margin:6px 0 6px;color:var(--espresso);}
+    .feature p{color:var(--muted);font-size:15.5px;}
+
+    .panel{background:var(--cream-2);border-radius:var(--radius);padding:44px;}
+    .quote{font-family:var(--display);font-size:clamp(24px,3.2vw,34px);line-height:1.25;color:var(--espresso);}
+    .quote .by{display:block;font-family:var(--body);font-size:13px;font-weight:600;letter-spacing:0.05em;color:var(--olive-deep);margin-top:20px;text-transform:uppercase;}
+
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+    @media(max-width:720px){.gallery{grid-template-columns:1fr;}}
+    .gallery figure{margin:0;}
+    .gallery img{border-radius:var(--radius);width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--cream-2);}
+    .gallery figcaption{padding:12px 2px 0;font-size:14px;color:var(--muted);}
+
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px;}
+    @media(max-width:720px){.facts{grid-template-columns:1fr;}}
+    .fact .n{font-family:var(--display);font-size:34px;color:var(--olive);}
+    .fact p{color:var(--muted);font-size:15px;margin-top:6px;}
+
+    .cta{background:var(--espresso);color:#fbfaf4;border-radius:var(--radius);padding:64px 48px;text-align:center;}
+    .cta h2{color:#fbfaf4;font-size:clamp(28px,4vw,44px);max-width:18ch;margin:0 auto 18px;}
+    .cta p{color:rgba(251,250,244,0.8);max-width:48ch;margin:0 auto 28px;}
+    .cta .btn{background:#fbfaf4;color:var(--espresso);}
+    .cta .btn:hover{background:#fff;}
+
+    footer{background:var(--ink);color:rgba(251,250,244,0.75);padding:64px 0 40px;}
+    .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;}
+    @media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr;}}
+    .foot-grid h4{font-family:var(--body);font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,250,244,0.55);margin:0 0 14px;}
+    .foot-grid a{display:block;color:rgba(251,250,244,0.8);font-size:15px;padding:5px 0;}
+    .foot-grid a:hover{color:#fbfaf4;}
+    .foot-brand{font-family:var(--display);font-size:22px;color:#fbfaf4;}
+    .foot-brand+p{margin-top:12px;font-size:14px;color:rgba(251,250,244,0.6);max-width:34ch;}
+    .foot-bottom{border-top:1px solid rgba(251,250,244,0.12);margin-top:40px;padding-top:22px;font-size:13px;color:rgba(251,250,244,0.5);}
+
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease;}
+    .reveal.in{opacity:1;transform:none;}
+    @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="wordmark" href="#top">Arthur Melville Pearson</a>
+      <div class="nav-links">
+        <a href="#work">Walks</a>
+        <a href="#talks">Talks</a>
+        <a href="#book">Book</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="mailto:ampjr@att.net">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-inner wrap">
+      <p class="eyebrow">Illinois birding and prairie conservation</p>
+      <h1>Prairie birding and stewardship, guided by Arthur Melville Pearson</h1>
+      <p class="lede">Guided walks, author talks, and prairie restoration work rooted in Illinois land, from Midewin to the Jo Daviess hills.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn-ghost" href="mailto:ampjr@att.net">Get in touch</a>
+      </div>
+    </div>
+  </header>
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What Arthur offers</p>
+        <h2>Three ways to work together</h2>
+        <p>From a morning in the prairie to a full room for a book talk, each engagement is built around real Illinois land and the birds that depend on it.</p>
+      </div>
+      <div class="split reveal">
+        <img id="book" class="book-img" src="https://arthurmelvillepearson.com/wp-content/uploads/2018/12/9780226441580.jpg" alt="Cover of Arthur Melville Pearson's book on George Fell and the Natural Land Institute" />
+        <ul class="features">
+          <li class="feature" id="talks"><span class="num">01</span><h3>Guided birding and prairie walks</h3><p>Half day and full day outings across restored Illinois prairies, tuned to the season and the birds moving through.</p></li>
+          <li class="feature"><span class="num">02</span><h3>Author talks and book tours</h3><p>Speaking engagements for libraries, nature centers, and conservation groups, built around his biography of George Fell.</p></li>
+          <li class="feature"><span class="num">03</span><h3>Conservation consulting</h3><p>Advisory work on prairie restoration and land stewardship, grounded in decades on the ground in Illinois.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="split reverse reveal">
+        <div>
+          <p class="eyebrow">About Arthur</p>
+          <h2>A conservationist who writes from the prairie</h2>
+          <p style="color:var(--muted);margin-top:16px;font-size:17px;">Arthur Melville Pearson wrote the biography of George Fell, founder of the Natural Land Institute, and spends his time between the tallgrass at Midewin and the conservation lands of Jo Daviess County. His talks and walks grow out of that daily, close work with the land.</p>
+          <p style="color:var(--muted);margin-top:14px;font-size:17px;">The result is a practice that pairs field expertise with storytelling, whether he is leading a group to a migrating warbler or speaking to a full room about prairie history.</p>
+        </div>
+        <img src="https://arthurmelvillepearson.com/wp-content/uploads/2018/12/lorin-as-private-2.jpg" alt="Arthur Melville Pearson in a restored Illinois prairie" />
+      </div>
+    </div>
+  </section>
+  <section class="section" id="gallery">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">From the field</p>
+        <h2>Prairie, up close</h2>
+        <p>A look at the photography and writing that comes out of time spent on restored Illinois land.</p>
+      </div>
+      <div class="gallery reveal">
+        <figure>
+          <img src="https://arthurmelvillepearson.com/wp-content/uploads/2018/12/lorin-as-private-2.jpg" alt="Arthur Melville Pearson in a restored Illinois prairie" />
+          <figcaption>In the field at a Jo Daviess County preserve.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://arthurmelvillepearson.com/wp-content/uploads/2018/12/9780226441580.jpg" alt="Cover of Arthur Melville Pearson's book on George Fell" />
+          <figcaption>His book on George Fell, founder of the Natural Land Institute.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="panel reveal">
+        <p class="eyebrow">Why groups book Arthur</p>
+        <h2 style="font-size:clamp(26px,3.6vw,38px);margin:12px 0 0;color:var(--espresso);">Field work first, then the storytelling</h2>
+        <div class="facts">
+          <div class="fact">
+            <h3 style="font-size:18px;color:var(--olive-deep);margin:0 0 6px;">George Fell biography</h3>
+            <p>Author of the biography of George Fell, founder of the Natural Land Institute, the backbone of his talks across Illinois.</p>
+          </div>
+          <div class="fact">
+            <h3 style="font-size:18px;color:var(--olive-deep);margin:0 0 6px;">Midewin prairie</h3>
+            <p>Active at Midewin National Tallgrass Prairie, one of the largest prairie restorations in the state.</p>
+          </div>
+          <div class="fact">
+            <h3 style="font-size:18px;color:var(--olive-deep);margin:0 0 6px;">Jo Daviess partners</h3>
+            <p>Works with the Jo Daviess Conservation Foundation on land stewardship and public outreach.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="cta reveal">
+        <h2>Plan a walk or a talk</h2>
+        <p>Whether it is a morning of birding or a room full of members, the fastest way to start is an email.</p>
+        <a class="btn" href="mailto:ampjr@att.net">Email Arthur</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand">Arthur Melville Pearson</div>
+          <p>Illinois birding, prairie walks, author talks, and conservation work.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#work">Walks</a>
+          <a href="#talks">Talks</a>
+          <a href="#book">Book</a>
+          <a href="#about">About</a>
+        </div>
+        <div>
+          <h4>Regions</h4>
+          <p style="color:rgba(251,250,244,0.8);font-size:15px;padding:5px 0;margin:0;">Midewin National Tallgrass Prairie</p>
+          <p style="color:rgba(251,250,244,0.8);font-size:15px;padding:5px 0;margin:0;">Jo Daviess County</p>
+          <p style="color:rgba(251,250,244,0.8);font-size:15px;padding:5px 0;margin:0;">Northern Illinois</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:ampjr@att.net">ampjr@att.net</a>
+        </div>
+      </div>
+      <div class="foot-bottom">Site concept redesign preview. Photography and text courtesy of arthurmelvillepearson.com.</div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  </script>
+</body>
+</html>
