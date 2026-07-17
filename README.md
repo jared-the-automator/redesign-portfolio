@@ -289,3 +289,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Schmidt's Meat Market](https://jared-the-automator.github.io/redesign-portfolio/schmidtsmeatmarket.com/) | Family meat market, custom beef & pork processing, beef quarters and hog sales | Nicollet, MN |
 | [Fishing Islamorada](https://jared-the-automator.github.io/redesign-portfolio/fishingislamorada.com/) | Tarpon, bonefish & permit flats and backcountry fishing charters | Islamorada, Florida Keys |
 | [Volta Oil](https://jared-the-automator.github.io/redesign-portfolio/voltaoil.com/) | Heating oil delivery, commercial fueling & Rapid Refill convenience stores, fueling New England since 1930 | Plymouth, MA (serves MA, RI, CT) |
+| [Moose Knuckle Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/mooseknucklefishing.com/) | Fly fishing blog and photography, tarpon, bass, and cane rods | Northeast US |
