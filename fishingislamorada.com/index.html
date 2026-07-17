@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capt. Rick Stanczyk's Fishing Islamorada | Tarpon and Flats Charters</title>
+<meta name="description" content="Islamorada flats and backcountry fishing trips with Capt. Rick Stanczyk. Tarpon, bonefish, and permit on the fly, plus half-day and full-day charters out of the Florida Keys.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --amber:#e8a33d; --ink:#0b0b0a; --bone:#f4f1ea; --muted:#a8a39a; }
+  body{ font-family:'Inter',system-ui,sans-serif; background:var(--ink); color:var(--bone); }
+  .display{ font-family:'Barlow Condensed',sans-serif; font-weight:800; letter-spacing:-0.01em; }
+  .scrim{ background:linear-gradient(180deg, rgba(11,11,10,0.55) 0%, rgba(11,11,10,0.85) 100%); }
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+  a,img,button{ border-radius:12px; }
+</style>
+</head>
+<body class="antialiased">
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-[#0b0b0a]/85 backdrop-blur border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="https://fishingislamorada.com/wp-content/uploads/cropped-20190511_0947370-1.jpg" alt="Capt. Rick Stanczyk's Fishing Islamorada" class="h-10 w-10 object-cover">
+      <span class="display text-lg tracking-wide">Fishing Islamorada</span>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-sm text-[var(--muted)]">
+      <a href="#charters" class="hover:text-[var(--bone)]">Charters</a>
+      <a href="#boat" class="hover:text-[var(--bone)]">The Boat</a>
+      <a href="#reports" class="hover:text-[var(--bone)]">Reports</a>
+      <a href="#about" class="hover:text-[var(--bone)]">About</a>
+    </div>
+    <a href="#book" class="bg-[var(--amber)] text-[#0b0b0a] font-semibold px-4 py-2 text-sm">Book a Trip</a>
+  </div>
+</nav>
+<!-- HERO -->
+<header class="relative min-h-[100dvh] flex items-end">
+  <img src="https://fishingislamorada.com/wp-content/uploads/DSC01019.jpg" alt="A fishing scene on the Islamorada flats" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 scrim"></div>
+  <div class="relative max-w-6xl mx-auto px-5 pb-20 w-full">
+    <p class="text-[var(--amber)] font-semibold tracking-[0.25em] text-xs uppercase mb-4">Islamorada, Florida Keys</p>
+    <h1 class="display text-5xl md:text-7xl leading-[0.95] max-w-3xl">Chase tarpon on the Islamorada flats.</h1>
+    <p class="mt-5 text-[var(--muted)] max-w-xl text-base md:text-lg">Capt. Rick Stanczyk has guided these waters for decades. Half days and fly-only trips out of the Florida Keys.</p>
+    <div class="mt-7 flex flex-wrap gap-3">
+      <a href="#book" class="bg-[var(--amber)] text-[#0b0b0a] font-semibold px-6 py-3">Book a Trip</a>
+      <a href="#boat" class="border border-white/25 px-6 py-3 hover:bg-white/5">See the Boat</a>
+    </div>
+  </div>
+</header>
+<!-- CHARTERS (primary split) -->
+<section id="charters" class="reveal max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <img src="https://fishingislamorada.com/wp-content/uploads/cropped-20220822_072401_688.jpg" alt="Capt. Rick Stanczyk on the water in Islamorada" class="w-full h-[420px] object-cover">
+  </div>
+  <div>
+    <h2 class="display text-4xl md:text-5xl leading-tight">Trips built around the tide, not the clock.</h2>
+    <div class="mt-8 space-y-6">
+      <div class="flex gap-4">
+        <span class="display text-[var(--amber)] text-2xl">01</span>
+        <div>
+          <p class="font-semibold text-lg">Half-day flats trips</p>
+          <p class="text-[var(--muted)] mt-1">Morning and afternoon windows timed to the tide and the light.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <span class="display text-[var(--amber)] text-2xl">02</span>
+        <div>
+          <p class="font-semibold text-lg">Fly-only tarpon</p>
+          <p class="text-[var(--muted)] mt-1">Sight fishing for tarpon, bonefish, and permit on the fly.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <span class="display text-[var(--amber)] text-2xl">03</span>
+        <div>
+          <p class="font-semibold text-lg">Backcountry expeditions</p>
+          <p class="text-[var(--muted)] mt-1">Remote creeks and islands of the Everglades, away from the crowds.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- THE BOAT (reversed split) -->
+<section id="boat" class="reveal bg-white/[0.03] border-y border-white/10">
+  <div class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-10 items-center">
+    <div class="md:order-2">
+      <img src="https://fishingislamorada.com/wp-content/uploads/2012/10/rick2.jpg" alt="Capt. Rick Stanczyk with a redfish in Islamorada" class="w-full h-[420px] object-cover">
+    </div>
+    <div class="md:order-1">
+      <h2 class="display text-4xl md:text-5xl leading-tight">A 1977 Seacraft, restored and still running.</h2>
+      <p class="text-[var(--muted)] mt-5 max-w-lg">The boat is a beautifully restored 1977 Seacraft, quiet and stable on the flats. Capt. Rick pairs that old hull with decades of local water knowledge.</p>
+      <a href="#book" class="inline-block mt-6 bg-[var(--amber)] text-[#0b0b0a] font-semibold px-6 py-3">Reserve a Date</a>
+    </div>
+  </div>
+</section>
+<!-- GALLERY / BRAND STORY -->
+<section id="reports" class="reveal max-w-6xl mx-auto px-5 py-20">
+  <h2 class="display text-4xl md:text-5xl leading-tight">From the water.</h2>
+  <p class="text-[var(--muted)] mt-4 max-w-xl">Every trip ends with a story. Here is some of what the Islamorada flats and backcountry have been giving up.</p>
+  <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4">
+    <img src="https://fishingislamorada.com/wp-content/uploads/DSC01019.jpg" alt="Fishing on the Islamorada flats" class="w-full h-56 object-cover">
+    <img src="https://fishingislamorada.com/wp-content/uploads/cropped-20190511_0947370-1.jpg" alt="A catch on the Florida Keys" class="w-full h-56 object-cover">
+    <img src="https://fishingislamorada.com/wp-content/uploads/cropped-20220822_072401_688.jpg" alt="Capt. Rick Stanczyk on the water" class="w-full h-56 object-cover">
+    <img src="https://fishingislamorada.com/wp-content/uploads/2012/10/rick2.jpg" alt="A redfish caught in Islamorada" class="w-full h-56 object-cover">
+    <img src="https://fishingislamorada.com/wp-content/uploads/septaron2-150x150.png" alt="A tarpon on the line" class="w-full h-56 object-cover">
+    <img src="https://fishingislamorada.com/wp-content/uploads/cropped-20220822_072401_688.jpg" alt="The restored 1977 Seacraft at the dock" class="w-full h-56 object-cover">
+  </div>
+</section>
+<!-- CREDIBILITY -->
+<section id="about" class="reveal bg-white/[0.03] border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-3 gap-8">
+    <div>
+      <p class="display text-[var(--amber)] text-3xl">Islamorada</p>
+      <p class="text-[var(--muted)] mt-2">Based in the Florida Keys, fishing the flats and backcountry of the Everglades.</p>
+    </div>
+    <div>
+      <p class="display text-[var(--amber)] text-3xl">Since 2017</p>
+      <p class="text-[var(--muted)] mt-2">Publishing fishing reports from these waters every season, week after week.</p>
+    </div>
+    <div>
+      <p class="display text-[var(--amber)] text-3xl">1977 Seacraft</p>
+      <p class="text-[var(--muted)] mt-2">A restored classic hull still running the shallows, paired with local know-how.</p>
+    </div>
+  </div>
+</section>
+<!-- CTA STRIP -->
+<section id="book" class="reveal bg-[var(--amber)] text-[#0b0b0a]">
+  <div class="max-w-6xl mx-auto px-5 py-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+    <div>
+      <h2 class="display text-4xl md:text-5xl leading-tight">Ready to fish the flats?</h2>
+      <p class="mt-3 font-medium max-w-md">Dates fill fast in season. Call or text and we will lock in your tide.</p>
+    </div>
+    <a href="tel:3057476903" class="bg-[#0b0b0a] text-[var(--bone)] font-semibold px-7 py-4 text-lg">Call 305-747-6903</a>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-5 py-12 grid md:grid-cols-4 gap-8 text-sm">
+    <div>
+      <span class="display text-lg tracking-wide">Fishing Islamorada</span>
+      <p class="text-[var(--muted)] mt-3">Tarpon, bonefish, and permit charters out of Islamorada, Florida.</p>
+    </div>
+    <div>
+      <p class="text-[var(--muted)] mb-3">Explore</p>
+      <div class="space-y-2 text-[var(--bone)]">
+        <a href="#charters" class="block hover:text-[var(--amber)]">Charters</a>
+        <a href="#boat" class="block hover:text-[var(--amber)]">The Boat</a>
+        <a href="#reports" class="block hover:text-[var(--amber)]">Reports</a>
+        <a href="#about" class="block hover:text-[var(--amber)]">About</a>
+      </div>
+    </div>
+    <div>
+      <p class="text-[var(--muted)] mb-3">Contact</p>
+      <div class="space-y-2 text-[var(--bone)]">
+        <a href="mailto:rick@fishingislamorada.com" class="block hover:text-[var(--amber)]">rick@fishingislamorada.com</a>
+        <a href="tel:3057476903" class="block hover:text-[var(--amber)]">305-747-6903</a>
+      </div>
+    </div>
+    <div>
+      <p class="text-[var(--muted)] mb-3">Follow</p>
+      <div class="space-y-2 text-[var(--bone)]">
+        <a href="https://www.facebook.com/islamoradatarpon" class="block hover:text-[var(--amber)]">Facebook</a>
+        <a href="https://www.instagram.com/richardstanczyk" class="block hover:text-[var(--amber)]">Instagram</a>
+        <a href="https://www.youtube.com" class="block hover:text-[var(--amber)]">YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <p class="max-w-6xl mx-auto px-5 py-5 text-xs text-[var(--muted)]">&copy; 2026 Capt. Rick Stanczyk's Fishing Islamorada. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
