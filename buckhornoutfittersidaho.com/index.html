@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buck Horn Outfitters | Idaho Elk, Deer, and Predator Hunts</title>
+  <meta name="description" content="Buck Horn Outfitters runs guided elk, mule deer, and predator hunts from Yellow Pine, Idaho, plus backcountry horseback trips and trout fly fishing." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          colors: {
+            forest: '#1f3d2b',
+            bone: '#f4f1ea',
+            ink: '#171717'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body class="font-body bg-bone text-ink antialiased">
+
+  <header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-forest/10">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center">
+        <img src="https://www.buckhornoutfittersidaho.com/wp-content/uploads/2020/03/cropped-buckhornoutfittersllc-logo-2.jpg" alt="Buck Horn Outfitter, LLC" class="h-11 w-auto" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-body font-medium text-ink">
+        <a href="#hunts" class="hover:text-forest">Hunts</a>
+        <a href="#water" class="hover:text-forest">Fly Fishing</a>
+        <a href="#horseback" class="hover:text-forest">Horseback</a>
+        <a href="#crew" class="hover:text-forest">The Crew</a>
+      </nav>
+      <a href="#contact" class="rounded-sm bg-forest text-bone px-5 py-2.5 text-sm font-display font-bold hover:bg-forest/90">Book a Hunt</a>
+    </div>
+  </header>
+
+  <section id="home" class="relative min-h-[100dvh] flex items-end">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('https://www.buckhornoutfittersidaho.com/wp-content/uploads/2024/12/1000000081-scaled.jpg')"></div>
+    <div class="absolute inset-0 bg-forest/70"></div>
+    <div class="relative z-10 max-w-6xl mx-auto w-full px-5 pb-20 md:pb-28">
+      <p class="font-display uppercase tracking-[0.22em] text-bone/90 text-sm mb-4">Yellow Pine, Idaho</p>
+      <h1 class="font-display font-bold text-bone text-5xl md:text-7xl leading-[1.03] max-w-3xl">Idaho elk hunts, led by a crew that knows the backcountry.</h1>
+      <p class="font-body text-bone/90 text-lg mt-5 max-w-xl">Guided elk, mule deer, and predator hunts from Yellow Pine, plus backcountry horseback trips and trout fly fishing on the same ground.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#contact" class="rounded-sm bg-forest text-bone px-6 py-3 font-display font-bold text-base hover:bg-forest/90">Book a Hunt</a>
+        <a href="#hunts" class="rounded-sm border border-bone/60 text-bone px-6 py-3 font-display font-bold text-base hover:bg-bone/10">See the Hunts</a>
+      </div>
+    </div>
+  </section>
+  <section id="hunts" class="bg-bone">
+    <div class="max-w-6xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div data-reveal class="reveal">
+        <h2 class="font-display font-bold text-ink text-4xl md:text-5xl">The hunts</h2>
+        <p class="font-body text-ink/70 mt-4 max-w-md">Buck Horn Outfitters runs fair-chase guided hunts across the units around Yellow Pine. Every trip is built around the animal you came for and the ground your guide knows best.</p>
+        <div class="mt-8 space-y-6">
+          <div class="flex gap-4">
+            <span class="font-display font-bold text-forest text-2xl leading-none">01</span>
+            <div>
+              <h3 class="font-display font-bold text-ink text-xl">Elk and mule deer</h3>
+              <p class="font-body text-ink/70 mt-1">Archery and rifle seasons in Idaho's backcountry, with pack support into the high country.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display font-bold text-forest text-2xl leading-none">02</span>
+            <div>
+              <h3 class="font-display font-bold text-ink text-xl">Black bear and predator</h3>
+              <p class="font-body text-ink/70 mt-1">Spring and fall bear hunts, plus predator calling trips built around the late-season push.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="font-display font-bold text-forest text-2xl leading-none">03</span>
+            <div>
+              <h3 class="font-display font-bold text-ink text-xl">Mountain lion and wolf</h3>
+              <p class="font-body text-ink/70 mt-1">Hound-driven lion hunts and authorized wolf harvest, guided end to end.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-reveal class="reveal">
+        <img src="https://www.buckhornoutfittersidaho.com/wp-content/uploads/2022/02/wolf.jpg" alt="A gray wolf in Idaho backcountry snow" class="rounded-sm w-full h-[460px] object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section id="water" class="bg-forest text-bone">
+    <div class="max-w-6xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div data-reveal class="reveal order-2 md:order-1">
+        <img src="https://www.buckhornoutfittersidaho.com/wp-content/uploads/2023/01/IMG_9990-scaled.jpeg" alt="A trout river running through Idaho wilderness" class="rounded-sm w-full h-[460px] object-cover" />
+      </div>
+      <div data-reveal class="reveal order-1 md:order-2">
+        <h2 class="font-display font-bold text-bone text-4xl md:text-5xl">Guided trout fly fishing</h2>
+        <p class="font-body text-bone/80 mt-4 max-w-md">The same drainages that hold elk hold native trout. Buck Horn Outfitters guides walk-and-wade and float trips on the local rivers, timed to the hatches.</p>
+        <ul class="mt-6 space-y-3 font-body text-bone/80">
+          <li class="flex gap-3"><span class="text-bone/50">-</span> Half and full day walk-and-wade trips</li>
+          <li class="flex gap-3"><span class="text-bone/50">-</span> Float trips on the surrounding rivers</li>
+          <li class="flex gap-3"><span class="text-bone/50">-</span> Gear and flies provided, all skill levels welcome</li>
+        </ul>
+        <a href="#contact" class="inline-block mt-8 rounded-sm bg-bone text-forest px-6 py-3 font-display font-bold text-base hover:bg-bone/90">Ask about open dates</a>
+      </div>
+    </div>
+  </section>
+  <section id="horseback" class="bg-bone">
+    <div class="max-w-6xl mx-auto px-5 py-20 md:py-28">
+      <div data-reveal class="reveal max-w-2xl">
+        <h2 class="font-display font-bold text-ink text-4xl md:text-5xl">Backcountry on horseback</h2>
+        <p class="font-body text-ink/70 mt-4">Beyond the hunts, Buck Horn Outfitters runs backcountry horseback vacations, DIY camps, and trail rides out of Yellow Pine. The same string of pack animals that carries hunters in carries families to high-country meadows in summer.</p>
+      </div>
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <img data-reveal class="reveal rounded-sm w-full h-[240px] md:h-[300px] object-cover" src="https://www.buckhornoutfittersidaho.com/wp-content/uploads/2022/02/wolf.jpg" alt="A gray wolf in Idaho backcountry snow" />
+        <img data-reveal class="reveal rounded-sm w-full h-[240px] md:h-[300px] object-cover" src="https://www.buckhornoutfittersidaho.com/wp-content/uploads/2024/12/1000000081-scaled.jpg" alt="A mountain meadow above Yellow Pine, Idaho" />
+        <img data-reveal class="reveal rounded-sm w-full h-[240px] md:h-[300px] object-cover" src="https://www.buckhornoutfittersidaho.com/wp-content/uploads/2023/01/IMG_9990-scaled.jpeg" alt="A trout river running through Idaho wilderness" />
+        <img data-reveal class="reveal rounded-sm w-full h-[240px] md:h-[300px] object-cover" src="https://www.buckhornoutfittersidaho.com/wp-content/uploads/2022/05/image_6483441-1.jpg" alt="Buck Horn Outfitters gear staged in the field" />
+      </div>
+    </div>
+  </section>
+
+  <section id="crew" class="bg-ink text-bone">
+    <div class="max-w-6xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+      <div data-reveal class="reveal">
+        <p class="font-display font-bold text-bone text-3xl md:text-4xl leading-snug">"Call today to book an Idaho guided hunt with our crew at Buck Horn Outfitters."</p>
+        <p class="font-body text-bone/60 mt-4">- Buck Horn Outfitters</p>
+      </div>
+      <div data-reveal class="reveal space-y-5 font-body text-bone/80">
+        <div>
+          <h3 class="font-display font-bold text-bone text-xl">Based in Yellow Pine, Idaho</h3>
+          <p class="mt-1">A small crew running fair-chase hunts and backcountry trips on the ground they know.</p>
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-bone text-xl">Six species guided</h3>
+          <p class="mt-1">Elk, mule deer, black bear, predator, mountain lion, and wolf, plus trout fly fishing.</p>
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-bone text-xl">Horseback and DIY</h3>
+          <p class="mt-1">Backcountry horseback vacations, DIY camps, and trail rides built around the same country.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="bg-forest text-bone">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl">Ready to plan your Idaho hunt?</h2>
+        <p class="font-body text-bone/80 mt-2">Tell us the species and the season. We will build the trip around your dates.</p>
+      </div>
+      <a href="mailto:208hunts@gmail.com" class="rounded-sm bg-bone text-forest px-7 py-3 font-display font-bold text-base hover:bg-bone/90 whitespace-nowrap">Email the crew</a>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-bone/70">
+    <div class="max-w-6xl mx-auto px-5 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 font-body text-sm">
+      <div>
+        <img src="https://www.buckhornoutfittersidaho.com/wp-content/uploads/2020/03/cropped-buckhornoutfittersllc-logo-2.jpg" alt="Buck Horn Outfitters, LLC" class="h-10 w-auto mb-3" />
+        <p>Idaho guided hunts and backcountry trips, out of Yellow Pine.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-bone text-sm mb-3">Explore</h4>
+        <ul class="space-y-2">
+          <li><a href="#hunts" class="hover:text-bone">Hunts</a></li>
+          <li><a href="#water" class="hover:text-bone">Fly Fishing</a></li>
+          <li><a href="#horseback" class="hover:text-bone">Horseback</a></li>
+          <li><a href="#crew" class="hover:text-bone">The Crew</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-bone text-sm mb-3">Contact</h4>
+        <ul class="space-y-2">
+          <li><a href="mailto:208hunts@gmail.com" class="hover:text-bone">208hunts@gmail.com</a></li>
+          <li><a href="mailto:info@thecorneryp.com" class="hover:text-bone">info@thecorneryp.com</a></li>
+          <li>Yellow Pine, Idaho</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-bone text-sm mb-3">Follow</h4>
+        <ul class="space-y-2">
+          <li><a href="https://www.facebook.com/profile.php?id=61560293214680" class="hover:text-bone">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-bone/10">
+      <div class="max-w-6xl mx-auto px-5 py-5 font-body text-xs text-bone/50">
+        Buck Horn Outfitters, LLC. Yellow Pine, Idaho.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('[data-reveal]');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
