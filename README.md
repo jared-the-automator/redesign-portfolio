@@ -22,6 +22,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Porchside Veterinary Care](https://jared-the-automator.github.io/redesign-portfolio/porchsidevet.com/) | Small-animal veterinary clinic | Dresden Mills, ME |
 | --- | --- | --- |
 | [Friendly Vet Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/friendly-vet.com/) | Small-animal veterinary hospital | Lisle, IL |
+| [Cayuga Pet Hospital](https://jared-the-automator.github.io/redesign-portfolio/cayuga-pet-hospital.com/) | Small-animal veterinary hospital, independent and accepting new patients | Ithaca, NY |
 | --- | --- | --- |
 | [Berico Fuels](https://jared-the-automator.github.io/redesign-portfolio/berico.com/) | Propane delivery, heating oil, and HVAC | Greensboro, Burlington & Eden, NC |
 | [Bailey Propane](https://jared-the-automator.github.io/redesign-portfolio/baileypropane.com/) | Family-owned propane delivery, serving the Highway 285 corridor | Bailey, CO (Park County) |

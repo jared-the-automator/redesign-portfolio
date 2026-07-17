@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cayuga Pet Hospital | Compassionate Veterinary Care in Ithaca, NY</title>
+  <meta name="description" content="Cayuga Pet Hospital is an independent veterinarian in Ithaca, NY, welcoming new patients and their dogs and cats. Call (607) 257-8401.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: "#F7F4EC",
+            bone: "#ECE6D8",
+            sage: "#5E6E45",
+            deepsage: "#3C4A2E",
+            espresso: "#2A2622"
+          },
+          fontFamily: {
+            display: ['"DM Serif Display"', "serif"],
+            body: ['Inter', "system-ui", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-display { font-family: 'DM Serif Display', serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body class="bg-cream text-espresso font-body antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-bone">
+    <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-display text-2xl text-deepsage tracking-tight">Cayuga Pet Hospital</a>
+      <div class="hidden md:flex items-center gap-9 text-sm font-medium text-espresso/80">
+        <a href="#services" class="hover:text-sage transition">Services</a>
+        <a href="#about" class="hover:text-sage transition">About</a>
+        <a href="#contact" class="hover:text-sage transition">Contact</a>
+      </div>
+      <a href="#contact" class="rounded-full bg-sage text-cream px-5 py-2.5 text-sm font-semibold hover:bg-deepsage transition">New patients welcome</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-center bg-deepsage text-cream">
+    <div class="absolute inset-0 bg-deepsage"></div>
+    <div class="relative max-w-6xl mx-auto px-6 py-28 w-full">
+      <p class="text-sage font-semibold tracking-[0.18em] uppercase text-xs mb-6">Ithaca, New York</p>
+      <h1 class="font-display text-5xl md:text-7xl leading-[1.05] max-w-3xl">
+        Compassionate veterinary care for Ithaca's pets
+      </h1>
+      <p class="mt-7 text-lg text-cream/85 max-w-xl">
+        An independent practice on North Triphammer Road, welcoming new patients and their dogs and cats.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#services" class="rounded-full bg-cream text-deepsage px-7 py-3.5 font-semibold hover:bg-bone transition">See our services</a>
+        <a href="tel:6072578401" class="rounded-full border border-cream/40 text-cream px-7 py-3.5 font-semibold hover:bg-cream/10 transition">Call (607) 257-8401</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY PRODUCT SECTION -->
+  <section id="services" class="max-w-6xl mx-auto px-6 py-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="bg-sage text-cream rounded-2xl p-10 md:p-14 flex flex-col justify-center min-h-[340px]">
+        <p class="text-cream/80 font-semibold tracking-[0.18em] uppercase text-xs mb-5">Now welcoming new patients</p>
+        <p class="font-display text-3xl md:text-4xl leading-tight">
+          Care that treats your dog or cat like a member of the family.
+        </p>
+        <p class="mt-6 text-cream/85">
+          From the first wellness visit to surgery and urgent care, every appointment is built around your pet and your peace of mind.
+        </p>
+      </div>
+      <div>
+        <h2 class="font-display text-3xl md:text-4xl mb-8">What we provide</h2>
+        <div class="space-y-7">
+          <div class="flex gap-5">
+            <span class="font-display text-2xl text-sage">01</span>
+            <div>
+              <h3 class="font-semibold text-lg">Wellness and preventive care</h3>
+              <p class="text-espresso/70 mt-1">Annual exams, vaccinations, and parasite prevention that keep Ithaca pets healthy year round.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-2xl text-sage">02</span>
+            <div>
+              <h3 class="font-semibold text-lg">Diagnostics and surgery</h3>
+              <p class="text-espresso/70 mt-1">On-site testing and surgical care, with clear answers before any procedure begins.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display text-2xl text-sage">03</span>
+            <div>
+              <h3 class="font-semibold text-lg">Sick visits and urgent care</h3>
+              <p class="text-espresso/70 mt-1">Same-week appointments when your pet is not acting like themselves, with a calm, gentle approach.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY SECTION (reversed split) -->
+  <section id="about" class="bg-bone">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-sage font-semibold tracking-[0.18em] uppercase text-xs mb-5">An independent Ithaca practice</p>
+          <h2 class="font-display text-3xl md:text-4xl mb-6">Local care, from people who know your pet by name</h2>
+          <p class="text-espresso/75 leading-relaxed mb-4">
+            Cayuga Pet Hospital is an independent animal hospital on North Triphammer Road, dedicated to medical excellence and compassionate care for the dogs and cats of Ithaca.
+          </p>
+          <p class="text-espresso/75 leading-relaxed">
+            As a local practice, decisions are made here, not at a corporate desk. That means more time with your pet and straight answers about their health.
+          </p>
+        </div>
+        <div class="bg-deepsage text-cream rounded-2xl p-10 md:p-14">
+          <p class="font-display text-2xl md:text-3xl leading-snug">
+            "We are dedicated to medical excellence and compassionate care."
+          </p>
+          <p class="mt-6 text-cream/70 text-sm">The mission of Cayuga Pet Hospital</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY (zigzag breaker) -->
+  <section class="max-w-6xl mx-auto px-6 py-24">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <p class="text-sage font-semibold tracking-[0.18em] uppercase text-xs mb-5">Why pet owners stay</p>
+      <h2 class="font-display text-3xl md:text-5xl">A calmer kind of veterinary visit</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-bone rounded-2xl p-9">
+        <h3 class="font-display text-2xl text-sage mb-3">Gentle by default</h3>
+        <p class="text-espresso/70 leading-relaxed">A quiet, low stress environment so nervous pets and first time visitors both feel at ease.</p>
+      </div>
+      <div class="bg-bone rounded-2xl p-9">
+        <h3 class="font-display text-2xl text-sage mb-3">Local and independent</h3>
+        <p class="text-espresso/70 leading-relaxed">An Ithaca practice owned by people in the community, not a national chain with a call center.</p>
+      </div>
+      <div class="bg-bone rounded-2xl p-9">
+        <h3 class="font-display text-2xl text-sage mb-3">Clear next steps</h3>
+        <p class="text-espresso/70 leading-relaxed">Plain explanations of what your pet needs and what it costs, before any treatment moves forward.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS / CREDIBILITY -->
+  <section class="bg-deepsage text-cream">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-sage font-semibold tracking-[0.18em] uppercase text-xs mb-5">Cayuga Pet Hospital</p>
+          <h2 class="font-display text-3xl md:text-4xl mb-6">The independent animal hospital on North Triphammer Road</h2>
+          <p class="text-cream/80 leading-relaxed">
+            Serving Ithaca dogs and cats with wellness care, diagnostics, surgery, and urgent visits. New patients are welcome.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-5">
+          <div class="bg-cream/10 rounded-2xl p-7">
+            <p class="font-display text-3xl text-cream">Independent</p>
+            <p class="text-cream/70 text-sm mt-2">Locally owned in Ithaca, NY</p>
+          </div>
+          <div class="bg-cream/10 rounded-2xl p-7">
+            <p class="font-display text-3xl text-cream">New patients</p>
+            <p class="text-cream/70 text-sm mt-2">Now welcoming dogs and cats</p>
+          </div>
+          <div class="bg-cream/10 rounded-2xl p-7">
+            <p class="font-display text-3xl text-cream">Since day one</p>
+            <p class="text-cream/70 text-sm mt-2">Built on compassionate care</p>
+          </div>
+          <div class="bg-cream/10 rounded-2xl p-7">
+            <p class="font-display text-3xl text-cream">(607) 257-8401</p>
+            <p class="text-cream/70 text-sm mt-2">Call or email to book</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="contact" class="bg-sage text-cream">
+    <div class="max-w-6xl mx-auto px-6 py-20 text-center">
+      <h2 class="font-display text-3xl md:text-5xl mb-5">Now accepting new patients</h2>
+      <p class="text-cream/85 max-w-xl mx-auto mb-9">
+        Bring your dog or cat to the independent animal hospital Ithaca pet owners rely on. Call, email, or stop by North Triphammer Road.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:6072578401" class="rounded-full bg-cream text-deepsage px-7 py-3.5 font-semibold hover:bg-bone transition">Call (607) 257-8401</a>
+        <a href="mailto:cayugapethospital@gmail.com" class="rounded-full border border-cream/40 text-cream px-7 py-3.5 font-semibold hover:bg-cream/10 transition">Email the clinic</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-espresso text-cream/80">
+    <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10 text-sm">
+      <div>
+        <p class="font-display text-xl text-cream mb-4">Cayuga Pet Hospital</p>
+        <p class="text-cream/60 leading-relaxed">Independent veterinary care for the dogs and cats of Ithaca, New York.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-cream mb-4">Visit</p>
+        <p class="text-cream/70 leading-relaxed">2442 North Triphammer Road<br>Ithaca, NY 14850</p>
+      </div>
+      <div>
+        <p class="font-semibold text-cream mb-4">Contact</p>
+        <p class="text-cream/70 leading-relaxed">
+          <a href="tel:6072578401" class="hover:text-sage transition">(607) 257-8401</a><br>
+          <a href="mailto:cayugapethospital@gmail.com" class="hover:text-sage transition">cayugapethospital@gmail.com</a>
+        </p>
+      </div>
+      <div>
+        <p class="font-semibold text-cream mb-4">Explore</p>
+        <div class="flex flex-col gap-2 text-cream/70">
+          <a href="#services" class="hover:text-sage transition">Services</a>
+          <a href="#about" class="hover:text-sage transition">About</a>
+          <a href="#contact" class="hover:text-sage transition">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-6xl mx-auto px-6 py-6 text-xs text-cream/50 flex flex-col md:flex-row justify-between gap-2">
+        <span>Cayuga Pet Hospital, Ithaca, NY. Now welcoming new patients.</span>
+        <span>Redesign concept. Not affiliated with the current site.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
