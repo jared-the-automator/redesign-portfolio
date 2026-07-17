@@ -295,3 +295,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Northeast Alpine Start](https://jared-the-automator.github.io/redesign-portfolio/northeastalpinestart.com/) | New England backcountry gear reviews, trip reports & SAR how-tos | White Mountains, NH |
 | [Lyndale Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/lyndaleanimalhospital.com/) | Small-animal veterinary hospital | Minneapolis, MN |
 | [East Valley Equine Practitioners](https://jared-the-automator.github.io/redesign-portfolio/eastvalleyequine.com/) | Mobile equine veterinary care | Gilbert, AZ |
+| [Amherst Small Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/asah.net/) | Small-animal veterinary hospital | Amherst, NY |
