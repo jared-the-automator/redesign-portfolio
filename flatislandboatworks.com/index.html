@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flat Island Boatworks, LLC | Marine Repair and Restoration in Pensacola, FL</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0f1b2d; --slate:#16263b; --steel:#5e9bc4; --bone:#e8edf2; --ink:#0b1422;
+    --radius:12px;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--bone);}
+  .display{font-family:'Playfair Display',serif;}
+  .accent{color:var(--steel);}
+  .radius{border-radius:var(--radius);}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  .hero-bg{background:
+     radial-gradient(1200px 600px at 78% 18%, rgba(94,155,196,.18), transparent 60%),
+     linear-gradient(160deg, #0b1626 0%, #122238 55%, #0f1b2d 100%);}
+  .btn{background:var(--steel);color:#0b1422;font-weight:600;padding:.7rem 1.25rem;border-radius:var(--radius);display:inline-block;transition:transform .2s ease, background .2s ease;}
+  .btn:hover{transform:translateY(-2px);background:#74aed4;}
+  .btn-ghost{border:1px solid rgba(232,237,242,.35);color:var(--bone);font-weight:600;padding:.7rem 1.25rem;border-radius:var(--radius);display:inline-block;transition:border-color .2s ease;}
+  .btn-ghost:hover{border-color:var(--steel);}
+  .nav-link{color:#cdd7e1;font-size:.95rem;transition:color .2s ease;}
+  .nav-link:hover{color:#fff;}
+  .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;color:var(--steel);font-weight:600;}
+  .num{font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--steel);line-height:1;}
+</style>
+</head>
+<body>
+<nav class="sticky top-0 z-50 bg-[#0b1626]/95 backdrop-blur border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="https://www.flatislandboatworks.com/wp-content/uploads/2019/07/Flat-Island-Logo-small.jpg" alt="Flat Island Boatworks, LLC" class="h-9 w-auto radius">
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#story" class="nav-link">Our Story</a>
+      <a href="#proof" class="nav-link">Reviews</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="#contact" class="btn">Get a Quote</a>
+  </div>
+</nav>
+<header class="hero-bg min-h-[100dvh] flex items-center">
+  <div class="max-w-6xl mx-auto px-6 w-full py-24">
+    <p class="eyebrow mb-5 reveal">Pensacola, Florida</p>
+    <h1 class="display text-5xl md:text-7xl font-bold leading-[1.05] max-w-3xl reveal">Marine repair and restoration, done right.</h1>
+    <p class="mt-6 text-lg text-[#cdd7e1] max-w-xl reveal">From diesel and fiberglass to full refits, Flat Island Boatworks keeps Gulf Coast boats on the water. Owner Mike Bredesen has been shaping hulls since the 1970s.</p>
+    <div class="mt-9 flex flex-wrap gap-4 reveal">
+      <a href="#story" class="btn">See our work</a>
+      <a href="#contact" class="btn-ghost">Get a quote</a>
+    </div>
+  </div>
+</header>
+
+<section id="services" class="max-w-6xl mx-auto px-6 py-20">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <img src="https://www.flatislandboatworks.com/wp-content/uploads/2019/01/MBheadshot.jpg" alt="Mike Bredesen, owner of Flat Island Boatworks" class="radius w-full object-cover max-h-[520px]">
+    </div>
+    <div class="reveal">
+      <h2 class="display text-3xl md:text-4xl font-bold mb-8">Complete care for your vessel</h2>
+      <div class="space-y-7">
+        <div class="flex gap-4">
+          <span class="num">01</span>
+          <div>
+            <h3 class="font-semibold text-lg">Diesel and mechanical</h3>
+            <p class="text-[#cdd7e1] text-sm mt-1">Engine service, generators, bow thrusters, and electrical work handled in house.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="num">02</span>
+          <div>
+            <h3 class="font-semibold text-lg">Fiberglass and gelcoat</h3>
+            <p class="text-[#cdd7e1] text-sm mt-1">Decades of glassing experience on hulls of every age, from chips to full rebuilds.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="num">03</span>
+          <div>
+            <h3 class="font-semibold text-lg">Refit and restoration</h3>
+            <p class="text-[#cdd7e1] text-sm mt-1">Full vessel refits, corrosion control, and cosmetic detail that holds up in salt water.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-[#0b1626] border-y border-white/10">
+  <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal order-2 md:order-1">
+      <h2 class="display text-3xl md:text-4xl font-bold mb-6">Built on salt, shaped by hand</h2>
+      <p class="text-[#cdd7e1] mb-4">Every job starts with a look at the whole boat, not just the symptom. We map the work, source the right materials, and keep you posted at each step.</p>
+      <p class="text-[#cdd7e1]">That is how a 1970s surfboard fin shop became a Gulf Coast marine workshop trusted with Viking sport fishers and weekend runabouts alike.</p>
+    </div>
+    <div class="reveal order-1 md:order-2 flex justify-center">
+      <div class="radius bg-[#16263b] p-10 w-full max-w-sm flex items-center justify-center border border-white/10">
+        <img src="https://www.flatislandboatworks.com/wp-content/uploads/2019/07/Flat-Island-Logo-small.png" alt="Flat Island Boatworks, LLC" class="h-28 w-auto">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="max-w-4xl mx-auto px-6 py-20">
+  <div class="reveal max-w-2xl mx-auto">
+    <p class="display text-2xl md:text-3xl font-semibold leading-snug">Mike Bredesen started small, shaping high tech surfboard fins as Islander Surfboards in the 1970s. That same eye for hull shape and materials now goes into every repair and refit we deliver in Pensacola.</p>
+  </div>
+</section>
+<section id="proof" class="bg-[#0b1626] border-t border-white/10">
+  <div class="max-w-5xl mx-auto px-6 py-20">
+    <div class="reveal">
+      <p class="eyebrow mb-4">What owners say</p>
+      <blockquote class="display text-2xl md:text-3xl font-semibold leading-snug max-w-3xl">Integrity. Skill. Creativity. Reliability. Flat Island Boatworks showed all of it during our Viking 43 refit.</blockquote>
+      <p class="mt-5 text-[#cdd7e1]">Double Trouble Viking 43 sport fisher refit, Pensacola</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6 mt-12">
+      <div class="reveal radius bg-[#16263b] p-6 border border-white/10">
+        <p class="num">40+</p>
+        <p class="text-[#cdd7e1] text-sm mt-2">Years shaping hulls, since the 1970s</p>
+      </div>
+      <div class="reveal radius bg-[#16263b] p-6 border border-white/10">
+        <p class="num">1</p>
+        <p class="text-[#cdd7e1] text-sm mt-2">Workshop in Pensacola, Florida</p>
+      </div>
+      <div class="reveal radius bg-[#16263b] p-6 border border-white/10">
+        <p class="num">Full</p>
+        <p class="text-[#cdd7e1] text-sm mt-2">Refit, mechanical, and cosmetic service</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-16">
+  <div class="max-w-4xl mx-auto px-6 text-center reveal">
+    <h2 class="display text-3xl md:text-5xl font-bold">Ready to put your boat in good hands?</h2>
+    <p class="mt-4 text-[#cdd7e1] text-lg">Tell us what your vessel needs and we will send a quote.</p>
+    <div class="mt-8 flex flex-wrap gap-4 justify-center">
+      <a href="mailto:contact@flatislandboatworks.com" class="btn">Get a quote</a>
+      <a href="tel:18504348295" class="btn-ghost">Call 1.850.434.8295</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#0b1422] border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-4 gap-10">
+    <div>
+      <img src="https://www.flatislandboatworks.com/wp-content/uploads/2019/07/Flat-Island-Logo-small.jpg" alt="Flat Island Boatworks, LLC" class="h-10 w-auto radius mb-4">
+      <p class="text-[#cdd7e1] text-sm">Marine repair and restoration in Pensacola, Florida.</p>
+    </div>
+    <div>
+      <p class="font-semibold mb-3">Services</p>
+      <ul class="space-y-2 text-sm text-[#cdd7e1]">
+        <li>Diesel and mechanical</li>
+        <li>Fiberglass and gelcoat</li>
+        <li>Refit and restoration</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-3">Company</p>
+      <ul class="space-y-2 text-sm text-[#cdd7e1]">
+        <li>Our story</li>
+        <li>Projects</li>
+        <li>Reviews</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold mb-3">Contact</p>
+      <ul class="space-y-2 text-sm text-[#cdd7e1]">
+        <li>3501 Doctor M.L.K. Jr. Dr.</li>
+        <li>Pensacola, FL 32503</li>
+        <li>contact@flatislandboatworks.com</li>
+        <li>1.850.434.8295</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-5 text-center text-xs text-[#8aa0b5]">
+    Flat Island Boatworks, LLC. Prototype redesign prepared for outreach review.
+  </div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

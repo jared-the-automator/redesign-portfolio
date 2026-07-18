@@ -302,3 +302,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Barbarossa Leather](https://jared-the-automator.github.io/redesign-portfolio/barbarossaleather.com/) | Upholstery, exotic & embossed leather hides, hand-finished for 40+ years | South Florida |
 | --- | --- | --- |
 | [StreamWeaverFlies](https://jared-the-automator.github.io/redesign-portfolio/streamweaverflies.com/) | Fly fishing shop: guided trips, fly tying and casting instruction, Red Deer's one stop fly shop | Red Deer, Alberta, Canada |
+| [Flat Island Boatworks, LLC](https://jared-the-automator.github.io/redesign-portfolio/flatislandboatworks.com/) | Marine repair, restoration and refit | Pensacola, FL |
