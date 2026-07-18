@@ -146,6 +146,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Diamond Outfitters](https://jared-the-automator.github.io/redesign-portfolio/diamondoutfitters.com/) | Hunting outfitter | Prescott, AZ |
 | [Table Mountain Outfitters](https://jared-the-automator.github.io/redesign-portfolio/tablemountainoutfitters.com/) | Hunting outfitter | Wyoming, USA |
 | [Sitting Fox Custom Muzzleloaders](https://jared-the-automator.github.io/redesign-portfolio/sittingfoxcustommuzzleloaders.com/) | Custom muzzleloaders | Estero, FL |
+| [Dennis Neely](https://jared-the-automator.github.io/redesign-portfolio/dennisneely.com/) | Custom flintlocks and traditional black powder, writer for the Michigan Outdoor Writers Association | Michigan |
 | [Alpine Wood Working](https://jared-the-automator.github.io/redesign-portfolio/alpinewoodworking.net/) | Handmade wooden landing nets | Unknown |
 | [Cisar Saddlery](https://jared-the-automator.github.io/redesign-portfolio/cisarsaddlery.com/) | Handmade custom saddles | Czech Republic |
 | [Kober Decoys](https://jared-the-automator.github.io/redesign-portfolio/koberdecoys.com/) | Hand painted fish decoys | Northern Michigan |
