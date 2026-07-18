@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>North Arlington Animal Clinic - Columbus, Ohio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --navy:#0e2236; --navy2:#16314a; --steel:#4a93c4; --light:#eef2f6; }
+  body{ font-family:'Inter',system-ui,sans-serif; }
+  .font-display{ font-family:'Playfair Display',serif; }
+  .r{ border-radius:12px; }
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+</style>
+</head>
+<body class="bg-[#0e2236]">
+
+<!-- NAV -->
+<header class="fixed top-0 w-full z-50 bg-[#0e2236]/95 backdrop-blur border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center">
+      <span class="bg-white r p-1.5 inline-block"><img src="https://northarlingtonvet.com/wp-content/uploads/2016/05/na-logo2.fw_.png" alt="North Arlington Animal Clinic" class="h-8 w-auto"></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-white/80 text-sm font-medium">
+      <a href="#services" class="hover:text-[#4a93c4]">Services</a>
+      <a href="#story" class="hover:text-[#4a93c4]">Our story</a>
+      <a href="#gallery" class="hover:text-[#4a93c4]">Inside the clinic</a>
+      <a href="#contact" class="hover:text-[#4a93c4]">Contact</a>
+    </nav>
+    <a href="#contact" class="bg-[#4a93c4] text-[#0e2236] font-semibold text-sm px-5 py-2.5 r">Book a visit</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative min-h-[100dvh] flex items-end" style="background-image:url('https://northarlingtonvet.com/wp-content/uploads/2016/05/small_animals.jpg');background-size:cover;background-position:center;">
+  <div class="absolute inset-0 bg-[#0b1a2b]/80"></div>
+  <div class="relative z-10 w-full max-w-6xl mx-auto px-6 pb-20 md:pb-28">
+    <p class="text-[#4a93c4] font-semibold tracking-[0.2em] uppercase text-sm mb-4">North Side, Columbus, Ohio</p>
+    <h1 class="font-display text-white font-extrabold leading-[1.05] text-5xl md:text-7xl max-w-3xl">Caring for Columbus pets since 1972</h1>
+    <p class="text-white/85 text-lg md:text-xl mt-6 max-w-xl">A small-animal clinic where your dog or cat sees the same team, the same doctors, at every visit.</p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="#contact" class="bg-[#4a93c4] text-[#0e2236] font-semibold px-7 py-3 r">Book a visit</a>
+      <a href="#story" class="text-white font-semibold px-7 py-3 r border border-white/40 hover:border-white">Meet the team</a>
+    </div>
+  </div>
+</section>
+<!-- SERVICES -->
+<section id="services" class="bg-[#eef2f6] py-20 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <img src="https://northarlingtonvet.com/wp-content/uploads/2016/08/Betsy_after_grooming.png" alt="Betsy after a grooming visit at North Arlington Animal Clinic" class="w-full r shadow-lg">
+    </div>
+    <div class="reveal">
+      <h2 class="font-display text-[#0e2236] font-bold text-4xl mb-6">Care for every stage of a pet's life</h2>
+      <div class="space-y-5">
+        <div class="flex gap-4"><span class="font-display text-[#4a93c4] text-2xl font-bold">01</span><div><h3 class="font-semibold text-[#0e2236] text-lg">Wellness and preventive care</h3><p class="text-slate-600">Annual exams, vaccines, and dental cleanings that keep small animals healthy year round.</p></div></div>
+        <div class="flex gap-4"><span class="font-display text-[#4a93c4] text-2xl font-bold">02</span><div><h3 class="font-semibold text-[#0e2236] text-lg">Surgery and diagnostics</h3><p class="text-slate-600">In house lab work, X ray, and soft tissue surgery with the same familiar team.</p></div></div>
+        <div class="flex gap-4"><span class="font-display text-[#4a93c4] text-2xl font-bold">03</span><div><h3 class="font-semibold text-[#0e2236] text-lg">Grooming and boarding</h3><p class="text-slate-600">Day boarding and grooming so your pet stays comfortable between visits.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="bg-[#0e2236] py-20 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal order-2 md:order-1">
+      <h2 class="font-display text-white font-bold text-4xl mb-6">A family clinic on Columbus's north side</h2>
+      <p class="text-white/80 mb-4">The Teders family has cared for Columbus pets here for decades, and the same faces greet you at the front desk and in the exam room.</p>
+      <p class="text-white/80">We are the neighborhood clinic that remembers your pet's name, not a number in a chart.</p>
+    </div>
+    <div class="reveal order-1 md:order-2">
+      <img src="https://northarlingtonvet.com/wp-content/uploads/2016/05/family.fw_-1.png" alt="The Teders family of North Arlington Animal Clinic" class="w-full r shadow-lg">
+    </div>
+  </div>
+</section>
+<!-- GALLERY -->
+<section id="gallery" class="bg-[#eef2f6] py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-[#4a93c4] font-semibold tracking-[0.2em] uppercase text-sm mb-3 text-center">Inside the clinic</p>
+    <h2 class="font-display text-[#0e2236] font-bold text-4xl mb-10 text-center">Real pets, real team, real Columbus</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="https://northarlingtonvet.com/wp-content/uploads/2016/05/girl_pig.fw_.png" alt="Marya with her pet pig at North Arlington Animal Clinic" class="w-full h-64 object-cover r reveal">
+      <img src="https://northarlingtonvet.com/wp-content/uploads/2016/05/family.fw_-1.png" alt="The Teders family" class="w-full h-64 object-cover r reveal">
+      <img src="https://northarlingtonvet.com/wp-content/uploads/2016/08/Betsy_after_grooming.png" alt="Betsy after grooming" class="w-full h-64 object-cover r reveal">
+      <img src="https://northarlingtonvet.com/wp-content/uploads/2016/05/small_animals.jpg" alt="Small animals cared for at the clinic" class="w-full h-64 object-cover r reveal">
+      <img src="https://northarlingtonvet.com/wp-content/uploads/2018/01/best_vet_2018-150x150.png" alt="Best Vet in Columbus 2018 award" class="w-full h-64 object-contain r reveal bg-white p-6">
+      <img src="https://northarlingtonvet.com/wp-content/uploads/2016/05/na-logo2.fw_.png" alt="North Arlington Animal Clinic logo" class="w-full h-64 object-contain r reveal bg-white p-6">
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY -->
+<section class="bg-[#16314a] py-20 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+    <div class="reveal"><p class="font-display text-white text-5xl font-bold">1972</p><p class="text-white/70 mt-2">The year this clinic opened its doors</p></div>
+    <div class="reveal"><p class="font-display text-white text-5xl font-bold">2018</p><p class="text-white/70 mt-2">Voted Best Vet in Columbus</p></div>
+    <div class="reveal"><p class="font-display text-white text-5xl font-bold">North Side</p><p class="text-white/70 mt-2">Your neighborhood clinic in Columbus</p></div>
+  </div>
+</section>
+<!-- CTA -->
+<section id="contact" class="bg-[#4a93c4] py-16 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div>
+      <h2 class="font-display text-[#0e2236] font-bold text-3xl md:text-4xl">Ready to bring your pet in?</h2>
+      <p class="text-[#0e2236]/80 mt-2 text-lg">Call 614-457-4636 or stop by on the north side of Columbus.</p>
+    </div>
+    <a href="mailto:Northarlingtonvet@yahoo.com" class="bg-[#0e2236] text-white font-semibold px-8 py-4 r">Email the clinic</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0e2236] py-14 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-white/70">
+    <div>
+      <span class="bg-white r p-1.5 inline-block mb-4"><img src="https://northarlingtonvet.com/wp-content/uploads/2016/05/na-logo2.fw_.png" alt="North Arlington Animal Clinic" class="h-9 w-auto"></span>
+      <p>Small-animal veterinary care on Columbus's north side, serving pets since 1972.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Visit</h4>
+      <p>5011 Dierker Rd<br>Columbus, OH 43220</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Contact</h4>
+      <p><a href="mailto:Northarlingtonvet@yahoo.com" class="hover:text-[#4a93c4]">Northarlingtonvet@yahoo.com</a><br>614-457-4636</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Care</h4>
+      <ul class="space-y-1"><li>Wellness exams</li><li>Surgery and dental</li><li>Grooming and boarding</li><li>Laser therapy</li></ul>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-white/10 text-sm text-white/50">
+    © 2026 North Arlington Animal Clinic. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body></html>

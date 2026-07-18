@@ -305,3 +305,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [StreamWeaverFlies](https://jared-the-automator.github.io/redesign-portfolio/streamweaverflies.com/) | Fly fishing shop: guided trips, fly tying and casting instruction, Red Deer's one stop fly shop | Red Deer, Alberta, Canada |
 | [Flat Island Boatworks, LLC](https://jared-the-automator.github.io/redesign-portfolio/flatislandboatworks.com/) | Marine repair, restoration and refit | Pensacola, FL |
 | [Chester Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/chesteranimalclinic.com/) | Small-animal veterinary hospital, serving Chesterfield County since 1968 | Chester, Virginia |
+| [North Arlington Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/northarlingtonvet.com/) | Small-animal veterinary clinic, serving Columbus since 1972, voted Best Vet in Columbus 2018 | Columbus, OH |
