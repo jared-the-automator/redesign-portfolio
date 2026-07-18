@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heritage Longbows | Traditional English Longbows, Staffordshire</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0e0c0a',
+          panel: '#16130f',
+          amber: '#c98a3a',
+          amberlt: '#e0a94e',
+          bone: '#f2e9dc',
+          mute: '#a89a86'
+        },
+        fontFamily: {
+          display: ['"Barlow Condensed"', 'sans-serif'],
+          body: ['Barlow', 'sans-serif']
+        },
+        borderRadius: { brand: '2px' }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#0e0c0a; }
+  .reveal { opacity:0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity:1; transform:none; }
+</style>
+</head>
+<body class="bg-ink text-bone font-body antialiased">
+
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-50 bg-ink/90 backdrop-blur border-b border-amber/20">
+  <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="font-display font-extrabold tracking-wide text-2xl text-bone">HERITAGE <span class="text-amber">LONGBOWS</span></a>
+    <div class="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest text-mute">
+      <a href="#longbows" class="hover:text-bone transition">Longbows</a>
+      <a href="#arrows" class="hover:text-bone transition">Arrows</a>
+      <a href="#workshop" class="hover:text-bone transition">Workshop</a>
+      <a href="#contact" class="hover:text-bone transition">Contact</a>
+    </div>
+    <a href="#contact" class="bg-amber text-ink font-display font-bold uppercase tracking-wide text-sm px-5 py-2 rounded-brand hover:bg-amberlt transition">Get a quote</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="relative min-h-[100dvh] flex items-center">
+  <img src="https://heritagelongbows.co.uk/wp/wp-content/uploads/2018/01/10304441_10152103778757616_718533430930691559_n.jpg" alt="A hand-shaped traditional English longbow" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-ink/75"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/60 to-transparent"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6 w-full">
+    <p class="font-display uppercase tracking-[0.3em] text-amber text-sm mb-4">Staffordshire, England</p>
+    <h1 class="font-display font-extrabold text-bone text-5xl md:text-7xl leading-[0.95] max-w-3xl">Traditional English longbows, shaped by hand from a single stave.</h1>
+    <p class="mt-6 text-lg text-bone/80 max-w-xl">Every bow is built in our workshop and backed by a National Field Archery Society championship.</p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="#longbows" class="bg-amber text-ink font-display font-bold uppercase tracking-wide px-6 py-3 rounded-brand hover:bg-amberlt transition">See the longbows</a>
+      <a href="#contact" class="border border-bone/40 text-bone font-display font-bold uppercase tracking-wide px-6 py-3 rounded-brand hover:border-amber hover:text-amber transition">Talk to the maker</a>
+    </div>
+  </div>
+</section>
+<!-- PRIMARY PRODUCT: LONGOWS -->
+<section id="longbows" class="py-24 bg-ink">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <img src="https://heritagelongbows.co.uk/wp/wp-content/uploads/2018/01/16729403_10154375407842616_4948764350210332324_n.jpg" alt="A set of hand-made custom arrows" class="w-full h-[28rem] object-cover rounded-brand">
+    </div>
+    <div class="reveal">
+      <h2 class="font-display font-extrabold text-4xl text-bone mb-6">Longbows built around the archer, not a catalogue.</h2>
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <span class="font-display font-extrabold text-amber text-2xl">01</span>
+          <div>
+            <h3 class="font-display font-bold text-xl text-bone">Traditional English longbows</h3>
+            <p class="text-mute mt-1">Cut from a single stave of seasoned timber, the old way, with the grain followed rather than forced.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-extrabold text-amber text-2xl">02</span>
+          <div>
+            <h3 class="font-display font-bold text-xl text-bone">Bamboo bows and warbow arrows</h3>
+            <p class="text-mute mt-1">Laminated bamboo builds for warbow weight, plus matched arrows made to your draw length.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-display font-extrabold text-amber text-2xl">03</span>
+          <div>
+            <h3 class="font-display font-bold text-xl text-bone">Bow staves and shafts</h3>
+            <p class="text-mute mt-1">Raw staves and arrow shafts prepared in the workshop for the maker who wants to finish their own.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECONDARY: WORKSHOP / PROCESS (reversed split) -->
+<section id="workshop" class="py-24 bg-panel">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal md:order-2">
+      <img src="https://heritagelongbows.co.uk/wp/wp-content/uploads/2018/01/header3.jpg" alt="Warbow arrows laid out on the workshop bench" class="w-full h-[28rem] object-cover rounded-brand">
+    </div>
+    <div class="reveal md:order-1">
+      <h2 class="font-display font-extrabold text-4xl text-bone mb-6">Arrow shafts made in our workshop, one at a time.</h2>
+      <p class="text-mute mb-6">Nothing here is mass produced. Each shaft is straightened, tapered, and footed by hand, then matched to the bow it will fly from. The result is tackle that feels right the moment you draw.</p>
+      <ul class="space-y-3 text-bone/90">
+        <li class="flex gap-3"><span class="text-amber font-display font-bold">+</span> Member of the Craft Guild</li>
+        <li class="flex gap-3"><span class="text-amber font-display font-bold">+</span> National Field Archery Society 2017 champion</li>
+        <li class="flex gap-3"><span class="text-amber font-display font-bold">+</span> Built to your draw weight and length</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- GALLERY / BRAND STORY -->
+<section id="arrows" class="py-24 bg-ink">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="reveal max-w-2xl mb-12">
+      <p class="font-display uppercase tracking-[0.3em] text-amber text-sm mb-3">From the bench</p>
+      <h2 class="font-display font-extrabold text-4xl text-bone">A workshop full of finished work.</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="https://heritagelongbows.co.uk/wp/wp-content/uploads/2018/01/10304441_10152103778757616_718533430930691559_n.jpg" alt="English longbows" class="w-full h-64 object-cover rounded-brand reveal">
+      <img src="https://heritagelongbows.co.uk/wp/wp-content/uploads/2018/01/20130615_175134_Android.jpg" alt="Trophy longbows" class="w-full h-64 object-cover rounded-brand reveal">
+      <img src="https://heritagelongbows.co.uk/wp/wp-content/uploads/2018/02/2017-NFAS-Champs-185-Andrew--e1567025206191.jpg" alt="NFAS championship shooting" class="w-full h-64 object-cover rounded-brand reveal">
+      <img src="https://heritagelongbows.co.uk/wp/wp-content/uploads/2018/01/header2-1.jpg" alt="Arrow shafts" class="w-full h-64 object-cover rounded-brand reveal">
+      <img src="https://heritagelongbows.co.uk/wp/wp-content/uploads/2018/02/DSC_0021-e1567025262904.jpg" alt="Workshop detail" class="w-full h-64 object-cover rounded-brand reveal">
+      <img src="https://heritagelongbows.co.uk/wp/wp-content/uploads/2018/01/header3.jpg" alt="Warbow arrows" class="w-full h-64 object-cover rounded-brand reveal">
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY -->
+<section class="py-24 bg-panel">
+  <div class="max-w-4xl mx-auto px-6 text-center reveal">
+    <blockquote class="font-display font-bold text-3xl md:text-4xl text-bone leading-snug">"Arrow shafts made in our workshop" is not a slogan here. It is the whole business, one stave at a time.</blockquote>
+    <p class="mt-6 text-mute">Heritage Longbows, Staffordshire</p>
+    <div class="mt-10 flex flex-wrap justify-center gap-10 text-center">
+      <div>
+        <p class="font-display font-extrabold text-4xl text-amber">NFAS</p>
+        <p class="text-mute text-sm uppercase tracking-widest mt-1">2017 Champion</p>
+      </div>
+      <div>
+        <p class="font-display font-extrabold text-4xl text-amber">Craft</p>
+        <p class="text-mute text-sm uppercase tracking-widest mt-1">Guild Member</p>
+      </div>
+      <div>
+        <p class="font-display font-extrabold text-4xl text-amber">Made</p>
+        <p class="text-mute text-sm uppercase tracking-widest mt-1">To Order</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA STRIP -->
+<section id="contact" class="py-20 bg-amber">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+    <div>
+      <h2 class="font-display font-extrabold text-4xl text-ink">Want a longbow built around you?</h2>
+      <p class="text-ink/80 mt-2 text-lg">Tell us your draw weight and length. We will take it from the stave.</p>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      <a href="mailto:heritagelongbows@gmail.com" class="bg-ink text-bone font-display font-bold uppercase tracking-wide px-6 py-3 rounded-brand hover:bg-black transition">Email the maker</a>
+      <a href="tel:01543898660" class="border border-ink text-ink font-display font-bold uppercase tracking-wide px-6 py-3 rounded-brand hover:bg-ink hover:text-bone transition">01543 898660</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink border-t border-amber/20 py-14">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+    <div>
+      <p class="font-display font-extrabold text-xl text-bone">HERITAGE <span class="text-amber">LONGBOWS</span></p>
+      <p class="text-mute mt-3 text-sm">Traditional English longbows and custom arrows, made in Staffordshire.</p>
+    </div>
+    <div>
+      <p class="font-display uppercase tracking-widest text-amber text-sm mb-3">Explore</p>
+      <ul class="space-y-2 text-mute text-sm">
+        <li><a href="#longbows" class="hover:text-bone transition">Longbows</a></li>
+        <li><a href="#arrows" class="hover:text-bone transition">Arrows</a></li>
+        <li><a href="#workshop" class="hover:text-bone transition">Workshop</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-display uppercase tracking-widest text-amber text-sm mb-3">Contact</p>
+      <ul class="space-y-2 text-mute text-sm">
+        <li><a href="mailto:heritagelongbows@gmail.com" class="hover:text-bone transition">heritagelongbows@gmail.com</a></li>
+        <li><a href="tel:01543898660" class="hover:text-bone transition">01543 898660</a></li>
+        <li>Staffordshire, England</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-display uppercase tracking-widest text-amber text-sm mb-3">Follow</p>
+      <ul class="space-y-2 text-mute text-sm">
+        <li><a href="https://instagram.com/" class="hover:text-bone transition">Instagram</a></li>
+        <li><a href="https://twitter.com/" class="hover:text-bone transition">Twitter</a></li>
+        <li><a href="http://linkedin.com/" class="hover:text-bone transition">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-bone/10 text-mute text-xs">
+    &copy; 2026 Heritage Longbows. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

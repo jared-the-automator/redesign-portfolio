@@ -306,3 +306,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Flat Island Boatworks, LLC](https://jared-the-automator.github.io/redesign-portfolio/flatislandboatworks.com/) | Marine repair, restoration and refit | Pensacola, FL |
 | [Chester Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/chesteranimalclinic.com/) | Small-animal veterinary hospital, serving Chesterfield County since 1968 | Chester, Virginia |
 | [North Arlington Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/northarlingtonvet.com/) | Small-animal veterinary clinic, serving Columbus since 1972, voted Best Vet in Columbus 2018 | Columbus, OH |
+| [Heritage Longbows](https://jared-the-automator.github.io/redesign-portfolio/heritagelongbows.co.uk/) | Traditional English longbows & custom arrows, NFAS 2017 champion | Staffordshire, England |
