@@ -310,3 +310,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Heritage Longbows](https://jared-the-automator.github.io/redesign-portfolio/heritagelongbows.co.uk/) | Traditional English longbows & custom arrows, NFAS 2017 champion | Staffordshire, England |
 | [Nakashento](https://jared-the-automator.github.io/redesign-portfolio/nakashento.com/) | Handmade terrariums, artwork, and fly-fishing pieces | Not stated on site |
 | [Hickory Hill Smokehouse](https://jared-the-automator.github.io/redesign-portfolio/hickoryhillsmokehouse.com/) | Smokehouse, smoked bacon, hams and custom meat processing | Not stated on site |
+| [Dupont Veterinary Clinic](https://jared-the-automator.github.io/redesign-portfolio/dupontvetclinic.com/) | Small-animal veterinary clinic, independent and Fear Free, serving Dupont Circle since 1991 | Washington DC |
