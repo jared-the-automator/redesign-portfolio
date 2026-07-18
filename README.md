@@ -309,3 +309,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [North Arlington Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/northarlingtonvet.com/) | Small-animal veterinary clinic, serving Columbus since 1972, voted Best Vet in Columbus 2018 | Columbus, OH |
 | [Heritage Longbows](https://jared-the-automator.github.io/redesign-portfolio/heritagelongbows.co.uk/) | Traditional English longbows & custom arrows, NFAS 2017 champion | Staffordshire, England |
 | [Nakashento](https://jared-the-automator.github.io/redesign-portfolio/nakashento.com/) | Handmade terrariums, artwork, and fly-fishing pieces | Not stated on site |
+| [Hickory Hill Smokehouse](https://jared-the-automator.github.io/redesign-portfolio/hickoryhillsmokehouse.com/) | Smokehouse, smoked bacon, hams and custom meat processing | Not stated on site |

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hickory Hill Smokehouse | Smoked Bacon, Hams and Sausage</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0e0b08',
+        coal: '#16110b',
+        amber: '#d99a4e',
+        bone: '#f2e9dc',
+        muted: '#a89a86'
+      },
+      fontFamily: {
+        display: ['"Barlow Condensed"', 'sans-serif'],
+        body: ['Barlow', 'sans-serif']
+      },
+      borderRadius: { DEFAULT: '2px' }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #0e0b08; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+</style>
+</head>
+<body class="font-body text-bone antialiased">
+
+<header class="sticky top-0 z-50 bg-ink/95 backdrop-blur border-b border-amber/20">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="https://hickoryhillsmokehouse.com/wp-content/uploads/2024/08/cropped-SmokeyBacon-scaled-1.jpg" alt="Hickory Hill Smokehouse" class="h-9 w-9 object-cover rounded">
+      <span class="font-display font-extrabold tracking-wide text-bone text-xl">Hickory Hill Smokehouse</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm uppercase tracking-widest text-muted">
+      <a href="#bacon" class="hover:text-amber transition">Bacon</a>
+      <a href="#processing" class="hover:text-amber transition">Custom Processing</a>
+      <a href="#contact" class="hover:text-amber transition">Contact</a>
+    </nav>
+    <a href="#contact" class="bg-amber text-ink font-display font-bold uppercase tracking-wider text-sm px-5 py-2 rounded hover:bg-bone transition">Order</a>
+  </div>
+</header>
+
+<section class="relative min-h-[100dvh] flex items-end">
+  <img src="https://hickoryhillsmokehouse.com/wp-content/uploads/2018/07/cropped-SmokehousePicture-1.jpg" alt="The Hickory Hill Smokehouse building" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-ink/80"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-5 pb-20 w-full">
+    <p class="font-display uppercase tracking-[0.35em] text-amber text-sm mb-5">Artisan Smoked Meats</p>
+    <h1 class="font-display font-extrabold uppercase leading-[0.95] text-bone text-6xl md:text-8xl max-w-3xl">Smoked Low And Slow In A Small Hilltown Smokehouse</h1>
+    <p class="mt-6 text-lg text-bone/80 max-w-xl">Bacon, hams, and cheese sausage smoked the old way with real wood. Made in small batches you can taste.</p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="#bacon" class="bg-amber text-ink font-display font-bold uppercase tracking-wider px-7 py-3 rounded hover:bg-bone transition">See The Bacon</a>
+      <a href="#processing" class="border border-amber/50 text-bone font-display font-bold uppercase tracking-wider px-7 py-3 rounded hover:border-amber transition">Custom Processing</a>
+    </div>
+  </div>
+</section>
+<section id="bacon" class="py-24 bg-ink">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <img src="https://hickoryhillsmokehouse.com/wp-content/uploads/2024/08/cropped-SmokeyBacon-scaled-1.jpg" alt="Smoked bacon from Hickory Hill Smokehouse" class="w-full h-[28rem] object-cover rounded">
+    </div>
+    <div class="reveal">
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-5xl text-bone mb-8">Bacon, Hams, And Sausage</h2>
+      <div class="space-y-7">
+        <div class="flex gap-5">
+          <span class="font-display font-extrabold text-amber text-2xl">01</span>
+          <div>
+            <h3 class="font-display font-bold uppercase text-xl text-bone">Smoked Bacon</h3>
+            <p class="text-muted mt-1">Thick-cut and real-wood smoked, the way a smokehouse should make it.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="font-display font-extrabold text-amber text-2xl">02</span>
+          <div>
+            <h3 class="font-display font-bold uppercase text-xl text-bone">Whole And Baby Hams</h3>
+            <p class="text-muted mt-1">Slow-smoked hams for the table and the holidays.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="font-display font-extrabold text-amber text-2xl">03</span>
+          <div>
+            <h3 class="font-display font-bold uppercase text-xl text-bone">Cheese Sausage</h3>
+            <p class="text-muted mt-1">Smoked cheese and sausage made in the same small shop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="processing" class="py-24 bg-coal">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal order-2 md:order-1">
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-5xl text-bone mb-6">Custom Processing</h2>
+      <p class="text-muted mb-5">We process deer, bear, and livestock the way a neighborhood smokehouse has for years. You get your own meat back, smoked and cut the way you like it.</p>
+      <p class="text-muted">It is the part of the shop built on trust, and the part customers drive out of their way for.</p>
+    </div>
+    <div class="reveal order-1 md:order-2">
+      <img src="https://hickoryhillsmokehouse.com/wp-content/uploads/2018/07/Sign1-2000x1200.jpg" alt="The Hickory Hill Smokehouse storefront sign" class="w-full h-[28rem] object-cover rounded">
+    </div>
+  </div>
+</section>
+<section class="py-24 bg-ink">
+  <div class="max-w-6xl mx-auto px-5">
+    <p class="font-display uppercase tracking-[0.3em] text-amber text-sm mb-4 text-center">From The Smokehouse</p>
+    <h2 class="font-display font-extrabold uppercase text-4xl md:text-5xl text-bone mb-12 text-center">Made By Hand, One Batch At A Time</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="https://hickoryhillsmokehouse.com/wp-content/uploads/2018/07/PONY.jpg" alt="A pony at the Hickory Hill Smokehouse" class="w-full h-56 object-cover rounded reveal">
+      <img src="https://hickoryhillsmokehouse.com/wp-content/uploads/2024/08/cropped-SmokeyBacon-scaled-1.jpg" alt="Smoked bacon close up" class="w-full h-56 object-cover rounded reveal">
+      <img src="https://hickoryhillsmokehouse.com/wp-content/uploads/2018/07/cropped-SmokehousePicture-1.jpg" alt="The smokehouse building" class="w-full h-56 object-cover rounded reveal">
+      <img src="https://hickoryhillsmokehouse.com/wp-content/uploads/2018/07/Sign1-2000x1200.jpg" alt="The storefront sign" class="w-full h-56 object-cover rounded reveal">
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-coal">
+  <div class="max-w-5xl mx-auto px-5 grid md:grid-cols-3 gap-10 text-center">
+    <div class="reveal">
+      <p class="font-display font-extrabold text-amber text-5xl">Real Wood</p>
+      <p class="text-muted mt-3">Smoked with hardwood, not liquid smoke.</p>
+    </div>
+    <div class="reveal">
+      <p class="font-display font-extrabold text-amber text-5xl">Small Batch</p>
+      <p class="text-muted mt-3">Made in a hilltown shop, not a factory.</p>
+    </div>
+    <div class="reveal">
+      <p class="font-display font-extrabold text-amber text-5xl">Local</p>
+      <p class="text-muted mt-3">Custom processing for hunters and farms nearby.</p>
+    </div>
+  </div>
+</section>
+<section id="contact" class="py-20 bg-amber">
+  <div class="max-w-5xl mx-auto px-5 text-center">
+    <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl text-ink">Ready To Taste The Difference?</h2>
+    <p class="text-ink/80 mt-4 text-lg max-w-2xl mx-auto">Order smoked bacon and ham, or ask about custom processing. We answer every message.</p>
+    <a href="mailto:customerservice@hickoryhillsmokehouse.com" class="inline-block mt-8 bg-ink text-bone font-display font-bold uppercase tracking-wider px-8 py-4 rounded hover:bg-coal transition">Email The Smokehouse</a>
+  </div>
+</section>
+
+<footer class="bg-ink border-t border-amber/20 py-14">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-4 gap-10">
+    <div>
+      <span class="font-display font-extrabold tracking-wide text-bone text-xl">Hickory Hill Smokehouse</span>
+      <p class="text-muted mt-3 text-sm">Artisan smoked meats, made in small batches.</p>
+    </div>
+    <div>
+      <p class="font-display uppercase tracking-widest text-amber text-sm mb-4">Products</p>
+      <ul class="space-y-2 text-muted text-sm">
+        <li><a href="#bacon" class="hover:text-bone transition">Smoked Bacon</a></li>
+        <li><a href="#bacon" class="hover:text-bone transition">Hams</a></li>
+        <li><a href="#bacon" class="hover:text-bone transition">Cheese Sausage</a></li>
+        <li><a href="#processing" class="hover:text-bone transition">Custom Processing</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-display uppercase tracking-widest text-amber text-sm mb-4">Contact</p>
+      <ul class="space-y-2 text-muted text-sm">
+        <li><a href="mailto:customerservice@hickoryhillsmokehouse.com" class="hover:text-bone transition">customerservice@hickoryhillsmokehouse.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-display uppercase tracking-widest text-amber text-sm mb-4">Follow</p>
+      <ul class="space-y-2 text-muted text-sm">
+        <li><a href="https://www.facebook.com/hickoryhillsmokehouse" class="hover:text-bone transition">Facebook</a></li>
+        <li><a href="https://www.instagram.com/hickoryhillsmokehouse/" class="hover:text-bone transition">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-center text-muted/60 text-xs mt-12">Prototype redesign for Hickory Hill Smokehouse. Not affiliated with the original site.</p>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
