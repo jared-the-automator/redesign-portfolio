@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StreamWeaverFlies | Fly Fishing, Instruction, and Guided Trips in Red Deer, Alberta</title>
+  <meta name="description" content="StreamWeaverFlies is a full service fly shop in Red Deer, Alberta offering guided fly fishing trips, fly tying and casting instruction, and quality flies for Central Alberta rivers.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#1e3a2b',
+            forestdeep: '#152b1f',
+            bone: '#e9e4d6',
+            offwhite: '#f6f4ee',
+            ink: '#16201a'
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Oswald', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    .radius { border-radius: 12px; }
+  </style>
+</head>
+<body class="bg-offwhite text-ink font-body antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-offwhite/95 backdrop-blur border-b border-bone">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3" aria-label="StreamWeaverFlies home">
+        <img src="https://streamweaverflies.com/wp-content/uploads/2025/09/finalwebsitebanner_colourlogo.png?w=1024" alt="StreamWeaverFlies logo" class="h-10 w-auto">
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-display uppercase tracking-wide text-forest">
+        <a href="#shop" class="hover:text-forestdeep">Fly Shop</a>
+        <a href="#trips" class="hover:text-forestdeep">Guided Trips</a>
+        <a href="#instruction" class="hover:text-forestdeep">Instruction</a>
+        <a href="#story" class="hover:text-forestdeep">Our Story</a>
+        <a href="#contact" class="hover:text-forestdeep">Contact</a>
+      </nav>
+      <a href="#contact" class="radius bg-forest text-white font-display uppercase tracking-wide text-sm px-5 py-3 hover:bg-forestdeep">Book a Trip</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-end">
+    <img src="https://streamweaverflies.com/wp-content/uploads/2025/09/swf_elk_river_homepage.png?w=1024" alt="A guide standing waist deep in a Central Alberta river with a fly rod" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-forestdeep/72"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 w-full pb-24 pt-32">
+      <p class="font-display uppercase tracking-[0.2em] text-bone/90 text-sm mb-5">Red Deer, Alberta</p>
+      <h1 class="font-display font-bold text-white leading-[0.95] text-5xl md:text-7xl max-w-3xl">Central Alberta's fly fishing outfitter</h1>
+      <p class="text-bone/90 text-lg md:text-xl max-w-xl mt-6">Guided trips, fly tying, and casting instruction on the rivers around Red Deer, from a shop that does it all.</p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#trips" class="radius bg-forest text-white font-display uppercase tracking-wide px-6 py-4 hover:bg-forestdeep">See guided trips</a>
+        <a href="#contact" class="radius bg-white text-forest font-display uppercase tracking-wide px-6 py-4 hover:bg-bone">Get in touch</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRIMARY: services split -->
+  <section id="trips" class="max-w-6xl mx-auto px-6 py-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <img src="https://streamweaverflies.com/wp-content/uploads/2025/09/swf_elk_river_homepage.png?w=1024" alt="A Central Alberta river at first light" class="radius w-full h-[520px] object-cover" style="object-position: 50% 30%">
+      </div>
+      <div class="reveal">
+        <p class="font-display uppercase tracking-[0.2em] text-forest text-sm mb-3">What we do</p>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-forest mb-8">Three ways to get on the water</h2>
+        <div class="space-y-7">
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-forest/40 text-2xl">01</span>
+            <div>
+              <h3 class="font-display font-semibold text-xl text-ink">Guided trips</h3>
+              <p class="text-ink/70 mt-1">Half and full day floats and walk-and-wade trips on the Red Deer and neighbouring rivers, matched to your experience.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-forest/40 text-2xl">02</span>
+            <div>
+              <h3 class="font-display font-semibold text-xl text-ink">Fly tying instruction</h3>
+              <p class="text-ink/70 mt-1">Hands on sessions where you tie the flies you will actually fish, from nymphs to streamers.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-forest/40 text-2xl">03</span>
+            <div>
+              <h3 class="font-display font-semibold text-xl text-ink">Casting instruction</h3>
+              <p class="text-ink/70 mt-1">One on one casting coaching that fixes the habits holding your distance and accuracy back.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY: reversed split, shop story -->
+  <section id="shop" class="bg-forest text-white">
+    <div class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal md:order-2">
+        <div class="radius bg-white p-10 flex items-center justify-center">
+          <img src="https://streamweaverflies.com/wp-content/uploads/2025/09/finalwebsitebanner_colourlogo.png?w=1024" alt="StreamWeaverFlies shop mark" class="h-28 w-auto">
+        </div>
+      </div>
+      <div class="reveal md:order-1">
+        <p class="font-display uppercase tracking-[0.2em] text-bone/70 text-sm mb-3">The fly shop</p>
+        <h2 class="font-display font-bold text-4xl md:text-5xl mb-6">Red Deer's one stop fly shop</h2>
+        <p class="text-bone/85 text-lg leading-relaxed">The shop sits at 3829-50A Street in Red Deer, serving Central Alberta and beyond with fly tying and fly fishing needs. Anglers call it the one stop shop, and the reason is simple: the same person guiding your trip ties the flies and teaches the cast.</p>
+        <p class="text-bone/85 text-lg leading-relaxed mt-4">Walk in for a custom fly, book a lesson, or plan a day on the river. It all happens under one roof.</p>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY / BRAND STORY (breaks the zigzag) -->
+  <section id="story" class="max-w-6xl mx-auto px-6 py-24">
+    <div class="reveal mb-12 max-w-2xl">
+      <p class="font-display uppercase tracking-[0.2em] text-forest text-sm mb-3">Our story</p>
+      <h2 class="font-display font-bold text-4xl md:text-5xl text-forest">Built for the angler who would rather be in the river</h2>
+      <p class="text-ink/70 text-lg mt-5 leading-relaxed">StreamWeaverFlies started as a way to share a lifetime on Central Alberta's rivers. Today it is a working fly shop where the guidance, the flies, and the teaching all come from the same bench. No distractions, no filler, just the next good day on the water.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="reveal">
+        <img src="https://streamweaverflies.com/wp-content/uploads/2025/09/swf_elk_river_homepage.png?w=1024" alt="A bend in the Red Deer River lined with pines" class="radius w-full h-72 object-cover">
+        <p class="text-ink/60 text-sm mt-3 font-display uppercase tracking-wide">Home water: Central Alberta's rivers</p>
+      </div>
+      <div class="reveal">
+        <div class="radius bg-forest h-72 flex items-center justify-center p-8">
+          <img src="https://streamweaverflies.com/wp-content/uploads/2025/09/finalwebsitebanner_colourlogo.png?w=1024" alt="StreamWeaverFlies logo on forest green" class="h-24 w-auto">
+        </div>
+        <p class="text-ink/60 text-sm mt-3 font-display uppercase tracking-wide">The mark anglers know in Red Deer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY -->
+  <section id="instruction" class="bg-bone">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="reveal mb-12 max-w-2xl">
+        <p class="font-display uppercase tracking-[0.2em] text-forest text-sm mb-3">Why anglers return</p>
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-forest">Local, full service, and hands on</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="reveal radius bg-white p-8">
+          <h3 class="font-display font-semibold text-2xl text-forest mb-3">Red Deer, Alberta</h3>
+          <p class="text-ink/70">Based at 3829-50A Street and on the water across Central Alberta, so the advice matches the actual rivers you will fish.</p>
+        </div>
+        <div class="reveal radius bg-white p-8">
+          <h3 class="font-display font-semibold text-2xl text-forest mb-3">One stop shop</h3>
+          <p class="text-ink/70">Flies, lessons, and guided trips in a single place. Customers know they can walk in for one and leave with the other two planned.</p>
+        </div>
+        <div class="reveal radius bg-white p-8">
+          <h3 class="font-display font-semibold text-2xl text-forest mb-3">Taught by the guide</h3>
+          <p class="text-ink/70">The person coaching your cast and tying your fly is the same one leading the trip. The instruction carries straight to the river.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA STRIP -->
+  <section id="contact" class="bg-forest text-white">
+    <div class="max-w-6xl mx-auto px-6 py-20 text-center">
+      <h2 class="font-display font-bold text-4xl md:text-5xl mb-4">Ready to fish the rivers around Red Deer?</h2>
+      <p class="text-bone/85 text-lg max-w-xl mx-auto mb-8">Book a guided trip, a casting lesson, or stop in for the fly you need. The river is waiting and the season does not.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="mailto:bedens@shaw.ca" class="radius bg-white text-forest font-display uppercase tracking-wide px-6 py-4 hover:bg-bone">Email the shop</a>
+        <a href="tel:4033048362" class="radius border border-white text-white font-display uppercase tracking-wide px-6 py-4 hover:bg-forestdeep">Call (403) 304-8362</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-forestdeep text-bone/80">
+    <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+      <div>
+        <img src="https://streamweaverflies.com/wp-content/uploads/2025/09/finalwebsitebanner_colourlogo.png?w=1024" alt="StreamWeaverFlies logo" class="h-10 w-auto mb-4">
+        <p class="text-sm text-bone/70">Fly fishing, instruction, and guided trips for Central Alberta.</p>
+      </div>
+      <div>
+        <h4 class="font-display uppercase tracking-wide text-white text-sm mb-4">Visit</h4>
+        <p class="text-sm text-bone/70">3829-50A Street<br>Red Deer, Alberta<br>Canada</p>
+      </div>
+      <div>
+        <h4 class="font-display uppercase tracking-wide text-white text-sm mb-4">Contact</h4>
+        <p class="text-sm text-bone/70"><a href="mailto:bedens@shaw.ca" class="hover:text-white">bedens@shaw.ca</a><br><a href="tel:4033048362" class="hover:text-white">(403) 304-8362</a></p>
+      </div>
+      <div>
+        <h4 class="font-display uppercase tracking-wide text-white text-sm mb-4">Explore</h4>
+        <ul class="text-sm text-bone/70 space-y-2">
+          <li><a href="#shop" class="hover:text-white">Fly Shop</a></li>
+          <li><a href="#trips" class="hover:text-white">Guided Trips</a></li>
+          <li><a href="#instruction" class="hover:text-white">Instruction</a></li>
+          <li><a href="#story" class="hover:text-white">Our Story</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-6 py-6 text-xs text-bone/50">StreamWeaverFlies, Red Deer, Alberta. Redesign concept.</div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+  </script>
+
+</body>
+</html>

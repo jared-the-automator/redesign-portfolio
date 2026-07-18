@@ -300,3 +300,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Norton, McKinney & Lawler Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/nortonfuneralhome.com/) | Family-owned funeral home & cremation, serving Framingham and MetroWest in English, Spanish and Portuguese | Framingham, MA |
 | [Accurate Oil Burner Service LLC](https://jared-the-automator.github.io/redesign-portfolio/accurateoilburnerservice.com/) | Oil burner repair, steam service and annual maintenance plans | Central Connecticut |
 | [Barbarossa Leather](https://jared-the-automator.github.io/redesign-portfolio/barbarossaleather.com/) | Upholstery, exotic & embossed leather hides, hand-finished for 40+ years | South Florida |
+| --- | --- | --- |
+| [StreamWeaverFlies](https://jared-the-automator.github.io/redesign-portfolio/streamweaverflies.com/) | Fly fishing shop: guided trips, fly tying and casting instruction, Red Deer's one stop fly shop | Red Deer, Alberta, Canada |
