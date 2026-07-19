@@ -314,3 +314,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Northwest Pointing Labrador Club](https://jared-the-automator.github.io/redesign-portfolio/nwpointinglabs.org/) | Pointing Labrador retriever club, APLA hunt tests & breeder classifieds | Pacific Northwest (WA, OR, ID) |
 | [Hometown Fuel LLC](https://jared-the-automator.github.io/redesign-portfolio/myhometownfuel.com/) | Heating oil delivery, automatic delivery, budget plans & 24 hour emergency service | Newtown, CT (Fairfield County) |
 | [Back Country Custom Rifles](https://jared-the-automator.github.io/redesign-portfolio/backcountrycustomrifles.com/) | Custom rifle builder: actions, barrels, stocks and optics | Utah |
+| [Horns And Scales Outfitters](https://jared-the-automator.github.io/redesign-portfolio/hornsandscales.com/) | Hunting outfitters: ammunition, apparel, dog gear and electronics | Not stated on site |
