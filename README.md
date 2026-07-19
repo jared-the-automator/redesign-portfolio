@@ -311,3 +311,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Nakashento](https://jared-the-automator.github.io/redesign-portfolio/nakashento.com/) | Handmade terrariums, artwork, and fly-fishing pieces | Not stated on site |
 | [Hickory Hill Smokehouse](https://jared-the-automator.github.io/redesign-portfolio/hickoryhillsmokehouse.com/) | Smokehouse, smoked bacon, hams and custom meat processing | Not stated on site |
 | [Dupont Veterinary Clinic](https://jared-the-automator.github.io/redesign-portfolio/dupontvetclinic.com/) | Small-animal veterinary clinic, independent and Fear Free, serving Dupont Circle since 1991 | Washington DC |
+| [Northwest Pointing Labrador Club](https://jared-the-automator.github.io/redesign-portfolio/nwpointinglabs.org/) | Pointing Labrador retriever club, APLA hunt tests & breeder classifieds | Pacific Northwest (WA, OR, ID) |
