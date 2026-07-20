@@ -316,3 +316,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Hometown Fuel LLC](https://jared-the-automator.github.io/redesign-portfolio/myhometownfuel.com/) | Heating oil delivery, automatic delivery, budget plans & 24 hour emergency service | Newtown, CT (Fairfield County) |
 | [Back Country Custom Rifles](https://jared-the-automator.github.io/redesign-portfolio/backcountrycustomrifles.com/) | Custom rifle builder: actions, barrels, stocks and optics | Utah |
 | [Horns And Scales Outfitters](https://jared-the-automator.github.io/redesign-portfolio/hornsandscales.com/) | Hunting outfitters: ammunition, apparel, dog gear and electronics | Not stated on site |
+| [White Plains Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/whiteplainsvets.com/) | Small-animal veterinary hospital for dogs and cats, in-house lab and same-day appointments | White Plains, NY |
