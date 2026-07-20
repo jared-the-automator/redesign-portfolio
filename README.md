@@ -321,3 +321,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Back Country Custom Rifles](https://jared-the-automator.github.io/redesign-portfolio/backcountrycustomrifles.com/) | Custom rifle builder: actions, barrels, stocks and optics | Utah |
 | [Horns And Scales Outfitters](https://jared-the-automator.github.io/redesign-portfolio/hornsandscales.com/) | Hunting outfitters: ammunition, apparel, dog gear and electronics | Not stated on site |
 | [White Plains Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/whiteplainsvets.com/) | Small-animal veterinary hospital for dogs and cats, in-house lab and same-day appointments | White Plains, NY |
+| [The Angling Company](https://jared-the-automator.github.io/redesign-portfolio/anglingcompany.com/) | Key West fly shop & flats guide service: tarpon, bonefish & permit | Key West, FL |
