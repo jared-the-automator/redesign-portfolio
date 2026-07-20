@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oil Burner and Heating Service in Auburn | ACCS</title>
+  <meta name="description" content="ACCS handles oil burner service, boiler and furnace repair, and fast no heat calls for homes and property managers around Auburn." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0c0d10',
+            steel: { 900: '#14161a', 800: '#1d2025', 700: '#2a2e35', 500: '#4a505a', 300: '#8b929c' },
+            bone: '#eef1f5',
+            ignite: '#ff6a1a'
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            body: ['Barlow', 'sans-serif']
+          },
+          borderRadius: {
+            DEFAULT: '2px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background:#0c0d10; }
+    .grid-lines {
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 46px 46px;
+    }
+    .reveal { opacity:0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity:1; transform: none; }
+    .hero-vignette { background: radial-gradient(120% 90% at 15% 20%, rgba(255,106,26,0.10), transparent 55%), radial-gradient(120% 120% at 100% 100%, rgba(0,0,0,0.7), transparent 60%); }
+  </style>
+</head>
+<body class="bg-ink text-bone font-body antialiased selection:bg-ignite selection:text-ink">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-ink/90 backdrop-blur border-b border-steel-700">
+    <nav class="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="https://accsauburn.com/wp-content/uploads/2023/10/untitled-design-19-1.png" alt="ACCS heating and oil burner service" class="h-9 w-auto" />
+        <span class="font-display text-2xl tracking-wide leading-none text-bone">ACCS</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide text-steel-300">
+        <a href="#services" class="hover:text-bone transition-colors">Services</a>
+        <a href="#process" class="hover:text-bone transition-colors">How It Works</a>
+        <a href="#equipment" class="hover:text-bone transition-colors">What We Service</a>
+        <a href="#contact" class="hover:text-bone transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="bg-ignite text-ink font-bold uppercase tracking-wide text-sm px-5 py-2.5 rounded hover:bg-bone transition-colors">Request Service</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative min-h-[100dvh] flex items-center overflow-hidden">
+    <div class="absolute inset-0 grid-lines"></div>
+    <div class="absolute inset-0 hero-vignette"></div>
+    <div class="absolute left-0 top-0 h-full w-1.5 bg-ignite hidden"></div>
+    <div class="relative max-w-7xl mx-auto px-5 w-full py-24">
+      <p class="text-ignite font-semibold uppercase tracking-[0.25em] text-sm mb-6">Auburn Area Heating and Oil Burner Service</p>
+      <h1 class="font-display text-[clamp(3.5rem,11vw,10rem)] leading-[0.86] tracking-tight text-bone max-w-5xl">
+        When The Heat<br />Goes Out, We Answer.
+      </h1>
+      <p class="mt-8 text-lg md:text-xl text-steel-300 max-w-xl">
+        Oil burner service, boiler and furnace repair, and fast no heat calls, handled by people who pick up.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#contact" class="bg-ignite text-ink font-bold uppercase tracking-wide px-8 py-4 rounded hover:bg-bone transition-colors">Request Service</a>
+        <a href="#equipment" class="border border-steel-500 text-bone font-bold uppercase tracking-wide px-8 py-4 rounded hover:border-ignite hover:text-ignite transition-colors">See What We Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIMARY: SERVICES (asymmetric split, numbered) -->
+  <section id="services" class="border-t border-steel-700 bg-steel-900">
+    <div class="max-w-7xl mx-auto px-5 py-24 grid lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-4 reveal">
+        <p class="text-ignite font-semibold uppercase tracking-[0.25em] text-sm mb-5">Our Services</p>
+        <h2 class="font-display text-5xl md:text-6xl leading-[0.9] text-bone">What ACCS Does</h2>
+        <p class="mt-6 text-steel-300 text-lg">
+          We are here to help when the system that keeps your building warm stops working. Three things we handle every week, in order of how often the phone rings.
+        </p>
+        <a href="#contact" class="inline-block mt-8 text-ignite font-bold uppercase tracking-wide border-b-2 border-ignite pb-1 hover:text-bone hover:border-bone transition-colors">Get in touch</a>
+      </div>
+      <div class="lg:col-span-8 grid sm:grid-cols-1 divide-y divide-steel-700 border-t border-steel-700">
+        <div class="reveal flex gap-6 py-8">
+          <span class="font-display text-5xl text-ignite leading-none w-16 shrink-0">01</span>
+          <div>
+            <h3 class="font-display text-3xl tracking-wide text-bone">Oil Burner Service</h3>
+            <p class="mt-3 text-steel-300 max-w-xl">Cleaning, tuning, and repair of oil burners so they fire on the first try and burn clean through the coldest stretch of the season.</p>
+          </div>
+        </div>
+        <div class="reveal flex gap-6 py-8">
+          <span class="font-display text-5xl text-ignite leading-none w-16 shrink-0">02</span>
+          <div>
+            <h3 class="font-display text-3xl tracking-wide text-bone">Boiler and Furnace Repair</h3>
+            <p class="mt-3 text-steel-300 max-w-xl">Diagnosis and repair on boilers and furnaces, from a noisy circulator to a unit that will not hold a flame, with parts sourced fast.</p>
+          </div>
+        </div>
+        <div class="reveal flex gap-6 py-8">
+          <span class="font-display text-5xl text-ignite leading-none w-16 shrink-0">03</span>
+          <div>
+            <h3 class="font-display text-3xl tracking-wide text-bone">No Heat Calls</h3>
+            <p class="mt-3 text-steel-300 max-w-xl">A cold house cannot wait. When the heat quits, we prioritize the call, find the fault, and get the system running again.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECONDARY: PROCESS (reversed split, story angle) -->
+  <section id="process" class="border-t border-steel-700 bg-ink">
+    <div class="max-w-7xl mx-auto px-5 py-24 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 order-2 lg:order-1 grid sm:grid-cols-2 gap-px bg-steel-700 border border-steel-700 reveal">
+        <div class="bg-steel-900 p-7">
+          <span class="font-display text-4xl text-ignite">A</span>
+          <h4 class="font-display text-2xl tracking-wide text-bone mt-2">You Call</h4>
+          <p class="text-steel-300 mt-2 text-sm">One person answers and takes the details of what the system is doing.</p>
+        </div>
+        <div class="bg-steel-900 p-7">
+          <span class="font-display text-4xl text-ignite">B</span>
+          <h4 class="font-display text-2xl tracking-wide text-bone mt-2">We Show Up</h4>
+          <p class="text-steel-300 mt-2 text-sm">A technician arrives with the common parts already on the truck.</p>
+        </div>
+        <div class="bg-steel-900 p-7">
+          <span class="font-display text-4xl text-ignite">C</span>
+          <h4 class="font-display text-2xl tracking-wide text-bone mt-2">We Diagnose</h4>
+          <p class="text-steel-300 mt-2 text-sm">You hear what is wrong and what the fix costs before the work starts.</p>
+        </div>
+        <div class="bg-steel-900 p-7">
+          <span class="font-display text-4xl text-ignite">D</span>
+          <h4 class="font-display text-2xl tracking-wide text-bone mt-2">Heat Is Back</h4>
+          <p class="text-steel-300 mt-2 text-sm">The system runs, the area is left clean, and you know what to watch for.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-5 order-1 lg:order-2 reveal">
+        <p class="text-ignite font-semibold uppercase tracking-[0.25em] text-sm mb-5">How It Works</p>
+        <h2 class="font-display text-5xl md:text-6xl leading-[0.9] text-bone">Straight Answers,<br />No Runaround</h2>
+        <p class="mt-6 text-steel-300 text-lg">
+          A service call should be simple. You tell us the problem, we find it, and you decide with the number in front of you. That is the whole idea.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT GRID (full-width editorial, breaks the zigzag) -->
+  <section id="equipment" class="border-t border-steel-700 bg-steel-800 relative overflow-hidden">
+    <div class="absolute inset-0 grid-lines opacity-60"></div>
+    <div class="relative max-w-7xl mx-auto px-5 py-24">
+      <div class="max-w-3xl reveal">
+        <p class="text-ignite font-semibold uppercase tracking-[0.25em] text-sm mb-5">What We Service</p>
+        <h2 class="font-display text-6xl md:text-7xl leading-[0.88] text-bone">The Equipment That Keeps You Warm</h2>
+        <p class="mt-6 text-steel-300 text-lg">If it runs on oil and pushes heat through your building, it is in our wheelhouse.</p>
+      </div>
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-px bg-steel-700 border border-steel-700">
+        <div class="bg-steel-900 p-8 reveal">
+          <h3 class="font-display text-3xl tracking-wide text-bone">Oil Burners</h3>
+          <p class="text-steel-300 text-sm mt-3">Service, tune, and repair</p>
+        </div>
+        <div class="bg-steel-900 p-8 reveal">
+          <h3 class="font-display text-3xl tracking-wide text-bone">Boilers</h3>
+          <p class="text-steel-300 text-sm mt-3">Hot water and steam</p>
+        </div>
+        <div class="bg-steel-900 p-8 reveal">
+          <h3 class="font-display text-3xl tracking-wide text-bone">Furnaces</h3>
+          <p class="text-steel-300 text-sm mt-3">Warm air systems</p>
+        </div>
+        <div class="bg-steel-900 p-8 reveal">
+          <h3 class="font-display text-3xl tracking-wide text-bone">Controls</h3>
+          <p class="text-steel-300 text-sm mt-3">Thermostats and aquastats</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY (real statement pulled from the site) -->
+  <section class="border-t border-steel-700 bg-ink">
+    <div class="max-w-7xl mx-auto px-5 py-24 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 reveal">
+        <span class="font-display text-7xl text-ignite leading-none">&ldquo;</span>
+        <p class="font-display text-4xl md:text-5xl leading-[1.05] text-bone -mt-6">
+          We are here to help.
+        </p>
+        <p class="mt-6 text-steel-300 text-lg max-w-xl">
+          It is the line on their current homepage, and it is the whole promise. This rebuild puts that promise where a homeowner searching for heat can actually find it.
+        </p>
+        <p class="mt-6 text-sm uppercase tracking-widest text-steel-500">ACCS, Auburn</p>
+      </div>
+      <div class="lg:col-span-5 grid gap-px bg-steel-700 border border-steel-700 reveal">
+        <div class="bg-steel-900 p-8 flex items-baseline gap-4">
+          <span class="font-display text-5xl text-ignite">Local</span>
+          <span class="text-steel-300">Auburn area service</span>
+        </div>
+        <div class="bg-steel-900 p-8 flex items-baseline gap-4">
+          <span class="font-display text-5xl text-ignite">One Call</span>
+          <span class="text-steel-300">A person answers</span>
+        </div>
+        <div class="bg-steel-900 p-8 flex items-baseline gap-4">
+          <span class="font-display text-5xl text-ignite">Oil</span>
+          <span class="text-steel-300">Burner and heat specialists</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section id="contact" class="bg-ignite text-ink">
+    <div class="max-w-7xl mx-auto px-5 py-20 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+      <div>
+        <h2 class="font-display text-5xl md:text-7xl leading-[0.9]">No Heat? Get In Touch.</h2>
+        <p class="mt-4 text-lg font-semibold max-w-xl">Tell us what the system is doing and we will get you on the schedule.</p>
+      </div>
+      <a href="mailto:accsllc.office@gmail.com" class="shrink-0 bg-ink text-bone font-bold uppercase tracking-wide px-10 py-5 rounded text-lg hover:bg-steel-900 transition-colors">Request Service</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink border-t border-steel-700">
+    <div class="max-w-7xl mx-auto px-5 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="https://accsauburn.com/wp-content/uploads/2023/10/untitled-design-19-1.png" alt="ACCS heating and oil burner service" class="h-9 w-auto" />
+          <span class="font-display text-2xl tracking-wide text-bone">ACCS</span>
+        </div>
+        <p class="mt-4 text-steel-300 text-sm max-w-xs">Oil burner service, boiler and furnace repair, and no heat calls for the Auburn area.</p>
+      </div>
+      <div>
+        <h4 class="font-display text-xl tracking-wide text-bone">Services</h4>
+        <ul class="mt-4 space-y-2 text-steel-300 text-sm">
+          <li><a href="#services" class="hover:text-ignite transition-colors">Oil Burner Service</a></li>
+          <li><a href="#services" class="hover:text-ignite transition-colors">Boiler and Furnace Repair</a></li>
+          <li><a href="#services" class="hover:text-ignite transition-colors">No Heat Calls</a></li>
+          <li><a href="#equipment" class="hover:text-ignite transition-colors">What We Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-xl tracking-wide text-bone">Contact</h4>
+        <ul class="mt-4 space-y-2 text-steel-300 text-sm">
+          <li><a href="mailto:accsllc.office@gmail.com" class="hover:text-ignite transition-colors">accsllc.office@gmail.com</a></li>
+          <li>Auburn area</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display text-xl tracking-wide text-bone">Follow</h4>
+        <ul class="mt-4 space-y-2 text-steel-300 text-sm">
+          <li><a href="https://instagram.com/" class="hover:text-ignite transition-colors">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-steel-700">
+      <div class="max-w-7xl mx-auto px-5 py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-steel-500">
+        <p>Copyright 2026 ACCS. All rights reserved.</p>
+        <p>Redesign concept prepared for ACCS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
