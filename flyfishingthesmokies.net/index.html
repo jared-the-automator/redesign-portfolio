@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fly Fishing the Smokies | Guided Trout Trips, Bryson City NC</title>
+<meta name="description" content="Guided wade and drift-boat fly fishing trips for brook, brown, and rainbow trout across the Great Smoky Mountains of North Carolina and Tennessee. 2024 Fly Shop of the Year." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0d1912',
+          moss: '#13241b',
+          moss2: '#1a2f22',
+          line: '#294034',
+          gold: '#c9a24b',
+          goldbright: '#dcbc6b',
+          bone: '#efe7d6',
+          muted: '#a7b4a4'
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif']
+        },
+        borderRadius: {
+          DEFAULT: '4px'
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #0d1912; }
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .hero-bg {
+    background:
+      radial-gradient(120% 90% at 12% 8%, rgba(201,162,75,.16) 0%, rgba(201,162,75,0) 42%),
+      radial-gradient(140% 120% at 85% 15%, rgba(35,72,54,.55) 0%, rgba(13,25,18,0) 55%),
+      linear-gradient(180deg, #0f1d15 0%, #0d1912 55%, #0b160f 100%);
+  }
+  .scrim { background: linear-gradient(90deg, rgba(8,15,11,.86) 0%, rgba(8,15,11,.66) 45%, rgba(8,15,11,.30) 100%); }
+  .plate {
+    background:
+      radial-gradient(90% 70% at 78% 20%, rgba(201,162,75,.14) 0%, rgba(201,162,75,0) 60%),
+      linear-gradient(160deg, #16291e 0%, #10201700 60%),
+      #12231a;
+  }
+  .rule { background: linear-gradient(90deg, rgba(201,162,75,.9), rgba(201,162,75,0)); }
+</style>
+</head>
+<body class="bg-ink text-bone font-sans antialiased selection:bg-gold/30">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 border-b border-line/70 bg-ink/90 backdrop-blur">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
+    <a href="#top" class="flex items-center gap-3">
+      <span class="inline-flex items-center rounded bg-bone px-2 py-1.5 shadow-sm">
+        <img src="https://flyfishingthesmokies.net/wp-content/uploads/2022/04/cropped-C71CFE5E-A778-4CD9-A9D1-FBD5784990F1-1.jpeg" alt="Fly Fishing the Smokies logo" class="h-8 w-auto" />
+      </span>
+      <span class="hidden font-display text-lg font-700 tracking-tight text-bone sm:block">Fly Fishing the Smokies</span>
+    </a>
+    <div class="hidden items-center gap-7 text-sm font-500 text-muted lg:flex">
+      <a href="#trips" class="transition hover:text-bone">Guided Trips</a>
+      <a href="#float" class="transition hover:text-bone">Float Trips</a>
+      <a href="#waters" class="transition hover:text-bone">The Waters</a>
+      <a href="#proof" class="transition hover:text-bone">Why Us</a>
+      <a href="#contact" class="transition hover:text-bone">Contact</a>
+    </div>
+    <a href="#contact" class="rounded bg-gold px-4 py-2 text-sm font-600 text-ink transition hover:bg-goldbright">Book a Trip</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="top" class="hero-bg relative flex min-h-[100dvh] items-center overflow-hidden">
+  <div class="scrim absolute inset-0"></div>
+  <!-- faint river line-art motif -->
+  <svg class="pointer-events-none absolute bottom-0 right-0 h-[62%] w-auto opacity-[0.10]" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M20 300 C 160 240, 220 360, 360 300 S 560 240, 600 300" stroke="#c9a24b" stroke-width="2"/>
+    <path d="M0 340 C 150 290, 240 400, 380 340 S 580 290, 620 340" stroke="#c9a24b" stroke-width="1.5"/>
+    <path d="M330 250 q 30 -18 60 0 q -12 18 -30 18 q -18 0 -30 -18 z" fill="#c9a24b"/>
+    <circle cx="352" cy="252" r="2.4" fill="#0d1912"/>
+    <path d="M330 250 l -22 -10 l 6 10 l -6 10 z" fill="#c9a24b"/>
+  </svg>
+
+  <div class="relative mx-auto w-full max-w-7xl px-5 py-24 sm:px-8">
+    <div class="max-w-3xl">
+      <p class="mb-5 text-xs font-600 uppercase tracking-[0.28em] text-gold">Bryson City · Cherokee · Gatlinburg</p>
+      <h1 class="font-display text-5xl font-800 leading-[1.02] text-bone sm:text-6xl md:text-7xl">
+        Wild trout, guided<br />on Smoky Mountain water.
+      </h1>
+      <p class="mt-6 max-w-xl text-lg leading-relaxed text-muted">
+        Wade and drift-boat trips for brook, brown, and rainbow trout across North Carolina and Tennessee.
+      </p>
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="#contact" class="rounded bg-gold px-6 py-3 text-sm font-600 text-ink transition hover:bg-goldbright">Book a trip</a>
+        <a href="#waters" class="rounded border border-line px-6 py-3 text-sm font-600 text-bone transition hover:border-gold hover:text-gold">See the waters</a>
+      </div>
+      <div class="mt-10 inline-flex items-center gap-2.5 rounded border border-gold/40 bg-gold/10 px-4 py-2">
+        <svg class="h-4 w-4 text-gold" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+        <span class="text-sm font-500 text-bone">2024 Fly Shop of the Year</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIMARY: GUIDED TRIPS (asymmetric split) -->
+<section id="trips" class="border-t border-line/60 bg-ink py-20 sm:py-28">
+  <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-12">
+    <div class="reveal lg:col-span-5">
+      <div class="plate relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded border border-line p-7">
+        <span class="text-xs font-600 uppercase tracking-[0.28em] text-gold">On the water</span>
+        <svg class="mx-auto h-40 w-40 text-gold/80" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M30 110 q 45 -34 96 0 q -20 30 -48 30 q -28 0 -48 -30 z" fill="currentColor"/>
+          <circle cx="118" cy="106" r="4" fill="#0d1912"/>
+          <path d="M30 110 l -18 -14 l 4 14 l -4 14 z" fill="currentColor"/>
+          <path d="M92 82 q 8 -16 22 -14 q -4 12 -14 16 z" fill="currentColor"/>
+          <path d="M20 150 q 60 -20 180 -6" stroke="currentColor" stroke-width="2" opacity=".5"/>
+        </svg>
+        <div>
+          <p class="font-display text-2xl font-700 text-bone">Half day to full day</p>
+          <p class="mt-1 text-sm text-muted">Rods, reels, flies, and waders included.</p>
+        </div>
+      </div>
+    </div>
+    <div class="reveal lg:col-span-7 lg:pl-6">
+      <h2 class="font-display text-4xl font-700 leading-tight text-bone sm:text-5xl">Guided trips for every kind of trout day</h2>
+      <p class="mt-4 max-w-xl text-muted">You fish. We handle the water, the flies, and the reading. From a first cast to a picky wild brookie, the trip is built around what you want off the day.</p>
+      <div class="mt-10 space-y-8">
+        <div class="flex gap-5">
+          <span class="font-display text-2xl font-700 text-gold">01</span>
+          <div>
+            <h3 class="text-lg font-600 text-bone">Wade trips in the park and on the tailwaters</h3>
+            <p class="mt-1 text-muted">Half and full days for brook, brown, and rainbow trout in Great Smoky Mountains streams and nearby tailwater.</p>
+          </div>
+        </div>
+        <div class="h-px w-full rule opacity-40"></div>
+        <div class="flex gap-5">
+          <span class="font-display text-2xl font-700 text-gold">02</span>
+          <div>
+            <h3 class="text-lg font-600 text-bone">Backcountry brook trout</h3>
+            <p class="mt-1 text-muted">Hike-in native brookie water for anglers who want the wild, small-stream stuff most visitors never see.</p>
+          </div>
+        </div>
+        <div class="h-px w-full rule opacity-40"></div>
+        <div class="flex gap-5">
+          <span class="font-display text-2xl font-700 text-gold">03</span>
+          <div>
+            <h3 class="text-lg font-600 text-bone">Beginners, kids, and groups welcome</h3>
+            <p class="mt-1 text-muted">Every trip includes gear and instruction. Corporate and group trips run for teams and families who want a day out together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECONDARY: FLOAT TRIPS (reversed split) -->
+<section id="float" class="border-t border-line/60 bg-moss py-20 sm:py-28">
+  <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-12">
+    <div class="reveal order-2 lg:order-1 lg:col-span-7 lg:pr-6">
+      <h2 class="font-display text-4xl font-700 leading-tight text-bone sm:text-5xl">Drift the Tuckasegee and the Little Tennessee</h2>
+      <p class="mt-4 max-w-xl text-muted">A day in the drift boat covers water you cannot reach on foot. It suits a mixed group, a father and son, or an angler who wants a lot of casts at moving fish.</p>
+      <dl class="mt-9 grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div class="rounded border border-line bg-ink/40 p-5">
+          <dt class="text-xs font-600 uppercase tracking-[0.2em] text-gold">Rivers</dt>
+          <dd class="mt-2 text-bone">Tuckasegee River and Little Tennessee River, North Carolina.</dd>
+        </div>
+        <div class="rounded border border-line bg-ink/40 p-5">
+          <dt class="text-xs font-600 uppercase tracking-[0.2em] text-gold">Species</dt>
+          <dd class="mt-2 text-bone">Trout, smallmouth bass, and walleye on the fly.</dd>
+        </div>
+        <div class="rounded border border-line bg-ink/40 p-5">
+          <dt class="text-xs font-600 uppercase tracking-[0.2em] text-gold">Boat</dt>
+          <dd class="mt-2 text-bone">Guided drift boat, one to two anglers, all gear aboard.</dd>
+        </div>
+        <div class="rounded border border-line bg-ink/40 p-5">
+          <dt class="text-xs font-600 uppercase tracking-[0.2em] text-gold">Skill</dt>
+          <dd class="mt-2 text-bone">First timers to seasoned casters. The guide sets the pace.</dd>
+        </div>
+      </dl>
+      <a href="#contact" class="mt-9 inline-flex rounded bg-gold px-6 py-3 text-sm font-600 text-ink transition hover:bg-goldbright">Ask about a float day</a>
+    </div>
+    <div class="reveal order-1 lg:order-2 lg:col-span-5">
+      <div class="plate relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded border border-line p-7">
+        <span class="text-xs font-600 uppercase tracking-[0.28em] text-gold">The drift boat</span>
+        <svg class="mx-auto h-40 w-56 text-gold/80" viewBox="0 0 260 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M40 70 q 90 40 180 0 l -14 34 q -76 26 -152 0 z" fill="currentColor"/>
+          <path d="M60 66 l 140 0" stroke="#0d1912" stroke-width="4"/>
+          <path d="M10 120 q 70 -18 120 0 t 120 0" stroke="currentColor" stroke-width="2" opacity=".55"/>
+          <path d="M0 138 q 70 -18 130 0 t 130 0" stroke="currentColor" stroke-width="1.5" opacity=".4"/>
+        </svg>
+        <div>
+          <p class="font-display text-2xl font-700 text-bone">More water, more casts</p>
+          <p class="mt-1 text-sm text-muted">Full days on year-round rivers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE WATERS (full-width grid, breaks the zigzag) -->
+<section id="waters" class="border-t border-line/60 bg-ink py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="reveal max-w-2xl">
+      <h2 class="font-display text-4xl font-700 leading-tight text-bone sm:text-5xl">The waters we fish</h2>
+      <p class="mt-4 text-muted">One region, a lot of water. Trips move with the season, the flows, and what is fishing best the week you come.</p>
+    </div>
+    <div class="reveal mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <article class="group rounded border border-line bg-moss p-6 transition hover:border-gold/60">
+        <span class="font-display text-3xl font-700 text-gold/80">01</span>
+        <h3 class="mt-3 text-xl font-600 text-bone">Great Smoky Mountains streams</h3>
+        <p class="mt-2 text-sm text-muted">Freestone park water for wild brook, brown, and rainbow trout. Classic small-stream fishing under the rhododendron.</p>
+      </article>
+      <article class="group rounded border border-line bg-moss p-6 transition hover:border-gold/60">
+        <span class="font-display text-3xl font-700 text-gold/80">02</span>
+        <h3 class="mt-3 text-xl font-600 text-bone">Tuckasegee River</h3>
+        <p class="mt-2 text-sm text-muted">A year-round tailwater with room to wade or drift. Steady trout numbers make it a strong day for newer anglers.</p>
+      </article>
+      <article class="group rounded border border-line bg-moss p-6 transition hover:border-gold/60">
+        <span class="font-display text-3xl font-700 text-gold/80">03</span>
+        <h3 class="mt-3 text-xl font-600 text-bone">Little Tennessee River</h3>
+        <p class="mt-2 text-sm text-muted">Big-water float days for smallmouth bass, walleye, and trout when the season lines up.</p>
+      </article>
+      <article class="group rounded border border-line bg-moss p-6 transition hover:border-gold/60">
+        <span class="font-display text-3xl font-700 text-gold/80">04</span>
+        <h3 class="mt-3 text-xl font-600 text-bone">Cherokee, North Carolina</h3>
+        <p class="mt-2 text-sm text-muted">Guided trophy trout water near Cherokee, a good call when you want a real shot at a large fish.</p>
+      </article>
+      <article class="group rounded border border-line bg-moss p-6 transition hover:border-gold/60">
+        <span class="font-display text-3xl font-700 text-gold/80">05</span>
+        <h3 class="mt-3 text-xl font-600 text-bone">Backcountry brook trout</h3>
+        <p class="mt-2 text-sm text-muted">Hike-in native brookie streams for anglers who will trade easy access for wild, untouched water.</p>
+      </article>
+      <article class="group rounded border border-line bg-moss p-6 transition hover:border-gold/60">
+        <span class="font-display text-3xl font-700 text-gold/80">06</span>
+        <h3 class="mt-3 text-xl font-600 text-bone">Carp on the fly</h3>
+        <p class="mt-2 text-sm text-muted">A patient, technical hunt for anglers who have caught plenty of trout and want a new problem to solve.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY -->
+<section id="proof" class="relative overflow-hidden border-t border-line/60 bg-moss2 py-20 sm:py-24">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="reveal grid gap-12 lg:grid-cols-12 lg:items-center">
+      <div class="lg:col-span-6">
+        <div class="inline-flex items-center gap-2.5 rounded border border-gold/40 bg-gold/10 px-4 py-2">
+          <svg class="h-5 w-5 text-gold" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+          <span class="text-sm font-500 text-bone">2024 Fly Shop of the Year</span>
+        </div>
+        <h2 class="mt-6 font-display text-4xl font-700 leading-tight text-bone sm:text-5xl">A guide service the industry already noticed</h2>
+        <p class="mt-4 max-w-xl text-muted">The award is on the current site, buried in a page title. It should be the first thing an angler comparing guides sees. Real trip photography from J.W. Boling Photography Studio slots into this section on the live build.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-5 lg:col-span-6">
+        <div class="rounded border border-line bg-ink/50 p-6">
+          <p class="font-display text-4xl font-700 text-gold">NC + TN</p>
+          <p class="mt-2 text-sm text-muted">Guided across the North Carolina and Tennessee Smokies.</p>
+        </div>
+        <div class="rounded border border-line bg-ink/50 p-6">
+          <p class="font-display text-4xl font-700 text-gold">3</p>
+          <p class="mt-2 text-sm text-muted">Wild trout species: brook, brown, and rainbow.</p>
+        </div>
+        <div class="rounded border border-line bg-ink/50 p-6">
+          <p class="font-display text-4xl font-700 text-gold">Wade + drift</p>
+          <p class="mt-2 text-sm text-muted">Foot access and drift-boat float trips year round.</p>
+        </div>
+        <div class="rounded border border-line bg-ink/50 p-6">
+          <p class="font-display text-4xl font-700 text-gold">Gear in</p>
+          <p class="mt-2 text-sm text-muted">Rods, reels, flies, and waders included on every trip.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section id="contact" class="relative border-t border-gold/30 bg-gold">
+  <div class="mx-auto grid max-w-7xl gap-8 px-5 py-16 sm:px-8 md:grid-cols-12 md:items-center">
+    <div class="md:col-span-7">
+      <h2 class="font-display text-4xl font-800 leading-tight text-ink sm:text-5xl">Pick a date and let's get you on the water.</h2>
+      <p class="mt-4 max-w-xl text-ink/80">Trips book up fast through the summer season. Call or email and we will match the trip to your dates, your group, and what is fishing best.</p>
+    </div>
+    <div class="md:col-span-5 md:justify-self-end">
+      <div class="rounded border border-ink/20 bg-ink p-6">
+        <p class="text-xs font-600 uppercase tracking-[0.24em] text-gold">Book direct</p>
+        <a href="tel:+18284216378" class="mt-3 block font-display text-3xl font-700 text-bone transition hover:text-gold">(828) 421-6378</a>
+        <a href="mailto:guides@flyfishingthesmokies.net" class="mt-2 block text-muted transition hover:text-bone">guides@flyfishingthesmokies.net</a>
+        <a href="mailto:guides@flyfishingthesmokies.net" class="mt-5 inline-flex w-full justify-center rounded bg-gold px-6 py-3 text-sm font-600 text-ink transition hover:bg-goldbright">Request your trip</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-line bg-ink py-14">
+  <div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 md:grid-cols-4">
+    <div>
+      <span class="inline-flex items-center rounded bg-bone px-2 py-1.5">
+        <img src="https://flyfishingthesmokies.net/wp-content/uploads/2022/04/cropped-C71CFE5E-A778-4CD9-A9D1-FBD5784990F1-1.jpeg" alt="Fly Fishing the Smokies logo" class="h-9 w-auto" />
+      </span>
+      <p class="mt-4 max-w-xs text-sm text-muted">Guided fly fishing for wild and tailwater trout across the Great Smoky Mountains of North Carolina and Tennessee.</p>
+    </div>
+    <div>
+      <h3 class="text-xs font-600 uppercase tracking-[0.2em] text-gold">Trips</h3>
+      <ul class="mt-4 space-y-2.5 text-sm text-muted">
+        <li><a href="#trips" class="transition hover:text-bone">Guided wade trips</a></li>
+        <li><a href="#float" class="transition hover:text-bone">Float trips</a></li>
+        <li><a href="#waters" class="transition hover:text-bone">Backcountry brook trout</a></li>
+        <li><a href="#trips" class="transition hover:text-bone">Group and kids trips</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xs font-600 uppercase tracking-[0.2em] text-gold">The Waters</h3>
+      <ul class="mt-4 space-y-2.5 text-sm text-muted">
+        <li><a href="#waters" class="transition hover:text-bone">Great Smoky Mountains</a></li>
+        <li><a href="#waters" class="transition hover:text-bone">Tuckasegee River</a></li>
+        <li><a href="#waters" class="transition hover:text-bone">Little Tennessee River</a></li>
+        <li><a href="#waters" class="transition hover:text-bone">Cherokee, NC</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xs font-600 uppercase tracking-[0.2em] text-gold">Contact</h3>
+      <ul class="mt-4 space-y-2.5 text-sm text-muted">
+        <li><a href="tel:+18284216378" class="transition hover:text-bone">(828) 421-6378</a></li>
+        <li><a href="mailto:guides@flyfishingthesmokies.net" class="transition hover:text-bone">guides@flyfishingthesmokies.net</a></li>
+        <li>Bryson City &amp; Cherokee, NC</li>
+        <li>Gatlinburg, TN</li>
+      </ul>
+    </div>
+  </div>
+  <div class="mx-auto mt-12 max-w-7xl border-t border-line px-5 pt-6 sm:px-8">
+    <p class="text-xs text-muted">Fly Fishing the Smokies. Great Smoky Mountains fly fishing guides and trips. 2024 Fly Shop of the Year.</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>

@@ -10,6 +10,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [Fly Fishing the Smokies](https://jared-the-automator.github.io/redesign-portfolio/flyfishingthesmokies.net/) | Guided fly fishing for wild and tailwater trout, 2024 Fly Shop of the Year | Bryson City & Cherokee, NC |
 | [Art By Morgen](https://jared-the-automator.github.io/redesign-portfolio/one-horse.net/) | Equine sculptor: bronze, bone china, and artist resin horses | United States |
 | [Magoun-Biggins Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/magounbiggins.com/) | Family-owned funeral home, cremation and pre-planning | Rockland, MA |
 | [Anderson-Winfield Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/andersonwinfield.net/) | Family-owned funeral home and cremation, serving since 1928 | Greenville, RI |
