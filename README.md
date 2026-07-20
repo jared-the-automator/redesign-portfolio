@@ -10,6 +10,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [Families First Funeral Care and Cremation Center](https://jared-the-automator.github.io/redesign-portfolio/familiesfirstcare.com/) | Funeral and cremation services with published, transparent pricing | Savannah, GA |
 | [Absolute Telemark](https://jared-the-automator.github.io/redesign-portfolio/absolutetelemark.com/) | Telemark ski lessons and video tutorials | Quebec City, Canada |
 | [Fly Fishing the Smokies](https://jared-the-automator.github.io/redesign-portfolio/flyfishingthesmokies.net/) | Guided fly fishing for wild and tailwater trout, 2024 Fly Shop of the Year | Bryson City & Cherokee, NC |
 | [Art By Morgen](https://jared-the-automator.github.io/redesign-portfolio/one-horse.net/) | Equine sculptor: bronze, bone china, and artist resin horses | United States |
