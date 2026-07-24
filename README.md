@@ -43,7 +43,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | --- | --- | --- |
 | [Metz Mortuary](https://jared-the-automator.github.io/redesign-portfolio/metzmortuary.com/) | Family-owned mortuary, serving since 1891 | York & Henderson, NE |
 | --- | --- | --- |
-| [Town & Country Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/townncountryvet.com/) | Full-service small-animal veterinary hospital | Portland, OR |
+| [Town & Country Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/townandcountryvet.net/) | Small-animal veterinary hospital | Portland, OR |
 | [Idaho Falls Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/idahofallsveterinaryhospital.com/) | Small-animal veterinary hospital, sees cats, dogs, rabbits, birds and backyard chickens | Ammon, ID |
 | --- | --- | --- |
 | [Jack Shirk Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/jackshirkflyfishing.com/) | Guided fly fishing, fly tying and classes | Tri-Cities, TN |
@@ -57,7 +57,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Rocky Knoll Large Animal Veterinary](https://jared-the-automator.github.io/redesign-portfolio/rockyknollvet.com/) | Large-animal ambulatory veterinary | Dublin, OH |
 | [Bronx Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/bronxfuneralhome.com/) | Funeral home & cremation | Bronx, NY |
 | [Greybull River Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/greybullrivervet.com/) | Mixed-animal veterinary clinic | Meeteetse, WY |
-| [Fowler-Kennedy Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/fowlerkennedyfuneralhome.com/) | Funeral home & cremation | Maynard, MA |
+| [Fowler-Kennedy Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/fowlerkennedyfuneralhome.com/) | Funeral home & mortuary | Maynard, MA |
 | [NW Equine Performance](https://jared-the-automator.github.io/redesign-portfolio/equinepi.com/) | Equine veterinary and sports medicine | Mulino, OR |
 | [Dierna Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/diernafuneralhome.com/) | Funeral home | Rochester, NY |
 | [Cameron, Brady & Steuber Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/leroyfuneralhome.com/) | Funeral home & mortuary | Rochester, NY |
@@ -70,7 +70,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Kaatz Bros. Lures](https://jared-the-automator.github.io/redesign-portfolio/kaatzbros.com/) | Trapping supplies & animal attractors | USA |
 | [Kyle Tack](https://jared-the-automator.github.io/redesign-portfolio/kyletack.com/) | Custom saddles & tack | Whitesboro, TX |
 | [Alder Creek Angling](https://jared-the-automator.github.io/redesign-portfolio/aldercreekangling.com/) | Custom bamboo fly rods | Hastings, MI |
-
+| [Cabin Creek Muzzleloading](https://jared-the-automator.github.io/redesign-portfolio/cabincreek.net/) | Custom muzzleloader rifles | Hallam, PA |
 | [Scott Meek Woodworks](https://jared-the-automator.github.io/redesign-portfolio/scottmeekwoodworks.com/) | Handmade wood body planes | Leicester, NC |
 | [Highliner Custom Rods](https://jared-the-automator.github.io/redesign-portfolio/highlinercustomrods.com/) | Custom fly and spey rods | Bend, OR |
 | [Liberty Longrifles LLC](https://jared-the-automator.github.io/redesign-portfolio/libertylongrifles.com/) | Custom Kentucky longrifles | Wadesville, IN |
@@ -87,7 +87,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Eagle Hardware Farm & Ranch](https://jared-the-automator.github.io/redesign-portfolio/eaglehardwarefarmandranch.com/) | Hardware & farm supply | Royse City, TX |
 | [Secor Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/secorfuneralhomes.com/) | Family funeral home | Willard, OH |
 | [Richardson Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/richardsonfuneralhomes.com/) | Family funeral home & cremation services | Perry, GA |
-| [Town & Country Veterinary Hospital](https://jared-the-automator.github.io/redoa-read-portfolio/townandcountryvet.net/) | Small animal veterinary clinic | Midland, TX |
+| [Town & Country Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/townandcountryvet.net/) | Small animal veterinary clinic | Midland, TX |
 | [Endless Mountains Veterinary Center](https://jared-the-automator.github.io/redesign-portfolio/emvets.com/) | Mixed practice veterinary clinic | Athens, PA |
 | [Omni Energy LLC](https://jared-the-automator.github.io/redesign-portfolio/myomnienergy.com/) | Heating oil & propane delivery | Watertown, CT |
 | [ABC Fuels, Inc.](https://jared-the-automator.github.io/redesign-portfolio/abcfuels.com/) | Heating oil & kerosene delivery | Woodstock, NY |
@@ -132,9 +132,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Big Jim's Bow Company](https://jared-the-automator.github.io/redesign-portfolio/bigjimsbowcompany.com/) | Custom longbows & traditional archery | Albany, GA |
 | [Homer Decoys](https://jared-the-automator.github.io/redesign-portfolio/homerdecoys.com/) | Foam decoys & decoy heads | Conowingo, MD |
 | [Jim Taylor Custom Saddlery](https://jared-the-automator.github.io/redesign-portfolio/jimtaylorsaddlery.com/) | Custom western saddles | Texas |
-
 | [TallTines Traditional Archery](https://jared-the-automator.github.io/redesign-portfolio/talltinesarchery.com/) | Custom traditional bows | Kansas, USA |
-|---|---|---|
 | [Jonas Blade](https://jared-the-automator.github.io/redesign-portfolio/jonasblade.com/) | Custom hand-forged knives | Massachusetts, USA |
 | [The Hidden Woodsmen](https://jared-the-automator.github.io/redesign-portfolio/thehiddenwoodsmen.com/) | Boutique wilderness gear | New England, USA |
 | [Saucon Archery](https://jared-the-automator.github.io/redesign-portfolio/sauconarchery.com/) | Traditional archery supplies | Lehigh Valley, PA |
@@ -144,7 +142,6 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Heart Wood Trade](https://jared-the-automator.github.io/redesign-portfolio/heartwoodtrade.com/) | Handcrafted landing nets | USA |
 | [Ashes Still Water Boats](https://jared-the-automator.github.io/redesign-portfolio/ashesstillwaterboats.com/) | Cedar strip canoe & kayak plans | Schaffhausen, Switzerland |
 | [Relaks Fishing Charters](https://jared-the-automator.github.io/redesign-portfolio/relaksfishing.com/) | Fishing charters | Jupiter/Riviera Beach, FL |
-
 | [Pond Craft Boats](https://jared-the-automator.github.io/redesign-portfolio/pondcraftboats.com/) | Custom handmade pontoon boats | Bainbridge, NY |
 | [Roger Carroll Boats](https://jared-the-automator.github.io/redesign-portfolio/rogercarrollboats.com/) | Custom wooden boat builder | Cape Cod, MA |
 | [Mountain Laurel Designs](https://jared-the-automator.github.io/redesign-portfolio/mountainlaureldesigns.com/) | Ultralight backpacking gear | Roanoke, VA |
@@ -155,7 +152,6 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Alpine Wood Working](https://jared-the-automator.github.io/redesign-portfolio/alpinewoodworking.net/) | Handmade wooden landing nets | Unknown |
 | [Cisar Saddlery](https://jared-the-automator.github.io/redesign-portfolio/cisarsaddlery.com/) | Handmade custom saddles | Czech Republic |
 | [Kober Decoys](https://jared-the-automator.github.io/redesign-portfolio/koberdecoys.com/) | Hand painted fish decoys | Northern Michigan |
-
 | [Streamside](https://jared-the-automator.github.io/redesign-portfolio/michigan-streamside.com/) | Fly fishing guide | Au Sable River, MI |
 | [Bayou Custom Holsters](https://jared-the-automator.github.io/redesign-portfolio/bayoucustomholsters.com/) | Custom gun leather | Holden, LA |
 | [Wildwood Rustics](https://jared-the-automator.github.io/redesign-portfolio/wildwoodrustics.com/) | Handcrafted log furniture | Mifflinburg, PA |
@@ -164,14 +160,11 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Roberts' Outfitting](https://jared-the-automator.github.io/redesign-portfolio/robertsoutfitting.com/) | Hunting outfitter | Newfoundland & Labrador, Canada |
 | [Skeena River Fly Supply](https://jared-the-automator.github.io/redesign-portfolio/skeenariverflysupply.com/) | Fly tying materials | Terrace, BC, Canada |
 | [Badger Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/badgerfuneral.com/) | Family funeral home | Littleton & Groton, MA |
-
 | [Coda Custom Boards & Skis](https://jared-the-automator.github.io/redesign-portfolio/codaboards.com/) | Custom snowboards, skis & monoskis | New Hampshire, USA |
 | [Nightlife Oil Burner Service](https://jared-the-automator.github.io/redesign-portfolio/nightlifeoil.com/) | Oil burner service & heating repair | Ashland, MA |
 | [Sycamore Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/sycamoreflyfishing.com/) | Fly fishing guide | Asheville, NC |
 | [Mag 10 Knifeworx](https://jared-the-automator.github.io/redesign-portfolio/mag10knifeworx.com/) | Hand-forged cutlery | USA |
-
 | [7 Lazy P](https://jared-the-automator.github.io/redesign-portfolio/sevenlazyp.com/) | Wilderness pack trips & guest ranch | Montana, USA |
-
 | [Zoller's Outfitting](https://jared-the-automator.github.io/redesign-portfolio/zollersoutfitting.com/) | River guide (salmon, steelhead & turkey) | Klickitat, WA |
 | [OldSteel Guns](https://jared-the-automator.github.io/redesign-portfolio/oldsteelguns.com/) | Historical firearms & militaria | Littleton, CO |
 | [Nighthawk Canoes](https://jared-the-automator.github.io/redesign-portfolio/nighthawkcanoes.com/) | Custom lightweight Kevlar canoes | Madison, WI |
@@ -193,11 +186,8 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Snake Mountain Boatworks](https://jared-the-automator.github.io/redesign-portfolio/snakemountainboatworks.com/) | Vintage wooden boat restoration | Weybridge, VT |
 | [Dragon's Breath Forge](https://jared-the-automator.github.io/redesign-portfolio/dragonsbreathforge.com/) | Custom hand-forged knives & swords | USA |
 | [Laughing Bear Outfitters](https://jared-the-automator.github.io/redesign-portfolio/laughingbearoutfitters.com/) | Custom fly rods & game calls | Pinedale, WY |
-
 | [Rhea Knives](https://jared-the-automator.github.io/redesign-portfolio/rheaknives.com/) | Hand forged custom knives | Prattsville, AR |
 | [Evening Sun Fly Shop](https://jared-the-automator.github.io/redesign-portfolio/eveningsunflyshop.com/) | Fly fishing gear, classes & guided trips | Pepperell, MA |
-| [Alistair Phillips Folders](https://jared-the-automator.github.io/redesign-portfolio/alistairphillipsfolders.com/) | Custom folding knives & EDC tools | Canberra, Australia |
-| [Evening Sun Fly Shop](https://jared-the-automator.github.io/redesign-portfolio/eveningsunflyshop.com/) | Fly fishing gear & guided trips | Pepperell, MA |
 | [Alistair Phillips Folders](https://jared-the-automator.github.io/redesign-portfolio/alistairphillipsfolders.com/) | Custom folding knives & EDC tools | Canberra, Australia |
 | [Slone Saddles](https://jared-the-automator.github.io/redesign-portfolio/slonesaddles.com/) | Custom western saddles | Cuero, TX |
 | [Lights Out Custom Calls](https://jared-the-automator.github.io/redesign-portfolio/lightsoutcalls.com/) | Handcrafted hunting calls | Barling, AR |
@@ -205,43 +195,37 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Nanan's Eco Tours](https://jared-the-automator.github.io/redesign-portfolio/nananecotours.com/) | Bird watching & eco tours | Caroni Swamp, Trinidad |
 | [Powder River Veterinary Hospital & Supply](https://jared-the-automator.github.io/redesign-portfolio/prvhs.com/) | Veterinary hospital (equine & small/large animal) | Kaycee & Sheridan, WY |
 | [Bigelow Oil & Energy](https://jared-the-automator.github.io/redesign-portfolio/bigelowenergy.com/) | Heating oil delivery & HVAC | Newton, MA |
-
 | [Animal Health Clinic](https://jared-the-automator.github.io/redesign-portfolio/animalhealthclinicma.com/) | Small animal veterinary care | Bourne, MA |
 | [Harperrig Fishery](https://jared-the-automator.github.io/redesign-portfolio/harperrig.com/) | Brown trout fly fishing | West Lothian, Scotland |
 | [Maiden Skis](https://jared-the-automator.github.io/redesign-portfolio/maidenskis.com/) | Custom skis and sit-skis | Jackson Hole, WY |
 | [Deershorn Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/deershorntaxidermy.com/) | Taxidermy, camo dipping & hide rugs | Lancaster, MA |
-
 | [S & D Oil Company Inc](https://jared-the-automator.github.io/redesign-portfolio/sdoilcoinc.com/) | Heating oil delivery & oil burner service | Woburn, MA |
-
 | [Howell Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/howellanimal.com/) | Mixed animal veterinary clinic | Howell, MI |
 | [Moreland Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/morelandfuneralhome.com/) | Family funeral home | Columbus, OH |
 | [Hartley Boats](https://jared-the-automator.github.io/redesign-portfolio/hartley-boats.com/) | Heritage boat plans & boatbuilding plans | Worldwide |
 | [Johnson Veterinary Clinic](https://jared-the-automator.github.io/redesign-portfolio/johnsonequinevets.com/) | Equine veterinary services | North Lewisburg, OH |
 | [Scatter Creek Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/scattercreekanimalclinic.com/) | Small animal veterinary clinic | Rochester, WA |
 | [Propane People Inc.](https://jared-the-automator.github.io/redesign-portfolio/propanepeopleinc.com/) | Propane delivery (home, farm & commercial) | Northeast IN, OH & IL |
-
 | [Arrington Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/arringtonfuneralhome.com/) | Funeral & cremation services | Birmingham, AL |
 | [Roberge Energy](https://jared-the-automator.github.io/redesign-portfolio/robergeenergy.com/) | Heating oil delivery | Maine |
 | [Waltz & Sons Propane](https://jared-the-automator.github.io/redesign-portfolio/waltzandsons.com/) | Propane delivery & service | Buxton, ME |
 | [M.W. Sewall](https://jared-the-automator.github.io/redesign-portfolio/mwsewall.com/) | Heating oil & propane delivery | Bath, ME |
-|[Black Dog Custom Rods](https://jared-the-automator.github.io/redesign-portfolio/blackdogtackle.com/)|Custom fishing rods|Otis Orchards, WA|
-|[Coronado Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/coronadovets.com/)|Veterinary clinic|El Paso, TX|
-|[TEXAVET](https://jared-the-automator.github.io/redesign-portfolio/texavet.com/)|Mobile veterinary clinic|Houston, TX|
-|[Kreiser Fuels](https://jared-the-automator.github.io/redesign-portfolio/kreiserfuels.com/)|Heating oil & propane delivery|South-Central PA|
-|[Welch Heating Oil](https://jared-the-automator.github.io/redesign-portfolio/welchheatingoil.com/)|Heating oil, diesel & kerosene delivery|Saco, ME|
-|[Front Street Shipyard](https://jared-the-automator.github.io/redesign-portfolio/frontstreetshipyard.com/)|Custom boat builder & marina|Belfast, ME|
-|[Conroy's Oil Service](https://jared-the-automator.github.io/redesign-portfolio/conroysoil.com/)|Heating oil & kerosene delivery|Saco, ME|
-
+| [Black Dog Custom Rods](https://jared-the-automator.github.io/redesign-portfolio/blackdogtackle.com/) | Custom fishing rods | Otis Orchards, WA |
+| [Coronado Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/coronadovets.com/) | Veterinary clinic | El Paso, TX |
+| [TEXAVET](https://jared-the-automator.github.io/redesign-portfolio/texavet.com/) | Mobile veterinary clinic | Houston, TX |
+| [Kreiser Fuels](https://jared-the-automator.github.io/redesign-portfolio/kreiserfuels.com/) | Heating oil & propane delivery | South-Central PA |
+| [Welch Heating Oil](https://jared-the-automator.github.io/redesign-portfolio/welchheatingoil.com/) | Heating oil, diesel & kerosene delivery | Saco, ME |
+| [Front Street Shipyard](https://jared-the-automator.github.io/redesign-portfolio/frontstreetshipyard.com/) | Custom boat builder & marina | Belfast, ME |
+| [Conroy's Oil Service](https://jared-the-automator.github.io/redesign-portfolio/conroysoil.com/) | Heating oil & kerosene delivery | Saco, ME |
 | [Fly Fisher Guy](https://jared-the-automator.github.io/redesign-portfolio/flyfisherguy.com/) | Custom fly rods & precision wing burners | Albuquerque, NM |
 | [Dave's School of Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/tonnesonstaxidermy.com/) | Taxidermy school & custom wildlife mounting | North Dakota |
 | [Shepard Hunting Company](https://jared-the-automator.github.io/redesign-portfolio/shepardhuntingcompany.com/) | Hunting outfitter & guide | Stacyville, ME |
 | [Will Bowmaker](https://jared-the-automator.github.io/redesign-portfolio/willbowmaker.com/) | Handcrafted traditional bows | Poland |
-
 | [Grau Funeral Homes](https://jared-the-automator.github.io/redesign-portfolio/graufuneralhomes.com/) | Funeral Homes | Monona, IA |
 | [2Hawks](https://jared-the-automator.github.io/redesign-portfolio/2hawks.net/) | Precision forged tomahawks | Missouri, USA |
 | [Damon Howatt](https://jared-the-automator.github.io/redesign-portfolio/damonhowatt.com/) | Traditional bows & longbows | Lebanon, OR |
 | [Waverly Oil](https://jared-the-automator.github.io/redesign-portfolio/waverlyoil.com/) | Heating oil delivery | Milford & Manomet, MA |
-| [Portland Veterinary Emergency \& Specialty Care](https://jared-the-automator.github.io/redesign-portfolio/pvesc.com/) | Veterinary emergency \& specialty care | Portland, ME |
+| [Portland Veterinary Emergency & Specialty Care](https://jared-the-automator.github.io/redesign-portfolio/pvesc.com/) | Veterinary emergency & specialty care | Portland, ME |
 | [Tebo Custom Bamboo Fly Rods](https://jared-the-automator.github.io/redesign-portfolio/tebobambooflyrods.com/) | Custom bamboo fly rods | FL |
 | [Rural Propane Services](https://jared-the-automator.github.io/redesign-portfolio/ruralpropane.net/) | Propane delivery & services | Eureka, MT |
 | [Quality Fuels LLC](https://jared-the-automator.github.io/redesign-portfolio/myqualityfuels.com/) | Heating oil delivery | Lebanon, ME |
@@ -249,23 +233,21 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Linnemann Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/linnemannfuneralhomes.com/) | Funeral home services | Boone & Kenton County, KY |
 | [Bonaire Veterinary Center](https://jared-the-automator.github.io/redesign-portfolio/bonaireveterinarycenter.com/) | Veterinary clinic | Bonaire, Dutch Caribbean |
 | [Estes Saddlery](https://jared-the-automator.github.io/redesign-portfolio/estessaddlery.com/) | Custom western saddles | Ball Ground, GA |
-|[Crum Equine Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/crumequine.com/) | Equine veterinary care | Columbus & Lancaster, OH |
-|[Countryside Veterinary Services](https://jared-the-automator.github.io/redesign-portfolio/countrysidevetservices.com/) | Small animal & equine veterinary | Louisville, TN |
+| [Crum Equine Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/crumequine.com/) | Equine veterinary care | Columbus & Lancaster, OH |
+| [Countryside Veterinary Services](https://jared-the-automator.github.io/redesign-portfolio/countrysidevetservices.com/) | Small animal & equine veterinary | Louisville, TN |
 | [Dan Santana Bows](https://jared-the-automator.github.io/redesign-portfolio/dansantanabows.com/) | Traditional archery | — |
 | [Van Dam Custom Boats](https://jared-the-automator.github.io/redesign-portfolio/vandamboats.com/) | Custom wooden boats and yachts | Boyne City, MI |
 | [Nelson Family Mortuary](https://jared-the-automator.github.io/redesign-portfolio/nelsonmortuary.com/) | Funeral home & cremation services | Provo, UT |
 | [Feather Canoes](https://jared-the-automator.github.io/redesign-portfolio/feathercanoes.com/) | Cedar strip canoe plans | USA |
 | [Maritime Energy](https://jared-the-automator.github.io/redesign-portfolio/maritimeenergy.com/) | Heating oil & propane delivery | Maine |
 | [Woodmaster Tools](https://jared-the-automator.github.io/redesign-portfolio/woodmastertools.com/) | American-made woodworking equipment | Kansas City, MO |
-
 | [First Fuel Oil](https://jared-the-automator.github.io/redesign-portfolio/firstfueloil.com/) | Heating oil delivery | North Haven, CT |
 | [Arlington Fuel Oil Co.](https://jared-the-automator.github.io/redesign-portfolio/arlfuel.com/) | Heating oil delivery | Arlington, MA |
 | [Carey's Oil](https://jared-the-automator.github.io/redesign-portfolio/careysoil.com/) | Heating oil delivery | Whitman, MA |
 | [Stonefly Outfitters](https://jared-the-automator.github.io/redesign-portfolio/stoneflyoutfitters.com/) | Guided fly fishing outfitter | Montana, USA |
 | [Kauffman Gas](https://jared-the-automator.github.io/redesign-portfolio/kauffmangas.com/) | Propane delivery & HVAC | Cochranville, PA |
 | [Northwood Vet](https://jared-the-automator.github.io/redesign-portfolio/northwoodvet.com/) | Mixed practice veterinary clinic | Northwood area |
-| [Williams Energy](https://jared-the-automator.github.io/redesign-portfolio/mywilliamsenergy.com/) | Heating oil, propane &amp; HVAC | South Shore, MA |
-
+| [Williams Energy](https://jared-the-automator.github.io/redesign-portfolio/mywilliamsenergy.com/) | Heating oil, propane & HVAC | South Shore, MA |
 | [Wood Wildlife Studio](https://jared-the-automator.github.io/redesign-portfolio/woodwildlifestudio.com/) | Taxidermy & trophy mounts | San Angelo, TX |
 | [Grace Memorial Chapel and Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/gracemortuary.com/) | Funeral home & mortuary | Inglewood, CA |
 | [Marotti Burns Funeral & Cremation Services](https://jared-the-automator.github.io/redesign-portfolio/marottiburnsfuneralhome.com/) | Funeral & cremation services | New Jersey |
@@ -279,13 +261,10 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Richard's Heating & Cooling](https://jared-the-automator.github.io/redesign-portfolio/richhvac.com/) | Family-owned heating, cooling & oil burner service | Lindenhurst, NY |
 | [Hometown Veterinary Service](https://jared-the-automator.github.io/redesign-portfolio/hometownvetservice.com/) | Mixed-animal veterinary clinic (companion and livestock) | Media, IL |
 | [Brandon Equine Medical Center](https://jared-the-automator.github.io/redesign-portfolio/brandonequine.com/) | Equine veterinary hospital | Brandon, FL |
-| --- | --- | --- |
 | [Harms Oil Company](https://jared-the-automator.github.io/redesign-portfolio/harmsoil.com/) | Fuel, propane and lubricant delivery, family-owned since 1976 | Aberdeen, SD |
 | [Eastern Propane & Oil](https://jared-the-automator.github.io/redesign-portfolio/eastern.com/) | Propane and heating oil delivery, family-owned since 1932 | NH, ME, MA, VT & RI |
-| --- | --- |
-| [Copper Country Veterinary Clinic](https://jared-the-automator.github.io/redesign-portfolio/ccvc.cc/) | Mixed-animal veterinary clinic (companion and equine) | Atlantic Mine, MI || [Baldwin Brothers Funeral & Cremation Society](https://jared-the-automator.github.io/redesign-portfolio/baldwincremation.com/) | Family-owned cremation & funeral society, serving Central & Southwest Florida | Central & Southwest Florida |
-
-| --- | --- |
+| [Copper Country Veterinary Clinic](https://jared-the-automator.github.io/redesign-portfolio/ccvc.cc/) | Mixed-animal veterinary clinic (companion and equine) | Atlantic Mine, MI |
+| [Baldwin Brothers Funeral & Cremation Society](https://jared-the-automator.github.io/redesign-portfolio/baldwincremation.com/) | Family-owned cremation & funeral society, serving Central & Southwest Florida | Central & Southwest Florida |
 | [Sperr's Fuel & Heating](https://jared-the-automator.github.io/redesign-portfolio/sperrs.com/) | Family-owned home heating oil delivery & HVAC service | Delaware County, PA & North Wilmington, DE |
 | [Diamond J Veterinary Services](https://jared-the-automator.github.io/redesign-portfolio/djvstexas.com/) | Mobile equine veterinary care (medicine, acupuncture & chiropractic) | North-Central Texas |
 | [Dutch Oil and Propane](https://jared-the-automator.github.io/redesign-portfolio/dutchoil.com/) | Family-owned heating oil, propane & HVAC service | Central Connecticut |
@@ -307,7 +286,6 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Norton, McKinney & Lawler Funeral Home](https://jared-the-automator.github.io/redesign-portfolio/nortonfuneralhome.com/) | Family-owned funeral home & cremation, serving Framingham and MetroWest in English, Spanish and Portuguese | Framingham, MA |
 | [Accurate Oil Burner Service LLC](https://jared-the-automator.github.io/redesign-portfolio/accurateoilburnerservice.com/) | Oil burner repair, steam service and annual maintenance plans | Central Connecticut |
 | [Barbarossa Leather](https://jared-the-automator.github.io/redesign-portfolio/barbarossaleather.com/) | Upholstery, exotic & embossed leather hides, hand-finished for 40+ years | South Florida |
-| --- | --- | --- |
 | [StreamWeaverFlies](https://jared-the-automator.github.io/redesign-portfolio/streamweaverflies.com/) | Fly fishing shop: guided trips, fly tying and casting instruction, Red Deer's one stop fly shop | Red Deer, Alberta, Canada |
 | [Flat Island Boatworks, LLC](https://jared-the-automator.github.io/redesign-portfolio/flatislandboatworks.com/) | Marine repair, restoration and refit | Pensacola, FL |
 | [Chester Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/chesteranimalclinic.com/) | Small-animal veterinary hospital, serving Chesterfield County since 1968 | Chester, Virginia |
@@ -322,3 +300,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Horns And Scales Outfitters](https://jared-the-automator.github.io/redesign-portfolio/hornsandscales.com/) | Hunting outfitters: ammunition, apparel, dog gear and electronics | Not stated on site |
 | [White Plains Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/whiteplainsvets.com/) | Small-animal veterinary hospital for dogs and cats, in-house lab and same-day appointments | White Plains, NY |
 | [The Angling Company](https://jared-the-automator.github.io/redesign-portfolio/anglingcompany.com/) | Key West fly shop & flats guide service: tarpon, bonefish & permit | Key West, FL |
+| [Cabin Creek Muzzleloading](https://jared-the-automator.github.io/redesign-portfolio/cabincreek.net/) | Custom muzzleloader rifles | Hallam, PA |
