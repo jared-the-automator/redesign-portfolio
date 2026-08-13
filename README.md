@@ -1,5 +1,9 @@
 # Web Redesigns for Outdoor Businesses
 
+### ▶ [View the live gallery](https://jared-the-automator.github.io/redesign-portfolio/)
+
+Every redesign below is a working page you can open and click, not a code listing.
+
 Free homepage redesigns built with each business's own photography. No stock images.
 
 Each redesign is a single-file HTML prototype that opens in any browser. If you want yours installed with the rest of your pages done the same way, reach out.
