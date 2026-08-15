@@ -47,7 +47,6 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | --- | --- | --- |
 | [Metz Mortuary](https://jared-the-automator.github.io/redesign-portfolio/metzmortuary.com/) | Family-owned mortuary, serving since 1891 | York & Henderson, NE |
 | --- | --- | --- |
-| [Town & Country Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/townandcountryvet.net/) | Small-animal veterinary hospital | Portland, OR |
 | [Idaho Falls Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/idahofallsveterinaryhospital.com/) | Small-animal veterinary hospital, sees cats, dogs, rabbits, birds and backyard chickens | Ammon, ID |
 | --- | --- | --- |
 | [Jack Shirk Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/jackshirkflyfishing.com/) | Guided fly fishing, fly tying and classes | Tri-Cities, TN |
@@ -304,4 +303,11 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Horns And Scales Outfitters](https://jared-the-automator.github.io/redesign-portfolio/hornsandscales.com/) | Hunting outfitters: ammunition, apparel, dog gear and electronics | Not stated on site |
 | [White Plains Veterinary Hospital](https://jared-the-automator.github.io/redesign-portfolio/whiteplainsvets.com/) | Small-animal veterinary hospital for dogs and cats, in-house lab and same-day appointments | White Plains, NY |
 | [The Angling Company](https://jared-the-automator.github.io/redesign-portfolio/anglingcompany.com/) | Key West fly shop & flats guide service: tarpon, bonefish & permit | Key West, FL |
-| [Cabin Creek Muzzleloading](https://jared-the-automator.github.io/redesign-portfolio/cabincreek.net/) | Custom muzzleloader rifles | Hallam, PA |
+| [Cherrybend Pheasant Farm](https://jared-the-automator.github.io/redesign-portfolio/cherrybendhunting.com/) | Ohio hunting preserve: guided pheasant hunts and sporting clays | Wilmington, OH |
+| [Englefield Oil](https://jared-the-automator.github.io/redesign-portfolio/englefieldoil.com/) | Bulk fuel, lubricants and on-site fleet fueling since 1961 | Columbus, OH |
+| [Huston's Home Renovations](https://jared-the-automator.github.io/redesign-portfolio/hustonhomerenovation.com/) | Home renovation, remodeling and additions | Kennebunk, ME |
+| [Rocky's Rods](https://jared-the-automator.github.io/redesign-portfolio/rockysrods.com/) | Custom fishing rod building, repairs and rod-building classes | Hopatcong, NJ |
+| [Shallow Point Charters](https://jared-the-automator.github.io/redesign-portfolio/shallowpointcharters.com/) | Tampa Bay inshore fishing charters since 1988: redfish, snook, sea trout | Tampa Bay, FL |
+| [Stonewall Creek Outfitters](https://jared-the-automator.github.io/redesign-portfolio/stonewallcreekoutfitters.com/) | Flintlock building supplies, mail order | Concord, VA |
+| [Town & Country Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/townncountryvet.com/) | Small-animal veterinary care: wellness, dental, surgery and same-day appointments | Portland, OR |
+| [WM. F. Spencer Funeral Service](https://jared-the-automator.github.io/redesign-portfolio/spencerfuneralservice.com/) | Funeral and cremation services with published pricing, established 1896 | South Boston, MA |
