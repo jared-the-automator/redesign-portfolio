@@ -1,306 +1,408 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Spencer Funeral Service - Professional Funeral Care</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <script type="application/ld+json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WM. F. Spencer Funeral Service | South Boston, Serving Families Since 1896</title>
+<meta name="description" content="Family funeral service at 575 E Broadway in South Boston since 1896. Traditional services, cremation, veterans services and preplanning, within the means of all.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { ox: '#6B1710', oxdark: '#4A0E09', cream: '#F5F0E6', ink: '#1B1815' },
+      fontFamily: { display: ['"Cormorant Garamond"', 'Georgia', 'serif'], sans: ['Inter', 'system-ui', 'sans-serif'] },
+      borderRadius: { DEFAULT: '2px' }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, system-ui, sans-serif; }
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+</style>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FuneralHome",
-  "name": "Spencer Funeral Service",
-  "image": "https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/wmfspencer-1920w.png",
+  "name": "WM. F. Spencer Funeral Service",
+  "alternateName": "William F. Spencer Funeral Service",
+  "url": "https://www.spencerfuneralservice.com/",
+  "logo": "https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/wmfspencer-1920w.png",
+  "image": "https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/55f879b27a302-3902-3309-I1554820611IMG0211cro-1920w.jpg",
+  "telephone": "+1-617-268-0855",
+  "email": "spencer575@gmail.com",
+  "foundingDate": "1896",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "123 Main Street",
-    "addressLocality": "Springfield",
-    "addressRegion": "IL",
-    "postalCode": "62701"
+    "streetAddress": "575 E Broadway",
+    "addressLocality": "South Boston",
+    "addressRegion": "MA",
+    "postalCode": "02127",
+    "addressCountry": "US"
   },
-  "telephone": "(555) 123-4567",
-  "openingHours": "Mo-Fr 09:00-17:00",
-  "priceRange": "$500-$3500",
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 39.7817,
-    "longitude": -89.6501
+  "areaServed": "Greater Boston",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
   }
 }
 </script>
 </head>
-<body class="bg-gray-50">
-  <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex justify-between items-center py-4">
-        <a href="#" class="flex items-center">
-          <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/wmfspencer-1920w.png" alt="Spencer Funeral Service logo" class="h-12 w-auto">
+<body class="bg-cream text-ink antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-oxdark text-cream">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 flex items-center gap-6 h-20">
+    <a href="https://www.spencerfuneralservice.com/" class="shrink-0">
+      <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/wmfspencer+-+white-1920w.png"
+           alt="WM. F. Spencer Funeral Service" class="h-9 w-auto">
+    </a>
+    <nav class="hidden lg:flex items-center gap-7 text-[13px] tracking-wide uppercase ml-auto">
+      <a href="https://www.spencerfuneralservice.com/about-us/about-us" class="hover:text-white/70 transition">About</a>
+      <a href="https://www.spencerfuneralservice.com/services/services-overview" class="hover:text-white/70 transition">Services</a>
+      <a href="https://www.spencerfuneralservice.com/obituaries" class="hover:text-white/70 transition">Obituaries</a>
+      <a href="https://www.spencerfuneralservice.com/planning-ahead/planning-ahead" class="hover:text-white/70 transition">Planning Ahead</a>
+      <a href="https://www.spencerfuneralservice.com/about-us/contact-us" class="hover:text-white/70 transition">Contact</a>
+    </nav>
+    <a href="tel:+16172680855"
+       class="ml-auto lg:ml-0 shrink-0 bg-cream text-oxdark px-5 py-2.5 text-[13px] font-semibold tracking-wide uppercase hover:bg-white transition">
+      617-268-0855
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative min-h-[100dvh] flex items-end">
+  <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/55f879aee675a-3902-3309-I1307268275IMG0213-1920w.jpg"
+       alt="Visitation room at the Spencer funeral home, with a fireplace, wall sconces and an American flag"
+       class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-ink/55"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/40 to-ink/25"></div>
+  <div class="relative mx-auto max-w-7xl w-full px-5 lg:px-8 pb-24 pt-32">
+    <p class="text-cream/70 text-[12px] tracking-[0.25em] uppercase mb-6">South Boston, Massachusetts, since 1896</p>
+    <h1 class="font-display text-cream text-6xl sm:text-7xl lg:text-[7.5rem] leading-[0.92] font-500 max-w-4xl">
+      Within the<br>Means of All
+    </h1>
+    <p class="mt-8 text-cream/85 text-lg max-w-xl leading-relaxed">
+      Greater Boston families have called this number for generations. Someone answers it, any hour, any day.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a href="tel:+16172680855"
+         class="bg-ox text-cream px-8 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-oxdark transition">
+        Call 617-268-0855
+      </a>
+      <a href="https://www.spencerfuneralservice.com/obituaries"
+         class="border border-cream/50 text-cream px-8 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-cream hover:text-ink transition">
+        Current Obituaries
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- IMMEDIATE NEED BAND -->
+<section class="bg-ox text-cream">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 py-6 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8">
+    <p class="text-[12px] tracking-[0.25em] uppercase text-cream/70">For immediate need</p>
+    <p class="text-lg">A death has occurred and you need help now. Call <a href="tel:+16172680855" class="underline underline-offset-4 hover:text-white">617-268-0855</a>.</p>
+    <a href="https://www.spencerfuneralservice.com/services/immediate-need"
+       class="sm:ml-auto shrink-0 text-[13px] font-semibold tracking-wide uppercase border-b border-cream/60 pb-0.5 hover:border-cream transition">
+      What to do first
+    </a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="bg-cream">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 py-24 lg:py-32 grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+    <div class="lg:col-span-5 reveal">
+      <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/55f879afe6547-3902-3309-I1492495139IMG0215-1920w.jpg"
+           alt="Seating along the wall of a Spencer visitation room, with a framed print above a sofa"
+           class="w-full h-[520px] object-cover">
+      <p class="mt-4 text-sm text-ink/60">575 E Broadway, South Boston</p>
+    </div>
+    <div class="lg:col-span-7 reveal">
+      <p class="text-[12px] tracking-[0.25em] uppercase text-ox mb-5">Services we provide</p>
+      <h2 class="font-display text-5xl lg:text-6xl leading-[1.02] max-w-lg">
+        Distinctive, personal, affordable
+      </h2>
+      <p class="mt-6 text-ink/75 leading-relaxed max-w-xl">
+        Services designed to help you honor your loved one in a way that is unique to them and meaningful to you.
+      </p>
+
+      <div class="mt-12 divide-y divide-ink/15 border-t border-ink/15">
+        <a href="https://www.spencerfuneralservice.com/services/traditional-services" class="group flex gap-6 py-7">
+          <span class="font-display text-3xl text-ox/50 w-12 shrink-0">01</span>
+          <span>
+            <span class="block text-xl font-semibold group-hover:text-ox transition">Traditional Services</span>
+            <span class="block mt-2 text-ink/70 leading-relaxed">Whether you choose burial or cremation, a funeral service is an important part of honoring your loved one and starting the healing process.</span>
+          </span>
         </a>
-        <div class="hidden md:flex space-x-8">
-          <a href="#services" class="text-gray-700 hover:text-green-700 font-medium">Services</a>
-          <a href="#about" class="text-gray-700 hover:text-green-700 font-medium">About Us</a>
-          <a href="#planning" class="text-gray-700 hover:text-green-700 font-medium">Planning</a>
-          <a href="#contact" class="text-gray-700 hover:text-green-700 font-medium">Contact</a>
-        </div>
-        <button class="bg-green-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-800 transition-colors">
-          Get Help
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <section class="relative h-screen flex items-center justify-center text-white overflow-hidden">
-    <div class="absolute inset-0">
-      <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/chuttersnap-wvGQYtZ_c08-unsplash-min-1920w.jpg" alt="Memorial floral arrangement" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    </div>
-    <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
-      <span class="text-green-300 font-semibold text-lg tracking-wider uppercase">Calmer. More Comfortable. More Personal.</span>
-      <h1 class="text-5xl md:text-7xl font-bold mb-6 mt-4">Honoring Lives, Supporting Families</h1>
-      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Professional funeral services with compassionate care for over 25 years in Springfield and surrounding communities.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button class="bg-green-700 hover:bg-green-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-          Plan a Service
-        </button>
-        <button class="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all">
-          View Our Services
-        </button>
-      </div>
-    </div>
-  </section>
-</body>
-</html><!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Spencer Funeral Service - Services</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="max-w-7xl mx-auto px-4 py-16">
-    <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
-      <div class="md:w-1/2">
-        <span class="text-green-700 font-semibold text-lg uppercase tracking-wider">Our Services</span>
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Comprehensive Funeral Services</h2>
-        <p class="text-lg text-gray-600 mb-6">From traditional funerals to personalized celebrations of life, we provide compassionate guidance every step of the way.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="flex items-start space-x-3">
-            <div class="w-2 h-2 bg-green-700 rounded-full mt-2"></div>
-            <div>
-              <h3 class="font-semibold text-gray-900">Traditional Funerals</h3>
-              <p class="text-gray-600 text-sm">Full-service funeral arrangements with dignity and care</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <div class="w-2 h-2 bg-green-700 rounded-full mt-2"></div>
-            <div>
-              <h3 class="font-semibold text-gray-900">Cremation Services</h3>
-              <p class="text-gray-600 text-sm">Option to arrange final repose with dignity</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <div class="w-2 h-2 bg-green-700 rounded-full mt-2"></div>
-            <div>
-              <h3 class="font-semibold text-gray-900">Memorial Services</h3>
-              <p class="text-gray-600 text-sm">Celebration of life ceremonies</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3">
-            <div class="w-2 h-2 bg-green-700 rounded-full mt-2"></div>
-            <div>
-              <h3 class="font-semibold text-gray-900">Pre-Planning</h3>
-              <p class="text-gray-600 text-sm">Plan ahead for peace of mind</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="md:w-1/2">
-        <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/shutterstock_151928681-min-1920w.jpg" alt="A family together outdoors" class="w-full h-96 object-cover rounded-lg shadow-lg">
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-          <span class="text-green-700 font-bold">01</span>
-        </div>
-        <h3 class="text-xl font-semibold mb-3">Consultation</h3>
-        <p class="text-gray-600">Personal meeting to discuss wishes, preferences, and budget options</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-          <span class="text-green-700 font-bold">02</span>
-        </div>
-        <h3 class="text-xl font-semibold mb-3">Arrangements</h3>
-        <p class="text-gray-600">Coordination of all details including venue, clergy, and vendors</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-          <span class="text-green-700 font-bold">03</span>
-        </div>
-        <h3 class="text-xl font-semibold mb-3">Support</h3>
-        <p class="text-gray-600">Ongoing assistance during and after the service</p>
+        <a href="https://www.spencerfuneralservice.com/services/cremation-services" class="group flex gap-6 py-7">
+          <span class="font-display text-3xl text-ox/50 w-12 shrink-0">02</span>
+          <span>
+            <span class="block text-xl font-semibold group-hover:text-ox transition">Cremation Services</span>
+            <span class="block mt-2 text-ink/70 leading-relaxed">A full service funeral, a memorial service, or something more private, with permanent resting place options for the cremated remains.</span>
+          </span>
+        </a>
+        <a href="https://www.spencerfuneralservice.com/services/personalization" class="group flex gap-6 py-7">
+          <span class="font-display text-3xl text-ox/50 w-12 shrink-0">03</span>
+          <span>
+            <span class="block text-xl font-semibold group-hover:text-ox transition">Personalization</span>
+            <span class="block mt-2 text-ink/70 leading-relaxed">Tribute videos, keepsakes, and live streaming for family and friends who cannot attend in person.</span>
+          </span>
+        </a>
+        <a href="https://www.spencerfuneralservice.com/services/veterans-services" class="group flex gap-6 py-7">
+          <span class="font-display text-3xl text-ox/50 w-12 shrink-0">04</span>
+          <span>
+            <span class="block text-xl font-semibold group-hover:text-ox transition">Veterans Services</span>
+            <span class="block mt-2 text-ink/70 leading-relaxed">There is no greater honor than serving those who have served our country. We help you get the benefits and provide a service worthy of a veteran.</span>
+          </span>
+        </a>
       </div>
     </div>
   </div>
-</body>
-</html><!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Spencer Funeral Service - Gallery & Story</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="max-w-7xl mx-auto px-4 py-16">
-    <div class="text-center mb-16">
-      <span class="text-green-700 font-semibold text-lg uppercase tracking-wider">Our Heritage</span>
-      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">25 Years of Service to Springfield</h2>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">Spencer Funeral Service has been guiding families through difficult times with compassion, dignity, and professional care. Learn more about our commitment to the community.</p>
-    </div>
+</section>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-      <div>
-        <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/Depositphotos_79652278_l-2015-min-1920w.jpg" alt="Casket with floral tribute" class="w-full h-64 object-cover rounded-lg shadow-lg mb-4">
-        <h3 class="text-xl font-semibold mb-3">Professional Care</h3>
-        <p class="text-gray-600">Our licensed funeral directors provide expert guidance and support during every step of the process, ensuring your loved one's memory is honored appropriately.</p>
-      </div>
-      <div>
-        <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/chuttersnap-wvGQYtZ_c08-unsplash-min-1920w.jpg" alt="Memorial floral arrangement" class="w-full h-64 object-cover rounded-lg shadow-lg mb-4">
-        <h3 class="text-xl font-semibold mb-3">Community Roots</h3>
-        <p class="text-gray-600">Serving Springfield families since 1998, we've become an integral part of our community's fabric, known for our reliability and compassion.</p>
-      </div>
+<!-- PRICE TRANSPARENCY -->
+<section class="bg-oxdark text-cream">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 py-20 grid md:grid-cols-3 gap-10 items-center">
+    <div class="reveal">
+      <p class="font-display text-5xl">$1,345</p>
+      <p class="mt-2 text-cream/70">Direct cremation, starting price</p>
     </div>
-
-    <div class="bg-green-50 p-8 rounded-lg mb-16">
-      <h3 class="text-2xl font-semibold mb-6 text-center">What Families Say</h3>
-      <div class="space-y-6">
-        <blockquote class="border-l-4 border-green-500 pl-4">
-          <p class="text-gray-700 italic">"Spencer Funeral Service made a difficult time much more manageable. Their professionalism and compassion were evident throughout the entire process."
-          <footer class="text-green-700 font-semibold mt-2">, Jennifer L., Springfield</footer></p>
-        </blockquote>
-        <blockquote class="border-l-4 border-green-500 pl-4">
-          <p class="text-gray-700 italic">"We are grateful for the dedicated care our family received. The funeral director's expertise and sensitivity made all the difference."
-          <footer class="text-green-700 font-semibold mt-2">, Michael R., Peoria</footer></p>
-        </blockquote>
-      </div>
+    <div class="reveal">
+      <p class="font-display text-5xl">$5,170</p>
+      <p class="mt-2 text-cream/70">Traditional service, starting price</p>
     </div>
+    <div class="reveal md:text-right">
+      <p class="text-cream/80 leading-relaxed">Prices are published, not quoted on the phone. The full General Price List is on the services page.</p>
+      <a href="https://www.spencerfuneralservice.com/services/services-overview"
+         class="inline-block mt-4 text-[13px] font-semibold tracking-wide uppercase border-b border-cream/60 pb-0.5 hover:border-cream transition">
+        View the price list
+      </a>
+    </div>
+  </div>
+</section>
 
-    <div class="text-center">
-      <h3 class="text-2xl font-semibold mb-6">Our Commitment to Excellence</h3>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div class="text-center">
-          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-            <span class="text-green-700 font-bold text-xl">25</span>
-          </div>
-          <p class="text-sm text-gray-600">Years of Service</p>
-        </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-            <span class="text-green-700 font-bold text-xl">5000</span>
-          </div>
-          <p class="text-sm text-gray-600">Families Served</p>
-        </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-            <span class="text-green-700 font-bold text-xl">100%</span>
-          </div>
-          <p class="text-sm text-gray-600">Satisfaction Rate</p>
-        </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-            <span class="text-green-700 font-bold text-xl">24/7</span>
-          </div>
-          <p class="text-sm text-gray-600">Support Available</p>
-        </div>
+<!-- SINCE 1896 -->
+<section id="about" class="bg-cream">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 py-24 lg:py-32 grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+    <div class="lg:col-span-7 order-2 lg:order-1 reveal">
+      <p class="text-[12px] tracking-[0.25em] uppercase text-ox mb-5">Established 1896</p>
+      <h2 class="font-display text-5xl lg:text-6xl leading-[1.02] max-w-xl">
+        Two hearses, four horses, and one address on Broadway
+      </h2>
+      <div class="mt-8 space-y-5 text-ink/75 leading-relaxed max-w-2xl">
+        <p>
+          The William F. Spencer Funeral Service was established in 1896. At that time most funerals were held in the home
+          of the deceased, and the business was conducted out of a storefront at 408 E. Broadway. We were the owners of
+          two hearses and four horses that were used on all funerals.
+        </p>
+        <p>
+          In December of 1946 the operations moved from 408 E. Broadway to our present location at 575 E. Broadway. Funeral
+          customs had changed. It had become the norm to hold the service in the funeral home rather than the residence.
+        </p>
+        <p>
+          For over a hundred years the William F. Spencer Funeral Service has offered the people of Greater Boston
+          dedicated, reliable and affordable funerals. William F. Spencer, Jr. carries on the tradition that began in 1896.
+        </p>
+      </div>
+      <a href="https://www.spencerfuneralservice.com/about-us/about-us"
+         class="inline-block mt-9 text-[13px] font-semibold tracking-wide uppercase text-ox border-b border-ox/40 pb-0.5 hover:border-ox transition">
+        Read the full history
+      </a>
+    </div>
+    <div class="lg:col-span-5 order-1 lg:order-2 reveal">
+      <div class="grid grid-cols-2 gap-5">
+        <figure class="col-span-1">
+          <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/WSpencer-1920w.png"
+               alt="Wm. F. Spencer, photographed in 1930 while serving as President of the Massachusetts Funeral Directors Association"
+               class="w-full h-64 object-cover object-top bg-ink/5">
+          <figcaption class="mt-3 text-sm text-ink/60">Wm. F. Spencer in 1930, President of the Massachusetts Funeral Directors' Association</figcaption>
+        </figure>
+        <figure class="col-span-1 mt-10">
+          <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/55f879b3b85d2-3902-3309-I1607939618MrSpencer-1920w.png"
+               alt="William F. Spencer, Jr. seated at a table beside floral arrangements in the funeral home"
+               class="w-full h-64 object-cover">
+          <figcaption class="mt-3 text-sm text-ink/60">William F. Spencer, Jr.</figcaption>
+        </figure>
       </div>
     </div>
   </div>
-</body>
-</html><!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport"="width=device-width, initial-scale=1">
-  <title>Spencer Funeral Service - Contact & Footer</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="max-w-7xl mx-auto px-4 py-16">
-    <div class="bg-green-700 text-white p-8 rounded-lg mb-12">
-      <div class="flex flex-col md:flex-row justify-between items-center">
+</section>
+
+<!-- PHOTOGRAPHIC TOUR -->
+<section id="tour" class="bg-ink text-cream">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 py-24 lg:py-32">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
+      <div>
+        <p class="text-[12px] tracking-[0.25em] uppercase text-cream/60 mb-5">Photographic tour</p>
+        <h2 class="font-display text-5xl lg:text-6xl leading-[1.02] max-w-lg">The rooms, before you have to see them</h2>
+      </div>
+      <a href="https://www.spencerfuneralservice.com/about-us/photographic-tour"
+         class="text-[13px] font-semibold tracking-wide uppercase border-b border-cream/50 pb-0.5 hover:border-cream transition">
+        See every photograph
+      </a>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <figure class="md:row-span-2 reveal">
+        <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/55f879b27a302-3902-3309-I1554820611IMG0211cro-1920w.jpg"
+             alt="Front of the Wm. F. Spencer Funeral Home, a white clapboard building with red awnings on E Broadway"
+             class="w-full h-[300px] md:h-[624px] object-cover">
+        <figcaption class="mt-3 text-sm text-cream/60">Front of the Wm. F. Spencer Funeral Home</figcaption>
+      </figure>
+      <figure class="md:col-span-2 reveal">
+        <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/55f879adcaaa7-3902-3309-I359030908IMG0217-1920w.jpg"
+             alt="Visitation room with columns, a marble mantel and a lectern"
+             class="w-full h-[300px] object-cover">
+        <figcaption class="mt-3 text-sm text-cream/60">Visitation room</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/55f879aee675a-3902-3309-I1307268275IMG0213-1920w.jpg"
+             alt="Visitation room with an American flag, wall sconces and a fireplace"
+             class="w-full h-[300px] object-cover">
+        <figcaption class="mt-3 text-sm text-cream/60">Visitation room</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/55f879afe6547-3902-3309-I1492495139IMG0215-1920w.jpg"
+             alt="Visitation room with a sofa, a framed print and seating along the wall"
+             class="w-full h-[300px] object-cover">
+        <figcaption class="mt-3 text-sm text-cream/60">Visitation room</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY -->
+<section id="record" class="bg-cream">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 py-24 lg:py-32 grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+    <div class="lg:col-span-4 reveal">
+      <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/55f879b1bdda8-3902-3309-I1514868622PaulNewman-1920w.png"
+           alt="Boston Herald American clipping showing Paul Newman leaving the William F. Spencer Funeral Service"
+           class="w-full object-contain bg-ink/5 p-4">
+      <p class="mt-3 text-sm text-ink/60">Paul Newman leaving our funeral home. Boston Herald American.</p>
+    </div>
+    <div class="lg:col-span-8 reveal">
+      <p class="text-[12px] tracking-[0.25em] uppercase text-ox mb-5">On the record</p>
+      <h2 class="font-display text-5xl lg:text-6xl leading-[1.02] max-w-xl">Facts, not adjectives</h2>
+      <dl class="mt-12 grid sm:grid-cols-2 gap-x-10 gap-y-8 border-t border-ink/15 pt-10">
         <div>
-          <h3 class="text-2xl font-bold mb-4">Need Assistance?</h3>
-          <p class="text-lg mb-4">Our compassionate funeral directors are here to help you plan with care and dignity.</p>
+          <dt class="font-display text-4xl text-ox">1896</dt>
+          <dd class="mt-1 text-ink/70">Year the firm was established, in South Boston</dd>
         </div>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="tel:(555)123-4567" class="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
-            Call Now: (555) 123-4567
-          </a>
-          <a href="#contact" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-800 transition-colors text-center">
-            Request Service
-          </a>
+        <div>
+          <dt class="font-display text-4xl text-ox">1946</dt>
+          <dd class="mt-1 text-ink/70">Year the firm moved to 575 E Broadway, where it still is</dd>
         </div>
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-      <div>
-        <h4 class="font-semibold text-gray-900 mb-4">Services</h4>
-        <ul class="space-y-2 text-gray-600">
-          <li><a href="#" class="hover:text-green-700">Traditional Funerals</a></li>
-          <li><a href="#" class="hover:text-green-700">Cremation Services</a></li>
-          <li><a href="#" class="hover:text-green-700">Memorial Services</a></li>
-          <li><a href="#" class="hover:text-green-700">Pre-Planning</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold text-gray-900 mb-4">Resources</h4>
-        <ul class="space-y-2 text-gray-600">
-          <li><a href="#" class="hover:text-green-700">Planning Guide</a></li>
-          <li><a href="#" class="hover:text-green-700">Cost Information</a></li>
-          <li><a href="#" class="hover:text-green-700">Community Support</a></li>
-          <li><a href="#" class="hover:text-green-700">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold text-gray-900 mb-4">About Us</h4>
-        <ul class="space-y-2 text-gray-600">
-          <li><a href="#" class="hover:text-green-700">Our Story</a></li>
-          <li><a href="#" class="hover:text-green-700">Our Directors</a></li>
-          <li><a href="#" class="hover:text-green-700">Community Involvement</a></li>
-          <li><a href="#" class="hover:text-green-700">Testimonials</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold text-gray-900 mb-4">Connect</h4>
-        <ul class="space-y-2 text-gray-600">
-          <li><a href="#" class="hover:text-green-700">Springfield Location</a></li>
-          <li><a href="tel:(555)123-4567" class="hover:text-green-700">(555) 123-4567</a></li>
-          <li><a href="#" class="hover:text-green-700">info@spencerfuneralservice.com</a></li>
-          <li><a href="#" class="hover:text-green-700">Directions</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="border-t pt-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0">
-          <p class="text-gray-600">© 2024 Spencer Funeral Service. All rights reserved.</p>
+        <div>
+          <dt class="font-display text-4xl text-ox">1 mile</dt>
+          <dd class="mt-1 text-ink/70">Distance to the professional medical examiners</dd>
         </div>
-        <div class="flex space-x-6">
-          <a href="#" class="text-gray-400 hover:text-green-700">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-green-700">Terms of Service</a>
-          <a href="#" class="text-gray-400 hover:text-green-700">Sitemap</a>
+        <div>
+          <dt class="font-display text-4xl text-ox">Any hour</dt>
+          <dd class="mt-1 text-ink/70">Call any time, any day of the week, for immediate assistance</dd>
         </div>
-      </div>
+      </dl>
+      <p class="mt-10 text-ink/75 leading-relaxed max-w-2xl">
+        The funeral home sits close to Boston's hospitals and to Logan International Airport, which matters when family
+        is arriving from out of state. Visit in person at your convenience.
+      </p>
+      <a href="https://www.spencerfuneralservice.com/about-us/our-location"
+         class="inline-block mt-8 text-[13px] font-semibold tracking-wide uppercase text-ox border-b border-ox/40 pb-0.5 hover:border-ox transition">
+        Directions and parking
+      </a>
     </div>
   </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="bg-ox text-cream">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-24 text-center">
+    <h2 class="font-display text-5xl lg:text-7xl leading-[1.02]">Call any hour, any day</h2>
+    <p class="mt-6 text-cream/85 text-lg max-w-2xl mx-auto leading-relaxed">
+      If a death has occurred, or you simply want to know what preplanning would cost, the same number reaches us either way.
+    </p>
+    <div class="mt-10 flex flex-wrap justify-center gap-4">
+      <a href="tel:+16172680855"
+         class="bg-cream text-oxdark px-9 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-white transition">
+        617-268-0855
+      </a>
+      <a href="mailto:spencer575@gmail.com"
+         class="border border-cream/50 text-cream px-9 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-cream hover:text-ink transition">
+        spencer575@gmail.com
+      </a>
+      <a href="https://www.spencerfuneralservice.com/planning-ahead/planning-ahead"
+         class="border border-cream/50 text-cream px-9 py-4 text-sm font-semibold tracking-wide uppercase hover:bg-cream hover:text-ink transition">
+        Plan ahead
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-oxdark text-cream">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8 py-20 grid md:grid-cols-4 gap-12">
+    <div>
+      <img src="https://irp.cdn-website.com/170fba94/dms3rep/multi/opt/wmfspencer+-+white-1920w.png"
+           alt="WM. F. Spencer Funeral Service" class="h-10 w-auto">
+      <address class="mt-6 not-italic text-cream/75 leading-relaxed">
+        575 E Broadway<br>
+        South Boston, MA 02127<br>
+        <a href="tel:+16172680855" class="hover:text-cream transition">617-268-0855</a><br>
+        <a href="mailto:spencer575@gmail.com" class="hover:text-cream transition">spencer575@gmail.com</a>
+      </address>
+    </div>
+    <div>
+      <p class="text-[12px] tracking-[0.25em] uppercase text-cream/50 mb-5">About Us</p>
+      <ul class="space-y-3 text-cream/80">
+        <li><a href="https://www.spencerfuneralservice.com/about-us/about-us" class="hover:text-cream transition">About Us</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/about-us/our-location" class="hover:text-cream transition">Our Location</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/about-us/photographic-tour" class="hover:text-cream transition">Photographic Tour</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/about-us/why-choose-us" class="hover:text-cream transition">Why Choose Us</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/about-us/contact-us" class="hover:text-cream transition">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-[12px] tracking-[0.25em] uppercase text-cream/50 mb-5">Services</p>
+      <ul class="space-y-3 text-cream/80">
+        <li><a href="https://www.spencerfuneralservice.com/services/immediate-need" class="hover:text-cream transition">Immediate Need</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/services/services-overview" class="hover:text-cream transition">Services Overview</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/services/traditional-services" class="hover:text-cream transition">Traditional Services</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/services/personalization" class="hover:text-cream transition">Personalization</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/services/veterans-services" class="hover:text-cream transition">Veterans Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-[12px] tracking-[0.25em] uppercase text-cream/50 mb-5">Obituaries and Support</p>
+      <ul class="space-y-3 text-cream/80">
+        <li><a href="https://www.spencerfuneralservice.com/obituaries" class="hover:text-cream transition">Obituary Listing</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/send-flowers" class="hover:text-cream transition">Send Flowers</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/grief-support/the-grieving-process" class="hover:text-cream transition">The Grieving Process</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/grief-support/grief-resources" class="hover:text-cream transition">Grief Resources</a></li>
+        <li><a href="https://www.spencerfuneralservice.com/resources/frequent-questions" class="hover:text-cream transition">Frequent Questions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-cream/15">
+    <div class="mx-auto max-w-7xl px-5 lg:px-8 py-6 text-sm text-cream/55">
+      &copy; WM. F. Spencer Funeral Service. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 </body>
 </html>
