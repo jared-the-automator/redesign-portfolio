@@ -311,3 +311,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Stonewall Creek Outfitters](https://jared-the-automator.github.io/redesign-portfolio/stonewallcreekoutfitters.com/) | Flintlock building supplies, mail order | Concord, VA |
 | [Town & Country Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/townncountryvet.com/) | Small-animal veterinary care: wellness, dental, surgery and same-day appointments | Portland, OR |
 | [WM. F. Spencer Funeral Service](https://jared-the-automator.github.io/redesign-portfolio/spencerfuneralservice.com/) | Funeral and cremation services with published pricing, established 1896 | South Boston, MA |
+| [Spicer-Mullikin Funeral Homes & Crematory](https://jared-the-automator.github.io/redesign-portfolio/spicermullikin.com/) | Family-owned funeral homes & crematory, pre-planning and immediate need | Delaware |
