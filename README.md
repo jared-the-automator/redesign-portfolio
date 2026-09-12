@@ -312,3 +312,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Town & Country Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/townncountryvet.com/) | Small-animal veterinary care: wellness, dental, surgery and same-day appointments | Portland, OR |
 | [WM. F. Spencer Funeral Service](https://jared-the-automator.github.io/redesign-portfolio/spencerfuneralservice.com/) | Funeral and cremation services with published pricing, established 1896 | South Boston, MA |
 | [Spicer-Mullikin Funeral Homes & Crematory](https://jared-the-automator.github.io/redesign-portfolio/spicermullikin.com/) | Family-owned funeral homes & crematory, pre-planning and immediate need | Delaware |
+| [Warm Waters, LLC](https://jared-the-automator.github.io/redesign-portfolio/warm-waters.com/) | Family-owned heating, cooling, plumbing and fire-sprinkler service, 20+ years | Southern Maine |
