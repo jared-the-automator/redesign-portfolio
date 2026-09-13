@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Willamette Valley Equine | Equine Veterinary Practice in the Willamette Valley, Oregon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: "#F7F2E9",
+            bone: "#EFE7D8",
+            ink: "#2B2622",
+            inksoft: "#5C5347",
+            rust: "#B14E2B",
+            line: "#D8CDB8"
+          },
+          fontFamily: {
+            slab: ['"Roboto Slab"', 'serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "additionalType": "https://schema.org/VeterinaryCare",
+    "name": "Willamette Valley Equine",
+    "description": "Equine veterinary practice in the Willamette Valley, Oregon, offering equine medicine, preventative health care, reproduction, equine dentistry, digital imaging, sports medicine, pre-purchase examinations, and neonatal care.",
+    "address": "Willamette Valley, Oregon",
+    "telephone": "+1-503-682-4426",
+    "email": "office@willamettevalleyequine.com",
+    "areaServed": "Willamette Valley, Oregon",
+    "url": "https://willamettevalleyequine.com/"
+  }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-in { opacity: 1; transform: none; }
+    .reveal-d1 { transition-delay: .12s; }
+    .reveal-d2 { transition-delay: .24s; }
+    .reveal-d3 { transition-delay: .36s; }
+  </style>
+</head>
+<body class="bg-paper text-ink font-body antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-line">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="https://willamettevalleyequine.com/" class="flex items-center gap-3 shrink-0">
+        <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/03/WVE-logo1601.png" alt="Willamette Valley Equine" class="h-10 w-auto">
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-inksoft">
+        <a href="https://willamettevalleyequine.com/services/" class="hover:text-rust transition-colors">Services</a>
+        <a href="#team" class="hover:text-rust transition-colors">The Team</a>
+        <a href="#contact" class="hover:text-rust transition-colors">Contact</a>
+      </nav>
+      <a href="tel:5036824426" class="inline-flex items-center gap-2 bg-rust text-paper text-sm font-semibold rounded-sm px-4 py-2.5 hover:bg-ink transition-colors">
+        <span class="hidden sm:inline">Call</span> (503) 682-4426
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-[100dvh] flex items-end overflow-hidden">
+    <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/04/oregon-horses1.jpg" alt="Horses in an Oregon pasture" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-[#1a1512]/60"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1512]/85 via-[#1a1512]/50 to-[#1a1512]/15"></div>
+    <div class="relative max-w-6xl mx-auto px-5 sm:px-8 w-full pb-20 pt-40">
+      <div class="max-w-2xl">
+        <p class="reveal text-paper/85 text-sm font-semibold tracking-wide mb-5 flex items-center gap-2">
+          <span class="inline-block w-2 h-2 rounded-full bg-rust"></span>
+          Willamette Valley, Oregon
+        </p>
+        <h1 class="reveal reveal-d1 font-slab font-bold text-5xl sm:text-6xl lg:text-7xl leading-[1.04] text-paper">
+          Equine medicine for the Willamette Valley.
+        </h1>
+        <p class="reveal reveal-d2 mt-6 text-lg text-paper/90 max-w-xl">
+          Eight service lines. A team of professionals. One phone call.
+        </p>
+        <div class="reveal reveal-d3 mt-9 flex flex-wrap items-center gap-4">
+          <a href="tel:5036824426" class="bg-rust text-paper font-semibold rounded-sm px-6 py-3.5 text-base hover:bg-ink transition-colors">Call (503) 682-4426</a>
+          <a href="https://willamettevalleyequine.com/services/" class="border-2 border-paper/70 text-paper font-semibold rounded-sm px-6 py-3.5 text-base hover:bg-paper hover:text-ink transition-colors">See all services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary service section: asymmetric split, numbered features -->
+  <section id="care" class="py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <div class="lg:col-span-5 reveal">
+        <div class="rounded-sm overflow-hidden bg-bone">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/03/reproduction.jpg" alt="Reproduction" class="w-full h-full object-cover">
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <p class="reveal text-rust text-xs font-bold tracking-[0.2em] uppercase mb-4">Care</p>
+        <h2 class="reveal font-slab font-bold text-3xl sm:text-4xl lg:text-[2.75rem] leading-tight">
+          Eight ways we keep your horse sound.
+        </h2>
+        <p class="reveal mt-5 text-inksoft text-lg max-w-xl">
+          The full practice sits under one roof, from the first wellness check to the specialist program.
+        </p>
+        <div class="mt-10 space-y-8">
+          <div class="reveal flex gap-5">
+            <span class="font-slab font-bold text-rust text-2xl leading-none shrink-0">01</span>
+            <div>
+              <h3 class="font-slab font-semibold text-lg">Medicine and prevention</h3>
+              <p class="mt-1 text-inksoft">Routine care, diagnostics, and in-hospital medicine for every stage of a horse's life.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-5">
+            <span class="font-slab font-bold text-rust text-2xl leading-none shrink-0">02</span>
+            <div>
+              <h3 class="font-slab font-semibold text-lg">Reproduction</h3>
+              <p class="mt-1 text-inksoft">Breeding programs kept on schedule, so a mare's year runs the way you planned it.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-5">
+            <span class="font-slab font-bold text-rust text-2xl leading-none shrink-0">03</span>
+            <div>
+              <h3 class="font-slab font-semibold text-lg">Dentistry, imaging, and sports care</h3>
+              <p class="mt-1 text-inksoft">Digital imaging and sports-medicine programs built for performance horses.</p>
+            </div>
+          </div>
+        </div>
+        <p class="reveal mt-10 text-inksoft">
+          Pre-purchase examinations, neonatal care, and an online pharmacy round out the practice.
+          <a href="https://willamettevalleyequine.com/services/" class="text-rust font-semibold underline underline-offset-4 hover:text-ink transition-colors">See all eight services</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary section: reversed split, practice story -->
+  <section class="bg-bone py-20 sm:py-28 border-y border-line">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <div class="lg:col-span-7 order-last lg:order-first">
+        <h2 class="reveal font-slab font-bold text-3xl sm:text-4xl lg:text-[2.75rem] leading-tight">
+          The practice works around your horse's schedule.
+        </h2>
+        <p class="reveal mt-6 text-inksoft text-lg max-w-xl">
+          When a question is about a horse, you reach the people who work with horses all day, in the valley, by phone.
+        </p>
+        <p class="reveal mt-4 text-inksoft text-lg max-w-xl">
+          Your records live in an online client portal, so the history travels with the horse between visits. The online pharmacy stays open in the gap between them.
+        </p>
+      </div>
+      <div class="lg:col-span-5 reveal">
+        <div class="rounded-sm overflow-hidden bg-paper shadow-sm">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/07/WVE_4_2015_36_Web-370x470.jpg" alt="At the practice" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / brand story: photography grid, breaks the zigzag -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <h2 class="reveal font-slab font-bold text-3xl sm:text-4xl lg:text-[2.75rem] leading-tight max-w-2xl">
+        The valley, the barn, the work.
+      </h2>
+      <p class="reveal mt-5 text-inksoft text-lg max-w-xl">
+        From the pasture to the exam room, the practice stays close to where the horses live.
+      </p>
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 auto-rows-[11rem] sm:auto-rows-[13rem]">
+        <figure class="reveal col-span-2 row-span-2 rounded-sm overflow-hidden bg-bone">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/04/oregon-horses1.jpg" alt="Horses in an Oregon pasture" class="w-full h-full object-cover">
+        </figure>
+        <figure class="reveal reveal-d1 rounded-sm overflow-hidden bg-bone">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/04/sports-medicine.png" alt="Sports medicine" class="w-full h-full object-cover">
+        </figure>
+        <figure class="reveal reveal-d2 rounded-sm overflow-hidden bg-bone">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/03/online-pharmacy.jpg" alt="Online pharmacy" class="w-full h-full object-cover">
+        </figure>
+        <figure class="reveal reveal-d1 rounded-sm overflow-hidden bg-bone">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/03/reproduction.jpg" alt="Reproduction" class="w-full h-full object-cover">
+        </figure>
+        <figure class="reveal reveal-d2 rounded-sm overflow-hidden bg-bone">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/07/WVE_4_2015_36_Web-370x470.jpg" alt="At the practice" class="w-full h-full object-cover">
+        </figure>
+      </div>
+      <div class="mt-10 flex flex-wrap items-center gap-x-10 gap-y-5 reveal">
+        <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/03/AVMAlogo-final.png" alt="AVMA" class="h-8 w-auto opacity-80">
+        <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/03/NEPA-Logo-final.png" alt="NEPA" class="h-8 w-auto opacity-80">
+        <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/03/aaep-logo-final.png" alt="AAEP" class="h-8 w-auto opacity-80">
+        <span class="text-inksoft text-sm">Practitioner memberships: AVMA, NEPA, and AAEP</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team / credibility -->
+  <section id="team" class="bg-bone py-20 sm:py-28 border-y border-line">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <h2 class="reveal font-slab font-bold text-3xl sm:text-4xl lg:text-[2.75rem] leading-tight">
+        A Team of Professionals
+      </h2>
+      <p class="reveal mt-5 text-inksoft text-lg max-w-2xl">
+        We take pride in our commitment to you and your animals.
+      </p>
+      <div class="mt-12 grid sm:grid-cols-3 gap-6">
+        <figure class="reveal bg-paper rounded-sm overflow-hidden shadow-sm">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/03/joe-370x470.jpg" alt="Joe" class="w-full h-72 object-cover">
+          <figcaption class="px-5 py-4 font-slab font-semibold">Joe</figcaption>
+        </figure>
+        <figure class="reveal reveal-d1 bg-paper rounded-sm overflow-hidden shadow-sm">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/07/sam-370x470.jpg" alt="Sam" class="w-full h-72 object-cover">
+          <figcaption class="px-5 py-4 font-slab font-semibold">Sam</figcaption>
+        </figure>
+        <figure class="reveal reveal-d2 bg-paper rounded-sm overflow-hidden shadow-sm">
+          <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/07/WVE_4_2015_36_Web-370x470.jpg" alt="At the practice" class="w-full h-72 object-cover">
+          <figcaption class="px-5 py-4 font-slab font-semibold">At the practice</figcaption>
+        </figure>
+      </div>
+      <p class="reveal mt-10 text-inksoft max-w-2xl">
+        Eight service lines, an online pharmacy, and a client portal run by one practice in the Willamette Valley.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA strip -->
+  <section id="contact" class="bg-ink text-paper py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <h2 class="reveal font-slab font-bold text-3xl sm:text-4xl lg:text-[2.5rem] leading-tight">
+        Equine care in the Willamette Valley, one call away.
+      </h2>
+      <div class="reveal mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
+        <a href="tel:5036824426" class="font-slab font-bold text-2xl sm:text-3xl text-paper underline decoration-rust decoration-4 underline-offset-8 hover:decoration-paper transition-colors">
+          (503) 682-4426
+        </a>
+        <a href="mailto:office@willamettevalleyequine.com" class="text-paper/80 font-medium hover:text-paper transition-colors">
+          office@willamettevalleyequine.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-paper border-t border-paper/15">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <img src="https://willamettevalleyequine.com/wp-content/uploads/2015/03/WVE-logo1601.png" alt="Willamette Valley Equine" class="h-9 w-auto brightness-0 invert opacity-90">
+        <p class="mt-4 text-paper/70 text-sm leading-relaxed">
+          Equestrian healthcare in the Willamette Valley, Oregon.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-slab font-semibold text-sm tracking-wide text-paper/60 uppercase">Explore</h3>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="https://willamettevalleyequine.com/" class="text-paper/85 hover:text-rust transition-colors">Home</a></li>
+          <li><a href="https://willamettevalleyequine.com/services/" class="text-paper/85 hover:text-rust transition-colors">Services</a></li>
+          <li><a href="#contact" class="text-paper/85 hover:text-rust transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-slab font-semibold text-sm tracking-wide text-paper/60 uppercase">Contact</h3>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="tel:5036824426" class="text-paper/85 hover:text-rust transition-colors">(503) 682-4426</a></li>
+          <li><a href="mailto:office@willamettevalleyequine.com" class="text-paper/85 hover:text-rust transition-colors break-all">office@willamettevalleyequine.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-slab font-semibold text-sm tracking-wide text-paper/60 uppercase">Follow</h3>
+        <ul class="mt-4 space-y-2.5 text-sm text-paper/85">
+          <li>Facebook: willamettevalleyequine</li>
+          <li>Twitter: @WVEquine</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-paper/15">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8 py-5 text-xs text-paper/50">
+        Willamette Valley Equine, Willamette Valley, Oregon
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var elements = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        elements.forEach(function (el) { el.classList.add('is-in'); });
+        return;
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      elements.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
