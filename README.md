@@ -315,3 +315,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Warm Waters, LLC](https://jared-the-automator.github.io/redesign-portfolio/warm-waters.com/) | Family-owned heating, cooling, plumbing and fire-sprinkler service, 20+ years | Southern Maine |
 | [Willamette Valley Equine](https://jared-the-automator.github.io/redesign-portfolio/willamettevalleyequine.com/) | Equine veterinary practice: medicine, reproduction, dentistry, imaging and sports medicine | Willamette Valley, Oregon |
 | [Back Cove Equine](https://jared-the-automator.github.io/redesign-portfolio/backcoveequine.com/) | Equine veterinary practice: routine and 24-hour ambulatory care | Portland, ME |
+| [Absaroka-Beartooth Outfitters](https://jared-the-automator.github.io/redesign-portfolio/absarokabeartooth.com/) | Montana hunting outfitter and fly fishing guide | Montana, USA |
