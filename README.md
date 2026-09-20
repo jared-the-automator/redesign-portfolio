@@ -317,3 +317,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Back Cove Equine](https://jared-the-automator.github.io/redesign-portfolio/backcoveequine.com/) | Equine veterinary practice: routine and 24-hour ambulatory care | Portland, ME |
 | [Absaroka-Beartooth Outfitters](https://jared-the-automator.github.io/redesign-portfolio/absarokabeartooth.com/) | Montana hunting outfitter and fly fishing guide | Montana, USA |
 | [Morrison Plumbing & Heating](https://jared-the-automator.github.io/redesign-portfolio/morrisonplumbingandheating.net/) | Plumbing, heating and water filtration, licensed and insured, 10+ years | Western Maine (Androscoggin and part of Oxford county) |
+| [Lumbery](https://jared-the-automator.github.io/redesign-portfolio/lumbery-me.com/) | White cedar lumber yard & garden center, locally sourced Maine cedar, raised beds, posts and saunas | Cape Elizabeth, ME |
