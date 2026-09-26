@@ -325,3 +325,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Brea Auto Body](https://jared-the-automator.github.io/redesign-portfolio/breaautobody.com/) | Family-owned auto body & collision repair shop, in business since 1979 | Brea, CA |
 | [Branch Brook Fuels](https://jared-the-automator.github.io/redesign-portfolio/branchbrook.net/) | Heating oil, propane, K-1 kerosene & diesel delivery with 24-hour emergency service | Arundel, ME |
 | [Maine Horse Vet](https://jared-the-automator.github.io/redesign-portfolio/mainehorsevet.com/) | Equine veterinary practice: digital radiography, dentistry, mare and foal care and pre-purchase exams | Maine |
+| [Macon County Outfitters](https://jared-the-automator.github.io/redesign-portfolio/maconcountyoutfitters.com/) | Guided whitetail and upland bird (pheasant, quail) hunts on 6,000+ private acres, with lodge stays | Macon County, MO |
