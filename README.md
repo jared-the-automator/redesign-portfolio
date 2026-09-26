@@ -323,3 +323,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [TS Customs](https://jared-the-automator.github.io/redesign-portfolio/tscustomsrifles.com/) | Custom precision hunting rifle builder: machined stocks and spec builds | Miller, SD |
 | [A Natural State Funeral Service & Crematory](https://jared-the-automator.github.io/redesign-portfolio/anaturalstatefuneralservice.com/) | Funeral home and cremation, serving Jacksonville, Cabot and Sherwood, available 24/7 | Jacksonville, AR |
 | [Brea Auto Body](https://jared-the-automator.github.io/redesign-portfolio/breaautobody.com/) | Family-owned auto body & collision repair shop, in business since 1979 | Brea, CA |
+| [Branch Brook Fuels](https://jared-the-automator.github.io/redesign-portfolio/branchbrook.net/) | Heating oil, propane, K-1 kerosene & diesel delivery with 24-hour emergency service | Arundel, ME |
