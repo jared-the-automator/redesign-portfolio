@@ -322,3 +322,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Vic & Sons Fuel Co.](https://jared-the-automator.github.io/redesign-portfolio/vicandsonsfuelco.com/) | Heating oil, K1 kerosene, gasoline & diesel delivery | Portland & South Portland, ME |
 | [TS Customs](https://jared-the-automator.github.io/redesign-portfolio/tscustomsrifles.com/) | Custom precision hunting rifle builder: machined stocks and spec builds | Miller, SD |
 | [A Natural State Funeral Service & Crematory](https://jared-the-automator.github.io/redesign-portfolio/anaturalstatefuneralservice.com/) | Funeral home and cremation, serving Jacksonville, Cabot and Sherwood, available 24/7 | Jacksonville, AR |
+| [Brea Auto Body](https://jared-the-automator.github.io/redesign-portfolio/breaautobody.com/) | Family-owned auto body & collision repair shop, in business since 1979 | Brea, CA |

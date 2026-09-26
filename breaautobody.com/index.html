@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brea Auto Body: Collision Repair in Brea, CA | Family-Owned Since 1979</title>
+  <meta name="description" content="Brea Auto Body has been restoring cars to pre-accident condition in Brea, CA since 1979. Certified collision repair, frame straightening, precise paint matching, and insurance assistance.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0C0E11",
+            coal: "#15181D",
+            seam: "#232830",
+            bone: "#EAE4D8",
+            amber: "#F2A33C"
+          },
+          fontFamily: {
+            display: ['"Barlow Condensed"', "sans-serif"],
+            sans: ['"Barlow"', "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Brea Auto Body",
+    "description": "Family-owned collision repair shop in Brea, California since 1979. Certified technicians, frame straightening, precise paint matching, and insurance assistance on every job.",
+    "image": "https://breaautobody.com/wp-content/uploads/2025/06/brea_auto_body_logo.jpg",
+    "url": "https://breaautobody.com/",
+    "telephone": "+1-714-990-1500",
+    "email": "info@breaautobody.com",
+    "foundingDate": "1979",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "430 N Berry St",
+      "addressLocality": "Brea",
+      "addressRegion": "CA",
+      "postalCode": "92821",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 700ms ease, transform 700ms ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .scrim { background: linear-gradient(90deg, rgba(12,14,17,0.96) 0%, rgba(12,14,17,0.82) 45%, rgba(12,14,17,0.55) 100%); }
+  </style>
+</head>
+<body class="bg-ink text-bone font-sans antialiased">
+
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-ink/95 backdrop-blur border-b border-seam">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-6">
+      <a href="https://breaautobody.com/" class="shrink-0" aria-label="Brea Auto Body homepage">
+        <span class="inline-block bg-bone rounded-sm p-1.5"><img src="https://breaautobody.com/wp-content/uploads/2025/06/brea_auto_body_logo.jpg" alt="Brea Auto Body logo, family-owned since 1979" class="h-9 w-auto object-contain"></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-[15px] font-medium text-bone/80">
+        <a href="#services" class="hover:text-amber transition-colors">Services</a>
+        <a href="#process" class="hover:text-amber transition-colors">How we work</a>
+        <a href="#work" class="hover:text-amber transition-colors">The work</a>
+        <a href="https://breaautobody.com/about-us/" class="hover:text-amber transition-colors">About</a>
+      </nav>
+      <a href="https://breaautobody.com/contact/" class="inline-flex items-center gap-2 bg-amber text-ink font-display font-extrabold uppercase tracking-wide text-sm px-4 py-2.5 rounded-sm hover:bg-amber/90 transition-colors">
+        Free estimate
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-[100dvh] flex items-end overflow-hidden">
+    <img src="https://breaautobody.com/wp-content/uploads/2024/09/car-collision-repair-in-brea.png" alt="A car being repaired in the Brea Auto Body shop" class="absolute inset-0 h-full w-full object-cover">
+    <div class="absolute inset-0 bg-ink/60"></div>
+    <div class="absolute inset-0 scrim"></div>
+    <div class="relative max-w-6xl mx-auto w-full px-5 pt-40 pb-20 md:pb-28">
+      <p class="flex items-center gap-3 text-amber font-display uppercase tracking-[0.2em] text-sm mb-6 reveal">
+        <span class="inline-block w-2 h-2 rounded-sm bg-amber"></span>
+        430 N Berry Street, Brea, CA
+      </p>
+      <h1 class="font-display font-extrabold uppercase leading-[0.95] text-5xl sm:text-6xl lg:text-7xl max-w-4xl reveal">
+        Collision repair,<br>done to pre-accident standard.
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-bone/90 max-w-xl reveal">
+        Family-owned in Brea since 1979. Certified technicians, precise paint matching, and help with your insurance claim.
+      </p>
+      <div class="mt-9 flex flex-wrap items-center gap-4 reveal">
+        <a href="https://breaautobody.com/contact/" class="inline-flex items-center gap-2 bg-amber text-ink font-display font-extrabold uppercase tracking-wide text-base px-6 py-3.5 rounded-sm hover:bg-amber/90 transition-colors">
+          Get a free estimate
+        </a>
+        <a href="#services" class="inline-flex items-center gap-2 border border-bone/40 text-bone font-display font-extrabold uppercase tracking-wide text-base px-6 py-3.5 rounded-sm hover:border-amber hover:text-amber transition-colors">
+          What we do
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES: primary asymmetric split -->
+  <section id="services" class="bg-ink py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-7 order-2 lg:order-1 reveal">
+        <p class="font-display uppercase tracking-[0.2em] text-amber text-sm mb-5">What we do</p>
+        <h2 class="font-display font-extrabold uppercase leading-[0.95] text-4xl md:text-5xl mb-4">
+          Every dent, frame, and panel back where it should be.
+        </h2>
+        <p class="text-bone/80 text-lg max-w-xl mb-10">
+          We use advanced diagnostic tools and modern machinery for precise inspections and repairs. From compact cars to heavy-duty trucks, our skilled team handles collision damage on all makes and models.
+        </p>
+        <div class="space-y-8">
+          <div class="flex gap-5">
+            <span class="font-display font-extrabold text-amber text-2xl leading-none pt-1">01</span>
+            <div>
+              <h3 class="font-display font-extrabold uppercase tracking-wide text-xl mb-1.5">Collision &amp; frame repair</h3>
+              <p class="text-bone/75">Trusted technicians restore your car to pre-accident condition, with modern equipment used for precise inspection and repair.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-extrabold text-amber text-2xl leading-none pt-1">02</span>
+            <div>
+              <h3 class="font-display font-extrabold uppercase tracking-wide text-xl mb-1.5">Paint that matches</h3>
+              <p class="text-bone/75">From a single scratch to a full refinish, color matching and paint repair that blends with the rest of your vehicle.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-extrabold text-amber text-2xl leading-none pt-1">03</span>
+            <div>
+              <h3 class="font-display font-extrabold uppercase tracking-wide text-xl mb-1.5">The paperwork, handled</h3>
+              <p class="text-bone/75">Fast estimates, insurance assistance, and quality workmanship on every job.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-5 order-1 lg:order-2 reveal">
+        <figure class="relative">
+          <img src="https://breaautobody.com/wp-content/uploads/2025/06/car-paint-repair-brea-auto.png" alt="Paint repair work on a car at Brea Auto Body" class="w-full object-cover rounded-sm">
+          <figcaption class="mt-3 text-sm text-bone/50">Paint repair in Brea, CA</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS: reversed split, different angle -->
+  <section id="process" class="bg-coal py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-5 reveal">
+        <h2 class="font-display font-extrabold uppercase leading-[0.95] text-4xl md:text-5xl mb-5">
+          How a repair moves.
+        </h2>
+        <p class="text-bone/80 text-lg mb-9">
+          Four steps, no runaround. You know what is happening to your car at every stage, and you hear from us before each one.
+        </p>
+        <ol class="space-y-6">
+          <li>
+            <p class="font-display font-extrabold text-amber text-sm tracking-wide mb-1">STEP 1</p>
+            <p class="text-bone/85"><strong class="text-bone font-semibold">Free estimate.</strong> Walk in or call. We give you a fast, written answer on the job.</p>
+          </li>
+          <li>
+            <p class="font-display font-extrabold text-amber text-sm tracking-wide mb-1">STEP 2</p>
+            <p class="text-bone/85"><strong class="text-bone font-semibold">Inspection.</strong> Advanced diagnostic tools and modern machinery measure the damage precisely.</p>
+          </li>
+          <li>
+            <p class="font-display font-extrabold text-amber text-sm tracking-wide mb-1">STEP 3</p>
+            <p class="text-bone/85"><strong class="text-bone font-semibold">The work.</strong> Frame, panels, and paint, repaired to pre-accident condition by certified technicians.</p>
+          </li>
+          <li>
+            <p class="font-display font-extrabold text-amber text-sm tracking-wide mb-1">STEP 4</p>
+            <p class="text-bone/85"><strong class="text-bone font-semibold">Handback.</strong> Insurance assistance if you have a claim, then a final check before you drive off.</p>
+          </li>
+        </ol>
+      </div>
+      <div class="lg:col-span-7 reveal">
+        <figure class="relative">
+          <img src="https://breaautobody.com/wp-content/uploads/2024/09/Car-Scratch-Repair-in-Brea.png" alt="Scratch repair on a car body panel in Brea" class="w-full object-cover rounded-sm">
+          <figcaption class="mt-3 text-sm text-bone/50">Scratch repair, Brea, CA</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE WORK: editorial photo grid, breaks the split rhythm -->
+  <section id="work" class="bg-ink py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="font-display font-extrabold uppercase leading-[0.95] text-4xl md:text-5xl mb-4 max-w-2xl reveal">
+        The work, straight from the bay.
+      </h2>
+      <p class="text-bone/70 text-lg mb-12 max-w-2xl reveal">
+        Photos of real repairs from the shop's own service pages. This is what leaves here.
+      </p>
+      <div class="grid grid-cols-2 md:grid-cols-12 gap-4">
+        <figure class="col-span-2 md:col-span-7 reveal">
+          <img src="https://breaautobody.com/wp-content/uploads/2025/07/car-frame-2.jpg" alt="Frame straightening on a vehicle at Brea Auto Body" class="w-full h-full object-cover rounded-sm">
+          <figcaption class="mt-3 text-sm text-bone/50">Frame straightening</figcaption>
+        </figure>
+        <figure class="col-span-2 md:col-span-5 reveal">
+          <img src="https://breaautobody.com/wp-content/uploads/2025/07/Car-Paint-Repair-in-Brea2.png" alt="Paint repair finished on a car in Brea" class="w-full h-full object-cover rounded-sm">
+          <figcaption class="mt-3 text-sm text-bone/50">Paint repair</figcaption>
+        </figure>
+        <figure class="col-span-1 md:col-span-4 reveal">
+          <img src="https://breaautobody.com/wp-content/uploads/2025/07/bumper-repair3.png" alt="Bumper repair at Brea Auto Body" class="w-full h-full object-cover rounded-sm">
+          <figcaption class="mt-3 text-sm text-bone/50">Bumper repair</figcaption>
+        </figure>
+        <figure class="col-span-1 md:col-span-4 reveal">
+          <img src="https://breaautobody.com/wp-content/uploads/2024/09/car-accident.jpg" alt="Collision damage being assessed on a car" class="w-full h-full object-cover rounded-sm">
+          <figcaption class="mt-3 text-sm text-bone/50">Collision repair</figcaption>
+        </figure>
+        <figure class="col-span-1 md:col-span-4 reveal">
+          <img src="https://breaautobody.com/wp-content/uploads/2019/03/virgieanddave_small.jpg" alt="Owners Virginia and Dave outside Brea Auto Body" class="w-full h-full object-cover rounded-sm">
+          <figcaption class="mt-3 text-sm text-bone/50">Virginia and Dave, the owners</figcaption>
+        </figure>
+        <figure class="col-span-2 md:col-span-7 reveal">
+          <img src="https://breaautobody.com/wp-content/uploads/2025/07/about-1.jpg" alt="Inside the Brea Auto Body shop" class="w-full h-full object-cover rounded-sm">
+          <figcaption class="mt-3 text-sm text-bone/50">The shop at 430 N Berry Street</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND STORY: editorial text block, offset two columns -->
+  <section class="bg-coal py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-10 lg:gap-16 items-end">
+      <div class="lg:col-span-7 reveal">
+        <h2 class="font-display font-extrabold uppercase leading-[0.95] text-4xl md:text-6xl">
+          Family-owned.<br>Brea.<br>Since 1979.
+        </h2>
+      </div>
+      <div class="lg:col-span-5 reveal">
+        <p class="text-bone/80 text-lg leading-relaxed mb-6">
+          Brea Auto Body is run by Virginia and Dave, who have put over 47 years of experience and certified technicians into the shop at 430 N Berry Street.
+        </p>
+        <p class="text-bone/80 text-lg leading-relaxed mb-6">
+          In their own words, from the shop's About page: "We're Leaders in Customer Service in Collision Repair."
+        </p>
+        <a href="https://breaautobody.com/about-us/" class="inline-flex items-center gap-2 font-display font-extrabold uppercase tracking-wide text-amber hover:text-amber/80 transition-colors">
+          Read the full story
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section id="credentials" class="bg-ink py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-5">
+      <p class="font-display uppercase tracking-[0.2em] text-amber text-sm mb-4 reveal">The workshop</p>
+      <h2 class="font-display font-extrabold uppercase leading-[0.95] text-4xl md:text-5xl mb-12 max-w-2xl reveal">
+        The shop posts its credentials. So do we.
+      </h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-coal border border-seam rounded-sm p-7 reveal">
+          <p class="font-display font-extrabold text-5xl text-amber leading-none mb-3">1979</p>
+          <p class="text-bone/75">The year the family shop opened. Still family-owned and operated in Brea.</p>
+        </div>
+        <div class="bg-coal border border-seam rounded-sm p-7 reveal">
+          <p class="font-display font-extrabold text-5xl text-amber leading-none mb-3">47+</p>
+          <p class="text-bone/75">Years of experience, with certified technicians on every job.</p>
+        </div>
+        <div class="bg-coal border border-seam rounded-sm p-7 reveal">
+          <img src="https://breaautobody.com/wp-content/uploads/2025/07/blue-seal.png" alt="ASE Blue Seal certification badge" class="h-12 w-auto object-contain mb-3">
+          <p class="text-bone/75">ASE Blue Seal certified, as posted on the About page.</p>
+        </div>
+        <div class="bg-coal border border-seam rounded-sm p-7 reveal">
+          <img src="https://breaautobody.com/wp-content/uploads/2025/07/Green-Station-sign.png" alt="California Green Station certification sign" class="h-12 w-auto object-contain mb-3">
+          <p class="text-bone/75">CA Green Station certified, as posted on the About page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="bg-amber text-ink">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20 flex flex-col md:flex-row md:items-center justify-between gap-8">
+      <div class="reveal">
+        <h2 class="font-display font-extrabold uppercase leading-[0.95] text-4xl md:text-5xl mb-3 max-w-xl">
+          Get your free estimate.
+        </h2>
+        <p class="text-ink/80 text-lg max-w-xl">
+          Call the shop or send your photos. Fast estimates, insurance assistance, and quality workmanship.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3 reveal">
+        <a href="tel:7149901500" class="font-display font-extrabold text-3xl md:text-4xl tracking-tight hover:text-ink/70 transition-colors">(714) 990-1500</a>
+        <a href="mailto:info@breaautobody.com" class="text-ink/80 hover:text-ink font-medium">info@breaautobody.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink border-t border-seam">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid grid-cols-2 md:grid-cols-4 gap-10">
+      <div class="col-span-2 md:col-span-1">
+        <span class="inline-block bg-bone rounded-sm p-1.5 mb-4"><img src="https://breaautobody.com/wp-content/uploads/2025/06/brea_auto_body_logo.jpg" alt="Brea Auto Body logo" class="h-9 w-auto object-contain"></span>
+        <p class="text-bone/70 text-sm leading-relaxed">
+          430 N Berry St<br>Brea, CA 92821
+        </p>
+        <p class="text-bone/50 text-sm mt-2">Family-owned since 1979.</p>
+      </div>
+      <div>
+        <h3 class="font-display font-extrabold uppercase tracking-wide text-sm text-bone mb-4">Explore</h3>
+        <ul class="space-y-2.5 text-bone/70 text-sm">
+          <li><a href="https://breaautobody.com/" class="hover:text-amber transition-colors">Home</a></li>
+          <li><a href="https://breaautobody.com/about-us/" class="hover:text-amber transition-colors">About</a></li>
+          <li><a href="https://breaautobody.com/contact/" class="hover:text-amber transition-colors">Contact</a></li>
+          <li><a href="#services" class="hover:text-amber transition-colors">Services</a></li>
+          <li><a href="#work" class="hover:text-amber transition-colors">The work</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-display font-extrabold uppercase tracking-wide text-sm text-bone mb-4">Contact</h3>
+        <ul class="space-y-2.5 text-bone/70 text-sm">
+          <li><a href="tel:7149901500" class="hover:text-amber transition-colors">(714) 990-1500</a></li>
+          <li><a href="mailto:info@breaautobody.com" class="hover:text-amber transition-colors break-all">info@breaautobody.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-display font-extrabold uppercase tracking-wide text-sm text-bone mb-4">Follow</h3>
+        <ul class="space-y-2.5 text-bone/70 text-sm">
+          <li><a href="https://www.facebook.com/BreaAutoBody" class="hover:text-amber transition-colors">Facebook</a></li>
+          <li><a href="https://www.instagram.com/breaautobody/" class="hover:text-amber transition-colors">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-seam">
+      <div class="max-w-6xl mx-auto px-5 py-6 text-sm text-bone/40">
+        Brea Auto Body Inc. · Collision repair in Brea, CA · Since 1979
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms';
+      io.observe(el);
+    });
+  </script>
+</body>
+</html>
