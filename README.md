@@ -327,3 +327,5 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Maine Horse Vet](https://jared-the-automator.github.io/redesign-portfolio/mainehorsevet.com/) | Equine veterinary practice: digital radiography, dentistry, mare and foal care and pre-purchase exams | Maine |
 | [Macon County Outfitters](https://jared-the-automator.github.io/redesign-portfolio/maconcountyoutfitters.com/) | Guided whitetail and upland bird (pheasant, quail) hunts on 6,000+ private acres, with lodge stays | Macon County, MO |
 | [Ben Bushey Mechanics](https://jared-the-automator.github.io/redesign-portfolio/mobilemechanicmaine.com/) | Mobile and in-shop mechanic for boats, cars, and heavy equipment, certified technicians | Maine |
+| [Maryville Small Animal Medical Center](https://jared-the-automator.github.io/redesign-portfolio/maryvillesamc.com/) | Small animal veterinary hospital, independent, serving since 1964 | Maryville, TN |
+| [Discovery Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/discoveryflyfishing.com/) | Fly shop, fly casting instruction & fly tying materials | Portland, OR |
