@@ -331,3 +331,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Discovery Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/discoveryflyfishing.com/) | Fly shop, fly casting instruction & fly tying materials | Portland, OR |
 | [River Bend Propane Inc](https://jared-the-automator.github.io/redesign-portfolio/riverbendpropane.com/) | Propane delivery, installation, repair and conversion, locally owned since 2024 | River Bend, North Georgia |
 | [seethis.earth](https://jared-the-automator.github.io/redesign-portfolio/seethis.earth/) | Survival and preparedness books, classic literature, and printed goods from an independent press | Not stated (online shop) |
+| [Nick's Diesel Repair](https://jared-the-automator.github.io/redesign-portfolio/nicksdieselrepair.com/) | Mobile diesel repair and service, certified diesel tech, on-site diagnostics and repairs at the truck | 727 area, Florida |
