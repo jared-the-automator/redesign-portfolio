@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>seethis.earth, Survival Books and the Printed Word</title>
+  <meta name="description" content="An independent press and shop curating survival and preparedness guides, classic literature, poetry, and printed goods. Things worth paying attention to." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0f1824',
+            inkalt: '#16202e',
+            paper: '#f4f7fa',
+            mute: '#94a3b8',
+            accent: '#5f89ab'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          borderRadius: {
+            brand: '2px'
+          }
+        }
+      }
+    };
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "seethis.earth",
+    "url": "https://seethis.earth/",
+    "email": "contact@seethis.earth",
+    "description": "An independent press and shop curating survival and preparedness guides, classic literature, poetry, and printed goods. Things worth paying attention to.",
+    "sameAs": ["https://gemspress.earth"]
+  }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-ink text-paper font-body antialiased">
+
+  <header class="sticky top-0 z-50 bg-ink/95 backdrop-blur border-b border-mute/10">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="https://seethis.earth/" class="font-display text-xl font-bold text-paper tracking-tight">seethis<span class="text-accent">.earth</span></a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-mute">
+        <a href="#books" class="hover:text-paper transition-colors">Books</a>
+        <a href="#story" class="hover:text-paper transition-colors">The Shelf</a>
+        <a href="https://seethis.earth/about/" class="hover:text-paper transition-colors">About</a>
+      </nav>
+      <a href="mailto:contact@seethis.earth" class="bg-accent text-ink text-sm font-semibold px-5 py-2.5 rounded-brand">Get in touch</a>
+    </div>
+  </header>
+
+  <section class="relative min-h-[100dvh] flex items-end overflow-hidden">
+    <img src="https://seethis.earth/wp-content/uploads/sequoias.png" alt="Towering sequoia trunks rising into soft light" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-ink/85"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/25"></div>
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-6 pb-20 pt-44">
+      <p class="text-accent tracking-[0.28em] text-xs font-semibold uppercase mb-7">Independent Press &middot; Survival &middot; Literature</p>
+      <h1 class="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-paper leading-[1.04] max-w-3xl">The shelf that outlasts the storm.</h1>
+      <p class="text-mute text-lg md:text-xl mt-7 max-w-xl leading-relaxed">Survival guides, classic literature, and printed goods from an independent press. Chosen slowly, built to last.</p>
+      <div class="flex flex-wrap gap-4 mt-11">
+        <a href="#books" class="bg-accent text-ink font-semibold px-7 py-3.5 rounded-brand hover:brightness-110 transition">Browse the books</a>
+        <a href="mailto:contact@seethis.earth" class="border border-mute/40 text-paper font-medium px-7 py-3.5 rounded-brand hover:bg-inkalt transition">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="books" class="py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
+        <div class="md:col-span-5 reveal">
+          <img src="https://seethis.earth/wp-content/uploads/SHTF_Cover-centered.jpg" alt="What to Expect When the SHTF: An FAQ Guide to Systemic Collapse Preparedness" class="w-full rounded-brand shadow-2xl shadow-black/40" />
+        </div>
+        <div class="md:col-span-7 reveal">
+          <p class="text-accent text-sm font-semibold mb-4 tracking-wide">The survival shelf</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-paper leading-tight">Preparedness, in the pages.</h2>
+          <p class="text-mute text-lg mt-5 leading-relaxed max-w-xl">The shelf leads with the books people reach for when the lights go out. Practical, unsentimental, and written by people who have read the manuals.</p>
+          <div class="mt-10 space-y-7">
+            <div class="flex gap-5">
+              <span class="font-display text-2xl font-bold text-accent shrink-0">01</span>
+              <div>
+                <h3 class="text-paper font-semibold text-lg">What to Expect When the SHTF</h3>
+                <p class="text-mute mt-1 leading-relaxed">An FAQ guide to systemic collapse preparedness. The questions people ask in the first week, answered plainly.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-2xl font-bold text-accent shrink-0">02</span>
+              <div>
+                <h3 class="text-paper font-semibold text-lg">Where There Is No Doctor</h3>
+                <p class="text-mute mt-1 leading-relaxed">Field medicine for when the nearest clinic is a long way off. A staple of any preparedness shelf.</p>
+              </div>
+            </div>
+            <div class="flex gap-5">
+              <span class="font-display text-2xl font-bold text-accent shrink-0">03</span>
+              <div>
+                <h3 class="text-paper font-semibold text-lg">The Simple Sabotage Field Manual</h3>
+                <p class="text-mute mt-1 leading-relaxed">A U.S. government classic on civil defense, reissued for readers who want the original source.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 md:py-32 bg-inkalt">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
+        <div class="md:col-span-7 order-1 md:order-2 reveal">
+          <p class="text-accent text-sm font-semibold mb-4 tracking-wide">The literary half</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-paper leading-tight">The other half of the shelf.</h2>
+          <p class="text-mute text-lg mt-5 leading-relaxed max-w-xl">Between the survival manuals sits the canon. Poetry, essays, and the long letters people keep returning to, printed and bound.</p>
+          <p class="text-mute text-lg mt-5 leading-relaxed max-w-xl">Dylan Thomas. Henry David Thoreau. The autobiography of Mother Jones. The shelf holds the words people reread, right next to the books they need in an emergency.</p>
+        </div>
+        <div class="md:col-span-5 order-2 md:order-1 reveal">
+          <img src="https://seethis.earth/wp-content/uploads/Dylan-Thomas-featured.jpg" alt="A Love Letter from Dylan Thomas" class="w-full rounded-brand shadow-2xl shadow-black/40" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl reveal">
+        <p class="text-accent tracking-[0.28em] text-xs font-semibold uppercase mb-5">The shelf, in pictures</p>
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-paper leading-tight">A library with a point of view.</h2>
+        <p class="text-mute text-lg mt-5 leading-relaxed">Every title is chosen for a reason. The shelf spans field medicine and the classics, encyclopedias and the people who changed their era. A few of the covers that make it up.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-6 mt-14">
+        <figure class="reveal">
+          <img src="https://seethis.earth/wp-content/uploads/mother-jones-portrait.png" alt="The Autobiography of Mother Jones" loading="lazy" class="w-full aspect-[4/5] object-cover rounded-brand" />
+          <figcaption class="text-mute text-sm mt-3">The Autobiography of Mother Jones</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://seethis.earth/wp-content/uploads/ann-landers-featured.jpg" alt="Eppie Lederer Becomes Ann Landers" loading="lazy" class="w-full aspect-[4/5] object-cover rounded-brand" />
+          <figcaption class="text-mute text-sm mt-3">Eppie Lederer Becomes Ann Landers</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://seethis.earth/wp-content/uploads/Isabel-de-Godin-featured.jpg" alt="Adventures of Madame Godin in the Country of the Amazons" loading="lazy" class="w-full aspect-[4/5] object-cover rounded-brand" />
+          <figcaption class="text-mute text-sm mt-3">Madame Godin in the Country of the Amazons</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://seethis.earth/wp-content/uploads/fibonacci-featured.jpg" alt="Flower Spirals and the Fibonacci Sequence" loading="lazy" class="w-full aspect-[4/5] object-cover rounded-brand" />
+          <figcaption class="text-mute text-sm mt-3">Flower Spirals and the Fibonacci Sequence</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://seethis.earth/wp-content/uploads/folkscanomy-encyclopedias-featured.png" alt="Folkscanomy Encyclopedias and Compendiums of Knowledge" loading="lazy" class="w-full aspect-[4/5] object-cover rounded-brand" />
+          <figcaption class="text-mute text-sm mt-3">Encyclopedias and compendiums of knowledge</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="https://seethis.earth/wp-content/uploads/folkscanomy.png" alt="The Folkscanomy shelf" loading="lazy" class="w-full aspect-[4/5] object-cover rounded-brand" />
+          <figcaption class="text-mute text-sm mt-3">The Folkscanomy shelf</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 md:py-32 bg-inkalt border-t border-mute/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 md:gap-12">
+        <div class="reveal">
+          <span class="inline-block w-10 h-10 rounded-brand bg-accent/15 text-accent font-display font-bold text-lg flex items-center justify-center">1</span>
+          <h3 class="text-paper font-semibold text-xl mt-5">Its own press</h3>
+          <p class="text-mute mt-2 leading-relaxed">seethis.earth publishes through gemspress.earth, its own independent press. The titles are picked, not licensed from a catalog.</p>
+        </div>
+        <div class="reveal">
+          <span class="inline-block w-10 h-10 rounded-brand bg-accent/15 text-accent font-display font-bold text-lg flex items-center justify-center">2</span>
+          <h3 class="text-paper font-semibold text-xl mt-5">Books and printed goods</h3>
+          <p class="text-mute mt-2 leading-relaxed">Ebooks, paperbacks, and hardbacks, plus the mugs and posters that go with the shelf. More than one way to keep a favorite line.</p>
+        </div>
+        <div class="reveal">
+          <span class="inline-block w-10 h-10 rounded-brand bg-accent/15 text-accent font-display font-bold text-lg flex items-center justify-center">3</span>
+          <h3 class="text-paper font-semibold text-xl mt-5">Two shelves, one view</h3>
+          <p class="text-mute mt-2 leading-relaxed">Survival and preparedness sit next to the canon. The manual for the emergency, and the poetry you reread in between.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-inkalt border border-mute/15 rounded-brand px-8 py-14 md:px-14 md:py-16 reveal">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-paper leading-tight">Questions about the shelf?</h2>
+        <p class="text-mute text-lg mt-4 max-w-2xl leading-relaxed">Order questions, printing questions, or a title that deserves a place on the shelf. The shop reads its own mail.</p>
+        <div class="flex flex-wrap gap-4 mt-9">
+          <a href="mailto:contact@seethis.earth" class="bg-accent text-ink font-semibold px-7 py-3.5 rounded-brand hover:brightness-110 transition">Email the shop</a>
+          <a href="#books" class="border border-mute/40 text-paper font-medium px-7 py-3.5 rounded-brand hover:bg-ink transition">Back to the books</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-mute/10 bg-inkalt">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <div class="grid md:grid-cols-12 gap-10">
+        <div class="md:col-span-5">
+          <p class="font-display text-xl font-bold text-paper">seethis<span class="text-accent">.earth</span></p>
+          <p class="text-mute mt-4 text-sm leading-relaxed max-w-xs">Survival guides, classic literature, and printed goods from an independent press. Things worth paying attention to.</p>
+        </div>
+        <div class="md:col-span-3">
+          <p class="text-paper text-sm font-semibold">Browse</p>
+          <ul class="mt-4 space-y-3 text-sm text-mute">
+            <li><a href="#books" class="hover:text-paper transition-colors">The survival shelf</a></li>
+            <li><a href="#story" class="hover:text-paper transition-colors">The shelf, in pictures</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-paper text-sm font-semibold">Site</p>
+          <ul class="mt-4 space-y-3 text-sm text-mute">
+            <li><a href="https://seethis.earth/" class="hover:text-paper transition-colors">Home</a></li>
+            <li><a href="https://seethis.earth/about/" class="hover:text-paper transition-colors">About</a></li>
+            <li><a href="https://seethis.earth/contact/" class="hover:text-paper transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-paper text-sm font-semibold">Contact</p>
+          <ul class="mt-4 space-y-3 text-sm text-mute">
+            <li><a href="mailto:contact@seethis.earth" class="hover:text-paper transition-colors">contact@seethis.earth</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-mute/10 mt-12 pt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-mute">
+        <p>&copy; seethis.earth</p>
+        <p>Things worth paying attention to.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
