@@ -329,3 +329,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Ben Bushey Mechanics](https://jared-the-automator.github.io/redesign-portfolio/mobilemechanicmaine.com/) | Mobile and in-shop mechanic for boats, cars, and heavy equipment, certified technicians | Maine |
 | [Maryville Small Animal Medical Center](https://jared-the-automator.github.io/redesign-portfolio/maryvillesamc.com/) | Small animal veterinary hospital, independent, serving since 1964 | Maryville, TN |
 | [Discovery Fly Fishing](https://jared-the-automator.github.io/redesign-portfolio/discoveryflyfishing.com/) | Fly shop, fly casting instruction & fly tying materials | Portland, OR |
+| [River Bend Propane Inc](https://jared-the-automator.github.io/redesign-portfolio/riverbendpropane.com/) | Propane delivery, installation, repair and conversion, locally owned since 2024 | River Bend, North Georgia |
