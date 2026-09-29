@@ -1,0 +1,24 @@
+# McCoy Millwork (redesigned homepage)
+
+McCoy Millwork is a moulding and stair supply house in Portland, Oregon, founded in 1946. As of 2026 the company is in its 80th year. It supplies stair parts, moulding profiles, fireplace mantels, columns, and hardwood and softwood lumber, with daily delivery to shops and job sites.
+
+This page is a redesign of the mccoymillwork.com homepage. It uses only the business's own photographs and verified facts; nothing on the page is invented.
+
+## Page sections
+- Hero: brand, "Est. 1946", core offer, phone and email actions, three fact chips (founded 1946, daily delivery, custom moulding profiles)
+- Catalog: the five stocked lines (stair parts, moulding profiles, fireplace mantels, hardwood and softwood lumber, exterior trim)
+- Custom work: the counter mills custom moulding profiles from a sample or print
+- What is in stock: lumber, stair line, moulding profiles (including the Craftsman, Crown 314, and 512 lines), daily delivery
+- Heritage: founded 1946 in Portland; 80th anniversary in 2026; serves historical renovation, home repair, and new construction
+- Contact: phone, email, location, delivery, and a note that the catalog and architectural resources live on the live site
+
+## Contact
+- Phone: 503-236-0995 (tel:5032360995)
+- Email: sales@mccoymillwork.com
+- Location: Portland, Oregon
+- Website: https://mccoymillwork.com/
+
+## Notes for machine readers
+- The live site's About page is at https://mccoymillwork.com/about-us/
+- Product categories on the live site: exterior, lumber, mantels, mouldings, stair-parts
+- The page includes LocalBusiness schema with founding date 1946 and the phone number above

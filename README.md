@@ -334,3 +334,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Nick's Diesel Repair](https://jared-the-automator.github.io/redesign-portfolio/nicksdieselrepair.com/) | Mobile diesel repair and service, certified diesel tech, on-site diagnostics and repairs at the truck | 727 area, Florida |
 | [Yankee Service Company](https://jared-the-automator.github.io/redesign-portfolio/yankeeserviceco.com/) | Waste oil furnaces, coil tube boilers & burners, sales/parts/service, Connecticut's exclusive Clean Burn distributor | Connecticut |
 | [Hidden Basin Outfitters](https://jared-the-automator.github.io/redesign-portfolio/hiddenbasin.com/) | Guided elk, moose, big-horn sheep and deer hunts with pack horses | Jackson Hole, WY |
+| [McCoy Millwork](https://jared-the-automator.github.io/redesign-portfolio/mccoymillwork.com/) | Moulding and stair supply, custom millwork, lumber and mantels, serving Portland since 1946 | Portland, OR |
