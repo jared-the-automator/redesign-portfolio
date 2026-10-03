@@ -341,3 +341,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [FuneralVision.com](https://jared-the-automator.github.io/redesign-portfolio/funeralvision.com/) | News and advertising publication for the funeral industry | Not stated (online publication) |
 | [GripOutdoor.com](https://jared-the-automator.github.io/redesign-portfolio/gripoutdoor.com/) | Outdoor trip-planning notes: costs, access and what to expect for paddling, camping, fishing and birdwatching | Not stated on site |
 | [Cape Small Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/capesmallac.com/) | Small animal veterinary clinic: wellness, dental, surgery, diagnostics and end-of-life care | Cape Girardeau, MO |
+| [Cradle of Man Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/cradleofmantaxidermy.com/) | Fine trophy taxidermy: shoulder, pedestal, full and skull mounts, tanning and custom displays | South Africa |
