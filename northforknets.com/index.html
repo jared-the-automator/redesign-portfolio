@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>North Fork Nets | Redesign Concept</title>
+  <meta name="description" content="A redesign concept for North Fork Nets, the Ashton, Idaho workshop making handmade landing nets.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lodge: { 950: '#0d1912', 900: '#13241a', 800: '#1b3123', 700: '#25402e', 600: '#315240' },
+            gold:  { DEFAULT: '#c9a24b', 300: '#dcc07c', 600: '#a8842f' },
+            bone:  { DEFAULT: '#f0e9d8', 300: '#e2d8bf' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Instrument Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "North Fork Nets",
+    "description": "Handmade fishing landing and trek nets built in Ashton, Idaho.",
+    "url": "https://northforknets.com/",
+    "email": "northforknets@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ashton",
+      "addressRegion": "ID",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.facebook.com/NorthForkNets",
+      "https://www.instagram.com/northforknets/"
+    ]
+  }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease-out, transform .7s ease-out; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-lodge-950 text-bone font-sans antialiased">
+
+  <!-- Nav -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-lodge-950/90 backdrop-blur border-b border-lodge-700/40">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between h-16 px-5">
+      <a href="https://northforknets.com/" class="flex items-center" aria-label="North Fork Nets home">
+        <span class="bg-bone rounded-sm p-1.5">
+          <img src="https://northforknets.com/wp-content/uploads/2025/11/cropped-NFN_Main-Logo-150px-trns-blk-blu.png" alt="North Fork Nets" class="h-9 w-auto rounded-sm">
+        </span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-bone/80">
+        <a href="https://northforknets.com/" class="hover:text-gold-300 transition-colors">Home</a>
+        <a href="#nets" class="hover:text-gold-300 transition-colors">Nets</a>
+        <a href="https://northforknets.com/about/" class="hover:text-gold-300 transition-colors">About</a>
+        <a href="https://northforknets.com/contact/" class="hover:text-gold-300 transition-colors">Contact</a>
+      </div>
+      <a href="mailto:northforknets@gmail.com" class="bg-gold text-lodge-950 text-sm font-semibold px-4 py-2 rounded-sm hover:bg-gold-300 transition-colors">Email the shop</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[100dvh] flex items-end overflow-hidden">
+    <img src="https://northforknets.com/wp-content/uploads/2025/11/cropped-Header-Image-01.jpg" alt="Angler landing a fish with a North Fork Net at a river in Idaho" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-lodge-950/70"></div>
+    <div class="relative max-w-6xl mx-auto px-5 pb-24 pt-32 w-full">
+      <p class="uppercase tracking-[0.3em] text-xs text-gold mb-5">Ashton, Idaho</p>
+      <h1 class="font-display font-bold text-bone text-5xl md:text-7xl leading-[1.05] max-w-3xl">The right net, when it matters.</h1>
+      <p class="mt-6 text-lg text-bone/85 max-w-xl">Lightweight aluminum frames, fish friendly rubber coated bags, and a build that handles season after season on the water.</p>
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="#nets" class="bg-gold text-lodge-950 font-semibold px-6 py-3 rounded-sm hover:bg-gold-300 transition-colors">See the nets</a>
+        <a href="https://northforknets.com/contact/" class="border border-bone/40 text-bone px-6 py-3 rounded-sm hover:border-gold hover:text-gold-300 transition-colors">Contact the shop</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary product section -->
+  <section id="nets" class="py-24 md:py-32 bg-lodge-950">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-5 reveal">
+        <img src="https://northforknets.com/wp-content/uploads/2023/11/Wade-Net-Cropped-Bonnie-Sue-Blue.jpg" alt="North Fork Nets Wade Net in BonnieSue Blue displayed among pines and grass" class="w-full object-cover rounded-sm aspect-[4/5]">
+      </div>
+      <div class="md:col-span-7 reveal">
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-bone max-w-lg">Nets for the way you fish</h2>
+        <p class="mt-4 text-bone/75 text-lg max-w-lg">One net per job: boat, wade, trek, or big water. The same build in all of them, from the same workshop.</p>
+        <div class="mt-10 space-y-8">
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-gold text-3xl leading-none shrink-0">01</span>
+            <div>
+              <h3 class="font-semibold text-bone text-lg">Lightweight aluminum frame</h3>
+              <p class="mt-1 text-bone/70">Light enough to carry all day, strong enough for your best fish.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-gold text-3xl leading-none shrink-0">02</span>
+            <div>
+              <h3 class="font-semibold text-bone text-lg">Fish friendly rubber coated bag</h3>
+              <p class="mt-1 text-bone/70">Built for catch and release, from the first scoop to the quick photo.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <span class="font-display font-bold text-gold text-3xl leading-none shrink-0">03</span>
+            <div>
+              <h3 class="font-semibold text-bone text-lg">Five sizes, nine colors</h3>
+              <p class="mt-1 text-bone/70">From boat net to XL wade net, in BonnieSue Blue to Blaze Orange. Pick the size and color that fit the way you fish.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary section: process, reversed split -->
+  <section id="craft" class="py-24 md:py-32 bg-lodge-900">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 order-2 md:order-1 reveal">
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-bone max-w-lg">Built the slow way</h2>
+        <p class="mt-5 text-bone/75 text-lg max-w-xl">Every net starts in one workshop in Ashton, Idaho. No factory, no middle step: raw aluminum goes in, finished nets come out.</p>
+        <p class="mt-4 text-bone/75 text-lg max-w-xl">Frames are powder coated in nine colors, then fitted with the rubber coated net bag before the whole build leaves the shop.</p>
+        <img src="https://northforknets.com/wp-content/uploads/2026/06/Color-Swatch-Graphic-for-Net-Colors-1024x282.png" alt="The nine powder coat colors available for North Fork Nets" class="mt-8 w-full max-w-lg object-cover rounded-sm">
+      </div>
+      <div class="md:col-span-5 order-1 md:order-2 reveal">
+        <img src="https://northforknets.com/wp-content/uploads/2026/06/Wade-Net-handle.jpg" alt="Close up of a North Fork Nets handle" class="w-full object-cover rounded-sm aspect-[4/5]">
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery: field photography -->
+  <section id="gallery" class="py-24 md:py-32 bg-lodge-950">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="reveal max-w-2xl">
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-bone">Proof from the field</h2>
+        <p class="mt-4 text-bone/75 text-lg">Anglers send these in all season, from the first warm days to the last run of kings. Every one is a net that did its job.</p>
+      </div>
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-12 gap-4">
+        <img src="https://northforknets.com/wp-content/uploads/2023/11/IMG_3748-8.jpeg" alt="XL Boat Net in Misty Caramel with a large Brown Trout" class="reveal col-span-2 md:col-span-7 w-full h-64 md:h-96 object-cover rounded-sm">
+        <img src="https://northforknets.com/wp-content/uploads/2023/11/IMG_6532-8.jpeg" alt="Boat Net in Ink Black landing a trout" class="reveal col-span-2 md:col-span-5 w-full h-64 md:h-96 object-cover rounded-sm">
+        <img src="https://northforknets.com/wp-content/uploads/2025/05/BW-Big-Fish-04.png" alt="Big Water Net in Seafoam with a steelhead" class="reveal col-span-1 md:col-span-5 w-full h-64 md:h-80 object-cover rounded-sm">
+        <img src="https://northforknets.com/wp-content/uploads/2024/03/Trek_Net_Dove_Gray-scaled.jpg" alt="Trek Net in Dove Gray against barn wood" class="reveal col-span-1 md:col-span-7 w-full h-64 md:h-80 object-cover rounded-sm">
+        <img src="https://northforknets.com/wp-content/uploads/2026/07/About-Page-Gallery-01.jpg" alt="North Fork Nets in the field" class="reveal col-span-1 md:col-span-6 w-full h-56 md:h-72 object-cover rounded-sm">
+        <img src="https://northforknets.com/wp-content/uploads/2026/07/About-Page-Gallery-02.jpg" alt="North Fork Nets workshop work" class="reveal col-span-1 md:col-span-6 w-full h-56 md:h-72 object-cover rounded-sm">
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility: awards and facts -->
+  <section id="awards" class="py-24 md:py-32 bg-lodge-900">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-4 reveal">
+          <div class="flex flex-wrap items-start gap-4">
+            <img src="https://northforknets.com/wp-content/uploads/2026/02/2026-Badge-Small-267x300.png" alt="Best Net badge" class="w-28">
+            <img src="https://northforknets.com/wp-content/uploads/2026/02/Fly-Fusion-Cover-Small-852x1024.jpg" alt="Fly Fusion Magazine cover featuring North Fork Nets" class="w-40 rounded-sm">
+            <img src="https://northforknets.com/wp-content/uploads/2026/02/Fly-Fusion-Article-NFN-2026-Small-887x1024.png" alt="Fly Fusion Magazine article on North Fork Nets" class="w-40 rounded-sm">
+          </div>
+        </div>
+        <div class="md:col-span-8 reveal">
+          <p class="uppercase tracking-[0.3em] text-xs text-gold mb-5">Recognition</p>
+          <h2 class="font-display font-bold text-4xl md:text-5xl text-bone">Best Net, 2026 Gear Awards</h2>
+          <p class="mt-5 text-bone/75 text-lg max-w-2xl">Fly Fusion Magazine named a North Fork Net the Best Net in its 2026 Gear Awards. An Editor's Choice award came with it, and the review sits in the middle of a magazine about exactly this gear.</p>
+          <div class="mt-10 grid sm:grid-cols-3 gap-6">
+            <div class="bg-lodge-800/60 border border-lodge-700/50 rounded-sm p-5">
+              <h3 class="font-display font-bold text-gold-300 text-2xl">49 fly shops</h3>
+              <p class="mt-2 text-bone/70 text-sm leading-relaxed">North Fork Nets sit on the rack from Bozeman to the East Coast. The shop's own directory lists 49 of them.</p>
+            </div>
+            <div class="bg-lodge-800/60 border border-lodge-700/50 rounded-sm p-5">
+              <h3 class="font-display font-bold text-gold-300 text-2xl">One workshop</h3>
+              <p class="mt-2 text-bone/70 text-sm leading-relaxed">Every net is handmade in Ashton, Idaho, not a warehouse. The address is on the box.</p>
+            </div>
+            <div class="bg-lodge-800/60 border border-lodge-700/50 rounded-sm p-5">
+              <h3 class="font-display font-bold text-gold-300 text-2xl">Pro Program</h3>
+              <p class="mt-2 text-bone/70 text-sm leading-relaxed">Guides and outfitting services get their own program, built for clients who fish all day, every day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip -->
+  <section class="bg-bone text-lodge-950">
+    <div class="max-w-6xl mx-auto px-5 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+      <div class="reveal">
+        <h2 class="font-display font-bold text-4xl md:text-5xl text-lodge-950">Ready when the water is.</h2>
+        <p class="mt-3 text-lodge-900/80 text-lg max-w-xl">Questions on sizes, colors, or a custom build? The workshop reads every message.</p>
+      </div>
+      <div class="reveal flex flex-wrap gap-4 shrink-0">
+        <a href="mailto:northforknets@gmail.com" class="bg-lodge-950 text-bone font-semibold px-7 py-3.5 rounded-sm hover:bg-lodge-800 transition-colors">Email the shop</a>
+        <a href="https://northforknets.com/contact/" class="border-2 border-lodge-950 text-lodge-950 font-semibold px-7 py-3.5 rounded-sm hover:bg-lodge-950 hover:text-bone transition-colors">Contact form</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-lodge-950 border-t border-lodge-700/40">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid grid-cols-2 md:grid-cols-4 gap-10">
+      <div class="col-span-2 md:col-span-1">
+        <span class="bg-bone rounded-sm p-1.5 inline-block">
+          <img src="https://northforknets.com/wp-content/uploads/2025/11/cropped-NFN_Main-Logo-150px-trns-blk-blu.png" alt="North Fork Nets" class="h-9 w-auto rounded-sm">
+        </span>
+        <p class="mt-4 text-bone/60 text-sm leading-relaxed">Handmade landing and trek nets, built in Ashton, Idaho.</p>
+      </div>
+      <div>
+        <h3 class="text-bone font-semibold text-sm uppercase tracking-wider mb-4">Explore</h3>
+        <ul class="space-y-2.5 text-sm text-bone/70">
+          <li><a href="https://northforknets.com/" class="hover:text-gold-300 transition-colors">Home</a></li>
+          <li><a href="#nets" class="hover:text-gold-300 transition-colors">Nets</a></li>
+          <li><a href="https://northforknets.com/about/" class="hover:text-gold-300 transition-colors">About</a></li>
+          <li><a href="https://northforknets.com/contact/" class="hover:text-gold-300 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-bone font-semibold text-sm uppercase tracking-wider mb-4">Contact</h3>
+        <ul class="space-y-2.5 text-sm text-bone/70">
+          <li><a href="mailto:northforknets@gmail.com" class="hover:text-gold-300 transition-colors">northforknets@gmail.com</a></li>
+          <li>Ashton, Idaho</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-bone font-semibold text-sm uppercase tracking-wider mb-4">Follow</h3>
+        <ul class="space-y-2.5 text-sm text-bone/70">
+          <li><a href="https://www.facebook.com/NorthForkNets" class="hover:text-gold-300 transition-colors">Facebook</a></li>
+          <li><a href="https://www.instagram.com/northforknets/" class="hover:text-gold-300 transition-colors">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-lodge-700/40">
+      <div class="max-w-6xl mx-auto px-5 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-xs text-bone/50">
+        <span>&copy; 2026 North Fork Nets</span>
+        <span>Redesign concept by Bigger Fish</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
