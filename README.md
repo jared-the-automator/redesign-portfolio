@@ -340,3 +340,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Shoe Why](https://jared-the-automator.github.io/redesign-portfolio/shoewhy.com/) | Step-by-step cleaning, repair, and fit guides for boots, shoes, and socks | Not stated on site |
 | [FuneralVision.com](https://jared-the-automator.github.io/redesign-portfolio/funeralvision.com/) | News and advertising publication for the funeral industry | Not stated (online publication) |
 | [GripOutdoor.com](https://jared-the-automator.github.io/redesign-portfolio/gripoutdoor.com/) | Outdoor trip-planning notes: costs, access and what to expect for paddling, camping, fishing and birdwatching | Not stated on site |
+| [Cape Small Animal Clinic](https://jared-the-automator.github.io/redesign-portfolio/capesmallac.com/) | Small animal veterinary clinic: wellness, dental, surgery, diagnostics and end-of-life care | Cape Girardeau, MO |
