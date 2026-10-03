@@ -344,3 +344,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Cradle of Man Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/cradleofmantaxidermy.com/) | Fine trophy taxidermy: shoulder, pedestal, full and skull mounts, tanning and custom displays | South Africa |
 | [Hardwoods Specialty Products](https://jared-the-automator.github.io/redesign-portfolio/hardwoods-inc.com/) | Architectural decor materials supplier: decorative surfaces, plywood, lumber, composites and accessories | US and Canada |
 | [North Fork Nets](https://jared-the-automator.github.io/redesign-portfolio/northforknets.com/) | Handmade fishing landing and trek nets | Ashton, ID |
+| [A-Town Diesel Repair](https://jared-the-automator.github.io/redesign-portfolio/atowndiesel.com/) | diesel-fleet-service | Auburn, CA |
