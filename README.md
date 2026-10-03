@@ -339,3 +339,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Mountain Mule Packers](https://jared-the-automator.github.io/redesign-portfolio/mountainmulepackers.com/) | Mule packing and animal handling training: tactical courses for military units, plus civilian, youth and corporate teams | North Carolina |
 | [Shoe Why](https://jared-the-automator.github.io/redesign-portfolio/shoewhy.com/) | Step-by-step cleaning, repair, and fit guides for boots, shoes, and socks | Not stated on site |
 | [FuneralVision.com](https://jared-the-automator.github.io/redesign-portfolio/funeralvision.com/) | News and advertising publication for the funeral industry | Not stated (online publication) |
+| [GripOutdoor.com](https://jared-the-automator.github.io/redesign-portfolio/gripoutdoor.com/) | Outdoor trip-planning notes: costs, access and what to expect for paddling, camping, fishing and birdwatching | Not stated on site |
