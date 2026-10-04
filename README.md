@@ -346,3 +346,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Hardwoods Specialty Products](https://jared-the-automator.github.io/redesign-portfolio/hardwoods-inc.com/) | Architectural decor materials supplier: decorative surfaces, plywood, lumber, composites and accessories | US and Canada |
 | [North Fork Nets](https://jared-the-automator.github.io/redesign-portfolio/northforknets.com/) | Handmade fishing landing and trek nets | Ashton, ID |
 | [A-Town Diesel Repair](https://jared-the-automator.github.io/redesign-portfolio/atowndiesel.com/) | diesel-fleet-service | Auburn, CA |
+| [406 Processing & Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/406-processing.com/) | Wild game processing, taxidermy, hide tanning, live stock handling, and European mounts | Montana |
