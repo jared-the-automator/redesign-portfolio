@@ -353,3 +353,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [A-Town Diesel Repair](https://jared-the-automator.github.io/redesign-portfolio/atowndiesel.com/) | diesel-fleet-service | Auburn, CA |
 | [406 Processing & Taxidermy](https://jared-the-automator.github.io/redesign-portfolio/406-processing.com/) | Wild game processing, taxidermy, hide tanning, live stock handling, and European mounts | Montana |
 | [Lund Equine Surgery & Sports Medicine](https://jared-the-automator.github.io/redesign-portfolio/lundequine.com/) | Equine surgery hospital: board-certified surgical specialty, lameness and sports medicine, general medicine and reproduction | Billings, MT (serves MT & WY) |
+| [Front Range Gun Dog](https://jared-the-automator.github.io/redesign-portfolio/frontrangegundog.com/) | Gun dog supply shop: training and tracking collars, bird launchers, kennels and custom nameplates, with Dogtra and Garmin electronics | Colorado Springs, CO |
