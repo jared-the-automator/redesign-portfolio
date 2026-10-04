@@ -14,6 +14,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [Bucks County Fuel](https://jared-the-automator.github.io/redesign-portfolio/buckscountyfuel.com/) | Family-owned heating oil delivery and HVAC, no delivery fee, live price table | Bucks County, PA |
 | [Admiral Energy](https://jared-the-automator.github.io/redesign-portfolio/admiralenergy.com/) | Heating oil delivery and boiler service, residential and commercial | New York City |
 | [The Integrated Equine](https://jared-the-automator.github.io/redesign-portfolio/theintegratedequine.com/) | Integrative equine veterinary care: spinal therapy, acupuncture, Tui-na, and herbal medicine | Windsor County, VT |
 | [Heartland Propane](https://jared-the-automator.github.io/redesign-portfolio/heartlandpropane.com/) | Propane delivery with 24/7 live support and transparent pricing | Kansas |
