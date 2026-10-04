@@ -14,6 +14,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [TyParts Mobile Mechanics](https://jared-the-automator.github.io/redesign-portfolio/typartsmobile.com/) | Mobile mechanic and on-site auto repair | Franklin & Nashville, TN |
 | [Red Barn Woodworking](https://jared-the-automator.github.io/redesign-portfolio/redbarnwoodworking.wordpress.com/) | Custom hardwood floors and millwork, survey stakes and hubs | Indiana |
 | [ACCS](https://jared-the-automator.github.io/redesign-portfolio/accsauburn.com/) | Oil burner service, boiler and furnace repair, and no heat calls | Auburn |
 | [Families First Funeral Care and Cremation Center](https://jared-the-automator.github.io/redesign-portfolio/familiesfirstcare.com/) | Funeral and cremation services with published, transparent pricing | Savannah, GA |
