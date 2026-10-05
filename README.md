@@ -14,6 +14,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [Supreme Auto Repair](https://jared-the-automator.github.io/redesign-portfolio/supremeautorepairnh.com/) | NH state inspections, brakes, and oil changes for Manchester drivers | Manchester, NH |
 | [Majka & Sons, Inc.](https://jared-the-automator.github.io/redesign-portfolio/majkaoil.com/) | Family-run heating oil delivery and home comfort since 1932 | Northern New Jersey |
 | [Demon Mobile Mechanic LLC](https://jared-the-automator.github.io/redesign-portfolio/demonmobilemechanicllc.com/) | On-site mobile auto repair, 30 years of experience | Phoenix, AZ |
 | [Bucks County Fuel](https://jared-the-automator.github.io/redesign-portfolio/buckscountyfuel.com/) | Family-owned heating oil delivery and HVAC, no delivery fee, live price table | Bucks County, PA |
