@@ -8,7 +8,7 @@ Free homepage redesigns built with each business's own photography. No stock ima
 
 Each redesign is a single-file HTML prototype that opens in any browser. If you want yours installed with the rest of your pages done the same way, reach out.
 
-**Contact:** jared.the.automator@gmail.com
+**Contact:** jared@biggerfish.io · [github.com/jared-the-automator](https://github.com/jared-the-automator)
 
 ---
 
