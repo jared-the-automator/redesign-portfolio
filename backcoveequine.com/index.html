@@ -1,253 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Equine Veterinarian in Portland, ME | Back Cove Equine</title>
-<meta name="description" content="Equine veterinarian in Portland, ME. Routine and 24-hour care for horses, donkeys, and mules, at your barn across Greater Portland. Call (207) 370-1645.">
+<meta name="description" content="Redesign concept for Back Cove Equine: an ambulatory equine practice serving Greater Portland, Maine, with routine and 24-hour emergency care for horses, donkeys, and mules.">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config = { theme: { extend: {
-  colors: {
-    bone: '#F6F4EE',
-    bark: '#1C2A22',
-    pine: { DEFAULT: '#2E5E3F', deep: '#1E4430', ink: '#0F1A13' },
-    moss: '#5A6B5F'
-  },
-  fontFamily: {
-    display: ['Oswald', 'Arial Narrow', 'sans-serif'],
-    body: ['Inter', 'Helvetica', 'Arial', 'sans-serif']
-  },
-  borderRadius: { rf: '2px' }
-} } }
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        lodge: {
+          950: '#0B160E',
+          900: '#0E1B12',
+          800: '#14251A',
+          700: '#1C3324',
+          600: '#2A4A34'
+        },
+        bone: '#F2EDE2',
+        gold: '#C7A34A'
+      },
+      fontFamily: {
+        display: ['"Playfair Display"', 'serif'],
+        body: ['"Source Sans 3"', 'sans-serif']
+      }
+    }
+  }
+}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Back Cove Equine",
-  "description": "Equine (horses, donkeys, mules) ambulatory practice serving Greater Portland, Maine, providing routine and 24-hour care.",
-  "url": "https://backcoveequine.com/",
+  "description": "Ambulatory equine veterinary practice serving Greater Portland, Maine. Routine and 24-hour emergency care for horses, donkeys, and mules.",
   "telephone": "+1-207-370-1645",
   "email": "backcoveequine@outlook.com",
-  "address": { "@type": "PostalAddress", "addressLocality": "Portland", "addressRegion": "ME", "addressCountry": "US" },
-  "areaServed": "Greater Portland, Maine"
+  "url": "https://backcoveequine.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Portland",
+    "addressRegion": "ME",
+    "addressCountry": "US"
+  },
+  "openingHours": "Mo-Fr 08:00-17:00"
 }
 </script>
 <style>
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
-.reveal.is-in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+  html { scroll-behavior: smooth; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
 </style>
-<noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
-<body class="bg-bone font-body text-bark antialiased">
+<body class="bg-lodge-900 font-body text-bone antialiased">
 
-<!-- NAV -->
-<header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-bark/10">
-  <nav class="mx-auto flex h-20 max-w-6xl items-center justify-between px-6" aria-label="Main">
-    <a href="https://backcoveequine.com/" class="flex items-center">
-      <img src="https://backcoveequine.com/wp-content/uploads/2017/10/equine-veterinarian-in-portland-me-back-cove-equin.png" alt="Back Cove Equine logo" class="h-12 w-auto">
+<header class="sticky top-0 z-50 border-b border-lodge-700/60 bg-lodge-950/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-3">
+    <a href="https://www.backcoveequine.com/" class="flex shrink-0 items-center" aria-label="Back Cove Equine home">
+      <span class="rounded-[2px] bg-bone px-2.5 py-1.5">
+        <img src="https://backcoveequine.com/wp-content/uploads/2017/10/equine-veterinarian-in-portland-me-back-cove-equin.png" alt="Back Cove Equine logo" class="h-9 w-auto">
+      </span>
     </a>
-    <div class="hidden items-center gap-8 md:flex">
-      <a href="#services" class="font-display text-sm font-medium uppercase tracking-[0.14em] text-bark transition-colors hover:text-pine">Services</a>
-      <a href="#about" class="font-display text-sm font-medium uppercase tracking-[0.14em] text-bark transition-colors hover:text-pine">About</a>
-      <a href="https://backcoveequine.com/contact/" class="font-display text-sm font-medium uppercase tracking-[0.14em] text-bark transition-colors hover:text-pine">Contact</a>
-    </div>
-    <a href="tel:+12073701645" class="rounded-rf bg-pine px-5 py-3 font-display text-sm font-medium uppercase tracking-[0.14em] text-bone transition-colors hover:bg-pine-deep">Call (207) 370-1645</a>
-  </nav>
+    <nav class="hidden items-center gap-7 text-sm font-semibold tracking-wide md:flex">
+      <a href="https://www.backcoveequine.com/about/" class="text-bone/80 transition hover:text-gold">About</a>
+      <a href="https://www.backcoveequine.com/services/" class="text-bone/80 transition hover:text-gold">Services</a>
+      <a href="#emergency" class="text-bone/80 transition hover:text-gold">24 Hour Emergency</a>
+      <a href="https://www.backcoveequine.com/contact/" class="text-bone/80 transition hover:text-gold">Contact</a>
+    </nav>
+    <a href="tel:+12073701645" class="rounded-[2px] bg-gold px-4 py-2 text-sm font-bold text-lodge-950 transition hover:bg-bone">(207) 370-1645</a>
+  </div>
 </header>
 
-<!-- HERO -->
-<section class="relative flex min-h-[100dvh] items-end">
-  <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS1.jpg" alt="Horse at the Back Cove Equine practice, Portland, Maine" class="absolute inset-0 h-full w-full object-cover">
-  <div class="absolute inset-0 bg-gradient-to-r from-pine-ink/95 via-pine-ink/80 to-pine-ink/35"></div>
-  <div class="relative mx-auto w-full max-w-6xl px-6 pb-24 pt-28">
-    <p class="font-display text-sm font-medium uppercase tracking-[0.22em] text-bone/80">Ambulatory equine practice, Portland, Maine</p>
-    <h1 class="mt-5 max-w-3xl font-display text-5xl font-bold leading-[1.04] text-bone md:text-7xl">
-      Equine veterinarian in Portland, Maine<br>
-      care that comes to your barn.
-    </h1>
-    <p class="mt-6 max-w-xl text-lg text-bone/85">Routine and 24-hour care for horses, donkeys, and mules across Greater Portland, Maine.</p>
-    <div class="mt-9 flex flex-wrap items-center gap-4">
-      <a href="tel:+12073701645" class="rounded-rf bg-pine px-7 py-4 font-display text-base font-medium uppercase tracking-[0.14em] text-bone transition-colors hover:bg-pine-deep">Call (207) 370-1645</a>
-      <a href="#about" class="rounded-rf border border-bone/50 px-7 py-4 font-display text-base font-medium uppercase tracking-[0.14em] text-bone transition-colors hover:bg-bone/10">How we work</a>
+<section class="relative flex min-h-[100dvh] items-center overflow-hidden">
+  <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS1.jpg" alt="Back Cove Equine property in Greater Portland, Maine" class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-lodge-950/80"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-lodge-950/90 via-lodge-950/60 to-lodge-950/30"></div>
+  <div class="relative z-10 mx-auto w-full max-w-6xl px-6 py-24">
+    <p class="mb-5 text-xs font-bold uppercase tracking-[0.35em] text-gold">Portland, Maine</p>
+    <h1 class="max-w-3xl font-display text-5xl leading-[1.05] font-extrabold md:text-7xl">Equine care that comes to your pasture.</h1>
+    <p class="mt-6 max-w-xl text-lg leading-relaxed text-bone/90">An ambulatory practice for Greater Portland, Maine. Routine and 24-hour emergency care for the horses, donkeys, and mules you keep at home.</p>
+    <div class="mt-10 flex flex-wrap items-center gap-4">
+      <a href="tel:+12073701645" class="rounded-[2px] bg-gold px-7 py-3.5 text-base font-bold text-lodge-950 transition hover:bg-bone">Call (207) 370-1645</a>
+      <a href="#services" class="rounded-[2px] border border-bone/40 px-7 py-3.5 text-base font-semibold text-bone transition hover:border-gold hover:text-gold">See what we do</a>
     </div>
+    <p class="mt-8 text-sm font-semibold tracking-wide text-bone/70">Accepting new appointments</p>
   </div>
 </section>
 
-<!-- SERVICES SPLIT -->
-<section id="services" class="py-24 md:py-32">
-  <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-20">
+<section id="services" class="bg-lodge-900 py-24">
+  <div class="mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-[1.1fr_0.9fr]">
     <div class="reveal">
-      <div class="overflow-hidden rounded-rf">
-        <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS2.jpg" alt="Equine care at Back Cove Equine, Portland, Maine" class="aspect-[4/5] w-full object-cover">
+      <p class="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-gold">Our services</p>
+      <h2 class="font-display text-4xl leading-tight font-bold md:text-5xl">From routine visits to 2 a.m. emergencies</h2>
+      <p class="mt-5 max-w-xl text-base leading-relaxed text-bone/80">At Back Cove Equine, we offer a variety of services to care for your horse, donkey, or mule. Three things define the practice.</p>
+      <div class="mt-10 space-y-9">
+        <div class="flex gap-6">
+          <span class="font-display text-3xl leading-none font-bold text-gold">01</span>
+          <div>
+            <h3 class="text-lg font-bold text-bone">Routine care</h3>
+            <p class="mt-1.5 max-w-md text-base leading-relaxed text-bone/75">Everyday medicine for the animals in your care, with the practice's full range of services on hand when you need them.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <span class="font-display text-3xl leading-none font-bold text-gold">02</span>
+          <div>
+            <h3 class="text-lg font-bold text-bone">24-hour emergency</h3>
+            <p class="mt-1.5 max-w-md text-base leading-relaxed text-bone/75">A horse emergency does not keep office hours. The practice's emergency service runs around the clock, so the phone gets answered.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <span class="font-display text-3xl leading-none font-bold text-gold">03</span>
+          <div>
+            <h3 class="text-lg font-bold text-bone">Ambulatory visits</h3>
+            <p class="mt-1.5 max-w-md text-base leading-relaxed text-bone/75">The care comes to you. Back Cove Equine is an ambulatory practice, so your animals are seen on their own ground, not in a transport.</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="reveal">
-      <p class="font-display text-sm font-medium uppercase tracking-[0.22em] text-pine">Services</p>
-      <h2 class="mt-4 font-display text-4xl font-bold leading-[1.08] md:text-5xl">A special understanding of horses</h2>
-      <p class="mt-5 max-w-lg text-lg text-moss">Back Cove Equine offers a variety of services to care for your horse, with the work done at your facility across Greater Portland, Maine.</p>
-      <div class="mt-10 space-y-8">
-        <div class="border-t border-bark/15 pt-6">
-          <div class="flex items-baseline gap-4">
-            <span class="font-display text-lg font-medium text-pine">01</span>
-            <h3 class="font-display text-xl font-medium">24-hour care</h3>
-          </div>
-          <p class="mt-2 text-moss">When something is urgent, waiting until morning is not an option. The practice provides care around the clock, not just during office hours.</p>
-        </div>
-        <div class="border-t border-bark/15 pt-6">
-          <div class="flex items-baseline gap-4">
-            <span class="font-display text-lg font-medium text-pine">02</span>
-            <h3 class="font-display text-xl font-medium">Routine and wellness care</h3>
-          </div>
-          <p class="mt-2 text-moss">Regular checkups and ongoing care keep your horse healthy on the quiet days, so the serious days have a stronger starting point.</p>
-        </div>
-        <div class="border-t border-bark/15 pt-6">
-          <div class="flex items-baseline gap-4">
-            <span class="font-display text-lg font-medium text-pine">03</span>
-            <h3 class="font-display text-xl font-medium">Ambulatory, at your barn</h3>
-          </div>
-          <p class="mt-2 text-moss">As an ambulatory practice, the work happens where your horse stands. No stabling, no transport, no stress of a trip to a clinic.</p>
-        </div>
-      </div>
+      <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS2.jpg" alt="Back Cove Equine farm in Greater Portland, Maine" class="w-full rounded-[2px] object-cover shadow-2xl shadow-lodge-950/60">
     </div>
   </div>
 </section>
 
-<!-- ABOUT SPLIT (reversed) -->
-<section id="about" class="bg-pine-ink py-24 md:py-32">
-  <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-20">
-    <div class="reveal order-last lg:order-first">
-      <p class="font-display text-sm font-medium uppercase tracking-[0.22em] text-bone/60">About</p>
-      <h2 class="mt-4 font-display text-4xl font-bold leading-[1.08] text-bone md:text-5xl">An ambulatory practice for Greater Portland</h2>
-      <p class="mt-5 max-w-lg text-lg text-bone/80">Back Cove Equine is an equine (horses, donkeys, mules) practice serving Greater Portland, Maine and beyond. As an ambulatory practice, the team comes to you, bringing the work to your horse where it stands.</p>
-      <ul class="mt-8 space-y-3 text-bone/90">
-        <li class="flex items-center gap-3"><span class="h-2 w-2 bg-pine"></span>Affordable, skilled care for working horses</li>
-        <li class="flex items-center gap-3"><span class="h-2 w-2 bg-pine"></span>Routine and 24-hour service</li>
-        <li class="flex items-center gap-3"><span class="h-2 w-2 bg-pine"></span>Accepting new appointments</li>
-      </ul>
-      <a href="https://backcoveequine.com/about-us/" class="mt-9 inline-block rounded-rf border border-bone/40 px-6 py-3.5 font-display text-sm font-medium uppercase tracking-[0.14em] text-bone transition-colors hover:bg-bone/10">More about the practice</a>
+<section id="story" class="bg-lodge-800 py-24">
+  <div class="mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-[0.9fr_1.1fr]">
+    <div class="reveal order-2 lg:order-1">
+      <img src="https://backcoveequine.com/wp-content/uploads/2016/11/about-300x225.jpg" alt="Back Cove Equine about photo" class="w-full rounded-[2px] object-cover shadow-2xl shadow-lodge-950/60">
     </div>
-    <div class="reveal order-first lg:order-last">
-      <div class="overflow-hidden rounded-rf">
-        <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS3.jpg" alt="Back Cove Equine providing care in the Greater Portland, Maine area" class="aspect-[4/5] w-full object-cover">
-      </div>
+    <div class="reveal order-1 lg:order-2">
+      <h2 class="font-display text-4xl leading-tight font-bold md:text-5xl">Dedicated to compassionate, conscientious care of your equine companion</h2>
+      <p class="mt-6 max-w-xl text-base leading-relaxed text-bone/80">Back Cove Equine is an equine practice serving Greater Portland, Maine and beyond. The office runs Monday through Friday, 8 a.m. to 5 p.m., and the practice is built for the moments that fall outside of it.</p>
+      <p class="mt-4 max-w-xl text-base leading-relaxed text-bone/80">Horses, donkeys, and mules are all part of the patient list. Most never leave the property they live on.</p>
+      <a href="https://www.backcoveequine.com/about/" class="mt-8 inline-block rounded-[2px] border border-bone/40 px-6 py-3 text-sm font-semibold text-bone transition hover:border-gold hover:text-gold">More about the practice</a>
     </div>
   </div>
 </section>
 
-<!-- PHOTO GRID -->
-<section class="py-24 md:py-32">
+<section class="bg-bone py-24 text-lodge-950">
   <div class="mx-auto max-w-6xl px-6">
-    <div class="reveal max-w-xl">
-      <p class="font-display text-sm font-medium uppercase tracking-[0.22em] text-pine">In the field</p>
-      <h2 class="mt-4 font-display text-4xl font-bold leading-[1.08] md:text-5xl">Where the work happens</h2>
-      <p class="mt-5 text-lg text-moss">Paddocks, arenas, stalls, and roadside stands. The practice travels to the animal, across the farms and stables of the region.</p>
+    <div class="reveal max-w-2xl">
+      <p class="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-lodge-600">The practice at a glance</p>
+      <h2 class="font-display text-4xl leading-tight font-bold md:text-5xl">How a Greater Portland equine practice runs</h2>
     </div>
-    <div class="reveal mt-12 grid grid-cols-1 gap-5 md:grid-cols-12">
-      <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS1.jpg" alt="Horse at the Back Cove Equine practice, Portland, Maine" class="h-72 w-full rounded-rf object-cover md:col-span-7 md:row-span-2 md:h-auto">
-      <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS2.jpg" alt="Equine care at Back Cove Equine, Portland, Maine" class="aspect-[16/9] w-full rounded-rf object-cover md:col-span-5">
-      <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS3.jpg" alt="Back Cove Equine providing care in the Greater Portland, Maine area" class="aspect-[16/9] w-full rounded-rf object-cover md:col-span-5">
-      <img src="https://backcoveequine.com/wp-content/uploads/2016/11/about-300x225.jpg" alt="The Back Cove Equine practice, Portland, Maine" class="aspect-[21/9] w-full rounded-rf object-cover md:col-span-12">
-    </div>
-  </div>
-</section>
-
-<!-- FACTS BAND -->
-<section class="border-y border-bark/10 bg-bone">
-  <div class="mx-auto grid max-w-6xl grid-cols-2 gap-px px-6 py-14 md:grid-cols-4">
-    <div class="reveal px-4">
-      <p class="font-display text-xs font-medium uppercase tracking-[0.2em] text-moss">Hours</p>
-      <p class="mt-3 font-display text-lg font-medium leading-snug">Routine and 24-hour</p>
-    </div>
-    <div class="reveal px-4">
-      <p class="font-display text-xs font-medium uppercase tracking-[0.2em] text-moss">Coverage</p>
-      <p class="mt-3 font-display text-lg font-medium leading-snug">Greater Portland, Maine and beyond</p>
-    </div>
-    <div class="reveal px-4">
-      <p class="font-display text-xs font-medium uppercase tracking-[0.2em] text-moss">Patients</p>
-      <p class="mt-3 font-display text-lg font-medium leading-snug">Horses, donkeys, and mules</p>
-    </div>
-    <div class="reveal px-4">
-      <p class="font-display text-xs font-medium uppercase tracking-[0.2em] text-moss">Status</p>
-      <p class="mt-3 font-display text-lg font-medium leading-snug">Accepting new appointments</p>
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal rounded-[2px] bg-lodge-900 p-7 text-bone">
+        <p class="font-display text-3xl font-bold text-gold">24 hours</p>
+        <p class="mt-3 text-sm font-semibold uppercase tracking-wider text-bone/70">Emergency service</p>
+        <p class="mt-3 text-base leading-relaxed text-bone/80">The practice's emergency line runs around the clock, outside office hours included.</p>
+      </div>
+      <div class="reveal rounded-[2px] bg-lodge-900 p-7 text-bone">
+        <p class="font-display text-3xl font-bold text-gold">Horses</p>
+        <p class="mt-3 text-sm font-semibold uppercase tracking-wider text-bone/70">And donkeys, and mules</p>
+        <p class="mt-3 text-base leading-relaxed text-bone/80">All three species are on the patient list, with routine and emergency care.</p>
+      </div>
+      <div class="reveal rounded-[2px] bg-lodge-900 p-7 text-bone">
+        <p class="font-display text-3xl font-bold text-gold">Portland</p>
+        <p class="mt-3 text-sm font-semibold uppercase tracking-wider text-bone/70">Maine and beyond</p>
+        <p class="mt-3 text-base leading-relaxed text-bone/80">An ambulatory practice serving the Greater Portland area, visiting the animals where they live.</p>
+      </div>
+      <div class="reveal rounded-[2px] bg-lodge-900 p-7 text-bone">
+        <p class="font-display text-3xl font-bold text-gold">Mon to Fri</p>
+        <p class="mt-3 text-sm font-semibold uppercase tracking-wider text-bone/70">8 a.m. to 5 p.m.</p>
+        <p class="mt-3 text-base leading-relaxed text-bone/80">Regular office hours, with new appointments being accepted.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CTA STRIP -->
-<section class="bg-pine-deep py-20 md:py-24">
-  <div class="mx-auto flex max-w-6xl flex-col items-start gap-8 px-6 md:flex-row md:items-center md:justify-between">
+<section class="bg-lodge-950 py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="reveal max-w-2xl">
+      <p class="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-gold">On the farm</p>
+      <h2 class="font-display text-4xl leading-tight font-bold md:text-5xl">Where the work actually happens</h2>
+      <p class="mt-5 text-base leading-relaxed text-bone/80">Back Cove Equine's photos come from the practice's own site: the property in Greater Portland, Maine, and the animals it sees. This is barn work, not clinic work.</p>
+    </div>
+    <div class="mt-12 grid gap-5 sm:grid-cols-3">
+      <div class="reveal">
+        <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS3.jpg" alt="Back Cove Equine property photo" class="h-80 w-full rounded-[2px] object-cover">
+      </div>
+      <div class="reveal">
+        <img src="https://backcoveequine.com/wp-content/uploads/2016/11/12096225_845346312247282_4080926823259376191_n-169x300.jpg" alt="Equine patient photo from the services page" class="h-80 w-full rounded-[2px] object-cover">
+      </div>
+      <div class="reveal">
+        <img src="https://backcoveequine.com/wp-content/uploads/2017/10/HOMEPAGEPICS2.jpg" alt="Back Cove Equine farm photo" class="h-80 w-full rounded-[2px] object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="emergency" class="bg-gold py-20 text-lodge-950">
+  <div class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 px-6 md:flex-row md:items-center">
+    <div class="reveal max-w-2xl">
+      <p class="mb-3 text-xs font-bold uppercase tracking-[0.35em] text-lodge-800">24-hour emergency service</p>
+      <h2 class="font-display text-4xl leading-tight font-bold md:text-5xl">When the emergency comes after hours, the answer is the phone.</h2>
+      <p class="mt-4 text-lg leading-relaxed text-lodge-900/80">Office hours run Monday through Friday, 8 a.m. to 5 p.m. The emergency line does not.</p>
+    </div>
+    <div class="reveal flex flex-col gap-4">
+      <a href="tel:+12073701645" class="rounded-[2px] bg-lodge-950 px-8 py-4 text-lg font-bold text-bone transition hover:bg-lodge-800">Call (207) 370-1645</a>
+      <a href="mailto:backcoveequine@outlook.com" class="rounded-[2px] border-2 border-lodge-950 px-8 py-4 text-lg font-bold text-lodge-950 transition hover:bg-lodge-950 hover:text-bone">Email the practice</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-lodge-950 py-16">
+  <div class="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-3">
     <div class="reveal">
-      <h2 class="max-w-2xl font-display text-4xl font-bold leading-[1.08] text-bone md:text-5xl">Worried about your horse?<br>Call the practice.</h2>
-      <p class="mt-4 text-lg text-bone/75">Routine and 24-hour care for horses, donkeys, and mules in the Portland, Maine area.</p>
+      <span class="inline-block rounded-[2px] bg-bone px-2.5 py-1.5">
+        <img src="https://backcoveequine.com/wp-content/uploads/2017/10/equine-veterinarian-in-portland-me-back-cove-equin.png" alt="Back Cove Equine logo" class="h-9 w-auto">
+      </span>
+      <p class="mt-5 text-sm leading-relaxed text-bone/70">An ambulatory equine practice serving Greater Portland, Maine and beyond. Routine and 24-hour emergency care for horses, donkeys, and mules.</p>
+      <p class="mt-4 text-sm font-semibold tracking-wide text-gold">Accepting new appointments</p>
     </div>
-    <div class="reveal flex flex-wrap items-center gap-4">
-      <a href="tel:+12073701645" class="rounded-rf bg-bone px-7 py-4 font-display text-base font-medium uppercase tracking-[0.14em] text-pine-ink transition-colors hover:bg-bone/90">(207) 370-1645</a>
-      <a href="mailto:backcoveequine@outlook.com" class="rounded-rf border border-bone/40 px-7 py-4 font-display text-base font-medium uppercase tracking-[0.14em] text-bone transition-colors hover:bg-bone/10">Email the practice</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-pine-ink">
-  <div class="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 py-16 md:grid-cols-2 lg:grid-cols-4">
-    <div>
-      <img src="https://backcoveequine.com/wp-content/uploads/2017/10/equine-veterinarian-in-portland-me-back-cove-equin.png" alt="Back Cove Equine logo" class="h-12 w-auto brightness-0 invert">
-      <p class="mt-5 max-w-xs text-bone/70">An equine (horses, donkeys, mules) ambulatory practice serving Greater Portland, Maine and beyond.</p>
-    </div>
-    <div>
-      <p class="font-display text-xs font-medium uppercase tracking-[0.2em] text-bone/50">Explore</p>
-      <ul class="mt-5 space-y-3 text-bone/85">
-        <li><a href="https://backcoveequine.com/" class="transition-colors hover:text-bone">Home</a></li>
-        <li><a href="https://backcoveequine.com/about-us/" class="transition-colors hover:text-bone">About the practice</a></li>
-        <li><a href="#services" class="transition-colors hover:text-bone">Services</a></li>
-        <li><a href="https://backcoveequine.com/contact/" class="transition-colors hover:text-bone">Contact</a></li>
+    <div class="reveal">
+      <p class="text-xs font-bold uppercase tracking-[0.35em] text-bone/50">Explore</p>
+      <ul class="mt-5 space-y-3 text-base font-semibold">
+        <li><a href="https://www.backcoveequine.com/about/" class="text-bone/80 transition hover:text-gold">About the practice</a></li>
+        <li><a href="https://www.backcoveequine.com/services/" class="text-bone/80 transition hover:text-gold">Services</a></li>
+        <li><a href="#emergency" class="text-bone/80 transition hover:text-gold">24-hour emergency</a></li>
+        <li><a href="https://www.backcoveequine.com/contact/" class="text-bone/80 transition hover:text-gold">Contact</a></li>
       </ul>
     </div>
-    <div>
-      <p class="font-display text-xs font-medium uppercase tracking-[0.2em] text-bone/50">Contact</p>
-      <ul class="mt-5 space-y-3 text-bone/85">
-        <li><a href="tel:+12073701645" class="transition-colors hover:text-bone">(207) 370-1645</a></li>
-        <li><a href="mailto:backcoveequine@outlook.com" class="break-all transition-colors hover:text-bone">backcoveequine@outlook.com</a></li>
-        <li>Portland, Maine</li>
-      </ul>
-    </div>
-    <div>
-      <p class="font-display text-xs font-medium uppercase tracking-[0.2em] text-bone/50">Care</p>
-      <ul class="mt-5 space-y-3 text-bone/85">
-        <li>Routine and 24-hour service</li>
-        <li>Ambulatory, at your facility</li>
-        <li>Accepting new appointments</li>
+    <div class="reveal">
+      <p class="text-xs font-bold uppercase tracking-[0.35em] text-bone/50">Reach us</p>
+      <ul class="mt-5 space-y-3 text-base">
+        <li><a href="tel:+12073701645" class="font-semibold text-bone/80 transition hover:text-gold">(207) 370-1645</a></li>
+        <li><a href="mailto:backcoveequine@outlook.com" class="font-semibold text-bone/80 transition hover:text-gold">backcoveequine@outlook.com</a></li>
+        <li class="text-bone/60">Monday through Friday, 8 a.m. to 5 p.m.</li>
+        <li class="text-bone/60">Portland, Maine</li>
       </ul>
     </div>
   </div>
-  <div class="border-t border-bone/10">
-    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-sm text-bone/45 md:flex-row md:items-center md:justify-between">
-      <p>&copy; 2026 Back Cove Equine, Portland, Maine</p>
-      <p>Redesign preview by Bigger Fish</p>
-    </div>
+  <div class="mx-auto mt-12 max-w-6xl border-t border-lodge-700/60 px-6 pt-6">
+    <p class="text-xs text-bone/40">Redesign concept for Back Cove Equine. Photos and practice details are from the practice's own website.</p>
   </div>
 </footer>
 
 <script>
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
+  var els = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function (el) { el.classList.add('visible'); });
+    return;
+  }
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        entry.target.classList.add('is-in');
+        entry.target.classList.add('visible');
         io.unobserve(entry.target);
       }
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(function (el) {
-    io.observe(el);
-  });
-})();
+  els.forEach(function (el) { io.observe(el); });
+});
 </script>
+
 </body>
 </html>
