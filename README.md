@@ -361,3 +361,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Northwest Industrial Equipment](https://jared-the-automator.github.io/redesign-portfolio/oilburners.com/) | Waste oil heaters and commercial boilers: PEP, Firelake and CleanEnergy systems, OEM parts and factory-authorized service | US and Canada |
 | [Faulkner Outdoor Furniture](https://jared-the-automator.github.io/redesign-portfolio/faulkneroutdoorfurniture.com/) | Handmade custom outdoor furniture | Iron Station, NC |
 | [Custom Trout Flies](https://jared-the-automator.github.io/redesign-portfolio/customtroutflies.ca/) | Custom hand-tied stillwater trout flies: chironomids, leeches, caddis patterns, fly packs, and kits | Kamloops, BC |
+| [DHI Fleet Services](https://jared-the-automator.github.io/redesign-portfolio/dhifleetservicesor.com/) | Semi truck, diesel, and heavy equipment repair with mobile service | Fairview, OR (serves Gresham & Portland) |
