@@ -363,3 +363,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Custom Trout Flies](https://jared-the-automator.github.io/redesign-portfolio/customtroutflies.ca/) | Custom hand-tied stillwater trout flies: chironomids, leeches, caddis patterns, fly packs, and kits | Kamloops, BC |
 | [DHI Fleet Services](https://jared-the-automator.github.io/redesign-portfolio/dhifleetservicesor.com/) | Semi truck, diesel, and heavy equipment repair with mobile service | Fairview, OR (serves Gresham & Portland) |
 | [Quick Road Services](https://jared-the-automator.github.io/redesign-portfolio/quickroadservices.com/) | Mobile mechanic and 24/7 roadside service, repairs at your location | Rochester, NY |
+| [Automotive Lift Services](https://jared-the-automator.github.io/redesign-portfolio/autoliftserv.com/) | Automotive lift sales, installation, and repair, nationwide install and service | Ames, IA |
