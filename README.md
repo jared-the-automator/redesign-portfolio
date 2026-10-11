@@ -365,3 +365,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [Quick Road Services](https://jared-the-automator.github.io/redesign-portfolio/quickroadservices.com/) | Mobile mechanic and 24/7 roadside service, repairs at your location | Rochester, NY |
 | [Automotive Lift Services](https://jared-the-automator.github.io/redesign-portfolio/autoliftserv.com/) | Automotive lift sales, installation, and repair, nationwide install and service | Ames, IA |
 | [PA Truck Repair](https://jared-the-automator.github.io/redesign-portfolio/patruckrepairinc.com/) | diesel-fleet-service | Pennsylvania |
+| [In-Rut Rifles](https://jared-the-automator.github.io/redesign-portfolio/inrutrifles.com/) | Custom long range hunting rifles built to spec in the USA, 1/2 MOA accuracy guarantee up to 100 yards | United States |
