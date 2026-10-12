@@ -14,6 +14,7 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 
 | Business | Niche | Location |
 | --- | --- | --- |
+| [Speed Wrench](https://jared-the-automator.github.io/redesign-portfolio/speedwrench.com/) | Heavy-duty truck, bus, RV & on-site mobile repair, employee owned since 1989 | Hudsonville, MI |
 | [Hutchinson Small Animal Hospital](https://jared-the-automator.github.io/redesign-portfolio/hutchinsonsmallanimalhospital.com/) | Small animal veterinary care: vaccines, dental, surgery, and in-house lab | Hutchinson, KS |
 | [Supreme Auto Repair](https://jared-the-automator.github.io/redesign-portfolio/supremeautorepairnh.com/) | NH state inspections, brakes, and oil changes for Manchester drivers | Manchester, NH |
 | [Majka & Sons, Inc.](https://jared-the-automator.github.io/redesign-portfolio/majkaoil.com/) | Family-run heating oil delivery and home comfort since 1932 | Northern New Jersey |
