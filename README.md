@@ -368,3 +368,4 @@ Each redesign is a single-file HTML prototype that opens in any browser. If you 
 | [PA Truck Repair](https://jared-the-automator.github.io/redesign-portfolio/patruckrepairinc.com/) | diesel-fleet-service | Pennsylvania |
 | [In-Rut Rifles](https://jared-the-automator.github.io/redesign-portfolio/inrutrifles.com/) | Custom long range hunting rifles built to spec in the USA, 1/2 MOA accuracy guarantee up to 100 yards | United States |
 | [Trappin' Fool Store](https://jared-the-automator.github.io/redesign-portfolio/trappinfool.store/) | Handmade beaver bait, 406 spears and trapping supplies | Not stated on site |
+| [Lovejoy Rustic Furniture](https://jared-the-automator.github.io/redesign-portfolio/lovejoyfurniture.com/) | Custom rustic furniture from reclaimed and antique wood | Belgrade Lakes region, Maine |
