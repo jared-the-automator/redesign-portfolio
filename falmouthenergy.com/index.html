@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Falmouth Energy | New Homepage Prototype</title>
+  <meta name="description" content="Redesign prototype for Falmouth Energy, heating oil delivery and HVAC services for the Cape Cod area.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body: ['"Source Sans 3"', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            pine: { 950: '#0F1A14', 900: '#14201A', 800: '#1C2B21', 700: '#24382C', 600: '#2C4235' },
+            bone: '#EDE6D6',
+            bonedim: '#A8A494',
+            gold: '#C29B3C'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.is-in { opacity: 1; transform: none; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Falmouth Energy",
+    "description": "Heating oil, coal and fuel delivery, plus heating and cooling equipment, for the Cape Cod area from Falmouth, Massachusetts.",
+    "telephone": "+1-508-548-3200",
+    "email": "info@falmouthenergy.com",
+    "url": "https://falmouthenergy.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Falmouth",
+      "addressRegion": "MA",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+<body class="bg-pine-950 text-bone font-body antialiased">
+
+  <!-- Nav: real logo left, links, single CTA -->
+  <header class="sticky top-0 z-50 bg-pine-950/95 backdrop-blur border-b border-pine-700/60">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="https://falmouthenergy.com/" aria-label="Falmouth Energy home">
+        <img src="https://falmouthenergy.com/wp-content/themes/falmouth/img/falmouth-energy-logo.png" alt="Falmouth Energy Logo" class="h-9 rounded-[2px] bg-bone p-1">
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+        <a href="https://falmouthenergy.com/" class="text-bonedim hover:text-bone transition-colors">Home</a>
+        <a href="https://falmouthenergy.com/fuels/" class="text-bonedim hover:text-bone transition-colors">Fuel Delivery</a>
+        <a href="https://falmouthenergy.com/about-us/" class="text-bonedim hover:text-bone transition-colors">About</a>
+        <a href="https://falmouthenergy.com/contact-us/" class="text-bonedim hover:text-bone transition-colors">Contact</a>
+      </div>
+      <a href="tel:+15085483200" class="rounded-[2px] bg-gold text-pine-950 text-sm font-bold px-4 py-2">Request Service</a>
+    </nav>
+  </header>
+
+  <!-- Hero: left-aligned, solid deep green, typographic -->
+  <section class="relative min-h-[100dvh] flex items-center bg-pine-900">
+    <div class="relative max-w-6xl mx-auto px-6 py-24 w-full">
+      <p class="reveal text-bonedim text-sm font-semibold tracking-widest mb-8">Falmouth, Massachusetts &middot; Serving the Cape Cod area</p>
+      <h1 class="reveal font-display font-bold text-6xl md:text-8xl leading-[1.02] text-bone max-w-4xl">A Century of<br>Energy Solutions</h1>
+      <p class="reveal text-lg md:text-xl text-bonedim max-w-xl mt-8">Heating oil, coal and diesel delivery to the Upper Cape, in service for over 80 years.</p>
+      <div class="reveal flex flex-wrap gap-4 mt-10">
+        <a href="tel:+15085483200" class="rounded-[2px] bg-gold text-pine-950 font-bold px-6 py-3 text-base">(508) 548-3200</a>
+        <a href="https://falmouthenergy.com/fuels/" class="rounded-[2px] border border-pine-600 text-bone font-semibold px-6 py-3 text-base hover:border-gold transition-colors">See What We Deliver</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primary product section: asymmetric split, numbered features, icon tile -->
+  <section id="fuels" class="bg-pine-800 py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7">
+        <p class="reveal text-gold text-xs font-bold uppercase tracking-[0.3em] mb-6">Fuel &amp; Delivery</p>
+        <h2 class="reveal font-display font-bold text-4xl md:text-5xl leading-tight text-bone max-w-lg">The fuel the Upper Cape runs on</h2>
+        <div class="mt-12 space-y-10">
+          <div class="reveal flex gap-6">
+            <span class="font-display font-bold text-gold text-2xl leading-none pt-1">01</span>
+            <div>
+              <h3 class="text-xl font-bold text-bone">Heating oil &amp; kerosene delivery</h3>
+              <p class="text-bonedim mt-2 max-w-md leading-relaxed">The service this company began over 80 years ago. Scheduled, automatic or on request, to homes across the Cape Cod area.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-6">
+            <span class="font-display font-bold text-gold text-2xl leading-none pt-1">02</span>
+            <div>
+              <h3 class="text-xl font-bold text-bone">Automatic delivery</h3>
+              <p class="text-bonedim mt-2 max-w-md leading-relaxed">We watch the season and the meter for you, so the tank is topped before the cold snap, not after.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-6">
+            <span class="font-display font-bold text-gold text-2xl leading-none pt-1">03</span>
+            <div>
+              <h3 class="text-xl font-bold text-bone">Diesel &amp; bioheat</h3>
+              <p class="text-bonedim mt-2 max-w-md leading-relaxed">On- and off-road diesel, plus bioheat for customers who want the cleaner-burning blend.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal mt-12">
+          <a href="https://falmouthenergy.com/fuels/" class="text-gold font-semibold hover:underline">See all fuel services</a>
+        </div>
+      </div>
+      <div class="md:col-span-5">
+        <div class="reveal bg-bone rounded-[2px] p-8 md:p-10">
+          <img src="https://falmouthenergy.com/wp-content/uploads/2019/03/icon_fuel.png" alt="Cape Cod Fuel Delivery Services" class="w-24 h-24">
+          <p class="font-display font-bold text-2xl text-pine-900 mt-6">Delivery on the Cape</p>
+          <p class="text-pine-800/80 mt-3 leading-relaxed">One phone call, and the next delivery is on the schedule.</p>
+          <div class="flex gap-4 mt-8">
+            <img src="https://falmouthenergy.com/wp-content/uploads/2019/03/icon_autodelivery.png" alt="Automatic Delivery" class="w-14 h-14 bg-pine-800 rounded-[2px] p-2">
+            <img src="https://falmouthenergy.com/wp-content/uploads/2019/03/icon_diesel2.png" alt="On- and Off-Road Diesel Fuel Delivery" class="w-14 h-14 bg-pine-800 rounded-[2px] p-2">
+            <img src="https://falmouthenergy.com/wp-content/uploads/2019/03/icon_bioheat.png" alt="Bioheat Delivery" class="w-14 h-14 bg-pine-800 rounded-[2px] p-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary section: reversed split, equipment angle -->
+  <section id="equipment" class="bg-pine-900 py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-5 order-2 md:order-1">
+        <div class="reveal grid grid-cols-3 gap-4">
+          <div class="bg-bone rounded-[2px] p-5 flex items-center justify-center">
+            <img src="https://falmouthenergy.com/wp-content/themes/falmouth/img/icon-heating-services.png" alt="Heating Services" class="w-14 h-14">
+          </div>
+          <div class="bg-bone rounded-[2px] p-5 flex items-center justify-center">
+            <img src="https://falmouthenergy.com/wp-content/themes/falmouth/img/icon-cooling-services.png" alt="Cooling Services" class="w-14 h-14">
+          </div>
+          <div class="bg-bone rounded-[2px] p-5 flex items-center justify-center">
+            <img src="https://falmouthenergy.com/wp-content/themes/falmouth/img/icon-generator-services.png" alt="Generator Services" class="w-14 h-14">
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-7 order-1 md:order-2">
+        <h2 class="reveal font-display font-bold text-4xl md:text-5xl leading-tight text-bone max-w-lg">Installed, tuned and serviced in place</h2>
+        <p class="reveal text-bonedim mt-6 max-w-xl leading-relaxed text-lg">Boilers, furnaces, ductless cooling, generators and water heaters. When the crew that delivers your fuel also installs and services it, the number you call is one.</p>
+        <ul class="reveal mt-10 divide-y divide-pine-700 max-w-xl">
+          <li class="py-4 flex items-baseline justify-between gap-4">
+            <span class="font-semibold text-bone">Boilers &amp; furnaces</span>
+            <span class="text-bonedim text-sm">Install and service</span>
+          </li>
+          <li class="py-4 flex items-baseline justify-between gap-4">
+            <span class="font-semibold text-bone">Ductless air conditioning</span>
+            <span class="text-bonedim text-sm">Room by room</span>
+          </li>
+          <li class="py-4 flex items-baseline justify-between gap-4">
+            <span class="font-semibold text-bone">Generators</span>
+            <span class="text-bonedim text-sm">Backup power</span>
+          </li>
+          <li class="py-4 flex items-baseline justify-between gap-4">
+            <span class="font-semibold text-bone">Water heaters</span>
+            <span class="text-bonedim text-sm">Install and replacement</span>
+          </li>
+        </ul>
+        <div class="reveal mt-10">
+          <a href="https://falmouthenergy.com/contact-us/" class="rounded-[2px] border border-pine-600 text-bone font-semibold px-6 py-3 inline-block hover:border-gold transition-colors">Request a service visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand story: full-width editorial band, breaks the zigzag -->
+  <section id="story" class="bg-pine-800 py-24 md:py-32 border-y border-pine-700/60">
+    <div class="max-w-5xl mx-auto px-6">
+      <blockquote class="reveal font-display font-bold text-3xl md:text-5xl leading-snug text-bone">
+        &ldquo;This tradition of service began over 80 years ago with heating oil and kerosene delivery, and has evolved today to include a wide range of heating, cooling, and fuel delivery services.&rdquo;
+      </blockquote>
+      <p class="reveal text-bonedim mt-8 text-lg">In their own words, from the Falmouth Energy site.</p>
+      <div class="mt-16 grid sm:grid-cols-2 gap-6">
+        <div class="reveal bg-pine-900 rounded-[2px] p-8">
+          <p class="font-display font-bold text-2xl md:text-3xl text-bone">Falmouth Energy</p>
+          <p class="text-bonedim mt-3 leading-relaxed">The fuel the Upper Cape runs on: heating oil, diesel, bioheat and automatic delivery.</p>
+        </div>
+        <div class="reveal bg-pine-900 rounded-[2px] p-8">
+          <p class="font-display font-bold text-2xl md:text-3xl text-bone">Falmouth Coal Co.</p>
+          <p class="text-bonedim mt-3 leading-relaxed">Coal delivery to the same Cape Cod homes, on the trucks you see driving the Upper Cape.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial and credibility -->
+  <section id="proof" class="bg-pine-900 py-24 md:py-32">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="reveal text-gold text-xs font-bold uppercase tracking-[0.3em] mb-8">What a customer said</p>
+      <blockquote class="reveal font-display font-bold text-2xl md:text-4xl leading-snug text-bone">
+        &ldquo;Thank you for being so reliable. Your quick turnaround of removing the oil tank from my basement allowed me to close the sale of my home. I will recommend you to everyone, every opportunity I get.&rdquo;
+      </blockquote>
+      <p class="reveal text-bonedim mt-8 text-lg">Michelle R.</p>
+      <div class="reveal mt-16 grid sm:grid-cols-3 gap-8 border-t border-pine-700 pt-10">
+        <div>
+          <p class="font-display font-bold text-2xl text-gold">Over 80 years</p>
+          <p class="text-bonedim mt-2">In service on the Cape</p>
+        </div>
+        <div>
+          <p class="font-display font-bold text-2xl text-gold">Falmouth, MA</p>
+          <p class="text-bonedim mt-2">Serving the Cape Cod area</p>
+        </div>
+        <div>
+          <p class="font-display font-bold text-2xl text-gold">Oil, coal, diesel</p>
+          <p class="text-bonedim mt-2">Heating and cooling equipment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip -->
+  <section id="contact" class="bg-gold text-pine-950 py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+      <div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl">Need fuel, or a repair that cannot wait?</h2>
+        <p class="mt-3 font-semibold text-lg">A local company, one phone call away.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center gap-4">
+        <a href="tel:+15085483200" class="rounded-[2px] bg-pine-950 text-bone font-bold text-lg px-8 py-4">(508) 548-3200</a>
+        <a href="mailto:info@falmouthenergy.com" class="rounded-[2px] border-2 border-pine-950 text-pine-950 font-bold px-8 py-4">info@falmouthenergy.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pine-950 py-16 border-t border-pine-700/60">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+      <div>
+        <img src="https://falmouthenergy.com/wp-content/themes/falmouth/img/falmouth-energy-logo.png" alt="Falmouth Energy Logo" class="h-8 rounded-[2px] bg-bone p-1">
+        <p class="text-bonedim mt-4 text-sm">A Century of Energy Solutions</p>
+        <div class="flex gap-3 mt-6">
+          <img src="https://falmouthenergy.com/wp-content/themes/falmouth/img/facebook.png" alt="" aria-hidden="true" class="w-5 h-5 opacity-70">
+          <img src="https://falmouthenergy.com/wp-content/themes/falmouth/img/twitter.png" alt="" aria-hidden="true" class="w-5 h-5 opacity-70">
+          <img src="https://falmouthenergy.com/wp-content/themes/falmouth/img/youtube.png" alt="" aria-hidden="true" class="w-5 h-5 opacity-70">
+        </div>
+      </div>
+      <div>
+        <p class="font-bold text-bone">Explore</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="https://falmouthenergy.com/" class="text-bonedim hover:text-gold transition-colors">Home</a></li>
+          <li><a href="https://falmouthenergy.com/fuels/" class="text-bonedim hover:text-gold transition-colors">Fuel Delivery</a></li>
+          <li><a href="https://falmouthenergy.com/about-us/" class="text-bonedim hover:text-gold transition-colors">About</a></li>
+          <li><a href="https://falmouthenergy.com/contact-us/" class="text-bonedim hover:text-gold transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-bold text-bone">Contact</p>
+        <ul class="mt-4 space-y-2 text-sm text-bonedim">
+          <li><a href="tel:+15085483200" class="hover:text-gold transition-colors">(508) 548-3200</a></li>
+          <li><a href="mailto:info@falmouthenergy.com" class="hover:text-gold transition-colors">info@falmouthenergy.com</a></li>
+          <li>Falmouth, Massachusetts</li>
+          <li>Serving the Cape Cod area</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 mt-12 pt-6 border-t border-pine-800 flex flex-wrap gap-4 justify-between text-xs text-bonedim">
+      <p>Falmouth Energy &middot; Falmouth, Massachusetts</p>
+      <p>Prototype redesign by Bigger Fish</p>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
