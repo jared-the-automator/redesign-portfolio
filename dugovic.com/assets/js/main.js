@@ -72,9 +72,14 @@
   const HIDE_NAV_SCROLL_OFFSET_PX  = 80;
   const nav = document.querySelector('.nav');
   const hasHero = document.body.classList.contains('has-hero');
-  let lastScrollY = 0;
+  // The comic viewer is an immersive full-viewport section: its nav
+  // starts hidden and only reappears when the visitor scrolls up.
+  const immersive = !!document.querySelector('.comic');
+  let lastScrollY = window.scrollY;
 
   if (nav) {
+    if (immersive) nav.classList.add('nav--hidden');
+
     const onScroll = function () {
       const y = window.scrollY;
 
@@ -82,14 +87,20 @@
         nav.classList.toggle('nav--solid', y > SOLID_NAV_SCROLL_OFFSET_PX);
       }
 
-      // Auto-hide: slide the nav up when scrolling down past the threshold,
-      // slide it back when scrolling up or when at the top of the page.
-      if (y <= HIDE_NAV_SCROLL_OFFSET_PX) {
-        nav.classList.remove('nav--hidden');
-      } else if (y > lastScrollY) {
-        nav.classList.add('nav--hidden');
+      if (immersive) {
+        if (y > lastScrollY && y > HIDE_NAV_SCROLL_OFFSET_PX) {
+          nav.classList.add('nav--hidden');
+        } else if (y < lastScrollY) {
+          nav.classList.remove('nav--hidden');
+        }
       } else {
-        nav.classList.remove('nav--hidden');
+        if (y <= HIDE_NAV_SCROLL_OFFSET_PX) {
+          nav.classList.remove('nav--hidden');
+        } else if (y > lastScrollY) {
+          nav.classList.add('nav--hidden');
+        } else {
+          nav.classList.remove('nav--hidden');
+        }
       }
       lastScrollY = y;
     };
