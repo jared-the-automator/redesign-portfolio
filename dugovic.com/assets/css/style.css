@@ -185,7 +185,11 @@ p { max-width: 65ch; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  transition: background var(--speed) var(--ease), border-color var(--speed) var(--ease);
+  transition: background var(--speed) var(--ease), border-color var(--speed) var(--ease), transform var(--speed) var(--ease);
+}
+
+.nav--hidden {
+  transform: translateY(-100%);
 }
 
 .nav--solid {

@@ -67,15 +67,32 @@
   });
 
   /* ---------------------------------------------------------------
-     Nav solid state on scroll
+     Nav: solid state on scroll + auto-hide
      --------------------------------------------------------------- */
   const SOLID_NAV_SCROLL_OFFSET_PX = 40;
+  const HIDE_NAV_SCROLL_OFFSET_PX  = 80;
   const nav = document.querySelector('.nav');
   const hasHero = document.body.classList.contains('has-hero');
+  let lastScrollY = 0;
 
-  if (nav && hasHero) {
+  if (nav) {
     const onScroll = function () {
-      nav.classList.toggle('nav--solid', window.scrollY > SOLID_NAV_SCROLL_OFFSET_PX);
+      const y = window.scrollY;
+
+      if (hasHero) {
+        nav.classList.toggle('nav--solid', y > SOLID_NAV_SCROLL_OFFSET_PX);
+      }
+
+      // Auto-hide: slide the nav up when scrolling down past the threshold,
+      // slide it back when scrolling up or when at the top of the page.
+      if (y <= HIDE_NAV_SCROLL_OFFSET_PX) {
+        nav.classList.remove('nav--hidden');
+      } else if (y > lastScrollY) {
+        nav.classList.add('nav--hidden');
+      } else {
+        nav.classList.remove('nav--hidden');
+      }
+      lastScrollY = y;
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
