@@ -521,12 +521,12 @@ def generate_exhibits():
             for item in items
         )
 
-    def exhibits_group(title, items):
+    def exhibits_group(title, rows_html):
         return (
             f'            <div class="exhibits-group">\n'
             f'                <h2 class="exhibits-group__title">{title}</h2>\n'
             f'                <div class="exhibits-list">\n'
-            f'{rows(items)}\n'
+            f'{rows_html}\n'
             f'                </div>\n'
             f'            </div>'
         )
@@ -548,18 +548,13 @@ def generate_exhibits():
 
     <section class="section">
         <div class="container">
-{exhibits_group("Solo Exhibitions", solo)}
+{exhibits_group("Solo Exhibitions", rows(solo))}
 
-{exhibits_group("Group Exhibitions", group)}
+{exhibits_group("Group Exhibitions", rows(group))}
 
-{exhibits_group("Commissions", commissions)}
+{exhibits_group("Commissions", rows(commissions))}
 
-            <div class="exhibits-group">
-                <h2 class="exhibits-group__title">Private Collections</h2>
-                <div class="exhibits-list">
-{collection_rows(collectors)}
-                </div>
-            </div>
+{exhibits_group("Private Collections", collection_rows(collectors))}
         </div>
     </section>
     '''
