@@ -806,6 +806,8 @@ p { max-width: 65ch; }
 .comic__page {
   position: absolute;
   inset: 0;
+  top: var(--sp-5);
+  bottom: var(--sp-5);
   opacity: 0;
   transform: translateX(40px);
   transition: opacity 0.45s var(--ease), transform 0.45s var(--ease);
