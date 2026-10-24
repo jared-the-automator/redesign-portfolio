@@ -118,8 +118,9 @@
       capTitle.textContent = it.title;
       capMeta.textContent  = it.meta;
       counter.textContent   = (index + 1) + ' / ' + items.length;
-      prevBtn.style.visibility = items.length > 1 ? 'visible' : 'hidden';
-      nextBtn.style.visibility = items.length > 1 ? 'visible' : 'hidden';
+      const navVis = items.length > 1 ? 'visible' : 'hidden';
+      prevBtn.style.visibility = navVis;
+      nextBtn.style.visibility = navVis;
     }
 
     function open(i) {
