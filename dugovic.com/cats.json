@@ -1,0 +1,560 @@
+{
+  "Trailers": [
+    {
+      "fn": "5991899.jpg",
+      "orig": "5991899_orig.jpg",
+      "cap": "",
+      "series": "Trailers"
+    },
+    {
+      "fn": "9501878.jpg",
+      "orig": "9501878_orig.jpg",
+      "cap": "",
+      "series": "Trailers"
+    },
+    {
+      "fn": "8967035.jpg",
+      "orig": "8967035_orig.jpg",
+      "cap": "",
+      "series": "Trailers"
+    },
+    {
+      "fn": "6487071.jpg",
+      "orig": "6487071_orig.jpg",
+      "cap": "",
+      "series": "Trailers"
+    },
+    {
+      "fn": "775204.jpg",
+      "orig": "775204_orig.jpg",
+      "cap": "",
+      "series": "Trailers"
+    },
+    {
+      "fn": "anthonys-edited-1.jpg",
+      "orig": "anthonys-edited-1_orig.jpg",
+      "cap": "Anthonys",
+      "series": "Trailers"
+    },
+    {
+      "fn": "ditch-p-weebly-edited-1.jpg",
+      "orig": "ditch-p-weebly-edited-1_orig.jpg",
+      "cap": "Ditch P",
+      "series": "Trailers"
+    },
+    {
+      "fn": "mary-joeseph-weebly-edited-1.jpg",
+      "orig": "mary-joeseph-weebly-edited-1_orig.jpg",
+      "cap": "Mary Joeseph",
+      "series": "Trailers"
+    },
+    {
+      "fn": "wagon-notell-weeblypsd.jpg",
+      "orig": "wagon-notell-weeblypsd_orig.jpg",
+      "cap": "Wagon Notell",
+      "series": "Trailers"
+    },
+    {
+      "fn": "my-neigbor-weebly.jpg",
+      "orig": "my-neigbor-weebly_orig.jpg",
+      "cap": "My Neigbor",
+      "series": "Trailers"
+    },
+    {
+      "fn": "twin-pumps-weebly.jpg",
+      "orig": "twin-pumps-weebly_orig.jpg",
+      "cap": "Twin Pumps",
+      "series": "Trailers"
+    }
+  ],
+  "Signs": [
+    {
+      "fn": "6784670.jpg",
+      "orig": "6784670_orig.jpg",
+      "cap": "",
+      "series": "Signs"
+    },
+    {
+      "fn": "1507970.jpg",
+      "orig": "1507970_orig.jpg",
+      "cap": "",
+      "series": "Signs"
+    },
+    {
+      "fn": "9248008.jpg",
+      "orig": "9248008_orig.jpg",
+      "cap": "",
+      "series": "Signs"
+    },
+    {
+      "fn": "9559823.jpg",
+      "orig": "9559823_orig.jpg",
+      "cap": "",
+      "series": "Signs"
+    },
+    {
+      "fn": "1387871.jpg",
+      "orig": "1387871_orig.jpg",
+      "cap": "",
+      "series": "Signs"
+    },
+    {
+      "fn": "899589.jpg",
+      "orig": "899589_orig.jpg",
+      "cap": "",
+      "series": "Signs"
+    },
+    {
+      "fn": "54417.jpg",
+      "orig": "54417_orig.jpg",
+      "cap": "",
+      "series": "Signs"
+    },
+    {
+      "fn": "luckboy-twin-weebly.jpg",
+      "orig": "luckboy-twin-weebly_orig.jpg",
+      "cap": "Luckboy Twin",
+      "series": "Signs"
+    },
+    {
+      "fn": "lucky-girl-weebly.jpg",
+      "orig": "lucky-girl-weebly_orig.jpg",
+      "cap": "Lucky Girl",
+      "series": "Signs"
+    },
+    {
+      "fn": "some-lunch-weebly-edited-1.jpg",
+      "orig": "some-lunch-weebly-edited-1_orig.jpg",
+      "cap": "Some Lunch",
+      "series": "Signs"
+    },
+    {
+      "fn": "cocktail-paradise-weebly.jpg",
+      "orig": "cocktail-paradise-weebly_orig.jpg",
+      "cap": "Cocktail Paradise",
+      "series": "Signs"
+    },
+    {
+      "fn": "another-lunch-weebly.jpg",
+      "orig": "another-lunch-weebly_orig.jpg",
+      "cap": "Another Lunch",
+      "series": "Signs"
+    },
+    {
+      "fn": "and-one-more-lunch-weebly-edited-1.jpg",
+      "orig": "and-one-more-lunch-weebly-edited-1_orig.jpg",
+      "cap": "And One More Lunch",
+      "series": "Signs"
+    },
+    {
+      "fn": "shil-weebly.jpg",
+      "orig": "shil-weebly_orig.jpg",
+      "cap": "Shil",
+      "series": "Signs"
+    },
+    {
+      "fn": "dutlers-bbowl-weebly.jpg",
+      "orig": "dutlers-bbowl-weebly_orig.jpg",
+      "cap": "Dutlers Bbowl",
+      "series": "Signs"
+    },
+    {
+      "fn": "bowl-weebly-edited-1.jpg",
+      "orig": "bowl-weebly-edited-1_orig.jpg",
+      "cap": "Bowl",
+      "series": "Signs"
+    },
+    {
+      "fn": "g-bar-weebly.jpg",
+      "orig": "g-bar-weebly_orig.jpg",
+      "cap": "G Bar",
+      "series": "Signs"
+    },
+    {
+      "fn": "diner-time-weebly-edited-1.jpg",
+      "orig": "diner-time-weebly-edited-1_orig.jpg",
+      "cap": "Diner Time",
+      "series": "Signs"
+    },
+    {
+      "fn": "flun-weebly.jpg",
+      "orig": "flun-weebly_orig.jpg",
+      "cap": "Flun",
+      "series": "Signs"
+    },
+    {
+      "fn": "liq-b-weebly-edited-1.jpg",
+      "orig": "liq-b-weebly-edited-1_orig.jpg",
+      "cap": "Liq B",
+      "series": "Signs"
+    },
+    {
+      "fn": "g-pointweebly.jpg",
+      "orig": "g-pointweebly_orig.jpg",
+      "cap": "G Pointweebly",
+      "series": "Signs"
+    },
+    {
+      "fn": "lost-lunch-weebly.jpg",
+      "orig": "lost-lunch-weebly_orig.jpg",
+      "cap": "Lost Lunch",
+      "series": "Signs"
+    },
+    {
+      "fn": "packy-weebly.jpg",
+      "orig": "packy-weebly_orig.jpg",
+      "cap": "Packy",
+      "series": "Signs"
+    },
+    {
+      "fn": "oregon-tavern-weeblypsd.jpg",
+      "orig": "oregon-tavern-weeblypsd_orig.jpg",
+      "cap": "Oregon Tavern",
+      "series": "Signs"
+    },
+    {
+      "fn": "no-tell-motel.jpg",
+      "orig": "no-tell-motel_orig.jpg",
+      "cap": "No Tell Motel",
+      "series": "Signs"
+    },
+    {
+      "fn": "kittery-nights.jpg",
+      "orig": "kittery-nights_orig.jpg",
+      "cap": "Kittery Nights",
+      "series": "Signs"
+    },
+    {
+      "fn": "oob-notel.jpg",
+      "orig": "oob-notel_orig.jpg",
+      "cap": "Oob Notel",
+      "series": "Signs"
+    },
+    {
+      "fn": "peter-dugovic-twin-pumps-2017-60-22x40-22.jpg",
+      "orig": "peter-dugovic-twin-pumps-2017-60-22x40-22_orig.jpg",
+      "cap": "Peter Dugovic Twin Pumps 2017 60 22x40 22",
+      "series": "Signs"
+    }
+  ],
+  "Cars": [
+    {
+      "fn": "1000054.jpg",
+      "orig": "1000054_orig.jpg",
+      "cap": "",
+      "series": "Cars"
+    },
+    {
+      "fn": "736789.jpg",
+      "orig": "736789_orig.jpg",
+      "cap": "",
+      "series": "Cars"
+    },
+    {
+      "fn": "4763763.jpg",
+      "orig": "4763763_orig.jpg",
+      "cap": "",
+      "series": "Cars"
+    },
+    {
+      "fn": "red-ford-weebly.jpg",
+      "orig": "red-ford-weebly_orig.jpg",
+      "cap": "Red Ford",
+      "series": "Cars"
+    },
+    {
+      "fn": "snow-t-bird-weebly.jpg",
+      "orig": "snow-t-bird-weebly_orig.jpg",
+      "cap": "Snow T Bird",
+      "series": "Cars"
+    },
+    {
+      "fn": "day-trip-weebly.jpg",
+      "orig": "day-trip-weebly_orig.jpg",
+      "cap": "Day Trip",
+      "series": "Cars"
+    },
+    {
+      "fn": "jukjins-weebly.jpg",
+      "orig": "jukjins-weebly_orig.jpg",
+      "cap": "Jukjins",
+      "series": "Cars"
+    },
+    {
+      "fn": "radio-nights-weebly.jpg",
+      "orig": "radio-nights-weebly_orig.jpg",
+      "cap": "Radio Nights",
+      "series": "Cars"
+    },
+    {
+      "fn": "inter-weebly.jpg",
+      "orig": "inter-weebly_orig.jpg",
+      "cap": "Inter",
+      "series": "Cars"
+    },
+    {
+      "fn": "radio-nights-red.jpg",
+      "orig": "radio-nights-red_orig.jpg",
+      "cap": "Radio Nights Red",
+      "series": "Cars"
+    }
+  ],
+  "Kitchen": [
+    {
+      "fn": "happy-birthday-to-me.jpg",
+      "orig": "happy-birthday-to-me_orig.jpg",
+      "cap": "Happy Birthday To Me",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "red-weebly.jpg",
+      "orig": "red-weebly_orig.jpg",
+      "cap": "Red",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "red-other-weebly.jpg",
+      "orig": "red-other-weebly_orig.jpg",
+      "cap": "Red Other",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "lob-pot.jpg",
+      "orig": "lob-pot_orig.jpg",
+      "cap": "Lob Pot",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "ksink-weebly.jpg",
+      "orig": "ksink-weebly_orig.jpg",
+      "cap": "Ksink",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "green-stuff-weebly.jpg",
+      "orig": "green-stuff-weebly_orig.jpg",
+      "cap": "Green Stuff",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "thanks-weebly.jpg",
+      "orig": "thanks-weebly_orig.jpg",
+      "cap": "Thanks",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "small-pot-weebly.jpg",
+      "orig": "small-pot-weebly_orig.jpg",
+      "cap": "Small Pot",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "oh-this-ones-thanks-weebly.jpg",
+      "orig": "oh-this-ones-thanks-weebly_orig.jpg",
+      "cap": "Oh This Ones Thanks",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "xmas-toast.jpg",
+      "orig": "xmas-toast_orig.jpg",
+      "cap": "Xmas Toast",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "french-press.jpg",
+      "orig": "french-press_orig.jpg",
+      "cap": "French Press",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "three-jacks-n-a-spade.jpg",
+      "orig": "three-jacks-n-a-spade_orig.jpg",
+      "cap": "Three Jacks N A Spade",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "vodka-n-eggs.jpg",
+      "orig": "vodka-n-eggs_orig.jpg",
+      "cap": "Vodka N Eggs",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "2-eggs-2-toast-two-bacons.jpg",
+      "orig": "2-eggs-2-toast-two-bacons_orig.jpg",
+      "cap": "2 Eggs 2 Toast Two Bacons",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "sushi-take-home.jpg",
+      "orig": "sushi-take-home_orig.jpg",
+      "cap": "Sushi Take Home",
+      "series": "Kitchen"
+    },
+    {
+      "fn": "img-2053.jpg",
+      "orig": "img-2053_orig.jpg",
+      "cap": "Img 2053",
+      "series": "Kitchen"
+    }
+  ],
+  "Playgrounds": [
+    {
+      "fn": "6862862.jpg",
+      "orig": "6862862_orig.jpg",
+      "cap": "",
+      "series": "Playgrounds"
+    },
+    {
+      "fn": "9364492.jpg",
+      "orig": "9364492_orig.jpg",
+      "cap": "",
+      "series": "Playgrounds"
+    },
+    {
+      "fn": "5588611.jpg",
+      "orig": "5588611_orig.jpg",
+      "cap": "",
+      "series": "Playgrounds"
+    },
+    {
+      "fn": "1838235.jpg",
+      "orig": "1838235_orig.jpg",
+      "cap": "",
+      "series": "Playgrounds"
+    },
+    {
+      "fn": "9550730.jpg",
+      "orig": "9550730_orig.jpg",
+      "cap": "",
+      "series": "Playgrounds"
+    },
+    {
+      "fn": "fryburg-fair-weebly-edited-1.jpg",
+      "orig": "fryburg-fair-weebly-edited-1_orig.jpg",
+      "cap": "Fryburg Fair",
+      "series": "Playgrounds"
+    },
+    {
+      "fn": "red-wheel.jpg",
+      "orig": "red-wheel_orig.jpg",
+      "cap": "Red Wheel",
+      "series": "Playgrounds"
+    },
+    {
+      "fn": "ticket-to-ride.jpg",
+      "orig": "ticket-to-ride_orig.jpg",
+      "cap": "Ticket To Ride",
+      "series": "Playgrounds"
+    },
+    {
+      "fn": "tagsale-toy-plane.jpg",
+      "orig": "tagsale-toy-plane_orig.jpg",
+      "cap": "Tagsale Toy Plane",
+      "series": "Playgrounds"
+    }
+  ],
+  "Pop Victorian": [
+    {
+      "fn": "raiters-foyer.jpg",
+      "orig": "raiters-foyer_orig.jpg",
+      "cap": "Raiters Foyer",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "4613574.jpg",
+      "orig": "4613574_orig.jpg",
+      "cap": "",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "4829438.jpg",
+      "orig": "4829438_orig.jpg",
+      "cap": "",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "6621085.jpg",
+      "orig": "6621085_orig.jpg",
+      "cap": "",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "2326814.jpg",
+      "orig": "2326814_orig.jpg",
+      "cap": "",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "5347227.jpg",
+      "orig": "5347227_orig.jpg",
+      "cap": "",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "9861452.jpg",
+      "orig": "9861452_orig.jpg",
+      "cap": "",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "6425604.jpg",
+      "orig": "6425604_orig.jpg",
+      "cap": "",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "4472016.jpg",
+      "orig": "4472016_orig.jpg",
+      "cap": "",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "your-new-sunroomweebly.jpg",
+      "orig": "your-new-sunroomweebly_orig.jpg",
+      "cap": "Your New Sunroomweebly",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "blue-thoughts.jpg",
+      "orig": "blue-thoughts_orig.jpg",
+      "cap": "Blue Thoughts",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "jeans-n-thong.jpg",
+      "orig": "jeans-n-thong_orig.jpg",
+      "cap": "Jeans N Thong",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "k-iay-red.jpg",
+      "orig": "k-iay-red_orig.jpg",
+      "cap": "K Iay Red",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "long-look.jpg",
+      "orig": "long-look_orig.jpg",
+      "cap": "Long Look",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "2921288.jpg",
+      "orig": "2921288_orig.jpg",
+      "cap": "",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "red-nails.jpg",
+      "orig": "red-nails_orig.jpg",
+      "cap": "Red Nails",
+      "series": "Pop Victorian"
+    },
+    {
+      "fn": "sml-sun-room.jpg",
+      "orig": "sml-sun-room_orig.jpg",
+      "cap": "Sml Sun Room",
+      "series": "Pop Victorian"
+    }
+  ]
+}

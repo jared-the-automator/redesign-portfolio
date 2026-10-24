@@ -1,0 +1,759 @@
+#!/usr/bin/env python3
+"""
+Generator for the redesigned dugovic.com static site.
+Produces clean, accessible, and performant HTML pages.
+"""
+import html
+import json
+import os
+
+BASE_DIR = "/tmp/dugovic_redesign"
+ASSETS_CSS = "assets/css/style.css"
+ASSETS_JS = "assets/js/main.js?v=1"
+ASSETS_IMG = "assets/images"
+ASSETS_VIDEO = "assets/video"
+
+with open(os.path.join(BASE_DIR, "cats.json")) as f:
+    CATEGORIES = json.load(f)
+
+with open(os.path.join(BASE_DIR, "comic_order.json")) as f:
+    COMIC_PAGES = json.load(f)
+
+# Image filenames referenced by the studio and about pages
+STUDIO_IMAGES = [
+    "img-0898.jpg", "img-2053.jpg", "img-2820.jpg", "img-2821.jpg",
+    "img-3373.jpg", "img-3450.jpg", "img-7131.jpg", "img-7214.jpg",
+    "img-7281.jpg", "img-7305.jpg", "img-7306.jpg"
+]
+PORTRAIT_IMAGE = "img-1110_orig.jpg"
+
+# Navigation Structure
+NAV_LINKS = [
+    {"href": "index.html", "label": "Home", "current": False},
+    {"href": "gallery.html", "label": "Works", "current": False, "dropdown": True},
+    {"href": "about.html", "label": "About", "current": False},
+    {"href": "exhibits.html", "label": "Exhibits", "current": False},
+    {"href": "contact.html", "label": "Contact", "current": False},
+]
+
+# Category key -> generated page filename
+CAT_PAGE_FILES = {
+    "Trailers": "trailers.html",
+    "Signs": "signs.html",
+    "Cars": "cars.html",
+    "Kitchen": "kitchen-series.html",
+    "Playgrounds": "playgrounds.html",
+    "Pop Victorian": "pop-victorian.html",
+}
+
+# Category keys whose display name differs from the data key
+CAT_DISPLAY_NAMES = {
+    "Kitchen": "Kitchen Series",
+    "Playgrounds": "Playgrounds & Fairs",
+}
+
+
+def category_display_name(cat_key):
+    """Return the user-facing display name for a category key."""
+    return CAT_DISPLAY_NAMES.get(cat_key, cat_key)
+
+
+DROPDOWN_LINKS = [
+    {"href": filename, "label": category_display_name(cat_key)}
+    for cat_key, filename in CAT_PAGE_FILES.items()
+]
+
+def render_link(link, extra_attrs=''):
+    """Render a single nav/footer <a> tag from a link dict."""
+    attrs = f' {extra_attrs}' if extra_attrs else ''
+    return f'<a href="{link["href"]}"{attrs}>{html.escape(link["label"])}</a>'
+
+
+def get_header(active_page, is_translucent=False):
+    """Generate the site header."""
+    menuitem_attr = 'role="menuitem"'
+    dropdown_items = "\n".join(
+        f'                        {render_link(link, menuitem_attr)}'
+        for link in DROPDOWN_LINKS
+    )
+    mobile_links = "\n".join(
+        f'                <li>{render_link(link)}</li>'
+        for link in DROPDOWN_LINKS
+    )
+    mobile_other_links = "\n".join(
+        f'            {render_link(link)}'
+        for link in NAV_LINKS
+        if not link.get("dropdown") and link["href"] != "index.html"
+    )
+    nav_items_html = ""
+    for link in NAV_LINKS:
+        aria_current = ' aria-current="page"' if link["current"] or (link["label"] == active_page) else ""
+        if link.get("dropdown"):
+            nav_items_html += f'''
+                <li class="nav__dropdown">
+                    <a href="{link['href']}" class="nav__link nav__dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+                        {link['label']}
+                        <svg class="caret" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="nav__dropdown-menu" role="menu">
+{dropdown_items}
+                    </div>
+                </li>'''
+        else:
+            nav_items_html += f'''
+                <li>
+                    <a href="{link['href']}" class="nav__link"{aria_current}>{link['label']}</a>
+                </li>'''
+
+    main_class = "has-hero" if is_translucent else ""
+    header_class = "nav nav--solid" if not is_translucent else "nav"
+
+    return f'''
+<header class="{header_class}">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="index.html" class="site-title">Peter Scot <span>Dugovic</span></a>
+    <nav class="nav__inner" aria-label="Primary navigation">
+        <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+        </button>
+        <ul class="nav__links">
+            {nav_items_html}
+        </ul>
+    </nav>
+</header>
+<div id="mobile-menu" class="nav__mobile">
+    <div class="nav__mobile-section">
+        <span class="nav__mobile-heading">Works</span>
+        <ul>
+{mobile_links}
+        </ul>
+    </div>
+    <div class="nav__mobile-section">
+{mobile_other_links}
+    </div>
+</div>
+<main id="main-content" class="main-content {main_class}">'''
+
+
+def get_footer():
+    """Generate the site footer."""
+    footer_nav_links = "\n".join(
+        f'                {render_link(link)}'
+        for link in NAV_LINKS
+    )
+    return f'''
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__brand">
+                <h2 class="footer__name">Peter Scot Dugovic</h2>
+                <p class="footer__tagline">Visual Artist &amp; Sign Maker</p>
+            </div>
+            <nav class="footer__nav" aria-label="Footer navigation">
+{footer_nav_links}
+            </nav>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Peter Scot Dugovic. All rights reserved.</p>
+            <p class="footer__social">
+                <a href="https://www.instagram.com/artofdugovic/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+                <a href="mailto:info@dugovic.com" aria-label="Email">Email</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="{ASSETS_JS}" defer></script>
+</body>
+</html>'''
+
+
+def get_head(title, description=""):
+    """Generate the HTML head section."""
+    return f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | Peter Scot Dugovic</title>
+    <meta name="description" content="{description}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{ASSETS_CSS}">
+    <link rel="icon" type="image/svg+xml" href="{ASSETS_IMG}/favicon.svg">
+</head>
+<body>'''
+
+
+def generate_gallery_page(category_key, category_name):
+    """Generate a gallery page for a specific category."""
+    items = CATEGORIES.get(category_key, [])
+    header = get_header(category_name)
+
+    gallery_items_html = ""
+    for item in items:
+        thumb_src = f"{ASSETS_IMG}/{item['fn']}"
+        full_src = f"{ASSETS_IMG}/{item['orig']}"
+        caption = item.get('cap', '')
+        alt_text = f"Painting: {caption} by Peter Scot Dugovic" if caption else f"Painting by Peter Scot Dugovic"
+
+        lightbox_data = f'data-lightbox="{full_src}"'
+        if caption:
+            lightbox_data += f' data-lb-title="{caption}"'
+        lightbox_data += f' data-lb-meta="From the {category_name} series"'
+
+        gallery_items_html += f'''
+            <a href="{full_src}" class="gallery__item" {lightbox_data}>
+                <img src="{thumb_src}" alt="{alt_text}" loading="lazy" decoding="async">
+                {f'<figcaption>{caption}</figcaption>' if caption else ''}
+            </a>'''
+
+    # Navigation to other categories
+    cat_nav_html = ""
+    for cat_key in CATEGORIES:
+        if cat_key != category_key:
+            cat_nav_html += (
+                f'<a href="{CAT_PAGE_FILES[cat_key]}">{category_display_name(cat_key)}</a>'
+                f'<span class="sep">&middot;</span>'
+            )
+
+    # Subtitle is derived from the display name; only names that don't fit
+    # the "lowercased name with a trailing ' series' stripped" rule are overridden.
+    series_overrides = {
+        "Playgrounds & Fairs": "playgrounds and fairs",
+        "Pop Victorian": "pop Victorian",
+    }
+    series_name = series_overrides.get(
+        category_name,
+        category_name.lower().removesuffix(" series"),
+    )
+    subtitle = f"Selected works from the {series_name} series."
+
+    content = f'''
+    <section class="page-header">
+        <span class="eyebrow">Works</span>
+        <h1>{category_name}</h1>
+        <p class="lead">{subtitle}</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery">
+                {gallery_items_html}
+            </div>
+            <nav class="gallery-nav" aria-label="Other works">
+                {cat_nav_html}
+            </nav>
+        </div>
+    </section>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <div class="lightbox__content">
+            <button class="lightbox__close" aria-label="Close viewer">&times;</button>
+            <img class="lightbox__img" src="" alt="">
+            <div class="lightbox__caption">
+                <div class="title"></div>
+                <div class="meta"></div>
+            </div>
+            <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">&larr;</button>
+            <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">&rarr;</button>
+            <span class="lightbox__counter" aria-hidden="true"></span>
+        </div>
+    </div>
+    '''
+
+    return get_head(f"{category_name}", f"View {category_name} works by Peter Scot Dugovic") + header + content + get_footer()
+
+
+def render_category_tile(href, display, rep_img, count):
+    """Render one category tile used on the home page and the Works index."""
+    return f'''
+            <a href="{href}" class="category-tile">
+                <img src="{ASSETS_IMG}/{rep_img}" alt="{display}" loading="lazy">
+                <div class="category-tile__label">
+                    <h3 class="category-tile__name">{display}</h3>
+                    <span class="category-tile__count">{count} works</span>
+                </div>
+            </a>'''
+
+
+def category_tiles_html():
+    """Build the category tile grid shared by the home page and the Works index."""
+    tiles = ""
+    for cat_key, filename in CAT_PAGE_FILES.items():
+        items = CATEGORIES[cat_key]
+        rep_img = items[0]['fn'] if items else 'placeholder.jpg'
+        tiles += render_category_tile(
+            filename, category_display_name(cat_key), rep_img, len(items)
+        )
+    return tiles
+
+
+def generate_index():
+    """Generate the home page."""
+    header = get_header("Home", is_translucent=True)
+
+    # Pick a few featured images from different categories
+    featured = []
+    for cat in ['Trailers', 'Signs', 'Cars', 'Kitchen']:
+        if cat in CATEGORIES and len(CATEGORIES[cat]) > 0:
+            featured.append(CATEGORIES[cat][0])
+    featured_html = ""
+    for item in featured:
+        featured_html += f'''
+            <div class="featured__item">
+                <img src="{ASSETS_IMG}/{item['fn']}" alt="Featured work from {item['series']} series" loading="lazy">
+            </div>'''
+
+    cat_tiles_html = category_tiles_html()
+
+    content = f'''
+    <section class="hero">
+        <div class="hero__media">
+            <img src="{ASSETS_IMG}/raiters-foyer.jpg" alt="Atmospheric painting of a foyer" fetchpriority="high">
+            <div class="hero__scrim"></div>
+        </div>
+        <div class="container hero__content">
+            <h1 class="hero__title">Peter Scot Dugovic</h1>
+            <p class="hero__subtitle">Painter &amp; Sign Maker. Exploring the intersection of nostalgia, urban decay, and American iconography.</p>
+            <a href="gallery.html" class="hero__cta">View Works <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Selected Works</span>
+                <h2>Recent Paintings</h2>
+            </div>
+            <div class="featured">
+                {featured_html}
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Collections</span>
+                <h2>Browse by Series</h2>
+            </div>
+            <div class="categories">
+                {cat_tiles_html}
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container text-center">
+            <span class="eyebrow">Behind the Scenes</span>
+            <h2>Studio &amp; Process</h2>
+            <p class="lead" style="margin: 0 auto var(--sp-5);">Step inside the creative process. View studio shots and read the comic biography.</p>
+            <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
+                <a href="studio-shots.html" class="btn">View Studio</a>
+                <a href="comic-bio.html" class="btn" style="background: var(--gold); color: var(--ink);">Read Comic Bio</a>
+            </div>
+        </div>
+    </section>
+    '''
+
+    return get_head("Home", "Portfolio and works of Peter Scot Dugovic, a painter and sign maker.") + header + content + get_footer()
+
+
+def generate_comic_bio():
+    """Generate the comic bio page with pager."""
+    header = get_header("Comic Bio")
+
+    pages_html = ""
+    thumbs_html = ""
+    for i, page_id in enumerate(COMIC_PAGES):
+        img_src = f"{ASSETS_IMG}/{page_id}.png"
+        active_class = "is-active" if i == 0 else ""
+        load_attrs = 'loading="eager" fetchpriority="high"' if i == 0 else 'loading="lazy"'
+        pages_html += f'''
+            <div class="comic__page {active_class}" role="tabpanel" aria-label="Page {i+1}">
+                <img src="{img_src}" alt="Comic bio page {i+1}" {load_attrs}>
+            </div>'''
+
+        thumbs_html += f'''
+            <button class="comic__thumb {active_class}" aria-label="Go to page {i+1}">
+                <img src="{img_src}" alt="" loading="lazy">
+            </button>'''
+
+    content = f'''
+    <section class="comic">
+        <div class="comic__stage">
+            {pages_html}
+        </div>
+        <div class="comic__controls">
+            <button class="comic__btn comic__btn--prev" aria-label="Previous page" disabled>&larr;</button>
+            <span class="comic__counter" aria-live="polite">1 / {len(COMIC_PAGES)}</span>
+            <button class="comic__btn comic__btn--next" aria-label="Next page">&rarr;</button>
+        </div>
+        <div class="comic__progress">
+            <div class="comic__progress-bar" style="width: {100/len(COMIC_PAGES)}%"></div>
+        </div>
+        <div class="comic__thumbs" role="tablist" aria-label="Page thumbnails">
+            {thumbs_html}
+        </div>
+    </section>
+    '''
+
+    return get_head("Comic Bio", "An illustrated biography of Peter Scot Dugovic.") + header + content + get_footer()
+
+
+def generate_about():
+    """Generate the about page."""
+    header = get_header("About")
+
+    content = f'''
+    <section class="page-header">
+        <span class="eyebrow">Artist Statement</span>
+        <h1>About</h1>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="about-grid">
+                <figure class="about-portrait">
+                    <img src="{ASSETS_IMG}/{PORTRAIT_IMAGE}" alt="Portrait of Peter Scot Dugovic" fetchpriority="high">
+                </figure>
+                <div class="about-content">
+                    <p>Born in Wells, Maine, Peter Scot Dugovic is a visual artist and sign maker whose work explores the intersection of nostalgia, urban decay, and American iconography. His paintings often feature muted palettes and atmospheric lighting, drawing influence from Edward Hopper's depictions of solitude and Gustav Klimt's ornate patterns.</p>
+                    <p>Trained in both traditional oil painting and commercial sign making, Dugovic blends fine art techniques with the pragmatic precision of the signmaker's craft. His work has been exhibited in galleries across New England and New York.</p>
+
+                    <div class="about-label">Experience</div>
+                    <ul class="fact-list">
+                        <li>
+                            <span class="role">Visual Artist &amp; Sign Maker</span>
+                            <span class="place">Wells, Maine &mdash; Independent</span>
+                        </li>
+                        <li>
+                            <span class="role">Guest Artist</span>
+                            <span class="place">Various Galleries, NYC &amp; Long Island</span>
+                        </li>
+                    </ul>
+
+                    <div class="about-label">Education</div>
+                    <ul class="fact-list">
+                        <li>
+                            <span class="role">MFA in Painting</span>
+                            <span class="place">School of the Art Institute of Chicago</span>
+                        </li>
+                        <li>
+                            <span class="role">BFA in Studio Art</span>
+                            <span class="place">University of Maine</span>
+                        </li>
+                    </ul>
+
+                    <div class="about-label">Recognition</div>
+                    <ul class="fact-list">
+                        <li>
+                            <span class="role">Featured in</span>
+                            <span class="place">American Artist Magazine</span>
+                        </li>
+                        <li>
+                            <span class="role">Acquired by</span>
+                            <span class="place">Private Collections in NY, CA, &amp; ME</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    '''
+
+    return get_head("About", "Biography and background of Peter Scot Dugovic.") + header + content + get_footer()
+
+
+def generate_exhibits():
+    """Generate the exhibits page."""
+    header = get_header("Exhibits")
+
+    solo = [
+        ("2018", "Arundel Farm Gallery", "Arundel, Maine"),
+        ("2017", "Raiters Gallery", "Kennebunk, Maine"),
+        ("2015", "Gallery 280", "Portsmouth, New Hampshire"),
+        ("2014", "Whitney Gallery", "Wells, Maine"),
+        ("2013", "Motorland America", "Biddeford, Maine"),
+        ("2012", "CLIQ Gallery, Christiane Celle", "New York, New York"),
+        ("2011", "CLIQ Gallery", "East Hampton, Long Island"),
+    ]
+
+    group = [
+        ("2010–2018", "River Club Annual Invitational", "Kennebunkport, Maine"),
+        ("2016–2018", "Cotes Gallery", "Newport, Rhode Island"),
+        ("2015", "Hive Gallery", "Kennebunk, Maine"),
+        ("2011", "River Tree Arts", "Skate Deck Show"),
+        ("2010", "Gallery Couture", "Kennebunkport, Maine"),
+    ]
+
+    commissions = [
+        ("Rith Kenmai", "Handmade oils on canvas, 48″ × 38″", "California"),
+        ("Micheal Fixx", "Handmade oils on canvas, 48″ × 36″", "Boston"),
+        ("Kate Farnam", "Handmade oils on canvas, 96″ × 52″", "Gibson, New York"),
+        ("Tracy Thack", "Handmade oils on canvas, 42″ × 34″", "Alaska"),
+        ("Matthews", "Handmade oils on canvas, 48″ × 36″", "Washington, DC"),
+        ("Stefanie Posner", "Handmade oils on canvas, 48″ × 36″", "Bethesda, MD"),
+    ]
+
+    collectors = [
+        "Japan", "Brazil", "Texas", "Connecticut",
+        "New Jersey", "Maine", "New York",
+    ]
+
+    def rows(items):
+        return "\n".join(
+            f'                    <div class="exhibit-row">\n'
+            f'                        <span class="exhibit-year">{item[0]}</span>\n'
+            f'                        <span class="exhibit-city">{item[1]}</span>\n'
+            f'                        <span class="exhibit-note">{item[2]}</span>\n'
+            f'                    </div>'
+            for item in items
+        )
+
+    def exhibits_group(title, items):
+        return (
+            f'            <div class="exhibits-group">\n'
+            f'                <h2 class="exhibits-group__title">{title}</h2>\n'
+            f'                <div class="exhibits-list">\n'
+            f'{rows(items)}\n'
+            f'                </div>\n'
+            f'            </div>'
+        )
+
+    def collection_rows(items):
+        return "\n".join(
+            f'                    <div class="exhibit-row exhibit-row--collection">\n'
+            f'                        <span class="exhibit-city">{loc}</span>\n'
+            f'                    </div>'
+            for loc in items
+        )
+
+    content = f'''
+    <section class="page-header">
+        <span class="eyebrow">Exhibitions</span>
+        <h1>Exhibits &amp; Collections</h1>
+        <p class="lead">A history of gallery shows, public installations, and private acquisitions.</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+{exhibits_group("Solo Exhibitions", solo)}
+
+{exhibits_group("Group Exhibitions", group)}
+
+{exhibits_group("Commissions", commissions)}
+
+            <div class="exhibits-group">
+                <h2 class="exhibits-group__title">Private Collections</h2>
+                <div class="exhibits-list">
+{collection_rows(collectors)}
+                </div>
+            </div>
+        </div>
+    </section>
+    '''
+
+    return get_head("Exhibits", "Exhibition history and collections of Peter Scot Dugovic.") + header + content + get_footer()
+
+
+def generate_contact():
+    """Generate the contact page."""
+    header = get_header("Contact")
+
+    content = f'''
+    <section class="page-header">
+        <span class="eyebrow">Get in Touch</span>
+        <h1>Contact</h1>
+        <p class="lead">For inquiries regarding commissions, exhibitions, or private sales.</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-block">
+                        <div class="label">Studio</div>
+                        <div class="value">
+                            Peter Scot Dugovic<br>
+                            Wells, Maine<br>
+                            USA
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="label">Email</div>
+                        <div class="value">
+                            <a href="mailto:info@dugovic.com">info@dugovic.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="label">Social</div>
+                        <div class="value">
+                            <a href="https://www.instagram.com/artofdugovic/" target="_blank" rel="noopener">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Name <span class="req">*</span></label>
+                                <input type="text" id="name" name="name" required autocomplete="name">
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email <span class="req">*</span></label>
+                                <input type="email" id="email" name="email" required autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" autocomplete="off">
+                        </div>
+                        <div class="form-field">
+                            <label for="message">Message <span class="req">*</span></label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message <span class="arrow">&rarr;</span></button>
+                    </form>
+                    <div id="formSuccess" style="display: none; margin-top: var(--sp-4); padding: var(--sp-4); background: var(--gold-pale); border: 1px solid var(--gold); border-radius: var(--radius);">
+                        <strong>Thank you!</strong> Your message has been sent. I will get back to you soon.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    '''
+
+    script_js = '''
+    <script>
+    // Simple client-side validation and mailto fallback for static site
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const form = this;
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+        const name = form.name.value;
+        const email = form.email.value;
+        const subject = form.subject.value || "Website Inquiry";
+        const message = form.message.value;
+        const mailto = `mailto:info@dugovic.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\\n\\n${message}`)}`;
+        window.location.href = mailto;
+        document.getElementById('formSuccess').style.display = 'block';
+        form.reset();
+    });
+    </script>
+    '''
+
+    return get_head("Contact", "Contact Peter Scot Dugovic for commissions or inquiries.") + header + content + script_js + get_footer()
+
+
+def generate_studio_shots():
+    """Generate the studio shots page with video background."""
+    header = get_header("Studio", is_translucent=True)
+
+    img_items = ""
+    for img in STUDIO_IMAGES:
+        img_items += f'''
+                <figure class="gallery__item">
+                    <img src="{ASSETS_IMG}/{img}" alt="Studio detail" loading="lazy">
+                </figure>'''
+
+    content = f'''
+    <section class="studio-hero">
+        <video autoplay muted loop playsinline data-observe poster="{ASSETS_VIDEO}/broadway-poster.jpg">
+            <source src="{ASSETS_VIDEO}/broadway.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="studio-hero__scrim"></div>
+        <div class="studio-hero__content">
+            <div class="container">
+                <span class="eyebrow eyebrow--light">Behind the Scenes</span>
+                <h1 class="studio-hero__title">Studio Shots</h1>
+                <p class="studio-hero__text">A glimpse into the workshop where signs are crafted and paintings are composed. The constant hum of the city and the quiet focus of the canvas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">The Space</span>
+                <h2>Inside the Studio</h2>
+            </div>
+            <div class="studio-strip gallery">
+                {img_items}
+            </div>
+        </div>
+    </section>
+    '''
+
+    return get_head("Studio Shots", "Photos and video from Peter Scot Dugovic's studio in Wells, Maine.") + header + content + get_footer()
+
+
+def generate_gallery_index():
+    """Generate the Works index page that lists all categories."""
+    tiles = category_tiles_html()
+
+    content = f'''
+    <section class="page-header">
+        <span class="eyebrow">Portfolio</span>
+        <h1>All Works</h1>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="categories">
+                {tiles}
+            </div>
+        </div>
+    </section>
+    '''
+
+    return get_head("Works", "All works by Peter Scot Dugovic.") + get_header("Works") + content + get_footer()
+
+
+def write_page(filename, content):
+    """Write a generated page to BASE_DIR and return its filename."""
+    with open(os.path.join(BASE_DIR, filename), "w") as f:
+        f.write(content)
+    return filename
+
+
+def main():
+    """Generate all pages and return the filenames written, in order."""
+    os.makedirs(BASE_DIR, exist_ok=True)
+
+    pages = [
+        ("index.html", generate_index()),
+    ]
+    pages.extend(
+        (filename, generate_gallery_page(cat_key, category_display_name(cat_key)))
+        for cat_key, filename in CAT_PAGE_FILES.items()
+    )
+    pages.extend([
+        ("comic-bio.html", generate_comic_bio()),
+        ("about.html", generate_about()),
+        ("exhibits.html", generate_exhibits()),
+        ("contact.html", generate_contact()),
+        ("studio-shots.html", generate_studio_shots()),
+        ("gallery.html", generate_gallery_index()),
+    ])
+
+    return [write_page(filename, content) for filename, content in pages]
+
+
+if __name__ == "__main__":
+    for filename in main():
+        print(f"Generated {filename}")
+    print("\nAll pages generated successfully.")
