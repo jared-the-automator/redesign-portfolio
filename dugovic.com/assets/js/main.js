@@ -31,7 +31,6 @@
       }
     });
 
-    // Escape to close
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && mobile.classList.contains('open')) {
         toggle.click();
@@ -43,8 +42,8 @@
      Desktop dropdown (click support for touch)
      --------------------------------------------------------------- */
   function closeAllDropdowns() {
-    document.querySelectorAll('.nav__dropdown.open').forEach(function (o) {
-      o.classList.remove('open');
+    document.querySelectorAll('.nav__dropdown.open').forEach(function (dropdown) {
+      dropdown.classList.remove('open');
     });
   }
 
@@ -193,17 +192,15 @@
 
     function show(i) {
       if (i < 0 || i >= pages.length) return;
-      pages[current].classList.remove('is-active');
-      if (thumbs[current]) thumbs[current].classList.remove('is-active');
 
       current = i;
 
-      pages.forEach(function (p, n) {
-        p.classList.toggle('is-active', n === current);
-        p.classList.toggle('comic__page--prev', n < current);
+      pages.forEach(function (p, i) {
+        p.classList.toggle('is-active', i === current);
+        p.classList.toggle('comic__page--prev', i < current);
       });
-      thumbs.forEach(function (t, n) {
-        t.classList.toggle('is-active', n === current);
+      thumbs.forEach(function (t, i) {
+        t.classList.toggle('is-active', i === current);
       });
 
       counter.textContent = (current + 1) + ' / ' + pages.length;
@@ -254,10 +251,10 @@
     const playPromise = video.play();
     if (playPromise && playPromise.catch) {
       playPromise.catch(function (err) {
-        // NotAllowedError is expected until the user interacts; surface
-        // anything else so real playback failures are visible.
-        if (!err || err.name !== 'NotAllowedError') {
-          console.warn('Video playback failed:', err);
+        // NotAllowedError is expected until the user interacts; let real
+        // playback failures propagate instead of hiding them.
+        if (err && err.name !== 'NotAllowedError') {
+          throw err;
         }
       });
     }
