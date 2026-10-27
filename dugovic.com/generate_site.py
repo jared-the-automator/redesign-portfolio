@@ -694,7 +694,7 @@ def generate_studio_shots():
 
     columns_html = ""
     for col in STUDIO_COLUMNS:
-        items = "".join(studio_item(fn, idx) for idx, fn in enumerate(col))
+        items = "".join(studio_item(filename, idx) for idx, filename in enumerate(col))
         columns_html += f'''
             <div class="studio-col">{items}
             </div>'''

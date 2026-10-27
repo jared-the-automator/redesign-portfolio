@@ -304,7 +304,7 @@
       deck.classList.add('is-departed');
       setTimeout(function () {
         deck.classList.add('is-dealt');
-      }, reduceMotion ? 0 : DEAL_DELAY_MS);
+      }, DEAL_DELAY_MS);
     }
 
     if (reduceMotion) {
