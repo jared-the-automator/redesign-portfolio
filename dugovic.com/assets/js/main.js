@@ -280,21 +280,32 @@
       hint.classList.toggle('is-on', visible);
     }
 
-    // Each slideshow face (Works, About) cycles its own slides independently.
-    // Started on load; cards are off-screen until dealt, so cycling early is fine.
-    function startSlideshow(face) {
-      var faceSlides = Array.prototype.slice.call(face.querySelectorAll('.deck-slide'));
-      if (faceSlides.length < 2) return;
-      var idx = 0;
-      faceSlides[idx].classList.add('is-active');
+    // After the cards are dealt the two slideshow faces (Works, About)
+    // alternate: a rest, then Works advances, a rest, then About, repeating.
+    // Each face resets to its first slide when the slideshow starts, so
+    // About always begins on its about-card.
+    function startDeckSlideshow() {
+      var faces = Array.prototype.slice.call(
+        deck.querySelectorAll('.deck__face--slideshow')
+      );
+      var sets = faces.map(function (face) {
+        return Array.prototype.slice.call(face.querySelectorAll('.deck-slide'));
+      }).filter(function (slides) { return slides.length >= 2; });
+      if (sets.length < 2) return;
+
+      var idx = sets.map(function () { return 0; });
+      sets.forEach(function (slides) { slides[0].classList.add('is-active'); });
+
+      var cursor = 0;
       setInterval(function () {
-        faceSlides[idx].classList.remove('is-active');
-        idx = (idx + 1) % faceSlides.length;
-        faceSlides[idx].classList.add('is-active');
+        var which = cursor % sets.length;
+        var slides = sets[which];
+        slides[idx[which]].classList.remove('is-active');
+        idx[which] = (idx[which] + 1) % slides.length;
+        slides[idx[which]].classList.add('is-active');
+        cursor += 1;
       }, SLIDE_INTERVAL_MS);
     }
-
-    document.querySelectorAll('.deck__face--slideshow').forEach(startSlideshow);
 
     function deal() {
       if (dealt) return;
@@ -304,6 +315,7 @@
       deck.classList.add('is-departed');
       setTimeout(function () {
         deck.classList.add('is-dealt');
+        startDeckSlideshow();
       }, DEAL_DELAY_MS);
     }
 
