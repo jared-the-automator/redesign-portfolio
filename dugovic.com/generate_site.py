@@ -316,7 +316,7 @@ def generate_index():
 
     # Slow slideshow: one representative work per series.
     slides = []
-    for cat in ['Trailers', 'Signs', 'Cars', 'Kitchen', 'Playgrounds', 'Pop Victorian']:
+    for cat in CAT_PAGE_FILES:
         if cat in CATEGORIES and len(CATEGORIES[cat]) > 0:
             slides.append(CATEGORIES[cat][0])
 
@@ -354,7 +354,7 @@ def generate_index():
     </section>
     '''
 
-    return get_head("Home", "Portfolio and works of Peter Scot Dugovic, a painter.") + header + content + get_footer()
+    return render_page("Home", "Portfolio and works of Peter Scot Dugovic, a painter.", header, content)
 
 
 def generate_comic_bio():
@@ -396,7 +396,7 @@ def generate_comic_bio():
     </section>
     '''
 
-    return get_head("Comic Bio", "An illustrated biography of Peter Scot Dugovic.") + header + content + get_footer()
+    return render_page("Comic Bio", "An illustrated biography of Peter Scot Dugovic.", header, content)
 
 
 def generate_about():
@@ -438,11 +438,11 @@ def generate_about():
     def rows(items):
         return "\n".join(
             f'                        <div class="exhibit-row">\n'
-            f'                            <span class="exhibit-year">{item[0]}</span>\n'
-            f'                            <span class="exhibit-city">{item[1]}</span>\n'
-            f'                            <span class="exhibit-note">{item[2]}</span>\n'
+            f'                            <span class="exhibit-year">{when}</span>\n'
+            f'                            <span class="exhibit-city">{title}</span>\n'
+            f'                            <span class="exhibit-note">{note}</span>\n'
             f'                        </div>'
-            for item in items
+            for when, title, note in items
         )
 
     def collection_rows(items):
@@ -538,7 +538,7 @@ def generate_about():
     </section>
     '''
 
-    return get_head("About", "Biography, exhibitions, and collections of Peter Scot Dugovic.") + header + content + get_footer()
+    return render_page("About", "Biography, exhibitions, and collections of Peter Scot Dugovic.", header, content)
 
 
 def generate_contact():
@@ -630,7 +630,7 @@ def generate_contact():
     </script>
     '''
 
-    return get_head("Contact", "Contact Peter Scot Dugovic for commissions or inquiries.") + header + content + script_js + get_footer()
+    return render_page("Contact", "Contact Peter Scot Dugovic for commissions or inquiries.", header, content + script_js)
 
 
 def generate_studio_shots():
@@ -673,7 +673,7 @@ def generate_studio_shots():
     </section>
     '''
 
-    return get_head("Studio Shots", "Photos and video from Peter Scot Dugovic's studio in Wells, Maine.") + header + content + get_footer()
+    return render_page("Studio Shots", "Photos and video from Peter Scot Dugovic's studio in Wells, Maine.", header, content)
 
 
 def generate_gallery_index():
@@ -694,7 +694,7 @@ def generate_gallery_index():
     </section>
     '''
 
-    return get_head("Works", "All works by Peter Scot Dugovic.") + get_header("Works") + content + get_footer()
+    return render_page("Works", "All works by Peter Scot Dugovic.", get_header("Works"), content)
 
 
 def write_page(filename, content):
