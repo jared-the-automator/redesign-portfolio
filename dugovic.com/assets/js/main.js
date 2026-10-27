@@ -269,6 +269,12 @@
 
     let dealt = false;
 
+    const SHOW_DELAY_MS = 80;
+    const FLIP_DELAY_MS = 1500;
+    const IDLE_DELAY_MS = 2200;
+    const DEAL_DELAY_MS = 200;
+    const SLIDE_INTERVAL_MS = 4500;
+
     function showHint(text, visible) {
       if (!hint) return;
       hint.textContent = text;
@@ -283,7 +289,7 @@
         slides[slideIndex].classList.remove('is-active');
         slideIndex = (slideIndex + 1) % slides.length;
         slides[slideIndex].classList.add('is-active');
-      }, 4500);
+      }, SLIDE_INTERVAL_MS);
     }
 
     function deal() {
@@ -295,19 +301,19 @@
       setTimeout(function () {
         deck.classList.add('is-dealt');
         startSlides();
-      }, reduceMotion ? 0 : 200);
+      }, reduceMotion ? 0 : DEAL_DELAY_MS);
     }
 
     if (reduceMotion) {
       deck.classList.add('is-shown', 'is-flipped', 'is-departed', 'is-dealt');
       startSlides();
     } else {
-      setTimeout(function () { deck.classList.add('is-shown'); }, 80);
-      setTimeout(function () { deck.classList.add('is-flipped'); }, 1500);
+      setTimeout(function () { deck.classList.add('is-shown'); }, SHOW_DELAY_MS);
+      setTimeout(function () { deck.classList.add('is-flipped'); }, FLIP_DELAY_MS);
       setTimeout(function () {
         deck.classList.add('is-idle');
         showHint('Tap the card', true);
-      }, 2200);
+      }, IDLE_DELAY_MS);
       if (hero) {
         hero.addEventListener('click', deal);
       }
