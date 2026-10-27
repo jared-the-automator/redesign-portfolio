@@ -9,7 +9,7 @@ import os
 
 BASE_DIR = "/tmp/dugovic_redesign"
 ASSETS_CSS = "assets/css/style.css"
-ASSETS_JS = "assets/js/main.js?v=2"
+ASSETS_JS = "assets/js/main.js?v=3"
 ASSETS_IMG = "assets/images"
 ASSETS_VIDEO = "assets/video"
 

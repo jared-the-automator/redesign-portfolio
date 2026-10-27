@@ -260,6 +260,27 @@
   }
 
   /* ---------------------------------------------------------------
+     Shared slideshow cycler. Given an array of slide-sets, activate the
+     first slide of each set, then advance one set per tick in round-robin
+     order every intervalMs, wrapping each set's index. Callers guard
+     against too few sets and handle motion preferences themselves.
+     --------------------------------------------------------------- */
+  function startSlideCycle(sets, intervalMs) {
+    const idx = sets.map(function () { return 0; });
+    sets.forEach(function (slides) { slides[0].classList.add('is-active'); });
+
+    let cursor = 0;
+    setInterval(function () {
+      const which = cursor % sets.length;
+      const slides = sets[which];
+      slides[idx[which]].classList.remove('is-active');
+      idx[which] = (idx[which] + 1) % slides.length;
+      slides[idx[which]].classList.add('is-active');
+      cursor += 1;
+    }, intervalMs);
+  }
+
+  /* ---------------------------------------------------------------
      Card-deck landing (home page)
      --------------------------------------------------------------- */
   const deck = document.querySelector('.deck');
@@ -293,18 +314,7 @@
       }).filter(function (slides) { return slides.length >= 2; });
       if (sets.length < 2) return;
 
-      var idx = sets.map(function () { return 0; });
-      sets.forEach(function (slides) { slides[0].classList.add('is-active'); });
-
-      var cursor = 0;
-      setInterval(function () {
-        var which = cursor % sets.length;
-        var slides = sets[which];
-        slides[idx[which]].classList.remove('is-active');
-        idx[which] = (idx[which] + 1) % slides.length;
-        slides[idx[which]].classList.add('is-active');
-        cursor += 1;
-      }, SLIDE_INTERVAL_MS);
+      startSlideCycle(sets, SLIDE_INTERVAL_MS);
     }
 
     function deal() {
@@ -349,18 +359,7 @@
       return Array.prototype.slice.call(tile.querySelectorAll('img'));
     }).filter(function (imgs) { return imgs.length > 1; });
 
-    const tileIndex = tileSlides.map(function () { return 0; });
-    tileSlides.forEach(function (imgs) { imgs[0].classList.add('is-active'); });
-
-    let tileCursor = 0;
-    setInterval(function () {
-      const which = tileCursor % tileSlides.length;
-      const imgs = tileSlides[which];
-      imgs[tileIndex[which]].classList.remove('is-active');
-      tileIndex[which] = (tileIndex[which] + 1) % imgs.length;
-      imgs[tileIndex[which]].classList.add('is-active');
-      tileCursor += 1;
-    }, TILE_INTERVAL_MS);
+    startSlideCycle(tileSlides, TILE_INTERVAL_MS);
   }
 
   /* ---------------------------------------------------------------
