@@ -45,6 +45,13 @@ def deck_slide(src, alt, active, load):
     return f"""
                         <img class="deck-slide {active}" src="{src}" alt="{alt}" {load}>"""
 
+def deck_slides(slides):
+    """Join deck slides from (src, alt, load) tuples; first slide is active."""
+    return "".join(
+        deck_slide(src, alt, "is-active" if i == 0 else "", load)
+        for i, (src, alt, load) in enumerate(slides)
+    )
+
 # Studio page: three explicit columns, ordered so total height is
 # left < middle < right (matching the Works masonry convention).
 STUDIO_COLUMNS = [
@@ -321,10 +328,10 @@ def render_category_tile(href, display, items, count):
     work in the category; CSS shows the first image by default."""
     img_tags = []
     for i, item in enumerate(items):
-        fn = item['fn']
+        thumb_filename = item['fn']
         cls = ' class="is-active"' if i == 0 else ''
         img_tags.append(
-            f'<img{cls} src="{ASSETS_IMG}/{fn}" alt="" {load_attrs(i)}>'
+            f'<img{cls} src="{ASSETS_IMG}/{thumb_filename}" alt="" {load_attrs(i)}>'
         )
     stacked = "\n                ".join(img_tags)
     return f'''
@@ -353,32 +360,24 @@ def generate_index():
     header = get_header("Home", is_translucent=True)
 
     # Slow slideshow: one representative work per series.
-    slides = []
+    work_slides = []
     for cat in CAT_PAGE_FILES:
         if cat in CATEGORIES and len(CATEGORIES[cat]) > 0:
-            slides.append(CATEGORIES[cat][0])
-
-    slides_html = ""
-    for i, item in enumerate(slides):
-        active = "is-active" if i == 0 else ""
-        slides_html += deck_slide(
-            f"{ASSETS_IMG}/{item['orig']}",
-            f"{item['series']} series painting by Peter Scot Dugovic",
-            active,
-            'loading="lazy"',
-        )
+            item = CATEGORIES[cat][0]
+            work_slides.append((
+                f"{ASSETS_IMG}/{item['orig']}",
+                f"{item['series']} series painting by Peter Scot Dugovic",
+                'loading="lazy"',
+            ))
+    slides_html = deck_slides(work_slides)
 
     # About card: starts on the current portrait, then rotates through the
     # studio photos in which Peter is present (see ABOUT_SLIDES).
-    about_slides_html = ""
-    for i, img in enumerate(ABOUT_SLIDES):
-        active = "is-active" if i == 0 else ""
-        about_slides_html += deck_slide(
-            f"{ASSETS_IMG}/{img}",
-            "Peter Scot Dugovic in the studio",
-            active,
-            load_attrs(i),
-        )
+    about_slides = [
+        (f"{ASSETS_IMG}/{img}", "Peter Scot Dugovic in the studio", load_attrs(i))
+        for i, img in enumerate(ABOUT_SLIDES)
+    ]
+    about_slides_html = deck_slides(about_slides)
 
     content = f'''
     <section class="deck" aria-label="Welcome">
