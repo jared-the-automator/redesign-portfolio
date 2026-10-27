@@ -262,8 +262,6 @@
   if (deck) {
     const hero   = deck.querySelector('.deck__card--hero');
     const hint   = deck.querySelector('.deck__hint');
-    // Each slideshow face (Works, About) cycles its own slides independently.
-    // Started on load; cards are off-screen until dealt, so cycling early is fine.
     const reduceMotion = window.matchMedia
       ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
       : false;
@@ -282,6 +280,8 @@
       hint.classList.toggle('is-on', visible);
     }
 
+    // Each slideshow face (Works, About) cycles its own slides independently.
+    // Started on load; cards are off-screen until dealt, so cycling early is fine.
     function startSlideshow(face) {
       var faceSlides = Array.prototype.slice.call(face.querySelectorAll('.deck-slide'));
       if (faceSlides.length < 2) return;

@@ -19,20 +19,6 @@ with open(os.path.join(BASE_DIR, "cats.json")) as f:
 with open(os.path.join(BASE_DIR, "comic_order.json")) as f:
     COMIC_PAGES = json.load(f)
 
-# Image filenames referenced by the studio and about pages
-# Studio shots shown on the Studio page. `img-0009` was dropped: it is a
-# duplicate of `img-0009-1` (same frame, "-1" suffixed), so only the -1 copy
-# is kept here and on the About card.
-STUDIO_IMAGES = [
-    "img-0898.webp", "img-2053.webp", "img-2820.webp", "img-2821.webp",
-    "img-3373.webp", "img-7131.webp", "img-7214.webp",
-    "img-7281.webp", "img-7305.webp", "img-7306.webp",
-    "img-4ea2f192.webp", "img-0009-1.webp",
-    "img-0644.webp", "img-0883.webp", "img-3444.webp",
-    "img-3775.webp", "img-3970.webp", "img-4350.webp",
-    "img-4604.webp", "img-4772.webp"
-]
-
 # Slides for the About card on the home page. Starts with the current
 # about-card portrait, then rotates through each studio photo in which Peter
 # himself is visible. Excluded: the About-page portrait (`img-1110_orig`),
@@ -45,6 +31,14 @@ ABOUT_SLIDES = [
     "img-4604.webp",
 ]
 PORTRAIT_IMAGE = "img-1110_orig.webp"
+
+# Number of leading images loaded eagerly on a page; the rest load lazily.
+EAGER_LOAD_COUNT = 3
+
+
+def load_attrs(i):
+    """Return loading/fetchpriority attributes: eager for the first item, lazy otherwise."""
+    return 'loading="eager" fetchpriority="high"' if i == 0 else 'loading="lazy"'
 
 # Studio page: three explicit columns, ordered so total height is
 # left < middle < right (matching the Works masonry convention).
@@ -232,6 +226,23 @@ def render_page(title, description, header, content):
     return get_head(title, description) + header + content + get_footer()
 
 
+def lightbox_html():
+    """Return the shared lightbox markup used by the works and studio pages."""
+    return """<div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <div class="lightbox__content">
+            <button class="lightbox__close" aria-label="Close viewer">&times;</button>
+            <img class="lightbox__img" src="" alt="">
+            <div class="lightbox__caption">
+                <div class="title"></div>
+                <div class="meta"></div>
+            </div>
+            <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">&larr;</button>
+            <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">&rarr;</button>
+            <span class="lightbox__counter" aria-hidden="true"></span>
+        </div>
+    </div>"""
+
+
 def generate_gallery_page(category_key, category_name):
     """Generate a gallery page for a specific category."""
     items = CATEGORIES.get(category_key, [])
@@ -294,19 +305,7 @@ def generate_gallery_page(category_key, category_name):
         </div>
     </section>
 
-    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-        <div class="lightbox__content">
-            <button class="lightbox__close" aria-label="Close viewer">&times;</button>
-            <img class="lightbox__img" src="" alt="">
-            <div class="lightbox__caption">
-                <div class="title"></div>
-                <div class="meta"></div>
-            </div>
-            <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">&larr;</button>
-            <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">&rarr;</button>
-            <span class="lightbox__counter" aria-hidden="true"></span>
-        </div>
-    </div>
+    {lightbox_html()}
     '''
 
     return render_page(category_name, f"View {category_name} works by Peter Scot Dugovic", header, content)
@@ -357,9 +356,8 @@ def generate_index():
     about_slides_html = ""
     for i, img in enumerate(ABOUT_SLIDES):
         active = "is-active" if i == 0 else ""
-        load_attrs = 'loading="eager" fetchpriority="high"' if i == 0 else 'loading="lazy"'
         about_slides_html += f'''
-                        <img class="deck-slide {active}" src="{ASSETS_IMG}/{img}" alt="Peter Scot Dugovic in the studio" {load_attrs}>'''
+                        <img class="deck-slide {active}" src="{ASSETS_IMG}/{img}" alt="Peter Scot Dugovic in the studio" {load_attrs(i)}>'''
 
     content = f'''
     <section class="deck" aria-label="Welcome">
@@ -403,10 +401,9 @@ def generate_comic_bio():
     for i, page_id in enumerate(COMIC_PAGES):
         img_src = f"{ASSETS_IMG}/{page_id}.webp"
         active_class = "is-active" if i == 0 else ""
-        load_attrs = 'loading="eager" fetchpriority="high"' if i == 0 else 'loading="lazy"'
         pages_html += f'''
             <div class="comic__page {active_class}" role="tabpanel" aria-label="Page {i+1}">
-                <img src="{img_src}" alt="Comic bio page {i+1}" {load_attrs}>
+                <img src="{img_src}" alt="Comic bio page {i+1}" {load_attrs(i)}>
             </div>'''
 
         thumbs_html += f'''
@@ -680,18 +677,18 @@ def generate_studio_shots():
     """
     header = get_header("Studio", is_translucent=True)
 
-    def full_src(fn):
+    def full_src(filename):
         """Full-size source for a studio thumbnail (falls back to the thumb)."""
-        orig = fn[:-5] + "_orig.webp"
-        return orig if os.path.exists(os.path.join(BASE_DIR, ASSETS_IMG, orig)) else fn
+        orig = filename.removesuffix(".webp") + "_orig.webp"
+        return orig if os.path.exists(os.path.join(BASE_DIR, ASSETS_IMG, orig)) else filename
 
-    def studio_item(fn, i):
-        thumb = f"{ASSETS_IMG}/{fn}"
-        full = f"{ASSETS_IMG}/{full_src(fn)}"
-        lb = f'data-lightbox="{full}" data-lb-title="Studio" data-lb-meta="From the studio in Wells, Maine"'
-        load = 'loading="eager"' if i < 3 else 'loading="lazy"'
+    def studio_item(filename, i):
+        thumb = f"{ASSETS_IMG}/{filename}"
+        full = f"{ASSETS_IMG}/{full_src(filename)}"
+        lightbox_attrs = f'data-lightbox="{full}" data-lb-title="Studio" data-lb-meta="From the studio in Wells, Maine"'
+        load = 'loading="eager"' if i < EAGER_LOAD_COUNT else 'loading="lazy"'
         return f'''
-                <a href="{full}" class="gallery__item" {lb}>
+                <a href="{full}" class="gallery__item" {lightbox_attrs}>
                     <img src="{thumb}" alt="Studio shot — Peter Scot Dugovic, Wells, Maine" {load}>
                 </a>'''
 
@@ -732,19 +729,7 @@ def generate_studio_shots():
         </div>
     </section>
 
-    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-        <div class="lightbox__content">
-            <button class="lightbox__close" aria-label="Close viewer">&times;</button>
-            <img class="lightbox__img" src="" alt="">
-            <div class="lightbox__caption">
-                <div class="title"></div>
-                <div class="meta"></div>
-            </div>
-            <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">&larr;</button>
-            <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">&rarr;</button>
-            <span class="lightbox__counter" aria-hidden="true"></span>
-        </div>
-    </div>
+    {lightbox_html()}
     '''
 
     return render_page("Studio Shots", "Photos and video from Peter Scot Dugovic's studio in Wells, Maine.", header, content)
