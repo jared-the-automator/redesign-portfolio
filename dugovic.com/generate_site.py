@@ -32,13 +32,18 @@ ABOUT_SLIDES = [
 ]
 PORTRAIT_IMAGE = "img-1110_orig.webp"
 
-# Number of leading images loaded eagerly on a page; the rest load lazily.
+# How many leading images in each Studio column load eagerly; the rest load lazily.
 EAGER_LOAD_COUNT = 3
 
 
 def load_attrs(i):
     """Return loading/fetchpriority attributes: eager for the first item, lazy otherwise."""
     return 'loading="eager" fetchpriority="high"' if i == 0 else 'loading="lazy"'
+
+def deck_slide(src, alt, active, load):
+    """Return one deck-slide <img> tag."""
+    return f"""
+                        <img class="deck-slide {active}" src="{src}" alt="{alt}" {load}>"""
 
 # Studio page: three explicit columns, ordered so total height is
 # left < middle < right (matching the Works masonry convention).
@@ -348,16 +353,24 @@ def generate_index():
     slides_html = ""
     for i, item in enumerate(slides):
         active = "is-active" if i == 0 else ""
-        slides_html += f'''
-                        <img class="deck-slide {active}" src="{ASSETS_IMG}/{item['orig']}" alt="{item['series']} series painting by Peter Scot Dugovic" loading="lazy">'''
+        slides_html += deck_slide(
+            f"{ASSETS_IMG}/{item['orig']}",
+            f"{item['series']} series painting by Peter Scot Dugovic",
+            active,
+            'loading="lazy"',
+        )
 
     # About card: starts on the current portrait, then rotates through the
     # studio photos in which Peter is present (see ABOUT_SLIDES).
     about_slides_html = ""
     for i, img in enumerate(ABOUT_SLIDES):
         active = "is-active" if i == 0 else ""
-        about_slides_html += f'''
-                        <img class="deck-slide {active}" src="{ASSETS_IMG}/{img}" alt="Peter Scot Dugovic in the studio" {load_attrs(i)}>'''
+        about_slides_html += deck_slide(
+            f"{ASSETS_IMG}/{img}",
+            "Peter Scot Dugovic in the studio",
+            active,
+            load_attrs(i),
+        )
 
     content = f'''
     <section class="deck" aria-label="Welcome">
