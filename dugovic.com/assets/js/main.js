@@ -303,7 +303,7 @@
       startSlides();
     } else {
       setTimeout(function () { deck.classList.add('is-shown'); }, 80);
-      setTimeout(function () { deck.classList.add('is-flipped'); }, 1400);
+      setTimeout(function () { deck.classList.add('is-flipped'); }, 1500);
       setTimeout(function () {
         deck.classList.add('is-idle');
         showHint('Tap the card', true);
