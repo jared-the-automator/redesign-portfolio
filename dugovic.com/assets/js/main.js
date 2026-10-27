@@ -339,7 +339,7 @@
      left to right across the grid (TILE_INTERVAL_MS per card). Each
      tile steps through its full image set in order, wrapping round.
      --------------------------------------------------------------- */
-  const TILE_INTERVAL_MS = 2000;
+  const TILE_INTERVAL_MS = 3000;
 
   const categoryTiles = Array.prototype.slice.call(
     document.querySelectorAll('.category-tile')

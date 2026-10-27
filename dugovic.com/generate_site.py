@@ -9,7 +9,7 @@ import os
 
 BASE_DIR = "/tmp/dugovic_redesign"
 ASSETS_CSS = "assets/css/style.css"
-ASSETS_JS = "assets/js/main.js?v=1"
+ASSETS_JS = "assets/js/main.js?v=2"
 ASSETS_IMG = "assets/images"
 ASSETS_VIDEO = "assets/video"
 
@@ -20,15 +20,15 @@ with open(os.path.join(BASE_DIR, "comic_order.json")) as f:
     COMIC_PAGES = json.load(f)
 
 # Slides for the About card on the home page. Starts with the current
-# about-card portrait, then rotates through each studio photo in which Peter
+# about-card portrait, then rotates through studio photos in which Peter
 # himself is visible. Excluded: the About-page portrait (`img-1110_orig`),
-# the hands-only detail shot, the duplicate `img-0009`, and the one frame
-# showing a different person.
+# the hands-only detail shot, the duplicate `img-0009`, the empty-studio
+# frame (no person), and the one frame showing a different person.
 ABOUT_SLIDES = [
     "about-card.webp",
     "img-0898.webp", "img-7305.webp", "img-7306.webp",
     "img-0009-1.webp", "img-0644.webp", "img-4350.webp",
-    "img-4604.webp",
+    "studio-shot-use-it1.webp",
 ]
 PORTRAIT_IMAGE = "img-1110_orig.webp"
 
