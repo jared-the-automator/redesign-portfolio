@@ -5,6 +5,10 @@
 (function () {
   'use strict';
 
+  const reduceMotion = window.matchMedia
+    ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    : false;
+
   /* ---------------------------------------------------------------
      Mobile navigation
      --------------------------------------------------------------- */
@@ -262,17 +266,13 @@
   if (deck) {
     const hero   = deck.querySelector('.deck__card--hero');
     const hint   = deck.querySelector('.deck__hint');
-    const reduceMotion = window.matchMedia
-      ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      : false;
-
     let dealt = false;
 
     const SHOW_DELAY_MS = 80;
     const FLIP_DELAY_MS = 1500;
     const IDLE_DELAY_MS = 3600;
     const DEAL_DELAY_MS = 200;
-    const SLIDE_INTERVAL_MS = 4500;
+    const SLIDE_INTERVAL_MS = 3000;
 
     function showHint(text, visible) {
       if (!hint) return;
@@ -332,6 +332,35 @@
         hero.addEventListener('click', deal);
       }
     }
+  }
+
+  /* ---------------------------------------------------------------
+     Works index: category tiles cycle their own galleries, sweeping
+     left to right across the grid (TILE_INTERVAL_MS per card). Each
+     tile steps through its full image set in order, wrapping round.
+     --------------------------------------------------------------- */
+  const TILE_INTERVAL_MS = 2000;
+
+  const categoryTiles = Array.prototype.slice.call(
+    document.querySelectorAll('.category-tile')
+  );
+  if (categoryTiles.length > 1 && !reduceMotion) {
+    const tileSlides = categoryTiles.map(function (tile) {
+      return Array.prototype.slice.call(tile.querySelectorAll('img'));
+    }).filter(function (imgs) { return imgs.length > 1; });
+
+    const tileIndex = tileSlides.map(function () { return 0; });
+    tileSlides.forEach(function (imgs) { imgs[0].classList.add('is-active'); });
+
+    let tileCursor = 0;
+    setInterval(function () {
+      const which = tileCursor % tileSlides.length;
+      const imgs = tileSlides[which];
+      imgs[tileIndex[which]].classList.remove('is-active');
+      tileIndex[which] = (tileIndex[which] + 1) % imgs.length;
+      imgs[tileIndex[which]].classList.add('is-active');
+      tileCursor += 1;
+    }, TILE_INTERVAL_MS);
   }
 
   /* ---------------------------------------------------------------

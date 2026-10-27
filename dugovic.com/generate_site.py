@@ -316,11 +316,20 @@ def generate_gallery_page(category_key, category_name):
     return render_page(category_name, f"View {category_name} works by Peter Scot Dugovic", header, content)
 
 
-def render_category_tile(href, display, rep_img, count):
-    """Render one category tile, used on the Works index."""
+def render_category_tile(href, display, items, count):
+    """Render one category tile whose image stack cycles through every
+    work in the category; CSS shows the first image by default."""
+    img_tags = []
+    for i, item in enumerate(items):
+        fn = item['fn']
+        cls = ' class="is-active"' if i == 0 else ''
+        img_tags.append(
+            f'<img{cls} src="{ASSETS_IMG}/{fn}" alt="" {load_attrs(i)}>'
+        )
+    stacked = "\n                ".join(img_tags)
     return f'''
             <a href="{href}" class="category-tile">
-                <img src="{ASSETS_IMG}/{rep_img}" alt="{display}" loading="lazy">
+                {stacked}
                 <div class="category-tile__label">
                     <h3 class="category-tile__name">{display}</h3>
                     <span class="category-tile__count">{count} works</span>
@@ -333,9 +342,8 @@ def category_tiles_html():
     tiles = ""
     for cat_key, filename in CAT_PAGE_FILES.items():
         items = CATEGORIES[cat_key]
-        rep_img = items[0]['fn'] if items else 'placeholder.webp'
         tiles += render_category_tile(
-            filename, category_display_name(cat_key), rep_img, len(items)
+            filename, category_display_name(cat_key), items, len(items)
         )
     return tiles
 
