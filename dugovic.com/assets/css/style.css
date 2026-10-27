@@ -863,29 +863,31 @@ button.deck__card {
 }
 
 /* =========================================================================
-   CATEGORY TILES (home page)
+   CATEGORY TILES (Works index) — dealt out in a single row
    ========================================================================= */
 .categories {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--sp-4);
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--sp-3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
+  .categories { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 640px) {
   .categories { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 480px) {
-  .categories { grid-template-columns: 1fr; }
 }
 
 .category-tile {
   position: relative;
   display: block;
   overflow: hidden;
-  border-radius: var(--radius);
+  border-radius: 14px;
   background: var(--bg-alt);
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
+  border: 1px solid rgba(28, 27, 25, 0.08);
+  box-shadow: 0 1px 3px rgba(28, 27, 25, 0.10);
 }
 
 .category-tile img {
@@ -912,8 +914,9 @@ button.deck__card {
 
 .category-tile__name {
   font-family: var(--font-display);
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 500;
+  line-height: 1.1;
   color: var(--white);
   text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
@@ -923,6 +926,24 @@ button.deck__card {
   font-weight: 400;
   color: rgba(255,255,255,0.7);
   margin-top: 2px;
+}
+
+/* Dealing entrance: each card rises into its slot, staggered left to right. */
+@keyframes dealIn {
+  from { opacity: 0; transform: translateY(64px) rotate(-4deg) scale(0.9); }
+  to   { opacity: 1; transform: translateY(0) rotate(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .category-tile {
+    animation: dealIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+  .category-tile:nth-child(1) { animation-delay: 0.05s; }
+  .category-tile:nth-child(2) { animation-delay: 0.18s; }
+  .category-tile:nth-child(3) { animation-delay: 0.31s; }
+  .category-tile:nth-child(4) { animation-delay: 0.44s; }
+  .category-tile:nth-child(5) { animation-delay: 0.57s; }
+  .category-tile:nth-child(6) { animation-delay: 0.70s; }
 }
 
 /* =========================================================================
