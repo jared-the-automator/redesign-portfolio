@@ -685,8 +685,9 @@ button.deck__card {
   transition-delay: 0.15s;
 }
 
-/* Works card: slow slideshow covering the face */
-.deck__face--slideshow { background: var(--ink); }
+/* Slideshow faces (Works & About): slow cross-fade covering the face */
+.deck__face--slideshow,
+.deck__face--about { background: var(--ink); }
 .deck-slide {
   position: absolute;
   inset: 0;
@@ -694,13 +695,11 @@ button.deck__card {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1.2s ease;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .deck-slide { transition: opacity 1.2s ease; }
 }
 .deck-slide.is-active { opacity: 1; }
-
-/* About card: square image letterboxed (padded top/bottom) */
-.deck__face--about { background: var(--bg-alt); }
-.deck__face--about img { object-fit: contain; }
 
 /* Card label */
 .deck__label {
@@ -928,10 +927,10 @@ button.deck__card {
   margin-top: 2px;
 }
 
-/* Dealing entrance: each card rises into its slot, staggered left to right. */
+/* Dealing entrance: each card flies in from the top of the screen, staggered left to right. */
 @keyframes dealIn {
-  from { opacity: 0; transform: translateY(64px) rotate(-4deg) scale(0.9); }
-  to   { opacity: 1; transform: translateY(0) rotate(0) scale(1); }
+  from { opacity: 0; transform: translateY(-130vh) rotate(-6deg); }
+  to   { opacity: 1; transform: translateY(0) rotate(0); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1199,9 +1198,33 @@ button.deck__card {
   margin-top: var(--sp-7);
 }
 
-/* Studio shots share the works masonry, but are not click-to-zoom. */
-.studio-strip .gallery__item {
-  cursor: default;
+/* Studio strip: three explicit columns sized so total height runs
+   left < middle < right (the Works masonry convention). Each shot is
+   click-to-enlarge via the lightbox. */
+.studio-masonry {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+@media (max-width: 900px) {
+  .studio-masonry { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 540px) {
+  .studio-masonry { grid-template-columns: 1fr; }
+}
+
+.studio-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.studio-col .gallery__item {
+  margin-bottom: 0;
+  break-inside: auto;
 }
 
 /* =========================================================================

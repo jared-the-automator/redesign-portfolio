@@ -262,7 +262,8 @@
   if (deck) {
     const hero   = deck.querySelector('.deck__card--hero');
     const hint   = deck.querySelector('.deck__hint');
-    const slides = Array.prototype.slice.call(deck.querySelectorAll('.deck-slide'));
+    // Each slideshow face (Works, About) cycles its own slides independently.
+    // Started on load; cards are off-screen until dealt, so cycling early is fine.
     const reduceMotion = window.matchMedia
       ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
       : false;
@@ -271,7 +272,7 @@
 
     const SHOW_DELAY_MS = 80;
     const FLIP_DELAY_MS = 1500;
-    const IDLE_DELAY_MS = 2200;
+    const IDLE_DELAY_MS = 3600;
     const DEAL_DELAY_MS = 200;
     const SLIDE_INTERVAL_MS = 4500;
 
@@ -281,16 +282,19 @@
       hint.classList.toggle('is-on', visible);
     }
 
-    let slideIndex = 0;
-    let slideTimer = null;
-    function startSlides() {
-      if (slides.length < 2 || slideTimer) return;
-      slideTimer = setInterval(function () {
-        slides[slideIndex].classList.remove('is-active');
-        slideIndex = (slideIndex + 1) % slides.length;
-        slides[slideIndex].classList.add('is-active');
+    function startSlideshow(face) {
+      var faceSlides = Array.prototype.slice.call(face.querySelectorAll('.deck-slide'));
+      if (faceSlides.length < 2) return;
+      var idx = 0;
+      faceSlides[idx].classList.add('is-active');
+      setInterval(function () {
+        faceSlides[idx].classList.remove('is-active');
+        idx = (idx + 1) % faceSlides.length;
+        faceSlides[idx].classList.add('is-active');
       }, SLIDE_INTERVAL_MS);
     }
+
+    document.querySelectorAll('.deck__face--slideshow').forEach(startSlideshow);
 
     function deal() {
       if (dealt) return;
@@ -300,13 +304,11 @@
       deck.classList.add('is-departed');
       setTimeout(function () {
         deck.classList.add('is-dealt');
-        startSlides();
       }, reduceMotion ? 0 : DEAL_DELAY_MS);
     }
 
     if (reduceMotion) {
       deck.classList.add('is-shown', 'is-flipped', 'is-departed', 'is-dealt');
-      startSlides();
     } else {
       setTimeout(function () { deck.classList.add('is-shown'); }, SHOW_DELAY_MS);
       setTimeout(function () { deck.classList.add('is-flipped'); }, FLIP_DELAY_MS);

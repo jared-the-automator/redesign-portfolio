@@ -20,16 +20,42 @@ with open(os.path.join(BASE_DIR, "comic_order.json")) as f:
     COMIC_PAGES = json.load(f)
 
 # Image filenames referenced by the studio and about pages
+# Studio shots shown on the Studio page. `img-0009` was dropped: it is a
+# duplicate of `img-0009-1` (same frame, "-1" suffixed), so only the -1 copy
+# is kept here and on the About card.
 STUDIO_IMAGES = [
-    "img-0898.jpg", "img-2053.jpg", "img-2820.jpg", "img-2821.jpg",
-    "img-3373.jpg", "img-7131.jpg", "img-7214.jpg",
-    "img-7281.jpg", "img-7305.jpg", "img-7306.jpg",
-    "img-4ea2f192.jpg", "img-0009-1.jpg", "img-0009.jpg",
-    "img-0644.jpg", "img-0883.jpg", "img-3444.jpg",
-    "img-3775.jpg", "img-3970.jpg", "img-4350.jpg",
-    "img-4604.jpg", "img-4772.jpg"
+    "img-0898.webp", "img-2053.webp", "img-2820.webp", "img-2821.webp",
+    "img-3373.webp", "img-7131.webp", "img-7214.webp",
+    "img-7281.webp", "img-7305.webp", "img-7306.webp",
+    "img-4ea2f192.webp", "img-0009-1.webp",
+    "img-0644.webp", "img-0883.webp", "img-3444.webp",
+    "img-3775.webp", "img-3970.webp", "img-4350.webp",
+    "img-4604.webp", "img-4772.webp"
 ]
-PORTRAIT_IMAGE = "img-1110_orig.jpg"
+
+# Slides for the About card on the home page. Starts with the current
+# about-card portrait, then rotates through each studio photo in which Peter
+# himself is visible. Excluded: the About-page portrait (`img-1110_orig`),
+# the hands-only detail shot, the duplicate `img-0009`, and the one frame
+# showing a different person.
+ABOUT_SLIDES = [
+    "about-card.webp",
+    "img-0898.webp", "img-7305.webp", "img-7306.webp",
+    "img-0009-1.webp", "img-0644.webp", "img-4350.webp",
+    "img-4604.webp",
+]
+PORTRAIT_IMAGE = "img-1110_orig.webp"
+
+# Studio page: three explicit columns, ordered so total height is
+# left < middle < right (matching the Works masonry convention).
+STUDIO_COLUMNS = [
+    ["img-7131.webp", "img-2053.webp", "img-7214.webp",
+     "img-0009-1.webp", "img-7281.webp", "img-2821.webp", "img-3775.webp"],
+    ["img-2820.webp", "img-3970.webp", "img-4604.webp",
+     "img-3444.webp", "img-4772.webp", "img-4350.webp", "img-0883.webp"],
+    ["img-0898.webp", "img-7305.webp", "img-0644.webp",
+     "img-7306.webp", "img-4ea2f192.webp", "img-3373.webp"],
+]
 
 # Navigation Structure
 # Contact is intentionally kept out of the primary nav; it lives in the footer.
@@ -303,7 +329,7 @@ def category_tiles_html():
     tiles = ""
     for cat_key, filename in CAT_PAGE_FILES.items():
         items = CATEGORIES[cat_key]
-        rep_img = items[0]['fn'] if items else 'placeholder.jpg'
+        rep_img = items[0]['fn'] if items else 'placeholder.webp'
         tiles += render_category_tile(
             filename, category_display_name(cat_key), rep_img, len(items)
         )
@@ -326,13 +352,22 @@ def generate_index():
         slides_html += f'''
                         <img class="deck-slide {active}" src="{ASSETS_IMG}/{item['orig']}" alt="{item['series']} series painting by Peter Scot Dugovic" loading="lazy">'''
 
+    # About card: starts on the current portrait, then rotates through the
+    # studio photos in which Peter is present (see ABOUT_SLIDES).
+    about_slides_html = ""
+    for i, img in enumerate(ABOUT_SLIDES):
+        active = "is-active" if i == 0 else ""
+        load_attrs = 'loading="eager" fetchpriority="high"' if i == 0 else 'loading="lazy"'
+        about_slides_html += f'''
+                        <img class="deck-slide {active}" src="{ASSETS_IMG}/{img}" alt="Peter Scot Dugovic in the studio" {load_attrs}>'''
+
     content = f'''
     <section class="deck" aria-label="Welcome">
         <div class="deck__stage">
             <button class="deck__card deck__card--hero" id="heroCard" aria-label="Open the deck">
                 <span class="deck__card-inner">
-                    <span class="deck__face deck__face--front"><img src="{ASSETS_IMG}/deck-front.jpg" alt="" fetchpriority="high"></span>
-                    <span class="deck__face deck__face--back"><img src="{ASSETS_IMG}/ace-card.jpg" alt="The Ace of Art — Peter Scot Dugovic"></span>
+                    <span class="deck__face deck__face--front"><img src="{ASSETS_IMG}/deck-front.webp" alt="" fetchpriority="high"></span>
+                    <span class="deck__face deck__face--back"><img src="{ASSETS_IMG}/ace-card.webp" alt="The Ace of Art — Peter Scot Dugovic"></span>
                 </span>
             </button>
 
@@ -344,7 +379,9 @@ def generate_index():
                     <span class="deck__label">Works</span>
                 </a>
                 <a href="about.html" class="deck__card deck__card--about" aria-label="About">
-                    <span class="deck__face deck__face--about"><img src="{ASSETS_IMG}/about-card.jpg" alt="Peter Scot Dugovic in the studio" loading="lazy"></span>
+                    <span class="deck__face deck__face--about deck__face--slideshow">
+{about_slides_html}
+                    </span>
                     <span class="deck__label">About</span>
                 </a>
             </div>
@@ -364,7 +401,7 @@ def generate_comic_bio():
     pages_html = ""
     thumbs_html = ""
     for i, page_id in enumerate(COMIC_PAGES):
-        img_src = f"{ASSETS_IMG}/{page_id}.png"
+        img_src = f"{ASSETS_IMG}/{page_id}.webp"
         active_class = "is-active" if i == 0 else ""
         load_attrs = 'loading="eager" fetchpriority="high"' if i == 0 else 'loading="lazy"'
         pages_html += f'''
@@ -634,19 +671,40 @@ def generate_contact():
 
 
 def generate_studio_shots():
-    """Generate the studio shots page with video background."""
+    """Generate the studio shots page with video background.
+
+    The strip is three explicit columns (not CSS multi-column flow) so total
+    column height follows the Works masonry convention: left < middle < right
+    (see STUDIO_COLUMNS). Every shot is click-to-enlarge via the lightbox;
+    where a full-size _orig asset exists it is the lightbox target.
+    """
     header = get_header("Studio", is_translucent=True)
 
-    img_items = ""
-    for img in STUDIO_IMAGES:
-        img_items += f'''
-                <figure class="gallery__item">
-                    <img src="{ASSETS_IMG}/{img}" alt="Studio detail" loading="lazy">
-                </figure>'''
+    def full_src(fn):
+        """Full-size source for a studio thumbnail (falls back to the thumb)."""
+        orig = fn[:-5] + "_orig.webp"
+        return orig if os.path.exists(os.path.join(BASE_DIR, ASSETS_IMG, orig)) else fn
+
+    def studio_item(fn, i):
+        thumb = f"{ASSETS_IMG}/{fn}"
+        full = f"{ASSETS_IMG}/{full_src(fn)}"
+        lb = f'data-lightbox="{full}" data-lb-title="Studio" data-lb-meta="From the studio in Wells, Maine"'
+        load = 'loading="eager"' if i < 3 else 'loading="lazy"'
+        return f'''
+                <a href="{full}" class="gallery__item" {lb}>
+                    <img src="{thumb}" alt="Studio shot — Peter Scot Dugovic, Wells, Maine" {load}>
+                </a>'''
+
+    columns_html = ""
+    for col in STUDIO_COLUMNS:
+        items = "".join(studio_item(fn, idx) for idx, fn in enumerate(col))
+        columns_html += f'''
+            <div class="studio-col">{items}
+            </div>'''
 
     content = f'''
     <section class="studio-hero">
-        <video autoplay muted loop playsinline data-observe poster="{ASSETS_VIDEO}/broadway-poster.jpg">
+        <video autoplay muted loop playsinline data-observe poster="{ASSETS_VIDEO}/broadway-poster.webp">
             <source src="{ASSETS_VIDEO}/broadway.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -666,11 +724,27 @@ def generate_studio_shots():
                 <span class="eyebrow">The Space</span>
                 <h2>Inside the Studio</h2>
             </div>
-            <div class="studio-strip gallery">
-                {img_items}
+            <div class="studio-strip">
+                <div class="studio-masonry">
+{columns_html}
+                </div>
             </div>
         </div>
     </section>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <div class="lightbox__content">
+            <button class="lightbox__close" aria-label="Close viewer">&times;</button>
+            <img class="lightbox__img" src="" alt="">
+            <div class="lightbox__caption">
+                <div class="title"></div>
+                <div class="meta"></div>
+            </div>
+            <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">&larr;</button>
+            <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">&rarr;</button>
+            <span class="lightbox__counter" aria-hidden="true"></span>
+        </div>
+    </div>
     '''
 
     return render_page("Studio Shots", "Photos and video from Peter Scot Dugovic's studio in Wells, Maine.", header, content)
