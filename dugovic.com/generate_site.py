@@ -22,18 +22,29 @@ with open(os.path.join(BASE_DIR, "comic_order.json")) as f:
 # Image filenames referenced by the studio and about pages
 STUDIO_IMAGES = [
     "img-0898.jpg", "img-2053.jpg", "img-2820.jpg", "img-2821.jpg",
-    "img-3373.jpg", "img-3450.jpg", "img-7131.jpg", "img-7214.jpg",
-    "img-7281.jpg", "img-7305.jpg", "img-7306.jpg"
+    "img-3373.jpg", "img-7131.jpg", "img-7214.jpg",
+    "img-7281.jpg", "img-7305.jpg", "img-7306.jpg",
+    "img-4ea2f192.jpg", "img-0009-1.jpg", "img-0009.jpg",
+    "img-0644.jpg", "img-0883.jpg", "img-3444.jpg",
+    "img-3775.jpg", "img-3970.jpg", "img-4350.jpg",
+    "img-4604.jpg", "img-4772.jpg"
 ]
 PORTRAIT_IMAGE = "img-1110_orig.jpg"
 
 # Navigation Structure
+# Contact is intentionally kept out of the primary nav; it lives in the footer.
 NAV_LINKS = [
     {"href": "index.html", "label": "Home", "current": False},
     {"href": "gallery.html", "label": "Works", "current": False, "dropdown": True},
     {"href": "about.html", "label": "About", "current": False},
-    {"href": "exhibits.html", "label": "Exhibits", "current": False},
-    {"href": "contact.html", "label": "Contact", "current": False},
+]
+
+# Footer carries the full set, including Contact.
+FOOTER_NAV_LINKS = [
+    {"href": "index.html", "label": "Home"},
+    {"href": "gallery.html", "label": "Works"},
+    {"href": "about.html", "label": "About"},
+    {"href": "contact.html", "label": "Contact"},
 ]
 
 # Category key -> generated page filename
@@ -143,7 +154,7 @@ def get_footer():
     """Generate the site footer."""
     footer_nav_links = "\n".join(
         f'                {render_link(link)}'
-        for link in NAV_LINKS
+        for link in FOOTER_NAV_LINKS
     )
     return f'''
 </main>
@@ -152,7 +163,7 @@ def get_footer():
         <div class="footer__content">
             <div class="footer__brand">
                 <h2 class="footer__name">Peter Scot Dugovic</h2>
-                <p class="footer__tagline">Visual Artist &amp; Sign Maker</p>
+                <p class="footer__tagline">Visual Artist</p>
             </div>
             <nav class="footer__nav" aria-label="Footer navigation">
 {footer_nav_links}
@@ -188,6 +199,11 @@ def get_head(title, description=""):
     <link rel="icon" type="image/svg+xml" href="{ASSETS_IMG}/favicon.svg">
 </head>
 <body>'''
+
+
+def render_page(title, description, header, content):
+    """Assemble a full page: head + header + body content + footer."""
+    return get_head(title, description) + header + content + get_footer()
 
 
 def generate_gallery_page(category_key, category_name):
@@ -267,11 +283,11 @@ def generate_gallery_page(category_key, category_name):
     </div>
     '''
 
-    return get_head(f"{category_name}", f"View {category_name} works by Peter Scot Dugovic") + header + content + get_footer()
+    return render_page(category_name, f"View {category_name} works by Peter Scot Dugovic", header, content)
 
 
 def render_category_tile(href, display, rep_img, count):
-    """Render one category tile used on the home page and the Works index."""
+    """Render one category tile, used on the Works index."""
     return f'''
             <a href="{href}" class="category-tile">
                 <img src="{ASSETS_IMG}/{rep_img}" alt="{display}" loading="lazy">
@@ -283,7 +299,7 @@ def render_category_tile(href, display, rep_img, count):
 
 
 def category_tiles_html():
-    """Build the category tile grid shared by the home page and the Works index."""
+    """Build the category tile grid, used on the Works index."""
     tiles = ""
     for cat_key, filename in CAT_PAGE_FILES.items():
         items = CATEGORIES[cat_key]
@@ -295,78 +311,50 @@ def category_tiles_html():
 
 
 def generate_index():
-    """Generate the home page."""
+    """Generate the home page: the card-deck landing experience."""
     header = get_header("Home", is_translucent=True)
 
-    # Pick a few featured images from different categories
-    featured = []
-    for cat in ['Trailers', 'Signs', 'Cars', 'Kitchen']:
+    # Slow slideshow: one representative work per series.
+    slides = []
+    for cat in ['Trailers', 'Signs', 'Cars', 'Kitchen', 'Playgrounds', 'Pop Victorian']:
         if cat in CATEGORIES and len(CATEGORIES[cat]) > 0:
-            featured.append(CATEGORIES[cat][0])
-    featured_html = ""
-    for item in featured:
-        featured_html += f'''
-            <div class="featured__item">
-                <img src="{ASSETS_IMG}/{item['fn']}" alt="Featured work from {item['series']} series" loading="lazy">
-            </div>'''
+            slides.append(CATEGORIES[cat][0])
 
-    cat_tiles_html = category_tiles_html()
+    slides_html = ""
+    for i, item in enumerate(slides):
+        active = "is-active" if i == 0 else ""
+        slides_html += f'''
+                        <img class="deck-slide {active}" src="{ASSETS_IMG}/{item['orig']}" alt="{item['series']} series painting by Peter Scot Dugovic" loading="lazy">'''
 
     content = f'''
-    <section class="hero">
-        <div class="hero__media">
-            <img src="{ASSETS_IMG}/raiters-foyer.jpg" alt="Atmospheric painting of a foyer" fetchpriority="high">
-            <div class="hero__scrim"></div>
-        </div>
-        <div class="container hero__content">
-            <h1 class="hero__title">Peter Scot Dugovic</h1>
-            <p class="hero__subtitle">Painter &amp; Sign Maker. Exploring the intersection of nostalgia, urban decay, and American iconography.</p>
-            <a href="gallery.html" class="hero__cta">View Works <span class="arrow">&rarr;</span></a>
-        </div>
-        <div class="hero__scroll" aria-hidden="true">
-            <span>Scroll</span>
-            <div class="hero__scroll-line"></div>
-        </div>
-    </section>
+    <section class="deck" aria-label="Welcome">
+        <div class="deck__stage">
+            <button class="deck__card deck__card--hero" id="heroCard" aria-label="Open the deck">
+                <span class="deck__card-inner">
+                    <span class="deck__face deck__face--front"><img src="{ASSETS_IMG}/deck-front.jpg" alt="" fetchpriority="high"></span>
+                    <span class="deck__face deck__face--back"><img src="{ASSETS_IMG}/ace-card.jpg" alt="The Ace of Art — Peter Scot Dugovic"></span>
+                </span>
+            </button>
 
-    <section class="section">
-        <div class="container">
-            <div class="section-head">
-                <span class="eyebrow">Selected Works</span>
-                <h2>Recent Paintings</h2>
+            <div class="deck__dealt" id="dealtCards" aria-hidden="true">
+                <a href="gallery.html" class="deck__card deck__card--works" aria-label="Works">
+                    <span class="deck__face deck__face--slideshow">
+{slides_html}
+                    </span>
+                    <span class="deck__label">Works</span>
+                </a>
+                <a href="about.html" class="deck__card deck__card--about" aria-label="About">
+                    <span class="deck__face deck__face--about"><img src="{ASSETS_IMG}/about-card.jpg" alt="Peter Scot Dugovic in the studio" loading="lazy"></span>
+                    <span class="deck__label">About</span>
+                </a>
             </div>
-            <div class="featured">
-                {featured_html}
-            </div>
-        </div>
-    </section>
 
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-head">
-                <span class="eyebrow">Collections</span>
-                <h2>Browse by Series</h2>
-            </div>
-            <div class="categories">
-                {cat_tiles_html}
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container text-center">
-            <span class="eyebrow">Behind the Scenes</span>
-            <h2>Studio &amp; Process</h2>
-            <p class="lead" style="margin: 0 auto var(--sp-5);">Step inside the creative process. View studio shots and read the comic biography.</p>
-            <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
-                <a href="studio-shots.html" class="btn">View Studio</a>
-                <a href="comic-bio.html" class="btn" style="background: var(--gold); color: var(--ink);">Read Comic Bio</a>
-            </div>
+            <p class="deck__hint" id="deckHint" aria-live="polite"></p>
         </div>
     </section>
     '''
 
-    return get_head("Home", "Portfolio and works of Peter Scot Dugovic, a painter and sign maker.") + header + content + get_footer()
+    return get_head("Home", "Portfolio and works of Peter Scot Dugovic, a painter.") + header + content + get_footer()
 
 
 def generate_comic_bio():
@@ -412,72 +400,8 @@ def generate_comic_bio():
 
 
 def generate_about():
-    """Generate the about page."""
+    """Generate the about page: bio, consolidated exhibitions/collections, and studio links."""
     header = get_header("About")
-
-    content = f'''
-    <section class="page-header">
-        <span class="eyebrow">Artist Statement</span>
-        <h1>About</h1>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="about-grid">
-                <figure class="about-portrait">
-                    <img src="{ASSETS_IMG}/{PORTRAIT_IMAGE}" alt="Portrait of Peter Scot Dugovic" fetchpriority="high">
-                </figure>
-                <div class="about-content">
-                    <p>Born in Wells, Maine, Peter Scot Dugovic is a visual artist and sign maker whose work explores the intersection of nostalgia, urban decay, and American iconography. His paintings often feature muted palettes and atmospheric lighting, drawing influence from Edward Hopper's depictions of solitude and Gustav Klimt's ornate patterns.</p>
-                    <p>Trained in both traditional oil painting and commercial sign making, Dugovic blends fine art techniques with the pragmatic precision of the signmaker's craft. His work has been exhibited in galleries across New England and New York.</p>
-
-                    <div class="about-label">Experience</div>
-                    <ul class="fact-list">
-                        <li>
-                            <span class="role">Visual Artist &amp; Sign Maker</span>
-                            <span class="place">Wells, Maine &mdash; Independent</span>
-                        </li>
-                        <li>
-                            <span class="role">Guest Artist</span>
-                            <span class="place">Various Galleries, NYC &amp; Long Island</span>
-                        </li>
-                    </ul>
-
-                    <div class="about-label">Education</div>
-                    <ul class="fact-list">
-                        <li>
-                            <span class="role">MFA in Painting</span>
-                            <span class="place">School of the Art Institute of Chicago</span>
-                        </li>
-                        <li>
-                            <span class="role">BFA in Studio Art</span>
-                            <span class="place">University of Maine</span>
-                        </li>
-                    </ul>
-
-                    <div class="about-label">Recognition</div>
-                    <ul class="fact-list">
-                        <li>
-                            <span class="role">Featured in</span>
-                            <span class="place">American Artist Magazine</span>
-                        </li>
-                        <li>
-                            <span class="role">Acquired by</span>
-                            <span class="place">Private Collections in NY, CA, &amp; ME</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    '''
-
-    return get_head("About", "Biography and background of Peter Scot Dugovic.") + header + content + get_footer()
-
-
-def generate_exhibits():
-    """Generate the exhibits page."""
-    header = get_header("Exhibits")
 
     solo = [
         ("2018", "Arundel Farm Gallery", "Arundel, Maine"),
@@ -513,53 +437,108 @@ def generate_exhibits():
 
     def rows(items):
         return "\n".join(
-            f'                    <div class="exhibit-row">\n'
-            f'                        <span class="exhibit-year">{item[0]}</span>\n'
-            f'                        <span class="exhibit-city">{item[1]}</span>\n'
-            f'                        <span class="exhibit-note">{item[2]}</span>\n'
-            f'                    </div>'
+            f'                        <div class="exhibit-row">\n'
+            f'                            <span class="exhibit-year">{item[0]}</span>\n'
+            f'                            <span class="exhibit-city">{item[1]}</span>\n'
+            f'                            <span class="exhibit-note">{item[2]}</span>\n'
+            f'                        </div>'
             for item in items
-        )
-
-    def exhibits_group(title, rows_html):
-        return (
-            f'            <div class="exhibits-group">\n'
-            f'                <h2 class="exhibits-group__title">{title}</h2>\n'
-            f'                <div class="exhibits-list">\n'
-            f'{rows_html}\n'
-            f'                </div>\n'
-            f'            </div>'
         )
 
     def collection_rows(items):
         return "\n".join(
-            f'                    <div class="exhibit-row exhibit-row--collection">\n'
-            f'                        <span class="exhibit-city">{loc}</span>\n'
-            f'                    </div>'
+            f'                        <div class="exhibit-row exhibit-row--collection">\n'
+            f'                            <span class="exhibit-city">{loc}</span>\n'
+            f'                        </div>'
             for loc in items
+        )
+
+    def exhibits_group(title, rows_html):
+        return (
+            f'                <div class="exhibits-group">\n'
+            f'                    <h3 class="exhibits-group__title">{title}</h3>\n'
+            f'                    <div class="exhibits-list">\n'
+            f'{rows_html}\n'
+            f'                    </div>\n'
+            f'                </div>'
         )
 
     content = f'''
     <section class="page-header">
-        <span class="eyebrow">Exhibitions</span>
-        <h1>Exhibits &amp; Collections</h1>
-        <p class="lead">A history of gallery shows, public installations, and private acquisitions.</p>
+        <span class="eyebrow">Artist Statement</span>
+        <h1>About</h1>
     </section>
 
     <section class="section">
         <div class="container">
+            <div class="about-grid">
+                <figure class="about-portrait">
+                    <img src="{ASSETS_IMG}/{PORTRAIT_IMAGE}" alt="Portrait of Peter Scot Dugovic" fetchpriority="high">
+                </figure>
+                <div class="about-content">
+                    <p>Born in Wells, Maine, Peter Scot Dugovic is a visual artist and sign maker whose work explores the intersection of nostalgia, urban decay, and American iconography. His paintings often feature muted palettes and atmospheric lighting, drawing influence from Edward Hopper's depictions of solitude and Gustav Klimt's ornate patterns.</p>
+                    <p>Trained in both traditional oil painting and commercial sign making, Dugovic blends fine art techniques with the pragmatic precision of the signmaker's craft. His work has been exhibited in galleries across New England and New York, and he has been featured in American Artist Magazine.</p>
+
+                    <div class="about-label">Experience</div>
+                    <ul class="fact-list">
+                        <li>
+                            <span class="role">Visual Artist &amp; Sign Maker</span>
+                            <span class="place">Wells, Maine &mdash; Independent</span>
+                        </li>
+                        <li>
+                            <span class="role">Guest Artist</span>
+                            <span class="place">Various Galleries, NYC &amp; Long Island</span>
+                        </li>
+                    </ul>
+
+                    <div class="about-label">Education</div>
+                    <ul class="fact-list">
+                        <li>
+                            <span class="role">MFA in Painting</span>
+                            <span class="place">School of the Art Institute of Chicago</span>
+                        </li>
+                        <li>
+                            <span class="role">BFA in Studio Art</span>
+                            <span class="place">University of Maine</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Exhibitions</span>
+                <h2>Exhibitions &amp; Collections</h2>
+                <p class="lead">A record of gallery shows, public installations, commissions, and private collections.</p>
+            </div>
+            <div class="exhibits-two">
 {exhibits_group("Solo Exhibitions", rows(solo))}
 
 {exhibits_group("Group Exhibitions", rows(group))}
-
+            </div>
 {exhibits_group("Commissions", rows(commissions))}
 
 {exhibits_group("Private Collections", collection_rows(collectors))}
         </div>
     </section>
+
+    <section class="section">
+        <div class="container text-center">
+            <span class="eyebrow">Behind the Scenes</span>
+            <h2>Studio &amp; Process</h2>
+            <p class="lead" style="margin: 0 auto var(--sp-5);">Step inside the creative process. View studio shots and read the comic biography.</p>
+            <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
+                <a href="studio-shots.html" class="btn">View Studio</a>
+                <a href="comic-bio.html" class="btn" style="background: var(--gold); color: var(--ink);">Read Comic Bio</a>
+            </div>
+        </div>
+    </section>
     '''
 
-    return get_head("Exhibits", "Exhibition history and collections of Peter Scot Dugovic.") + header + content + get_footer()
+    return get_head("About", "Biography, exhibitions, and collections of Peter Scot Dugovic.") + header + content + get_footer()
 
 
 def generate_contact():
@@ -739,7 +718,6 @@ def main():
     pages.extend([
         ("comic-bio.html", generate_comic_bio()),
         ("about.html", generate_about()),
-        ("exhibits.html", generate_exhibits()),
         ("contact.html", generate_contact()),
         ("studio-shots.html", generate_studio_shots()),
         ("gallery.html", generate_gallery_index()),
