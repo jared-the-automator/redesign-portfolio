@@ -256,6 +256,65 @@
   }
 
   /* ---------------------------------------------------------------
+     Card-deck landing (home page)
+     --------------------------------------------------------------- */
+  const deck = document.querySelector('.deck');
+  if (deck) {
+    const hero   = deck.querySelector('.deck__card--hero');
+    const hint   = deck.querySelector('.deck__hint');
+    const slides = Array.prototype.slice.call(deck.querySelectorAll('.deck-slide'));
+    const reduceMotion = window.matchMedia
+      ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      : false;
+
+    let dealt = false;
+
+    function showHint(text, visible) {
+      if (!hint) return;
+      hint.textContent = text;
+      hint.classList.toggle('is-on', visible);
+    }
+
+    let slideIndex = 0;
+    let slideTimer = null;
+    function startSlides() {
+      if (slides.length < 2 || slideTimer) return;
+      slideTimer = setInterval(function () {
+        slides[slideIndex].classList.remove('is-active');
+        slideIndex = (slideIndex + 1) % slides.length;
+        slides[slideIndex].classList.add('is-active');
+      }, 4500);
+    }
+
+    function deal() {
+      if (dealt) return;
+      dealt = true;
+      deck.classList.remove('is-idle');
+      showHint('', false);
+      deck.classList.add('is-departed');
+      setTimeout(function () {
+        deck.classList.add('is-dealt');
+        startSlides();
+      }, reduceMotion ? 0 : 200);
+    }
+
+    if (reduceMotion) {
+      deck.classList.add('is-shown', 'is-flipped', 'is-departed', 'is-dealt');
+      startSlides();
+    } else {
+      setTimeout(function () { deck.classList.add('is-shown'); }, 80);
+      setTimeout(function () { deck.classList.add('is-flipped'); }, 1400);
+      setTimeout(function () {
+        deck.classList.add('is-idle');
+        showHint('Tap the card', true);
+      }, 2200);
+      if (hero) {
+        hero.addEventListener('click', deal);
+      }
+    }
+  }
+
+  /* ---------------------------------------------------------------
      Video: pause when off-screen (performance)
      --------------------------------------------------------------- */
   function playQuietly(video) {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Peter Scot Dugovic</title>
-    <meta name="description" content="Portfolio and works of Peter Scot Dugovic, a painter and sign maker.">
+    <meta name="description" content="Portfolio and works of Peter Scot Dugovic, a painter.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -45,12 +45,6 @@
                 <li>
                     <a href="about.html" class="nav__link">About</a>
                 </li>
-                <li>
-                    <a href="exhibits.html" class="nav__link">Exhibits</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="nav__link">Contact</a>
-                </li>
         </ul>
     </nav>
 </header>
@@ -68,114 +62,38 @@
     </div>
     <div class="nav__mobile-section">
             <a href="about.html">About</a>
-            <a href="exhibits.html">Exhibits</a>
-            <a href="contact.html">Contact</a>
     </div>
 </div>
 <main id="main-content" class="main-content has-hero">
-    <section class="hero">
-        <div class="hero__media">
-            <img src="assets/images/raiters-foyer.jpg" alt="Atmospheric painting of a foyer" fetchpriority="high">
-            <div class="hero__scrim"></div>
-        </div>
-        <div class="container hero__content">
-            <h1 class="hero__title">Peter Scot Dugovic</h1>
-            <p class="hero__subtitle">Painter &amp; Sign Maker. Exploring the intersection of nostalgia, urban decay, and American iconography.</p>
-            <a href="gallery.html" class="hero__cta">View Works <span class="arrow">&rarr;</span></a>
-        </div>
-        <div class="hero__scroll" aria-hidden="true">
-            <span>Scroll</span>
-            <div class="hero__scroll-line"></div>
-        </div>
-    </section>
+    <section class="deck" aria-label="Welcome">
+        <div class="deck__stage">
+            <button class="deck__card deck__card--hero" id="heroCard" aria-label="Open the deck">
+                <span class="deck__card-inner">
+                    <span class="deck__face deck__face--front"><img src="assets/images/deck-front.jpg" alt="" fetchpriority="high"></span>
+                    <span class="deck__face deck__face--back"><img src="assets/images/ace-card.jpg" alt="The Ace of Art — Peter Scot Dugovic"></span>
+                </span>
+            </button>
 
-    <section class="section">
-        <div class="container">
-            <div class="section-head">
-                <span class="eyebrow">Selected Works</span>
-                <h2>Recent Paintings</h2>
-            </div>
-            <div class="featured">
-                
-            <div class="featured__item">
-                <img src="assets/images/5991899.jpg" alt="Featured work from Trailers series" loading="lazy">
-            </div>
-            <div class="featured__item">
-                <img src="assets/images/6784670.jpg" alt="Featured work from Signs series" loading="lazy">
-            </div>
-            <div class="featured__item">
-                <img src="assets/images/1000054.jpg" alt="Featured work from Cars series" loading="lazy">
-            </div>
-            <div class="featured__item">
-                <img src="assets/images/happy-birthday-to-me.jpg" alt="Featured work from Kitchen series" loading="lazy">
-            </div>
-            </div>
-        </div>
-    </section>
+            <div class="deck__dealt" id="dealtCards" aria-hidden="true">
+                <a href="gallery.html" class="deck__card deck__card--works" aria-label="Works">
+                    <span class="deck__face deck__face--slideshow">
 
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-head">
-                <span class="eyebrow">Collections</span>
-                <h2>Browse by Series</h2>
+                        <img class="deck-slide is-active" src="assets/images/5991899_orig.jpg" alt="Trailers series painting by Peter Scot Dugovic" loading="lazy">
+                        <img class="deck-slide " src="assets/images/6784670_orig.jpg" alt="Signs series painting by Peter Scot Dugovic" loading="lazy">
+                        <img class="deck-slide " src="assets/images/1000054_orig.jpg" alt="Cars series painting by Peter Scot Dugovic" loading="lazy">
+                        <img class="deck-slide " src="assets/images/happy-birthday-to-me_orig.jpg" alt="Kitchen series painting by Peter Scot Dugovic" loading="lazy">
+                        <img class="deck-slide " src="assets/images/6862862_orig.jpg" alt="Playgrounds series painting by Peter Scot Dugovic" loading="lazy">
+                        <img class="deck-slide " src="assets/images/raiters-foyer_orig.jpg" alt="Pop Victorian series painting by Peter Scot Dugovic" loading="lazy">
+                    </span>
+                    <span class="deck__label">Works</span>
+                </a>
+                <a href="about.html" class="deck__card deck__card--about" aria-label="About">
+                    <span class="deck__face deck__face--about"><img src="assets/images/about-card.jpg" alt="Peter Scot Dugovic in the studio" loading="lazy"></span>
+                    <span class="deck__label">About</span>
+                </a>
             </div>
-            <div class="categories">
-                
-            <a href="trailers.html" class="category-tile">
-                <img src="assets/images/5991899.jpg" alt="Trailers" loading="lazy">
-                <div class="category-tile__label">
-                    <h3 class="category-tile__name">Trailers</h3>
-                    <span class="category-tile__count">11 works</span>
-                </div>
-            </a>
-            <a href="signs.html" class="category-tile">
-                <img src="assets/images/6784670.jpg" alt="Signs" loading="lazy">
-                <div class="category-tile__label">
-                    <h3 class="category-tile__name">Signs</h3>
-                    <span class="category-tile__count">28 works</span>
-                </div>
-            </a>
-            <a href="cars.html" class="category-tile">
-                <img src="assets/images/1000054.jpg" alt="Cars" loading="lazy">
-                <div class="category-tile__label">
-                    <h3 class="category-tile__name">Cars</h3>
-                    <span class="category-tile__count">10 works</span>
-                </div>
-            </a>
-            <a href="kitchen-series.html" class="category-tile">
-                <img src="assets/images/happy-birthday-to-me.jpg" alt="Kitchen Series" loading="lazy">
-                <div class="category-tile__label">
-                    <h3 class="category-tile__name">Kitchen Series</h3>
-                    <span class="category-tile__count">16 works</span>
-                </div>
-            </a>
-            <a href="playgrounds.html" class="category-tile">
-                <img src="assets/images/6862862.jpg" alt="Playgrounds & Fairs" loading="lazy">
-                <div class="category-tile__label">
-                    <h3 class="category-tile__name">Playgrounds & Fairs</h3>
-                    <span class="category-tile__count">9 works</span>
-                </div>
-            </a>
-            <a href="pop-victorian.html" class="category-tile">
-                <img src="assets/images/raiters-foyer.jpg" alt="Pop Victorian" loading="lazy">
-                <div class="category-tile__label">
-                    <h3 class="category-tile__name">Pop Victorian</h3>
-                    <span class="category-tile__count">17 works</span>
-                </div>
-            </a>
-            </div>
-        </div>
-    </section>
 
-    <section class="section">
-        <div class="container text-center">
-            <span class="eyebrow">Behind the Scenes</span>
-            <h2>Studio &amp; Process</h2>
-            <p class="lead" style="margin: 0 auto var(--sp-5);">Step inside the creative process. View studio shots and read the comic biography.</p>
-            <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
-                <a href="studio-shots.html" class="btn">View Studio</a>
-                <a href="comic-bio.html" class="btn" style="background: var(--gold); color: var(--ink);">Read Comic Bio</a>
-            </div>
+            <p class="deck__hint" id="deckHint" aria-live="polite"></p>
         </div>
     </section>
     
@@ -185,13 +103,12 @@
         <div class="footer__content">
             <div class="footer__brand">
                 <h2 class="footer__name">Peter Scot Dugovic</h2>
-                <p class="footer__tagline">Visual Artist &amp; Sign Maker</p>
+                <p class="footer__tagline">Visual Artist</p>
             </div>
             <nav class="footer__nav" aria-label="Footer navigation">
                 <a href="index.html">Home</a>
                 <a href="gallery.html">Works</a>
                 <a href="about.html">About</a>
-                <a href="exhibits.html">Exhibits</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
