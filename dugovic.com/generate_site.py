@@ -112,21 +112,29 @@ def render_link(link, extra_attrs=''):
     return f'<a href="{link["href"]}"{attrs}>{html.escape(link["label"])}</a>'
 
 
+def render_links(links, indent, wrapper='{}', extra_attrs=''):
+    """Render newline-joined <a> tags for a list of link dicts.
+
+    ``indent`` prefixes every line; ``wrapper`` is a template whose ``{}``
+    placeholder is replaced by each link (pass ``<li>{}</li>`` to wrap in a
+    list item).
+    """
+    return "\n".join(
+        f'{indent}{wrapper.format(render_link(link, extra_attrs))}'
+        for link in links
+    )
+
+
 def get_header(active_page, is_translucent=False):
-    """Generate the site header."""
+    """Generate the site header and mobile menu (the <main> wrapper is
+    added by render_page)."""
     menuitem_attr = 'role="menuitem"'
-    dropdown_items = "\n".join(
-        f'                        {render_link(link, menuitem_attr)}'
-        for link in DROPDOWN_LINKS
-    )
-    mobile_links = "\n".join(
-        f'                <li>{render_link(link)}</li>'
-        for link in DROPDOWN_LINKS
-    )
-    mobile_other_links = "\n".join(
-        f'            {render_link(link)}'
-        for link in NAV_LINKS
-        if not link.get("dropdown") and link["href"] != "index.html"
+    dropdown_items = render_links(DROPDOWN_LINKS, ' ' * 24, extra_attrs=menuitem_attr)
+    mobile_links = render_links(DROPDOWN_LINKS, ' ' * 16, wrapper='<li>{}</li>')
+    mobile_other_links = render_links(
+        [link for link in NAV_LINKS
+         if not link.get("dropdown") and link["href"] != "index.html"],
+        ' ' * 12,
     )
     nav_items_html = ""
     for link in NAV_LINKS:
@@ -150,7 +158,6 @@ def get_header(active_page, is_translucent=False):
                     <a href="{link['href']}" class="nav__link"{aria_current}>{link['label']}</a>
                 </li>'''
 
-    main_class = "has-hero" if is_translucent else ""
     header_class = "nav nav--solid" if not is_translucent else "nav"
 
     return f'''
@@ -179,15 +186,12 @@ def get_header(active_page, is_translucent=False):
 {mobile_other_links}
     </div>
 </div>
-<main id="main-content" class="main-content {main_class}">'''
+'''
 
 
 def get_footer():
     """Generate the site footer."""
-    footer_nav_links = "\n".join(
-        f'                {render_link(link)}'
-        for link in FOOTER_NAV_LINKS
-    )
+    footer_nav_links = render_links(FOOTER_NAV_LINKS, ' ' * 16)
     return f'''
 </main>
 <footer class="site-footer">
@@ -233,9 +237,15 @@ def get_head(title, description=""):
 <body>'''
 
 
-def render_page(title, description, header, content):
-    """Assemble a full page: head + header + body content + footer."""
-    return get_head(title, description) + header + content + get_footer()
+def render_page(title, description, header, content, is_translucent=False):
+    """Assemble a full page: head + header + main + body content + footer.
+
+    ``is_translucent`` must match the flag the page passed to get_header;
+    when true the <main> tag carries the ``has-hero`` class.
+    """
+    main_class = "has-hero" if is_translucent else ""
+    main_open = f'<main id="main-content" class="main-content {main_class}">'
+    return get_head(title, description) + header + main_open + content + get_footer()
 
 
 def lightbox_html():
@@ -409,7 +419,7 @@ def generate_index():
     </section>
     '''
 
-    return render_page("Home", "Portfolio and works of Peter Scot Dugovic, a painter.", header, content)
+    return render_page("Home", "Portfolio and works of Peter Scot Dugovic, a painter.", header, content, is_translucent=True)
 
 
 def generate_comic_bio():
@@ -751,7 +761,7 @@ def generate_studio_shots():
     {lightbox_html()}
     '''
 
-    return render_page("Studio Shots", "Photos and video from Peter Scot Dugovic's studio in Wells, Maine.", header, content)
+    return render_page("Studio Shots", "Photos and video from Peter Scot Dugovic's studio in Wells, Maine.", header, content, is_translucent=True)
 
 
 def generate_gallery_index():
