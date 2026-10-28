@@ -500,13 +500,15 @@ def generate_about():
     ]
 
     def rows(items):
+        # Each tuple is (primary, secondary, detail): exhibitions carry
+        # (year, venue, city), commissions carry (client, work, location).
         return "\n".join(
             f'                        <div class="exhibit-row">\n'
-            f'                            <span class="exhibit-year">{when}</span>\n'
-            f'                            <span class="exhibit-city">{title}</span>\n'
-            f'                            <span class="exhibit-note">{note}</span>\n'
+            f'                            <span class="exhibit-year">{primary}</span>\n'
+            f'                            <span class="exhibit-city">{secondary}</span>\n'
+            f'                            <span class="exhibit-note">{detail}</span>\n'
             f'                        </div>'
-            for when, title, note in items
+            for primary, secondary, detail in items
         )
 
     def collection_rows(items):
