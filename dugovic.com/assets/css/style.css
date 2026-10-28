@@ -131,6 +131,8 @@ p { max-width: 65ch; }
 
 .text-center { text-align: center; }
 .text-center .lead { margin-inline: auto; }
+/* section heads are centered blocks; keep a lead paragraph centered within them */
+.section-head .lead { margin-inline: auto; }
 
 /* --- Layout --- */
 .container {

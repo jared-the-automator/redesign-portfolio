@@ -468,7 +468,7 @@ def generate_about():
     ]
 
     group = [
-        ("2010–2018", "River Club Annual Invitational", "Kennebunkport, Maine"),
+        ("2010–2026", "River Club Annual Invitational", "Kennebunkport, Maine"),
         ("2016–2018", "Cotes Gallery", "Newport, Rhode Island"),
         ("2015", "Hive Gallery", "Kennebunk, Maine"),
         ("2011", "River Tree Arts", "Skate Deck Show"),
@@ -519,7 +519,6 @@ def generate_about():
 
     content = f'''
     <section class="page-header">
-        <span class="eyebrow">Artist Statement</span>
         <h1>About</h1>
     </section>
 
@@ -530,13 +529,13 @@ def generate_about():
                     <img src="{ASSETS_IMG}/{PORTRAIT_IMAGE}" alt="Portrait of Peter Scot Dugovic" fetchpriority="high">
                 </figure>
                 <div class="about-content">
-                    <p>Born in Wells, Maine, Peter Scot Dugovic is a visual artist and sign maker whose work explores the intersection of nostalgia, urban decay, and American iconography. His paintings often feature muted palettes and atmospheric lighting, drawing influence from Edward Hopper's depictions of solitude and Gustav Klimt's ornate patterns.</p>
-                    <p>Trained in both traditional oil painting and commercial sign making, Dugovic blends fine art techniques with the pragmatic precision of the signmaker's craft. His work has been exhibited in galleries across New England and New York, and he has been featured in American Artist Magazine.</p>
+                    <p>Born in Wells, Maine, Peter Scot Dugovic is a visual artist whose work explores the intersection of nostalgia, urban decay, and American iconography. His paintings often feature muted palettes and atmospheric lighting, drawing influence from Edward Hopper's depictions of solitude and Gustav Klimt's ornate patterns.</p>
+                    <p>Trained in traditional oil painting, Dugovic blends fine art technique with meticulous craft. His work has been exhibited in galleries across New England and New York, and he has been featured in American Artist Magazine.</p>
 
                     <div class="about-label">Experience</div>
                     <ul class="fact-list">
                         <li>
-                            <span class="role">Visual Artist &amp; Sign Maker</span>
+                            <span class="role">Visual Artist</span>
                             <span class="place">Wells, Maine &mdash; Independent</span>
                         </li>
                         <li>
@@ -564,7 +563,6 @@ def generate_about():
     <section class="section section-alt">
         <div class="container">
             <div class="section-head">
-                <span class="eyebrow">Exhibitions</span>
                 <h2>Exhibitions &amp; Collections</h2>
                 <p class="lead">A record of gallery shows, public installations, commissions, and private collections.</p>
             </div>
@@ -573,15 +571,16 @@ def generate_about():
 
 {exhibits_group("Group Exhibitions", rows(group))}
             </div>
+<div class="exhibits-two">
 {exhibits_group("Commissions", rows(commissions))}
 
 {exhibits_group("Private Collections", collection_rows(collectors))}
+</div>
         </div>
     </section>
 
     <section class="section">
         <div class="container text-center">
-            <span class="eyebrow">Behind the Scenes</span>
             <h2>Studio &amp; Process</h2>
             <p class="lead" style="margin: 0 auto var(--sp-5);">Step inside the creative process. View studio shots and read the comic biography.</p>
             <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
