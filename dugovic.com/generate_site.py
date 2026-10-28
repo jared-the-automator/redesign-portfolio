@@ -73,11 +73,8 @@ NAV_LINKS = [
 
 # Footer carries the full set, including Contact.
 FOOTER_NAV_LINKS = [
-    {"href": "index.html", "label": "Home"},
-    {"href": "gallery.html", "label": "Works"},
-    {"href": "about.html", "label": "About"},
-    {"href": "contact.html", "label": "Contact"},
-]
+    {"href": link["href"], "label": link["label"]} for link in NAV_LINKS
+] + [{"href": "contact.html", "label": "Contact"}]
 
 # Category key -> generated page filename
 CAT_PAGE_FILES = {
@@ -339,9 +336,9 @@ def render_category_tile(href, display, items, count):
     img_tags = []
     for i, item in enumerate(items):
         thumb_filename = item['fn']
-        cls = ' class="is-active"' if i == 0 else ''
+        active_class_attr = ' class="is-active"' if i == 0 else ''
         img_tags.append(
-            f'<img{cls} src="{ASSETS_IMG}/{thumb_filename}" alt="" {load_attrs(i)}>'
+            f'<img{active_class_attr} src="{ASSETS_IMG}/{thumb_filename}" alt="" {load_attrs(i)}>'
         )
     stacked = "\n                ".join(img_tags)
     return f'''
