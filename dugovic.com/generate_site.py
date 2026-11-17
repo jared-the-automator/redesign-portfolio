@@ -475,7 +475,7 @@ def generate_about():
     ]
 
     group = [
-        ("2010–2026", "River Club Annual Invitational", "Kennebunkport, Maine"),
+        ("2010–2018", "River Club Annual Invitational", "Kennebunkport, Maine"),
         ("2016–2018", "Cotes Gallery", "Newport, Rhode Island"),
         ("2015", "Hive Gallery", "Kennebunk, Maine"),
         ("2011", "River Tree Arts", "Skate Deck Show"),
@@ -492,9 +492,10 @@ def generate_about():
     ]
 
     collectors = [
+        "Japan", "Brazil", "Texas", "Connecticut",
+        "Hong Kong", "New Jersey", "Maine",
         "New York", "Maryland", "California",
-        "Connecticut", "Georgia", "Maine",
-        "Hong Kong",
+        "Georgia",
     ]
 
     def rows(items):
