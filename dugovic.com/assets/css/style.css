@@ -1319,6 +1319,15 @@ button.deck__card {
   color: var(--ink-faint);
 }
 
+.fact-list .desc {
+  grid-column: 1 / -1;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin-top: var(--sp-1);
+  max-width: 52ch;
+}
+
 /* =========================================================================
    EXHIBITS PAGE
    ========================================================================= */

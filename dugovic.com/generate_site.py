@@ -7,7 +7,7 @@ import html
 import json
 import os
 
-BASE_DIR = "/tmp/dugovic_redesign"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ASSETS_CSS = "assets/css/style.css"
 ASSETS_JS = "assets/js/main.js?v=3"
 ASSETS_IMG = "assets/images"
@@ -492,8 +492,9 @@ def generate_about():
     ]
 
     collectors = [
-        "Japan", "Brazil", "Texas", "Connecticut",
-        "New Jersey", "Maine", "New York",
+        "New York", "Maryland", "California",
+        "Connecticut", "Georgia", "Maine",
+        "Hong Kong",
     ]
 
     def rows(items):
@@ -538,30 +539,47 @@ def generate_about():
                     <img src="{ASSETS_IMG}/{PORTRAIT_IMAGE}" alt="Portrait of Peter Scot Dugovic" fetchpriority="high">
                 </figure>
                 <div class="about-content">
-                    <p>Born in Wells, Maine, Peter Scot Dugovic is a visual artist whose work explores the intersection of nostalgia, urban decay, and American iconography. His paintings often feature muted palettes and atmospheric lighting, drawing influence from Edward Hopper's depictions of solitude and Gustav Klimt's ornate patterns.</p>
-                    <p>Trained in traditional oil painting, Dugovic blends fine art technique with meticulous craft. His work has been exhibited in galleries across New England and New York, and he has been featured in American Artist Magazine.</p>
+                    <p>Born on December 31, 1965, Peter was adopted into a family of nine on a small farm in Honeoye Falls, New York. New York City is where he spent his formative years as a bicycle messenger and sign painter. It was here that he gained an appreciation for gritty urban scenes, wooded areas, and solid endeavors. Those early observations now reflect themselves in most of his paintings. Peter is primarily a self-taught artist, though he studied printmaking and sculpture at both SUNY Geneseo and SUNY Purchase. His education was followed by a move with his family to Kennebunk, Maine, after which he worked as a carpenter and proprietor of his own store. During this time he gravitated back to his artwork, and in 2009 he began his career as a professional artist.</p>
+                    <p>Peter paints from childhood memories as well as from present experiences. His techniques are complex and result in scenes that are compelling and exclusive. Taking time to build his stretchers, stretch canvases, and mix his own paints, when viewing Peter's work one can see the undertone of temperance fueled by passion — a true reflection of himself, visible throughout his work, time and time again.</p>
+                    <p>Peter makes his home in the quiet and secluded back woods of Wells, Maine. He divides his time between his work as a professional artist and carpenter.</p>
+                    <p>The artist has been a part of solo and group exhibitions and has shown in New York City, Long Island, New York; Kennebunk, Maine; and Amesbury, Massachusetts. Private collections include New York, Maryland, California, Connecticut, Georgia, Maine, and Hong Kong.</p>
 
                     <div class="about-label">Experience</div>
                     <ul class="fact-list">
                         <li>
-                            <span class="role">Visual Artist</span>
-                            <span class="place">Wells, Maine &mdash; Independent</span>
+                            <span class="role">Coppersmith &amp; Craftsman</span>
+                            <span class="place">Self-taught</span>
+                            <p class="desc">Copper and slate roofing, carpentry, drafting, design, custom work, electrical, plumbing, heating and painting. Maintenance, repair and re-building of historic and other property.</p>
                         </li>
                         <li>
-                            <span class="role">Guest Artist</span>
-                            <span class="place">Various Galleries, NYC &amp; Long Island</span>
+                            <span class="role">Dragon Wing Kites</span>
+                            <span class="place">Old Orchard Beach, ME</span>
+                            <p class="desc">Responsible for all aspects of creating and operating a successful retail shop featuring equipment for kite surfing, kites and toys — including design, retail space, distributor connections, and product demonstrations.</p>
+                        </li>
+                        <li>
+                            <span class="role">Free-lance Sign Painting</span>
+                            <span class="place">Provincetown, MA / New York City</span>
+                            <p class="desc">Consultation, design, construction and installation of handmade signs for local businesses.</p>
+                        </li>
+                        <li>
+                            <span class="role">Apprentice &mdash; Horace &ldquo;Horse&rdquo; Webb</span>
+                            <span class="place">Greenwich, CT</span>
+                            <p class="desc">Studied under master slate/coppersmith: design and construction of fittings for bell towers, roofing, radiator covers, back-splashes, cabinetry, countertops, lanterns and custom works using stone, metal and wood.</p>
                         </li>
                     </ul>
 
                     <div class="about-label">Education</div>
                     <ul class="fact-list">
                         <li>
-                            <span class="role">MFA in Painting</span>
-                            <span class="place">School of the Art Institute of Chicago</span>
+                            <span class="role">BFA &mdash; Printmaking &amp; Sculpture</span>
+                            <span class="place">SUNY Geneseo / SUNY Purchase</span>
                         </li>
                         <li>
-                            <span class="role">BFA in Studio Art</span>
-                            <span class="place">University of Maine</span>
+                            <span class="role">Chautauqua Art Institute</span>
+                        </li>
+                        <li>
+                            <span class="role">Student Teacher</span>
+                            <span class="place">Lithography</span>
                         </li>
                     </ul>
                 </div>
@@ -622,14 +640,14 @@ def generate_contact():
                         <div class="label">Studio</div>
                         <div class="value">
                             Peter Scot Dugovic<br>
-                            Wells, Maine<br>
-                            USA
+                            411 Burnt Mill Rd<br>
+                            Wells, ME 04090
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="label">Email</div>
                         <div class="value">
-                            <a href="mailto:info@dugovic.com">info@dugovic.com</a>
+                            <a href="mailto:Dugovic@me.com">Dugovic@me.com</a>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -736,19 +754,14 @@ def generate_studio_shots():
         <div class="studio-hero__scrim"></div>
         <div class="studio-hero__content">
             <div class="container">
-                <span class="eyebrow eyebrow--light">Behind the Scenes</span>
-                <h1 class="studio-hero__title">Studio Shots</h1>
-                <p class="studio-hero__text">A glimpse into the workshop where signs are crafted and paintings are composed. The constant hum of the city and the quiet focus of the canvas.</p>
+                <span class="eyebrow eyebrow--light">In Action</span>
+                <h1 class="studio-hero__title">In The Big Top Studio</h1>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="section-head">
-                <span class="eyebrow">The Space</span>
-                <h2>Inside the Studio</h2>
-            </div>
             <div class="studio-strip">
                 <div class="studio-masonry">
 {columns_html}
