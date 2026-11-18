@@ -36,6 +36,14 @@
             transform: translateY(0);
         }
     </style>
+<script data-theme-bridge>
+  // Tailwind Play CDN is v3; it ignores the v4 @theme block above, so mirror its tokens here.
+  tailwind.config = tailwind.config || {};
+  tailwind.config.theme = tailwind.config.theme || {};
+  tailwind.config.theme.extend = tailwind.config.theme.extend || {};
+  tailwind.config.theme.extend.colors = Object.assign({}, tailwind.config.theme.extend.colors, {"near-black": "#0A0E17", "deep-slate": "#1B2838", "steel": "#5B8FA8", "cream": "#F5F5F0", "muted-slate": "#8393A7"});
+  tailwind.config.theme.extend.fontFamily = Object.assign({}, tailwind.config.theme.extend.fontFamily, {"display": ["'Playfair Display', serif"], "body": ["'Inter', sans-serif"]});
+</script>
 </head>
 <body class="bg-near-black text-white">
 

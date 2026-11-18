@@ -11,10 +11,10 @@
       --color-forest: #0A1A0E;
       --color-forest-light: #132C1A;
       --color-forest-soft: #1D3F26;
-      --color-gold: #C8A457;
+      --color-gold: #D8B56C;
       --color-bone: #F5F1EB;
-      --color-bone-muted: #C5C1BB;
-      --color-bone-dim: #8D7B68;
+      --color-bone-muted: #D2CEC8;
+      --color-bone-dim: #C2B5A3;
       --font-playfair: 'Playfair Display', serif;
       --font-inter: 'Inter', sans-serif;
     }
@@ -25,6 +25,14 @@
     .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
     .reveal.visible { opacity: 1; transform: translateY(0); }
   </style>
+<script data-theme-bridge>
+  // Tailwind Play CDN is v3; it ignores the v4 @theme block above, so mirror its tokens here.
+  tailwind.config = tailwind.config || {};
+  tailwind.config.theme = tailwind.config.theme || {};
+  tailwind.config.theme.extend = tailwind.config.theme.extend || {};
+  tailwind.config.theme.extend.colors = Object.assign({}, tailwind.config.theme.extend.colors, {"forest": "#0A1A0E", "forest-light": "#132C1A", "forest-soft": "#1D3F26", "gold": "#D8B56C", "bone": "#F5F1EB", "bone-muted": "#D2CEC8", "bone-dim": "#C2B5A3"});
+  tailwind.config.theme.extend.fontFamily = Object.assign({}, tailwind.config.theme.extend.fontFamily, {"playfair": ["'Playfair Display', serif"], "inter": ["'Inter', sans-serif"]});
+</script>
 </head>
 <body class="bg-forest font-inter text-bone antialiased">
 
@@ -45,7 +53,7 @@
   <!-- Hero -->
   <header class="relative min-h-[100dvh] flex items-center overflow-hidden">
     <div class="absolute inset-0" style="background: linear-gradient(105deg, #0A1A0E 40%, #0A1A0E80 65%, transparent 85%), url('https://thewoodenbird.com/wp-content/uploads/2025/09/Rick-Carving-summer-2-scaled.jpeg') center right / cover no-repeat;"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-forest via-forest/70 to-transparent"></div>
+    <div class="absolute inset-0 bg-forest/80 md:bg-transparent md:bg-gradient-to-r md:from-forest md:via-forest/90 md:via-60% md:to-transparent"></div>
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-32 pt-40">
       <div class="max-w-2xl">
         <span class="inline-block text-xs font-bold uppercase tracking-[0.25em] text-gold mb-4">Louisiana Waterfowl Carver</span>

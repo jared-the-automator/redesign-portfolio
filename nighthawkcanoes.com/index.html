@@ -29,6 +29,14 @@
     img { border-radius: 2px; }
     @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
   </style>
+<script data-theme-bridge>
+  // Tailwind Play CDN is v3; it ignores the v4 @theme block above, so mirror its tokens here.
+  tailwind.config = tailwind.config || {};
+  tailwind.config.theme = tailwind.config.theme || {};
+  tailwind.config.theme.extend = tailwind.config.theme.extend || {};
+  tailwind.config.theme.extend.colors = Object.assign({}, tailwind.config.theme.extend.colors, {});
+  tailwind.config.theme.extend.fontFamily = Object.assign({}, tailwind.config.theme.extend.fontFamily, {"display": ["'Playfair Display', serif"], "body": ["'Open Sans', sans-serif"]});
+</script>
 </head>
 <body class="bg-gray-900 text-gray-100">
 

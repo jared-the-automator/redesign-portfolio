@@ -81,6 +81,14 @@
       display: block;
     }
   </style>
+<script data-theme-bridge>
+  // Tailwind Play CDN is v3; it ignores the v4 @theme block above, so mirror its tokens here.
+  tailwind.config = tailwind.config || {};
+  tailwind.config.theme = tailwind.config.theme || {};
+  tailwind.config.theme.extend = tailwind.config.theme.extend || {};
+  tailwind.config.theme.extend.colors = Object.assign({}, tailwind.config.theme.extend.colors, {"cream": "#f5efe8", "terra": "#b85c3e", "charcoal": "#2a2a2a", "stone": "#8a8178", "linen": "#ece4d9"});
+  tailwind.config.theme.extend.fontFamily = Object.assign({}, tailwind.config.theme.extend.fontFamily, {"display": ["'Roboto Slab', serif"], "body": ["'Inter', sans-serif"]});
+</script>
 </head>
 <body class="bg-[#f5efe8] text-[#2a2a2a]">
 
