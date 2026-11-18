@@ -206,7 +206,7 @@ def get_footer():
             <p>&copy; 2026 Peter Scot Dugovic. All rights reserved.</p>
             <p class="footer__social">
                 <a href="https://www.instagram.com/artofdugovic/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-                <a href="mailto:info@dugovic.com" aria-label="Email">Email</a>
+                <a href="mailto:dugovic@me.com" aria-label="Email">Email</a>
             </p>
         </div>
     </div>
@@ -703,7 +703,7 @@ def generate_contact():
         const email = form.email.value;
         const subject = form.subject.value || "Website Inquiry";
         const message = form.message.value;
-        const mailto = `mailto:info@dugovic.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\\n\\n${message}`)}`;
+        const mailto = `mailto:dugovic@me.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
         window.location.href = mailto;
         document.getElementById('formSuccess').style.display = 'block';
         form.reset();
