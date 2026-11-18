@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: dugovic
+    runtime: static
+    staticPublishPath: ./dugovic.com
+    domains:
+      - dugovic.com
+      - www.dugovic.com
