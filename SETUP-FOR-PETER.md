@@ -6,11 +6,12 @@ waiting for things to finish in the background.
 
 You'll need:
 - A computer with a web browser (Chrome or Safari is fine).
-- Your **GitHub** account (you're already on it — the site's files live in a
-  GitHub repo you can open at:
-  https://github.com/jared-the-automator/redesign-portfolio).
+- The site's files live in a public GitHub repo:
+  https://github.com/jared-the-automator/redesign-portfolio
+  You do **not** need a GitHub account or login for the Render steps —
+  the repo is public and you just paste its address into Render.
 - Your **domain** login (where `dugovic.com` is registered — most likely
-  GoDaddy, since Weebly is a GoDaddy company). You'll need this in Step 4.
+  GoDaddy, since Weebly is a GoDaddy company). You'll need this in Part 2.
 
 We are NOT moving the domain registration anywhere. We are just telling the
 domain where to send visitors. The domain stays registered where it is today.
@@ -30,26 +31,34 @@ Render is the free website-hosting service that will serve the files.
 4. In that menu, click **Blueprint**.
    - If you don't see "Blueprint," look for **New → Blueprints**. The option
      is there even on free accounts.
-5. A screen titled something like **"Deploy a Blueprint"** appears with a box
-   that says **Connect a repository**.
-   - Make sure the GitHub icon is selected (not GitLab / Bitbucket).
-   - If GitHub asks you to "Authorize" or "Install app," say **Yes /
-     Authorize**. This just lets Render read your repos.
-6. Find the repo named **redesign-portfolio** (owner: jared-the-automator).
-   It's public, so it will be visible right away. Click it to select it.
+5. A screen titled something like **"Deploy a Blueprint"** appears.
+   You'll be asked where Render should get the code from. **Do NOT connect
+   your GitHub account** (don't click a GitHub logo, don't sign in to GitHub,
+   don't authorize or install any app) — that's the step that pulls up the
+   GitHub login you don't want. Instead, look for the option to use a
+   **public repository** (a text box for a repo URL).
+   Paste this **exact URL** into that text box:
+
+   ```
+   https://github.com/jared-the-automator/redesign-portfolio/tree/main/dugovic.com
+   ```
+
+   - It ends in `/tree/main/dugovic.com` — that part matters; it tells Render
+     to use the `dugovic.com` folder, not the whole repo.
+   - Then click **Connect**.
    - The branch should say **main** — leave it as is.
-7. Click **Continue** (or **Create Blueprint**).
+6. Click **Continue** (or **Create Blueprint**).
    - A page will list what's about to be created. You should see one item:
      a static site named **dugovic**, with the domains
      `dugovic.com` and `www.dugovic.com`.
    - Read the "Estimated monthly cost." For a static site this should show
      **$0.00**. If it's not $0, stop and message Jared before continuing.
-8. Click **Approve & Deploy** (a blue button, usually bottom of the page).
-9. You'll see a green/white "deploying" screen with little steps lighting up.
+7. Click **Approve & Deploy** (a blue button, usually bottom of the page).
+8. You'll see a green/white "deploying" screen with little steps lighting up.
    - **Do nothing here.** It runs automatically. This takes 1–3 minutes.
    - When it's done, the item turns green and shows a URL like
      `something.onrender.com`.
-10. Open that `...onrender.com` URL in a new tab. **This is the moment of
+9. Open that `...onrender.com` URL in a new tab. **This is the moment of
     truth:** if the new dugovic site loads, Render is working. (The domain
     `dugovic.com` still won't work yet — that's the next part.)
 
@@ -167,6 +176,14 @@ to Render.
 - **You see a login screen or "not found" on the site itself** (not a DNS
   error): The site files didn't deploy. In Render, open the site → **Logs**,
   look for a red error, and send that screenshot to Jared.
+- **Render keeps asking you to sign in to / connect your GitHub account:**
+  You're on the "connect your account" option. Go back to Step 5 and use the
+  **public repository URL** box instead — paste the exact URL from there. No
+  GitHub login is needed.
+- **The `...onrender.com` URL shows a list of folders or a different site**
+  (not the dugovic site): The `dugovic.com` subfolder wasn't applied. Stop and
+  message Jared before deleting anything — re-enter the URL from Step 5,
+  making sure it ends in `/tree/main/dugovic.com`.
 
 ## What NOT to do
 - Don't "transfer the domain into Render" unless we specifically ask — we're
