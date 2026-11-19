@@ -307,7 +307,23 @@ dialog.lightbox .icon-btn { border-color: var(--paper); background: transparent;
 
 /* ---------- Home: praise + owners ---------- */
 .praise-head { font-size: var(--step-2); max-width: 24ch; margin-bottom: 1.75rem; }
-.praise-more { margin-top: 1.5rem; }
+.praise-more { margin-left: 0.75rem; }
+/* Review crawl: quotes rise through a flat field and loop */
+.crawl-field { position: relative; height: clamp(18rem, 46vh, 26rem); overflow: hidden; outline-offset: 6px; margin-inline-start: -0.6em; padding-inline-start: 0.6em;
+  mask-image: linear-gradient(180deg, transparent 0, #000 16%, #000 84%, transparent 100%); }
+.crawl-track { animation: crawl var(--crawl-dur, 70s) linear infinite; }
+.crawl[data-paused="true"] .crawl-track, .crawl-field:hover .crawl-track, .crawl-field:focus-within .crawl-track { animation-play-state: paused; }
+@keyframes crawl { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+.crawl-list { list-style: none; margin: 0; padding: 0 0 2.75rem; display: grid; gap: 2.75rem; }
+.crawl-list blockquote { margin: 0; font-family: var(--display); font-style: italic; font-size: var(--step-1); line-height: 1.4; }
+.crawl-list blockquote p { max-width: 36ch; margin: 0; text-indent: -0.4em; }
+.crawl-name { margin: 0.6rem 0 0; font-family: var(--caps); letter-spacing: 0.05em; color: var(--rust); }
+@media (prefers-reduced-motion: reduce) {
+  .crawl-track { animation: none; }
+  .crawl-field { overflow-y: auto; }
+  .crawl-list[aria-hidden="true"], [data-crawl-pause] { display: none; }
+  .praise-more { margin-left: 0; }
+}
 .owners { margin: 0; }
 .owners-stage { display: grid; }
 .owners-stage figure { grid-area: 1 / 1; margin: 0; opacity: 0; transition: opacity 0.9s var(--ease); }

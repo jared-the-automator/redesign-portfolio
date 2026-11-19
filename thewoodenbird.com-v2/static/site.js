@@ -55,10 +55,30 @@
       pauseBtn.setAttribute("aria-label", "Play slideshow");
       pauseBtn.textContent = "▶";
     }
+    root.addEventListener("carousel:pause", () => { paused = true; stop(); });
+    root.addEventListener("carousel:play", () => { paused = reduced; start(); });
     root.addEventListener("focusin", stop);
     root.addEventListener("focusout", start);
     show(0);
     start();
+  });
+
+  // Review crawl: speed set from content height; one button pauses the crawl and the photo carousel beside it
+  document.querySelectorAll("[data-crawl]").forEach((root) => {
+    const list = root.querySelector(".crawl-list");
+    const btn = root.querySelector("[data-crawl-pause]");
+    const photos = root.closest("section")?.querySelector(".owners[data-carousel]");
+    const setDur = () => root.style.setProperty("--crawl-dur", `${Math.max(30, list.offsetHeight / 28)}s`);
+    setDur();
+    window.addEventListener("resize", setDur);
+    btn?.addEventListener("click", () => {
+      const paused = root.dataset.paused !== "true";
+      root.dataset.paused = String(paused);
+      btn.setAttribute("aria-pressed", String(paused));
+      btn.setAttribute("aria-label", paused ? "Play reviews and photos" : "Pause reviews and photos");
+      btn.textContent = paused ? "\u25B6" : "\u275A\u275A";
+      photos?.dispatchEvent(new Event(paused ? "carousel:pause" : "carousel:play"));
+    });
   });
 
   // Process steps drive the photo stack
