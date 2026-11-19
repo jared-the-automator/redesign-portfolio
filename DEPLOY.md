@@ -6,20 +6,22 @@ site: the published files live in `dugovic.com/` (HTML + `assets/`).
 `comic_order.json` — run `python3 dugovic.com/generate_site.py` whenever
 the image catalog or copy changes, then commit the resulting HTML.
 
-`dugovic.com/render.yaml` is a **Render Blueprint** that provisions the whole
-site as one static service (its publish path is `.`, i.e. the `dugovic.com/`
-folder where the HTML lives). You can deploy from the Blueprint or set it up
-by hand — both are below.
+`render.yaml` (repo root) is a **Render Blueprint** that provisions the whole
+site as one static service: `staticPublishPath: ./dugovic.com` tells Render to
+serve the `dugovic.com/` subfolder (where the HTML lives), not the repo root.
+You can deploy from the Blueprint or set it up by hand — both are below.
 
 ## Option A — one-click from the Blueprint (recommended)
 
 1. Go to https://dashboard.render.com → **New → Blueprint**.
 2. Use the **Public Git Repository** option (do **NOT** connect your GitHub
-   account) and paste:
-   `https://github.com/jared-the-automator/redesign-portfolio/tree/main/dugovic.com`
-   This points Render at the `dugovic.com` folder; it reads
-   `dugovic.com/render.yaml` and provisions a static site named `dugovic`
-   with `dugovic.com` and `www.dugovic.com` already attached.
+   account) and paste the repo URL:
+   `https://github.com/jared-the-automator/redesign-portfolio`
+   (Do **not** add `/tree/main/dugovic.com` — per the Render docs, the subfolder
+   is a separate "Root Directory" setting, not part of the repo address. The
+   root `render.yaml` handles it via `staticPublishPath: ./dugovic.com`.)
+   It provisions a static site named `dugovic` with `dugovic.com` and
+   `www.dugovic.com` already attached.
 3. Let the first deploy finish (a `*.onrender.com` URL appears).
 4. Point DNS (next section), then hit **Verify** on each custom domain in the
    Render dashboard. Done.

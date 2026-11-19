@@ -26,41 +26,49 @@ Render is the free website-hosting service that will serve the files.
 2. Click **Sign In** (top right). Log in with the account *you* (Peter) use —
    NOT Jared's account. If you don't have an account yet, click **Sign Up**
    and make one (a free "Hobby" account is all you need).
-3. After you log in you'll see a big blue button that says **New** in the
-   upper-right. Click it. A small menu drops down.
-4. In that menu, click **Blueprint**.
-   - If you don't see "Blueprint," look for **New → Blueprints**. The option
-     is there even on free accounts.
-5. A screen titled something like **"Deploy a Blueprint"** appears.
-   You'll be asked where Render should get the code from. **Do NOT connect
-   your GitHub account** (don't click a GitHub logo, don't sign in to GitHub,
-   don't authorize or install any app) — that's the step that pulls up the
-   GitHub login you don't want. Instead, look for the option to use a
-   **public repository** (a text box for a repo URL).
-   Paste this **exact URL** into that text box:
+3. **First, clean up the earlier attempt (if you have one).** If you already
+   created a Render site from this and it's showing the wrong thing — a list
+   of folders, or a different site, not the dugovic.com design — delete it:
+   - Click on that service, open the **Settings** tab, and scroll to the very
+     bottom of the page → **Delete**. Confirm when asked.
+   - This only removes the Render service. It does **not** touch your files or
+     your `dugovic.com` domain, so it's safe.
+   - **If you haven't created one yet, skip this step.**
+4. Click the big blue **New** button (top right). A small menu drops down.
+5. In that menu, click **Blueprint**.
+   - If you don't see "Blueprint" there, look for **Blueprints** in the top
+     navigation bar. It's there even on free accounts.
+6. A screen titled something like **"Deploy a Blueprint"** appears. It'll ask
+   where Render should get the code from.
+   - **Do NOT connect your GitHub account** — don't click a GitHub logo, don't
+     sign in to GitHub, don't authorize or install any app. That's the path
+     that pulls up the GitHub login you don't want.
+   - Instead, choose the **Public Git Repository** option — it's a plain text
+     box for a repo address. Paste this **exact address** into it:
 
    ```
-   https://github.com/jared-the-automator/redesign-portfolio/tree/main/dugovic.com
+   https://github.com/jared-the-automator/redesign-portfolio
    ```
 
-   - It ends in `/tree/main/dugovic.com` — that part matters; it tells Render
-     to use the `dugovic.com` folder, not the whole repo.
-   - Then click **Connect**.
+   - That's the **whole repo** — that's correct. Do *not* add `/tree/...` or
+     the `dugovic.com` part. The repo's `render.yaml` file already tells
+     Render to serve only the `dugovic.com` folder, so you don't need to name
+     the folder yourself.
    - The branch should say **main** — leave it as is.
-6. Click **Continue** (or **Create Blueprint**).
-   - A page will list what's about to be created. You should see one item:
-     a static site named **dugovic**, with the domains
-     `dugovic.com` and `www.dugovic.com`.
+   - Click **Connect** (or **Continue**).
+7. A page will list what's about to be created. You should see one item:
+   a static site named **dugovic**, with the domains
+   `dugovic.com` and `www.dugovic.com`.
    - Read the "Estimated monthly cost." For a static site this should show
      **$0.00**. If it's not $0, stop and message Jared before continuing.
-7. Click **Approve & Deploy** (a blue button, usually bottom of the page).
-8. You'll see a green/white "deploying" screen with little steps lighting up.
+8. Click **Approve & Deploy** (a blue button, usually bottom of the page).
+9. You'll see a green/white "deploying" screen with little steps lighting up.
    - **Do nothing here.** It runs automatically. This takes 1–3 minutes.
    - When it's done, the item turns green and shows a URL like
-     `something.onrender.com`.
-9. Open that `...onrender.com` URL in a new tab. **This is the moment of
-    truth:** if the new dugovic site loads, Render is working. (The domain
-    `dugovic.com` still won't work yet — that's the next part.)
+     `dugovic.onrender.com`.
+10. Open that `...onrender.com` URL in a new tab. **This is the moment of
+    truth:** if the new dugovic site loads, Render is working. (The
+    `dugovic.com` address still won't work yet — that's the next part.)
 
 > **You're halfway done.** The website now exists on Render. The
 > `dugovic.com` address just isn't pointing at it yet.
