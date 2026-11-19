@@ -110,8 +110,7 @@ p { margin: 0 0 1em; max-width: var(--measure); text-wrap: pretty; }
 .hero-slides::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, var(--paper) 0, var(--paper) 3.5rem, color-mix(in oklab, var(--paper) 55%, transparent) 6rem, transparent 10rem); }
 .hero-slides figure { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity 1.6s var(--ease); }
 .hero-slides figure.is-active { opacity: 1; }
-.hero-slides img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; transform: scale(1.04); transition: transform 7s linear; }
-.hero-slides figure.is-active img { transform: scale(1); }
+.hero-slides img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
 .hero-copy { padding-block: clamp(6rem, 14vh, 10rem) clamp(3rem, 8vh, 5rem); max-width: 34rem; }
 .hero h1 { font-size: var(--step-3); margin-bottom: 0.35em; }
 .hero .lede { color: var(--ink-2); max-width: 32ch; }
