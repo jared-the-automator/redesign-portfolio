@@ -105,15 +105,22 @@ p { margin: 0 0 1em; max-width: var(--measure); text-wrap: pretty; }
 }
 
 /* ---------- Hero: crossfading birds behind the headline ---------- */
-.hero { position: relative; isolation: isolate; min-height: min(88vh, 54rem); display: grid; align-items: end; overflow: hidden; background: var(--paper); }
-.hero-slides { position: absolute; inset: 0 0 0 calc(max(var(--gutter), (100% - 78rem) / 2) + 31rem); z-index: -2; overflow: hidden; }
-.hero-slides::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, var(--paper) 0, var(--paper) 3.5rem, color-mix(in oklab, var(--paper) 55%, transparent) 6rem, transparent 10rem); }
+.hero { --hero-edge: calc(max(var(--gutter), (100% - 78rem) / 2) + 36rem); position: relative; isolation: isolate; min-height: min(88vh, 54rem); display: grid; align-items: end; overflow: hidden; background: var(--marsh); color: var(--on-marsh); }
+.hero-slides { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.hero-slides::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, rgb(24 40 30 / 0.93) 0, rgb(24 40 30 / 0.93) var(--hero-edge), rgb(24 40 30 / 0) calc(var(--hero-edge) + 16rem)); }
 .hero-slides figure { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity 1.6s var(--ease); }
 .hero-slides figure.is-active { opacity: 1; }
-.hero-slides img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
+.hero-slides img { width: 100%; height: 100%; object-fit: cover; object-position: 75% 50%; }
 .hero-copy { padding-block: clamp(6rem, 14vh, 10rem) clamp(3rem, 8vh, 5rem); max-width: 34rem; }
-.hero h1 { font-size: var(--step-3); margin-bottom: 0.35em; }
-.hero .lede { color: var(--ink-2); max-width: 32ch; }
+.hero h1 { font-size: var(--step-3); margin-bottom: 0.35em; color: var(--on-marsh); }
+.hero .lede { color: var(--on-marsh); max-width: 32ch; }
+.hero .kicker { color: var(--tan); }
+.hero .btn-ghost { background: transparent; color: var(--paper); border-color: var(--paper); }
+.hero .btn-ghost:hover { background: var(--paper); color: var(--marsh); }
+.hero .icon-btn { border-color: var(--paper); background: transparent; color: var(--paper); }
+.hero .icon-btn:hover { background: var(--paper); color: var(--marsh); }
+.hero .slide-caption { color: var(--on-marsh); }
+.hero :focus-visible { outline-color: var(--tan); }
 .hero-controls { display: flex; align-items: center; gap: 0.6rem; margin-top: 2.25rem; }
 .icon-btn { width: 2.75rem; height: 2.75rem; display: inline-grid; place-items: center; border-radius: 50%; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); cursor: pointer; font: 700 1.05rem var(--body); }
 .icon-btn:hover { background: var(--ink); color: var(--paper); }
@@ -121,11 +128,11 @@ p { margin: 0 0 1em; max-width: var(--measure); text-wrap: pretty; }
 .on-marsh .icon-btn:hover { background: var(--paper); color: var(--marsh); }
 .slide-caption { font-family: var(--caps); letter-spacing: 0.05em; font-size: var(--step--1); color: var(--ink-2); margin-left: 0.5rem; min-width: 12ch; }
 @media (max-width: 960px) {
-  .hero { min-height: 0; align-items: start; grid-template-rows: auto auto; }
-  .hero-slides { position: relative; inset: auto; height: 66vw; min-height: 15rem; }
-  .hero-slides img { object-position: 50% 50%; }
-  .hero-slides::after { display: none; }
-  .hero-copy { padding-block: 1.75rem 3rem; }
+  .hero { min-height: 0; align-items: start; }
+  .hero-slides { inset: 0 0 auto 0; height: 88vw; max-height: 34rem; }
+  .hero-slides img { object-position: 70% 45%; }
+  .hero-slides::after { background: linear-gradient(180deg, rgb(24 40 30 / 0) 0, rgb(24 40 30 / 0) 55%, rgb(24 40 30 / 0.94) 86%, var(--marsh) 100%); }
+  .hero-copy { padding-block: min(78vw, 30rem) 2.5rem; }
 }
 
 /* ---------- Testimonials carousel ---------- */
@@ -135,7 +142,8 @@ p { margin: 0 0 1em; max-width: var(--measure); text-wrap: pretty; }
 .praise-slide.is-active { opacity: 1; visibility: visible; transition: opacity 0.9s var(--ease); }
 .praise-slide blockquote { margin: 0; font-family: var(--display); font-style: italic; font-size: var(--step-1); line-height: 1.4; font-weight: 400; }
 .praise-slide blockquote p { max-width: 40ch; margin: 0; text-indent: -0.4em; }
-.praise-slide figcaption { font-family: var(--caps); letter-spacing: 0.05em; color: var(--tan); }
+.praise-slide figcaption { font-family: var(--caps); letter-spacing: 0.05em; color: var(--rust); }
+.on-marsh .praise-slide figcaption { color: var(--tan); }
 .praise-photos { display: grid; }
 .praise-photos img { grid-area: 1 / 1; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; opacity: 0; transition: opacity 0.9s var(--ease); border-radius: 2px; }
 .praise-photos img.is-active { opacity: 1; }
