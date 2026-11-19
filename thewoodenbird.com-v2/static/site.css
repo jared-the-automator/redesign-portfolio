@@ -239,7 +239,7 @@ dialog.lightbox .icon-btn { border-color: var(--paper); background: transparent;
 .prose h3 { margin-top: 1.4em; }
 .prose figure { margin: 2rem 0; }
 .prose figcaption { font-size: var(--step--1); color: var(--ink-2); margin-top: 0.5rem; }
-.pull { font-family: var(--display); font-size: var(--step-2); line-height: 1.25; border-left: 0; padding: 0; margin: 2.5rem 0; color: var(--rust); max-width: 26ch; }
+.pull { font-family: var(--display); font-style: italic; font-size: var(--step-1); line-height: 1.35; border-left: 0; padding: 0; margin: 2.5rem 0; color: var(--rust); max-width: 26ch; }
 .two-col { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
 .two-col aside { position: sticky; top: 6.5rem; }
 @media (max-width: 960px) { .two-col { grid-template-columns: 1fr; } .two-col aside { position: static; } }
