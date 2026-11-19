@@ -32,7 +32,7 @@ You can deploy from the Blueprint or set it up by hand — both are below.
 2. Root directory: `dugovic.com`
 3. Build command: *(leave empty)* — the HTML is pre-generated and committed.
    (If you prefer building on Render: `python3 generate_site.py`.)
-4. Publish directory: `dugovic.com`
+4. Publish directory: `.` (relative to the root directory above)
 5. **Settings → Custom Domains** → add `dugovic.com`. Render auto-adds
    `www.dugovic.com` and sets up the redirect.
 
@@ -65,6 +65,14 @@ Remove existing A / AAAA / CNAME records that point to Weebly, then add:
 
 ## Ongoing
 
-Every push to `main` redeploys automatically. To change copy or the image
-catalog: edit `generate_site.py` / `cats.json`, regenerate, commit, push —
-Render picks it up.
+To change copy or the image catalog: edit `generate_site.py` / `cats.json`,
+regenerate, commit, push — then trigger a new deploy.
+
+- **Auto-deploys only work with a connected Git provider.** Services created
+  from a **public repository URL** do *not* auto-deploy (per the Render docs:
+  "Services that use a prebuilt Docker image or a public Git repository URL
+  must be deployed manually"). After pushing, go to the service →
+  **Manual Deploy** → **Deploy latest commit**.
+- To get automatic deploys on every push, connect the GitHub account that owns
+  the repo via Render → **Account Settings → Git Deployment Credentials**,
+  then link the repo to the service.

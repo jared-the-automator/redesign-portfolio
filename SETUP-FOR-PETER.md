@@ -35,34 +35,37 @@ Render is the free website-hosting service that will serve the files.
      your `dugovic.com` domain, so it's safe.
    - **If you haven't created one yet, skip this step.**
 4. Click the big blue **New** button (top right). A small menu drops down.
-5. In that menu, click **Blueprint**.
-   - If you don't see "Blueprint" there, look for **Blueprints** in the top
-     navigation bar. It's there even on free accounts.
-6. A screen titled something like **"Deploy a Blueprint"** appears. It'll ask
-   where Render should get the code from.
+5. In that menu, click **Static Site**.
+6. A form appears with a step to **connect your repo**.
    - **Do NOT connect your GitHub account** — don't click a GitHub logo, don't
-     sign in to GitHub, don't authorize or install any app. That's the path
-     that pulls up the GitHub login you don't want.
-   - Instead, choose the **Public Git Repository** option — it's a plain text
-     box for a repo address. Paste this **exact address** into it:
+     sign in to GitHub, don't authorize or install any app.
+   - Instead, look for the **Public Git Repository** option (a plain text box
+     for a repo address). It may be a tab, toggle, or link below the
+     repo list — the label is "Public Git Repository" or similar.
+   - Paste this **exact address** into it:
 
    ```
    https://github.com/jared-the-automator/redesign-portfolio
    ```
 
    - That's the **whole repo** — that's correct. Do *not* add `/tree/...` or
-     the `dugovic.com` part. The repo's `render.yaml` file already tells
-     Render to serve only the `dugovic.com` folder, so you don't need to name
-     the folder yourself.
+     any other path after the repo name.
    - The branch should say **main** — leave it as is.
    - Click **Connect** (or **Continue**).
-7. A page will list what's about to be created. You should see one item:
-   a static site named **dugovic**, with the domains
-   `dugovic.com` and `www.dugovic.com`.
-   - Read the "Estimated monthly cost." For a static site this should show
-     **$0.00**. If it's not $0, stop and message Jared before continuing.
-8. Click **Approve & Deploy** (a blue button, usually bottom of the page).
-9. You'll see a green/white "deploying" screen with little steps lighting up.
+7. The rest of the form appears. Fill it in like this:
+
+   | Field | Value | Why |
+   |-------|-------|-----|
+   | **Root Directory** | `dugovic.com` | Tells Render the site files live in this subfolder, not the repo root |
+   | **Build Command** | *(leave blank)* | The HTML is already built — no build step needed |
+   | **Publish Directory** | `.` | The static files are at the root of the `dugovic.com` folder |
+
+   > **This is the important step.** If you skip "Root Directory" or type
+   > the wrong value, Render will serve the whole repo (or nothing) instead
+   > of the dugovic site.
+
+8. Click **Create Static Site** (or **Deploy**) at the bottom of the form.
+9. You'll see a "deploying" screen with steps lighting up.
    - **Do nothing here.** It runs automatically. This takes 1–3 minutes.
    - When it's done, the item turns green and shows a URL like
      `dugovic.onrender.com`.
@@ -72,6 +75,12 @@ Render is the free website-hosting service that will serve the files.
 
 > **You're halfway done.** The website now exists on Render. The
 > `dugovic.com` address just isn't pointing at it yet.
+
+> ⚠️ **Important — this service will NOT update automatically.** Render
+> only auto-deploys services that are connected through a Git provider
+> (the "click the GitHub logo" flow we're intentionally avoiding). Because
+> we're using a public repo URL, **every future update requires a manual
+> deploy.** See "Updating the site later" at the bottom of this guide.
 
 ---
 
@@ -189,9 +198,13 @@ to Render.
   **public repository URL** box instead — paste the exact URL from there. No
   GitHub login is needed.
 - **The `...onrender.com` URL shows a list of folders or a different site**
-  (not the dugovic site): The `dugovic.com` subfolder wasn't applied. Stop and
-  message Jared before deleting anything — re-enter the URL from Step 5,
-  making sure it ends in `/tree/main/dugovic.com`.
+  (not the dugovic site): The `dugovic.com` subfolder wasn't applied. Open the
+  service → **Settings** → check that **Root Directory** is set to
+  `dugovic.com`. If it's blank, set it, save, and then trigger a manual deploy
+  (see "Updating the site later").
+- **I pushed a new commit but the site didn't update:** Expected — public-repo
+  services don't auto-deploy. Go to the service → **Manual Deploy** →
+  **Deploy latest commit**.
 
 ## What NOT to do
 - Don't "transfer the domain into Render" unless we specifically ask — we're
@@ -200,6 +213,24 @@ to Render.
 - Don't delete the `AAAA` record until after the new `A` record is in place,
   or the site will be unreachable for a moment.
 - Don't turn off Weebly until Step 3.2 above is confirmed.
+
+---
+
+## Updating the site later
+
+Because this service uses a **public repo URL** (not a connected GitHub
+account), Render does **not** automatically rebuild when new commits are
+pushed. To publish an update:
+
+1. After Jared commits + pushes the change to the repo, go to the
+   **dugovic** service in the Render dashboard.
+2. Click **Manual Deploy** → **Deploy latest commit**.
+3. Wait for the build to finish, then reload the site.
+
+(If you'd rather have automatic deploys on every push, connect the
+`jared-the-automator` GitHub account to Render under **Account Settings →
+Git Deployment Credentials** and link the repo — then Render rebuilds on each
+push.)
 
 ---
 *Technical reference version: see `DEPLOY.md` (same folder) if you want the
