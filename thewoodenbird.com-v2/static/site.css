@@ -377,3 +377,4 @@ dialog.lightbox .icon-btn { border-color: var(--paper); background: transparent;
 .form .check { display: flex; align-items: center; gap: 0.6rem; font-weight: 400; }
 .form .check input { width: 1.2rem; height: 1.2rem; }
 #form-status { min-height: 1.5em; font-weight: 700; color: var(--rust); }
+.btn-row + .hint { margin-top: 0.75rem; max-width: 40ch; }
