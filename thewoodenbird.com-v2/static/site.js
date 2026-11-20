@@ -119,22 +119,23 @@
     const initial = new URLSearchParams(location.search).get("species");
     apply(chips.some((c) => c.dataset.filter === initial) ? initial : "all", false);
 
-    // Lightbox
-    const dlg = document.querySelector("dialog.lightbox");
-    if (dlg) {
-      const img = dlg.querySelector("img");
-      const cap = dlg.querySelector("[data-lb-caption]");
-      gallery.querySelectorAll("button[data-full]").forEach((b) => {
-        b.addEventListener("click", () => {
-          img.src = b.dataset.full;
-          img.alt = b.querySelector("img").alt;
-          cap.textContent = b.closest("figure").querySelector("figcaption")?.textContent || "";
-          dlg.showModal();
-        });
+  }
+
+  // Lightbox: any button[data-full] on the page (gallery, species pages, Duck Shop)
+  const dlg = document.querySelector("dialog.lightbox");
+  if (dlg) {
+    const img = dlg.querySelector("img");
+    const cap = dlg.querySelector("[data-lb-caption]");
+    document.querySelectorAll("button[data-full]").forEach((b) => {
+      b.addEventListener("click", () => {
+        img.src = b.dataset.full;
+        img.alt = b.querySelector("img").alt;
+        cap.textContent = b.dataset.caption || b.closest("figure")?.querySelector("figcaption")?.textContent || "";
+        dlg.showModal();
       });
-      dlg.querySelector("[data-close]").addEventListener("click", () => dlg.close());
-      dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
-    }
+    });
+    dlg.querySelector("[data-close]").addEventListener("click", () => dlg.close());
+    dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
   }
 
   // Reveal on scroll
