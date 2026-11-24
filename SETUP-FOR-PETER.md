@@ -10,8 +10,9 @@ You'll need:
   https://github.com/jared-the-automator/redesign-portfolio
   You do **not** need a GitHub account or login for the Render steps —
   the repo is public and you just paste its address into Render.
-- Your **domain** login (where `dugovic.com` is registered — most likely
-  GoDaddy, since Weebly is a GoDaddy company). You'll need this in Part 2.
+- Your **domain** login (where `dugovic.com` is registered). The domain's
+  DNS is currently on GoDaddy nameservers, so you'll manage it at GoDaddy.
+  You'll need this in Part 2.
 
 We are NOT moving the domain registration anywhere. We are just telling the
 domain where to send visitors. The domain stays registered where it is today.
@@ -56,13 +57,14 @@ Render is the free website-hosting service that will serve the files.
 
    | Field | Value | Why |
    |-------|-------|-----|
-   | **Root Directory** | `dugovic.com` | Tells Render the site files live in this subfolder, not the repo root |
+   | **Root Directory** | *(leave blank)* | The repo root is fine — the subfolder is handled by Publish Directory |
    | **Build Command** | *(leave blank)* | The HTML is already built — no build step needed |
-   | **Publish Directory** | `.` | The static files are at the root of the `dugovic.com` folder |
+   | **Publish Directory** | `./dugovic.com` | The static files live in the `dugovic.com` subfolder of the repo |
 
-   > **This is the important step.** If you skip "Root Directory" or type
-   > the wrong value, Render will serve the whole repo (or nothing) instead
-   > of the dugovic site.
+   > **This is the important step.** The key field is **Publish Directory =
+   > `./dugovic.com`** (leave Root Directory blank). If it's blank or wrong,
+   > Render will serve the whole repo — a list of folders — instead of the
+   > dugovic site.
 
 8. Click **Create Static Site** (or **Deploy**) at the bottom of the form.
 9. You'll see a "deploying" screen with steps lighting up.
@@ -95,9 +97,10 @@ Render, then (b) tell your domain registrar (GoDaddy) to point there.
    green one from Part 1).
 2. Click the **Settings** tab (top of the page).
 3. Scroll down to the **Custom Domains** section.
-   - You should already see `dugovic.com` and `www.dugovic.com` listed (they
-     came in with the Blueprint). If you do **not** see them, click
-     **+ Add Custom Domain**, type `dugovic.com`, and save. Render will also
+   - Check the list. `dugovic.com` and `www.dugovic.com` should be listed —
+     they come in automatically if the service was created from the
+     `render.yaml` Blueprint. If they're **not** listed, click
+     **+ Add Custom Domain**, type `dugovic.com`, and save — Render will also
      add `www.dugovic.com` automatically.
 4. Next to `dugovic.com` there's a status that says something like
    **"DNS update needed."** Keep this page open — you'll come back to it.
@@ -117,28 +120,31 @@ to Render.
    - On GoDaddy: click the domain → **DNS** (or "DNS Management").
    - If you're actually on Weebly's domain manager instead, the same two
      record types exist there; the button names just look slightly different.
-3. In the list of records you'll see rows like `A`, `CNAME`, maybe `AAAA`.
-   Look for any rows that point to **Weebly** (they may contain
-   `weebly`, `editmysite`, or an IP you don't recognize).
-   - **Delete** those `A` and `CNAME` rows (there's usually a **Delete** /
-     trash icon on each row).
-   - **Delete any `AAAA` record too.** (Render is IPv4-only; a leftover
-     `AAAA` record will break the site.)
-4. Now **add** these two records (click **Add New Record** / **+ Add record**):
+3. In the records list, exactly **two** rows control where the website goes:
 
-   | Type | Name/Host | Value / Points to | TTL |
-   |------|-----------|-------------------|-----|
-   | `A`  | `@` (or leave Name blank) | `216.24.57.1` | 1 minute (or 3600) |
-   | `CNAME` | `www` | `dugovic.onrender.com` ← use YOUR saved address from 2a.5 | 1 minute |
+   | Type | Name | What it points to now (the old Weebly site) |
+   |------|------|---------------------------------------------|
+   | `A` | `@` | `199.34.228.100` |
+   | `CNAME` | `www` | `dugovic.com` |
+
+   Everything else in the list — the two `MX` mail records, the
+   `*.secureserver.net` CNAMEs, `_domainconnect`, `ftp`, `NS`, `SOA` — is for
+   email or the domain itself. **Do not touch those.** There is no `AAAA`
+   record to worry about.
+4. **Edit** those two records in place (click the **pencil / Edit** icon on
+   each row, change the value, then Save):
+
+   | Type | Name/Host | New Data (Points to) |
+   |------|-----------|----------------------|
+   | `A` | `@` | `216.24.57.1` |
+   | `CNAME` | `www` | `dugovic.onrender.com` ← use YOUR saved address from 2a.5 |
 
    Notes on typing these in:
-   - **Name/Host**: for the `A` record type `@` (it means "the main domain").
-     For the `CNAME` record type `www`.
-   - **Value / Points to / Destination**: paste the exact value in the table.
-     For the `CNAME`, it must be the `...onrender.com` address you saved in
-     2a.5 — not `dugovic.com`.
-   - **TTL**: choose the smallest available (1 minute / 3600). It just makes
-     changes apply faster.
+   - For the `A` record, the name `@` means "the main domain." For the
+     `CNAME`, keep the name `www`.
+   - The `CNAME` value must be the `...onrender.com` address you saved in
+     2a.5 — **not** `dugovic.com`.
+   - **TTL**: leave it at the default (1 hour) — that's fine.
 5. **Save** all changes.
 
 > If GoDaddy shows a popup asking about "domain forwarding" or "website
@@ -150,9 +156,10 @@ to Render.
 2. Next to `dugovic.com`, click **Verify** (you may need to refresh the page
    first).
 3. Repeat for `www.dugovic.com` if it has its own Verify button.
-4. This can take anywhere from a few minutes to ~30 minutes (DNS changes
-   "propagate" across the internet). If it says "not found yet," wait 5
-   minutes and hit **Verify** again.
+4. This can take anywhere from a few minutes to ~30 minutes — occasionally
+   longer (DNS changes "propagate" across the internet; GoDaddy notes up to
+   48 h in the worst case). If it says "not found yet," wait 5 minutes and
+   hit **Verify** again.
 5. When a domain shows **Verified** / a green check, Render has issued a free
    SSL certificate (that's the little lock 🔒 that makes the URL say
    `https://`).
@@ -168,10 +175,15 @@ to Render.
      you to the non-`www` version.
 3. Walk through the site: Home, Works (click a category), About, Studio,
    Contact. Check the slideshow and that links open.
-4. **Only after it looks right**, go back to Weebly and **cancel / delete the
-   old site** so nobody pays for two things. (If you're nervous, you can
-   leave Weebly running for a week; once you've confirmed the new site is
-   solid, shut it off.)
+4. Go back to Weebly and **cancel / delete the old site** (or at minimum
+   **disconnect `dugovic.com` from it**) so nobody pays for two things.
+   - If the public URL **still shows the old Weebly site even though Part 2's
+     DNS records are verified correct**, this step is *required*, not
+     optional: the old site keeps serving the domain from Weebly's side, and
+     the GoDaddy DNS records alone won't override that. Disconnect/cancel,
+     wait ~5 minutes, retest.
+   - If everything already looks right, you can instead leave Weebly running
+     for a week; once you've confirmed the new site is solid, shut it off.
 5. **Do NOT cancel the domain registration** — you only cancelled the
    Weebly *website*. Keep paying for `dugovic.com` where you always have.
 
@@ -183,9 +195,14 @@ to Render.
   The DNS in Part 2 hasn't fully propagated or a record was typed wrong.
   Re-check the two records against the table in 2b.4. Confirm the `A` record
   value is exactly `216.24.57.1`.
-- **`dugovic.com` loads the OLD Weebly site:** You didn't delete the old
-  Weebly/`editmysite` record, or propagation is incomplete. Make sure no
-  record still points to Weebly, then wait and re-check.
+- **`dugovic.com` loads the OLD Weebly site:** Two causes. (1) A DNS record
+  still points to Weebly, or propagation is incomplete — re-check the two
+  records in 2b.4 (the `A` value must be exactly `216.24.57.1`, the `www`
+  CNAME must be exactly `dugovic.onrender.com`). (2) Both records are verified
+  correct but the old site still loads — the old Weebly site is still
+  connected to the domain on Weebly's side and its servers keep serving it;
+  the DNS records alone can't override that. Go to Weebly and cancel /
+  disconnect the old site (Part 3, Step 4), wait ~5 minutes, retest.
 - **You get a 502 / "bad gateway" right after verifying:** Render is still
   wiring up routing. Wait a few minutes and reload.
 - **It asks for money / cost isn't $0:** Stop and message Jared before you
@@ -198,10 +215,10 @@ to Render.
   **public repository URL** box instead — paste the exact URL from there. No
   GitHub login is needed.
 - **The `...onrender.com` URL shows a list of folders or a different site**
-  (not the dugovic site): The `dugovic.com` subfolder wasn't applied. Open the
-  service → **Settings** → check that **Root Directory** is set to
-  `dugovic.com`. If it's blank, set it, save, and then trigger a manual deploy
-  (see "Updating the site later").
+  (not the dugovic site): The subfolder wasn't applied. Open the service →
+  **Settings** → **Build** and check that **Publish Directory** is
+  `./dugovic.com` (Root Directory stays blank). Save, then trigger a manual
+  deploy (see "Updating the site later").
 - **I pushed a new commit but the site didn't update:** Expected — public-repo
   services don't auto-deploy. Go to the service → **Manual Deploy** →
   **Deploy latest commit**.
@@ -212,7 +229,11 @@ to Render.
 - Don't type a `CNAME` for the `@`/root record (only `www` gets a CNAME).
 - Don't delete the `AAAA` record until after the new `A` record is in place,
   or the site will be unreachable for a moment.
-- Don't turn off Weebly until Step 3.2 above is confirmed.
+- Don't delete the domain registration — only the Weebly *website* gets
+  turned off; keep paying for `dugovic.com` at your registrar.
+- If the public URL still shows the old site after the Part 2 DNS records are
+  confirmed correct, don't keep waiting on propagation — disconnect the old
+  site on Weebly's side (Step 4); it's still serving the domain there.
 
 ---
 
